@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { WordRef } from '../data/types';
 import { INTERVALS, pickWords, review, starsFor, statKey, weakWords, type WordStat } from './srs';
 
-const word = (de: string): WordRef => ({ de, article: 'der', plural: null, en: de, id: de, topic: 't' });
+const word = (de: string): WordRef => ({ de, article: 'der', plural: null, en: de, es: de, id: de, topic: 't' });
 
 describe('review', () => {
   it('moves up a box when correct and resets when wrong', () => {

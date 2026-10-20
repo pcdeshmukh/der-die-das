@@ -2,7 +2,8 @@
   "id": "clothes",
   "title": {
     "de": "Kleidung & Einkaufen",
-    "en": "Clothes & shopping"
+    "en": "Clothes & shopping",
+    "es": "Ropa y compras"
   },
   "emoji": "👕",
   "nouns": [
@@ -10,13 +11,15 @@
       "de": "Kleidung",
       "article": "die",
       "plural": null,
-      "en": "clothing"
+      "en": "clothing",
+      "es": "ropa"
     },
     {
       "de": "Hose",
       "article": "die",
       "plural": "Hosen",
       "en": "trousers",
+      "es": "pantalones",
       "emoji": "👖"
     },
     {
@@ -24,6 +27,7 @@
       "article": "das",
       "plural": "Hemden",
       "en": "shirt",
+      "es": "camisa",
       "emoji": "👔"
     },
     {
@@ -31,45 +35,52 @@
       "article": "das",
       "plural": "T-Shirts",
       "en": "T-shirt",
+      "es": "camiseta",
       "emoji": "👕"
     },
     {
       "de": "Pullover",
       "article": "der",
       "plural": "Pullover",
-      "en": "jumper, sweater"
+      "en": "jumper, sweater",
+      "es": "jersey"
     },
     {
       "de": "Jacke",
       "article": "die",
       "plural": "Jacken",
       "en": "jacket",
+      "es": "chaqueta",
       "emoji": "🧥"
     },
     {
       "de": "Mantel",
       "article": "der",
       "plural": "Mäntel",
-      "en": "coat"
+      "en": "coat",
+      "es": "abrigo"
     },
     {
       "de": "Kleid",
       "article": "das",
       "plural": "Kleider",
       "en": "dress",
+      "es": "vestido",
       "emoji": "👗"
     },
     {
       "de": "Rock",
       "article": "der",
       "plural": "Röcke",
-      "en": "skirt"
+      "en": "skirt",
+      "es": "falda"
     },
     {
       "de": "Schuh",
       "article": "der",
       "plural": "Schuhe",
       "en": "shoe",
+      "es": "zapato",
       "emoji": "👞"
     },
     {
@@ -77,6 +88,7 @@
       "article": "der",
       "plural": "Stiefel",
       "en": "boot",
+      "es": "bota",
       "emoji": "👢"
     },
     {
@@ -84,6 +96,7 @@
       "article": "die",
       "plural": "Socken",
       "en": "sock",
+      "es": "calcetín",
       "emoji": "🧦"
     },
     {
@@ -91,6 +104,7 @@
       "article": "der",
       "plural": "Hüte",
       "en": "hat",
+      "es": "sombrero",
       "emoji": "👒"
     },
     {
@@ -98,6 +112,7 @@
       "article": "die",
       "plural": "Mützen",
       "en": "woolly hat, cap",
+      "es": "gorro",
       "emoji": "🧢"
     },
     {
@@ -105,6 +120,7 @@
       "article": "der",
       "plural": "Schals",
       "en": "scarf",
+      "es": "bufanda",
       "emoji": "🧣"
     },
     {
@@ -112,6 +128,7 @@
       "article": "die",
       "plural": "Brillen",
       "en": "glasses",
+      "es": "gafas",
       "emoji": "👓"
     },
     {
@@ -119,6 +136,7 @@
       "article": "die",
       "plural": "Taschen",
       "en": "bag",
+      "es": "bolso",
       "emoji": "👜"
     },
     {
@@ -126,6 +144,7 @@
       "article": "der",
       "plural": "Rucksäcke",
       "en": "backpack",
+      "es": "mochila",
       "emoji": "🎒"
     },
     {
@@ -133,19 +152,22 @@
       "article": "der",
       "plural": "Regenschirme",
       "en": "umbrella",
+      "es": "paraguas",
       "emoji": "☂️"
     },
     {
       "de": "Größe",
       "article": "die",
       "plural": "Größen",
-      "en": "size"
+      "en": "size",
+      "es": "talla"
     },
     {
       "de": "Farbe",
       "article": "die",
       "plural": "Farben",
       "en": "colour",
+      "es": "color",
       "emoji": "🎨"
     },
     {
@@ -153,6 +175,7 @@
       "article": "der",
       "plural": "Preise",
       "en": "price",
+      "es": "precio",
       "emoji": "🏷️"
     },
     {
@@ -160,6 +183,7 @@
       "article": "das",
       "plural": null,
       "en": "money",
+      "es": "dinero",
       "emoji": "💶"
     },
     {
@@ -167,39 +191,47 @@
       "article": "der",
       "plural": "Euros",
       "en": "euro",
+      "es": "euro",
       "emoji": "💶"
     },
     {
       "de": "Kasse",
       "article": "die",
       "plural": "Kassen",
-      "en": "till, checkout"
+      "en": "till, checkout",
+      "es": "caja"
     }
   ],
   "sentences": [
     {
       "de": "Die Jacke ist zu teuer.",
-      "en": "The jacket is too expensive."
+      "en": "The jacket is too expensive.",
+      "es": "La chaqueta es demasiado cara."
     },
     {
       "de": "Was kostet die Hose?",
-      "en": "How much are the trousers?"
+      "en": "How much are the trousers?",
+      "es": "¿Cuánto cuestan los pantalones?"
     },
     {
       "de": "Ich suche ein Kleid.",
-      "en": "I am looking for a dress."
+      "en": "I am looking for a dress.",
+      "es": "Busco un vestido."
     },
     {
       "de": "Der Pullover ist blau.",
-      "en": "The jumper is blue."
+      "en": "The jumper is blue.",
+      "es": "El jersey es azul."
     },
     {
       "de": "Ich bezahle mit Karte.",
-      "en": "I am paying by card."
+      "en": "I am paying by card.",
+      "es": "Pago con tarjeta."
     },
     {
       "de": "Die Schuhe sind zu klein.",
-      "en": "The shoes are too small."
+      "en": "The shoes are too small.",
+      "es": "Los zapatos son demasiado pequeños."
     }
   ]
 }

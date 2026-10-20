@@ -2,7 +2,8 @@
   "id": "family",
   "title": {
     "de": "Familie",
-    "en": "Family"
+    "en": "Family",
+    "es": "Familia"
   },
   "emoji": "👨‍👩‍👧",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "die",
       "plural": "Familien",
       "en": "family",
+      "es": "familia",
       "emoji": "👨‍👩‍👧"
     },
     {
@@ -18,6 +20,7 @@
       "article": "die",
       "plural": "Mütter",
       "en": "mother",
+      "es": "madre",
       "emoji": "👩"
     },
     {
@@ -25,6 +28,7 @@
       "article": "der",
       "plural": "Väter",
       "en": "father",
+      "es": "padre",
       "emoji": "👨"
     },
     {
@@ -32,6 +36,7 @@
       "article": "der",
       "plural": "Söhne",
       "en": "son",
+      "es": "hijo",
       "emoji": "👦"
     },
     {
@@ -39,6 +44,7 @@
       "article": "die",
       "plural": "Töchter",
       "en": "daughter",
+      "es": "hija",
       "emoji": "👧"
     },
     {
@@ -46,6 +52,7 @@
       "article": "der",
       "plural": "Brüder",
       "en": "brother",
+      "es": "hermano",
       "emoji": "🧑"
     },
     {
@@ -53,6 +60,7 @@
       "article": "die",
       "plural": "Schwestern",
       "en": "sister",
+      "es": "hermana",
       "emoji": "👩"
     },
     {
@@ -60,6 +68,7 @@
       "article": "die",
       "plural": "Omas",
       "en": "grandma",
+      "es": "abuelita",
       "emoji": "👵"
     },
     {
@@ -67,6 +76,7 @@
       "article": "der",
       "plural": "Opas",
       "en": "grandpa",
+      "es": "abuelito",
       "emoji": "👴"
     },
     {
@@ -74,6 +84,7 @@
       "article": "die",
       "plural": "Großmütter",
       "en": "grandmother",
+      "es": "abuela",
       "emoji": "👵"
     },
     {
@@ -81,37 +92,43 @@
       "article": "der",
       "plural": "Großväter",
       "en": "grandfather",
+      "es": "abuelo",
       "emoji": "👴"
     },
     {
       "de": "Onkel",
       "article": "der",
       "plural": "Onkel",
-      "en": "uncle"
+      "en": "uncle",
+      "es": "tío"
     },
     {
       "de": "Tante",
       "article": "die",
       "plural": "Tanten",
-      "en": "aunt"
+      "en": "aunt",
+      "es": "tía"
     },
     {
       "de": "Cousin",
       "article": "der",
       "plural": "Cousins",
-      "en": "cousin (male)"
+      "en": "cousin (male)",
+      "es": "primo"
     },
     {
       "de": "Cousine",
       "article": "die",
       "plural": "Cousinen",
-      "en": "cousin (female)"
+      "en": "cousin (female)",
+      "es": "prima"
     },
     {
       "de": "Ehemann",
       "article": "der",
       "plural": "Ehemänner",
       "en": "husband",
+      "es": "marido",
       "emoji": "🤵"
     },
     {
@@ -119,37 +136,43 @@
       "article": "die",
       "plural": "Ehefrauen",
       "en": "wife",
+      "es": "esposa",
       "emoji": "👰"
     },
     {
       "de": "Partner",
       "article": "der",
       "plural": "Partner",
-      "en": "partner (male)"
+      "en": "partner (male)",
+      "es": "pareja (hombre)"
     },
     {
       "de": "Partnerin",
       "article": "die",
       "plural": "Partnerinnen",
-      "en": "partner (female)"
+      "en": "partner (female)",
+      "es": "pareja (mujer)"
     },
     {
       "de": "Enkel",
       "article": "der",
       "plural": "Enkel",
-      "en": "grandson"
+      "en": "grandson",
+      "es": "nieto"
     },
     {
       "de": "Enkelin",
       "article": "die",
       "plural": "Enkelinnen",
-      "en": "granddaughter"
+      "en": "granddaughter",
+      "es": "nieta"
     },
     {
       "de": "Geburtstag",
       "article": "der",
       "plural": "Geburtstage",
       "en": "birthday",
+      "es": "cumpleaños",
       "emoji": "🎂"
     },
     {
@@ -157,6 +180,7 @@
       "article": "die",
       "plural": "Hochzeiten",
       "en": "wedding",
+      "es": "boda",
       "emoji": "💒"
     },
     {
@@ -164,6 +188,7 @@
       "article": "das",
       "plural": "Geschenke",
       "en": "present, gift",
+      "es": "regalo",
       "emoji": "🎁"
     },
     {
@@ -171,6 +196,7 @@
       "article": "die",
       "plural": "Partys",
       "en": "party",
+      "es": "fiesta",
       "emoji": "🎉"
     },
     {
@@ -178,33 +204,40 @@
       "article": "das",
       "plural": "Fotos",
       "en": "photo",
+      "es": "foto",
       "emoji": "📷"
     }
   ],
   "sentences": [
     {
       "de": "Ich habe zwei Brüder.",
-      "en": "I have two brothers."
+      "en": "I have two brothers.",
+      "es": "Tengo dos hermanos."
     },
     {
       "de": "Meine Mutter heißt Maria.",
-      "en": "My mother is called Maria."
+      "en": "My mother is called Maria.",
+      "es": "Mi madre se llama María."
     },
     {
       "de": "Hast du Geschwister?",
-      "en": "Do you have siblings?"
+      "en": "Do you have siblings?",
+      "es": "¿Tienes hermanos?"
     },
     {
       "de": "Mein Vater ist Lehrer.",
-      "en": "My father is a teacher."
+      "en": "My father is a teacher.",
+      "es": "Mi padre es profesor."
     },
     {
       "de": "Meine Oma wohnt in Berlin.",
-      "en": "My grandma lives in Berlin."
+      "en": "My grandma lives in Berlin.",
+      "es": "Mi abuela vive en Berlín."
     },
     {
       "de": "Wir feiern heute Geburtstag.",
-      "en": "We are celebrating a birthday today."
+      "en": "We are celebrating a birthday today.",
+      "es": "Hoy celebramos un cumpleaños."
     }
   ]
 }

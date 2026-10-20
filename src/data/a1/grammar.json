@@ -3,12 +3,14 @@
     "id": "indefinite",
     "title": {
       "en": "ein or eine?",
-      "de": "ein oder eine?"
+      "de": "ein oder eine?",
+      "es": "¿ein o eine?"
     },
     "emoji": "🅰️",
     "rule": {
       "en": "der and das nouns take ein, die nouns take eine.",
-      "de": "Nomen mit der und das: ein. Nomen mit die: eine."
+      "de": "Nomen mit der und das: ein. Nomen mit die: eine.",
+      "es": "Los sustantivos con der y das llevan ein; los sustantivos con die llevan eine."
     },
     "options": [
       "ein",
@@ -18,62 +20,74 @@
       {
         "q": "Das ist ___ Tisch.",
         "a": "ein",
-        "en": "This is a table."
+        "en": "This is a table.",
+        "es": "Esto es una mesa."
       },
       {
         "q": "Das ist ___ Lampe.",
         "a": "eine",
-        "en": "This is a lamp."
+        "en": "This is a lamp.",
+        "es": "Esto es una lámpara."
       },
       {
         "q": "Das ist ___ Buch.",
         "a": "ein",
-        "en": "This is a book."
+        "en": "This is a book.",
+        "es": "Esto es un libro."
       },
       {
         "q": "Hier ist ___ Apotheke.",
         "a": "eine",
-        "en": "Here is a pharmacy."
+        "en": "Here is a pharmacy.",
+        "es": "Aquí hay una farmacia."
       },
       {
         "q": "Das ist ___ Hund.",
         "a": "ein",
-        "en": "This is a dog."
+        "en": "This is a dog.",
+        "es": "Esto es un perro."
       },
       {
         "q": "Da ist ___ Katze.",
         "a": "eine",
-        "en": "There is a cat."
+        "en": "There is a cat.",
+        "es": "Ahí hay un gato."
       },
       {
         "q": "Das ist ___ Fahrrad.",
         "a": "ein",
-        "en": "This is a bicycle."
+        "en": "This is a bicycle.",
+        "es": "Esto es una bicicleta."
       },
       {
         "q": "Das ist ___ Brille.",
         "a": "eine",
-        "en": "These are glasses."
+        "en": "These are glasses.",
+        "es": "Estas son unas gafas."
       },
       {
         "q": "Hier ist ___ Supermarkt.",
         "a": "ein",
-        "en": "Here is a supermarket."
+        "en": "Here is a supermarket.",
+        "es": "Aquí hay un supermercado."
       },
       {
         "q": "Das ist ___ Kleid.",
         "a": "ein",
-        "en": "This is a dress."
+        "en": "This is a dress.",
+        "es": "Esto es un vestido."
       },
       {
         "q": "Das ist ___ Frage.",
         "a": "eine",
-        "en": "That is a question."
+        "en": "That is a question.",
+        "es": "Esa es una pregunta."
       },
       {
         "q": "Dort ist ___ Haltestelle.",
         "a": "eine",
-        "en": "Over there is a stop."
+        "en": "Over there is a stop.",
+        "es": "Allí hay una parada."
       }
     ]
   },
@@ -81,12 +95,14 @@
     "id": "accusative",
     "title": {
       "en": "Accusative: den & einen",
-      "de": "Akkusativ: den & einen"
+      "de": "Akkusativ: den & einen",
+      "es": "Acusativo: den y einen"
     },
     "emoji": "🎯",
     "rule": {
       "en": "After verbs like haben, kaufen, sehen only masculine articles change: der → den, ein → einen. die, das, eine stay the same.",
-      "de": "Nach Verben wie haben, kaufen, sehen ändert sich nur das Maskulinum: der → den, ein → einen. die, das, eine bleiben gleich."
+      "de": "Nach Verben wie haben, kaufen, sehen ändert sich nur das Maskulinum: der → den, ein → einen. die, das, eine bleiben gleich.",
+      "es": "Después de verbos como haben, kaufen o sehen solo cambia el masculino: der → den, ein → einen. die, das y eine no cambian."
     },
     "options": [
       "der",
@@ -99,6 +115,7 @@
         "q": "Ich habe ___ Hund.",
         "a": "einen",
         "en": "I have a dog.",
+        "es": "Tengo un perro.",
         "options": [
           "ein",
           "einen",
@@ -109,6 +126,7 @@
         "q": "Ich kaufe ___ Apfel.",
         "a": "einen",
         "en": "I am buying an apple.",
+        "es": "Compro una manzana.",
         "options": [
           "ein",
           "einen",
@@ -119,6 +137,7 @@
         "q": "Ich brauche ___ Fahrkarte.",
         "a": "eine",
         "en": "I need a ticket.",
+        "es": "Necesito un billete.",
         "options": [
           "ein",
           "einen",
@@ -129,6 +148,7 @@
         "q": "Wir haben ___ Garten.",
         "a": "einen",
         "en": "We have a garden.",
+        "es": "Tenemos un jardín.",
         "options": [
           "ein",
           "einen",
@@ -139,6 +159,7 @@
         "q": "Ich möchte ___ Brötchen.",
         "a": "ein",
         "en": "I would like a bread roll.",
+        "es": "Quisiera un panecillo.",
         "options": [
           "ein",
           "einen",
@@ -149,6 +170,7 @@
         "q": "Ich habe ___ Bruder.",
         "a": "einen",
         "en": "I have a brother.",
+        "es": "Tengo un hermano.",
         "options": [
           "ein",
           "einen",
@@ -159,6 +181,7 @@
         "q": "Sie kauft ___ Jacke.",
         "a": "eine",
         "en": "She is buying a jacket.",
+        "es": "Ella compra una chaqueta.",
         "options": [
           "ein",
           "einen",
@@ -168,37 +191,44 @@
       {
         "q": "Er sucht ___ Schlüssel.",
         "a": "den",
-        "en": "He is looking for the key."
+        "en": "He is looking for the key.",
+        "es": "Él busca la llave."
       },
       {
         "q": "Siehst du ___ Bus?",
         "a": "den",
-        "en": "Do you see the bus?"
+        "en": "Do you see the bus?",
+        "es": "¿Ves el autobús?"
       },
       {
         "q": "Ich nehme ___ Suppe.",
         "a": "die",
-        "en": "I'll have the soup."
+        "en": "I'll have the soup.",
+        "es": "Tomo la sopa."
       },
       {
         "q": "Wir besuchen ___ Museum.",
         "a": "das",
-        "en": "We are visiting the museum."
+        "en": "We are visiting the museum.",
+        "es": "Visitamos el museo."
       },
       {
         "q": "Ich trinke ___ Kaffee.",
         "a": "den",
-        "en": "I am drinking the coffee."
+        "en": "I am drinking the coffee.",
+        "es": "Bebo el café."
       },
       {
         "q": "Kennst du ___ Lehrer?",
         "a": "den",
-        "en": "Do you know the teacher?"
+        "en": "Do you know the teacher?",
+        "es": "¿Conoces al profesor?"
       },
       {
         "q": "Ich lese ___ Buch.",
         "a": "das",
-        "en": "I am reading the book."
+        "en": "I am reading the book.",
+        "es": "Leo el libro."
       }
     ]
   },
@@ -206,12 +236,14 @@
     "id": "negation",
     "title": {
       "en": "nicht or kein?",
-      "de": "nicht oder kein?"
+      "de": "nicht oder kein?",
+      "es": "¿nicht o kein?"
     },
     "emoji": "🚫",
     "rule": {
       "en": "kein replaces ein (or no article) before a noun: kein, keine, keinen. nicht negates verbs, adjectives and places.",
-      "de": "kein ersetzt ein (oder keinen Artikel) vor einem Nomen: kein, keine, keinen. nicht verneint Verben, Adjektive und Orte."
+      "de": "kein ersetzt ein (oder keinen Artikel) vor einem Nomen: kein, keine, keinen. nicht verneint Verben, Adjektive und Orte.",
+      "es": "kein sustituye a ein (o a la falta de artículo) delante de un sustantivo: kein, keine, keinen. nicht niega verbos, adjetivos y lugares."
     },
     "options": [
       "nicht",
@@ -223,62 +255,74 @@
       {
         "q": "Ich habe ___ Auto.",
         "a": "kein",
-        "en": "I don't have a car."
+        "en": "I don't have a car.",
+        "es": "No tengo coche."
       },
       {
         "q": "Das ist ___ teuer.",
         "a": "nicht",
-        "en": "That isn't expensive."
+        "en": "That isn't expensive.",
+        "es": "Eso no es caro."
       },
       {
         "q": "Ich trinke ___ Kaffee.",
         "a": "keinen",
-        "en": "I don't drink coffee."
+        "en": "I don't drink coffee.",
+        "es": "No bebo café."
       },
       {
         "q": "Er kommt heute ___.",
         "a": "nicht",
-        "en": "He isn't coming today."
+        "en": "He isn't coming today.",
+        "es": "Hoy no viene."
       },
       {
         "q": "Wir haben ___ Zeit.",
         "a": "keine",
-        "en": "We don't have time."
+        "en": "We don't have time.",
+        "es": "No tenemos tiempo."
       },
       {
         "q": "Ich verstehe das ___.",
         "a": "nicht",
-        "en": "I don't understand that."
+        "en": "I don't understand that.",
+        "es": "No entiendo eso."
       },
       {
         "q": "Das ist ___ Hund, das ist ein Wolf.",
         "a": "kein",
-        "en": "That isn't a dog, that's a wolf."
+        "en": "That isn't a dog, that's a wolf.",
+        "es": "Eso no es un perro, es un lobo."
       },
       {
         "q": "Sie hat ___ Geschwister.",
         "a": "keine",
-        "en": "She doesn't have any siblings."
+        "en": "She doesn't have any siblings.",
+        "es": "No tiene hermanos."
       },
       {
         "q": "Ich bin ___ müde.",
         "a": "nicht",
-        "en": "I'm not tired."
+        "en": "I'm not tired.",
+        "es": "No estoy cansado."
       },
       {
         "q": "Das Wetter ist ___ schön.",
         "a": "nicht",
-        "en": "The weather isn't nice."
+        "en": "The weather isn't nice.",
+        "es": "No hace buen tiempo."
       },
       {
         "q": "Ich brauche ___ Tasche.",
         "a": "keine",
-        "en": "I don't need a bag."
+        "en": "I don't need a bag.",
+        "es": "No necesito un bolso."
       },
       {
         "q": "Ich wohne ___ in Berlin.",
         "a": "nicht",
-        "en": "I don't live in Berlin."
+        "en": "I don't live in Berlin.",
+        "es": "No vivo en Berlín."
       }
     ]
   },
@@ -286,12 +330,14 @@
     "id": "possessive",
     "title": {
       "en": "mein, dein, sein, ihr",
-      "de": "mein, dein, sein, ihr"
+      "de": "mein, dein, sein, ihr",
+      "es": "mein, dein, sein, ihr"
     },
     "emoji": "👜",
     "rule": {
       "en": "Possessives work like ein: mein/dein/sein/ihr before der and das nouns, meine/deine/seine/ihre before die nouns and plurals. sein = his, ihr = her.",
-      "de": "Possessivartikel funktionieren wie ein: mein/dein/sein/ihr vor der und das, meine/deine/seine/ihre vor die und im Plural. sein = von ihm, ihr = von ihr."
+      "de": "Possessivartikel funktionieren wie ein: mein/dein/sein/ihr vor der und das, meine/deine/seine/ihre vor die und im Plural. sein = von ihm, ihr = von ihr.",
+      "es": "Los posesivos funcionan como ein: mein/dein/sein/ihr delante de der y das, meine/deine/seine/ihre delante de die y en plural. sein = de él, ihr = de ella."
     },
     "options": [
       "mein",
@@ -301,17 +347,20 @@
       {
         "q": "Das ist ___ Mutter.",
         "a": "meine",
-        "en": "This is my mother."
+        "en": "This is my mother.",
+        "es": "Esta es mi madre."
       },
       {
         "q": "Das ist ___ Vater.",
         "a": "mein",
-        "en": "This is my father."
+        "en": "This is my father.",
+        "es": "Este es mi padre."
       },
       {
         "q": "___ Haus ist groß.",
         "a": "Mein",
         "en": "My house is big.",
+        "es": "Mi casa es grande.",
         "options": [
           "Mein",
           "Meine"
@@ -320,17 +369,20 @@
       {
         "q": "Das sind ___ Eltern.",
         "a": "meine",
-        "en": "These are my parents."
+        "en": "These are my parents.",
+        "es": "Estos son mis padres."
       },
       {
         "q": "Das ist ___ Kind.",
         "a": "mein",
-        "en": "This is my child."
+        "en": "This is my child.",
+        "es": "Este es mi hijo."
       },
       {
         "q": "Wie ist ___ Name?",
         "a": "dein",
         "en": "What is your name?",
+        "es": "¿Cuál es tu nombre?",
         "options": [
           "dein",
           "deine"
@@ -340,6 +392,7 @@
         "q": "Ist das ___ Tasche?",
         "a": "deine",
         "en": "Is that your bag?",
+        "es": "¿Es ese tu bolso?",
         "options": [
           "dein",
           "deine"
@@ -349,6 +402,7 @@
         "q": "Ist das ___ Hund?",
         "a": "dein",
         "en": "Is that your dog?",
+        "es": "¿Es ese tu perro?",
         "options": [
           "dein",
           "deine"
@@ -358,6 +412,7 @@
         "q": "Das ist Tom und das ist ___ Schwester.",
         "a": "seine",
         "en": "This is Tom and this is his sister.",
+        "es": "Este es Tom y esta es su hermana.",
         "options": [
           "sein",
           "seine",
@@ -369,6 +424,7 @@
         "q": "Das ist Anna und das ist ___ Bruder.",
         "a": "ihr",
         "en": "This is Anna and this is her brother.",
+        "es": "Esta es Anna y este es su hermano.",
         "options": [
           "sein",
           "seine",
@@ -380,6 +436,7 @@
         "q": "Das ist Maria. ___ Auto ist rot.",
         "a": "Ihr",
         "en": "This is Maria. Her car is red.",
+        "es": "Esta es María. Su coche es rojo.",
         "options": [
           "Sein",
           "Seine",
@@ -391,6 +448,7 @@
         "q": "Das ist Peter. ___ Wohnung ist klein.",
         "a": "Seine",
         "en": "This is Peter. His flat is small.",
+        "es": "Este es Peter. Su piso es pequeño.",
         "options": [
           "Sein",
           "Seine",
@@ -404,12 +462,14 @@
     "id": "pronouns",
     "title": {
       "en": "er, sie or es?",
-      "de": "er, sie oder es?"
+      "de": "er, sie oder es?",
+      "es": "¿er, sie o es?"
     },
     "emoji": "👉",
     "rule": {
       "en": "A pronoun follows the noun’s article: der → er, die → sie, das → es. Even das Mädchen → es.",
-      "de": "Das Pronomen richtet sich nach dem Artikel: der → er, die → sie, das → es. Auch das Mädchen → es."
+      "de": "Das Pronomen richtet sich nach dem Artikel: der → er, die → sie, das → es. Auch das Mädchen → es.",
+      "es": "El pronombre sigue al artículo del sustantivo: der → er, die → sie, das → es. Incluso das Mädchen → es."
     },
     "options": [
       "Er",
@@ -420,62 +480,74 @@
       {
         "q": "Der Tisch ist neu. ___ ist sehr schön.",
         "a": "Er",
-        "en": "The table is new. It is very nice."
+        "en": "The table is new. It is very nice.",
+        "es": "La mesa es nueva. Es muy bonita."
       },
       {
         "q": "Die Lampe ist kaputt. ___ ist alt.",
         "a": "Sie",
-        "en": "The lamp is broken. It is old."
+        "en": "The lamp is broken. It is old.",
+        "es": "La lámpara está rota. Es vieja."
       },
       {
         "q": "Das Auto ist rot. ___ ist schnell.",
         "a": "Es",
-        "en": "The car is red. It is fast."
+        "en": "The car is red. It is fast.",
+        "es": "El coche es rojo. Es rápido."
       },
       {
         "q": "Wo ist der Bahnhof? ___ ist dort.",
         "a": "Er",
-        "en": "Where is the station? It is over there."
+        "en": "Where is the station? It is over there.",
+        "es": "¿Dónde está la estación? Está allí."
       },
       {
         "q": "Die Suppe ist heiß. ___ ist gut.",
         "a": "Sie",
-        "en": "The soup is hot. It is good."
+        "en": "The soup is hot. It is good.",
+        "es": "La sopa está caliente. Está buena."
       },
       {
         "q": "Das Kind spielt. ___ ist sechs Jahre alt.",
         "a": "Es",
-        "en": "The child is playing. It is six years old."
+        "en": "The child is playing. It is six years old.",
+        "es": "El niño juega. Tiene seis años."
       },
       {
         "q": "Das Mädchen heißt Lea. ___ ist nett.",
         "a": "Es",
-        "en": "The girl is called Lea. She is nice."
+        "en": "The girl is called Lea. She is nice.",
+        "es": "La chica se llama Lea. Es simpática."
       },
       {
         "q": "Der Kaffee ist kalt. ___ schmeckt nicht.",
         "a": "Er",
-        "en": "The coffee is cold. It doesn't taste good."
+        "en": "The coffee is cold. It doesn't taste good.",
+        "es": "El café está frío. No sabe bien."
       },
       {
         "q": "Die Jacke kostet 50 Euro. ___ ist teuer.",
         "a": "Sie",
-        "en": "The jacket costs 50 euros. It is expensive."
+        "en": "The jacket costs 50 euros. It is expensive.",
+        "es": "La chaqueta cuesta 50 euros. Es cara."
       },
       {
         "q": "Der Hund ist klein. ___ heißt Bello.",
         "a": "Er",
-        "en": "The dog is small. It is called Bello."
+        "en": "The dog is small. It is called Bello.",
+        "es": "El perro es pequeño. Se llama Bello."
       },
       {
         "q": "Die Wohnung ist groß. ___ hat drei Zimmer.",
         "a": "Sie",
-        "en": "The flat is big. It has three rooms."
+        "en": "The flat is big. It has three rooms.",
+        "es": "El piso es grande. Tiene tres habitaciones."
       },
       {
         "q": "Das Museum ist neu. ___ ist sehr groß.",
         "a": "Es",
-        "en": "The museum is new. It is very big."
+        "en": "The museum is new. It is very big.",
+        "es": "El museo es nuevo. Es muy grande."
       }
     ]
   },
@@ -483,12 +555,14 @@
     "id": "questions",
     "title": {
       "en": "Question words",
-      "de": "W-Fragen"
+      "de": "W-Fragen",
+      "es": "Palabras interrogativas"
     },
     "emoji": "❓",
     "rule": {
       "en": "Wer = who, Was = what, Wo = where, Woher = where from, Wohin = where to, Wann = when, Wie = how, Wie viel = how much.",
-      "de": "Wer = Person, Was = Sache, Wo = Ort, Woher = Herkunft, Wohin = Richtung, Wann = Zeit, Wie = Art und Weise, Wie viel = Menge."
+      "de": "Wer = Person, Was = Sache, Wo = Ort, Woher = Herkunft, Wohin = Richtung, Wann = Zeit, Wie = Art und Weise, Wie viel = Menge.",
+      "es": "Wer = quién, Was = qué, Wo = dónde, Woher = de dónde, Wohin = adónde, Wann = cuándo, Wie = cómo, Wie viel = cuánto."
     },
     "options": [
       "Wer",
@@ -504,67 +578,80 @@
       {
         "q": "___ heißt du? – Ich heiße Tom.",
         "a": "Wie",
-        "en": "What's your name? – My name is Tom."
+        "en": "What's your name? – My name is Tom.",
+        "es": "¿Cómo te llamas? – Me llamo Tom."
       },
       {
         "q": "___ kommst du? – Aus Spanien.",
         "a": "Woher",
-        "en": "Where are you from? – From Spain."
+        "en": "Where are you from? – From Spain.",
+        "es": "¿De dónde eres? – De España."
       },
       {
         "q": "___ wohnst du? – In Berlin.",
         "a": "Wo",
-        "en": "Where do you live? – In Berlin."
+        "en": "Where do you live? – In Berlin.",
+        "es": "¿Dónde vives? – En Berlín."
       },
       {
         "q": "___ ist das? – Das ist Herr Müller.",
         "a": "Wer",
-        "en": "Who is that? – That is Mr Müller."
+        "en": "Who is that? – That is Mr Müller.",
+        "es": "¿Quién es? – Es el señor Müller."
       },
       {
         "q": "___ machst du am Wochenende? – Ich spiele Fußball.",
         "a": "Was",
-        "en": "What are you doing at the weekend? – I am playing football."
+        "en": "What are you doing at the weekend? – I am playing football.",
+        "es": "¿Qué haces el fin de semana? – Juego al fútbol."
       },
       {
         "q": "___ fährt der Zug? – Um acht Uhr.",
         "a": "Wann",
-        "en": "When does the train leave? – At eight o’clock."
+        "en": "When does the train leave? – At eight o’clock.",
+        "es": "¿Cuándo sale el tren? – A las ocho."
       },
       {
         "q": "___ Geld hast du? – Zehn Euro.",
         "a": "Wie viel",
-        "en": "How much money do you have? – Ten euros."
+        "en": "How much money do you have? – Ten euros.",
+        "es": "¿Cuánto dinero tienes? – Diez euros."
       },
       {
         "q": "___ gehst du? – Ins Kino.",
         "a": "Wohin",
-        "en": "Where are you going? – To the cinema."
+        "en": "Where are you going? – To the cinema.",
+        "es": "¿Adónde vas? – Al cine."
       },
       {
         "q": "___ alt bist du? – Zwanzig.",
         "a": "Wie",
-        "en": "How old are you? – Twenty."
+        "en": "How old are you? – Twenty.",
+        "es": "¿Cuántos años tienes? – Veinte."
       },
       {
         "q": "___ trinkst du? – Kaffee.",
         "a": "Was",
-        "en": "What are you drinking? – Coffee."
+        "en": "What are you drinking? – Coffee.",
+        "es": "¿Qué bebes? – Café."
       },
       {
         "q": "___ ist der Bahnhof? – Dort links.",
         "a": "Wo",
-        "en": "Where is the station? – Over there on the left."
+        "en": "Where is the station? – Over there on the left.",
+        "es": "¿Dónde está la estación? – Allí a la izquierda."
       },
       {
         "q": "___ beginnt der Kurs? – Um neun Uhr.",
         "a": "Wann",
-        "en": "When does the course start? – At nine o’clock."
+        "en": "When does the course start? – At nine o’clock.",
+        "es": "¿Cuándo empieza el curso? – A las nueve."
       },
       {
         "q": "___ ist dein Lehrer? – Herr Schmidt.",
         "a": "Wer",
-        "en": "Who is your teacher? – Mr Schmidt."
+        "en": "Who is your teacher? – Mr Schmidt.",
+        "es": "¿Quién es tu profesor? – El señor Schmidt."
       }
     ]
   },
@@ -572,12 +659,14 @@
     "id": "timeprep",
     "title": {
       "en": "am, um or im?",
-      "de": "am, um oder im?"
+      "de": "am, um oder im?",
+      "es": "¿am, um o im?"
     },
     "emoji": "📆",
     "rule": {
       "en": "um + clock time (um 8 Uhr), am + days and parts of the day (am Montag, am Abend), im + months and seasons (im Mai, im Winter).",
-      "de": "um + Uhrzeit (um 8 Uhr), am + Tage und Tageszeiten (am Montag, am Abend), im + Monate und Jahreszeiten (im Mai, im Winter)."
+      "de": "um + Uhrzeit (um 8 Uhr), am + Tage und Tageszeiten (am Montag, am Abend), im + Monate und Jahreszeiten (im Mai, im Winter).",
+      "es": "um + hora (um 8 Uhr), am + días y partes del día (am Montag, am Abend), im + meses y estaciones (im Mai, im Winter)."
     },
     "options": [
       "am",
@@ -588,12 +677,14 @@
       {
         "q": "Der Kurs beginnt ___ neun Uhr.",
         "a": "um",
-        "en": "The course starts at nine o’clock."
+        "en": "The course starts at nine o’clock.",
+        "es": "El curso empieza a las nueve."
       },
       {
         "q": "___ Montag habe ich Zeit.",
         "a": "Am",
         "en": "On Monday I have time.",
+        "es": "El lunes tengo tiempo.",
         "options": [
           "Am",
           "Um",
@@ -603,17 +694,20 @@
       {
         "q": "Ich habe ___ Juli Urlaub.",
         "a": "im",
-        "en": "I have holiday in July."
+        "en": "I have holiday in July.",
+        "es": "En julio tengo vacaciones."
       },
       {
         "q": "Wir essen ___ zwölf Uhr.",
         "a": "um",
-        "en": "We eat at twelve o’clock."
+        "en": "We eat at twelve o’clock.",
+        "es": "Comemos a las doce."
       },
       {
         "q": "___ Wochenende spiele ich Fußball.",
         "a": "Am",
         "en": "At the weekend I play football.",
+        "es": "El fin de semana juego al fútbol.",
         "options": [
           "Am",
           "Um",
@@ -624,6 +718,7 @@
         "q": "___ Winter schneit es.",
         "a": "Im",
         "en": "In winter it snows.",
+        "es": "En invierno nieva.",
         "options": [
           "Am",
           "Um",
@@ -633,17 +728,20 @@
       {
         "q": "Er kommt ___ Freitag.",
         "a": "am",
-        "en": "He is coming on Friday."
+        "en": "He is coming on Friday.",
+        "es": "Viene el viernes."
       },
       {
         "q": "Ich lerne ___ Abend.",
         "a": "am",
-        "en": "I study in the evening."
+        "en": "I study in the evening.",
+        "es": "Estudio por la noche."
       },
       {
         "q": "___ Sommer ist es warm.",
         "a": "Im",
         "en": "In summer it is warm.",
+        "es": "En verano hace calor.",
         "options": [
           "Am",
           "Um",
@@ -653,17 +751,20 @@
       {
         "q": "Mein Geburtstag ist ___ Mai.",
         "a": "im",
-        "en": "My birthday is in May."
+        "en": "My birthday is in May.",
+        "es": "Mi cumpleaños es en mayo."
       },
       {
         "q": "Wir treffen uns ___ halb drei.",
         "a": "um",
-        "en": "We are meeting at half past two."
+        "en": "We are meeting at half past two.",
+        "es": "Quedamos a las dos y media."
       },
       {
         "q": "Der Film beginnt ___ acht Uhr.",
         "a": "um",
-        "en": "The film starts at eight o’clock."
+        "en": "The film starts at eight o’clock.",
+        "es": "La película empieza a las ocho."
       }
     ]
   },
@@ -671,12 +772,14 @@
     "id": "separable",
     "title": {
       "en": "Separable verbs",
-      "de": "Trennbare Verben"
+      "de": "Trennbare Verben",
+      "es": "Verbos separables"
     },
     "emoji": "✂️",
     "rule": {
       "en": "In a main clause the prefix goes to the end: aufstehen → Ich stehe um 7 Uhr auf.",
-      "de": "Im Hauptsatz steht die Vorsilbe am Ende: aufstehen → Ich stehe um 7 Uhr auf."
+      "de": "Im Hauptsatz steht die Vorsilbe am Ende: aufstehen → Ich stehe um 7 Uhr auf.",
+      "es": "En la oración principal, el prefijo va al final: aufstehen → Ich stehe um 7 Uhr auf."
     },
     "options": [],
     "shuffle": true,
@@ -685,6 +788,7 @@
         "q": "aufstehen",
         "a": "Ich stehe um sieben Uhr auf.",
         "en": "I get up at seven.",
+        "es": "Me levanto a las siete.",
         "options": [
           "Ich stehe um sieben Uhr auf.",
           "Ich aufstehe um sieben Uhr.",
@@ -695,6 +799,7 @@
         "q": "einkaufen",
         "a": "Wir kaufen am Samstag ein.",
         "en": "We go shopping on Saturday.",
+        "es": "Hacemos la compra el sábado.",
         "options": [
           "Wir kaufen am Samstag ein.",
           "Wir einkaufen am Samstag.",
@@ -705,6 +810,7 @@
         "q": "anrufen",
         "a": "Ich rufe dich morgen an.",
         "en": "I'll call you tomorrow.",
+        "es": "Te llamo mañana.",
         "options": [
           "Ich rufe dich morgen an.",
           "Ich anrufe dich morgen.",
@@ -715,6 +821,7 @@
         "q": "fernsehen",
         "a": "Er sieht am Abend fern.",
         "en": "He watches TV in the evening.",
+        "es": "Él ve la tele por la noche.",
         "options": [
           "Er sieht am Abend fern.",
           "Er fernsieht am Abend.",
@@ -725,6 +832,7 @@
         "q": "ankommen",
         "a": "Der Zug kommt um zehn Uhr an.",
         "en": "The train arrives at ten.",
+        "es": "El tren llega a las diez.",
         "options": [
           "Der Zug kommt um zehn Uhr an.",
           "Der Zug ankommt um zehn Uhr.",
@@ -735,6 +843,7 @@
         "q": "aufräumen",
         "a": "Ich räume mein Zimmer auf.",
         "en": "I am tidying my room.",
+        "es": "Ordeno mi habitación.",
         "options": [
           "Ich räume mein Zimmer auf.",
           "Ich aufräume mein Zimmer.",
@@ -745,6 +854,7 @@
         "q": "mitkommen",
         "a": "Kommst du mit?",
         "en": "Are you coming along?",
+        "es": "¿Vienes con nosotros?",
         "options": [
           "Kommst du mit?",
           "Mitkommst du?",
@@ -755,6 +865,7 @@
         "q": "abfahren",
         "a": "Der Bus fährt um fünf Uhr ab.",
         "en": "The bus leaves at five.",
+        "es": "El autobús sale a las cinco.",
         "options": [
           "Der Bus fährt um fünf Uhr ab.",
           "Der Bus abfährt um fünf Uhr.",
@@ -765,6 +876,7 @@
         "q": "anfangen",
         "a": "Der Kurs fängt heute an.",
         "en": "The course starts today.",
+        "es": "El curso empieza hoy.",
         "options": [
           "Der Kurs fängt heute an.",
           "Der Kurs anfängt heute.",
@@ -775,6 +887,7 @@
         "q": "aussteigen",
         "a": "Wir steigen hier aus.",
         "en": "We get off here.",
+        "es": "Nos bajamos aquí.",
         "options": [
           "Wir steigen hier aus.",
           "Wir aussteigen hier.",

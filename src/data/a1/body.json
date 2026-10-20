@@ -2,7 +2,8 @@
   "id": "body",
   "title": {
     "de": "Körper & Gesundheit",
-    "en": "Body & health"
+    "en": "Body & health",
+    "es": "Cuerpo y salud"
   },
   "emoji": "🩺",
   "nouns": [
@@ -10,19 +11,22 @@
       "de": "Körper",
       "article": "der",
       "plural": "Körper",
-      "en": "body"
+      "en": "body",
+      "es": "cuerpo"
     },
     {
       "de": "Kopf",
       "article": "der",
       "plural": "Köpfe",
-      "en": "head"
+      "en": "head",
+      "es": "cabeza"
     },
     {
       "de": "Auge",
       "article": "das",
       "plural": "Augen",
       "en": "eye",
+      "es": "ojo",
       "emoji": "👁️"
     },
     {
@@ -30,6 +34,7 @@
       "article": "das",
       "plural": "Ohren",
       "en": "ear",
+      "es": "oreja",
       "emoji": "👂"
     },
     {
@@ -37,6 +42,7 @@
       "article": "die",
       "plural": "Nasen",
       "en": "nose",
+      "es": "nariz",
       "emoji": "👃"
     },
     {
@@ -44,6 +50,7 @@
       "article": "der",
       "plural": "Münder",
       "en": "mouth",
+      "es": "boca",
       "emoji": "👄"
     },
     {
@@ -51,25 +58,29 @@
       "article": "der",
       "plural": "Zähne",
       "en": "tooth",
+      "es": "diente",
       "emoji": "🦷"
     },
     {
       "de": "Haar",
       "article": "das",
       "plural": "Haare",
-      "en": "hair"
+      "en": "hair",
+      "es": "pelo"
     },
     {
       "de": "Hals",
       "article": "der",
       "plural": "Hälse",
-      "en": "neck, throat"
+      "en": "neck, throat",
+      "es": "cuello, garganta"
     },
     {
       "de": "Arm",
       "article": "der",
       "plural": "Arme",
       "en": "arm",
+      "es": "brazo",
       "emoji": "💪"
     },
     {
@@ -77,6 +88,7 @@
       "article": "die",
       "plural": "Hände",
       "en": "hand",
+      "es": "mano",
       "emoji": "✋"
     },
     {
@@ -84,25 +96,29 @@
       "article": "der",
       "plural": "Finger",
       "en": "finger",
+      "es": "dedo",
       "emoji": "☝️"
     },
     {
       "de": "Bauch",
       "article": "der",
       "plural": "Bäuche",
-      "en": "belly, stomach"
+      "en": "belly, stomach",
+      "es": "barriga"
     },
     {
       "de": "Rücken",
       "article": "der",
       "plural": "Rücken",
-      "en": "back"
+      "en": "back",
+      "es": "espalda"
     },
     {
       "de": "Bein",
       "article": "das",
       "plural": "Beine",
       "en": "leg",
+      "es": "pierna",
       "emoji": "🦵"
     },
     {
@@ -110,19 +126,22 @@
       "article": "der",
       "plural": "Füße",
       "en": "foot",
+      "es": "pie",
       "emoji": "🦶"
     },
     {
       "de": "Knie",
       "article": "das",
       "plural": "Knie",
-      "en": "knee"
+      "en": "knee",
+      "es": "rodilla"
     },
     {
       "de": "Arzt",
       "article": "der",
       "plural": "Ärzte",
       "en": "doctor (male)",
+      "es": "médico",
       "emoji": "🧑‍⚕️"
     },
     {
@@ -130,78 +149,92 @@
       "article": "die",
       "plural": "Ärztinnen",
       "en": "doctor (female)",
+      "es": "médica",
       "emoji": "👩‍⚕️"
     },
     {
       "de": "Praxis",
       "article": "die",
       "plural": "Praxen",
-      "en": "doctor's practice"
+      "en": "doctor's practice",
+      "es": "consultorio"
     },
     {
       "de": "Medikament",
       "article": "das",
       "plural": "Medikamente",
       "en": "medicine",
+      "es": "medicamento",
       "emoji": "💊"
     },
     {
       "de": "Tablette",
       "article": "die",
       "plural": "Tabletten",
-      "en": "pill, tablet"
+      "en": "pill, tablet",
+      "es": "pastilla"
     },
     {
       "de": "Fieber",
       "article": "das",
       "plural": null,
       "en": "fever",
+      "es": "fiebre",
       "emoji": "🤒"
     },
     {
       "de": "Schmerz",
       "article": "der",
       "plural": "Schmerzen",
-      "en": "pain"
+      "en": "pain",
+      "es": "dolor"
     },
     {
       "de": "Husten",
       "article": "der",
       "plural": null,
       "en": "cough",
+      "es": "tos",
       "emoji": "😷"
     },
     {
       "de": "Gesundheit",
       "article": "die",
       "plural": null,
-      "en": "health"
+      "en": "health",
+      "es": "salud"
     }
   ],
   "sentences": [
     {
       "de": "Mein Kopf tut weh.",
-      "en": "My head hurts."
+      "en": "My head hurts.",
+      "es": "Me duele la cabeza."
     },
     {
       "de": "Ich habe Fieber.",
-      "en": "I have a fever."
+      "en": "I have a fever.",
+      "es": "Tengo fiebre."
     },
     {
       "de": "Ich muss zum Arzt.",
-      "en": "I have to go to the doctor."
+      "en": "I have to go to the doctor.",
+      "es": "Tengo que ir al médico."
     },
     {
       "de": "Nimm eine Tablette.",
-      "en": "Take a tablet."
+      "en": "Take a tablet.",
+      "es": "Toma una pastilla."
     },
     {
       "de": "Haben Sie Schmerzen?",
-      "en": "Are you in pain? (formal)"
+      "en": "Are you in pain? (formal)",
+      "es": "¿Tiene dolores?"
     },
     {
       "de": "Meine Hand ist kalt.",
-      "en": "My hand is cold."
+      "en": "My hand is cold.",
+      "es": "Tengo la mano fría."
     }
   ]
 }

@@ -1,6 +1,9 @@
 import { t } from '../lib/i18n';
 import { hasGermanVoice, speak, speechSupported } from '../lib/speech';
-import { progress, resetProgress, updateSettings, type Settings as S } from '../lib/store';
+import { progress, resetProgress, setUiLang, updateSettings, type HintLang, type Settings as S, type UiLang } from '../lib/store';
+
+const LANG_NAMES: Record<UiLang, string> = { en: 'English', de: 'Deutsch', es: 'Español' };
+const HINT_LANGS: HintLang[] = ['en', 'es'];
 
 function Toggle({ label, field }: { label: string; field: 'sound' | 'speech' | 'showHint' }) {
   const s: S = progress.value.settings;
@@ -13,7 +16,7 @@ function Toggle({ label, field }: { label: string; field: 'sound' | 'speech' | '
 }
 
 export function Settings() {
-  const lang = progress.value.settings.uiLang;
+  const { uiLang: lang, hintLang } = progress.value.settings;
   return (
     <div class="screen">
       <h1 class="screen-title">{t('settings')}</h1>
@@ -21,12 +24,21 @@ export function Settings() {
         <div class="setting-row">
           <span>{t('menuLang')}</span>
           <div class="segmented">
-            <button class={lang === 'en' ? 'active' : ''} onClick={() => updateSettings({ uiLang: 'en' })}>
-              English
-            </button>
-            <button class={lang === 'de' ? 'active' : ''} onClick={() => updateSettings({ uiLang: 'de' })}>
-              Deutsch
-            </button>
+            {(Object.keys(LANG_NAMES) as UiLang[]).map((l) => (
+              <button class={lang === l ? 'active' : ''} onClick={() => setUiLang(l)}>
+                {LANG_NAMES[l]}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div class="setting-row">
+          <span>{t('hintLang')}</span>
+          <div class="segmented">
+            {HINT_LANGS.map((l) => (
+              <button class={hintLang === l ? 'active' : ''} onClick={() => updateSettings({ hintLang: l })}>
+                {LANG_NAMES[l]}
+              </button>
+            ))}
           </div>
         </div>
         <Toggle label={t('soundEffects')} field="sound" />

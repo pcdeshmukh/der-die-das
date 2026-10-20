@@ -1,5 +1,6 @@
 import type { ComponentChildren } from 'preact';
 import type { WordRef } from '../data/types';
+import { meaning } from '../lib/i18n';
 import { speak } from '../lib/speech';
 import { progress } from '../lib/store';
 import { NounLabel } from './NounLabel';
@@ -23,7 +24,7 @@ export function NounPrompt({ word, hideArticle = false, children }: { word: Word
         <NounLabel noun={word} hideArticle={hideArticle} />
       </div>
       {children}
-      {progress.value.settings.showHint && <div class="noun-hint">{word.en}</div>}
+      {progress.value.settings.showHint && <div class="noun-hint">{meaning(word)}</div>}
       <SpeakButton text={hideArticle ? word.de : `${word.article} ${word.de}`} />
     </>
   );

@@ -2,7 +2,8 @@
   "id": "home",
   "title": {
     "de": "Wohnen",
-    "en": "Home"
+    "en": "Home",
+    "es": "Vivienda"
   },
   "emoji": "🏠",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "die",
       "plural": "Wohnungen",
       "en": "flat, apartment",
+      "es": "piso, apartamento",
       "emoji": "🏢"
     },
     {
@@ -18,6 +20,7 @@
       "article": "das",
       "plural": "Häuser",
       "en": "house",
+      "es": "casa",
       "emoji": "🏠"
     },
     {
@@ -25,6 +28,7 @@
       "article": "das",
       "plural": "Zimmer",
       "en": "room",
+      "es": "habitación",
       "emoji": "🚪"
     },
     {
@@ -32,6 +36,7 @@
       "article": "die",
       "plural": "Küchen",
       "en": "kitchen",
+      "es": "cocina",
       "emoji": "🍳"
     },
     {
@@ -39,6 +44,7 @@
       "article": "das",
       "plural": "Bäder",
       "en": "bathroom",
+      "es": "baño",
       "emoji": "🛁"
     },
     {
@@ -46,6 +52,7 @@
       "article": "das",
       "plural": "Schlafzimmer",
       "en": "bedroom",
+      "es": "dormitorio",
       "emoji": "🛏️"
     },
     {
@@ -53,19 +60,22 @@
       "article": "das",
       "plural": "Wohnzimmer",
       "en": "living room",
+      "es": "salón",
       "emoji": "🛋️"
     },
     {
       "de": "Balkon",
       "article": "der",
       "plural": "Balkone",
-      "en": "balcony"
+      "en": "balcony",
+      "es": "balcón"
     },
     {
       "de": "Garten",
       "article": "der",
       "plural": "Gärten",
       "en": "garden",
+      "es": "jardín",
       "emoji": "🌻"
     },
     {
@@ -73,6 +83,7 @@
       "article": "die",
       "plural": "Türen",
       "en": "door",
+      "es": "puerta",
       "emoji": "🚪"
     },
     {
@@ -80,19 +91,22 @@
       "article": "das",
       "plural": "Fenster",
       "en": "window",
+      "es": "ventana",
       "emoji": "🪟"
     },
     {
       "de": "Tisch",
       "article": "der",
       "plural": "Tische",
-      "en": "table"
+      "en": "table",
+      "es": "mesa"
     },
     {
       "de": "Stuhl",
       "article": "der",
       "plural": "Stühle",
       "en": "chair",
+      "es": "silla",
       "emoji": "🪑"
     },
     {
@@ -100,19 +114,22 @@
       "article": "das",
       "plural": "Betten",
       "en": "bed",
+      "es": "cama",
       "emoji": "🛏️"
     },
     {
       "de": "Schrank",
       "article": "der",
       "plural": "Schränke",
-      "en": "cupboard, wardrobe"
+      "en": "cupboard, wardrobe",
+      "es": "armario"
     },
     {
       "de": "Sofa",
       "article": "das",
       "plural": "Sofas",
       "en": "sofa",
+      "es": "sofá",
       "emoji": "🛋️"
     },
     {
@@ -120,6 +137,7 @@
       "article": "die",
       "plural": "Lampen",
       "en": "lamp",
+      "es": "lámpara",
       "emoji": "💡"
     },
     {
@@ -127,6 +145,7 @@
       "article": "der",
       "plural": "Kühlschränke",
       "en": "fridge",
+      "es": "nevera",
       "emoji": "🧊"
     },
     {
@@ -134,6 +153,7 @@
       "article": "der",
       "plural": "Herde",
       "en": "cooker, stove",
+      "es": "fogón, hornillo",
       "emoji": "🔥"
     },
     {
@@ -141,6 +161,7 @@
       "article": "die",
       "plural": "Duschen",
       "en": "shower",
+      "es": "ducha",
       "emoji": "🚿"
     },
     {
@@ -148,6 +169,7 @@
       "article": "die",
       "plural": "Toiletten",
       "en": "toilet",
+      "es": "inodoro",
       "emoji": "🚽"
     },
     {
@@ -155,6 +177,7 @@
       "article": "der",
       "plural": "Schlüssel",
       "en": "key",
+      "es": "llave",
       "emoji": "🔑"
     },
     {
@@ -162,6 +185,7 @@
       "article": "die",
       "plural": "Mieten",
       "en": "rent",
+      "es": "alquiler",
       "emoji": "💶"
     },
     {
@@ -169,6 +193,7 @@
       "article": "der",
       "plural": "Fernseher",
       "en": "television set",
+      "es": "televisor",
       "emoji": "📺"
     },
     {
@@ -176,6 +201,7 @@
       "article": "der",
       "plural": "Computer",
       "en": "computer",
+      "es": "ordenador",
       "emoji": "💻"
     },
     {
@@ -183,46 +209,55 @@
       "article": "das",
       "plural": "Regale",
       "en": "shelf",
+      "es": "estantería",
       "emoji": "📚"
     },
     {
       "de": "Treppe",
       "article": "die",
       "plural": "Treppen",
-      "en": "stairs"
+      "en": "stairs",
+      "es": "escalera"
     },
     {
       "de": "Aufzug",
       "article": "der",
       "plural": "Aufzüge",
       "en": "lift, elevator",
+      "es": "ascensor",
       "emoji": "🛗"
     }
   ],
   "sentences": [
     {
       "de": "Meine Wohnung ist klein.",
-      "en": "My flat is small."
+      "en": "My flat is small.",
+      "es": "Mi piso es pequeño."
     },
     {
       "de": "Das Bad ist links.",
-      "en": "The bathroom is on the left."
+      "en": "The bathroom is on the left.",
+      "es": "El baño está a la izquierda."
     },
     {
       "de": "Die Küche hat ein Fenster.",
-      "en": "The kitchen has a window."
+      "en": "The kitchen has a window.",
+      "es": "La cocina tiene una ventana."
     },
     {
       "de": "Wir haben einen Garten.",
-      "en": "We have a garden."
+      "en": "We have a garden.",
+      "es": "Tenemos un jardín."
     },
     {
       "de": "Wo ist der Schlüssel?",
-      "en": "Where is the key?"
+      "en": "Where is the key?",
+      "es": "¿Dónde está la llave?"
     },
     {
       "de": "Das Sofa ist neu.",
-      "en": "The sofa is new."
+      "en": "The sofa is new.",
+      "es": "El sofá es nuevo."
     }
   ]
 }

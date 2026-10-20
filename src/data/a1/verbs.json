@@ -33,6 +33,7 @@
     {
       "infinitive": "sein",
       "en": "to be",
+      "es": "ser, estar",
       "present": [
         "bin",
         "bist",
@@ -45,6 +46,7 @@
     {
       "infinitive": "haben",
       "en": "to have",
+      "es": "tener",
       "present": [
         "habe",
         "hast",
@@ -57,6 +59,7 @@
     {
       "infinitive": "heißen",
       "en": "to be called",
+      "es": "llamarse",
       "present": [
         "heiße",
         "heißt",
@@ -69,6 +72,7 @@
     {
       "infinitive": "wohnen",
       "en": "to live (reside)",
+      "es": "vivir (residir)",
       "present": [
         "wohne",
         "wohnst",
@@ -81,6 +85,7 @@
     {
       "infinitive": "kommen",
       "en": "to come",
+      "es": "venir",
       "present": [
         "komme",
         "kommst",
@@ -93,6 +98,7 @@
     {
       "infinitive": "machen",
       "en": "to do, to make",
+      "es": "hacer",
       "present": [
         "mache",
         "machst",
@@ -105,6 +111,7 @@
     {
       "infinitive": "spielen",
       "en": "to play",
+      "es": "jugar, tocar",
       "present": [
         "spiele",
         "spielst",
@@ -117,6 +124,7 @@
     {
       "infinitive": "lernen",
       "en": "to learn",
+      "es": "aprender",
       "present": [
         "lerne",
         "lernst",
@@ -129,6 +137,7 @@
     {
       "infinitive": "kaufen",
       "en": "to buy",
+      "es": "comprar",
       "present": [
         "kaufe",
         "kaufst",
@@ -141,6 +150,7 @@
     {
       "infinitive": "trinken",
       "en": "to drink",
+      "es": "beber",
       "present": [
         "trinke",
         "trinkst",
@@ -153,6 +163,7 @@
     {
       "infinitive": "gehen",
       "en": "to go, to walk",
+      "es": "ir, caminar",
       "present": [
         "gehe",
         "gehst",
@@ -165,6 +176,7 @@
     {
       "infinitive": "kochen",
       "en": "to cook",
+      "es": "cocinar",
       "present": [
         "koche",
         "kochst",
@@ -177,6 +189,7 @@
     {
       "infinitive": "hören",
       "en": "to hear, to listen",
+      "es": "oír, escuchar",
       "present": [
         "höre",
         "hörst",
@@ -189,6 +202,7 @@
     {
       "infinitive": "brauchen",
       "en": "to need",
+      "es": "necesitar",
       "present": [
         "brauche",
         "brauchst",
@@ -201,6 +215,7 @@
     {
       "infinitive": "fragen",
       "en": "to ask",
+      "es": "preguntar",
       "present": [
         "frage",
         "fragst",
@@ -213,6 +228,7 @@
     {
       "infinitive": "tanzen",
       "en": "to dance",
+      "es": "bailar",
       "present": [
         "tanze",
         "tanzt",
@@ -225,6 +241,7 @@
     {
       "infinitive": "arbeiten",
       "en": "to work",
+      "es": "trabajar",
       "present": [
         "arbeite",
         "arbeitest",
@@ -237,6 +254,7 @@
     {
       "infinitive": "warten",
       "en": "to wait",
+      "es": "esperar",
       "present": [
         "warte",
         "wartest",
@@ -249,6 +267,7 @@
     {
       "infinitive": "finden",
       "en": "to find",
+      "es": "encontrar",
       "present": [
         "finde",
         "findest",
@@ -261,6 +280,7 @@
     {
       "infinitive": "essen",
       "en": "to eat",
+      "es": "comer",
       "present": [
         "esse",
         "isst",
@@ -273,6 +293,7 @@
     {
       "infinitive": "fahren",
       "en": "to drive, to go (by vehicle)",
+      "es": "conducir, ir (en vehículo)",
       "present": [
         "fahre",
         "fährst",
@@ -285,6 +306,7 @@
     {
       "infinitive": "schlafen",
       "en": "to sleep",
+      "es": "dormir",
       "present": [
         "schlafe",
         "schläfst",
@@ -297,6 +319,7 @@
     {
       "infinitive": "laufen",
       "en": "to run, to walk",
+      "es": "correr, andar",
       "present": [
         "laufe",
         "läufst",
@@ -309,6 +332,7 @@
     {
       "infinitive": "tragen",
       "en": "to carry, to wear",
+      "es": "llevar",
       "present": [
         "trage",
         "trägst",
@@ -321,6 +345,7 @@
     {
       "infinitive": "lesen",
       "en": "to read",
+      "es": "leer",
       "present": [
         "lese",
         "liest",
@@ -333,6 +358,7 @@
     {
       "infinitive": "sehen",
       "en": "to see",
+      "es": "ver",
       "present": [
         "sehe",
         "siehst",
@@ -345,6 +371,7 @@
     {
       "infinitive": "sprechen",
       "en": "to speak",
+      "es": "hablar",
       "present": [
         "spreche",
         "sprichst",
@@ -357,6 +384,7 @@
     {
       "infinitive": "nehmen",
       "en": "to take",
+      "es": "tomar, coger",
       "present": [
         "nehme",
         "nimmst",
@@ -369,6 +397,7 @@
     {
       "infinitive": "geben",
       "en": "to give",
+      "es": "dar",
       "present": [
         "gebe",
         "gibst",
@@ -381,6 +410,7 @@
     {
       "infinitive": "helfen",
       "en": "to help",
+      "es": "ayudar",
       "present": [
         "helfe",
         "hilfst",
@@ -393,6 +423,7 @@
     {
       "infinitive": "treffen",
       "en": "to meet",
+      "es": "quedar con, encontrarse",
       "present": [
         "treffe",
         "triffst",
@@ -405,6 +436,7 @@
     {
       "infinitive": "wissen",
       "en": "to know (a fact)",
+      "es": "saber",
       "present": [
         "weiß",
         "weißt",
@@ -417,6 +449,7 @@
     {
       "infinitive": "können",
       "en": "can, to be able to",
+      "es": "poder",
       "present": [
         "kann",
         "kannst",
@@ -429,6 +462,7 @@
     {
       "infinitive": "müssen",
       "en": "must, to have to",
+      "es": "tener que, deber",
       "present": [
         "muss",
         "musst",
@@ -441,6 +475,7 @@
     {
       "infinitive": "wollen",
       "en": "to want",
+      "es": "querer",
       "present": [
         "will",
         "willst",
@@ -453,6 +488,7 @@
     {
       "infinitive": "mögen",
       "en": "to like",
+      "es": "gustar",
       "present": [
         "mag",
         "magst",
@@ -465,6 +501,7 @@
     {
       "infinitive": "möchten",
       "en": "would like",
+      "es": "querría, quisiera",
       "present": [
         "möchte",
         "möchtest",

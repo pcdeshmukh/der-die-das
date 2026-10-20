@@ -2,7 +2,8 @@
   "id": "transport",
   "title": {
     "de": "Verkehr & Reisen",
-    "en": "Transport & travel"
+    "en": "Transport & travel",
+    "es": "Transporte y viajes"
   },
   "emoji": "🚆",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "das",
       "plural": "Autos",
       "en": "car",
+      "es": "coche",
       "emoji": "🚗"
     },
     {
@@ -18,6 +20,7 @@
       "article": "der",
       "plural": "Busse",
       "en": "bus",
+      "es": "autobús",
       "emoji": "🚌"
     },
     {
@@ -25,6 +28,7 @@
       "article": "der",
       "plural": "Züge",
       "en": "train",
+      "es": "tren",
       "emoji": "🚆"
     },
     {
@@ -32,6 +36,7 @@
       "article": "die",
       "plural": "Bahnen",
       "en": "railway",
+      "es": "ferrocarril",
       "emoji": "🛤️"
     },
     {
@@ -39,19 +44,22 @@
       "article": "die",
       "plural": "U-Bahnen",
       "en": "underground, subway",
+      "es": "metro",
       "emoji": "🚇"
     },
     {
       "de": "S-Bahn",
       "article": "die",
       "plural": "S-Bahnen",
-      "en": "suburban train"
+      "en": "suburban train",
+      "es": "tren de cercanías"
     },
     {
       "de": "Straßenbahn",
       "article": "die",
       "plural": "Straßenbahnen",
       "en": "tram",
+      "es": "tranvía",
       "emoji": "🚊"
     },
     {
@@ -59,6 +67,7 @@
       "article": "das",
       "plural": "Taxis",
       "en": "taxi",
+      "es": "taxi",
       "emoji": "🚕"
     },
     {
@@ -66,6 +75,7 @@
       "article": "das",
       "plural": "Fahrräder",
       "en": "bicycle",
+      "es": "bicicleta",
       "emoji": "🚲"
     },
     {
@@ -73,6 +83,7 @@
       "article": "das",
       "plural": "Flugzeuge",
       "en": "plane",
+      "es": "avión",
       "emoji": "✈️"
     },
     {
@@ -80,6 +91,7 @@
       "article": "das",
       "plural": "Schiffe",
       "en": "ship",
+      "es": "barco",
       "emoji": "🚢"
     },
     {
@@ -87,6 +99,7 @@
       "article": "das",
       "plural": "Motorräder",
       "en": "motorbike",
+      "es": "moto",
       "emoji": "🏍️"
     },
     {
@@ -94,6 +107,7 @@
       "article": "die",
       "plural": "Fahrkarten",
       "en": "ticket",
+      "es": "billete",
       "emoji": "🎫"
     },
     {
@@ -101,25 +115,29 @@
       "article": "die",
       "plural": "Haltestellen",
       "en": "stop (bus, tram)",
+      "es": "parada",
       "emoji": "🚏"
     },
     {
       "de": "Fahrplan",
       "article": "der",
       "plural": "Fahrpläne",
-      "en": "timetable"
+      "en": "timetable",
+      "es": "horario"
     },
     {
       "de": "Gleis",
       "article": "das",
       "plural": "Gleise",
-      "en": "platform, track"
+      "en": "platform, track",
+      "es": "andén, vía"
     },
     {
       "de": "Reise",
       "article": "die",
       "plural": "Reisen",
       "en": "trip, journey",
+      "es": "viaje",
       "emoji": "🗺️"
     },
     {
@@ -127,6 +145,7 @@
       "article": "der",
       "plural": "Urlaube",
       "en": "holiday, vacation",
+      "es": "vacaciones",
       "emoji": "🏖️"
     },
     {
@@ -134,6 +153,7 @@
       "article": "der",
       "plural": "Koffer",
       "en": "suitcase",
+      "es": "maleta",
       "emoji": "🧳"
     },
     {
@@ -141,6 +161,7 @@
       "article": "die",
       "plural": "Abfahrten",
       "en": "departure",
+      "es": "salida",
       "emoji": "🛫"
     },
     {
@@ -148,19 +169,22 @@
       "article": "die",
       "plural": "Ankünfte",
       "en": "arrival",
+      "es": "llegada",
       "emoji": "🛬"
     },
     {
       "de": "Fahrer",
       "article": "der",
       "plural": "Fahrer",
-      "en": "driver (male)"
+      "en": "driver (male)",
+      "es": "conductor"
     },
     {
       "de": "Parkplatz",
       "article": "der",
       "plural": "Parkplätze",
       "en": "car park, parking space",
+      "es": "aparcamiento",
       "emoji": "🅿️"
     },
     {
@@ -168,33 +192,40 @@
       "article": "die",
       "plural": "Tankstellen",
       "en": "petrol station",
+      "es": "gasolinera",
       "emoji": "⛽"
     }
   ],
   "sentences": [
     {
       "de": "Ich fahre mit dem Bus.",
-      "en": "I go by bus."
+      "en": "I go by bus.",
+      "es": "Voy en autobús."
     },
     {
       "de": "Der Zug kommt um acht Uhr.",
-      "en": "The train arrives at eight o'clock."
+      "en": "The train arrives at eight o'clock.",
+      "es": "El tren llega a las ocho."
     },
     {
       "de": "Wo ist die Haltestelle?",
-      "en": "Where is the stop?"
+      "en": "Where is the stop?",
+      "es": "¿Dónde está la parada?"
     },
     {
       "de": "Ich brauche eine Fahrkarte.",
-      "en": "I need a ticket."
+      "en": "I need a ticket.",
+      "es": "Necesito un billete."
     },
     {
       "de": "Wir fliegen nach Berlin.",
-      "en": "We are flying to Berlin."
+      "en": "We are flying to Berlin.",
+      "es": "Volamos a Berlín."
     },
     {
       "de": "Mein Fahrrad ist kaputt.",
-      "en": "My bicycle is broken."
+      "en": "My bicycle is broken.",
+      "es": "Mi bicicleta está rota."
     }
   ]
 }

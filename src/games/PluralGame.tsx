@@ -3,6 +3,7 @@ import { NounLabel } from '../components/NounLabel';
 import { NounPrompt } from '../components/NounPrompt';
 import type { WordRef } from '../data/types';
 import { pluralDistractors } from '../lib/german';
+import { meaning } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
@@ -35,7 +36,7 @@ export function PluralGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef
               <NounLabel noun={w} /> <span class="word-plural">→ die {plural}</span>
             </>
           ),
-          sub: w.en,
+          sub: meaning(w),
           emoji: w.emoji,
           say: `${w.article} ${w.de}, die ${plural}`,
         },

@@ -22,10 +22,23 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
     expect(nouns.filter((n, i) => nouns.indexOf(n) !== i)).toEqual([]);
   });
 
-  it('has unique English meanings within each topic (Word Match needs this)', () => {
+  it.each(['en', 'es'] as const)('has unique %s meanings within each topic (Word Match needs this)', (lang) => {
     for (const topic of level.topics) {
-      const en = topic.nouns.map((n) => n.en);
-      expect(en.filter((e, i) => en.indexOf(e) !== i), topic.id).toEqual([]);
+      const meanings = topic.nouns.map((n) => n[lang]);
+      expect(meanings.filter((e, i) => meanings.indexOf(e) !== i), topic.id).toEqual([]);
+    }
+  });
+
+  it('translates everything into English and Spanish', () => {
+    const texts = [
+      ...level.topics.flatMap((t) => [t.title, ...t.nouns, ...t.sentences]),
+      ...(level.verbs?.verbs ?? []),
+      ...level.grammar.flatMap((l) => [l.title, l.rule, ...l.items]),
+    ];
+    for (const x of texts) {
+      const label = JSON.stringify(x).slice(0, 80);
+      expect(x.en?.trim(), label).toBeTruthy();
+      expect(x.es?.trim(), label).toBeTruthy();
     }
   });
 

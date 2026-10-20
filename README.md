@@ -27,7 +27,8 @@ Plus, under *Grammar & skills*:
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
 
-Menus can be switched between English and German.
+Menus are available in English, German and Spanish. Meanings and translations are shown in English
+or Spanish; with German menus you choose which one in Settings.
 
 ## Development
 
@@ -45,15 +46,16 @@ Pushing to `main` builds and deploys to GitHub Pages via `.github/workflows/depl
 Content lives in `src/data/<level>/`. Each topic file has `nouns` and `sentences`:
 
 ```json
-{ "de": "Tisch", "article": "der", "plural": "Tische", "en": "table", "emoji": "🪑" }
-{ "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "alt": [] }
+{ "de": "Tisch", "article": "der", "plural": "Tische", "en": "table", "es": "mesa", "emoji": "🪑" }
+{ "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "es": "¿Dónde está la estación de tren?" }
 ```
 
 Verbs are in `verbs.json` with their six present-tense forms, and grammar lessons in `grammar.json`
 (a rule plus gap sentences like `"Ich habe ___ Hund."`). Numbers and times are generated.
 
 Register a new topic file in `src/data/index.ts`. A level with topics becomes playable automatically.
-`npm test` checks articles, duplicates, unique English meanings per topic, sentence punctuation,
+`npm test` checks articles, duplicates, that everything has English and Spanish translations
+(unique per topic), sentence punctuation,
 verb tables, and the number/time generators.
 
 ## Stack

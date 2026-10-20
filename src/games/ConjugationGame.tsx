@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { SpeakButton } from '../components/NounPrompt';
 import type { VerbForm } from '../data/types';
+import { meaning } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
@@ -42,7 +43,7 @@ export function ConjugationGame({ level, pool, starKey, onRetry, onExit }: GameP
               </div>
               {note && <div class="pronoun-note">({note})</div>}
               <div class="noun-hint">
-                <b>{verb.infinitive}</b> · {verb.en}
+                <b>{verb.infinitive}</b> · {meaning(verb)}
               </div>
               <SpeakButton text={answered ? phrase : verb.infinitive} />
             </>
@@ -51,7 +52,7 @@ export function ConjugationGame({ level, pool, starKey, onRetry, onExit }: GameP
           answer: form,
           sayAfter: phrase,
           solution: <b>{phrase}</b>,
-          review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${verb.en}`, say: phrase },
+          review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${meaning(verb)}`, say: phrase },
         };
       },
     ),

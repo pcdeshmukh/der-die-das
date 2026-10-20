@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import { NounLabel } from '../components/NounLabel';
 import { NounPrompt } from '../components/NounPrompt';
 import { ARTICLES, type WordRef } from '../data/types';
+import { meaning } from '../lib/i18n';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
 import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
@@ -20,7 +21,7 @@ export function ArticleGame({ pool, starKey, onRetry, onExit }: GameProps<WordRe
         answer: w.article,
         sayAfter: `${w.article} ${w.de}`,
         solution: <NounLabel noun={w} />,
-        review: { label: <NounLabel noun={w} />, sub: w.en, emoji: w.emoji, say: `${w.article} ${w.de}` },
+        review: { label: <NounLabel noun={w} />, sub: meaning(w), emoji: w.emoji, say: `${w.article} ${w.de}` },
       }),
     ),
   );

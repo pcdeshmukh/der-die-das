@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { SpeakButton } from '../components/NounPrompt';
 import type { GrammarRef } from '../data/types';
-import { uiLang } from '../lib/i18n';
+import { meaning, uiLang } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
@@ -44,7 +44,7 @@ export function GrammarGame({ pool, starKey, onRetry, onExit }: GameProps<Gramma
         prompt: (answered) => (
           <>
             {hasGap ? <GapSentence item={item} answered={answered} /> : <div class="noun-word">{item.q}</div>}
-            <div class="noun-hint">{item.en}</div>
+            <div class="noun-hint">{meaning(item)}</div>
             {answered && <div class="grammar-rule">💡 {item.lesson.rule[uiLang()]}</div>}
             <SpeakButton text={answered ? spokenPart : hasGap ? item.q.replace(GAP, '…') : item.q} />
           </>
@@ -53,7 +53,7 @@ export function GrammarGame({ pool, starKey, onRetry, onExit }: GameProps<Gramma
         answer: item.a,
         sayAfter: spokenPart,
         solution: <b>{item.a}</b>,
-        review: { label: full, sub: item.en, emoji: item.lesson.emoji, say: spokenPart },
+        review: { label: full, sub: meaning(item), emoji: item.lesson.emoji, say: spokenPart },
       };
     }),
   );

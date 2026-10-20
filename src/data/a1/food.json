@@ -2,7 +2,8 @@
   "id": "food",
   "title": {
     "de": "Essen & Trinken",
-    "en": "Food & drink"
+    "en": "Food & drink",
+    "es": "Comida y bebida"
   },
   "emoji": "🍽️",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "das",
       "plural": "Brote",
       "en": "bread",
+      "es": "pan",
       "emoji": "🍞"
     },
     {
@@ -18,6 +20,7 @@
       "article": "das",
       "plural": "Brötchen",
       "en": "bread roll",
+      "es": "panecillo",
       "emoji": "🥖"
     },
     {
@@ -25,6 +28,7 @@
       "article": "die",
       "plural": null,
       "en": "butter",
+      "es": "mantequilla",
       "emoji": "🧈"
     },
     {
@@ -32,6 +36,7 @@
       "article": "der",
       "plural": null,
       "en": "cheese",
+      "es": "queso",
       "emoji": "🧀"
     },
     {
@@ -39,6 +44,7 @@
       "article": "die",
       "plural": "Würste",
       "en": "sausage",
+      "es": "salchicha",
       "emoji": "🌭"
     },
     {
@@ -46,6 +52,7 @@
       "article": "das",
       "plural": "Eier",
       "en": "egg",
+      "es": "huevo",
       "emoji": "🥚"
     },
     {
@@ -53,6 +60,7 @@
       "article": "die",
       "plural": null,
       "en": "milk",
+      "es": "leche",
       "emoji": "🥛"
     },
     {
@@ -60,6 +68,7 @@
       "article": "der",
       "plural": null,
       "en": "coffee",
+      "es": "café",
       "emoji": "☕"
     },
     {
@@ -67,6 +76,7 @@
       "article": "der",
       "plural": "Tees",
       "en": "tea",
+      "es": "té",
       "emoji": "🍵"
     },
     {
@@ -74,6 +84,7 @@
       "article": "das",
       "plural": null,
       "en": "water",
+      "es": "agua",
       "emoji": "💧"
     },
     {
@@ -81,6 +92,7 @@
       "article": "der",
       "plural": "Säfte",
       "en": "juice",
+      "es": "zumo",
       "emoji": "🧃"
     },
     {
@@ -88,6 +100,7 @@
       "article": "das",
       "plural": "Biere",
       "en": "beer",
+      "es": "cerveza",
       "emoji": "🍺"
     },
     {
@@ -95,6 +108,7 @@
       "article": "der",
       "plural": "Weine",
       "en": "wine",
+      "es": "vino",
       "emoji": "🍷"
     },
     {
@@ -102,6 +116,7 @@
       "article": "der",
       "plural": "Äpfel",
       "en": "apple",
+      "es": "manzana",
       "emoji": "🍎"
     },
     {
@@ -109,6 +124,7 @@
       "article": "die",
       "plural": "Bananen",
       "en": "banana",
+      "es": "plátano",
       "emoji": "🍌"
     },
     {
@@ -116,6 +132,7 @@
       "article": "die",
       "plural": "Orangen",
       "en": "orange",
+      "es": "naranja",
       "emoji": "🍊"
     },
     {
@@ -123,6 +140,7 @@
       "article": "die",
       "plural": "Kartoffeln",
       "en": "potato",
+      "es": "patata",
       "emoji": "🥔"
     },
     {
@@ -130,6 +148,7 @@
       "article": "die",
       "plural": "Tomaten",
       "en": "tomato",
+      "es": "tomate",
       "emoji": "🍅"
     },
     {
@@ -137,6 +156,7 @@
       "article": "der",
       "plural": "Salate",
       "en": "salad",
+      "es": "ensalada",
       "emoji": "🥗"
     },
     {
@@ -144,6 +164,7 @@
       "article": "das",
       "plural": null,
       "en": "meat",
+      "es": "carne",
       "emoji": "🥩"
     },
     {
@@ -151,6 +172,7 @@
       "article": "der",
       "plural": "Fische",
       "en": "fish",
+      "es": "pescado",
       "emoji": "🐟"
     },
     {
@@ -158,6 +180,7 @@
       "article": "das",
       "plural": "Hähnchen",
       "en": "chicken (food)",
+      "es": "pollo",
       "emoji": "🍗"
     },
     {
@@ -165,6 +188,7 @@
       "article": "der",
       "plural": null,
       "en": "rice",
+      "es": "arroz",
       "emoji": "🍚"
     },
     {
@@ -172,6 +196,7 @@
       "article": "die",
       "plural": "Nudeln",
       "en": "noodle, pasta",
+      "es": "pasta, fideo",
       "emoji": "🍝"
     },
     {
@@ -179,6 +204,7 @@
       "article": "die",
       "plural": "Suppen",
       "en": "soup",
+      "es": "sopa",
       "emoji": "🍲"
     },
     {
@@ -186,6 +212,7 @@
       "article": "der",
       "plural": "Kuchen",
       "en": "cake",
+      "es": "pastel",
       "emoji": "🍰"
     },
     {
@@ -193,6 +220,7 @@
       "article": "die",
       "plural": "Schokoladen",
       "en": "chocolate",
+      "es": "chocolate",
       "emoji": "🍫"
     },
     {
@@ -200,6 +228,7 @@
       "article": "der",
       "plural": null,
       "en": "sugar",
+      "es": "azúcar",
       "emoji": "🍬"
     },
     {
@@ -207,6 +236,7 @@
       "article": "das",
       "plural": null,
       "en": "salt",
+      "es": "sal",
       "emoji": "🧂"
     },
     {
@@ -214,6 +244,7 @@
       "article": "das",
       "plural": null,
       "en": "fruit",
+      "es": "fruta",
       "emoji": "🍇"
     },
     {
@@ -221,6 +252,7 @@
       "article": "das",
       "plural": null,
       "en": "vegetables",
+      "es": "verduras",
       "emoji": "🥦"
     },
     {
@@ -228,6 +260,7 @@
       "article": "das",
       "plural": "Frühstücke",
       "en": "breakfast",
+      "es": "desayuno",
       "emoji": "🍳"
     },
     {
@@ -235,6 +268,7 @@
       "article": "das",
       "plural": "Mittagessen",
       "en": "lunch",
+      "es": "almuerzo",
       "emoji": "🥪"
     },
     {
@@ -242,6 +276,7 @@
       "article": "das",
       "plural": "Abendessen",
       "en": "dinner",
+      "es": "cena",
       "emoji": "🍽️"
     },
     {
@@ -249,6 +284,7 @@
       "article": "das",
       "plural": "Restaurants",
       "en": "restaurant",
+      "es": "restaurante",
       "emoji": "🧑‍🍳"
     },
     {
@@ -256,33 +292,40 @@
       "article": "die",
       "plural": "Rechnungen",
       "en": "bill",
+      "es": "cuenta",
       "emoji": "🧾"
     }
   ],
   "sentences": [
     {
       "de": "Ich trinke gern Kaffee.",
-      "en": "I like drinking coffee."
+      "en": "I like drinking coffee.",
+      "es": "Me gusta beber café."
     },
     {
       "de": "Was möchtest du essen?",
-      "en": "What would you like to eat?"
+      "en": "What would you like to eat?",
+      "es": "¿Qué quieres comer?"
     },
     {
       "de": "Ich möchte ein Wasser.",
-      "en": "I would like a water."
+      "en": "I would like a water.",
+      "es": "Quisiera un agua."
     },
     {
       "de": "Die Suppe ist sehr gut.",
-      "en": "The soup is very good."
+      "en": "The soup is very good.",
+      "es": "La sopa está muy buena."
     },
     {
       "de": "Wir essen um zwölf Uhr.",
-      "en": "We eat at twelve o'clock."
+      "en": "We eat at twelve o'clock.",
+      "es": "Comemos a las doce."
     },
     {
       "de": "Kaufst du Brot und Milch?",
-      "en": "Are you buying bread and milk?"
+      "en": "Are you buying bread and milk?",
+      "es": "¿Compras pan y leche?"
     }
   ]
 }

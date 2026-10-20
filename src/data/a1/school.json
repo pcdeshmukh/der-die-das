@@ -2,7 +2,8 @@
   "id": "school",
   "title": {
     "de": "Arbeit & Schule",
-    "en": "Work & school"
+    "en": "Work & school",
+    "es": "Trabajo y escuela"
   },
   "emoji": "💼",
   "nouns": [
@@ -10,13 +11,15 @@
       "de": "Arbeit",
       "article": "die",
       "plural": "Arbeiten",
-      "en": "work"
+      "en": "work",
+      "es": "trabajo"
     },
     {
       "de": "Beruf",
       "article": "der",
       "plural": "Berufe",
       "en": "job, profession",
+      "es": "profesión",
       "emoji": "💼"
     },
     {
@@ -24,43 +27,50 @@
       "article": "die",
       "plural": "Firmen",
       "en": "company",
+      "es": "empresa",
       "emoji": "🏢"
     },
     {
       "de": "Büro",
       "article": "das",
       "plural": "Büros",
-      "en": "office"
+      "en": "office",
+      "es": "oficina"
     },
     {
       "de": "Chef",
       "article": "der",
       "plural": "Chefs",
-      "en": "boss (male)"
+      "en": "boss (male)",
+      "es": "jefe"
     },
     {
       "de": "Chefin",
       "article": "die",
       "plural": "Chefinnen",
-      "en": "boss (female)"
+      "en": "boss (female)",
+      "es": "jefa"
     },
     {
       "de": "Kollege",
       "article": "der",
       "plural": "Kollegen",
-      "en": "colleague (male)"
+      "en": "colleague (male)",
+      "es": "compañero de trabajo"
     },
     {
       "de": "Kollegin",
       "article": "die",
       "plural": "Kolleginnen",
-      "en": "colleague (female)"
+      "en": "colleague (female)",
+      "es": "compañera de trabajo"
     },
     {
       "de": "Lehrer",
       "article": "der",
       "plural": "Lehrer",
       "en": "teacher (male)",
+      "es": "profesor",
       "emoji": "🧑‍🏫"
     },
     {
@@ -68,25 +78,29 @@
       "article": "die",
       "plural": "Lehrerinnen",
       "en": "teacher (female)",
+      "es": "profesora",
       "emoji": "👩‍🏫"
     },
     {
       "de": "Schüler",
       "article": "der",
       "plural": "Schüler",
-      "en": "pupil (male)"
+      "en": "pupil (male)",
+      "es": "alumno"
     },
     {
       "de": "Schülerin",
       "article": "die",
       "plural": "Schülerinnen",
-      "en": "pupil (female)"
+      "en": "pupil (female)",
+      "es": "alumna"
     },
     {
       "de": "Student",
       "article": "der",
       "plural": "Studenten",
       "en": "student (male)",
+      "es": "estudiante (hombre)",
       "emoji": "🧑‍🎓"
     },
     {
@@ -94,6 +108,7 @@
       "article": "die",
       "plural": "Studentinnen",
       "en": "student (female)",
+      "es": "estudiante (mujer)",
       "emoji": "👩‍🎓"
     },
     {
@@ -101,25 +116,29 @@
       "article": "die",
       "plural": "Schulen",
       "en": "school",
+      "es": "escuela",
       "emoji": "🏫"
     },
     {
       "de": "Kurs",
       "article": "der",
       "plural": "Kurse",
-      "en": "course"
+      "en": "course",
+      "es": "curso"
     },
     {
       "de": "Klasse",
       "article": "die",
       "plural": "Klassen",
-      "en": "class"
+      "en": "class",
+      "es": "clase"
     },
     {
       "de": "Prüfung",
       "article": "die",
       "plural": "Prüfungen",
       "en": "exam",
+      "es": "examen",
       "emoji": "📝"
     },
     {
@@ -127,19 +146,22 @@
       "article": "die",
       "plural": "Fragen",
       "en": "question",
+      "es": "pregunta",
       "emoji": "❓"
     },
     {
       "de": "Antwort",
       "article": "die",
       "plural": "Antworten",
-      "en": "answer"
+      "en": "answer",
+      "es": "respuesta"
     },
     {
       "de": "Buch",
       "article": "das",
       "plural": "Bücher",
       "en": "book",
+      "es": "libro",
       "emoji": "📕"
     },
     {
@@ -147,6 +169,7 @@
       "article": "das",
       "plural": "Hefte",
       "en": "exercise book",
+      "es": "cuaderno",
       "emoji": "📓"
     },
     {
@@ -154,6 +177,7 @@
       "article": "der",
       "plural": "Kulis",
       "en": "pen",
+      "es": "bolígrafo",
       "emoji": "🖊️"
     },
     {
@@ -161,6 +185,7 @@
       "article": "der",
       "plural": "Bleistifte",
       "en": "pencil",
+      "es": "lápiz",
       "emoji": "✏️"
     },
     {
@@ -168,51 +193,61 @@
       "article": "das",
       "plural": "Papiere",
       "en": "paper",
+      "es": "papel",
       "emoji": "📄"
     },
     {
       "de": "Wort",
       "article": "das",
       "plural": "Wörter",
-      "en": "word"
+      "en": "word",
+      "es": "palabra"
     },
     {
       "de": "Satz",
       "article": "der",
       "plural": "Sätze",
-      "en": "sentence"
+      "en": "sentence",
+      "es": "frase"
     },
     {
       "de": "Hausaufgabe",
       "article": "die",
       "plural": "Hausaufgaben",
-      "en": "homework"
+      "en": "homework",
+      "es": "deberes"
     }
   ],
   "sentences": [
     {
       "de": "Ich lerne Deutsch.",
-      "en": "I am learning German."
+      "en": "I am learning German.",
+      "es": "Aprendo alemán."
     },
     {
       "de": "Ich arbeite in einem Büro.",
-      "en": "I work in an office."
+      "en": "I work in an office.",
+      "es": "Trabajo en una oficina."
     },
     {
       "de": "Was sind Sie von Beruf?",
-      "en": "What is your job? (formal)"
+      "en": "What is your job? (formal)",
+      "es": "¿Cuál es su profesión?"
     },
     {
       "de": "Ich verstehe die Frage nicht.",
-      "en": "I don't understand the question."
+      "en": "I don't understand the question.",
+      "es": "No entiendo la pregunta."
     },
     {
       "de": "Der Lehrer erklärt die Grammatik.",
-      "en": "The teacher explains the grammar."
+      "en": "The teacher explains the grammar.",
+      "es": "El profesor explica la gramática."
     },
     {
       "de": "Mein Kurs ist am Abend.",
-      "en": "My course is in the evening."
+      "en": "My course is in the evening.",
+      "es": "Mi curso es por la noche."
     }
   ]
 }

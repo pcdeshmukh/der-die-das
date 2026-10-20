@@ -1,6 +1,6 @@
 import { href } from '../lib/router';
 import { t } from '../lib/i18n';
-import { currentStreak, progress, updateSettings } from '../lib/store';
+import { UI_LANGS, currentStreak, progress, setUiLang } from '../lib/store';
 
 export function Header({ parts }: { parts: string[] }) {
   const p = progress.value;
@@ -21,8 +21,8 @@ export function Header({ parts }: { parts: string[] }) {
         <span title={t('xp')}>⭐ {p.xp}</span>
       </div>
       <div class="lang-toggle" role="group" aria-label={t('menuLang')}>
-        {(['en', 'de'] as const).map((l) => (
-          <button class={l === lang ? 'active' : ''} aria-pressed={l === lang} onClick={() => updateSettings({ uiLang: l })}>
+        {UI_LANGS.map((l) => (
+          <button class={l === lang ? 'active' : ''} aria-pressed={l === lang} onClick={() => setUiLang(l)}>
             {l.toUpperCase()}
           </button>
         ))}

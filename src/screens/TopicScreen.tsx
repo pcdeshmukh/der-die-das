@@ -1,7 +1,7 @@
 import { NounLabel } from '../components/NounLabel';
 import { Stars } from '../components/Stars';
 import type { Level } from '../data/types';
-import { t, uiLang } from '../lib/i18n';
+import { meaning, t, uiLang } from '../lib/i18n';
 import { MIXED, NUMBERS, REVIEW, VERBS, grammarLesson, isPlayable, modesFor, poolFor, starKey } from '../lib/modes';
 import { href } from '../lib/router';
 import { speak, speechSupported } from '../lib/speech';
@@ -32,7 +32,7 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
       <h1 class="screen-title">
         <span class="title-emoji">{emoji}</span> {title}
       </h1>
-      {named && uiLang() === 'en' && <p class="muted subtitle">{named.title.de}</p>}
+      {named && uiLang() !== 'de' && <p class="muted subtitle">{named.title.de}</p>}
       {lesson && <p class="rule-box">💡 {lesson.rule[uiLang()]}</p>}
 
       <div class="mode-list">
@@ -78,7 +78,7 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
                     <NounLabel noun={n} />
                     {n.plural && <span class="word-plural">die {n.plural}</span>}
                   </span>
-                  <span class="word-en">{n.en}</span>
+                  <span class="word-en">{meaning(n)}</span>
                 </button>
               </li>
             ))}
@@ -98,7 +98,7 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
                 <li>
                   <button class="word-row" onClick={() => speak(full.split(' – ')[0], true)}>
                     <span class="word-main">{full}</span>
-                    <span class="word-en">{item.en}</span>
+                    <span class="word-en">{meaning(item)}</span>
                   </button>
                 </li>
               );
@@ -119,7 +119,7 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
                   <button class="link-btn" onClick={() => speak(v.infinitive, true)}>
                     {v.infinitive}
                   </button>{' '}
-                  <span class="muted small">{v.en}</span>
+                  <span class="muted small">{meaning(v)}</span>
                 </caption>
                 <tbody>
                   {v.present.map((form, i) => (

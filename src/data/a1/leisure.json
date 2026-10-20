@@ -2,7 +2,8 @@
   "id": "leisure",
   "title": {
     "de": "Freizeit",
-    "en": "Free time"
+    "en": "Free time",
+    "es": "Tiempo libre"
   },
   "emoji": "⚽",
   "nouns": [
@@ -10,19 +11,22 @@
       "de": "Freizeit",
       "article": "die",
       "plural": null,
-      "en": "free time"
+      "en": "free time",
+      "es": "tiempo libre"
     },
     {
       "de": "Hobby",
       "article": "das",
       "plural": "Hobbys",
-      "en": "hobby"
+      "en": "hobby",
+      "es": "afición"
     },
     {
       "de": "Sport",
       "article": "der",
       "plural": null,
       "en": "sport",
+      "es": "deporte",
       "emoji": "🏅"
     },
     {
@@ -30,6 +34,7 @@
       "article": "der",
       "plural": "Fußbälle",
       "en": "football",
+      "es": "fútbol",
       "emoji": "⚽"
     },
     {
@@ -37,6 +42,7 @@
       "article": "das",
       "plural": "Spiele",
       "en": "game",
+      "es": "juego",
       "emoji": "🎲"
     },
     {
@@ -44,6 +50,7 @@
       "article": "die",
       "plural": null,
       "en": "music",
+      "es": "música",
       "emoji": "🎵"
     },
     {
@@ -51,6 +58,7 @@
       "article": "das",
       "plural": "Lieder",
       "en": "song",
+      "es": "canción",
       "emoji": "🎶"
     },
     {
@@ -58,6 +66,7 @@
       "article": "die",
       "plural": "Gitarren",
       "en": "guitar",
+      "es": "guitarra",
       "emoji": "🎸"
     },
     {
@@ -65,6 +74,7 @@
       "article": "das",
       "plural": "Klaviere",
       "en": "piano",
+      "es": "piano",
       "emoji": "🎹"
     },
     {
@@ -72,6 +82,7 @@
       "article": "der",
       "plural": "Filme",
       "en": "film, movie",
+      "es": "película",
       "emoji": "🎬"
     },
     {
@@ -79,6 +90,7 @@
       "article": "das",
       "plural": "Konzerte",
       "en": "concert",
+      "es": "concierto",
       "emoji": "🎤"
     },
     {
@@ -86,6 +98,7 @@
       "article": "das",
       "plural": "Theater",
       "en": "theatre",
+      "es": "teatro",
       "emoji": "🎭"
     },
     {
@@ -93,19 +106,22 @@
       "article": "die",
       "plural": "Zeitungen",
       "en": "newspaper",
+      "es": "periódico",
       "emoji": "📰"
     },
     {
       "de": "Fernsehen",
       "article": "das",
       "plural": null,
-      "en": "television (TV)"
+      "en": "television (TV)",
+      "es": "televisión"
     },
     {
       "de": "Schwimmbad",
       "article": "das",
       "plural": "Schwimmbäder",
       "en": "swimming pool",
+      "es": "piscina",
       "emoji": "🏊"
     },
     {
@@ -113,25 +129,29 @@
       "article": "der",
       "plural": "Bälle",
       "en": "ball",
+      "es": "pelota",
       "emoji": "🏐"
     },
     {
       "de": "Fest",
       "article": "das",
       "plural": "Feste",
-      "en": "festival, celebration"
+      "en": "festival, celebration",
+      "es": "fiesta, celebración"
     },
     {
       "de": "Ausflug",
       "article": "der",
       "plural": "Ausflüge",
-      "en": "excursion, day trip"
+      "en": "excursion, day trip",
+      "es": "excursión"
     },
     {
       "de": "Spaziergang",
       "article": "der",
       "plural": "Spaziergänge",
       "en": "walk",
+      "es": "paseo",
       "emoji": "🚶"
     },
     {
@@ -139,6 +159,7 @@
       "article": "die",
       "plural": "Kameras",
       "en": "camera",
+      "es": "cámara",
       "emoji": "📸"
     },
     {
@@ -146,6 +167,7 @@
       "article": "das",
       "plural": "Bilder",
       "en": "picture",
+      "es": "imagen, cuadro",
       "emoji": "🖼️"
     },
     {
@@ -153,39 +175,47 @@
       "article": "das",
       "plural": null,
       "en": "internet",
+      "es": "internet",
       "emoji": "🌐"
     },
     {
       "de": "Karte",
       "article": "die",
       "plural": "Karten",
-      "en": "card, map"
+      "en": "card, map",
+      "es": "tarjeta, mapa"
     }
   ],
   "sentences": [
     {
       "de": "Ich spiele gern Fußball.",
-      "en": "I like playing football."
+      "en": "I like playing football.",
+      "es": "Me gusta jugar al fútbol."
     },
     {
       "de": "Hörst du gern Musik?",
-      "en": "Do you like listening to music?"
+      "en": "Do you like listening to music?",
+      "es": "¿Te gusta escuchar música?"
     },
     {
       "de": "Wir gehen heute ins Kino.",
-      "en": "We are going to the cinema today."
+      "en": "We are going to the cinema today.",
+      "es": "Hoy vamos al cine."
     },
     {
       "de": "Mein Hobby ist Lesen.",
-      "en": "My hobby is reading."
+      "en": "My hobby is reading.",
+      "es": "Mi afición es leer."
     },
     {
       "de": "Am Wochenende schwimme ich.",
-      "en": "At the weekend I go swimming."
+      "en": "At the weekend I go swimming.",
+      "es": "El fin de semana nado."
     },
     {
       "de": "Spielst du Gitarre?",
-      "en": "Do you play the guitar?"
+      "en": "Do you play the guitar?",
+      "es": "¿Tocas la guitarra?"
     }
   ]
 }

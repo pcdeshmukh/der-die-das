@@ -3,7 +3,7 @@ import { GameBar } from '../components/GameBar';
 import { SpeakButton } from '../components/NounPrompt';
 import { Results } from '../components/Results';
 import type { SentenceRef } from '../data/types';
-import { t } from '../lib/i18n';
+import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
 import { speak } from '../lib/speech';
@@ -123,7 +123,7 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
         xp={xp}
         mistakes={puzzles
           .filter((_, i) => !results[i])
-          .map((x) => ({ key: x.s.id, label: x.s.de, sub: x.s.en, say: x.s.de }))}
+          .map((x) => ({ key: x.s.id, label: x.s.de, sub: meaning(x.s), say: x.s.de }))}
         onRetry={onRetry}
         onExit={onExit}
       />
@@ -138,7 +138,7 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
       <div class="stage">
         <div class={`noun-card sentence-card ${state}`} key={p.s.id}>
           <div class="noun-hint">{t('buildSentence')}</div>
-          <div class="sentence-en">{p.s.en}</div>
+          <div class="sentence-en">{meaning(p.s)}</div>
           {result !== null && <SpeakButton text={p.s.de} />}
         </div>
 

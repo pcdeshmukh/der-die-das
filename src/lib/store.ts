@@ -1,10 +1,15 @@
 import { effect, signal } from '@preact/signals';
 import { review, statKey, type Skill, type WordStat } from './srs';
 
-export type UiLang = 'en' | 'de';
+export type UiLang = 'en' | 'de' | 'es';
+/** Language for meanings and translations of German content. */
+export type HintLang = 'en' | 'es';
+
+export const UI_LANGS: UiLang[] = ['en', 'de', 'es'];
 
 export interface Settings {
   uiLang: UiLang;
+  hintLang: HintLang;
   sound: boolean;
   speech: boolean;
   showHint: boolean;
@@ -23,13 +28,20 @@ export interface Progress {
 const STORAGE_KEY = 'der-die-das:v1';
 
 function defaults(): Progress {
-  const de = typeof navigator !== 'undefined' && navigator.language?.toLowerCase().startsWith('de');
+  const browser = typeof navigator !== 'undefined' ? (navigator.language ?? '').toLowerCase() : '';
+  const es = browser.startsWith('es');
   return {
     xp: 0,
     streak: { count: 0, lastDay: null },
     words: {},
     stars: {},
-    settings: { uiLang: de ? 'de' : 'en', sound: true, speech: true, showHint: true },
+    settings: {
+      uiLang: browser.startsWith('de') ? 'de' : es ? 'es' : 'en',
+      hintLang: es ? 'es' : 'en',
+      sound: true,
+      speech: true,
+      showHint: true,
+    },
   };
 }
 
@@ -59,6 +71,11 @@ effect(() => {
 
 export function updateSettings(patch: Partial<Settings>) {
   progress.value = { ...progress.value, settings: { ...progress.value.settings, ...patch } };
+}
+
+/** English and Spanish menus also switch translations; German menus keep the chosen translation language. */
+export function setUiLang(uiLang: UiLang) {
+  updateSettings(uiLang === 'de' ? { uiLang } : { uiLang, hintLang: uiLang });
 }
 
 export function recordAnswer(skill: Skill, wordId: string, correct: boolean) {

@@ -1,25 +1,31 @@
 export type Article = 'der' | 'die' | 'das';
 export const ARTICLES: Article[] = ['der', 'die', 'das'];
 
-export interface Noun {
+/** Text shown to the learner in their own language. */
+export interface Translated {
+  en: string;
+  es: string;
+}
+
+export type Titled = { de: string; en: string; es: string };
+
+export interface Noun extends Translated {
   de: string;
   article: Article;
   /** null when the noun has no (common) plural */
   plural: string | null;
-  en: string;
   emoji?: string;
 }
 
-export interface Sentence {
+export interface Sentence extends Translated {
   de: string;
-  en: string;
   /** other word orders that are also correct */
   alt?: string[];
 }
 
 export interface Topic {
   id: string;
-  title: { de: string; en: string };
+  title: Titled;
   emoji: string;
   nouns: Noun[];
   sentences: Sentence[];
@@ -36,9 +42,8 @@ export interface SentenceRef extends Sentence {
   topic: string;
 }
 
-export interface Verb {
+export interface Verb extends Translated {
   infinitive: string;
-  en: string;
   /** ich, du, er/sie/es, wir, ihr, sie/Sie */
   present: string[];
 }
@@ -50,20 +55,19 @@ export interface VerbForm {
   person: number;
 }
 
-export interface GrammarItem {
+export interface GrammarItem extends Translated {
   /** sentence with one "___" gap, or (when the lesson has no gap) the prompt itself */
   q: string;
   a: string;
-  en: string;
   /** overrides the lesson's options */
   options?: string[];
 }
 
 export interface GrammarLesson {
   id: string;
-  title: { de: string; en: string };
+  title: Titled;
   emoji: string;
-  rule: { de: string; en: string };
+  rule: Titled;
   options: string[];
   /** shuffle options (e.g. whole sentences); otherwise they keep a fixed, learnable order */
   shuffle?: boolean;

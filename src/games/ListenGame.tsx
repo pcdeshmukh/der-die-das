@@ -3,7 +3,7 @@ import { NounLabel } from '../components/NounLabel';
 import { speak } from '../lib/speech';
 import { allWords } from '../data';
 import type { WordRef } from '../data/types';
-import { t } from '../lib/i18n';
+import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
@@ -34,14 +34,14 @@ export function ListenGame({ level, pool, starKey, onRetry, onExit }: GameProps<
             <button class="listen-btn" onClick={() => speak(say(w), true)} aria-label={t('play')}>
               {answered ? (w.emoji ?? '🔊') : '🔊'}
             </button>
-            <div class="noun-hint">{answered ? w.en : t('listenPrompt')}</div>
+            <div class="noun-hint">{answered ? meaning(w) : t('listenPrompt')}</div>
           </>
         ),
         options: shuffle([w, ...distractors(w, candidates)]).map(say),
         answer: say(w),
         sayFirst: say(w),
         solution: <NounLabel noun={w} />,
-        review: { label: <NounLabel noun={w} />, sub: w.en, emoji: w.emoji, say: say(w) },
+        review: { label: <NounLabel noun={w} />, sub: meaning(w), emoji: w.emoji, say: say(w) },
       }),
     );
   });

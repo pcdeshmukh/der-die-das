@@ -3,7 +3,7 @@ import { GameBar } from '../components/GameBar';
 import { NounLabel } from '../components/NounLabel';
 import { Results } from '../components/Results';
 import type { WordRef } from '../data/types';
-import { t } from '../lib/i18n';
+import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
 import { speak } from '../lib/speech';
@@ -108,7 +108,7 @@ export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>
         xp={done.xp}
         mistakes={words
           .filter((w) => missed.has(w.id))
-          .map((w) => ({ key: w.id, label: <NounLabel noun={w} />, sub: w.en, emoji: w.emoji, say: `${w.article} ${w.de}` }))}
+          .map((w) => ({ key: w.id, label: <NounLabel noun={w} />, sub: meaning(w), emoji: w.emoji, say: `${w.article} ${w.de}` }))}
         onRetry={onRetry}
         onExit={onExit}
       >
@@ -148,7 +148,7 @@ export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>
           {right.map((w) => (
             <button class={tileClass(w.id, selRight, 1)} disabled={matched.has(w.id)} onClick={() => tapRight(w)}>
               {w.emoji && <span class="tile-emoji">{w.emoji}</span>}
-              <span>{w.en}</span>
+              <span>{meaning(w)}</span>
             </button>
           ))}
         </div>

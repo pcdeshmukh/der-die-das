@@ -2,7 +2,8 @@
   "id": "time",
   "title": {
     "de": "Zeit",
-    "en": "Time"
+    "en": "Time",
+    "es": "Tiempo y fechas"
   },
   "emoji": "⏰",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "die",
       "plural": "Zeiten",
       "en": "time",
+      "es": "tiempo",
       "emoji": "⏳"
     },
     {
@@ -18,82 +20,95 @@
       "article": "die",
       "plural": "Uhren",
       "en": "clock, watch",
+      "es": "reloj",
       "emoji": "⏰"
     },
     {
       "de": "Stunde",
       "article": "die",
       "plural": "Stunden",
-      "en": "hour"
+      "en": "hour",
+      "es": "hora"
     },
     {
       "de": "Minute",
       "article": "die",
       "plural": "Minuten",
-      "en": "minute"
+      "en": "minute",
+      "es": "minuto"
     },
     {
       "de": "Sekunde",
       "article": "die",
       "plural": "Sekunden",
       "en": "second",
+      "es": "segundo",
       "emoji": "⏱️"
     },
     {
       "de": "Tag",
       "article": "der",
       "plural": "Tage",
-      "en": "day"
+      "en": "day",
+      "es": "día"
     },
     {
       "de": "Woche",
       "article": "die",
       "plural": "Wochen",
-      "en": "week"
+      "en": "week",
+      "es": "semana"
     },
     {
       "de": "Monat",
       "article": "der",
       "plural": "Monate",
-      "en": "month"
+      "en": "month",
+      "es": "mes"
     },
     {
       "de": "Jahr",
       "article": "das",
       "plural": "Jahre",
-      "en": "year"
+      "en": "year",
+      "es": "año"
     },
     {
       "de": "Morgen",
       "article": "der",
       "plural": "Morgen",
       "en": "morning",
+      "es": "mañana",
       "emoji": "🌅"
     },
     {
       "de": "Vormittag",
       "article": "der",
       "plural": "Vormittage",
-      "en": "late morning"
+      "en": "late morning",
+      "es": "media mañana"
     },
     {
       "de": "Mittag",
       "article": "der",
       "plural": "Mittage",
       "en": "noon, midday",
+      "es": "mediodía",
       "emoji": "🕛"
     },
     {
       "de": "Nachmittag",
       "article": "der",
       "plural": "Nachmittage",
-      "en": "afternoon"
+      "en": "afternoon",
+      "es": "tarde"
     },
     {
       "de": "Abend",
       "article": "der",
       "plural": "Abende",
       "en": "evening",
+      "es": "noche (temprano)",
       "emoji": "🌆"
     },
     {
@@ -101,61 +116,71 @@
       "article": "die",
       "plural": "Nächte",
       "en": "night",
+      "es": "noche",
       "emoji": "🌃"
     },
     {
       "de": "Wochenende",
       "article": "das",
       "plural": "Wochenenden",
-      "en": "weekend"
+      "en": "weekend",
+      "es": "fin de semana"
     },
     {
       "de": "Montag",
       "article": "der",
       "plural": "Montage",
-      "en": "Monday"
+      "en": "Monday",
+      "es": "lunes"
     },
     {
       "de": "Dienstag",
       "article": "der",
       "plural": "Dienstage",
-      "en": "Tuesday"
+      "en": "Tuesday",
+      "es": "martes"
     },
     {
       "de": "Mittwoch",
       "article": "der",
       "plural": "Mittwoche",
-      "en": "Wednesday"
+      "en": "Wednesday",
+      "es": "miércoles"
     },
     {
       "de": "Donnerstag",
       "article": "der",
       "plural": "Donnerstage",
-      "en": "Thursday"
+      "en": "Thursday",
+      "es": "jueves"
     },
     {
       "de": "Freitag",
       "article": "der",
       "plural": "Freitage",
-      "en": "Friday"
+      "en": "Friday",
+      "es": "viernes"
     },
     {
       "de": "Samstag",
       "article": "der",
       "plural": "Samstage",
-      "en": "Saturday"
+      "en": "Saturday",
+      "es": "sábado"
     },
     {
       "de": "Sonntag",
       "article": "der",
       "plural": "Sonntage",
-      "en": "Sunday"
+      "en": "Sunday",
+      "es": "domingo"
     },
     {
       "de": "Termin",
       "article": "der",
       "plural": "Termine",
       "en": "appointment",
+      "es": "cita",
       "emoji": "🗓️"
     },
     {
@@ -163,39 +188,47 @@
       "article": "der",
       "plural": "Kalender",
       "en": "calendar",
+      "es": "calendario",
       "emoji": "📅"
     },
     {
       "de": "Datum",
       "article": "das",
       "plural": "Daten",
-      "en": "date"
+      "en": "date",
+      "es": "fecha"
     }
   ],
   "sentences": [
     {
       "de": "Wie spät ist es?",
-      "en": "What time is it?"
+      "en": "What time is it?",
+      "es": "¿Qué hora es?"
     },
     {
       "de": "Es ist halb drei.",
-      "en": "It is half past two."
+      "en": "It is half past two.",
+      "es": "Son las dos y media."
     },
     {
       "de": "Am Montag habe ich Zeit.",
-      "en": "On Monday I have time."
+      "en": "On Monday I have time.",
+      "es": "El lunes tengo tiempo."
     },
     {
       "de": "Der Kurs beginnt um neun Uhr.",
-      "en": "The course starts at nine o'clock."
+      "en": "The course starts at nine o'clock.",
+      "es": "El curso empieza a las nueve."
     },
     {
       "de": "Ich habe morgen einen Termin.",
-      "en": "I have an appointment tomorrow."
+      "en": "I have an appointment tomorrow.",
+      "es": "Mañana tengo una cita."
     },
     {
       "de": "Was machst du am Wochenende?",
-      "en": "What are you doing at the weekend?"
+      "en": "What are you doing at the weekend?",
+      "es": "¿Qué haces el fin de semana?"
     }
   ]
 }

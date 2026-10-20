@@ -2,7 +2,8 @@
   "id": "people",
   "title": {
     "de": "Menschen",
-    "en": "People"
+    "en": "People",
+    "es": "Personas"
   },
   "emoji": "🧑",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "der",
       "plural": "Männer",
       "en": "man",
+      "es": "hombre",
       "emoji": "👨"
     },
     {
@@ -18,6 +20,7 @@
       "article": "die",
       "plural": "Frauen",
       "en": "woman",
+      "es": "mujer",
       "emoji": "👩"
     },
     {
@@ -25,6 +28,7 @@
       "article": "das",
       "plural": "Kinder",
       "en": "child",
+      "es": "niño, niña",
       "emoji": "🧒"
     },
     {
@@ -32,6 +36,7 @@
       "article": "der",
       "plural": "Jungen",
       "en": "boy",
+      "es": "chico",
       "emoji": "👦"
     },
     {
@@ -39,6 +44,7 @@
       "article": "das",
       "plural": "Mädchen",
       "en": "girl",
+      "es": "chica",
       "emoji": "👧"
     },
     {
@@ -46,6 +52,7 @@
       "article": "das",
       "plural": "Babys",
       "en": "baby",
+      "es": "bebé",
       "emoji": "👶"
     },
     {
@@ -53,6 +60,7 @@
       "article": "der",
       "plural": "Menschen",
       "en": "human being",
+      "es": "ser humano",
       "emoji": "🧑"
     },
     {
@@ -60,6 +68,7 @@
       "article": "die",
       "plural": "Personen",
       "en": "person",
+      "es": "persona",
       "emoji": "🧍"
     },
     {
@@ -67,6 +76,7 @@
       "article": "der",
       "plural": "Freunde",
       "en": "friend (male)",
+      "es": "amigo",
       "emoji": "🙋‍♂️"
     },
     {
@@ -74,6 +84,7 @@
       "article": "die",
       "plural": "Freundinnen",
       "en": "friend (female)",
+      "es": "amiga",
       "emoji": "🙋‍♀️"
     },
     {
@@ -81,6 +92,7 @@
       "article": "der",
       "plural": "Herren",
       "en": "gentleman, Mr",
+      "es": "señor",
       "emoji": "🎩"
     },
     {
@@ -88,6 +100,7 @@
       "article": "die",
       "plural": "Damen",
       "en": "lady",
+      "es": "dama",
       "emoji": "👒"
     },
     {
@@ -95,6 +108,7 @@
       "article": "der",
       "plural": "Nachbarn",
       "en": "neighbour (male)",
+      "es": "vecino",
       "emoji": "🏘️"
     },
     {
@@ -102,6 +116,7 @@
       "article": "die",
       "plural": "Nachbarinnen",
       "en": "neighbour (female)",
+      "es": "vecina",
       "emoji": "🏡"
     },
     {
@@ -109,6 +124,7 @@
       "article": "der",
       "plural": "Gäste",
       "en": "guest",
+      "es": "invitado",
       "emoji": "🛎️"
     },
     {
@@ -116,6 +132,7 @@
       "article": "der",
       "plural": "Namen",
       "en": "name",
+      "es": "nombre",
       "emoji": "🏷️"
     },
     {
@@ -123,6 +140,7 @@
       "article": "das",
       "plural": "Länder",
       "en": "country",
+      "es": "país",
       "emoji": "🗺️"
     },
     {
@@ -130,6 +148,7 @@
       "article": "die",
       "plural": "Sprachen",
       "en": "language",
+      "es": "idioma",
       "emoji": "🗣️"
     },
     {
@@ -137,6 +156,7 @@
       "article": "die",
       "plural": "Adressen",
       "en": "address",
+      "es": "dirección",
       "emoji": "📫"
     },
     {
@@ -144,6 +164,7 @@
       "article": "die",
       "plural": "Telefonnummern",
       "en": "phone number",
+      "es": "número de teléfono",
       "emoji": "☎️"
     },
     {
@@ -151,6 +172,7 @@
       "article": "das",
       "plural": null,
       "en": "age",
+      "es": "edad",
       "emoji": "🎂"
     },
     {
@@ -158,6 +180,7 @@
       "article": "das",
       "plural": "Handys",
       "en": "mobile phone",
+      "es": "móvil",
       "emoji": "📱"
     },
     {
@@ -165,6 +188,7 @@
       "article": "die",
       "plural": "E-Mails",
       "en": "email",
+      "es": "correo electrónico",
       "emoji": "📧"
     },
     {
@@ -172,6 +196,7 @@
       "article": "der",
       "plural": "Briefe",
       "en": "letter",
+      "es": "carta",
       "emoji": "✉️"
     },
     {
@@ -179,6 +204,7 @@
       "article": "der",
       "plural": "Ausweise",
       "en": "ID card",
+      "es": "documento de identidad",
       "emoji": "🪪"
     },
     {
@@ -186,33 +212,40 @@
       "article": "der",
       "plural": "Pässe",
       "en": "passport",
+      "es": "pasaporte",
       "emoji": "🛂"
     }
   ],
   "sentences": [
     {
       "de": "Ich heiße Anna.",
-      "en": "My name is Anna."
+      "en": "My name is Anna.",
+      "es": "Me llamo Anna."
     },
     {
       "de": "Wie heißen Sie?",
-      "en": "What is your name? (formal)"
+      "en": "What is your name? (formal)",
+      "es": "¿Cómo se llama usted?"
     },
     {
       "de": "Woher kommst du?",
-      "en": "Where are you from?"
+      "en": "Where are you from?",
+      "es": "¿De dónde eres?"
     },
     {
       "de": "Ich komme aus Spanien.",
-      "en": "I come from Spain."
+      "en": "I come from Spain.",
+      "es": "Soy de España."
     },
     {
       "de": "Das ist mein Freund Tom.",
-      "en": "This is my friend Tom."
+      "en": "This is my friend Tom.",
+      "es": "Este es mi amigo Tom."
     },
     {
       "de": "Ich spreche ein bisschen Deutsch.",
-      "en": "I speak a little German."
+      "en": "I speak a little German.",
+      "es": "Hablo un poco de alemán."
     }
   ]
 }

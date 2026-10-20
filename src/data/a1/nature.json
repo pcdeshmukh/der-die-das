@@ -2,7 +2,8 @@
   "id": "nature",
   "title": {
     "de": "Natur & Wetter",
-    "en": "Nature & weather"
+    "en": "Nature & weather",
+    "es": "Naturaleza y clima"
   },
   "emoji": "🌦️",
   "nouns": [
@@ -11,6 +12,7 @@
       "article": "das",
       "plural": null,
       "en": "weather",
+      "es": "tiempo (clima)",
       "emoji": "🌦️"
     },
     {
@@ -18,6 +20,7 @@
       "article": "die",
       "plural": "Sonnen",
       "en": "sun",
+      "es": "sol",
       "emoji": "☀️"
     },
     {
@@ -25,6 +28,7 @@
       "article": "der",
       "plural": null,
       "en": "rain",
+      "es": "lluvia",
       "emoji": "🌧️"
     },
     {
@@ -32,6 +36,7 @@
       "article": "der",
       "plural": null,
       "en": "snow",
+      "es": "nieve",
       "emoji": "❄️"
     },
     {
@@ -39,6 +44,7 @@
       "article": "der",
       "plural": "Winde",
       "en": "wind",
+      "es": "viento",
       "emoji": "💨"
     },
     {
@@ -46,19 +52,22 @@
       "article": "die",
       "plural": "Wolken",
       "en": "cloud",
+      "es": "nube",
       "emoji": "☁️"
     },
     {
       "de": "Himmel",
       "article": "der",
       "plural": "Himmel",
-      "en": "sky"
+      "en": "sky",
+      "es": "cielo"
     },
     {
       "de": "Gewitter",
       "article": "das",
       "plural": "Gewitter",
       "en": "thunderstorm",
+      "es": "tormenta",
       "emoji": "⛈️"
     },
     {
@@ -66,19 +75,22 @@
       "article": "die",
       "plural": "Temperaturen",
       "en": "temperature",
+      "es": "temperatura",
       "emoji": "🌡️"
     },
     {
       "de": "Grad",
       "article": "der",
       "plural": "Grade",
-      "en": "degree"
+      "en": "degree",
+      "es": "grado"
     },
     {
       "de": "Frühling",
       "article": "der",
       "plural": "Frühlinge",
       "en": "spring",
+      "es": "primavera",
       "emoji": "🌷"
     },
     {
@@ -86,6 +98,7 @@
       "article": "der",
       "plural": "Sommer",
       "en": "summer",
+      "es": "verano",
       "emoji": "🌞"
     },
     {
@@ -93,6 +106,7 @@
       "article": "der",
       "plural": "Herbste",
       "en": "autumn",
+      "es": "otoño",
       "emoji": "🍂"
     },
     {
@@ -100,19 +114,22 @@
       "article": "der",
       "plural": "Winter",
       "en": "winter",
+      "es": "invierno",
       "emoji": "⛄"
     },
     {
       "de": "Jahreszeit",
       "article": "die",
       "plural": "Jahreszeiten",
-      "en": "season"
+      "en": "season",
+      "es": "estación del año"
     },
     {
       "de": "Baum",
       "article": "der",
       "plural": "Bäume",
       "en": "tree",
+      "es": "árbol",
       "emoji": "🌳"
     },
     {
@@ -120,6 +137,7 @@
       "article": "die",
       "plural": "Blumen",
       "en": "flower",
+      "es": "flor",
       "emoji": "🌸"
     },
     {
@@ -127,6 +145,7 @@
       "article": "der",
       "plural": "Wälder",
       "en": "forest",
+      "es": "bosque",
       "emoji": "🌲"
     },
     {
@@ -134,32 +153,37 @@
       "article": "der",
       "plural": "Berge",
       "en": "mountain",
+      "es": "montaña",
       "emoji": "⛰️"
     },
     {
       "de": "See",
       "article": "der",
       "plural": "Seen",
-      "en": "lake"
+      "en": "lake",
+      "es": "lago"
     },
     {
       "de": "Meer",
       "article": "das",
       "plural": "Meere",
       "en": "sea",
+      "es": "mar",
       "emoji": "🌊"
     },
     {
       "de": "Fluss",
       "article": "der",
       "plural": "Flüsse",
-      "en": "river"
+      "en": "river",
+      "es": "río"
     },
     {
       "de": "Strand",
       "article": "der",
       "plural": "Strände",
       "en": "beach",
+      "es": "playa",
       "emoji": "🏖️"
     },
     {
@@ -167,6 +191,7 @@
       "article": "die",
       "plural": "Inseln",
       "en": "island",
+      "es": "isla",
       "emoji": "🏝️"
     },
     {
@@ -174,6 +199,7 @@
       "article": "der",
       "plural": "Monde",
       "en": "moon",
+      "es": "luna",
       "emoji": "🌙"
     },
     {
@@ -181,33 +207,40 @@
       "article": "der",
       "plural": "Sterne",
       "en": "star",
+      "es": "estrella",
       "emoji": "⭐"
     }
   ],
   "sentences": [
     {
       "de": "Heute scheint die Sonne.",
-      "en": "Today the sun is shining."
+      "en": "Today the sun is shining.",
+      "es": "Hoy hace sol."
     },
     {
       "de": "Es regnet viel.",
-      "en": "It rains a lot."
+      "en": "It rains a lot.",
+      "es": "Llueve mucho."
     },
     {
       "de": "Im Winter schneit es.",
-      "en": "In winter it snows."
+      "en": "In winter it snows.",
+      "es": "En invierno nieva."
     },
     {
       "de": "Der Himmel ist blau.",
-      "en": "The sky is blue."
+      "en": "The sky is blue.",
+      "es": "El cielo es azul."
     },
     {
       "de": "Das Wetter ist schön.",
-      "en": "The weather is nice."
+      "en": "The weather is nice.",
+      "es": "Hace buen tiempo."
     },
     {
       "de": "Wir wandern in den Bergen.",
-      "en": "We hike in the mountains."
+      "en": "We hike in the mountains.",
+      "es": "Hacemos senderismo en las montañas."
     }
   ]
 }

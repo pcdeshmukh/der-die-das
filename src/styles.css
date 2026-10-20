@@ -142,6 +142,13 @@ h2 {
   gap: 12px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+/* The home hero already shows the name; phones need the room for stats and EN/DE/ES. */
+@media (max-width: 420px) {
+  .brand {
+    display: none;
+  }
 }
 .icon-btn {
   display: inline-grid;
