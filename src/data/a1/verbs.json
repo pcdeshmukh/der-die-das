@@ -7,6 +7,28 @@
     "ihr",
     "sie/Sie"
   ],
+  "prompts": [
+    [
+      "ich"
+    ],
+    [
+      "du"
+    ],
+    [
+      "er",
+      "es",
+      "sie"
+    ],
+    [
+      "wir"
+    ],
+    [
+      "ihr"
+    ],
+    [
+      "Sie (formal)"
+    ]
+  ],
   "verbs": [
     {
       "infinitive": "sein",

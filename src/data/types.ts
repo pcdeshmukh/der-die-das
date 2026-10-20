@@ -56,5 +56,11 @@ export interface Level {
   id: LevelId;
   slug: string;
   topics: Topic[];
-  verbs: { pronouns: string[]; verbs: Verb[] } | null;
+  verbs: {
+    /** column labels for the verb tables */
+    pronouns: string[];
+    /** pronouns a quiz prompt may show per person; "(note)" suffixes are shown as a hint, not spoken */
+    prompts: string[][];
+    verbs: Verb[];
+  } | null;
 }

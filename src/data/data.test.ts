@@ -40,6 +40,10 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
 
   it('has six present-tense forms for every verb', () => {
     expect(level.verbs?.pronouns).toHaveLength(6);
+    expect(level.verbs?.prompts).toHaveLength(6);
+    // A bare "sie" may stand for only one person, or a prompt would have two right answers.
+    const bareSie = level.verbs!.prompts.filter((p) => p.includes('sie'));
+    expect(bareSie.length).toBeLessThanOrEqual(1);
     for (const v of level.verbs?.verbs ?? []) expect(v.present, v.infinitive).toHaveLength(6);
     expect(verbForms(level).length).toBe((level.verbs?.verbs.length ?? 0) * 6);
   });

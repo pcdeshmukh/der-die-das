@@ -9,9 +9,6 @@ import type { GameProps } from './types';
 
 const ROUND_SIZE = 12;
 
-// Shown instead of "er/sie/es" and "sie/Sie" so each prompt reads like real German.
-// Lowercase "sie" is both "she" (sie lernt) and "they" (sie lernen), so it is always labelled.
-const PRONOUNS = [['ich'], ['du'], ['er', 'es', 'sie (she)'], ['wir'], ['ihr'], ['sie (they)', 'Sie (formal)']];
 const spoken = (pronoun: string) => pronoun.replace(/ \(.*\)$/, '');
 
 /** The form a learner gets by applying the regular rule, e.g. "fahrst" for fahren. */
@@ -22,11 +19,12 @@ function regularized(infinitive: string, person: number): string | null {
   return null;
 }
 
-export function ConjugationGame({ pool, starKey, onRetry, onExit }: GameProps<VerbForm>) {
+export function ConjugationGame({ level, pool, starKey, onRetry, onExit }: GameProps<VerbForm>) {
   const [questions] = useState(() =>
     pickWords(pool, progress.peek().words, 'conjugation', Math.min(ROUND_SIZE, pool.length)).map(
       ({ id, verb, person }): ChoiceQuestion => {
-        const pronoun = shuffle(PRONOUNS[person])[0];
+        // One concrete pronoun per prompt (not "er/sie/es") so it reads like real German.
+        const pronoun = shuffle(level.verbs!.prompts[person])[0];
         const form = verb.present[person];
         const wrong = new Set(verb.present.filter((f) => f !== form));
         const reg = regularized(verb.infinitive, person);
