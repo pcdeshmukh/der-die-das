@@ -1,0 +1,217 @@
+{
+  "id": "appliances",
+  "title": {
+    "de": "Geräte",
+    "en": "Appliances",
+    "es": "Aparatos"
+  },
+  "emoji": "🔌",
+  "nouns": [
+    {
+      "de": "Gerät",
+      "article": "das",
+      "plural": "Geräte",
+      "en": "device",
+      "es": "aparato"
+    },
+    {
+      "de": "Waschmaschine",
+      "article": "die",
+      "plural": "Waschmaschinen",
+      "en": "washing machine",
+      "es": "lavadora"
+    },
+    {
+      "de": "Staubsauger",
+      "article": "der",
+      "plural": "Staubsauger",
+      "en": "vacuum cleaner",
+      "es": "aspiradora"
+    },
+    {
+      "de": "Spülmaschine",
+      "article": "die",
+      "plural": "Spülmaschinen",
+      "en": "dishwasher",
+      "es": "lavavajillas"
+    },
+    {
+      "de": "Mikrowelle",
+      "article": "die",
+      "plural": "Mikrowellen",
+      "en": "microwave",
+      "es": "microondas"
+    },
+    {
+      "de": "Backofen",
+      "article": "der",
+      "plural": "Backöfen",
+      "en": "oven",
+      "es": "horno"
+    },
+    {
+      "de": "Toaster",
+      "article": "der",
+      "plural": "Toaster",
+      "en": "toaster",
+      "es": "tostadora"
+    },
+    {
+      "de": "Wasserkocher",
+      "article": "der",
+      "plural": "Wasserkocher",
+      "en": "kettle",
+      "es": "hervidor de agua"
+    },
+    {
+      "de": "Kaffeemaschine",
+      "article": "die",
+      "plural": "Kaffeemaschinen",
+      "en": "coffee machine",
+      "es": "cafetera",
+      "emoji": "☕"
+    },
+    {
+      "de": "Bügeleisen",
+      "article": "das",
+      "plural": "Bügeleisen",
+      "en": "iron",
+      "es": "plancha"
+    },
+    {
+      "de": "Föhn",
+      "article": "der",
+      "plural": "Föhne",
+      "en": "hair dryer",
+      "es": "secador de pelo"
+    },
+    {
+      "de": "Fernbedienung",
+      "article": "die",
+      "plural": "Fernbedienungen",
+      "en": "remote control",
+      "es": "mando a distancia"
+    },
+    {
+      "de": "Radio",
+      "article": "das",
+      "plural": "Radios",
+      "en": "radio",
+      "es": "radio",
+      "emoji": "📻"
+    },
+    {
+      "de": "Ladegerät",
+      "article": "das",
+      "plural": "Ladegeräte",
+      "en": "charger",
+      "es": "cargador"
+    },
+    {
+      "de": "Lautsprecher",
+      "article": "der",
+      "plural": "Lautsprecher",
+      "en": "loudspeaker",
+      "es": "altavoz",
+      "emoji": "🔊"
+    },
+    {
+      "de": "Kopfhörer",
+      "article": "der",
+      "plural": "Kopfhörer",
+      "en": "headphones",
+      "es": "auriculares",
+      "emoji": "🎧"
+    },
+    {
+      "de": "Tablet",
+      "article": "das",
+      "plural": "Tablets",
+      "en": "tablet",
+      "es": "tableta"
+    },
+    {
+      "de": "Heizung",
+      "article": "die",
+      "plural": "Heizungen",
+      "en": "heating",
+      "es": "calefacción"
+    },
+    {
+      "de": "Ventilator",
+      "article": "der",
+      "plural": "Ventilatoren",
+      "en": "fan",
+      "es": "ventilador"
+    },
+    {
+      "de": "Klimaanlage",
+      "article": "die",
+      "plural": "Klimaanlagen",
+      "en": "air conditioning",
+      "es": "aire acondicionado"
+    },
+    {
+      "de": "Steckdose",
+      "article": "die",
+      "plural": "Steckdosen",
+      "en": "socket",
+      "es": "enchufe",
+      "emoji": "🔌"
+    },
+    {
+      "de": "Stecker",
+      "article": "der",
+      "plural": "Stecker",
+      "en": "plug",
+      "es": "clavija"
+    },
+    {
+      "de": "Kabel",
+      "article": "das",
+      "plural": "Kabel",
+      "en": "cable",
+      "es": "cable"
+    },
+    {
+      "de": "Batterie",
+      "article": "die",
+      "plural": "Batterien",
+      "en": "battery",
+      "es": "pila",
+      "emoji": "🔋"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Die Waschmaschine ist kaputt.",
+      "en": "The washing machine is broken.",
+      "es": "La lavadora está rota."
+    },
+    {
+      "de": "Wo ist die Fernbedienung?",
+      "en": "Where is the remote control?",
+      "es": "¿Dónde está el mando a distancia?"
+    },
+    {
+      "de": "Ich brauche ein Ladegerät.",
+      "en": "I need a charger.",
+      "es": "Necesito un cargador."
+    },
+    {
+      "de": "Die Heizung funktioniert nicht.",
+      "en": "The heating does not work.",
+      "es": "La calefacción no funciona."
+    },
+    {
+      "de": "Hast du einen Föhn?",
+      "en": "Do you have a hair dryer?",
+      "es": "¿Tienes un secador de pelo?"
+    },
+    {
+      "de": "Die Kopfhörer sind neu.",
+      "en": "The headphones are new.",
+      "es": "Los auriculares son nuevos."
+    }
+  ]
+}

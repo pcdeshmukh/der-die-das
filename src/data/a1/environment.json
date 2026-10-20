@@ -1,0 +1,230 @@
+{
+  "id": "environment",
+  "title": {
+    "de": "Verkehr & Umwelt",
+    "en": "Traffic & environment",
+    "es": "Tráfico y medio ambiente"
+  },
+  "emoji": "♻️",
+  "nouns": [
+    {
+      "de": "Umwelt",
+      "article": "die",
+      "plural": null,
+      "en": "environment",
+      "es": "medio ambiente",
+      "emoji": "🌍"
+    },
+    {
+      "de": "Natur",
+      "article": "die",
+      "plural": null,
+      "en": "nature",
+      "es": "naturaleza",
+      "emoji": "🌳"
+    },
+    {
+      "de": "Luft",
+      "article": "die",
+      "plural": null,
+      "en": "air",
+      "es": "aire"
+    },
+    {
+      "de": "Energie",
+      "article": "die",
+      "plural": null,
+      "en": "energy",
+      "es": "energía",
+      "emoji": "⚡"
+    },
+    {
+      "de": "Strom",
+      "article": "der",
+      "plural": null,
+      "en": "electricity",
+      "es": "electricidad"
+    },
+    {
+      "de": "Müll",
+      "article": "der",
+      "plural": null,
+      "en": "rubbish",
+      "es": "basura"
+    },
+    {
+      "de": "Mülleimer",
+      "article": "der",
+      "plural": "Mülleimer",
+      "en": "bin",
+      "es": "cubo de la basura",
+      "emoji": "🗑️"
+    },
+    {
+      "de": "Biomüll",
+      "article": "der",
+      "plural": null,
+      "en": "organic waste",
+      "es": "residuos orgánicos"
+    },
+    {
+      "de": "Altpapier",
+      "article": "das",
+      "plural": null,
+      "en": "waste paper",
+      "es": "papel usado"
+    },
+    {
+      "de": "Recycling",
+      "article": "das",
+      "plural": null,
+      "en": "recycling",
+      "es": "reciclaje",
+      "emoji": "♻️"
+    },
+    {
+      "de": "Dose",
+      "article": "die",
+      "plural": "Dosen",
+      "en": "can",
+      "es": "lata",
+      "emoji": "🥫"
+    },
+    {
+      "de": "Plastiktüte",
+      "article": "die",
+      "plural": "Plastiktüten",
+      "en": "plastic bag",
+      "es": "bolsa de plástico"
+    },
+    {
+      "de": "Verkehr",
+      "article": "der",
+      "plural": null,
+      "en": "traffic",
+      "es": "tráfico"
+    },
+    {
+      "de": "Fußgänger",
+      "article": "der",
+      "plural": "Fußgänger",
+      "en": "pedestrian (male)",
+      "es": "peatón",
+      "emoji": "🚶‍♂️"
+    },
+    {
+      "de": "Fußgängerin",
+      "article": "die",
+      "plural": "Fußgängerinnen",
+      "en": "pedestrian (female)",
+      "es": "peatona",
+      "emoji": "🚶‍♀️"
+    },
+    {
+      "de": "Gehweg",
+      "article": "der",
+      "plural": "Gehwege",
+      "en": "pavement",
+      "es": "acera"
+    },
+    {
+      "de": "Radweg",
+      "article": "der",
+      "plural": "Radwege",
+      "en": "cycle path",
+      "es": "carril bici"
+    },
+    {
+      "de": "Zebrastreifen",
+      "article": "der",
+      "plural": "Zebrastreifen",
+      "en": "zebra crossing",
+      "es": "paso de cebra"
+    },
+    {
+      "de": "Schild",
+      "article": "das",
+      "plural": "Schilder",
+      "en": "sign",
+      "es": "señal",
+      "emoji": "🪧"
+    },
+    {
+      "de": "Regel",
+      "article": "die",
+      "plural": "Regeln",
+      "en": "rule",
+      "es": "norma"
+    },
+    {
+      "de": "Verbot",
+      "article": "das",
+      "plural": "Verbote",
+      "en": "ban",
+      "es": "prohibición",
+      "emoji": "🚫"
+    },
+    {
+      "de": "Strafe",
+      "article": "die",
+      "plural": "Strafen",
+      "en": "fine",
+      "es": "multa"
+    },
+    {
+      "de": "Helm",
+      "article": "der",
+      "plural": "Helme",
+      "en": "helmet",
+      "es": "casco",
+      "emoji": "⛑️"
+    },
+    {
+      "de": "Stau",
+      "article": "der",
+      "plural": "Staus",
+      "en": "traffic jam",
+      "es": "atasco"
+    },
+    {
+      "de": "Unfall",
+      "article": "der",
+      "plural": "Unfälle",
+      "en": "accident",
+      "es": "accidente",
+      "emoji": "💥"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Der Müll kommt in den Mülleimer.",
+      "en": "The rubbish goes in the bin.",
+      "es": "La basura va al cubo."
+    },
+    {
+      "de": "Es gibt einen Stau.",
+      "en": "There is a traffic jam.",
+      "es": "Hay un atasco."
+    },
+    {
+      "de": "Ich trage immer einen Helm.",
+      "en": "I always wear a helmet.",
+      "es": "Siempre llevo casco."
+    },
+    {
+      "de": "Die Luft ist sehr sauber.",
+      "en": "The air is very clean.",
+      "es": "El aire está muy limpio."
+    },
+    {
+      "de": "Wir sparen Strom.",
+      "en": "We save electricity.",
+      "es": "Ahorramos electricidad."
+    },
+    {
+      "de": "Wo ist der Radweg?",
+      "en": "Where is the cycle path?",
+      "es": "¿Dónde está el carril bici?"
+    }
+  ]
+}

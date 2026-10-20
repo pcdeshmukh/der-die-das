@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { numberToGerman, pluralDistractors, timeFormal, timeInformal, umlaut } from './german';
+import { formatNumber, numberToGerman, pluralDistractors, timeFormal, timeInformal, umlaut } from './german';
 
 describe('numberToGerman', () => {
   it.each([
@@ -19,8 +19,24 @@ describe('numberToGerman', () => {
     [999, 'neunhundertneunundneunzig'],
   ])('%i → %s', (n, word) => expect(numberToGerman(n)).toBe(word));
 
+  it.each([
+    [1000, 'eintausend'],
+    [1001, 'eintausendeins'],
+    [2500, 'zweitausendfünfhundert'],
+    [21000, 'einundzwanzigtausend'],
+    [101000, 'einhunderteintausend'],
+    [999999, 'neunhundertneunundneunzigtausendneunhundertneunundneunzig'],
+    [1000000, 'eine Million'],
+  ])('%i → %s', (n, word) => expect(numberToGerman(n)).toBe(word));
+
   it('rejects numbers out of range', () => {
-    expect(() => numberToGerman(1000)).toThrow();
+    expect(() => numberToGerman(1_000_001)).toThrow();
+  });
+
+  it('groups digits the German way', () => {
+    expect(formatNumber(999)).toBe('999');
+    expect(formatNumber(1250)).toBe('1.250');
+    expect(formatNumber(1000000)).toBe('1.000.000');
   });
 });
 

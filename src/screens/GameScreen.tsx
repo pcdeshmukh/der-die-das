@@ -1,12 +1,14 @@
 import type { FunctionComponent } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
 import type { Level } from '../data/types';
+import { AlphabetGame } from '../games/AlphabetGame';
 import { ArticleGame } from '../games/ArticleGame';
 import { ConjugationGame } from '../games/ConjugationGame';
 import { GrammarGame } from '../games/GrammarGame';
 import { ListenGame } from '../games/ListenGame';
 import { MatchGame } from '../games/MatchGame';
 import { NumbersGame } from '../games/NumbersGame';
+import { PhraseGame } from '../games/PhraseGame';
 import { PluralGame } from '../games/PluralGame';
 import { SentenceGame } from '../games/SentenceGame';
 import { TimeGame } from '../games/TimeGame';
@@ -28,6 +30,8 @@ const GAMES = {
   numbers: NumbersGame,
   time: TimeGame,
   grammar: GrammarGame,
+  phrases: PhraseGame,
+  alphabet: AlphabetGame,
 } as unknown as Record<ModeId, FunctionComponent<GameProps>>;
 
 export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: string; modeId: string }) {

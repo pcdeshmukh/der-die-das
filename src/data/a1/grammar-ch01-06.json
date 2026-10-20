@@ -1,0 +1,928 @@
+[
+  {
+    "id": "origin",
+    "title": {
+      "en": "Where are you from?",
+      "de": "Woher kommst du?",
+      "es": "¿De dónde eres?"
+    },
+    "emoji": "🌍",
+    "rule": {
+      "en": "Most countries take no article: aus Spanien. Some do: die Schweiz/Türkei → aus der, der Iran/Irak/Libanon → aus dem, die USA/Niederlande → aus den.",
+      "de": "Die meisten Länder haben keinen Artikel: aus Spanien. Einige schon: die Schweiz/Türkei → aus der, der Iran/Irak/Libanon → aus dem, die USA/Niederlande → aus den.",
+      "es": "La mayoría de los países no llevan artículo: aus Spanien. Algunos sí: die Schweiz/Türkei → aus der, der Iran/Irak/Libanon → aus dem, die USA/Niederlande → aus den."
+    },
+    "options": [
+      "aus",
+      "aus der",
+      "aus dem",
+      "aus den"
+    ],
+    "items": [
+      {
+        "q": "Ich komme ___ Spanien.",
+        "a": "aus",
+        "en": "I'm from Spain.",
+        "es": "Soy de España."
+      },
+      {
+        "q": "Sie kommt ___ Schweiz.",
+        "a": "aus der",
+        "en": "She's from Switzerland.",
+        "es": "Ella es de Suiza."
+      },
+      {
+        "q": "Er kommt ___ Iran.",
+        "a": "aus dem",
+        "en": "He's from Iran.",
+        "es": "Él es de Irán."
+      },
+      {
+        "q": "Wir kommen ___ USA.",
+        "a": "aus den",
+        "en": "We're from the USA.",
+        "es": "Somos de Estados Unidos."
+      },
+      {
+        "q": "Kommst du ___ Deutschland?",
+        "a": "aus",
+        "en": "Are you from Germany?",
+        "es": "¿Eres de Alemania?"
+      },
+      {
+        "q": "Mein Kollege kommt ___ Türkei.",
+        "a": "aus der",
+        "en": "My colleague is from Turkey.",
+        "es": "Mi compañero es de Turquía."
+      },
+      {
+        "q": "Frau Haddad kommt ___ Libanon.",
+        "a": "aus dem",
+        "en": "Mrs Haddad is from Lebanon.",
+        "es": "La señora Haddad es del Líbano."
+      },
+      {
+        "q": "Anna kommt ___ Niederlanden.",
+        "a": "aus den",
+        "en": "Anna is from the Netherlands.",
+        "es": "Anna es de los Países Bajos."
+      },
+      {
+        "q": "Ich komme ___ Österreich.",
+        "a": "aus",
+        "en": "I'm from Austria.",
+        "es": "Soy de Austria."
+      },
+      {
+        "q": "Ali kommt ___ Irak.",
+        "a": "aus dem",
+        "en": "Ali is from Iraq.",
+        "es": "Ali es de Irak."
+      },
+      {
+        "q": "Kommen Sie ___ Italien?",
+        "a": "aus",
+        "en": "Are you from Italy?",
+        "es": "¿Es usted de Italia?"
+      },
+      {
+        "q": "Pedro kommt ___ Mexiko.",
+        "a": "aus",
+        "en": "Pedro is from Mexico.",
+        "es": "Pedro es de México."
+      }
+    ]
+  },
+  {
+    "id": "jobprep",
+    "title": {
+      "en": "Work: als, bei, in",
+      "de": "Arbeit: als, bei, in",
+      "es": "Trabajo: als, bei, in"
+    },
+    "emoji": "💼",
+    "rule": {
+      "en": "als + job (Ich arbeite als Lehrerin), bei + company (bei Siemens), in + place (in Berlin).",
+      "de": "als + Beruf (Ich arbeite als Lehrerin), bei + Firma (bei Siemens), in + Ort (in Berlin).",
+      "es": "als + profesión (Ich arbeite als Lehrerin), bei + empresa (bei Siemens), in + lugar (in Berlin)."
+    },
+    "options": [
+      "als",
+      "bei",
+      "in"
+    ],
+    "items": [
+      {
+        "q": "Ich arbeite ___ Lehrerin.",
+        "a": "als",
+        "en": "I work as a teacher.",
+        "es": "Trabajo de profesora."
+      },
+      {
+        "q": "Er arbeitet ___ Siemens.",
+        "a": "bei",
+        "en": "He works for Siemens.",
+        "es": "Él trabaja para Siemens."
+      },
+      {
+        "q": "Sie arbeitet ___ Berlin.",
+        "a": "in",
+        "en": "She works in Berlin.",
+        "es": "Ella trabaja en Berlín."
+      },
+      {
+        "q": "Tom arbeitet ___ Koch.",
+        "a": "als",
+        "en": "Tom works as a cook.",
+        "es": "Tom trabaja de cocinero."
+      },
+      {
+        "q": "Wir arbeiten ___ BMW.",
+        "a": "bei",
+        "en": "We work for BMW.",
+        "es": "Trabajamos para BMW."
+      },
+      {
+        "q": "Maria arbeitet ___ einem Krankenhaus.",
+        "a": "in",
+        "en": "Maria works in a hospital.",
+        "es": "María trabaja en un hospital."
+      },
+      {
+        "q": "Mein Vater arbeitet ___ München.",
+        "a": "in",
+        "en": "My father works in Munich.",
+        "es": "Mi padre trabaja en Múnich."
+      },
+      {
+        "q": "Er arbeitet ___ Taxifahrer.",
+        "a": "als",
+        "en": "He works as a taxi driver.",
+        "es": "Él trabaja de taxista."
+      },
+      {
+        "q": "Arbeitest du ___ Lufthansa?",
+        "a": "bei",
+        "en": "Do you work for Lufthansa?",
+        "es": "¿Trabajas para Lufthansa?"
+      },
+      {
+        "q": "Sie arbeitet ___ Verkäuferin.",
+        "a": "als",
+        "en": "She works as a shop assistant.",
+        "es": "Ella trabaja de dependienta."
+      },
+      {
+        "q": "Herr Kaya arbeitet ___ Wien.",
+        "a": "in",
+        "en": "Mr Kaya works in Vienna.",
+        "es": "El señor Kaya trabaja en Viena."
+      },
+      {
+        "q": "Paul arbeitet ___ Bosch.",
+        "a": "bei",
+        "en": "Paul works for Bosch.",
+        "es": "Paul trabaja para Bosch."
+      }
+    ]
+  },
+  {
+    "id": "feminine",
+    "title": {
+      "en": "Female jobs: -in",
+      "de": "Berufe: -in",
+      "es": "Profesiones femeninas: -in"
+    },
+    "emoji": "👩‍⚕️",
+    "rule": {
+      "en": "Add -in for a woman: Lehrer → Lehrerin. Some words also get an umlaut: Arzt → Ärztin, Koch → Köchin.",
+      "de": "Für Frauen: + -in: Lehrer → Lehrerin. Manche Wörter bekommen einen Umlaut: Arzt → Ärztin, Koch → Köchin.",
+      "es": "Para mujeres se añade -in: Lehrer → Lehrerin. Algunas palabras llevan además diéresis: Arzt → Ärztin, Koch → Köchin."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Peter ist Koch. Anna ist ___.",
+        "a": "Köchin",
+        "en": "Peter is a cook. Anna is a cook too.",
+        "es": "Peter es cocinero. Anna es cocinera.",
+        "options": [
+          "Köchin",
+          "Kochin",
+          "Koch"
+        ]
+      },
+      {
+        "q": "Herr Braun ist Lehrer. Frau Braun ist ___.",
+        "a": "Lehrerin",
+        "en": "Mr Braun is a teacher. Mrs Braun is a teacher too.",
+        "es": "El señor Braun es profesor. La señora Braun es profesora.",
+        "options": [
+          "Lehrerin",
+          "Lehrerinn",
+          "Lehrer"
+        ]
+      },
+      {
+        "q": "Tom ist Arzt. Lisa ist ___.",
+        "a": "Ärztin",
+        "en": "Tom is a doctor. Lisa is a doctor too.",
+        "es": "Tom es médico. Lisa es médica.",
+        "options": [
+          "Ärztin",
+          "Arztin",
+          "Arzt"
+        ]
+      },
+      {
+        "q": "Max ist Verkäufer. Sara ist ___.",
+        "a": "Verkäuferin",
+        "en": "Max is a shop assistant. Sara is a shop assistant too.",
+        "es": "Max es dependiente. Sara es dependienta.",
+        "options": [
+          "Verkäuferin",
+          "Verkaufin",
+          "Verkäufer"
+        ]
+      },
+      {
+        "q": "Mein Bruder ist Student. Meine Schwester ist ___.",
+        "a": "Studentin",
+        "en": "My brother is a student. My sister is a student too.",
+        "es": "Mi hermano es estudiante. Mi hermana también es estudiante.",
+        "options": [
+          "Studentin",
+          "Studentine",
+          "Student"
+        ]
+      },
+      {
+        "q": "Er ist Friseur. Sie ist ___.",
+        "a": "Friseurin",
+        "en": "He is a hairdresser. She is a hairdresser too.",
+        "es": "Él es peluquero. Ella es peluquera.",
+        "options": [
+          "Friseurin",
+          "Friseurine",
+          "Friseur"
+        ]
+      },
+      {
+        "q": "Jan ist Ingenieur. Eva ist ___.",
+        "a": "Ingenieurin",
+        "en": "Jan is an engineer. Eva is an engineer too.",
+        "es": "Jan es ingeniero. Eva es ingeniera.",
+        "options": [
+          "Ingenieurin",
+          "Ingenieure",
+          "Ingenieur"
+        ]
+      },
+      {
+        "q": "Herr Weber ist Kellner. Frau Weber ist ___.",
+        "a": "Kellnerin",
+        "en": "Mr Weber is a waiter. Mrs Weber is a waitress.",
+        "es": "El señor Weber es camarero. La señora Weber es camarera.",
+        "options": [
+          "Kellnerin",
+          "Kellnerinn",
+          "Kellner"
+        ]
+      },
+      {
+        "q": "Paul ist Bauer. Maria ist ___.",
+        "a": "Bäuerin",
+        "en": "Paul is a farmer. Maria is a farmer too.",
+        "es": "Paul es agricultor. María es agricultora.",
+        "options": [
+          "Bäuerin",
+          "Bauerin",
+          "Bauer"
+        ]
+      },
+      {
+        "q": "Mein Vater ist Anwalt. Meine Mutter ist ___.",
+        "a": "Anwältin",
+        "en": "My father is a lawyer. My mother is a lawyer too.",
+        "es": "Mi padre es abogado. Mi madre es abogada.",
+        "options": [
+          "Anwältin",
+          "Anwaltin",
+          "Anwalt"
+        ]
+      },
+      {
+        "q": "Herr Klein ist Polizist. Frau Klein ist ___.",
+        "a": "Polizistin",
+        "en": "Mr Klein is a police officer. Mrs Klein is a police officer too.",
+        "es": "El señor Klein es policía. La señora Klein también es policía.",
+        "options": [
+          "Polizistin",
+          "Polizistine",
+          "Polizist"
+        ]
+      },
+      {
+        "q": "Ali ist Taxifahrer. Ayşe ist ___.",
+        "a": "Taxifahrerin",
+        "en": "Ali is a taxi driver. Ayşe is a taxi driver too.",
+        "es": "Ali es taxista. Ayşe también es taxista.",
+        "options": [
+          "Taxifahrerin",
+          "Taxifährerin",
+          "Taxifahrer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "genitive",
+    "title": {
+      "en": "Annas Bruder: names with -s",
+      "de": "Annas Bruder: Namen mit -s",
+      "es": "Annas Bruder: nombres con -s"
+    },
+    "emoji": "🏷️",
+    "rule": {
+      "en": "To show whose it is, add -s to the name with no apostrophe: Annas Bruder. Names ending in s, ß, x or z only take an apostrophe: Max' Auto.",
+      "de": "Für Besitz bekommt der Name ein -s ohne Apostroph: Annas Bruder. Namen auf s, ß, x oder z bekommen nur einen Apostroph: Max' Auto.",
+      "es": "Para indicar de quién es algo, se añade -s al nombre sin apóstrofo: Annas Bruder. Los nombres terminados en s, ß, x o z solo llevan apóstrofo: Max' Auto."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Das ist ___ Bruder.",
+        "a": "Annas",
+        "en": "This is Anna's brother.",
+        "es": "Este es el hermano de Anna.",
+        "options": [
+          "Annas",
+          "Anna's",
+          "Anna"
+        ]
+      },
+      {
+        "q": "Das ist ___ Auto.",
+        "a": "Max'",
+        "en": "This is Max's car.",
+        "es": "Este es el coche de Max.",
+        "options": [
+          "Max'",
+          "Maxs",
+          "Max's"
+        ]
+      },
+      {
+        "q": "Wo ist ___ Tasche?",
+        "a": "Marias",
+        "en": "Where is Maria's bag?",
+        "es": "¿Dónde está el bolso de María?",
+        "options": [
+          "Marias",
+          "Maria's",
+          "Maria"
+        ]
+      },
+      {
+        "q": "___ Frau heißt Eva.",
+        "a": "Hans'",
+        "en": "Hans's wife is called Eva.",
+        "es": "La mujer de Hans se llama Eva.",
+        "options": [
+          "Hans'",
+          "Hanss",
+          "Hans's"
+        ]
+      },
+      {
+        "q": "Das ist ___ Haus.",
+        "a": "Peters",
+        "en": "This is Peter's house.",
+        "es": "Esta es la casa de Peter.",
+        "options": [
+          "Peters",
+          "Peter's",
+          "Peter"
+        ]
+      },
+      {
+        "q": "___ Schwester wohnt in Köln.",
+        "a": "Tims",
+        "en": "Tim's sister lives in Cologne.",
+        "es": "La hermana de Tim vive en Colonia.",
+        "options": [
+          "Tims",
+          "Tim's",
+          "Tim"
+        ]
+      },
+      {
+        "q": "Kennst du ___ Mutter?",
+        "a": "Lukas'",
+        "en": "Do you know Lukas's mother?",
+        "es": "¿Conoces a la madre de Lukas?",
+        "options": [
+          "Lukas'",
+          "Lukass",
+          "Lukas's"
+        ]
+      },
+      {
+        "q": "Das ist ___ Zimmer.",
+        "a": "Fritz'",
+        "en": "This is Fritz's room.",
+        "es": "Esta es la habitación de Fritz.",
+        "options": [
+          "Fritz'",
+          "Fritzs",
+          "Fritz's"
+        ]
+      },
+      {
+        "q": "___ Hund ist sehr klein.",
+        "a": "Saras",
+        "en": "Sara's dog is very small.",
+        "es": "El perro de Sara es muy pequeño.",
+        "options": [
+          "Saras",
+          "Sara's",
+          "Sara"
+        ]
+      },
+      {
+        "q": "Das ist ___ Fahrrad.",
+        "a": "Jonas'",
+        "en": "This is Jonas's bike.",
+        "es": "Esta es la bici de Jonas.",
+        "options": [
+          "Jonas'",
+          "Jonass",
+          "Jonas's"
+        ]
+      },
+      {
+        "q": "Wie ist ___ Telefonnummer?",
+        "a": "Pauls",
+        "en": "What is Paul's phone number?",
+        "es": "¿Cuál es el número de teléfono de Paul?",
+        "options": [
+          "Pauls",
+          "Paul's",
+          "Paul"
+        ]
+      },
+      {
+        "q": "Das sind ___ Kinder.",
+        "a": "Lenas",
+        "en": "These are Lena's children.",
+        "es": "Estos son los hijos de Lena.",
+        "options": [
+          "Lenas",
+          "Lena's",
+          "Lena"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "doch",
+    "title": {
+      "en": "Ja, Nein or Doch?",
+      "de": "Ja, Nein oder Doch?",
+      "es": "¿Ja, Nein o Doch?"
+    },
+    "emoji": "🔁",
+    "rule": {
+      "en": "Ja and Nein answer normal questions. Doch means \"yes\" to a negative question (with nicht or kein).",
+      "de": "Ja und Nein antworten auf normale Fragen. Doch ist ein Ja auf eine negative Frage (mit nicht oder kein).",
+      "es": "Ja y Nein responden a preguntas normales. Doch es un «sí» a una pregunta negativa (con nicht o kein)."
+    },
+    "options": [
+      "Ja",
+      "Nein",
+      "Doch"
+    ],
+    "items": [
+      {
+        "q": "Kommst du nicht mit? – ___, ich komme mit.",
+        "a": "Doch",
+        "en": "Aren't you coming? – Yes, I am coming.",
+        "es": "¿No vienes? – Sí, sí que voy."
+      },
+      {
+        "q": "Kommst du mit? – ___, ich komme mit.",
+        "a": "Ja",
+        "en": "Are you coming? – Yes, I'm coming.",
+        "es": "¿Vienes? – Sí, voy."
+      },
+      {
+        "q": "Hast du keine Zeit? – ___, ich habe keine Zeit.",
+        "a": "Nein",
+        "en": "Don't you have time? – No, I don't have time.",
+        "es": "¿No tienes tiempo? – No, no tengo tiempo."
+      },
+      {
+        "q": "Hast du keinen Hunger? – ___, ich habe Hunger.",
+        "a": "Doch",
+        "en": "Aren't you hungry? – Yes, I am hungry.",
+        "es": "¿No tienes hambre? – Sí, sí que tengo hambre."
+      },
+      {
+        "q": "Bist du müde? – ___, ich bin nicht müde.",
+        "a": "Nein",
+        "en": "Are you tired? – No, I'm not tired.",
+        "es": "¿Estás cansado? – No, no estoy cansado."
+      },
+      {
+        "q": "Wohnst du nicht in Berlin? – ___, ich wohne in Berlin.",
+        "a": "Doch",
+        "en": "Don't you live in Berlin? – Yes, I do live in Berlin.",
+        "es": "¿No vives en Berlín? – Sí, sí que vivo en Berlín."
+      },
+      {
+        "q": "Sprichst du Deutsch? – ___, ich spreche Deutsch.",
+        "a": "Ja",
+        "en": "Do you speak German? – Yes, I speak German.",
+        "es": "¿Hablas alemán? – Sí, hablo alemán."
+      },
+      {
+        "q": "Trinkst du keinen Kaffee? – ___, ich trinke gern Kaffee.",
+        "a": "Doch",
+        "en": "Don't you drink coffee? – Yes, I like coffee.",
+        "es": "¿No bebes café? – Sí, sí que me gusta el café."
+      },
+      {
+        "q": "Ist das dein Auto? – ___, das ist nicht mein Auto.",
+        "a": "Nein",
+        "en": "Is that your car? – No, that isn't my car.",
+        "es": "¿Es tu coche? – No, no es mi coche."
+      },
+      {
+        "q": "Hast du keine Geschwister? – ___, ich habe einen Bruder.",
+        "a": "Doch",
+        "en": "Don't you have any siblings? – Yes, I have a brother.",
+        "es": "¿No tienes hermanos? – Sí, tengo un hermano."
+      },
+      {
+        "q": "Arbeitest du heute nicht? – ___, heute habe ich frei.",
+        "a": "Nein",
+        "en": "Aren't you working today? – No, I have the day off today.",
+        "es": "¿No trabajas hoy? – No, hoy tengo el día libre."
+      },
+      {
+        "q": "Ist das Wetter schön? – ___, es ist sehr schön.",
+        "a": "Ja",
+        "en": "Is the weather nice? – Yes, it's very nice.",
+        "es": "¿Hace buen tiempo? – Sí, hace muy bueno."
+      }
+    ]
+  },
+  {
+    "id": "adjectives",
+    "title": {
+      "en": "Opposites",
+      "de": "Gegenteile",
+      "es": "Contrarios"
+    },
+    "emoji": "↕️",
+    "rule": {
+      "en": "Many adjectives come in pairs: groß ↔ klein, alt ↔ neu (things), alt ↔ jung (people), teuer ↔ billig.",
+      "de": "Viele Adjektive sind Paare: groß ↔ klein, alt ↔ neu (Sachen), alt ↔ jung (Personen), teuer ↔ billig.",
+      "es": "Muchos adjetivos van en parejas: groß ↔ klein, alt ↔ neu (cosas), alt ↔ jung (personas), teuer ↔ billig."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Das Sofa ist nicht teuer. Es ist ___.",
+        "a": "billig",
+        "en": "The sofa isn't expensive. It's cheap.",
+        "es": "El sofá no es caro. Es barato.",
+        "options": [
+          "billig",
+          "teuer",
+          "schwer"
+        ]
+      },
+      {
+        "q": "Der Mann ist nicht alt. Er ist ___.",
+        "a": "jung",
+        "en": "The man isn't old. He's young.",
+        "es": "El hombre no es mayor. Es joven.",
+        "options": [
+          "jung",
+          "neu",
+          "klein"
+        ]
+      },
+      {
+        "q": "Das Auto ist nicht alt. Es ist ___.",
+        "a": "neu",
+        "en": "The car isn't old. It's new.",
+        "es": "El coche no es viejo. Es nuevo.",
+        "options": [
+          "neu",
+          "jung",
+          "kurz"
+        ]
+      },
+      {
+        "q": "Das Haus ist nicht klein. Es ist ___.",
+        "a": "groß",
+        "en": "The house isn't small. It's big.",
+        "es": "La casa no es pequeña. Es grande.",
+        "options": [
+          "groß",
+          "lang",
+          "schwer"
+        ]
+      },
+      {
+        "q": "Der Film ist nicht lang. Er ist ___.",
+        "a": "kurz",
+        "en": "The film isn't long. It's short.",
+        "es": "La película no es larga. Es corta.",
+        "options": [
+          "kurz",
+          "klein",
+          "langsam"
+        ]
+      },
+      {
+        "q": "Das Zimmer ist nicht dunkel. Es ist ___.",
+        "a": "hell",
+        "en": "The room isn't dark. It's bright.",
+        "es": "La habitación no es oscura. Es luminosa.",
+        "options": [
+          "hell",
+          "leicht",
+          "warm"
+        ]
+      },
+      {
+        "q": "Der Zug ist nicht langsam. Er ist ___.",
+        "a": "schnell",
+        "en": "The train isn't slow. It's fast.",
+        "es": "El tren no es lento. Es rápido.",
+        "options": [
+          "schnell",
+          "kurz",
+          "schwer"
+        ]
+      },
+      {
+        "q": "Der Tee ist nicht kalt. Er ist ___.",
+        "a": "warm",
+        "en": "The tea isn't cold. It's warm.",
+        "es": "El té no está frío. Está caliente.",
+        "options": [
+          "warm",
+          "hell",
+          "teuer"
+        ]
+      },
+      {
+        "q": "Die Tasche ist nicht schwer. Sie ist ___.",
+        "a": "leicht",
+        "en": "The bag isn't heavy. It's light.",
+        "es": "El bolso no pesa. Es ligero.",
+        "options": [
+          "leicht",
+          "hell",
+          "kalt"
+        ]
+      },
+      {
+        "q": "Die Katze ist nicht hässlich. Sie ist ___.",
+        "a": "schön",
+        "en": "The cat isn't ugly. It's beautiful.",
+        "es": "El gato no es feo. Es bonito.",
+        "options": [
+          "schön",
+          "schnell",
+          "neu"
+        ]
+      },
+      {
+        "q": "Der Winter ist nicht warm. Er ist ___.",
+        "a": "kalt",
+        "en": "The winter isn't warm. It's cold.",
+        "es": "El invierno no es cálido. Es frío.",
+        "options": [
+          "kalt",
+          "dunkel",
+          "kurz"
+        ]
+      },
+      {
+        "q": "Die Hose ist nicht kurz. Sie ist ___.",
+        "a": "lang",
+        "en": "The trousers aren't short. They're long.",
+        "es": "Los pantalones no son cortos. Son largos.",
+        "options": [
+          "lang",
+          "groß",
+          "alt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "colors",
+    "title": {
+      "en": "Colours",
+      "de": "Farben",
+      "es": "Colores"
+    },
+    "emoji": "🎨",
+    "rule": {
+      "en": "Colours come after sein without an ending: Die Banane ist gelb.",
+      "de": "Nach sein haben Farben keine Endung: Die Banane ist gelb.",
+      "es": "Después de sein, los colores no llevan terminación: Die Banane ist gelb."
+    },
+    "options": [
+      "rot",
+      "blau",
+      "gelb",
+      "grün",
+      "weiß",
+      "schwarz",
+      "braun",
+      "grau",
+      "orange",
+      "rosa"
+    ],
+    "items": [
+      {
+        "q": "Die Banane ist ___.",
+        "a": "gelb",
+        "en": "The banana is yellow.",
+        "es": "El plátano es amarillo."
+      },
+      {
+        "q": "Die Tomate ist ___.",
+        "a": "rot",
+        "en": "The tomato is red.",
+        "es": "El tomate es rojo."
+      },
+      {
+        "q": "Das Gras ist ___.",
+        "a": "grün",
+        "en": "The grass is green.",
+        "es": "La hierba es verde."
+      },
+      {
+        "q": "Der Himmel ist ___.",
+        "a": "blau",
+        "en": "The sky is blue.",
+        "es": "El cielo es azul."
+      },
+      {
+        "q": "Der Schnee ist ___.",
+        "a": "weiß",
+        "en": "The snow is white.",
+        "es": "La nieve es blanca."
+      },
+      {
+        "q": "Die Nacht ist ___.",
+        "a": "schwarz",
+        "en": "The night is black.",
+        "es": "La noche es negra."
+      },
+      {
+        "q": "Die Schokolade ist ___.",
+        "a": "braun",
+        "en": "The chocolate is brown.",
+        "es": "El chocolate es marrón."
+      },
+      {
+        "q": "Der Elefant ist ___.",
+        "a": "grau",
+        "en": "The elephant is grey.",
+        "es": "El elefante es gris."
+      },
+      {
+        "q": "Die Orange ist ___.",
+        "a": "orange",
+        "en": "The orange is orange.",
+        "es": "La naranja es naranja."
+      },
+      {
+        "q": "Das Schwein ist ___.",
+        "a": "rosa",
+        "en": "The pig is pink.",
+        "es": "El cerdo es rosa."
+      },
+      {
+        "q": "Die Milch ist ___.",
+        "a": "weiß",
+        "en": "The milk is white.",
+        "es": "La leche es blanca."
+      },
+      {
+        "q": "Die Erdbeere ist ___.",
+        "a": "rot",
+        "en": "The strawberry is red.",
+        "es": "La fresa es roja."
+      }
+    ]
+  },
+  {
+    "id": "materials",
+    "title": {
+      "en": "What is it made of?",
+      "de": "Woraus ist das?",
+      "es": "¿De qué está hecho?"
+    },
+    "emoji": "🧵",
+    "rule": {
+      "en": "Use aus + material, without an article: Der Tisch ist aus Holz.",
+      "de": "aus + Material, ohne Artikel: Der Tisch ist aus Holz.",
+      "es": "Se usa aus + material, sin artículo: Der Tisch ist aus Holz."
+    },
+    "options": [
+      "Holz",
+      "Glas",
+      "Metall",
+      "Plastik",
+      "Papier",
+      "Leder",
+      "Wolle",
+      "Stoff",
+      "Gold"
+    ],
+    "items": [
+      {
+        "q": "Der Tisch ist aus ___.",
+        "a": "Holz",
+        "en": "The table is made of wood.",
+        "es": "La mesa es de madera."
+      },
+      {
+        "q": "Das Fenster ist aus ___.",
+        "a": "Glas",
+        "en": "The window is made of glass.",
+        "es": "La ventana es de cristal."
+      },
+      {
+        "q": "Die Jacke ist aus ___.",
+        "a": "Leder",
+        "en": "The jacket is made of leather.",
+        "es": "La chaqueta es de cuero."
+      },
+      {
+        "q": "Der Pullover ist aus ___.",
+        "a": "Wolle",
+        "en": "The jumper is made of wool.",
+        "es": "El jersey es de lana."
+      },
+      {
+        "q": "Das Heft ist aus ___.",
+        "a": "Papier",
+        "en": "The exercise book is made of paper.",
+        "es": "El cuaderno es de papel."
+      },
+      {
+        "q": "Der Ring ist aus ___.",
+        "a": "Gold",
+        "en": "The ring is made of gold.",
+        "es": "El anillo es de oro."
+      },
+      {
+        "q": "Die Flasche ist aus ___.",
+        "a": "Plastik",
+        "en": "The bottle is made of plastic.",
+        "es": "La botella es de plástico."
+      },
+      {
+        "q": "Der Löffel ist aus ___.",
+        "a": "Metall",
+        "en": "The spoon is made of metal.",
+        "es": "La cuchara es de metal."
+      },
+      {
+        "q": "Die Tasche ist aus ___.",
+        "a": "Stoff",
+        "en": "The bag is made of fabric.",
+        "es": "El bolso es de tela."
+      },
+      {
+        "q": "Die Vase ist aus ___.",
+        "a": "Glas",
+        "en": "The vase is made of glass.",
+        "es": "El jarrón es de cristal."
+      },
+      {
+        "q": "Der Stuhl ist aus ___.",
+        "a": "Holz",
+        "en": "The chair is made of wood.",
+        "es": "La silla es de madera."
+      },
+      {
+        "q": "Die Schuhe sind aus ___.",
+        "a": "Leder",
+        "en": "The shoes are made of leather.",
+        "es": "Los zapatos son de cuero."
+      }
+    ]
+  }
+]

@@ -1,0 +1,225 @@
+{
+  "id": "office",
+  "title": {
+    "de": "Büro & Computer",
+    "en": "Office & computer",
+    "es": "Oficina y ordenador"
+  },
+  "emoji": "🖥️",
+  "nouns": [
+    {
+      "de": "Drucker",
+      "article": "der",
+      "plural": "Drucker",
+      "en": "printer",
+      "es": "impresora",
+      "emoji": "🖨️"
+    },
+    {
+      "de": "Bildschirm",
+      "article": "der",
+      "plural": "Bildschirme",
+      "en": "screen",
+      "es": "pantalla",
+      "emoji": "🖥️"
+    },
+    {
+      "de": "Tastatur",
+      "article": "die",
+      "plural": "Tastaturen",
+      "en": "keyboard",
+      "es": "teclado",
+      "emoji": "⌨️"
+    },
+    {
+      "de": "Laptop",
+      "article": "der",
+      "plural": "Laptops",
+      "en": "laptop",
+      "es": "portátil",
+      "emoji": "💻"
+    },
+    {
+      "de": "Datei",
+      "article": "die",
+      "plural": "Dateien",
+      "en": "file",
+      "es": "archivo",
+      "emoji": "📄"
+    },
+    {
+      "de": "Passwort",
+      "article": "das",
+      "plural": "Passwörter",
+      "en": "password",
+      "es": "contraseña",
+      "emoji": "🔑"
+    },
+    {
+      "de": "Schreibtisch",
+      "article": "der",
+      "plural": "Schreibtische",
+      "en": "desk",
+      "es": "escritorio"
+    },
+    {
+      "de": "Kopie",
+      "article": "die",
+      "plural": "Kopien",
+      "en": "copy",
+      "es": "copia"
+    },
+    {
+      "de": "Ordner",
+      "article": "der",
+      "plural": "Ordner",
+      "en": "folder",
+      "es": "carpeta",
+      "emoji": "📁"
+    },
+    {
+      "de": "Notiz",
+      "article": "die",
+      "plural": "Notizen",
+      "en": "note",
+      "es": "nota",
+      "emoji": "📝"
+    },
+    {
+      "de": "Telefon",
+      "article": "das",
+      "plural": "Telefone",
+      "en": "telephone",
+      "es": "teléfono",
+      "emoji": "☎️"
+    },
+    {
+      "de": "Anruf",
+      "article": "der",
+      "plural": "Anrufe",
+      "en": "phone call",
+      "es": "llamada",
+      "emoji": "📞"
+    },
+    {
+      "de": "Nachricht",
+      "article": "die",
+      "plural": "Nachrichten",
+      "en": "message",
+      "es": "mensaje",
+      "emoji": "💬"
+    },
+    {
+      "de": "Webseite",
+      "article": "die",
+      "plural": "Webseiten",
+      "en": "website",
+      "es": "página web",
+      "emoji": "🌐"
+    },
+    {
+      "de": "Programm",
+      "article": "das",
+      "plural": "Programme",
+      "en": "program",
+      "es": "programa"
+    },
+    {
+      "de": "Stift",
+      "article": "der",
+      "plural": "Stifte",
+      "en": "pen",
+      "es": "bolígrafo",
+      "emoji": "🖊️"
+    },
+    {
+      "de": "Schere",
+      "article": "die",
+      "plural": "Scheren",
+      "en": "scissors",
+      "es": "tijeras",
+      "emoji": "✂️"
+    },
+    {
+      "de": "Kleber",
+      "article": "der",
+      "plural": "Kleber",
+      "en": "glue",
+      "es": "pegamento"
+    },
+    {
+      "de": "Besprechung",
+      "article": "die",
+      "plural": "Besprechungen",
+      "en": "meeting",
+      "es": "reunión"
+    },
+    {
+      "de": "Projekt",
+      "article": "das",
+      "plural": "Projekte",
+      "en": "project",
+      "es": "proyecto"
+    },
+    {
+      "de": "Kunde",
+      "article": "der",
+      "plural": "Kunden",
+      "en": "customer (male)",
+      "es": "cliente (hombre)"
+    },
+    {
+      "de": "Kundin",
+      "article": "die",
+      "plural": "Kundinnen",
+      "en": "customer (female)",
+      "es": "cliente (mujer)"
+    },
+    {
+      "de": "Pause",
+      "article": "die",
+      "plural": "Pausen",
+      "en": "break",
+      "es": "descanso"
+    },
+    {
+      "de": "Feierabend",
+      "article": "der",
+      "plural": null,
+      "en": "end of the working day",
+      "es": "fin de la jornada"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Der Drucker ist kaputt.",
+      "en": "The printer is broken.",
+      "es": "La impresora está rota."
+    },
+    {
+      "de": "Wie ist das Passwort?",
+      "en": "What is the password?",
+      "es": "¿Cuál es la contraseña?"
+    },
+    {
+      "de": "Ich schreibe eine Nachricht.",
+      "en": "I am writing a message.",
+      "es": "Escribo un mensaje."
+    },
+    {
+      "de": "Mein Laptop ist neu.",
+      "en": "My laptop is new.",
+      "es": "Mi portátil es nuevo."
+    },
+    {
+      "de": "Wo ist die Schere?",
+      "en": "Where are the scissors?",
+      "es": "¿Dónde están las tijeras?"
+    },
+    {
+      "de": "Hast du eine Kopie?",
+      "en": "Do you have a copy?",
+      "es": "¿Tienes una copia?"
+    }
+  ]
+}

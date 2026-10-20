@@ -261,6 +261,59 @@ h2 {
   color: var(--muted);
 }
 
+/* Chapters */
+.chapter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.chapter-row {
+  display: grid;
+  grid-template-columns: 2.2em 1fr 64px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.chapter-row:hover {
+  border-color: var(--accent);
+}
+.chapter-n {
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.chapter-title {
+  font-weight: 600;
+}
+.chapter-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.chapter-bar span {
+  display: block;
+  height: 100%;
+  background: var(--star);
+}
+.chapter-grid {
+  margin-top: 16px;
+}
+.situation {
+  font-size: clamp(1.15rem, 5vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 0 28px;
+}
+
 /* Daily challenge */
 .daily-card {
   display: flex;

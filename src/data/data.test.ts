@@ -87,4 +87,31 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
       }
     }
   });
+
+  it.each(level.topics.map((t) => [t.id, t] as const))('topic %s has enough nouns and sentences', (_, topic) => {
+    expect(topic.nouns.length).toBeGreaterThanOrEqual(15);
+    expect(topic.sentences.length).toBeGreaterThanOrEqual(6);
+  });
+
+  it.each(level.grammar.map((l) => [l.id, l] as const))('grammar lesson %s has at least 8 exercises', (_, lesson) => {
+    expect(lesson.items.length).toBeGreaterThanOrEqual(8);
+  });
+
+  it.each(level.phrases.map((l) => [l.id, l] as const))('phrase set %s is well-formed', (_, lesson) => {
+    expect(lesson.title.en && lesson.title.de && lesson.title.es).toBeTruthy();
+    expect(lesson.items.length).toBeGreaterThanOrEqual(6);
+    for (const item of lesson.items) {
+      const label = `${lesson.id}: ${item.a}`;
+      expect(item.situation.en?.trim() && item.situation.es?.trim(), label).toBeTruthy();
+      expect(item.en?.trim() && item.es?.trim(), label).toBeTruthy();
+      expect(item.wrong.length, label).toBeGreaterThanOrEqual(2);
+      expect(item.wrong.length, label).toBeLessThanOrEqual(3);
+      expect(new Set([item.a, ...item.wrong]).size, label).toBe(item.wrong.length + 1);
+    }
+  });
+
+  it('has unique grammar and phrase ids', () => {
+    const ids = [...level.grammar.map((l) => l.id), ...level.phrases.map((l) => `p:${l.id}`)];
+    expect(ids.filter((id, i) => ids.indexOf(id) !== i)).toEqual([]);
+  });
 });

@@ -197,6 +197,90 @@
       "plural": "Daten",
       "en": "date",
       "es": "fecha"
+    },
+    {
+      "de": "Januar",
+      "article": "der",
+      "plural": null,
+      "en": "January",
+      "es": "enero"
+    },
+    {
+      "de": "Februar",
+      "article": "der",
+      "plural": null,
+      "en": "February",
+      "es": "febrero"
+    },
+    {
+      "de": "März",
+      "article": "der",
+      "plural": null,
+      "en": "March",
+      "es": "marzo"
+    },
+    {
+      "de": "April",
+      "article": "der",
+      "plural": null,
+      "en": "April",
+      "es": "abril"
+    },
+    {
+      "de": "Mai",
+      "article": "der",
+      "plural": null,
+      "en": "May",
+      "es": "mayo"
+    },
+    {
+      "de": "Juni",
+      "article": "der",
+      "plural": null,
+      "en": "June",
+      "es": "junio"
+    },
+    {
+      "de": "Juli",
+      "article": "der",
+      "plural": null,
+      "en": "July",
+      "es": "julio"
+    },
+    {
+      "de": "August",
+      "article": "der",
+      "plural": null,
+      "en": "August",
+      "es": "agosto"
+    },
+    {
+      "de": "September",
+      "article": "der",
+      "plural": null,
+      "en": "September",
+      "es": "septiembre"
+    },
+    {
+      "de": "Oktober",
+      "article": "der",
+      "plural": null,
+      "en": "October",
+      "es": "octubre"
+    },
+    {
+      "de": "November",
+      "article": "der",
+      "plural": null,
+      "en": "November",
+      "es": "noviembre"
+    },
+    {
+      "de": "Dezember",
+      "article": "der",
+      "plural": null,
+      "en": "December",
+      "es": "diciembre"
     }
   ],
   "sentences": [

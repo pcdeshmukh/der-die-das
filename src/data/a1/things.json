@@ -1,0 +1,232 @@
+{
+  "id": "things",
+  "title": {
+    "de": "Dinge & Materialien",
+    "en": "Things & materials",
+    "es": "Cosas y materiales"
+  },
+  "emoji": "🧸",
+  "nouns": [
+    {
+      "de": "Flasche",
+      "article": "die",
+      "plural": "Flaschen",
+      "en": "bottle",
+      "es": "botella",
+      "emoji": "🍾"
+    },
+    {
+      "de": "Löffel",
+      "article": "der",
+      "plural": "Löffel",
+      "en": "spoon",
+      "es": "cuchara",
+      "emoji": "🥄"
+    },
+    {
+      "de": "Gabel",
+      "article": "die",
+      "plural": "Gabeln",
+      "en": "fork",
+      "es": "tenedor",
+      "emoji": "🍴"
+    },
+    {
+      "de": "Messer",
+      "article": "das",
+      "plural": "Messer",
+      "en": "knife",
+      "es": "cuchillo",
+      "emoji": "🔪"
+    },
+    {
+      "de": "Teller",
+      "article": "der",
+      "plural": "Teller",
+      "en": "plate",
+      "es": "plato",
+      "emoji": "🍽️"
+    },
+    {
+      "de": "Tasse",
+      "article": "die",
+      "plural": "Tassen",
+      "en": "cup",
+      "es": "taza",
+      "emoji": "☕"
+    },
+    {
+      "de": "Kerze",
+      "article": "die",
+      "plural": "Kerzen",
+      "en": "candle",
+      "es": "vela",
+      "emoji": "🕯️"
+    },
+    {
+      "de": "Ring",
+      "article": "der",
+      "plural": "Ringe",
+      "en": "ring",
+      "es": "anillo",
+      "emoji": "💍"
+    },
+    {
+      "de": "Kette",
+      "article": "die",
+      "plural": "Ketten",
+      "en": "necklace",
+      "es": "collar",
+      "emoji": "📿"
+    },
+    {
+      "de": "Spiegel",
+      "article": "der",
+      "plural": "Spiegel",
+      "en": "mirror",
+      "es": "espejo",
+      "emoji": "🪞"
+    },
+    {
+      "de": "Feuerzeug",
+      "article": "das",
+      "plural": "Feuerzeuge",
+      "en": "lighter",
+      "es": "mechero"
+    },
+    {
+      "de": "Spielzeug",
+      "article": "das",
+      "plural": "Spielzeuge",
+      "en": "toy",
+      "es": "juguete",
+      "emoji": "🧸"
+    },
+    {
+      "de": "Kamm",
+      "article": "der",
+      "plural": "Kämme",
+      "en": "comb",
+      "es": "peine"
+    },
+    {
+      "de": "Bürste",
+      "article": "die",
+      "plural": "Bürsten",
+      "en": "brush",
+      "es": "cepillo"
+    },
+    {
+      "de": "Geldbörse",
+      "article": "die",
+      "plural": "Geldbörsen",
+      "en": "wallet",
+      "es": "cartera",
+      "emoji": "👛"
+    },
+    {
+      "de": "Holz",
+      "article": "das",
+      "plural": null,
+      "en": "wood",
+      "es": "madera",
+      "emoji": "🪵"
+    },
+    {
+      "de": "Metall",
+      "article": "das",
+      "plural": "Metalle",
+      "en": "metal",
+      "es": "metal"
+    },
+    {
+      "de": "Glas",
+      "article": "das",
+      "plural": null,
+      "en": "glass (material)",
+      "es": "vidrio"
+    },
+    {
+      "de": "Plastik",
+      "article": "das",
+      "plural": null,
+      "en": "plastic",
+      "es": "plástico"
+    },
+    {
+      "de": "Leder",
+      "article": "das",
+      "plural": null,
+      "en": "leather",
+      "es": "cuero"
+    },
+    {
+      "de": "Wolle",
+      "article": "die",
+      "plural": null,
+      "en": "wool",
+      "es": "lana",
+      "emoji": "🧶"
+    },
+    {
+      "de": "Stoff",
+      "article": "der",
+      "plural": "Stoffe",
+      "en": "fabric",
+      "es": "tela"
+    },
+    {
+      "de": "Baumwolle",
+      "article": "die",
+      "plural": null,
+      "en": "cotton",
+      "es": "algodón"
+    },
+    {
+      "de": "Gold",
+      "article": "das",
+      "plural": null,
+      "en": "gold",
+      "es": "oro"
+    },
+    {
+      "de": "Silber",
+      "article": "das",
+      "plural": null,
+      "en": "silver",
+      "es": "plata"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Der Ring ist aus Gold.",
+      "en": "The ring is made of gold.",
+      "es": "El anillo es de oro."
+    },
+    {
+      "de": "Der Pullover ist aus Wolle.",
+      "en": "The jumper is made of wool.",
+      "es": "El jersey es de lana."
+    },
+    {
+      "de": "Ich brauche einen Löffel.",
+      "en": "I need a spoon.",
+      "es": "Necesito una cuchara."
+    },
+    {
+      "de": "Wo ist die Flasche?",
+      "en": "Where is the bottle?",
+      "es": "¿Dónde está la botella?"
+    },
+    {
+      "de": "Das Messer ist sehr scharf.",
+      "en": "The knife is very sharp.",
+      "es": "El cuchillo está muy afilado."
+    },
+    {
+      "de": "Die Tasse ist leer.",
+      "en": "The cup is empty.",
+      "es": "La taza está vacía."
+    }
+  ]
+}

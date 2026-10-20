@@ -11,10 +11,14 @@ import type { GameProps } from './types';
 const ROUND_SIZE = 10;
 const GAP = '___';
 
-/** At most four options; long lists (question words) keep the answer plus three others, in list order. */
+/**
+ * At most four options. A lesson-wide set (der/die/das, am/um/im) keeps its order so players learn where to tap;
+ * long sets (question words) keep the answer plus three others. Per-item options are shuffled, since content
+ * authors tend to list the right answer first.
+ */
 function optionsFor(item: GrammarRef): string[] {
-  const all = item.options ?? item.lesson.options;
-  if (item.lesson.shuffle) return shuffle(all);
+  if (item.options || item.lesson.shuffle) return shuffle(item.options ?? item.lesson.options);
+  const all = item.lesson.options;
   if (all.length <= 4) return all;
   const keep = new Set([item.a, ...shuffle(all.filter((o) => o !== item.a)).slice(0, 3)]);
   return all.filter((o) => keep.has(o));

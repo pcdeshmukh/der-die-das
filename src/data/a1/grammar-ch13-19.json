@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "esgibt",
+    "title": {
+      "en": "es gibt + accusative",
+      "de": "es gibt + Akkusativ",
+      "es": "es gibt + acusativo"
+    },
+    "emoji": "🏙️",
+    "rule": {
+      "en": "Es gibt (there is / there are) takes the accusative: einen / keinen for der nouns, ein / kein for das, eine / keine for die.",
+      "de": "Nach es gibt steht der Akkusativ: einen / keinen (der), ein / kein (das), eine / keine (die).",
+      "es": "Es gibt (hay) va con acusativo: einen / keinen para der, ein / kein para das, eine / keine para die."
+    },
+    "options": [
+      "ein",
+      "einen",
+      "eine",
+      "keinen",
+      "keine",
+      "kein"
+    ],
+    "items": [
+      {
+        "q": "In meiner Stadt gibt es ___ Park.",
+        "a": "einen",
+        "en": "In my town there is a park.",
+        "es": "En mi ciudad hay un parque.",
+        "options": [
+          "ein",
+          "einen",
+          "eine",
+          "keinen"
+        ]
+      },
+      {
+        "q": "Im Dorf gibt es ___ Bahnhof.",
+        "a": "keinen",
+        "en": "There is no train station in the village.",
+        "es": "En el pueblo no hay estación de tren.",
+        "options": [
+          "einen",
+          "keinen",
+          "kein",
+          "keine"
+        ]
+      },
+      {
+        "q": "Hier gibt es ___ Apotheke.",
+        "a": "eine",
+        "en": "There is a pharmacy here.",
+        "es": "Aquí hay una farmacia.",
+        "options": [
+          "ein",
+          "eine",
+          "einen",
+          "keine"
+        ]
+      },
+      {
+        "q": "Gibt es hier ___ Supermarkt?",
+        "a": "einen",
+        "en": "Is there a supermarket here?",
+        "es": "¿Hay un supermercado aquí?",
+        "options": [
+          "ein",
+          "einen",
+          "eine",
+          "keinen"
+        ]
+      },
+      {
+        "q": "In der Straße gibt es ___ Café.",
+        "a": "ein",
+        "en": "There is a café in the street.",
+        "es": "En la calle hay una cafetería.",
+        "options": [
+          "ein",
+          "einen",
+          "eine",
+          "kein"
+        ]
+      },
+      {
+        "q": "Leider gibt es hier ___ Kino.",
+        "a": "kein",
+        "en": "Unfortunately there is no cinema here.",
+        "es": "Por desgracia, aquí no hay cine.",
+        "options": [
+          "ein",
+          "kein",
+          "keinen",
+          "keine"
+        ]
+      },
+      {
+        "q": "Im Park gibt es ___ Spielplatz.",
+        "a": "einen",
+        "en": "There is a playground in the park.",
+        "es": "En el parque hay un parque infantil.",
+        "options": [
+          "ein",
+          "einen",
+          "eine",
+          "keinen"
+        ]
+      },
+      {
+        "q": "In der Nähe gibt es ___ Bank.",
+        "a": "keine",
+        "en": "There is no bank nearby.",
+        "es": "Cerca no hay ningún banco.",
+        "options": [
+          "eine",
+          "keine",
+          "kein",
+          "keinen"
+        ]
+      },
+      {
+        "q": "Im Zimmer gibt es ___ Bett und einen Tisch.",
+        "a": "ein",
+        "en": "In the room there is a bed and a table.",
+        "es": "En la habitación hay una cama y una mesa.",
+        "options": [
+          "ein",
+          "einen",
+          "eine",
+          "kein"
+        ]
+      },
+      {
+        "q": "Gibt es hier ___ Haltestelle?",
+        "a": "eine",
+        "en": "Is there a stop here?",
+        "es": "¿Hay una parada aquí?",
+        "options": [
+          "ein",
+          "eine",
+          "einen",
+          "keine"
+        ]
+      },
+      {
+        "q": "In unserer Schule gibt es ___ Bibliothek.",
+        "a": "eine",
+        "en": "There is a library at our school.",
+        "es": "En nuestro colegio hay una biblioteca.",
+        "options": [
+          "ein",
+          "eine",
+          "einen",
+          "kein"
+        ]
+      },
+      {
+        "q": "Im Kühlschrank gibt es ___ Käse.",
+        "a": "keinen",
+        "en": "There is no cheese in the fridge.",
+        "es": "En la nevera no hay queso.",
+        "options": [
+          "einen",
+          "keinen",
+          "kein",
+          "keine"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dativeverbs",
+    "title": {
+      "en": "Verbs with dative",
+      "de": "Verben mit Dativ",
+      "es": "Verbos con dativo"
+    },
+    "emoji": "🎁",
+    "rule": {
+      "en": "gefallen, gehören, helfen, schmecken and danken take the dative: mir, dir, ihm, ihr, uns, euch, Ihnen.",
+      "de": "gefallen, gehören, helfen, schmecken und danken stehen mit Dativ: mir, dir, ihm, ihr, uns, euch, Ihnen.",
+      "es": "gefallen, gehören, helfen, schmecken y danken van con dativo: mir, dir, ihm, ihr, uns, euch, Ihnen."
+    },
+    "options": [
+      "mir",
+      "dir",
+      "ihm",
+      "ihr",
+      "uns",
+      "euch",
+      "Ihnen"
+    ],
+    "items": [
+      {
+        "q": "Das Kleid gefällt ___.",
+        "a": "mir",
+        "en": "I like the dress.",
+        "es": "Me gusta el vestido."
+      },
+      {
+        "q": "Schmeckt ___ die Suppe?",
+        "a": "Ihnen",
+        "en": "Does the soup taste good to you (formal)?",
+        "es": "¿Le gusta la sopa (a usted)?"
+      },
+      {
+        "q": "Kannst du ___ helfen?",
+        "a": "mir",
+        "en": "Can you help me?",
+        "es": "¿Puedes ayudarme?"
+      },
+      {
+        "q": "Das Auto gehört ___.",
+        "a": "ihm",
+        "en": "The car belongs to him.",
+        "es": "El coche es de él."
+      },
+      {
+        "q": "Anna, ich danke ___ für die Blumen.",
+        "a": "dir",
+        "en": "Anna, thank you (informal) for the flowers.",
+        "es": "Anna, te doy las gracias por las flores."
+      },
+      {
+        "q": "Die Tasche gehört ___.",
+        "a": "ihr",
+        "en": "The bag belongs to her.",
+        "es": "El bolso es de ella."
+      },
+      {
+        "q": "Kinder, gefällt ___ das Spiel?",
+        "a": "euch",
+        "en": "Children, do you like the game?",
+        "es": "Niños, ¿os gusta el juego?"
+      },
+      {
+        "q": "Die Pizza schmeckt ___ sehr gut.",
+        "a": "uns",
+        "en": "We really like the pizza.",
+        "es": "La pizza nos gusta mucho."
+      },
+      {
+        "q": "Maria hat viel Arbeit. Ich helfe ___.",
+        "a": "ihr",
+        "en": "Maria has a lot of work. I am helping her.",
+        "es": "María tiene mucho trabajo. La ayudo."
+      },
+      {
+        "q": "Herr Weber, gehört ___ der Schlüssel?",
+        "a": "Ihnen",
+        "en": "Mr Weber, does the key belong to you?",
+        "es": "Señor Weber, ¿la llave es suya?"
+      },
+      {
+        "q": "Mein Bruder ist krank. Ich helfe ___.",
+        "a": "ihm",
+        "en": "My brother is ill. I am helping him.",
+        "es": "Mi hermano está enfermo. Lo ayudo."
+      },
+      {
+        "q": "Peter, wie gefällt ___ die Wohnung?",
+        "a": "dir",
+        "en": "Peter, how do you like the flat?",
+        "es": "Peter, ¿qué te parece el piso?"
+      }
+    ]
+  },
+  {
+    "id": "placeprep",
+    "title": {
+      "en": "Where? Prepositions + dative",
+      "de": "Wo? Präpositionen + Dativ",
+      "es": "¿Dónde? Preposiciones + dativo"
+    },
+    "emoji": "📍",
+    "rule": {
+      "en": "To say where something is (Wo?), vor, hinter, neben, an, auf, unter, über, zwischen and in take the dative: dem, der, den (+ -n in the plural).",
+      "de": "Auf die Frage Wo? stehen vor, hinter, neben, an, auf, unter, über, zwischen und in mit Dativ: dem, der, den (+ -n im Plural).",
+      "es": "Para decir dónde está algo (Wo?), vor, hinter, neben, an, auf, unter, über, zwischen e in van con dativo: dem, der, den (+ -n en plural)."
+    },
+    "options": [
+      "vor",
+      "hinter",
+      "neben",
+      "an",
+      "auf",
+      "unter",
+      "über",
+      "zwischen",
+      "in"
+    ],
+    "items": [
+      {
+        "q": "Die Bank ist ___ der Post.",
+        "a": "neben",
+        "en": "The bank is next to the post office.",
+        "es": "El banco está al lado de la oficina de correos."
+      },
+      {
+        "q": "Das Auto steht ___ dem Haus.",
+        "a": "vor",
+        "en": "The car is in front of the house.",
+        "es": "El coche está delante de la casa."
+      },
+      {
+        "q": "Der Garten ist ___ dem Haus.",
+        "a": "hinter",
+        "en": "The garden is behind the house.",
+        "es": "El jardín está detrás de la casa."
+      },
+      {
+        "q": "Ich warte ___ der Haltestelle.",
+        "a": "an",
+        "en": "I am waiting at the bus stop.",
+        "es": "Espero en la parada del autobús."
+      },
+      {
+        "q": "Das Buch liegt ___ dem Tisch.",
+        "a": "auf",
+        "en": "The book is lying on the table.",
+        "es": "El libro está sobre la mesa."
+      },
+      {
+        "q": "Die Katze schläft ___ dem Bett.",
+        "a": "unter",
+        "en": "The cat is sleeping under the bed.",
+        "es": "El gato duerme debajo de la cama."
+      },
+      {
+        "q": "Die Lampe hängt ___ dem Sofa.",
+        "a": "über",
+        "en": "The lamp is hanging above the sofa.",
+        "es": "La lámpara cuelga por encima del sofá."
+      },
+      {
+        "q": "Der Supermarkt ist ___ der Bank und der Post.",
+        "a": "zwischen",
+        "en": "The supermarket is between the bank and the post office.",
+        "es": "El supermercado está entre el banco y la oficina de correos."
+      },
+      {
+        "q": "Die Milch ist ___ dem Kühlschrank.",
+        "a": "in",
+        "en": "The milk is in the fridge.",
+        "es": "La leche está en la nevera."
+      },
+      {
+        "q": "Der Ball liegt ___ den Bäumen.",
+        "a": "zwischen",
+        "en": "The ball is lying between the trees.",
+        "es": "La pelota está entre los árboles."
+      },
+      {
+        "q": "Mein Fahrrad steht ___ den Häusern.",
+        "a": "hinter",
+        "en": "My bike is behind the houses.",
+        "es": "Mi bici está detrás de las casas."
+      },
+      {
+        "q": "Das Handy liegt ___ der Tasche.",
+        "a": "in",
+        "en": "The mobile phone is in the bag.",
+        "es": "El móvil está en el bolso."
+      }
+    ]
+  },
+  {
+    "id": "possessiveacc",
+    "title": {
+      "en": "his or her? sein & ihr",
+      "de": "sein oder ihr?",
+      "es": "¿de él o de ella? sein e ihr"
+    },
+    "emoji": "👫",
+    "rule": {
+      "en": "sein = his, ihr = her. In the accusative, der nouns take -en: seinen / ihren Schlüssel; die nouns take -e: seine / ihre Tasche.",
+      "de": "sein = von ihm, ihr = von ihr. Im Akkusativ: der-Nomen mit -en (seinen / ihren Schlüssel), die-Nomen mit -e (seine / ihre Tasche).",
+      "es": "sein = de él, ihr = de ella. En acusativo, los nombres con der llevan -en (seinen / ihren Schlüssel) y los de die llevan -e (seine / ihre Tasche)."
+    },
+    "options": [
+      "sein",
+      "seine",
+      "seinen",
+      "ihr",
+      "ihre",
+      "ihren"
+    ],
+    "items": [
+      {
+        "q": "Er sucht ___ Schlüssel.",
+        "a": "seinen",
+        "en": "He is looking for his key.",
+        "es": "Él busca su llave.",
+        "options": [
+          "sein",
+          "seine",
+          "seinen"
+        ]
+      },
+      {
+        "q": "Sie ruft ___ Mutter an.",
+        "a": "ihre",
+        "en": "She is calling her mother.",
+        "es": "Ella llama a su madre.",
+        "options": [
+          "ihr",
+          "ihre",
+          "ihren"
+        ]
+      },
+      {
+        "q": "Tom liebt ___ Hund.",
+        "a": "seinen",
+        "en": "Tom loves his dog.",
+        "es": "Tom quiere a su perro.",
+        "options": [
+          "sein",
+          "seine",
+          "seinen"
+        ]
+      },
+      {
+        "q": "Anna besucht ___ Bruder.",
+        "a": "ihren",
+        "en": "Anna is visiting her brother.",
+        "es": "Anna visita a su hermano.",
+        "options": [
+          "ihr",
+          "ihre",
+          "ihren"
+        ]
+      },
+      {
+        "q": "Das ist ___ Auto.",
+        "a": "ihr",
+        "en": "That is her car.",
+        "es": "Ese es su coche (de ella).",
+        "options": [
+          "sein",
+          "ihr",
+          "seine"
+        ]
+      },
+      {
+        "q": "Paul wäscht ___ Auto.",
+        "a": "sein",
+        "en": "Paul is washing his car.",
+        "es": "Paul lava su coche.",
+        "options": [
+          "sein",
+          "seine",
+          "seinen"
+        ]
+      },
+      {
+        "q": "Lisa vergisst oft ___ Tasche.",
+        "a": "ihre",
+        "en": "Lisa often forgets her bag.",
+        "es": "Lisa olvida a menudo su bolso.",
+        "options": [
+          "ihr",
+          "ihre",
+          "ihren"
+        ]
+      },
+      {
+        "q": "Wo ist ___ Jacke? Er findet sie nicht.",
+        "a": "seine",
+        "en": "Where is his jacket? He can't find it.",
+        "es": "¿Dónde está su chaqueta (de él)? No la encuentra.",
+        "options": [
+          "sein",
+          "seine",
+          "ihre"
+        ]
+      },
+      {
+        "q": "Maria sucht ___ Handy.",
+        "a": "ihr",
+        "en": "Maria is looking for her mobile phone.",
+        "es": "María busca su móvil.",
+        "options": [
+          "ihr",
+          "ihre",
+          "sein"
+        ]
+      },
+      {
+        "q": "Herr Klein trinkt ___ Kaffee.",
+        "a": "seinen",
+        "en": "Mr Klein is drinking his coffee.",
+        "es": "El señor Klein se toma su café.",
+        "options": [
+          "sein",
+          "seinen",
+          "ihren"
+        ]
+      },
+      {
+        "q": "Frau Müller sucht ___ Brille.",
+        "a": "ihre",
+        "en": "Mrs Müller is looking for her glasses.",
+        "es": "La señora Müller busca sus gafas.",
+        "options": [
+          "ihre",
+          "seine",
+          "ihren"
+        ]
+      },
+      {
+        "q": "___ Schwester wohnt in Berlin.",
+        "a": "Seine",
+        "en": "His sister lives in Berlin.",
+        "es": "Su hermana (la de él) vive en Berlín.",
+        "options": [
+          "Sein",
+          "Seine",
+          "Seinen"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "timeinvornach",
+    "title": {
+      "en": "Time: in, vor, nach",
+      "de": "Zeit: in, vor, nach",
+      "es": "Tiempo: in, vor, nach"
+    },
+    "emoji": "⏳",
+    "rule": {
+      "en": "in = in (from now), vor = before, nach = after. All three take the dative: in einer Stunde, vor dem Essen, nach der Arbeit.",
+      "de": "in = ab jetzt, vor = früher als, nach = später als. Alle drei stehen mit Dativ: in einer Stunde, vor dem Essen, nach der Arbeit.",
+      "es": "in = dentro de, vor = antes de, nach = después de. Los tres van con dativo: in einer Stunde, vor dem Essen, nach der Arbeit."
+    },
+    "options": [
+      "in",
+      "vor",
+      "nach"
+    ],
+    "items": [
+      {
+        "q": "___ einer Stunde beginnt der Film.",
+        "a": "In",
+        "en": "The film starts in one hour.",
+        "es": "La película empieza dentro de una hora.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "Ich lerne ___ dem Essen.",
+        "a": "vor",
+        "en": "I study before the meal.",
+        "es": "Estudio antes de comer."
+      },
+      {
+        "q": "___ der Arbeit gehe ich einkaufen.",
+        "a": "Nach",
+        "en": "After work I go shopping.",
+        "es": "Después del trabajo hago la compra.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "Wir treffen uns ___ zwei Tagen.",
+        "a": "in",
+        "en": "We are meeting in two days.",
+        "es": "Nos vemos dentro de dos días."
+      },
+      {
+        "q": "___ dem Frühstück trinke ich Kaffee.",
+        "a": "Nach",
+        "en": "After breakfast I drink coffee.",
+        "es": "Después del desayuno tomo café.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "Ich putze ___ dem Schlafen die Zähne.",
+        "a": "vor",
+        "en": "I brush my teeth before going to sleep.",
+        "es": "Me lavo los dientes antes de dormir."
+      },
+      {
+        "q": "Der Zug kommt ___ zehn Minuten.",
+        "a": "in",
+        "en": "The train arrives in ten minutes.",
+        "es": "El tren llega dentro de diez minutos."
+      },
+      {
+        "q": "___ dem Kurs gehen wir ins Café.",
+        "a": "Nach",
+        "en": "After the course we go to the café.",
+        "es": "Después del curso vamos a la cafetería.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "___ einer Woche habe ich Urlaub.",
+        "a": "In",
+        "en": "In one week I am on holiday.",
+        "es": "Dentro de una semana estoy de vacaciones.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "Ich rufe dich ___ dem Termin an.",
+        "a": "vor",
+        "en": "I'll call you before the appointment.",
+        "es": "Te llamo antes de la cita."
+      },
+      {
+        "q": "___ dem Film essen wir Pizza.",
+        "a": "Nach",
+        "en": "After the film we eat pizza.",
+        "es": "Después de la película comemos pizza.",
+        "options": [
+          "In",
+          "Vor",
+          "Nach"
+        ]
+      },
+      {
+        "q": "Ich bin ___ acht Uhr zu Hause.",
+        "a": "vor",
+        "en": "I am home before eight o'clock.",
+        "es": "Estoy en casa antes de las ocho."
+      }
+    ]
+  },
+  {
+    "id": "mitohne",
+    "title": {
+      "en": "mit or ohne?",
+      "de": "mit oder ohne?",
+      "es": "¿mit u ohne?"
+    },
+    "emoji": "☕",
+    "rule": {
+      "en": "mit = with (+ dative: mit dem Bus), ohne = without (+ accusative: ohne den Mantel).",
+      "de": "mit steht mit Dativ (mit dem Bus), ohne steht mit Akkusativ (ohne den Mantel).",
+      "es": "mit = con (+ dativo: mit dem Bus), ohne = sin (+ acusativo: ohne den Mantel)."
+    },
+    "options": [
+      "mit",
+      "ohne"
+    ],
+    "items": [
+      {
+        "q": "Ich trinke Kaffee ___ Milch.",
+        "a": "mit",
+        "en": "I drink coffee with milk.",
+        "es": "Tomo el café con leche."
+      },
+      {
+        "q": "Er trinkt Tee ___ Zucker.",
+        "a": "ohne",
+        "en": "He drinks tea without sugar.",
+        "es": "Él toma el té sin azúcar."
+      },
+      {
+        "q": "Ich fahre ___ dem Bus zur Arbeit.",
+        "a": "mit",
+        "en": "I take the bus to work.",
+        "es": "Voy al trabajo en autobús."
+      },
+      {
+        "q": "Er geht ___ seinen Mantel spazieren.",
+        "a": "ohne",
+        "en": "He goes for a walk without his coat.",
+        "es": "Sale a pasear sin el abrigo."
+      },
+      {
+        "q": "Ich gehe ___ meiner Freundin ins Kino.",
+        "a": "mit",
+        "en": "I am going to the cinema with my girlfriend.",
+        "es": "Voy al cine con mi novia."
+      },
+      {
+        "q": "Wir machen Urlaub ___ die Kinder.",
+        "a": "ohne",
+        "en": "We are going on holiday without the children.",
+        "es": "Nos vamos de vacaciones sin los niños."
+      },
+      {
+        "q": "Sie schreibt ___ einem Bleistift.",
+        "a": "mit",
+        "en": "She writes with a pencil.",
+        "es": "Ella escribe con un lápiz."
+      },
+      {
+        "q": "Ich nehme den Salat ___ Zwiebeln, bitte.",
+        "a": "ohne",
+        "en": "I'll have the salad without onions, please.",
+        "es": "Quiero la ensalada sin cebolla, por favor."
+      },
+      {
+        "q": "Er kommt ___ seinem Hund.",
+        "a": "mit",
+        "en": "He is coming with his dog.",
+        "es": "Viene con su perro."
+      },
+      {
+        "q": "___ Brille kann ich nicht lesen.",
+        "a": "Ohne",
+        "en": "I can't read without glasses.",
+        "es": "Sin gafas no puedo leer.",
+        "options": [
+          "Mit",
+          "Ohne"
+        ]
+      },
+      {
+        "q": "Wir spielen ___ den Kindern im Park.",
+        "a": "mit",
+        "en": "We play with the children in the park.",
+        "es": "Jugamos con los niños en el parque."
+      },
+      {
+        "q": "Kommst du ___ deinen Bruder?",
+        "a": "ohne",
+        "en": "Are you coming without your brother?",
+        "es": "¿Vienes sin tu hermano?"
+      }
+    ]
+  },
+  {
+    "id": "imperativesie",
+    "title": {
+      "en": "Imperative with Sie",
+      "de": "Imperativ mit Sie",
+      "es": "Imperativo con Sie"
+    },
+    "emoji": "🩺",
+    "rule": {
+      "en": "Formal requests: the verb comes first, then Sie: Nehmen Sie …! The verb has the infinitive form; sein becomes Seien Sie.",
+      "de": "Formelle Bitten: Das Verb steht vorne, dann Sie: Nehmen Sie …! Das Verb hat die Infinitivform, sein wird zu Seien Sie.",
+      "es": "Peticiones formales: el verbo va primero y luego Sie: Nehmen Sie …! El verbo va en infinitivo; sein pasa a Seien Sie."
+    },
+    "options": [
+      "Sprechen",
+      "Sprich",
+      "Sprecht"
+    ],
+    "items": [
+      {
+        "q": "___ Sie bitte langsam!",
+        "a": "Sprechen",
+        "en": "Please speak slowly.",
+        "es": "Hable despacio, por favor.",
+        "options": [
+          "Sprechen",
+          "Sprich",
+          "Sprecht"
+        ]
+      },
+      {
+        "q": "___ Sie viel Wasser!",
+        "a": "Trinken",
+        "en": "Drink lots of water.",
+        "es": "Beba mucha agua.",
+        "options": [
+          "Trinken",
+          "Trink",
+          "Trinkt"
+        ]
+      },
+      {
+        "q": "___ Sie die Tabletten dreimal am Tag!",
+        "a": "Nehmen",
+        "en": "Take the tablets three times a day.",
+        "es": "Tome las pastillas tres veces al día.",
+        "options": [
+          "Nehmen",
+          "Nimm",
+          "Nehmt"
+        ]
+      },
+      {
+        "q": "___ Sie bitte im Bett!",
+        "a": "Bleiben",
+        "en": "Please stay in bed.",
+        "es": "Quédese en la cama, por favor.",
+        "options": [
+          "Bleiben",
+          "Bleib",
+          "Bleibt"
+        ]
+      },
+      {
+        "q": "___ Sie bitte herein!",
+        "a": "Kommen",
+        "en": "Please come in.",
+        "es": "Pase, por favor.",
+        "options": [
+          "Kommen",
+          "Komm",
+          "Kommt"
+        ]
+      },
+      {
+        "q": "___ Sie bitte den Mund auf!",
+        "a": "Machen",
+        "en": "Please open your mouth.",
+        "es": "Abra la boca, por favor.",
+        "options": [
+          "Machen",
+          "Mach",
+          "Macht"
+        ]
+      },
+      {
+        "q": "___ Sie nicht so viel!",
+        "a": "Rauchen",
+        "en": "Don't smoke so much.",
+        "es": "No fume tanto.",
+        "options": [
+          "Rauchen",
+          "Rauch",
+          "Raucht"
+        ]
+      },
+      {
+        "q": "___ Sie mehr Obst und Gemüse!",
+        "a": "Essen",
+        "en": "Eat more fruit and vegetables.",
+        "es": "Coma más fruta y verdura.",
+        "options": [
+          "Essen",
+          "Iss",
+          "Esst"
+        ]
+      },
+      {
+        "q": "___ Sie bitte tief ein!",
+        "a": "Atmen",
+        "en": "Please breathe in deeply.",
+        "es": "Respire hondo, por favor.",
+        "options": [
+          "Atmen",
+          "Atme",
+          "Atmet"
+        ]
+      },
+      {
+        "q": "___ Sie jeden Tag spazieren!",
+        "a": "Gehen",
+        "en": "Go for a walk every day.",
+        "es": "Salga a pasear todos los días.",
+        "options": [
+          "Gehen",
+          "Geh",
+          "Geht"
+        ]
+      },
+      {
+        "q": "___ Sie bitte geduldig!",
+        "a": "Seien",
+        "en": "Please be patient.",
+        "es": "Tenga paciencia, por favor.",
+        "options": [
+          "Seien",
+          "Sei",
+          "Seid"
+        ]
+      },
+      {
+        "q": "___ Sie genug!",
+        "a": "Schlafen",
+        "en": "Get enough sleep.",
+        "es": "Duerma lo suficiente.",
+        "options": [
+          "Schlafen",
+          "Schlaf",
+          "Schlaft"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "imperativedu",
+    "title": {
+      "en": "Imperative with du & ihr",
+      "de": "Imperativ mit du & ihr",
+      "es": "Imperativo con du e ihr"
+    },
+    "emoji": "🧹",
+    "rule": {
+      "en": "du-form: drop -st and the pronoun (du machst → mach!, du nimmst → nimm!, sein → sei!). ihr-form: like the present without ihr (ihr macht → macht!, sein → seid!).",
+      "de": "du-Form: ohne -st und ohne Pronomen (du machst → mach!, du nimmst → nimm!, sein → sei!). ihr-Form: wie das Präsens ohne ihr (ihr macht → macht!, sein → seid!).",
+      "es": "Forma du: sin -st y sin pronombre (du machst → mach!, du nimmst → nimm!, sein → sei!). Forma ihr: como el presente sin ihr (ihr macht → macht!, sein → seid!)."
+    },
+    "options": [
+      "mach",
+      "macht",
+      "machen"
+    ],
+    "items": [
+      {
+        "q": "Peter, ___ bitte das Fenster zu!",
+        "a": "mach",
+        "en": "Peter, please close the window.",
+        "es": "Peter, cierra la ventana, por favor.",
+        "options": [
+          "mach",
+          "macht",
+          "machen"
+        ]
+      },
+      {
+        "q": "Kinder, ___ bitte leise!",
+        "a": "seid",
+        "en": "Children, please be quiet.",
+        "es": "Niños, estad callados, por favor.",
+        "options": [
+          "sei",
+          "seid",
+          "seien"
+        ]
+      },
+      {
+        "q": "Lisa, ___ bitte dein Zimmer auf!",
+        "a": "räum",
+        "en": "Lisa, please tidy up your room.",
+        "es": "Lisa, ordena tu habitación, por favor.",
+        "options": [
+          "räum",
+          "räumt",
+          "räumen"
+        ]
+      },
+      {
+        "q": "Tim und Anna, ___ bitte das Bad!",
+        "a": "putzt",
+        "en": "Tim and Anna, please clean the bathroom.",
+        "es": "Tim y Anna, limpiad el baño, por favor.",
+        "options": [
+          "putz",
+          "putzt",
+          "putzen"
+        ]
+      },
+      {
+        "q": "Max, ___ bitte den Müll raus!",
+        "a": "bring",
+        "en": "Max, please take the rubbish out.",
+        "es": "Max, saca la basura, por favor.",
+        "options": [
+          "bring",
+          "bringt",
+          "bringen"
+        ]
+      },
+      {
+        "q": "Jungs, ___ bitte das Geschirr!",
+        "a": "spült",
+        "en": "Boys, please wash the dishes.",
+        "es": "Chicos, fregad los platos, por favor.",
+        "options": [
+          "spül",
+          "spült",
+          "spülen"
+        ]
+      },
+      {
+        "q": "Sara, ___ dein Gemüse!",
+        "a": "iss",
+        "en": "Sara, eat your vegetables.",
+        "es": "Sara, cómete la verdura.",
+        "options": [
+          "iss",
+          "esst",
+          "essen"
+        ]
+      },
+      {
+        "q": "Ben, ___ bitte deine Jacke mit!",
+        "a": "nimm",
+        "en": "Ben, please take your jacket with you.",
+        "es": "Ben, llévate la chaqueta, por favor.",
+        "options": [
+          "nimm",
+          "nehmt",
+          "nehmen"
+        ]
+      },
+      {
+        "q": "Mia, ___ nicht so laut!",
+        "a": "sei",
+        "en": "Mia, don't be so loud.",
+        "es": "Mia, no hagas tanto ruido.",
+        "options": [
+          "sei",
+          "seid",
+          "seien"
+        ]
+      },
+      {
+        "q": "Leon und Paul, ___ bitte den Tisch!",
+        "a": "deckt",
+        "en": "Leon and Paul, please set the table.",
+        "es": "Leon y Paul, poned la mesa, por favor.",
+        "options": [
+          "deck",
+          "deckt",
+          "decken"
+        ]
+      },
+      {
+        "q": "Kinder, ___ jetzt nach Hause!",
+        "a": "kommt",
+        "en": "Children, come home now.",
+        "es": "Niños, venid a casa ya.",
+        "options": [
+          "komm",
+          "kommt",
+          "kommen"
+        ]
+      },
+      {
+        "q": "Jonas, ___ mir bitte!",
+        "a": "hilf",
+        "en": "Jonas, please help me.",
+        "es": "Jonas, ayúdame, por favor.",
+        "options": [
+          "hilf",
+          "helft",
+          "helfen"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accpronouns",
+    "title": {
+      "en": "Accusative pronouns",
+      "de": "Personalpronomen im Akkusativ",
+      "es": "Pronombres en acusativo"
+    },
+    "emoji": "👉",
+    "rule": {
+      "en": "After verbs like sehen, besuchen, anrufen the pronoun is accusative: mich, dich, ihn, sie, es, uns, euch, Sie.",
+      "de": "Nach Verben wie sehen, besuchen, anrufen steht das Pronomen im Akkusativ: mich, dich, ihn, sie, es, uns, euch, Sie.",
+      "es": "Después de verbos como sehen, besuchen o anrufen el pronombre va en acusativo: mich, dich, ihn, sie, es, uns, euch, Sie."
+    },
+    "options": [
+      "mich",
+      "dich",
+      "ihn",
+      "sie",
+      "es",
+      "uns",
+      "euch"
+    ],
+    "items": [
+      {
+        "q": "Ich rufe ___ morgen an.",
+        "a": "dich",
+        "en": "I'll call you (informal) tomorrow.",
+        "es": "Te llamo mañana."
+      },
+      {
+        "q": "Kannst du ___ abholen?",
+        "a": "mich",
+        "en": "Can you pick me up?",
+        "es": "¿Puedes recogerme?"
+      },
+      {
+        "q": "Kennst du Herrn Meier? – Ja, ich kenne ___ gut.",
+        "a": "ihn",
+        "en": "Do you know Mr Meier? – Yes, I know him well.",
+        "es": "¿Conoces al señor Meier? – Sí, lo conozco bien."
+      },
+      {
+        "q": "Wo ist Anna? Ich sehe ___ nicht.",
+        "a": "sie",
+        "en": "Where is Anna? I can't see her.",
+        "es": "¿Dónde está Anna? No la veo."
+      },
+      {
+        "q": "Das Buch ist toll. Ich lese ___ gern.",
+        "a": "es",
+        "en": "The book is great. I like reading it.",
+        "es": "El libro es genial. Me gusta leerlo."
+      },
+      {
+        "q": "Besuchst du ___ am Wochenende? Wir sind zu Hause.",
+        "a": "uns",
+        "en": "Will you visit us at the weekend? We are at home.",
+        "es": "¿Nos visitas el fin de semana? Estamos en casa."
+      },
+      {
+        "q": "Kinder, ich liebe ___!",
+        "a": "euch",
+        "en": "Children, I love you!",
+        "es": "¡Niños, os quiero!"
+      },
+      {
+        "q": "Meine Eltern wohnen in Köln. Ich besuche ___ oft.",
+        "a": "sie",
+        "en": "My parents live in Cologne. I visit them often.",
+        "es": "Mis padres viven en Colonia. Los visito a menudo."
+      },
+      {
+        "q": "Hörst du ___? – Ja, ich höre dich gut.",
+        "a": "mich",
+        "en": "Can you hear me? – Yes, I can hear you well.",
+        "es": "¿Me oyes? – Sí, te oigo bien."
+      },
+      {
+        "q": "Mein Bruder ist krank. Ich besuche ___ heute.",
+        "a": "ihn",
+        "en": "My brother is ill. I am visiting him today.",
+        "es": "Mi hermano está enfermo. Hoy lo visito."
+      },
+      {
+        "q": "Lisa, ich brauche ___!",
+        "a": "dich",
+        "en": "Lisa, I need you!",
+        "es": "¡Lisa, te necesito!"
+      },
+      {
+        "q": "Max und Tom, ich lade ___ zur Party ein.",
+        "a": "euch",
+        "en": "Max and Tom, I'm inviting you to the party.",
+        "es": "Max y Tom, os invito a la fiesta."
+      }
+    ]
+  }
+]

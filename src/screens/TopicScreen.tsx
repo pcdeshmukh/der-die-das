@@ -2,37 +2,27 @@ import { NounLabel } from '../components/NounLabel';
 import { Stars } from '../components/Stars';
 import type { Level } from '../data/types';
 import { meaning, t, uiLang } from '../lib/i18n';
-import { MIXED, NUMBERS, REVIEW, VERBS, grammarLesson, isPlayable, modesFor, poolFor, starKey } from '../lib/modes';
+import { REVIEW, VERBS, describeTopic, grammarLesson, isPlayable, modesFor, phraseLesson, poolFor, starKey } from '../lib/modes';
 import { href } from '../lib/router';
 import { speak, speechSupported } from '../lib/speech';
 import { progress } from '../lib/store';
 import { NotFound } from './NotFound';
 
-const PSEUDO = {
-  [MIXED]: { title: 'mixed', emoji: '🎲' },
-  [REVIEW]: { title: 'review', emoji: '🔁' },
-  [VERBS]: { title: 'verbs', emoji: '🔤' },
-  [NUMBERS]: { title: 'numbersTopic', emoji: '🔢' },
-} as const;
-
 export function TopicScreen({ level, topicId }: { level: Level; topicId: string }) {
   const p = progress.value;
   const topic = level.topics.find((x) => x.id === topicId);
   const lesson = grammarLesson(level, topicId);
-  const pseudo = PSEUDO[topicId as keyof typeof PSEUDO];
+  const phrases = phraseLesson(level, topicId);
+  const info = describeTopic(level, topicId);
   const modes = modesFor(level, topicId);
-  if ((!topic && !lesson && !pseudo) || modes.length === 0) return <NotFound />;
-
-  const named = topic ?? lesson;
-  const title = named ? named.title[uiLang()] : t(pseudo.title);
-  const emoji = named ? named.emoji : pseudo.emoji;
+  if (!info || modes.length === 0) return <NotFound />;
 
   return (
     <div class="screen">
       <h1 class="screen-title">
-        <span class="title-emoji">{emoji}</span> {title}
+        <span class="title-emoji">{info.emoji}</span> {info.title}
       </h1>
-      {named && uiLang() !== 'de' && <p class="muted subtitle">{named.title.de}</p>}
+      {info.titleDe && uiLang() !== 'de' && <p class="muted subtitle">{info.titleDe}</p>}
       {lesson && <p class="rule-box">💡 {lesson.rule[uiLang()]}</p>}
 
       <div class="mode-list">
@@ -103,6 +93,27 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
                 </li>
               );
             })}
+          </ul>
+        </details>
+      )}
+
+      {phrases && (
+        <details class="word-list-box">
+          <summary>
+            {t('examples')} ({phrases.items.length})
+          </summary>
+          <ul class="word-list">
+            {phrases.items.map((item) => (
+              <li>
+                <button class="word-row" onClick={() => speak(item.a, true)}>
+                  <span class="word-main">
+                    {item.a}
+                    <span class="word-plural">{meaning(item.situation)}</span>
+                  </span>
+                  <span class="word-en">{meaning(item)}</span>
+                </button>
+              </li>
+            ))}
           </ul>
         </details>
       )}

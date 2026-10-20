@@ -1,0 +1,1517 @@
+[
+  {
+    "id": "perfectinseparable",
+    "title": {
+      "en": "Perfekt without ge-",
+      "de": "Perfekt ohne ge-",
+      "es": "Perfekt sin ge-"
+    },
+    "emoji": "🧩",
+    "rule": {
+      "en": "Verbs with be-, ver-, er-, ge- and verbs ending in -ieren form the Perfekt without ge-: besuchen → besucht, telefonieren → telefoniert.",
+      "de": "Verben mit be-, ver-, er-, ge- und Verben auf -ieren bilden das Perfekt ohne ge-: besuchen → besucht, telefonieren → telefoniert.",
+      "es": "Los verbos con be-, ver-, er-, ge- y los verbos en -ieren forman el Perfekt sin ge-: besuchen → besucht, telefonieren → telefoniert."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Ich habe meine Oma ___.",
+        "a": "besucht",
+        "en": "I visited my grandma.",
+        "es": "He visitado a mi abuela.",
+        "options": [
+          "besucht",
+          "gebesucht",
+          "besuchen"
+        ]
+      },
+      {
+        "q": "Wir haben die Rechnung ___.",
+        "a": "bezahlt",
+        "en": "We paid the bill.",
+        "es": "Hemos pagado la cuenta.",
+        "options": [
+          "gebezahlt",
+          "bezahlt",
+          "bezahlen"
+        ]
+      },
+      {
+        "q": "Sie hat einen Brief ___.",
+        "a": "bekommen",
+        "en": "She got a letter.",
+        "es": "Ha recibido una carta.",
+        "options": [
+          "gebekommen",
+          "bekommt",
+          "bekommen"
+        ]
+      },
+      {
+        "q": "Hast du die Frage ___?",
+        "a": "verstanden",
+        "en": "Did you understand the question?",
+        "es": "¿Has entendido la pregunta?",
+        "options": [
+          "verstanden",
+          "geverstanden",
+          "verstehen"
+        ]
+      },
+      {
+        "q": "Ich habe meinen Schlüssel ___.",
+        "a": "vergessen",
+        "en": "I forgot my key.",
+        "es": "He olvidado mi llave.",
+        "options": [
+          "gevergessen",
+          "vergessen",
+          "vergisst"
+        ]
+      },
+      {
+        "q": "Er hat sein Auto ___.",
+        "a": "verkauft",
+        "en": "He sold his car.",
+        "es": "Ha vendido su coche.",
+        "options": [
+          "verkaufen",
+          "geverkauft",
+          "verkauft"
+        ]
+      },
+      {
+        "q": "Opa hat eine Geschichte ___.",
+        "a": "erzählt",
+        "en": "Grandpa told a story.",
+        "es": "El abuelo ha contado una historia.",
+        "options": [
+          "erzählt",
+          "geerzählt",
+          "erzählen"
+        ]
+      },
+      {
+        "q": "Der Film hat mir gut ___.",
+        "a": "gefallen",
+        "en": "I liked the film a lot.",
+        "es": "La película me ha gustado mucho.",
+        "options": [
+          "gegefallen",
+          "gefallen",
+          "gefällt"
+        ]
+      },
+      {
+        "q": "Ich habe mit meiner Mutter ___.",
+        "a": "telefoniert",
+        "en": "I talked to my mother on the phone.",
+        "es": "He hablado por teléfono con mi madre.",
+        "options": [
+          "getelefoniert",
+          "telefonieren",
+          "telefoniert"
+        ]
+      },
+      {
+        "q": "Sie hat in Berlin Medizin ___.",
+        "a": "studiert",
+        "en": "She studied medicine in Berlin.",
+        "es": "Ha estudiado Medicina en Berlín.",
+        "options": [
+          "studiert",
+          "gestudiert",
+          "studieren"
+        ]
+      },
+      {
+        "q": "Ich habe den Hund ___.",
+        "a": "fotografiert",
+        "en": "I took a photo of the dog.",
+        "es": "Le he hecho una foto al perro.",
+        "options": [
+          "gefotografiert",
+          "fotografiert",
+          "fotografieren"
+        ]
+      },
+      {
+        "q": "Die Lehrerin hat die Grammatik ___.",
+        "a": "erklärt",
+        "en": "The teacher explained the grammar.",
+        "es": "La profesora ha explicado la gramática.",
+        "options": [
+          "erklären",
+          "geerklärt",
+          "erklärt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prefixun",
+    "title": {
+      "en": "The prefix un-",
+      "de": "Die Vorsilbe un-",
+      "es": "El prefijo un-"
+    },
+    "emoji": "🔄",
+    "rule": {
+      "en": "un- in front of an adjective makes the opposite: freundlich → unfreundlich, bequem → unbequem.",
+      "de": "un- vor einem Adjektiv macht das Gegenteil: freundlich → unfreundlich, bequem → unbequem.",
+      "es": "un- delante de un adjetivo forma el contrario: freundlich → unfreundlich, bequem → unbequem."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Er sagt nie Hallo. Er ist ___.",
+        "a": "unfreundlich",
+        "en": "He never says hello. He is unfriendly.",
+        "es": "Nunca saluda. Es antipático.",
+        "options": [
+          "unfreundlich",
+          "freundlich",
+          "nichtfreundlich"
+        ]
+      },
+      {
+        "q": "Das Sofa ist sehr ___. Ich sitze gern dort.",
+        "a": "bequem",
+        "en": "The sofa is very comfortable. I like sitting there.",
+        "es": "El sofá es muy cómodo. Me gusta sentarme ahí.",
+        "options": [
+          "unbequem",
+          "bequem",
+          "nichtbequem"
+        ]
+      },
+      {
+        "q": "Die Schuhe sind zu klein und ___.",
+        "a": "unbequem",
+        "en": "The shoes are too small and uncomfortable.",
+        "es": "Los zapatos son demasiado pequeños e incómodos.",
+        "options": [
+          "bequem",
+          "nichtbequem",
+          "unbequem"
+        ]
+      },
+      {
+        "q": "Sie hat Geburtstag und ist sehr ___.",
+        "a": "glücklich",
+        "en": "It's her birthday and she is very happy.",
+        "es": "Es su cumpleaños y está muy feliz.",
+        "options": [
+          "glücklich",
+          "unglücklich",
+          "nichtglücklich"
+        ]
+      },
+      {
+        "q": "Er hat keine Freunde und ist ___.",
+        "a": "unglücklich",
+        "en": "He has no friends and is unhappy.",
+        "es": "No tiene amigos y es infeliz.",
+        "options": [
+          "glücklich",
+          "unglücklich",
+          "nichtglücklich"
+        ]
+      },
+      {
+        "q": "Die Frage ist ___. Wir brauchen sie nicht.",
+        "a": "unwichtig",
+        "en": "The question is unimportant. We don't need it.",
+        "es": "La pregunta no tiene importancia. No la necesitamos.",
+        "options": [
+          "wichtig",
+          "nichtwichtig",
+          "unwichtig"
+        ]
+      },
+      {
+        "q": "Der Bus kommt immer zu spät. Er ist ___.",
+        "a": "unpünktlich",
+        "en": "The bus is always late. It is unpunctual.",
+        "es": "El autobús siempre llega tarde. Es impuntual.",
+        "options": [
+          "unpünktlich",
+          "pünktlich",
+          "nichtpünktlich"
+        ]
+      },
+      {
+        "q": "Anna kommt immer um acht Uhr. Sie ist ___.",
+        "a": "pünktlich",
+        "en": "Anna always comes at eight o'clock. She is punctual.",
+        "es": "Anna siempre llega a las ocho. Es puntual.",
+        "options": [
+          "unpünktlich",
+          "pünktlich",
+          "nichtpünktlich"
+        ]
+      },
+      {
+        "q": "Mein Zimmer ist ___. Alles liegt auf dem Boden.",
+        "a": "unordentlich",
+        "en": "My room is untidy. Everything is lying on the floor.",
+        "es": "Mi habitación está desordenada. Todo está en el suelo.",
+        "options": [
+          "ordentlich",
+          "unordentlich",
+          "nichtordentlich"
+        ]
+      },
+      {
+        "q": "Der neue Kollege ist sehr ___. Ich mag ihn.",
+        "a": "sympathisch",
+        "en": "The new colleague is very likeable. I like him.",
+        "es": "El nuevo compañero es muy simpático. Me cae bien.",
+        "options": [
+          "sympathisch",
+          "unsympathisch",
+          "nichtsympathisch"
+        ]
+      },
+      {
+        "q": "Der Mann ist ___. Ich mag ihn nicht.",
+        "a": "unsympathisch",
+        "en": "The man is unpleasant. I don't like him.",
+        "es": "El hombre es antipático. No me cae bien.",
+        "options": [
+          "sympathisch",
+          "nichtsympathisch",
+          "unsympathisch"
+        ]
+      },
+      {
+        "q": "Die Verkäuferin lacht und hilft gern. Sie ist ___.",
+        "a": "freundlich",
+        "en": "The shop assistant smiles and likes to help. She is friendly.",
+        "es": "La dependienta sonríe y ayuda con gusto. Es amable.",
+        "options": [
+          "freundlich",
+          "unfreundlich",
+          "nichtfreundlich"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "describe",
+    "title": {
+      "en": "Describing people",
+      "de": "Personen beschreiben",
+      "es": "Describir a personas"
+    },
+    "emoji": "🧑",
+    "rule": {
+      "en": "Use sein + adjective to describe how someone looks and what they are like: Er ist groß. Sie ist nett.",
+      "de": "Mit sein + Adjektiv beschreibt man Aussehen und Charakter: Er ist groß. Sie ist nett.",
+      "es": "Con sein + adjetivo se describe el aspecto y el carácter: Er ist groß. Sie ist nett."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Mein Bruder lacht viel. Er ist sehr ___.",
+        "a": "lustig",
+        "en": "My brother laughs a lot. He is very funny.",
+        "es": "Mi hermano se ríe mucho. Es muy divertido.",
+        "options": [
+          "lustig",
+          "faul",
+          "klein"
+        ]
+      },
+      {
+        "q": "Mein Vater ist zwei Meter ___.",
+        "a": "groß",
+        "en": "My father is two metres tall.",
+        "es": "Mi padre mide dos metros.",
+        "options": [
+          "klein",
+          "groß",
+          "dick"
+        ]
+      },
+      {
+        "q": "Unser Lehrer ist erst 25. Er ist ___.",
+        "a": "jung",
+        "en": "Our teacher is only 25. He is young.",
+        "es": "Nuestro profesor solo tiene 25 años. Es joven.",
+        "options": [
+          "alt",
+          "faul",
+          "jung"
+        ]
+      },
+      {
+        "q": "Lisa hat helle Haare. Sie ist ___.",
+        "a": "blond",
+        "en": "Lisa has light hair. She is blonde.",
+        "es": "Lisa tiene el pelo claro. Es rubia.",
+        "options": [
+          "blond",
+          "alt",
+          "faul"
+        ]
+      },
+      {
+        "q": "Er lernt jeden Tag viel. Er ist ___.",
+        "a": "fleißig",
+        "en": "He studies a lot every day. He is hard-working.",
+        "es": "Estudia mucho todos los días. Es trabajador.",
+        "options": [
+          "faul",
+          "fleißig",
+          "klein"
+        ]
+      },
+      {
+        "q": "Tom macht nie Hausaufgaben. Er ist ___.",
+        "a": "faul",
+        "en": "Tom never does homework. He is lazy.",
+        "es": "Tom nunca hace los deberes. Es vago.",
+        "options": [
+          "fleißig",
+          "ehrlich",
+          "faul"
+        ]
+      },
+      {
+        "q": "Sie sagt immer die Wahrheit. Sie ist ___.",
+        "a": "ehrlich",
+        "en": "She always tells the truth. She is honest.",
+        "es": "Siempre dice la verdad. Es sincera.",
+        "options": [
+          "ehrlich",
+          "lustig",
+          "dick"
+        ]
+      },
+      {
+        "q": "Mein Opa spricht wenig und ist ___.",
+        "a": "ruhig",
+        "en": "My grandpa doesn't talk much and is quiet.",
+        "es": "Mi abuelo habla poco y es tranquilo.",
+        "options": [
+          "lustig",
+          "ruhig",
+          "blond"
+        ]
+      },
+      {
+        "q": "Meine Schwester ist sehr ___. Sie macht viel Sport.",
+        "a": "schlank",
+        "en": "My sister is very slim. She does a lot of sport.",
+        "es": "Mi hermana es muy delgada. Hace mucho deporte.",
+        "options": [
+          "dick",
+          "alt",
+          "schlank"
+        ]
+      },
+      {
+        "q": "Das Kind ist sehr ___. Es lernt schnell.",
+        "a": "intelligent",
+        "en": "The child is very intelligent. It learns quickly.",
+        "es": "El niño es muy inteligente. Aprende rápido.",
+        "options": [
+          "intelligent",
+          "faul",
+          "groß"
+        ]
+      },
+      {
+        "q": "Die Frau auf dem Foto ist sehr ___.",
+        "a": "hübsch",
+        "en": "The woman in the photo is very pretty.",
+        "es": "La mujer de la foto es muy guapa.",
+        "options": [
+          "dick",
+          "hübsch",
+          "faul"
+        ]
+      },
+      {
+        "q": "Mein Nachbar hilft mir immer. Er ist sehr ___.",
+        "a": "nett",
+        "en": "My neighbour always helps me. He is very nice.",
+        "es": "Mi vecino siempre me ayuda. Es muy majo.",
+        "options": [
+          "klein",
+          "faul",
+          "nett"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mustmay",
+    "title": {
+      "en": "müssen or dürfen?",
+      "de": "müssen oder dürfen?",
+      "es": "¿müssen o dürfen?"
+    },
+    "emoji": "🚦",
+    "rule": {
+      "en": "müssen = must, have to; dürfen = may, be allowed to. Careful: nicht dürfen = must not, nicht müssen = don't have to.",
+      "de": "müssen = es ist nötig; dürfen = es ist erlaubt. Achtung: nicht dürfen = verboten, nicht müssen = nicht nötig.",
+      "es": "müssen = tener que, deber; dürfen = poder, tener permiso. Cuidado: nicht dürfen = estar prohibido, nicht müssen = no tener que."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Hier ___ man nicht rauchen.",
+        "a": "darf",
+        "en": "You must not smoke here.",
+        "es": "Aquí está prohibido fumar.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Du ___ den Müll trennen.",
+        "a": "musst",
+        "en": "You have to separate the rubbish.",
+        "es": "Tienes que separar la basura.",
+        "options": [
+          "darfst",
+          "musst"
+        ]
+      },
+      {
+        "q": "An der roten Ampel ___ man warten.",
+        "a": "muss",
+        "en": "At a red light you have to wait.",
+        "es": "En el semáforo en rojo hay que esperar.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Bei Grün ___ man über die Straße gehen.",
+        "a": "darf",
+        "en": "When the light is green, you may cross the street.",
+        "es": "Con el semáforo en verde está permitido cruzar la calle.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Im Bus ___ man nicht essen.",
+        "a": "darf",
+        "en": "You are not allowed to eat on the bus.",
+        "es": "En el autobús está prohibido comer.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Ihr ___ hier nicht parken.",
+        "a": "dürft",
+        "en": "You are not allowed to park here.",
+        "es": "No tenéis permiso para aparcar aquí.",
+        "options": [
+          "dürft",
+          "müsst"
+        ]
+      },
+      {
+        "q": "Im Auto ___ man sich anschnallen.",
+        "a": "muss",
+        "en": "In the car you have to fasten your seat belt.",
+        "es": "En el coche hay que abrocharse el cinturón.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Wir ___ Papier und Plastik trennen.",
+        "a": "müssen",
+        "en": "We have to separate paper and plastic.",
+        "es": "Tenemos que separar el papel y el plástico.",
+        "options": [
+          "dürfen",
+          "müssen"
+        ]
+      },
+      {
+        "q": "Kinder ___ hier spielen.",
+        "a": "dürfen",
+        "en": "Children are allowed to play here.",
+        "es": "Los niños tienen permiso para jugar aquí.",
+        "options": [
+          "dürfen",
+          "müssen"
+        ]
+      },
+      {
+        "q": "Ich ___ morgen nicht arbeiten. Ich habe frei.",
+        "a": "muss",
+        "en": "I don't have to work tomorrow. I have the day off.",
+        "es": "Mañana no tengo que trabajar. Tengo el día libre.",
+        "options": [
+          "darf",
+          "muss"
+        ]
+      },
+      {
+        "q": "Du ___ deinen Müll nicht in den Wald werfen.",
+        "a": "darfst",
+        "en": "You must not throw your rubbish into the forest.",
+        "es": "No puedes tirar tu basura al bosque.",
+        "options": [
+          "darfst",
+          "musst"
+        ]
+      },
+      {
+        "q": "___ ich hier mein Fahrrad abstellen? – Ja, natürlich.",
+        "a": "Darf",
+        "en": "May I leave my bike here? – Yes, of course.",
+        "es": "¿Puedo dejar aquí mi bici? – Sí, claro.",
+        "options": [
+          "Darf",
+          "Muss"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comparison",
+    "title": {
+      "en": "Comparing: besser als",
+      "de": "Vergleichen: besser als",
+      "es": "Comparar: besser als"
+    },
+    "emoji": "⚖️",
+    "rule": {
+      "en": "Comparative: adjective + -er (often with an umlaut) + als: groß → größer als. Equal: so … wie. Irregular: gut – besser – am besten, viel – mehr, gern – lieber.",
+      "de": "Komparativ: Adjektiv + -er (oft mit Umlaut) + als: groß → größer als. Gleich: so … wie. Unregelmäßig: gut – besser – am besten, viel – mehr, gern – lieber.",
+      "es": "Comparativo: adjetivo + -er (a menudo con diéresis) + als: groß → größer als. Igualdad: so … wie. Irregulares: gut – besser – am besten, viel – mehr, gern – lieber."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Der Zug ist schneller ___ der Bus.",
+        "a": "als",
+        "en": "The train is faster than the bus.",
+        "es": "El tren es más rápido que el autobús.",
+        "options": [
+          "als",
+          "wie"
+        ]
+      },
+      {
+        "q": "Meine Schwester ist ___ als ich.",
+        "a": "größer",
+        "en": "My sister is taller than me.",
+        "es": "Mi hermana es más alta que yo.",
+        "options": [
+          "groß",
+          "größer",
+          "am größten"
+        ]
+      },
+      {
+        "q": "Der Mantel ist so warm ___ die Jacke.",
+        "a": "wie",
+        "en": "The coat is as warm as the jacket.",
+        "es": "El abrigo es tan cálido como la chaqueta.",
+        "options": [
+          "als",
+          "wie"
+        ]
+      },
+      {
+        "q": "Der Pullover ist ___ als das T-Shirt.",
+        "a": "wärmer",
+        "en": "The jumper is warmer than the T-shirt.",
+        "es": "El jersey es más cálido que la camiseta.",
+        "options": [
+          "warm",
+          "wärmer",
+          "am wärmsten"
+        ]
+      },
+      {
+        "q": "Die blaue Hose gefällt mir gut, aber die schwarze gefällt mir ___.",
+        "a": "besser",
+        "en": "I like the blue trousers, but I like the black ones better.",
+        "es": "El pantalón azul me gusta, pero el negro me gusta más.",
+        "options": [
+          "gut",
+          "besser",
+          "am besten"
+        ]
+      },
+      {
+        "q": "Dieses Kleid ist ___ teuer wie das rote.",
+        "a": "so",
+        "en": "This dress is as expensive as the red one.",
+        "es": "Este vestido es tan caro como el rojo.",
+        "options": [
+          "so",
+          "als",
+          "wie"
+        ]
+      },
+      {
+        "q": "Ich trage gern Jeans, aber ich trage ___ Röcke.",
+        "a": "lieber",
+        "en": "I like wearing jeans, but I prefer wearing skirts.",
+        "es": "Me gusta llevar vaqueros, pero prefiero llevar faldas.",
+        "options": [
+          "gern",
+          "lieber",
+          "am liebsten"
+        ]
+      },
+      {
+        "q": "Mein Opa ist ___ als meine Oma.",
+        "a": "älter",
+        "en": "My grandpa is older than my grandma.",
+        "es": "Mi abuelo es mayor que mi abuela.",
+        "options": [
+          "alt",
+          "älter",
+          "am ältesten"
+        ]
+      },
+      {
+        "q": "Im Geschäft kosten die Schuhe ___ als im Internet.",
+        "a": "mehr",
+        "en": "In the shop the shoes cost more than online.",
+        "es": "En la tienda los zapatos cuestan más que en internet.",
+        "options": [
+          "viel",
+          "mehr",
+          "am meisten"
+        ]
+      },
+      {
+        "q": "Die grüne Mütze gefällt mir am ___.",
+        "a": "besten",
+        "en": "I like the green hat best.",
+        "es": "El gorro verde es el que más me gusta.",
+        "options": [
+          "gut",
+          "besser",
+          "besten"
+        ]
+      },
+      {
+        "q": "Mein Bruder ist so groß ___ mein Vater.",
+        "a": "wie",
+        "en": "My brother is as tall as my father.",
+        "es": "Mi hermano es tan alto como mi padre.",
+        "options": [
+          "als",
+          "wie"
+        ]
+      },
+      {
+        "q": "Das T-Shirt ist billiger ___ das Hemd.",
+        "a": "als",
+        "en": "The T-shirt is cheaper than the shirt.",
+        "es": "La camiseta es más barata que la camisa.",
+        "options": [
+          "als",
+          "wie"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "welchdies",
+    "title": {
+      "en": "welcher? – dieser!",
+      "de": "welcher? – dieser!",
+      "es": "¿welcher? – ¡dieser!"
+    },
+    "emoji": "👉",
+    "rule": {
+      "en": "welch- (which) and dies- (this) take the endings of der, die, das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid. Accusative masculine: welchen/diesen.",
+      "de": "welch- und dies- haben die Endungen von der, die, das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid. Akkusativ maskulin: welchen/diesen.",
+      "es": "welch- (cuál) y dies- (este) llevan las terminaciones de der, die, das: welcher/dieser Rock, welche/diese Jacke, welches/dieses Kleid. Acusativo masculino: welchen/diesen."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "___ Jacke gefällt dir?",
+        "a": "Welche",
+        "en": "Which jacket do you like?",
+        "es": "¿Qué chaqueta te gusta?",
+        "options": [
+          "Welcher",
+          "Welche",
+          "Welches"
+        ]
+      },
+      {
+        "q": "Ich nehme ___ Pullover hier.",
+        "a": "diesen",
+        "en": "I'll take this jumper here.",
+        "es": "Me llevo este jersey de aquí.",
+        "options": [
+          "dieser",
+          "diesen",
+          "dieses"
+        ]
+      },
+      {
+        "q": "___ Rock ist billiger?",
+        "a": "Welcher",
+        "en": "Which skirt is cheaper?",
+        "es": "¿Qué falda es más barata?",
+        "options": [
+          "Welcher",
+          "Welchen",
+          "Welches"
+        ]
+      },
+      {
+        "q": "___ Kleid kaufst du?",
+        "a": "Welches",
+        "en": "Which dress are you buying?",
+        "es": "¿Qué vestido te compras?",
+        "options": [
+          "Welcher",
+          "Welche",
+          "Welches"
+        ]
+      },
+      {
+        "q": "___ Mantel nimmst du?",
+        "a": "Welchen",
+        "en": "Which coat are you taking?",
+        "es": "¿Qué abrigo te llevas?",
+        "options": [
+          "Welcher",
+          "Welchen",
+          "Welches"
+        ]
+      },
+      {
+        "q": "___ Hose ist sehr schön.",
+        "a": "Diese",
+        "en": "These trousers are very nice.",
+        "es": "Este pantalón es muy bonito.",
+        "options": [
+          "Dieser",
+          "Diese",
+          "Dieses"
+        ]
+      },
+      {
+        "q": "Ich möchte ___ Hemd anprobieren.",
+        "a": "dieses",
+        "en": "I'd like to try on this shirt.",
+        "es": "Me gustaría probarme esta camisa.",
+        "options": [
+          "dieser",
+          "diesen",
+          "dieses"
+        ]
+      },
+      {
+        "q": "___ Schuhe trägst du heute?",
+        "a": "Welche",
+        "en": "Which shoes are you wearing today?",
+        "es": "¿Qué zapatos llevas hoy?",
+        "options": [
+          "Welcher",
+          "Welchen",
+          "Welche"
+        ]
+      },
+      {
+        "q": "___ Hut ist zu groß.",
+        "a": "Dieser",
+        "en": "This hat is too big.",
+        "es": "Este sombrero es demasiado grande.",
+        "options": [
+          "Dieser",
+          "Diesen",
+          "Dieses"
+        ]
+      },
+      {
+        "q": "Ich kaufe ___ Bluse.",
+        "a": "diese",
+        "en": "I'm buying this blouse.",
+        "es": "Me compro esta blusa.",
+        "options": [
+          "dieser",
+          "diese",
+          "dieses"
+        ]
+      },
+      {
+        "q": "___ T-Shirt ist teuer.",
+        "a": "Dieses",
+        "en": "This T-shirt is expensive.",
+        "es": "Esta camiseta es cara.",
+        "options": [
+          "Dieser",
+          "Diese",
+          "Dieses"
+        ]
+      },
+      {
+        "q": "___ Schal findest du schöner?",
+        "a": "Welchen",
+        "en": "Which scarf do you think is nicer?",
+        "es": "¿Qué bufanda te parece más bonita?",
+        "options": [
+          "Welcher",
+          "Welchen",
+          "Welche"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "denn",
+    "title": {
+      "en": "Giving reasons: denn",
+      "de": "Gründe nennen: denn",
+      "es": "Dar razones: denn"
+    },
+    "emoji": "🌦️",
+    "rule": {
+      "en": "denn means because. After denn the verb stays in position 2, like after und, aber, oder: Ich bleibe zu Hause, denn es regnet.",
+      "de": "denn nennt einen Grund. Nach denn steht das Verb auf Position 2, wie nach und, aber, oder: Ich bleibe zu Hause, denn es regnet.",
+      "es": "denn significa porque. Después de denn el verbo sigue en la posición 2, como después de und, aber, oder: Ich bleibe zu Hause, denn es regnet."
+    },
+    "options": [
+      "denn",
+      "und",
+      "aber",
+      "oder"
+    ],
+    "items": [
+      {
+        "q": "Ich bleibe zu Hause, ___ es regnet.",
+        "a": "denn",
+        "en": "I'm staying at home because it's raining.",
+        "es": "Me quedo en casa porque llueve."
+      },
+      {
+        "q": "Wir gehen schwimmen, ___ die Sonne scheint.",
+        "a": "denn",
+        "en": "We're going swimming because the sun is shining.",
+        "es": "Vamos a nadar porque hace sol."
+      },
+      {
+        "q": "Es ist kalt, ___ die Sonne scheint.",
+        "a": "aber",
+        "en": "It's cold, but the sun is shining.",
+        "es": "Hace frío, pero hace sol."
+      },
+      {
+        "q": "Nimm einen Regenschirm mit, ___ es regnet bald.",
+        "a": "denn",
+        "en": "Take an umbrella with you, because it's going to rain soon.",
+        "es": "Llévate un paraguas, porque pronto va a llover."
+      },
+      {
+        "q": "Es schneit, ___ die Kinder bauen einen Schneemann.",
+        "a": "und",
+        "en": "It's snowing and the children are building a snowman.",
+        "es": "Está nevando y los niños hacen un muñeco de nieve."
+      },
+      {
+        "q": "Ich trage eine Mütze, ___ es ist sehr kalt.",
+        "a": "denn",
+        "en": "I'm wearing a hat because it's very cold.",
+        "es": "Llevo un gorro porque hace mucho frío."
+      },
+      {
+        "q": "Gehen wir spazieren, ___ bleiben wir zu Hause?",
+        "a": "oder",
+        "en": "Shall we go for a walk, or shall we stay at home?",
+        "es": "¿Vamos a dar un paseo o nos quedamos en casa?"
+      },
+      {
+        "q": "Wir fahren heute nicht Fahrrad, ___ es ist sehr windig.",
+        "a": "denn",
+        "en": "We're not cycling today because it's very windy.",
+        "es": "Hoy no vamos en bici porque hace mucho viento."
+      },
+      {
+        "q": "Heute ist es warm, ___ morgen regnet es.",
+        "a": "aber",
+        "en": "Today it's warm, but tomorrow it's going to rain.",
+        "es": "Hoy hace calor, pero mañana va a llover."
+      },
+      {
+        "q": "Ich habe kalte Hände, ___ ich habe keine Handschuhe.",
+        "a": "denn",
+        "en": "My hands are cold because I have no gloves.",
+        "es": "Tengo las manos frías porque no tengo guantes."
+      },
+      {
+        "q": "Die Sonne scheint, ___ es ist warm.",
+        "a": "und",
+        "en": "The sun is shining and it's warm.",
+        "es": "Hace sol y hace calor."
+      },
+      {
+        "q": "Das Picknick fällt aus, ___ es gibt ein Gewitter.",
+        "a": "denn",
+        "en": "The picnic is cancelled because there's a thunderstorm.",
+        "es": "El pícnic se cancela porque hay tormenta."
+      }
+    ]
+  },
+  {
+    "id": "wechsel",
+    "title": {
+      "en": "Where? an, in, auf",
+      "de": "Wo? an, in, auf",
+      "es": "¿Dónde? an, in, auf"
+    },
+    "emoji": "📍",
+    "rule": {
+      "en": "For Wo? (where) an, in and auf take the dative: an der Wand, auf dem Tisch. an + dem = am, in + dem = im.",
+      "de": "Auf die Frage Wo? stehen an, in und auf mit Dativ: an der Wand, auf dem Tisch. an + dem = am, in + dem = im.",
+      "es": "Para responder a Wo? (¿dónde?), an, in y auf van con dativo: an der Wand, auf dem Tisch. an + dem = am, in + dem = im."
+    },
+    "options": [
+      "an",
+      "in",
+      "auf",
+      "am",
+      "im"
+    ],
+    "items": [
+      {
+        "q": "Das Bild hängt ___ der Wand.",
+        "a": "an",
+        "en": "The picture is hanging on the wall.",
+        "es": "El cuadro está colgado en la pared."
+      },
+      {
+        "q": "Die Katze liegt ___ dem Sofa.",
+        "a": "auf",
+        "en": "The cat is lying on the sofa.",
+        "es": "El gato está tumbado en el sofá."
+      },
+      {
+        "q": "Wir sind ___ Park.",
+        "a": "im",
+        "en": "We are in the park.",
+        "es": "Estamos en el parque."
+      },
+      {
+        "q": "Ich sitze ___ Tisch.",
+        "a": "am",
+        "en": "I'm sitting at the table.",
+        "es": "Estoy sentado a la mesa."
+      },
+      {
+        "q": "Die Milch ist ___ Kühlschrank.",
+        "a": "im",
+        "en": "The milk is in the fridge.",
+        "es": "La leche está en la nevera."
+      },
+      {
+        "q": "Das Buch liegt ___ dem Tisch.",
+        "a": "auf",
+        "en": "The book is lying on the table.",
+        "es": "El libro está encima de la mesa."
+      },
+      {
+        "q": "Die Kinder spielen ___ der Küche.",
+        "a": "in",
+        "en": "The children are playing in the kitchen.",
+        "es": "Los niños juegan en la cocina."
+      },
+      {
+        "q": "Wir wohnen ___ Berlin.",
+        "a": "in",
+        "en": "We live in Berlin.",
+        "es": "Vivimos en Berlín."
+      },
+      {
+        "q": "Der Hund schläft ___ dem Boden.",
+        "a": "auf",
+        "en": "The dog is sleeping on the floor.",
+        "es": "El perro duerme en el suelo."
+      },
+      {
+        "q": "Die Lampe hängt ___ der Decke.",
+        "a": "an",
+        "en": "The lamp is hanging from the ceiling.",
+        "es": "La lámpara cuelga del techo."
+      },
+      {
+        "q": "Wir machen Urlaub ___ Meer.",
+        "a": "am",
+        "en": "We're on holiday by the sea.",
+        "es": "Estamos de vacaciones junto al mar."
+      },
+      {
+        "q": "Die Jacke hängt ___ Schrank.",
+        "a": "im",
+        "en": "The jacket is hanging in the wardrobe.",
+        "es": "La chaqueta está colgada en el armario."
+      }
+    ]
+  },
+  {
+    "id": "suffixlos",
+    "title": {
+      "en": "The suffix -los",
+      "de": "Die Nachsilbe -los",
+      "es": "El sufijo -los"
+    },
+    "emoji": "🚫",
+    "rule": {
+      "en": "-los after a noun means without: die Arbeit → arbeitslos (without work), die Kosten → kostenlos (free).",
+      "de": "-los nach einem Nomen bedeutet ohne: die Arbeit → arbeitslos (ohne Arbeit), die Kosten → kostenlos (ohne Kosten).",
+      "es": "-los detrás de un sustantivo significa sin: die Arbeit → arbeitslos (sin trabajo), die Kosten → kostenlos (gratis)."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Er hat keine Arbeit. Er ist ___.",
+        "a": "arbeitslos",
+        "en": "He has no job. He is unemployed.",
+        "es": "No tiene trabajo. Está en paro.",
+        "options": [
+          "arbeitslos",
+          "arbeitlos",
+          "unarbeit"
+        ]
+      },
+      {
+        "q": "Der Eintritt kostet nichts. Er ist ___.",
+        "a": "kostenlos",
+        "en": "Admission costs nothing. It is free.",
+        "es": "La entrada no cuesta nada. Es gratis.",
+        "options": [
+          "kostlos",
+          "kostenlos",
+          "unkostig"
+        ]
+      },
+      {
+        "q": "Heute gibt es keine Wolken. Der Himmel ist ___.",
+        "a": "wolkenlos",
+        "en": "There are no clouds today. The sky is cloudless.",
+        "es": "Hoy no hay nubes. El cielo está despejado.",
+        "options": [
+          "wolkelos",
+          "unwolkig",
+          "wolkenlos"
+        ]
+      },
+      {
+        "q": "Ich bin so überrascht. Ich bin ___.",
+        "a": "sprachlos",
+        "en": "I'm so surprised. I'm speechless.",
+        "es": "Estoy tan sorprendido. Me he quedado sin palabras.",
+        "options": [
+          "sprachlos",
+          "sprechlos",
+          "unsprach"
+        ]
+      },
+      {
+        "q": "Es gibt keine Hoffnung mehr. Die Situation ist ___.",
+        "a": "hoffnungslos",
+        "en": "There's no hope any more. The situation is hopeless.",
+        "es": "Ya no hay esperanza. La situación es desesperada.",
+        "options": [
+          "hoffnunglos",
+          "hoffnungslos",
+          "unhoffnung"
+        ]
+      },
+      {
+        "q": "Dein Test hat keine Fehler. Er ist ___.",
+        "a": "fehlerlos",
+        "en": "Your test has no mistakes. It is flawless.",
+        "es": "Tu examen no tiene errores. Es perfecto.",
+        "options": [
+          "fehllos",
+          "unfehler",
+          "fehlerlos"
+        ]
+      },
+      {
+        "q": "Die Nacht war ___. Ich habe nicht geschlafen.",
+        "a": "schlaflos",
+        "en": "The night was sleepless. I didn't sleep.",
+        "es": "Ha sido una noche en vela. No he dormido.",
+        "options": [
+          "schlaflos",
+          "schlafenlos",
+          "unschlaf"
+        ]
+      },
+      {
+        "q": "Sie haben keine Kinder. Sie sind ___.",
+        "a": "kinderlos",
+        "en": "They have no children. They are childless.",
+        "es": "No tienen hijos. Son una pareja sin hijos.",
+        "options": [
+          "kindlos",
+          "kinderlos",
+          "unkinder"
+        ]
+      },
+      {
+        "q": "Das Wasser hat keine Farbe. Es ist ___.",
+        "a": "farblos",
+        "en": "The water has no colour. It is colourless.",
+        "es": "El agua no tiene color. Es incolora.",
+        "options": [
+          "unfarbig",
+          "farbelos",
+          "farblos"
+        ]
+      },
+      {
+        "q": "Der Film hört nicht auf. Er ist ___!",
+        "a": "endlos",
+        "en": "The film doesn't stop. It's endless!",
+        "es": "La película no termina. ¡Es interminable!",
+        "options": [
+          "endlos",
+          "endelos",
+          "unend"
+        ]
+      },
+      {
+        "q": "Die Kopfhörer haben kein Kabel. Sie sind ___.",
+        "a": "kabellos",
+        "en": "The headphones have no cable. They are wireless.",
+        "es": "Los auriculares no tienen cable. Son inalámbricos.",
+        "options": [
+          "kabellos",
+          "kabelos",
+          "unkabel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ordinals",
+    "title": {
+      "en": "Dates: der erste Mai",
+      "de": "Datum: der erste Mai",
+      "es": "Fechas: der erste Mai"
+    },
+    "emoji": "🗓️",
+    "rule": {
+      "en": "Ordinal numbers: 1–19 + -te (zweite; irregular: erste, dritte, siebte, achte), from 20 + -ste (zwanzigste). der … → -te, am … → -ten: am dritten Juni.",
+      "de": "Ordinalzahlen: 1–19 + -te (zweite; unregelmäßig: erste, dritte, siebte, achte), ab 20 + -ste (zwanzigste). der … → -te, am … → -ten: am dritten Juni.",
+      "es": "Números ordinales: 1–19 + -te (zweite; irregulares: erste, dritte, siebte, achte), desde 20 + -ste (zwanzigste). der … → -te, am … → -ten: am dritten Juni."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Heute ist der ___ Mai. (1.)",
+        "a": "erste",
+        "en": "Today is the first of May.",
+        "es": "Hoy es el 1 de mayo.",
+        "options": [
+          "erste",
+          "ersten",
+          "einste"
+        ]
+      },
+      {
+        "q": "Ich habe am ___ Juni Geburtstag. (3.)",
+        "a": "dritten",
+        "en": "My birthday is on the third of June.",
+        "es": "Mi cumpleaños es el 3 de junio.",
+        "options": [
+          "dritte",
+          "dritten",
+          "dreiten"
+        ]
+      },
+      {
+        "q": "Heute ist der ___ März. (2.)",
+        "a": "zweite",
+        "en": "Today is the second of March.",
+        "es": "Hoy es el 2 de marzo.",
+        "options": [
+          "zweiten",
+          "zweitte",
+          "zweite"
+        ]
+      },
+      {
+        "q": "Am ___ Juli fahren wir in den Urlaub. (7.)",
+        "a": "siebten",
+        "en": "On the seventh of July we're going on holiday.",
+        "es": "El 7 de julio nos vamos de vacaciones.",
+        "options": [
+          "siebten",
+          "siebte",
+          "siebzten"
+        ]
+      },
+      {
+        "q": "Morgen ist der ___ Oktober. (4.)",
+        "a": "vierte",
+        "en": "Tomorrow is the fourth of October.",
+        "es": "Mañana es el 4 de octubre.",
+        "options": [
+          "vierten",
+          "vierte",
+          "viertte"
+        ]
+      },
+      {
+        "q": "Der Kurs beginnt am ___ September. (8.)",
+        "a": "achten",
+        "en": "The course starts on the eighth of September.",
+        "es": "El curso empieza el 8 de septiembre.",
+        "options": [
+          "achte",
+          "achtten",
+          "achten"
+        ]
+      },
+      {
+        "q": "Heute ist der ___ Dezember. (20.)",
+        "a": "zwanzigste",
+        "en": "Today is the twentieth of December.",
+        "es": "Hoy es el 20 de diciembre.",
+        "options": [
+          "zwanzigste",
+          "zwanzigsten",
+          "zwanzigte"
+        ]
+      },
+      {
+        "q": "Wir heiraten am ___ August. (12.)",
+        "a": "zwölften",
+        "en": "We're getting married on the twelfth of August.",
+        "es": "Nos casamos el 12 de agosto.",
+        "options": [
+          "zwölfte",
+          "zwölften",
+          "zwölfsten"
+        ]
+      },
+      {
+        "q": "Weihnachten ist am ___ Dezember. (25.)",
+        "a": "fünfundzwanzigsten",
+        "en": "Christmas is on the twenty-fifth of December.",
+        "es": "La Navidad es el 25 de diciembre.",
+        "options": [
+          "fünfundzwanzigste",
+          "fünfundzwanzigten",
+          "fünfundzwanzigsten"
+        ]
+      },
+      {
+        "q": "Der ___ Januar ist in Bayern ein Feiertag. (6.)",
+        "a": "sechste",
+        "en": "The sixth of January is a holiday in Bavaria.",
+        "es": "El 6 de enero es festivo en Baviera.",
+        "options": [
+          "sechste",
+          "sechsten",
+          "sechte"
+        ]
+      },
+      {
+        "q": "Mein Termin ist am ___ Mai. (11.)",
+        "a": "elften",
+        "en": "My appointment is on the eleventh of May.",
+        "es": "Mi cita es el 11 de mayo.",
+        "options": [
+          "elfte",
+          "elften",
+          "elfsten"
+        ]
+      },
+      {
+        "q": "Heute ist der ___ Februar. (13.)",
+        "a": "dreizehnte",
+        "en": "Today is the thirteenth of February.",
+        "es": "Hoy es el 13 de febrero.",
+        "options": [
+          "dreizehnten",
+          "dreizehnste",
+          "dreizehnte"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wuerde",
+    "title": {
+      "en": "Wishes: ich würde gern …",
+      "de": "Wünsche: ich würde gern …",
+      "es": "Deseos: ich würde gern …"
+    },
+    "emoji": "🌠",
+    "rule": {
+      "en": "würde + gern + infinitive at the end expresses a wish: Ich würde gern nach Paris fahren. Forms: ich/er/sie würde, du würdest, wir/sie/Sie würden, ihr würdet.",
+      "de": "würde + gern + Infinitiv am Ende drückt einen Wunsch aus: Ich würde gern nach Paris fahren. Formen: ich/er/sie würde, du würdest, wir/sie/Sie würden, ihr würdet.",
+      "es": "würde + gern + infinitivo al final expresa un deseo: Ich würde gern nach Paris fahren. Formas: ich/er/sie würde, du würdest, wir/sie/Sie würden, ihr würdet."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Ich ___ gern nach Paris fahren.",
+        "a": "würde",
+        "en": "I would like to go to Paris.",
+        "es": "Me gustaría ir a París.",
+        "options": [
+          "würde",
+          "würdest",
+          "wird",
+          "werde"
+        ]
+      },
+      {
+        "q": "___ du gern ein Auto haben?",
+        "a": "Würdest",
+        "en": "Would you like to have a car?",
+        "es": "¿Te gustaría tener un coche?",
+        "options": [
+          "Würde",
+          "Würdest",
+          "Wirst",
+          "Würden"
+        ]
+      },
+      {
+        "q": "Wir ___ gern am Meer wohnen.",
+        "a": "würden",
+        "en": "We would like to live by the sea.",
+        "es": "Nos gustaría vivir junto al mar.",
+        "options": [
+          "würdet",
+          "werden",
+          "würden",
+          "würde"
+        ]
+      },
+      {
+        "q": "Er ___ gern Pilot werden.",
+        "a": "würde",
+        "en": "He would like to become a pilot.",
+        "es": "Le gustaría ser piloto.",
+        "options": [
+          "wird",
+          "würde",
+          "würden",
+          "würdest"
+        ]
+      },
+      {
+        "q": "___ ihr gern mitkommen?",
+        "a": "Würdet",
+        "en": "Would you like to come along?",
+        "es": "¿Os gustaría venir?",
+        "options": [
+          "Würden",
+          "Werdet",
+          "Würdest",
+          "Würdet"
+        ]
+      },
+      {
+        "q": "Meine Eltern ___ gern eine Reise machen.",
+        "a": "würden",
+        "en": "My parents would like to go on a trip.",
+        "es": "A mis padres les gustaría hacer un viaje.",
+        "options": [
+          "würde",
+          "würden",
+          "werden",
+          "würdet"
+        ]
+      },
+      {
+        "q": "___ Sie gern einen Kaffee trinken?",
+        "a": "Würden",
+        "en": "Would you like to drink a coffee?",
+        "es": "¿Le gustaría tomar un café?",
+        "options": [
+          "Würden",
+          "Würde",
+          "Werden",
+          "Würdet"
+        ]
+      },
+      {
+        "q": "Ich ___ gern mehr Zeit haben.",
+        "a": "würde",
+        "en": "I would like to have more time.",
+        "es": "Me gustaría tener más tiempo.",
+        "options": [
+          "werde",
+          "würden",
+          "würdest",
+          "würde"
+        ]
+      },
+      {
+        "q": "Anna ___ gern Spanisch lernen.",
+        "a": "würde",
+        "en": "Anna would like to learn Spanish.",
+        "es": "A Anna le gustaría aprender español.",
+        "options": [
+          "würdet",
+          "würde",
+          "wird",
+          "würden"
+        ]
+      },
+      {
+        "q": "Was ___ du gern machen? – Ich würde gern schlafen.",
+        "a": "würdest",
+        "en": "What would you like to do? – I'd like to sleep.",
+        "es": "¿Qué te gustaría hacer? – Me gustaría dormir.",
+        "options": [
+          "würdest",
+          "würde",
+          "wirst",
+          "würdet"
+        ]
+      },
+      {
+        "q": "Ihr ___ gern einen Hund haben, oder?",
+        "a": "würdet",
+        "en": "You would like to have a dog, wouldn't you?",
+        "es": "Os gustaría tener un perro, ¿verdad?",
+        "options": [
+          "würdest",
+          "werdet",
+          "würdet",
+          "würden"
+        ]
+      },
+      {
+        "q": "Am Wochenende ___ ich gern lange schlafen.",
+        "a": "würde",
+        "en": "At the weekend I would like to sleep in.",
+        "es": "El fin de semana me gustaría dormir hasta tarde.",
+        "options": [
+          "würden",
+          "würde",
+          "wird",
+          "werde"
+        ]
+      }
+    ]
+  }
+]

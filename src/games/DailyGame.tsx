@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { NounLabel } from '../components/NounLabel';
 import { SpeakButton } from '../components/NounPrompt';
-import { allWords, grammarItems, verbForms } from '../data';
+import { allWords, grammarItems, phraseItems, verbForms } from '../data';
 import type { Level, WordRef } from '../data/types';
 import { meaning, t } from '../lib/i18n';
 import { random, shuffle, withSeed } from '../lib/random';
@@ -11,6 +11,7 @@ import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
 import { conjugationQuestion } from './ConjugationGame';
 import { grammarQuestion } from './GrammarGame';
 import { numberQuestion } from './NumbersGame';
+import { phraseQuestion } from './PhraseGame';
 import { pluralQuestion } from './PluralGame';
 import { formalTimeQuestion, informalTimeQuestion } from './TimeGame';
 
@@ -51,6 +52,7 @@ export function dailyQuestions(level: Level, day: string): ChoiceQuestion[] {
     const words = allWords(level);
     const plurals = words.filter((w) => w.plural);
     const exercises = level.grammar.flatMap((l) => grammarItems(level, l));
+    const situations = level.phrases.flatMap((l) => phraseItems(level, l));
     const numberOrTime =
       random() < 0.5
         ? numberQuestion(0, random() < 0.5 ? 'toWord' : 'toDigits')
@@ -58,11 +60,12 @@ export function dailyQuestions(level: Level, day: string): ChoiceQuestion[] {
           ? informalTimeQuestion(0)
           : formalTimeQuestion(0);
     return shuffle([
-      ...pick(words, 3).map(articleQuestion),
+      ...pick(words, 2).map(articleQuestion),
       ...pick(words, 2).map((w) => meaningQuestion(w, words)),
       ...pick(plurals, 2).map(pluralQuestion),
       ...pick(verbForms(level), 2).map((f) => conjugationQuestion(level, f)),
       ...pick(exercises, 2).map(grammarQuestion),
+      ...pick(situations, 1).map(phraseQuestion),
       numberOrTime,
     ]);
   });

@@ -2,7 +2,7 @@
 // (longer wait before it is due again), a wrong answer sends it back to box 0.
 import { shuffle } from './random';
 
-export type Skill = 'article' | 'meaning' | 'plural' | 'listening' | 'sentence' | 'conjugation' | 'grammar';
+export type Skill = 'article' | 'meaning' | 'plural' | 'listening' | 'sentence' | 'conjugation' | 'grammar' | 'phrases';
 
 type Item = { id: string };
 

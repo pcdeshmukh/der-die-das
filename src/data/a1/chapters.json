@@ -1,0 +1,350 @@
+[
+  {
+    "n": 1,
+    "title": {
+      "de": "Hallo!",
+      "en": "Hello!",
+      "es": "¡Hola!"
+    },
+    "links": [
+      "people",
+      "g-origin",
+      "g-questions",
+      "verbs",
+      "alphabet",
+      "p-greetings"
+    ]
+  },
+  {
+    "n": 2,
+    "title": {
+      "de": "Beruf und Wohnort",
+      "en": "Jobs and where you live",
+      "es": "Profesión y residencia"
+    },
+    "links": [
+      "jobs",
+      "school",
+      "numbers",
+      "g-negation",
+      "g-jobprep",
+      "g-feminine",
+      "verbs",
+      "p-personal"
+    ]
+  },
+  {
+    "n": 3,
+    "title": {
+      "de": "Familie und Sprachen",
+      "en": "Family and languages",
+      "es": "Familia e idiomas"
+    },
+    "links": [
+      "family",
+      "animals",
+      "g-genitive",
+      "g-doch",
+      "g-possessive",
+      "verbs",
+      "p-familylang"
+    ]
+  },
+  {
+    "n": 4,
+    "title": {
+      "de": "Möbel und Preise",
+      "en": "Furniture and prices",
+      "es": "Muebles y precios"
+    },
+    "links": [
+      "home",
+      "numbers",
+      "g-adjectives",
+      "g-pronouns",
+      "p-prices"
+    ]
+  },
+  {
+    "n": 5,
+    "title": {
+      "de": "Dinge und Farben",
+      "en": "Things and colours",
+      "es": "Cosas y colores"
+    },
+    "links": [
+      "things",
+      "g-indefinite",
+      "g-negation",
+      "g-colors",
+      "g-materials",
+      "verbs",
+      "p-words"
+    ]
+  },
+  {
+    "n": 6,
+    "title": {
+      "de": "Büro und Computer",
+      "en": "Office and computer",
+      "es": "Oficina y ordenador"
+    },
+    "links": [
+      "office",
+      "g-accusative",
+      "p-phone"
+    ]
+  },
+  {
+    "n": 7,
+    "title": {
+      "de": "Freizeit",
+      "en": "Free time",
+      "es": "Tiempo libre"
+    },
+    "links": [
+      "leisure",
+      "verbs",
+      "g-modalposition",
+      "g-frequency",
+      "p-abilities"
+    ]
+  },
+  {
+    "n": 8,
+    "title": {
+      "de": "Tage und Uhrzeiten",
+      "en": "Days and times",
+      "es": "Días y horas"
+    },
+    "links": [
+      "time",
+      "numbers",
+      "g-verbposition",
+      "g-timeprep",
+      "verbs",
+      "p-appointments"
+    ]
+  },
+  {
+    "n": 9,
+    "title": {
+      "de": "Essen und Trinken",
+      "en": "Food and drink",
+      "es": "Comida y bebida"
+    },
+    "links": [
+      "food",
+      "g-compounds",
+      "verbs",
+      "p-restaurant"
+    ]
+  },
+  {
+    "n": 10,
+    "title": {
+      "de": "Unterwegs",
+      "en": "On the move",
+      "es": "De viaje"
+    },
+    "links": [
+      "transport",
+      "g-separable",
+      "p-travelinfo"
+    ]
+  },
+  {
+    "n": 11,
+    "title": {
+      "de": "Alltag",
+      "en": "Everyday life",
+      "es": "La vida diaria"
+    },
+    "links": [
+      "g-perfecthaben",
+      "g-vonbis",
+      "p-past"
+    ]
+  },
+  {
+    "n": 12,
+    "title": {
+      "de": "Jahreszeiten und Monate",
+      "en": "Seasons and months",
+      "es": "Estaciones y meses"
+    },
+    "links": [
+      "nature",
+      "time",
+      "g-perfectsein",
+      "g-preterite",
+      "g-seitnach",
+      "p-holidays"
+    ]
+  },
+  {
+    "n": 13,
+    "title": {
+      "de": "Orte in der Stadt",
+      "en": "Places in town",
+      "es": "Lugares de la ciudad"
+    },
+    "links": [
+      "city",
+      "g-esgibt",
+      "g-dativeverbs",
+      "p-places"
+    ]
+  },
+  {
+    "n": 14,
+    "title": {
+      "de": "Wege in der Stadt",
+      "en": "Finding your way",
+      "es": "Orientarse en la ciudad"
+    },
+    "links": [
+      "city",
+      "g-placeprep",
+      "p-directions"
+    ]
+  },
+  {
+    "n": 15,
+    "title": {
+      "de": "Wohnen",
+      "en": "Living",
+      "es": "La vivienda"
+    },
+    "links": [
+      "home",
+      "g-possessiveacc",
+      "p-flat"
+    ]
+  },
+  {
+    "n": 16,
+    "title": {
+      "de": "Geräte und Termine",
+      "en": "Appliances and appointments",
+      "es": "Aparatos y citas"
+    },
+    "links": [
+      "appliances",
+      "g-timeinvornach",
+      "p-help"
+    ]
+  },
+  {
+    "n": 17,
+    "title": {
+      "de": "Pläne und Wünsche",
+      "en": "Plans and wishes",
+      "es": "Planes y deseos"
+    },
+    "links": [
+      "g-mitohne",
+      "verbs",
+      "p-wishes"
+    ]
+  },
+  {
+    "n": 18,
+    "title": {
+      "de": "Körper und Gesundheit",
+      "en": "Body and health",
+      "es": "Cuerpo y salud"
+    },
+    "links": [
+      "body",
+      "g-imperativesie",
+      "verbs",
+      "p-doctor"
+    ]
+  },
+  {
+    "n": 19,
+    "title": {
+      "de": "Im Haushalt",
+      "en": "Housework",
+      "es": "Las tareas de casa"
+    },
+    "links": [
+      "g-imperativedu",
+      "g-accpronouns",
+      "p-requests"
+    ]
+  },
+  {
+    "n": 20,
+    "title": {
+      "de": "Menschen beschreiben",
+      "en": "Describing people",
+      "es": "Describir a personas"
+    },
+    "links": [
+      "jobs",
+      "g-perfectinseparable",
+      "g-prefixun",
+      "g-describe",
+      "p-people"
+    ]
+  },
+  {
+    "n": 21,
+    "title": {
+      "de": "Regeln",
+      "en": "Rules",
+      "es": "Normas"
+    },
+    "links": [
+      "environment",
+      "g-mustmay",
+      "verbs",
+      "p-opinion"
+    ]
+  },
+  {
+    "n": 22,
+    "title": {
+      "de": "Kleidung",
+      "en": "Clothes",
+      "es": "Ropa"
+    },
+    "links": [
+      "clothes",
+      "g-comparison",
+      "g-welchdies",
+      "p-shopping"
+    ]
+  },
+  {
+    "n": 23,
+    "title": {
+      "de": "Wetter",
+      "en": "Weather",
+      "es": "El tiempo"
+    },
+    "links": [
+      "nature",
+      "g-denn",
+      "g-wechsel",
+      "g-suffixlos",
+      "p-weather"
+    ]
+  },
+  {
+    "n": 24,
+    "title": {
+      "de": "Feste",
+      "en": "Celebrations",
+      "es": "Celebraciones"
+    },
+    "links": [
+      "festivals",
+      "g-ordinals",
+      "g-wuerde",
+      "p-congratulate"
+    ]
+  }
+]

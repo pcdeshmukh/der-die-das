@@ -510,6 +510,45 @@
         "möchtet",
         "möchten"
       ]
+    },
+    {
+      "infinitive": "leben",
+      "en": "to live (be alive, live somewhere)",
+      "es": "vivir (existir)",
+      "present": [
+        "lebe",
+        "lebst",
+        "lebt",
+        "leben",
+        "lebt",
+        "leben"
+      ]
+    },
+    {
+      "infinitive": "werden",
+      "en": "to become",
+      "es": "llegar a ser, hacerse",
+      "present": [
+        "werde",
+        "wirst",
+        "wird",
+        "werden",
+        "werdet",
+        "werden"
+      ]
+    },
+    {
+      "infinitive": "sollen",
+      "en": "should, to be supposed to",
+      "es": "deber (según otros)",
+      "present": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ]
     }
   ]
 }

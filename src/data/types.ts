@@ -79,6 +79,34 @@ export interface GrammarRef extends GrammarItem {
   lesson: GrammarLesson;
 }
 
+/** "What do you say?": a situation in the learner's language, answered with a German phrase. */
+export interface PhraseItem extends Translated {
+  situation: Translated;
+  /** the right German phrase; en/es translate it */
+  a: string;
+  /** plausible German phrases that don't fit the situation */
+  wrong: string[];
+}
+
+export interface PhraseLesson {
+  id: string;
+  title: Titled;
+  emoji: string;
+  items: PhraseItem[];
+}
+
+export interface PhraseRef extends PhraseItem {
+  id: string;
+  lesson: PhraseLesson;
+}
+
+/** One chapter of the course; links are topic ids, lesson ids (g-…, p-…) or pseudo-topics (verbs, numbers…). */
+export interface Chapter {
+  n: number;
+  title: Titled;
+  links: string[];
+}
+
 export type LevelId = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
 export interface Level {
@@ -93,4 +121,6 @@ export interface Level {
     verbs: Verb[];
   } | null;
   grammar: GrammarLesson[];
+  phrases: PhraseLesson[];
+  chapters: Chapter[];
 }

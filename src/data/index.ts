@@ -1,4 +1,4 @@
-import type { GrammarLesson, GrammarRef, Level, LevelId, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
+import type { Chapter, GrammarLesson, GrammarRef, Level, LevelId, PhraseLesson, PhraseRef, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
 import people from './a1/people.json';
 import family from './a1/family.json';
 import food from './a1/food.json';
@@ -12,10 +12,43 @@ import school from './a1/school.json';
 import leisure from './a1/leisure.json';
 import nature from './a1/nature.json';
 import animals from './a1/animals.json';
+import jobs from './a1/jobs.json';
+import things from './a1/things.json';
+import office from './a1/office.json';
+import appliances from './a1/appliances.json';
+import festivals from './a1/festivals.json';
+import environment from './a1/environment.json';
 import a1Verbs from './a1/verbs.json';
 import a1Grammar from './a1/grammar.json';
+import a1GrammarCh01 from './a1/grammar-ch01-06.json';
+import a1GrammarCh07 from './a1/grammar-ch07-12.json';
+import a1GrammarCh13 from './a1/grammar-ch13-19.json';
+import a1GrammarCh20 from './a1/grammar-ch20-24.json';
+import a1PhrasesCh01 from './a1/phrases-ch01-12.json';
+import a1PhrasesCh13 from './a1/phrases-ch13-24.json';
+import a1Chapters from './a1/chapters.json';
 
-const A1 = [people, family, food, home, city, transport, time, body, clothes, school, leisure, nature, animals];
+const A1 = [
+  people,
+  family,
+  jobs,
+  food,
+  home,
+  appliances,
+  things,
+  office,
+  city,
+  transport,
+  environment,
+  time,
+  body,
+  clothes,
+  school,
+  leisure,
+  festivals,
+  nature,
+  animals,
+];
 
 // Levels without topics are shown as "coming soon".
 const TOPICS: Record<LevelId, Topic[]> = {
@@ -28,7 +61,13 @@ const TOPICS: Record<LevelId, Topic[]> = {
 };
 
 const VERBS: Partial<Record<LevelId, Level['verbs']>> = { A1: a1Verbs };
-const GRAMMAR: Partial<Record<LevelId, GrammarLesson[]>> = { A1: a1Grammar };
+const GRAMMAR: Partial<Record<LevelId, GrammarLesson[]>> = {
+  A1: [...a1Grammar, ...a1GrammarCh01, ...a1GrammarCh07, ...a1GrammarCh13, ...a1GrammarCh20] as GrammarLesson[],
+};
+const CHAPTERS: Partial<Record<LevelId, Chapter[]>> = { A1: a1Chapters };
+const PHRASES: Partial<Record<LevelId, PhraseLesson[]>> = {
+  A1: [...a1PhrasesCh01, ...a1PhrasesCh13] as unknown as PhraseLesson[],
+};
 
 export const LEVELS: Level[] = (Object.keys(TOPICS) as LevelId[]).map((id) => ({
   id,
@@ -36,6 +75,8 @@ export const LEVELS: Level[] = (Object.keys(TOPICS) as LevelId[]).map((id) => ({
   topics: TOPICS[id],
   verbs: VERBS[id] ?? null,
   grammar: GRAMMAR[id] ?? [],
+  phrases: PHRASES[id] ?? [],
+  chapters: CHAPTERS[id] ?? [],
 }));
 
 export function getLevel(slug: string): Level | undefined {
@@ -74,4 +115,8 @@ export function verbForms(level: Level): VerbForm[] {
 
 export function grammarItems(level: Level, lesson: GrammarLesson): GrammarRef[] {
   return lesson.items.map((item, i) => ({ ...item, id: `${level.id}:grammar:${lesson.id}:${i}`, lesson }));
+}
+
+export function phraseItems(level: Level, lesson: PhraseLesson): PhraseRef[] {
+  return lesson.items.map((item, i) => ({ ...item, id: `${level.id}:phrase:${lesson.id}:${i}`, lesson }));
 }

@@ -4,9 +4,17 @@ const ONES = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben'
   'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn'];
 const TENS = ['', '', 'zwanzig', 'dreißig', 'vierzig', 'fünfzig', 'sechzig', 'siebzig', 'achtzig', 'neunzig'];
 
-/** 0–999 as a German word: 47 → "siebenundvierzig". */
+/** 0 to 1,000,000 as one German word: 47 → "siebenundvierzig", 2500 → "zweitausendfünfhundert". */
 export function numberToGerman(n: number): string {
-  if (n < 0 || n > 999 || !Number.isInteger(n)) throw new RangeError(`unsupported number ${n}`);
+  if (n < 0 || n > 1_000_000 || !Number.isInteger(n)) throw new RangeError(`unsupported number ${n}`);
+  if (n === 1_000_000) return 'eine Million';
+  if (n >= 1000) {
+    const thousands = Math.floor(n / 1000);
+    const rest = n % 1000;
+    // "eins" shortens to "ein" in front of tausend: einundzwanzigtausend, hunderteintausend.
+    const head = thousands === 1 ? 'ein' : numberToGerman(thousands).replace(/eins$/, 'ein');
+    return `${head}tausend${rest ? numberToGerman(rest) : ''}`;
+  }
   if (n < 20) return ONES[n];
   if (n < 100) {
     const ones = n % 10;
@@ -17,6 +25,9 @@ export function numberToGerman(n: number): string {
   const rest = n % 100;
   return `${hundreds === 1 ? 'ein' : ONES[hundreds]}hundert${rest ? numberToGerman(rest) : ''}`;
 }
+
+/** German digit grouping: 1250 → "1.250", 1000000 → "1.000.000". */
+export const formatNumber = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
 /** Everyday spoken time (12-hour), minutes in steps of 5: 2:30 → "halb drei". */
 export function timeInformal(hour: number, minute: number): string {

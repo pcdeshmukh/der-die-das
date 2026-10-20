@@ -1,0 +1,237 @@
+{
+  "id": "jobs",
+  "title": {
+    "de": "Berufe",
+    "en": "Jobs",
+    "es": "Profesiones"
+  },
+  "emoji": "👩‍🔧",
+  "nouns": [
+    {
+      "de": "Koch",
+      "article": "der",
+      "plural": "Köche",
+      "en": "cook (male)",
+      "es": "cocinero",
+      "emoji": "👨‍🍳"
+    },
+    {
+      "de": "Köchin",
+      "article": "die",
+      "plural": "Köchinnen",
+      "en": "cook (female)",
+      "es": "cocinera",
+      "emoji": "👩‍🍳"
+    },
+    {
+      "de": "Verkäufer",
+      "article": "der",
+      "plural": "Verkäufer",
+      "en": "shop assistant (male)",
+      "es": "dependiente"
+    },
+    {
+      "de": "Verkäuferin",
+      "article": "die",
+      "plural": "Verkäuferinnen",
+      "en": "shop assistant (female)",
+      "es": "dependienta"
+    },
+    {
+      "de": "Ingenieur",
+      "article": "der",
+      "plural": "Ingenieure",
+      "en": "engineer (male)",
+      "es": "ingeniero"
+    },
+    {
+      "de": "Ingenieurin",
+      "article": "die",
+      "plural": "Ingenieurinnen",
+      "en": "engineer (female)",
+      "es": "ingeniera"
+    },
+    {
+      "de": "Kellner",
+      "article": "der",
+      "plural": "Kellner",
+      "en": "waiter",
+      "es": "camarero"
+    },
+    {
+      "de": "Kellnerin",
+      "article": "die",
+      "plural": "Kellnerinnen",
+      "en": "waitress",
+      "es": "camarera"
+    },
+    {
+      "de": "Polizist",
+      "article": "der",
+      "plural": "Polizisten",
+      "en": "police officer (male)",
+      "es": "policía (hombre)",
+      "emoji": "👮‍♂️"
+    },
+    {
+      "de": "Polizistin",
+      "article": "die",
+      "plural": "Polizistinnen",
+      "en": "police officer (female)",
+      "es": "policía (mujer)",
+      "emoji": "👮‍♀️"
+    },
+    {
+      "de": "Friseur",
+      "article": "der",
+      "plural": "Friseure",
+      "en": "hairdresser (male)",
+      "es": "peluquero",
+      "emoji": "💇‍♂️"
+    },
+    {
+      "de": "Friseurin",
+      "article": "die",
+      "plural": "Friseurinnen",
+      "en": "hairdresser (female)",
+      "es": "peluquera",
+      "emoji": "💇‍♀️"
+    },
+    {
+      "de": "Programmierer",
+      "article": "der",
+      "plural": "Programmierer",
+      "en": "programmer (male)",
+      "es": "programador",
+      "emoji": "👨‍💻"
+    },
+    {
+      "de": "Programmiererin",
+      "article": "die",
+      "plural": "Programmiererinnen",
+      "en": "programmer (female)",
+      "es": "programadora",
+      "emoji": "👩‍💻"
+    },
+    {
+      "de": "Krankenpfleger",
+      "article": "der",
+      "plural": "Krankenpfleger",
+      "en": "nurse (male)",
+      "es": "enfermero"
+    },
+    {
+      "de": "Krankenpflegerin",
+      "article": "die",
+      "plural": "Krankenpflegerinnen",
+      "en": "nurse (female)",
+      "es": "enfermera"
+    },
+    {
+      "de": "Mechaniker",
+      "article": "der",
+      "plural": "Mechaniker",
+      "en": "mechanic (male)",
+      "es": "mecánico",
+      "emoji": "👨‍🔧"
+    },
+    {
+      "de": "Mechanikerin",
+      "article": "die",
+      "plural": "Mechanikerinnen",
+      "en": "mechanic (female)",
+      "es": "mecánica",
+      "emoji": "👩‍🔧"
+    },
+    {
+      "de": "Journalist",
+      "article": "der",
+      "plural": "Journalisten",
+      "en": "journalist (male)",
+      "es": "periodista (hombre)"
+    },
+    {
+      "de": "Journalistin",
+      "article": "die",
+      "plural": "Journalistinnen",
+      "en": "journalist (female)",
+      "es": "periodista (mujer)"
+    },
+    {
+      "de": "Bäcker",
+      "article": "der",
+      "plural": "Bäcker",
+      "en": "baker (male)",
+      "es": "panadero"
+    },
+    {
+      "de": "Bäckerin",
+      "article": "die",
+      "plural": "Bäckerinnen",
+      "en": "baker (female)",
+      "es": "panadera"
+    },
+    {
+      "de": "Rentner",
+      "article": "der",
+      "plural": "Rentner",
+      "en": "pensioner (male)",
+      "es": "jubilado",
+      "emoji": "👴"
+    },
+    {
+      "de": "Rentnerin",
+      "article": "die",
+      "plural": "Rentnerinnen",
+      "en": "pensioner (female)",
+      "es": "jubilada",
+      "emoji": "👵"
+    },
+    {
+      "de": "Hausmann",
+      "article": "der",
+      "plural": "Hausmänner",
+      "en": "househusband",
+      "es": "amo de casa"
+    },
+    {
+      "de": "Hausfrau",
+      "article": "die",
+      "plural": "Hausfrauen",
+      "en": "housewife",
+      "es": "ama de casa"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Was sind Sie von Beruf?",
+      "en": "What do you do for a living?",
+      "es": "¿A qué se dedica usted?"
+    },
+    {
+      "de": "Ich bin Programmiererin.",
+      "en": "I am a programmer.",
+      "es": "Soy programadora."
+    },
+    {
+      "de": "Die Kellnerin bringt den Kaffee.",
+      "en": "The waitress brings the coffee.",
+      "es": "La camarera trae el café."
+    },
+    {
+      "de": "Meine Schwester arbeitet als Ingenieurin.",
+      "en": "My sister works as an engineer.",
+      "es": "Mi hermana trabaja como ingeniera."
+    },
+    {
+      "de": "Der Mechaniker repariert das Auto.",
+      "en": "The mechanic repairs the car.",
+      "es": "El mecánico repara el coche."
+    },
+    {
+      "de": "Mein Opa ist Rentner.",
+      "en": "My grandpa is retired.",
+      "es": "Mi abuelo está jubilado."
+    }
+  ]
+}

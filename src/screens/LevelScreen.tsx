@@ -1,19 +1,23 @@
 import { wordsOf } from '../data';
 import type { Level } from '../data/types';
 import { t, uiLang } from '../lib/i18n';
-import { GRAMMAR_PREFIX, MODES, NUMBERS, REVIEW, MIXED, VERBS, modesFor, poolFor } from '../lib/modes';
+import { ALPHABET, MODES, NUMBERS, REVIEW, MIXED, VERBS, describeTopic, modesFor, poolFor } from '../lib/modes';
 import { href } from '../lib/router';
 import { progress } from '../lib/store';
+import { StarCount, TopicCard } from './TopicCard';
 
-function StarCount({ level, topicId }: { level: Level; topicId: string }) {
+/** Stars earned in all of a chapter's linked topics, as a share for the progress bar. */
+function chapterProgress(level: Level, links: string[]): number {
   const p = progress.value;
-  const modes = modesFor(level, topicId);
-  const earned = modes.reduce((sum, m) => sum + (p.stars[`${level.id}/${topicId}/${m.id}`] ?? 0), 0);
-  return (
-    <>
-      <span class="star on">★</span> {earned}/{modes.length * 3}
-    </>
-  );
+  let earned = 0;
+  let max = 0;
+  for (const id of links) {
+    for (const m of modesFor(level, id)) {
+      earned += p.stars[`${level.id}/${id}/${m.id}`] ?? 0;
+      max += 3;
+    }
+  }
+  return max ? earned / max : 0;
 }
 
 export function LevelScreen({ level }: { level: Level }) {
@@ -22,6 +26,7 @@ export function LevelScreen({ level }: { level: Level }) {
     (n, m) => n + (poolFor(level, REVIEW, m, p.words)?.length ?? 0),
     0,
   );
+  const skills = [VERBS, NUMBERS, ALPHABET].map((id) => describeTopic(level, id)).filter((x) => x !== null);
   return (
     <div class="screen">
       <h1 class="screen-title">
@@ -50,36 +55,47 @@ export function LevelScreen({ level }: { level: Level }) {
         )}
       </div>
 
-      <h2 class="section-title">{t('grammar')}</h2>
+      {level.chapters.length > 0 && (
+        <>
+          <h2 class="section-title">{t('chapters')}</h2>
+          <ol class="chapter-list">
+            {level.chapters.map((c) => (
+              <li>
+                <a class="chapter-row" href={href(level.slug, `chapter-${c.n}`)}>
+                  <span class="chapter-n">{c.n}</span>
+                  <span class="chapter-title">{c.title[uiLang()]}</span>
+                  <span class="chapter-bar" aria-hidden="true">
+                    <span style={{ width: `${chapterProgress(level, c.links) * 100}%` }} />
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      <h2 class="section-title">{t('skills')}</h2>
       <div class="topic-grid">
-        {level.verbs && (
-          <a class="topic-card" href={href(level.slug, VERBS)}>
-            <span class="topic-emoji">🔤</span>
-            <span class="topic-name">{t('verbs')}</span>
-            <span class="topic-meta">
-              {t('verbsSub', { n: level.verbs.verbs.length })} · <StarCount level={level} topicId={VERBS} />
-            </span>
+        {level.grammar.length > 0 && (
+          <a class="topic-card" href={href(level.slug, 'grammar')}>
+            <span class="topic-emoji">✏️</span>
+            <span class="topic-name">{t('grammarLessons')}</span>
+            <span class="topic-meta">{t('lessonsCount', { n: level.grammar.length })}</span>
           </a>
         )}
-        <a class="topic-card" href={href(level.slug, NUMBERS)}>
-          <span class="topic-emoji">🔢</span>
-          <span class="topic-name">{t('numbersTopic')}</span>
-          <span class="topic-meta">
-            {t('numbersSub')} · <StarCount level={level} topicId={NUMBERS} />
-          </span>
-        </a>
-        {level.grammar.map((lesson) => (
-          <a class="topic-card" href={href(level.slug, GRAMMAR_PREFIX + lesson.id)}>
-            <span class="topic-emoji">{lesson.emoji}</span>
-            <span class="topic-name">{lesson.title[uiLang()]}</span>
-            <span class="topic-meta">
-              {t('exercises', { n: lesson.items.length })} · <StarCount level={level} topicId={GRAMMAR_PREFIX + lesson.id} />
-            </span>
+        {level.phrases.length > 0 && (
+          <a class="topic-card" href={href(level.slug, 'phrases')}>
+            <span class="topic-emoji">💬</span>
+            <span class="topic-name">{t('phraseSets')}</span>
+            <span class="topic-meta">{t('setsCount', { n: level.phrases.length })}</span>
           </a>
+        )}
+        {skills.map((info) => (
+          <TopicCard level={level} info={info} />
         ))}
       </div>
 
-      <h2 class="section-title">{t('topics')}</h2>
+      <h2 class="section-title">{t('vocabulary')}</h2>
       <div class="topic-grid">
         {level.topics.map((topic) => (
           <a class="topic-card" href={href(level.slug, topic.id)}>

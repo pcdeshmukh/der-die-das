@@ -662,7 +662,7 @@
       "de": "am, um oder im?",
       "es": "¿am, um o im?"
     },
-    "emoji": "📆",
+    "emoji": "🗓️",
     "rule": {
       "en": "um + clock time (um 8 Uhr), am + days and parts of the day (am Montag, am Abend), im + months and seasons (im Mai, im Winter).",
       "de": "um + Uhrzeit (um 8 Uhr), am + Tage und Tageszeiten (am Montag, am Abend), im + Monate und Jahreszeiten (im Mai, im Winter).",

@@ -1,0 +1,216 @@
+{
+  "id": "festivals",
+  "title": {
+    "de": "Feste",
+    "en": "Festivals",
+    "es": "Fiestas"
+  },
+  "emoji": "🎄",
+  "nouns": [
+    {
+      "de": "Feier",
+      "article": "die",
+      "plural": "Feiern",
+      "en": "celebration",
+      "es": "celebración",
+      "emoji": "🎉"
+    },
+    {
+      "de": "Feiertag",
+      "article": "der",
+      "plural": "Feiertage",
+      "en": "public holiday",
+      "es": "día festivo"
+    },
+    {
+      "de": "Einladung",
+      "article": "die",
+      "plural": "Einladungen",
+      "en": "invitation",
+      "es": "invitación",
+      "emoji": "💌"
+    },
+    {
+      "de": "Glückwunsch",
+      "article": "der",
+      "plural": "Glückwünsche",
+      "en": "congratulations",
+      "es": "felicitación"
+    },
+    {
+      "de": "Überraschung",
+      "article": "die",
+      "plural": "Überraschungen",
+      "en": "surprise",
+      "es": "sorpresa"
+    },
+    {
+      "de": "Torte",
+      "article": "die",
+      "plural": "Torten",
+      "en": "gateau",
+      "es": "tarta",
+      "emoji": "🎂"
+    },
+    {
+      "de": "Luftballon",
+      "article": "der",
+      "plural": "Luftballons",
+      "en": "balloon",
+      "es": "globo",
+      "emoji": "🎈"
+    },
+    {
+      "de": "Feuerwerk",
+      "article": "das",
+      "plural": "Feuerwerke",
+      "en": "fireworks",
+      "es": "fuegos artificiales",
+      "emoji": "🎆"
+    },
+    {
+      "de": "Sekt",
+      "article": "der",
+      "plural": null,
+      "en": "sparkling wine",
+      "es": "cava",
+      "emoji": "🥂"
+    },
+    {
+      "de": "Tanz",
+      "article": "der",
+      "plural": "Tänze",
+      "en": "dance",
+      "es": "baile",
+      "emoji": "💃"
+    },
+    {
+      "de": "Kostüm",
+      "article": "das",
+      "plural": "Kostüme",
+      "en": "costume",
+      "es": "disfraz"
+    },
+    {
+      "de": "Karneval",
+      "article": "der",
+      "plural": null,
+      "en": "carnival",
+      "es": "carnaval",
+      "emoji": "🎭"
+    },
+    {
+      "de": "Jubiläum",
+      "article": "das",
+      "plural": "Jubiläen",
+      "en": "anniversary",
+      "es": "aniversario"
+    },
+    {
+      "de": "Neujahr",
+      "article": "das",
+      "plural": null,
+      "en": "New Year's Day",
+      "es": "Año Nuevo"
+    },
+    {
+      "de": "Weihnachtsfest",
+      "article": "das",
+      "plural": "Weihnachtsfeste",
+      "en": "Christmas",
+      "es": "Navidad"
+    },
+    {
+      "de": "Weihnachtsbaum",
+      "article": "der",
+      "plural": "Weihnachtsbäume",
+      "en": "Christmas tree",
+      "es": "árbol de Navidad",
+      "emoji": "🎄"
+    },
+    {
+      "de": "Weihnachtsmann",
+      "article": "der",
+      "plural": "Weihnachtsmänner",
+      "en": "Father Christmas",
+      "es": "Papá Noel",
+      "emoji": "🎅"
+    },
+    {
+      "de": "Adventskalender",
+      "article": "der",
+      "plural": "Adventskalender",
+      "en": "Advent calendar",
+      "es": "calendario de Adviento"
+    },
+    {
+      "de": "Lebkuchen",
+      "article": "der",
+      "plural": "Lebkuchen",
+      "en": "gingerbread",
+      "es": "pan de jengibre"
+    },
+    {
+      "de": "Osterei",
+      "article": "das",
+      "plural": "Ostereier",
+      "en": "Easter egg",
+      "es": "huevo de Pascua",
+      "emoji": "🥚"
+    },
+    {
+      "de": "Osterhase",
+      "article": "der",
+      "plural": "Osterhasen",
+      "en": "Easter Bunny",
+      "es": "conejo de Pascua",
+      "emoji": "🐰"
+    },
+    {
+      "de": "Musiker",
+      "article": "der",
+      "plural": "Musiker",
+      "en": "musician (male)",
+      "es": "músico"
+    },
+    {
+      "de": "Musikerin",
+      "article": "die",
+      "plural": "Musikerinnen",
+      "en": "musician (female)",
+      "es": "música"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Vielen Dank für die Einladung!",
+      "en": "Thank you for the invitation!",
+      "es": "¡Muchas gracias por la invitación!"
+    },
+    {
+      "de": "Herzlichen Glückwunsch zum Geburtstag!",
+      "en": "Happy birthday!",
+      "es": "¡Feliz cumpleaños!"
+    },
+    {
+      "de": "Frohe Weihnachten!",
+      "en": "Merry Christmas!",
+      "es": "¡Feliz Navidad!"
+    },
+    {
+      "de": "Der Weihnachtsbaum ist sehr schön.",
+      "en": "The Christmas tree is very beautiful.",
+      "es": "El árbol de Navidad es muy bonito."
+    },
+    {
+      "de": "Die Kinder suchen Ostereier.",
+      "en": "The children are looking for Easter eggs.",
+      "es": "Los niños buscan huevos de Pascua."
+    },
+    {
+      "de": "Kommst du zu meiner Feier?",
+      "en": "Are you coming to my party?",
+      "es": "¿Vienes a mi fiesta?"
+    }
+  ]
+}

@@ -1,0 +1,1141 @@
+[
+  {
+    "id": "modalposition",
+    "title": {
+      "en": "Modal verbs: word order",
+      "de": "Modalverben: Satzklammer",
+      "es": "Verbos modales: orden"
+    },
+    "emoji": "🧩",
+    "rule": {
+      "en": "The modal verb (können, möchten, wollen) is in position 2; the infinitive goes to the end.",
+      "de": "Das Modalverb (können, möchten, wollen) steht auf Position 2, der Infinitiv steht am Ende.",
+      "es": "El verbo modal (können, möchten, wollen) va en la posición 2; el infinitivo va al final."
+    },
+    "options": [],
+    "shuffle": true,
+    "items": [
+      {
+        "q": "können + schwimmen",
+        "a": "Ich kann gut schwimmen.",
+        "en": "I can swim well.",
+        "es": "Sé nadar bien.",
+        "options": [
+          "Ich kann gut schwimmen.",
+          "Ich kann schwimmen gut.",
+          "Ich schwimmen kann gut."
+        ]
+      },
+      {
+        "q": "können + spielen",
+        "a": "Er kann sehr gut Gitarre spielen.",
+        "en": "He can play the guitar very well.",
+        "es": "Él sabe tocar la guitarra muy bien.",
+        "options": [
+          "Er kann sehr gut Gitarre spielen.",
+          "Er kann spielen sehr gut Gitarre.",
+          "Er spielen kann sehr gut Gitarre."
+        ]
+      },
+      {
+        "q": "können + kochen",
+        "a": "Kannst du Spaghetti kochen?",
+        "en": "Can you cook spaghetti?",
+        "es": "¿Sabes cocinar espaguetis?",
+        "options": [
+          "Kannst du Spaghetti kochen?",
+          "Kannst du kochen Spaghetti?",
+          "Kochen du kannst Spaghetti?"
+        ]
+      },
+      {
+        "q": "können + tanzen",
+        "a": "Wir können nicht tanzen.",
+        "en": "We can't dance.",
+        "es": "No sabemos bailar.",
+        "options": [
+          "Wir können nicht tanzen.",
+          "Wir können tanzen nicht.",
+          "Wir tanzen können nicht."
+        ]
+      },
+      {
+        "q": "können + Ski fahren",
+        "a": "Sie kann Ski fahren.",
+        "en": "She can ski.",
+        "es": "Ella sabe esquiar.",
+        "options": [
+          "Sie kann Ski fahren.",
+          "Sie kann fahren Ski.",
+          "Sie Ski fahren kann."
+        ]
+      },
+      {
+        "q": "können + kommen",
+        "a": "Ich kann morgen nicht kommen.",
+        "en": "I can't come tomorrow.",
+        "es": "Mañana no puedo venir.",
+        "options": [
+          "Ich kann morgen nicht kommen.",
+          "Ich kann kommen morgen nicht.",
+          "Ich morgen kann nicht kommen."
+        ]
+      },
+      {
+        "q": "können + sprechen",
+        "a": "Meine Mutter kann gut Englisch sprechen.",
+        "en": "My mother can speak English well.",
+        "es": "Mi madre sabe hablar bien inglés.",
+        "options": [
+          "Meine Mutter kann gut Englisch sprechen.",
+          "Meine Mutter kann sprechen gut Englisch.",
+          "Meine Mutter sprechen kann gut Englisch."
+        ]
+      },
+      {
+        "q": "können + helfen",
+        "a": "Kannst du mir helfen?",
+        "en": "Can you help me?",
+        "es": "¿Puedes ayudarme?",
+        "options": [
+          "Kannst du mir helfen?",
+          "Kannst helfen du mir?",
+          "Helfen du kannst mir?"
+        ]
+      },
+      {
+        "q": "können + malen",
+        "a": "Ihr könnt sehr schön malen.",
+        "en": "You can paint very beautifully.",
+        "es": "Vosotros sabéis pintar muy bien.",
+        "options": [
+          "Ihr könnt sehr schön malen.",
+          "Ihr könnt malen sehr schön.",
+          "Ihr malen könnt sehr schön."
+        ]
+      },
+      {
+        "q": "können + Rad fahren",
+        "a": "Mein Sohn kann schon Rad fahren.",
+        "en": "My son can already ride a bike.",
+        "es": "Mi hijo ya sabe montar en bici.",
+        "options": [
+          "Mein Sohn kann schon Rad fahren.",
+          "Mein Sohn kann schon fahren Rad.",
+          "Mein Sohn Rad fahren kann schon."
+        ]
+      },
+      {
+        "q": "möchten + trinken",
+        "a": "Ich möchte einen Kaffee trinken.",
+        "en": "I would like to drink a coffee.",
+        "es": "Me gustaría tomar un café.",
+        "options": [
+          "Ich möchte einen Kaffee trinken.",
+          "Ich möchte trinken einen Kaffee.",
+          "Ich trinken möchte einen Kaffee."
+        ]
+      },
+      {
+        "q": "wollen + lernen",
+        "a": "Wir wollen Deutsch lernen.",
+        "en": "We want to learn German.",
+        "es": "Queremos aprender alemán.",
+        "options": [
+          "Wir wollen Deutsch lernen.",
+          "Wir wollen lernen Deutsch.",
+          "Wir lernen wollen Deutsch."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "frequency",
+    "title": {
+      "en": "How often?",
+      "de": "Wie oft?",
+      "es": "¿Con qué frecuencia?"
+    },
+    "emoji": "🔁",
+    "rule": {
+      "en": "From most to least often: immer – oft – manchmal – selten – nie. The word usually comes right after the verb.",
+      "de": "Von oft bis nie: immer – oft – manchmal – selten – nie. Das Wort steht meistens direkt nach dem Verb.",
+      "es": "De más a menos frecuente: immer – oft – manchmal – selten – nie. La palabra suele ir justo después del verbo."
+    },
+    "options": [
+      "immer",
+      "oft",
+      "manchmal",
+      "selten",
+      "nie"
+    ],
+    "items": [
+      {
+        "q": "Ich trinke morgens ___ Kaffee.",
+        "a": "immer",
+        "en": "I always drink coffee in the morning.",
+        "es": "Siempre tomo café por la mañana."
+      },
+      {
+        "q": "Er spielt ___ Fußball.",
+        "a": "oft",
+        "en": "He often plays football.",
+        "es": "Él juega al fútbol a menudo."
+      },
+      {
+        "q": "Wir gehen ___ ins Kino.",
+        "a": "manchmal",
+        "en": "We sometimes go to the cinema.",
+        "es": "A veces vamos al cine."
+      },
+      {
+        "q": "Sie isst ___ Fleisch.",
+        "a": "nie",
+        "en": "She never eats meat.",
+        "es": "Ella nunca come carne."
+      },
+      {
+        "q": "Ich fahre ___ Fahrrad.",
+        "a": "selten",
+        "en": "I rarely ride a bike.",
+        "es": "Rara vez voy en bici."
+      },
+      {
+        "q": "Mein Vater kocht am Sonntag ___.",
+        "a": "immer",
+        "en": "My father always cooks on Sundays.",
+        "es": "Mi padre siempre cocina los domingos."
+      },
+      {
+        "q": "Hörst du ___ Musik?",
+        "a": "oft",
+        "en": "Do you often listen to music?",
+        "es": "¿Escuchas música a menudo?"
+      },
+      {
+        "q": "Ich lese ___ die Zeitung.",
+        "a": "manchmal",
+        "en": "I sometimes read the newspaper.",
+        "es": "A veces leo el periódico."
+      },
+      {
+        "q": "Tom ist ___ pünktlich.",
+        "a": "nie",
+        "en": "Tom is never on time.",
+        "es": "Tom nunca es puntual."
+      },
+      {
+        "q": "Wir sehen ___ fern.",
+        "a": "selten",
+        "en": "We rarely watch TV.",
+        "es": "Rara vez vemos la tele."
+      },
+      {
+        "q": "Sie macht ___ Sport.",
+        "a": "oft",
+        "en": "She often does sport.",
+        "es": "Ella hace deporte a menudo."
+      },
+      {
+        "q": "Der Bus kommt ___ zu spät.",
+        "a": "immer",
+        "en": "The bus is always late.",
+        "es": "El autobús siempre llega tarde."
+      }
+    ]
+  },
+  {
+    "id": "verbposition",
+    "title": {
+      "en": "The verb in position 2",
+      "de": "Das Verb auf Position 2",
+      "es": "El verbo en la posición 2"
+    },
+    "emoji": "2️⃣",
+    "rule": {
+      "en": "The verb is always in position 2. If a time phrase comes first, the subject goes after the verb: Am Montag gehe ich ins Kino.",
+      "de": "Das Verb steht immer auf Position 2. Steht eine Zeitangabe am Anfang, kommt das Subjekt nach dem Verb: Am Montag gehe ich ins Kino.",
+      "es": "El verbo siempre va en la posición 2. Si la frase empieza con una expresión de tiempo, el sujeto va después del verbo: Am Montag gehe ich ins Kino."
+    },
+    "options": [],
+    "shuffle": true,
+    "items": [
+      {
+        "q": "am Montag · ins Kino gehen",
+        "a": "Am Montag gehe ich ins Kino.",
+        "en": "On Monday I'm going to the cinema.",
+        "es": "El lunes voy al cine.",
+        "options": [
+          "Am Montag gehe ich ins Kino.",
+          "Am Montag ich gehe ins Kino.",
+          "Am Montag ins Kino gehe ich."
+        ]
+      },
+      {
+        "q": "heute · arbeiten",
+        "a": "Heute arbeite ich bis 18 Uhr.",
+        "en": "Today I'm working until 6 p.m.",
+        "es": "Hoy trabajo hasta las seis de la tarde.",
+        "options": [
+          "Heute arbeite ich bis 18 Uhr.",
+          "Heute ich arbeite bis 18 Uhr.",
+          "Heute bis 18 Uhr arbeite ich."
+        ]
+      },
+      {
+        "q": "am Wochenende · Fußball spielen",
+        "a": "Am Wochenende spielen wir Fußball.",
+        "en": "At the weekend we play football.",
+        "es": "El fin de semana jugamos al fútbol.",
+        "options": [
+          "Am Wochenende spielen wir Fußball.",
+          "Am Wochenende wir spielen Fußball.",
+          "Am Wochenende Fußball spielen wir."
+        ]
+      },
+      {
+        "q": "morgen · die Oma besuchen",
+        "a": "Morgen besucht Anna ihre Oma.",
+        "en": "Tomorrow Anna is visiting her grandma.",
+        "es": "Mañana Anna visita a su abuela.",
+        "options": [
+          "Morgen besucht Anna ihre Oma.",
+          "Morgen Anna besucht ihre Oma.",
+          "Morgen ihre Oma besucht Anna."
+        ]
+      },
+      {
+        "q": "um 7 Uhr · aufstehen",
+        "a": "Um 7 Uhr stehe ich auf.",
+        "en": "I get up at 7 o'clock.",
+        "es": "Me levanto a las 7.",
+        "options": [
+          "Um 7 Uhr stehe ich auf.",
+          "Um 7 Uhr ich stehe auf.",
+          "Um 7 Uhr ich aufstehe."
+        ]
+      },
+      {
+        "q": "wann · der Film beginnen",
+        "a": "Wann beginnt der Film?",
+        "en": "When does the film start?",
+        "es": "¿Cuándo empieza la película?",
+        "options": [
+          "Wann beginnt der Film?",
+          "Wann der Film beginnt?",
+          "Beginnt wann der Film?"
+        ]
+      },
+      {
+        "q": "wo · du wohnen",
+        "a": "Wo wohnst du?",
+        "en": "Where do you live?",
+        "es": "¿Dónde vives?",
+        "options": [
+          "Wo wohnst du?",
+          "Wo du wohnst?",
+          "Wohnst wo du?"
+        ]
+      },
+      {
+        "q": "am Abend · fernsehen",
+        "a": "Am Abend sieht er fern.",
+        "en": "In the evening he watches TV.",
+        "es": "Por la noche él ve la tele.",
+        "options": [
+          "Am Abend sieht er fern.",
+          "Am Abend er sieht fern.",
+          "Am Abend fernsieht er."
+        ]
+      },
+      {
+        "q": "was · ihr am Sonntag machen",
+        "a": "Was macht ihr am Sonntag?",
+        "en": "What are you doing on Sunday?",
+        "es": "¿Qué hacéis el domingo?",
+        "options": [
+          "Was macht ihr am Sonntag?",
+          "Was ihr macht am Sonntag?",
+          "Was ihr am Sonntag macht?"
+        ]
+      },
+      {
+        "q": "am Dienstag · Deutsch lernen",
+        "a": "Am Dienstag lernen wir Deutsch.",
+        "en": "On Tuesday we study German.",
+        "es": "El martes estudiamos alemán.",
+        "options": [
+          "Am Dienstag lernen wir Deutsch.",
+          "Am Dienstag wir lernen Deutsch.",
+          "Am Dienstag Deutsch lernen wir."
+        ]
+      },
+      {
+        "q": "um 20 Uhr · das Konzert beginnen",
+        "a": "Um 20 Uhr beginnt das Konzert.",
+        "en": "The concert starts at 8 p.m.",
+        "es": "El concierto empieza a las ocho de la tarde.",
+        "options": [
+          "Um 20 Uhr beginnt das Konzert.",
+          "Um 20 Uhr das Konzert beginnt.",
+          "Um 20 Uhr das Konzert beginnen."
+        ]
+      },
+      {
+        "q": "jetzt · keine Zeit haben",
+        "a": "Jetzt habe ich keine Zeit.",
+        "en": "I don't have time now.",
+        "es": "Ahora no tengo tiempo.",
+        "options": [
+          "Jetzt habe ich keine Zeit.",
+          "Jetzt ich habe keine Zeit.",
+          "Jetzt keine Zeit habe ich."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "compounds",
+    "title": {
+      "en": "Compound nouns",
+      "de": "Komposita: Nomen + Nomen",
+      "es": "Sustantivos compuestos"
+    },
+    "emoji": "🔗",
+    "rule": {
+      "en": "A compound noun always takes the article of its last noun: der Apfel + der Saft = der Apfelsaft, der Käse + das Brot = das Käsebrot.",
+      "de": "Ein Kompositum hat immer den Artikel vom letzten Nomen: der Apfel + der Saft = der Apfelsaft, der Käse + das Brot = das Käsebrot.",
+      "es": "Un sustantivo compuesto lleva siempre el artículo del último sustantivo: der Apfel + der Saft = der Apfelsaft, der Käse + das Brot = das Käsebrot."
+    },
+    "options": [
+      "der",
+      "die",
+      "das"
+    ],
+    "items": [
+      {
+        "q": "Das ist ___ Apfelsaft (der Apfel + der Saft).",
+        "a": "der",
+        "en": "This is the apple juice.",
+        "es": "Este es el zumo de manzana."
+      },
+      {
+        "q": "Das ist ___ Kartoffelsalat (die Kartoffel + der Salat).",
+        "a": "der",
+        "en": "This is the potato salad.",
+        "es": "Esta es la ensalada de patatas."
+      },
+      {
+        "q": "Das ist ___ Käsebrot (der Käse + das Brot).",
+        "a": "das",
+        "en": "This is the cheese sandwich.",
+        "es": "Este es el pan con queso."
+      },
+      {
+        "q": "Das ist ___ Obstkuchen (das Obst + der Kuchen).",
+        "a": "der",
+        "en": "This is the fruit cake.",
+        "es": "Esta es la tarta de fruta."
+      },
+      {
+        "q": "Das ist ___ Tomatensuppe (die Tomate + die Suppe).",
+        "a": "die",
+        "en": "This is the tomato soup.",
+        "es": "Esta es la sopa de tomate."
+      },
+      {
+        "q": "Das ist ___ Kinderzimmer (das Kind + das Zimmer).",
+        "a": "das",
+        "en": "This is the children's room.",
+        "es": "Esta es la habitación de los niños."
+      },
+      {
+        "q": "Das ist ___ Haustür (das Haus + die Tür).",
+        "a": "die",
+        "en": "This is the front door.",
+        "es": "Esta es la puerta de casa."
+      },
+      {
+        "q": "Das ist ___ Wochenende (die Woche + das Ende).",
+        "a": "das",
+        "en": "This is the weekend.",
+        "es": "Este es el fin de semana."
+      },
+      {
+        "q": "Das ist ___ Stadtplan (die Stadt + der Plan).",
+        "a": "der",
+        "en": "This is the city map.",
+        "es": "Este es el plano de la ciudad."
+      },
+      {
+        "q": "Das ist ___ Zahnbürste (der Zahn + die Bürste).",
+        "a": "die",
+        "en": "This is the toothbrush.",
+        "es": "Este es el cepillo de dientes."
+      },
+      {
+        "q": "Das ist ___ Telefonnummer (das Telefon + die Nummer).",
+        "a": "die",
+        "en": "This is the phone number.",
+        "es": "Este es el número de teléfono."
+      },
+      {
+        "q": "Das ist ___ Fußball (der Fuß + der Ball).",
+        "a": "der",
+        "en": "This is the football.",
+        "es": "Este es el balón de fútbol."
+      }
+    ]
+  },
+  {
+    "id": "perfecthaben",
+    "title": {
+      "en": "Perfect tense with haben",
+      "de": "Perfekt mit haben",
+      "es": "Perfecto con haben"
+    },
+    "emoji": "⏪",
+    "rule": {
+      "en": "Perfect = haben in position 2 + participle at the end. Regular: ge…t (gekauft); irregular: ge…en (gegessen).",
+      "de": "Perfekt = haben auf Position 2 + Partizip am Ende. Regelmäßig: ge…t (gekauft); unregelmäßig: ge…en (gegessen).",
+      "es": "Perfecto = haben en la posición 2 + participio al final. Regulares: ge…t (gekauft); irregulares: ge…en (gegessen)."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Ich habe gestern Pizza ___.",
+        "a": "gegessen",
+        "en": "I ate pizza yesterday.",
+        "es": "Ayer comí pizza.",
+        "options": [
+          "gegessen",
+          "geesst",
+          "gegesst"
+        ]
+      },
+      {
+        "q": "Wir haben letzte Woche ein Auto ___.",
+        "a": "gekauft",
+        "en": "We bought a car last week.",
+        "es": "La semana pasada compramos un coche.",
+        "options": [
+          "gekauft",
+          "gekaufen",
+          "kaufte"
+        ]
+      },
+      {
+        "q": "Sie hat bis 20 Uhr ___.",
+        "a": "gearbeitet",
+        "en": "She worked until 8 p.m.",
+        "es": "Ella trabajó hasta las ocho de la tarde.",
+        "options": [
+          "gearbeitet",
+          "gearbeiten",
+          "geabeitet"
+        ]
+      },
+      {
+        "q": "Hast du schon Kaffee ___?",
+        "a": "getrunken",
+        "en": "Have you had coffee yet?",
+        "es": "¿Ya has tomado café?",
+        "options": [
+          "getrunken",
+          "getrinkt",
+          "gedrunken"
+        ]
+      },
+      {
+        "q": "Ich habe letzten Monat ein Buch ___.",
+        "a": "gelesen",
+        "en": "I read a book last month.",
+        "es": "El mes pasado leí un libro.",
+        "options": [
+          "gelesen",
+          "gelest",
+          "geliest"
+        ]
+      },
+      {
+        "q": "Das Baby hat gut ___.",
+        "a": "geschlafen",
+        "en": "The baby slept well.",
+        "es": "El bebé durmió bien.",
+        "options": [
+          "geschlafen",
+          "geschlaft",
+          "geschlief"
+        ]
+      },
+      {
+        "q": "Habt ihr den Film ___?",
+        "a": "gesehen",
+        "en": "Have you seen the film?",
+        "es": "¿Habéis visto la película?",
+        "options": [
+          "gesehen",
+          "gesieht",
+          "gesaht"
+        ]
+      },
+      {
+        "q": "Wir haben letztes Jahr in München ___.",
+        "a": "gewohnt",
+        "en": "Last year we lived in Munich.",
+        "es": "El año pasado vivimos en Múnich.",
+        "options": [
+          "gewohnt",
+          "gewohnen",
+          "wohnte"
+        ]
+      },
+      {
+        "q": "Er hat am Wochenende Tennis ___.",
+        "a": "gespielt",
+        "en": "He played tennis at the weekend.",
+        "es": "Él jugó al tenis el fin de semana.",
+        "options": [
+          "gespielt",
+          "gespielen",
+          "spielte"
+        ]
+      },
+      {
+        "q": "Ich habe gestern Musik ___.",
+        "a": "gehört",
+        "en": "I listened to music yesterday.",
+        "es": "Ayer escuché música.",
+        "options": [
+          "gehört",
+          "gehören",
+          "gehörte"
+        ]
+      },
+      {
+        "q": "Was hast du am Samstag ___?",
+        "a": "gemacht",
+        "en": "What did you do on Saturday?",
+        "es": "¿Qué hiciste el sábado?",
+        "options": [
+          "gemacht",
+          "gemachen",
+          "machte"
+        ]
+      },
+      {
+        "q": "Mein Vater hat das Abendessen ___.",
+        "a": "gekocht",
+        "en": "My father cooked dinner.",
+        "es": "Mi padre preparó la cena.",
+        "options": [
+          "gekocht",
+          "gekochen",
+          "kochte"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vonbis",
+    "title": {
+      "en": "von … bis, ab",
+      "de": "von … bis, ab",
+      "es": "von … bis, ab"
+    },
+    "emoji": "↔️",
+    "rule": {
+      "en": "von … bis = from … to (start and end). ab = from … on (only the start).",
+      "de": "von … bis: Anfang und Ende. ab: nur der Anfang.",
+      "es": "von … bis = de … a (principio y fin). ab = a partir de (solo el principio)."
+    },
+    "options": [
+      "von",
+      "bis",
+      "ab"
+    ],
+    "items": [
+      {
+        "q": "Das Geschäft ist ___ 9 bis 18 Uhr geöffnet.",
+        "a": "von",
+        "en": "The shop is open from 9 a.m. to 6 p.m.",
+        "es": "La tienda abre de 9 a 18 h."
+      },
+      {
+        "q": "Der Kurs ist von Montag ___ Freitag.",
+        "a": "bis",
+        "en": "The course is from Monday to Friday.",
+        "es": "El curso es de lunes a viernes."
+      },
+      {
+        "q": "___ Montag habe ich Urlaub.",
+        "a": "Ab",
+        "en": "I'm on holiday from Monday on.",
+        "es": "A partir del lunes estoy de vacaciones.",
+        "options": [
+          "Von",
+          "Bis",
+          "Ab"
+        ]
+      },
+      {
+        "q": "Ich arbeite ___ 8 bis 16 Uhr.",
+        "a": "von",
+        "en": "I work from 8 a.m. to 4 p.m.",
+        "es": "Trabajo de 8 a 16 h."
+      },
+      {
+        "q": "Die Ferien dauern von Juli ___ August.",
+        "a": "bis",
+        "en": "The holidays last from July to August.",
+        "es": "Las vacaciones duran de julio a agosto."
+      },
+      {
+        "q": "Das Museum ist ___ 10 Uhr geöffnet.",
+        "a": "ab",
+        "en": "The museum is open from 10 a.m. on.",
+        "es": "El museo abre a partir de las 10."
+      },
+      {
+        "q": "___ morgen fahre ich mit dem Bus.",
+        "a": "Ab",
+        "en": "From tomorrow on I'll take the bus.",
+        "es": "A partir de mañana voy en autobús.",
+        "options": [
+          "Von",
+          "Bis",
+          "Ab"
+        ]
+      },
+      {
+        "q": "Die Praxis ist ___ Montag bis Donnerstag geöffnet.",
+        "a": "von",
+        "en": "The doctor's surgery is open from Monday to Thursday.",
+        "es": "La consulta abre de lunes a jueves."
+      },
+      {
+        "q": "Wir bleiben von Freitag ___ Sonntag in Hamburg.",
+        "a": "bis",
+        "en": "We're staying in Hamburg from Friday to Sunday.",
+        "es": "Nos quedamos en Hamburgo del viernes al domingo."
+      },
+      {
+        "q": "Ich bin ___ 15 Uhr zu Hause.",
+        "a": "ab",
+        "en": "I'm at home from 3 p.m. on.",
+        "es": "Estoy en casa a partir de las tres."
+      },
+      {
+        "q": "Frühstück gibt es von 7 ___ 10 Uhr.",
+        "a": "bis",
+        "en": "Breakfast is from 7 to 10.",
+        "es": "El desayuno es de 7 a 10."
+      },
+      {
+        "q": "___ 8 bis 12 Uhr habe ich Unterricht.",
+        "a": "Von",
+        "en": "I have lessons from 8 to 12.",
+        "es": "De 8 a 12 tengo clase.",
+        "options": [
+          "Von",
+          "Bis",
+          "Ab"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perfectsein",
+    "title": {
+      "en": "Perfect: haben or sein?",
+      "de": "Perfekt: haben oder sein?",
+      "es": "Perfecto: ¿haben o sein?"
+    },
+    "emoji": "🚶",
+    "rule": {
+      "en": "Verbs of movement or change (gehen, fahren, fliegen, kommen, aufstehen) and bleiben use sein. Most other verbs use haben.",
+      "de": "Verben der Bewegung oder Veränderung (gehen, fahren, fliegen, kommen, aufstehen) und bleiben: Perfekt mit sein. Die meisten anderen Verben: mit haben.",
+      "es": "Los verbos de movimiento o cambio (gehen, fahren, fliegen, kommen, aufstehen) y bleiben forman el perfecto con sein. Casi todos los demás, con haben."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Wir ___ nach Berlin gefahren.",
+        "a": "sind",
+        "en": "We went to Berlin.",
+        "es": "Fuimos a Berlín.",
+        "options": [
+          "sind",
+          "haben"
+        ]
+      },
+      {
+        "q": "Er ___ einen Kaffee getrunken.",
+        "a": "hat",
+        "en": "He drank a coffee.",
+        "es": "Él se tomó un café.",
+        "options": [
+          "ist",
+          "hat"
+        ]
+      },
+      {
+        "q": "Ich ___ heute früh aufgestanden.",
+        "a": "bin",
+        "en": "I got up early today.",
+        "es": "Hoy me he levantado temprano.",
+        "options": [
+          "bin",
+          "habe"
+        ]
+      },
+      {
+        "q": "___ du gestern ins Kino gegangen?",
+        "a": "Bist",
+        "en": "Did you go to the cinema yesterday?",
+        "es": "¿Fuiste ayer al cine?",
+        "options": [
+          "Bist",
+          "Hast"
+        ]
+      },
+      {
+        "q": "Sie ___ nach Spanien geflogen.",
+        "a": "ist",
+        "en": "She flew to Spain.",
+        "es": "Ella voló a España.",
+        "options": [
+          "ist",
+          "hat"
+        ]
+      },
+      {
+        "q": "Wir ___ zu Hause geblieben.",
+        "a": "sind",
+        "en": "We stayed at home.",
+        "es": "Nos quedamos en casa.",
+        "options": [
+          "sind",
+          "haben"
+        ]
+      },
+      {
+        "q": "Ich ___ ein Buch gelesen.",
+        "a": "habe",
+        "en": "I read a book.",
+        "es": "Leí un libro.",
+        "options": [
+          "bin",
+          "habe"
+        ]
+      },
+      {
+        "q": "Wann ___ ihr nach Hause gekommen?",
+        "a": "seid",
+        "en": "When did you come home?",
+        "es": "¿Cuándo llegasteis a casa?",
+        "options": [
+          "seid",
+          "habt"
+        ]
+      },
+      {
+        "q": "Mein Bruder ___ Fußball gespielt.",
+        "a": "hat",
+        "en": "My brother played football.",
+        "es": "Mi hermano jugó al fútbol.",
+        "options": [
+          "ist",
+          "hat"
+        ]
+      },
+      {
+        "q": "Die Kinder ___ lange geschlafen.",
+        "a": "haben",
+        "en": "The children slept for a long time.",
+        "es": "Los niños durmieron mucho.",
+        "options": [
+          "sind",
+          "haben"
+        ]
+      },
+      {
+        "q": "Anna ___ mit dem Zug gefahren.",
+        "a": "ist",
+        "en": "Anna went by train.",
+        "es": "Anna fue en tren.",
+        "options": [
+          "ist",
+          "hat"
+        ]
+      },
+      {
+        "q": "___ ihr Pizza gegessen?",
+        "a": "Habt",
+        "en": "Did you eat pizza?",
+        "es": "¿Comisteis pizza?",
+        "options": [
+          "Seid",
+          "Habt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "preterite",
+    "title": {
+      "en": "war and hatte",
+      "de": "war und hatte",
+      "es": "war y hatte"
+    },
+    "emoji": "🕰️",
+    "rule": {
+      "en": "In the past, sein and haben usually use the Präteritum: ich war, du warst, wir waren, ihr wart – ich hatte, du hattest, wir hatten, ihr hattet.",
+      "de": "In der Vergangenheit benutzt man bei sein und haben meistens das Präteritum: ich war, du warst, wir waren, ihr wart – ich hatte, du hattest, wir hatten, ihr hattet.",
+      "es": "En pasado, sein y haben se usan normalmente en Präteritum: ich war, du warst, wir waren, ihr wart – ich hatte, du hattest, wir hatten, ihr hattet."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Gestern ___ ich krank.",
+        "a": "war",
+        "en": "Yesterday I was ill.",
+        "es": "Ayer estuve enfermo.",
+        "options": [
+          "war",
+          "warst",
+          "hatte"
+        ]
+      },
+      {
+        "q": "___ du am Wochenende in Berlin?",
+        "a": "Warst",
+        "en": "Were you in Berlin at the weekend?",
+        "es": "¿Estuviste en Berlín el fin de semana?",
+        "options": [
+          "Warst",
+          "War",
+          "Hattest"
+        ]
+      },
+      {
+        "q": "Wir ___ keine Zeit.",
+        "a": "hatten",
+        "en": "We had no time.",
+        "es": "No teníamos tiempo.",
+        "options": [
+          "hatten",
+          "hattet",
+          "waren"
+        ]
+      },
+      {
+        "q": "Das Wetter ___ schön.",
+        "a": "war",
+        "en": "The weather was nice.",
+        "es": "Hacía buen tiempo.",
+        "options": [
+          "war",
+          "waren",
+          "hatte"
+        ]
+      },
+      {
+        "q": "Er ___ Hunger.",
+        "a": "hatte",
+        "en": "He was hungry.",
+        "es": "Él tenía hambre.",
+        "options": [
+          "hatte",
+          "hattest",
+          "war"
+        ]
+      },
+      {
+        "q": "Ihr ___ gestern nicht da.",
+        "a": "wart",
+        "en": "You weren't there yesterday.",
+        "es": "Ayer no estabais.",
+        "options": [
+          "wart",
+          "waren",
+          "hattet"
+        ]
+      },
+      {
+        "q": "Die Kinder ___ müde.",
+        "a": "waren",
+        "en": "The children were tired.",
+        "es": "Los niños estaban cansados.",
+        "options": [
+          "waren",
+          "war",
+          "hatten"
+        ]
+      },
+      {
+        "q": "___ ihr eine schöne Reise?",
+        "a": "Hattet",
+        "en": "Did you have a nice trip?",
+        "es": "¿Tuvisteis un buen viaje?",
+        "options": [
+          "Hattet",
+          "Hatten",
+          "Wart"
+        ]
+      },
+      {
+        "q": "Ich ___ letzte Woche Kopfschmerzen.",
+        "a": "hatte",
+        "en": "I had a headache last week.",
+        "es": "La semana pasada tenía dolor de cabeza.",
+        "options": [
+          "hatte",
+          "hatten",
+          "war"
+        ]
+      },
+      {
+        "q": "Du ___ gestern Geburtstag, oder?",
+        "a": "hattest",
+        "en": "It was your birthday yesterday, wasn't it?",
+        "es": "Ayer fue tu cumpleaños, ¿no?",
+        "options": [
+          "hattest",
+          "hatte",
+          "warst"
+        ]
+      },
+      {
+        "q": "Wo ___ Sie im Urlaub?",
+        "a": "waren",
+        "en": "Where were you on holiday? (formal)",
+        "es": "¿Dónde estuvo usted de vacaciones?",
+        "options": [
+          "waren",
+          "wart",
+          "hatten"
+        ]
+      },
+      {
+        "q": "Meine Eltern ___ ein großes Haus.",
+        "a": "hatten",
+        "en": "My parents had a big house.",
+        "es": "Mis padres tenían una casa grande.",
+        "options": [
+          "hatten",
+          "hattet",
+          "waren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seitnach",
+    "title": {
+      "en": "seit, im, nach",
+      "de": "seit, im, nach",
+      "es": "seit, im, nach"
+    },
+    "emoji": "🧭",
+    "rule": {
+      "en": "seit = since / for (until now). im + month or season: im Mai, im Sommer. nach + city or country without article: nach Berlin, nach Spanien.",
+      "de": "seit: von einem Zeitpunkt bis jetzt. im + Monat oder Jahreszeit: im Mai, im Sommer. nach + Stadt oder Land ohne Artikel: nach Berlin, nach Spanien.",
+      "es": "seit = desde / desde hace (hasta ahora). im + mes o estación: im Mai, im Sommer. nach + ciudad o país sin artículo: nach Berlin, nach Spanien."
+    },
+    "options": [
+      "seit",
+      "nach",
+      "im"
+    ],
+    "items": [
+      {
+        "q": "Ich lerne ___ zwei Jahren Deutsch.",
+        "a": "seit",
+        "en": "I have been learning German for two years.",
+        "es": "Estudio alemán desde hace dos años."
+      },
+      {
+        "q": "Wir fliegen ___ Spanien.",
+        "a": "nach",
+        "en": "We are flying to Spain.",
+        "es": "Volamos a España."
+      },
+      {
+        "q": "___ Sommer fahren wir ans Meer.",
+        "a": "Im",
+        "en": "In summer we go to the seaside.",
+        "es": "En verano vamos a la playa.",
+        "options": [
+          "Seit",
+          "Nach",
+          "Im"
+        ]
+      },
+      {
+        "q": "Er wohnt ___ einem Monat in Hamburg.",
+        "a": "seit",
+        "en": "He has been living in Hamburg for a month.",
+        "es": "Vive en Hamburgo desde hace un mes."
+      },
+      {
+        "q": "Fährst du morgen ___ München?",
+        "a": "nach",
+        "en": "Are you going to Munich tomorrow?",
+        "es": "¿Vas mañana a Múnich?"
+      },
+      {
+        "q": "___ Juli habe ich Urlaub.",
+        "a": "Im",
+        "en": "In July I'm on holiday.",
+        "es": "En julio estoy de vacaciones.",
+        "options": [
+          "Seit",
+          "Nach",
+          "Im"
+        ]
+      },
+      {
+        "q": "Sie ist ___ Montag krank.",
+        "a": "seit",
+        "en": "She has been ill since Monday.",
+        "es": "Está enferma desde el lunes."
+      },
+      {
+        "q": "Der Zug fährt ___ Wien.",
+        "a": "nach",
+        "en": "The train goes to Vienna.",
+        "es": "El tren va a Viena."
+      },
+      {
+        "q": "___ Winter ist es hier sehr kalt.",
+        "a": "Im",
+        "en": "In winter it is very cold here.",
+        "es": "En invierno hace mucho frío aquí.",
+        "options": [
+          "Seit",
+          "Nach",
+          "Im"
+        ]
+      },
+      {
+        "q": "Wir kennen uns ___ drei Wochen.",
+        "a": "seit",
+        "en": "We have known each other for three weeks.",
+        "es": "Nos conocemos desde hace tres semanas."
+      },
+      {
+        "q": "Mein Geburtstag ist ___ Mai.",
+        "a": "im",
+        "en": "My birthday is in May.",
+        "es": "Mi cumpleaños es en mayo."
+      },
+      {
+        "q": "Im August fliegen wir ___ Italien.",
+        "a": "nach",
+        "en": "In August we are flying to Italy.",
+        "es": "En agosto volamos a Italia."
+      }
+    ]
+  }
+]

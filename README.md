@@ -5,27 +5,21 @@ German learning games for the browser, level by level (A1 → C2). Play on your 
 
 Works offline and can be added to your home screen. Progress is saved in your browser.
 
-## Games (A1)
+## A1 course
 
-Every vocabulary topic has:
+A1 follows a 24-chapter syllabus (*Hallo!* → *Feste*). Each chapter links its vocabulary,
+grammar and communication practice. In total: 505 nouns in 19 topics, 114 sentences, 40 verbs,
+45 grammar lessons (540 exercises) and 24 "What do you say?" phrase sets (192 situations).
 
-- **Der · Die · Das**: pick the right article for a noun.
-- **Word Match**: match German nouns to their English meaning.
-- **Plural Rush**: pick the right plural among plausible wrong ones.
-- **Listen & Pick**: hear a word and pick what you heard (needs browser speech).
-- **Sentence Builder**: put shuffled words into a correct German sentence.
+**Games per vocabulary topic:** Der · Die · Das, Word Match, Plural Rush, Listen & Pick
+(needs browser speech), Sentence Builder.
 
-Plus, under *Grammar & skills*:
+**Grammar & skills:** grammar lessons (a short rule plus gap-fill practice), phrase sets
+(pick the right German phrase for a situation), Conjugation, Numbers (up to a million, German
+digit grouping), Telling the time, Alphabet & spelling.
 
-- **Conjugation**: present tense of 37 A1 verbs, including stem changes and modals.
-- **Numbers**: read, write and hear numbers up to 999 (watch out for 47 vs 74).
-- **Telling the time**: everyday ("halb drei") and official ("vierzehn Uhr dreißig") time.
-- **Grammar lessons**, each with a short rule and a practice round: *ein/eine*, accusative
-  (*den/einen*), *nicht/kein*, possessives (*mein/dein/sein/ihr*), *er/sie/es*, question words,
-  *am/um/im*, and separable verbs.
-
-**Daily challenge**: 12 mixed questions (articles, meanings, plurals, verbs, grammar, numbers or
-time), the same for everyone on a given day, one attempt per day, with its own streak and a bonus.
+**Daily challenge**: 12 mixed questions, the same for everyone on a given day, one attempt per day,
+with its own streak and a bonus.
 
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
@@ -53,8 +47,10 @@ Content lives in `src/data/<level>/`. Each topic file has `nouns` and `sentences
 { "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "es": "¿Dónde está la estación de tren?" }
 ```
 
-Verbs are in `verbs.json` with their six present-tense forms, and grammar lessons in `grammar.json`
-(a rule plus gap sentences like `"Ich habe ___ Hund."`). Numbers and times are generated.
+Verbs are in `verbs.json` with their six present-tense forms. Grammar lessons are in `grammar*.json`
+(a rule plus gap sentences like `"Ich habe ___ Hund."`), phrase sets in `phrases*.json`
+(a situation, the right German phrase and wrong ones), and `chapters.json` maps the syllabus
+chapters to all of these. Numbers, times and the alphabet are generated.
 
 Register a new topic file in `src/data/index.ts`. A level with topics becomes playable automatically.
 `npm test` checks articles, duplicates, that everything has English and Spanish translations
