@@ -4,7 +4,7 @@ import { speak } from '../lib/speech';
 import { allWords } from '../data';
 import type { WordRef } from '../data/types';
 import { meaning, t } from '../lib/i18n';
-import { shuffle } from '../lib/random';
+import { random, shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
 import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
@@ -17,7 +17,7 @@ const say = (w: WordRef) => `${w.article} ${w.de}`;
 function distractors(w: WordRef, candidates: WordRef[]): WordRef[] {
   const scored = shuffle(candidates.filter((c) => c.de !== w.de)).map((c) => ({
     c,
-    score: (c.de[0] === w.de[0] ? 2 : 0) + (Math.abs(c.de.length - w.de.length) <= 2 ? 1 : 0) + Math.random(),
+    score: (c.de[0] === w.de[0] ? 2 : 0) + (Math.abs(c.de.length - w.de.length) <= 2 ? 1 : 0) + random(),
   }));
   return scored.sort((a, b) => b.score - a.score).slice(0, 3).map((s) => s.c);
 }
@@ -29,6 +29,7 @@ export function ListenGame({ level, pool, starKey, onRetry, onExit }: GameProps<
       (w): ChoiceQuestion => ({
         key: w.id,
         statId: w.id,
+        skill: 'listening',
         prompt: (answered) => (
           <>
             <button class="listen-btn" onClick={() => speak(say(w), true)} aria-label={t('play')}>
@@ -45,5 +46,5 @@ export function ListenGame({ level, pool, starKey, onRetry, onExit }: GameProps<
       }),
     );
   });
-  return <ChoiceGame questions={questions} skill="listening" starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
 }

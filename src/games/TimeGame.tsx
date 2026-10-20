@@ -3,19 +3,18 @@ import { Clock } from '../components/Clock';
 import { SpeakButton } from '../components/NounPrompt';
 import { timeFormal, timeInformal } from '../lib/german';
 import { t } from '../lib/i18n';
-import { shuffle } from '../lib/random';
+import { randInt, shuffle } from '../lib/random';
 import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
 import type { GameProps } from './types';
 
 const ROUND_SIZE = 10;
 
-const rand = (min: number, max: number) => min + Math.floor(Math.random() * (max - min + 1));
 const pad = (m: number) => String(m).padStart(2, '0');
 
 /** Everyday time on a clock face: the classic trap is "halb drei" = 2:30. */
-function informal(i: number): ChoiceQuestion {
-  const h = rand(1, 12);
-  const m = rand(0, 11) * 5;
+export function informalTimeQuestion(i: number): ChoiceQuestion {
+  const h = randInt(1, 12);
+  const m = randInt(0, 11) * 5;
   const answer = timeInformal(h, m);
   const near = [
     timeInformal(h + 1, m), // "halb zwei" vs "halb drei"
@@ -45,9 +44,9 @@ function informal(i: number): ChoiceQuestion {
 }
 
 /** Official 24-hour time, as on timetables: watch out for dreizehn vs dreißig. */
-function formal(i: number): ChoiceQuestion {
-  const h = rand(0, 23);
-  const m = rand(0, 11) * 5;
+export function formalTimeQuestion(i: number): ChoiceQuestion {
+  const h = randInt(0, 23);
+  const m = randInt(0, 11) * 5;
   const answer = timeFormal(h, m);
   const confusable: Record<number, number> = { 30: 13, 40: 14, 50: 15, 15: 50, 20: 12 };
   const near = [
@@ -80,7 +79,7 @@ function formal(i: number): ChoiceQuestion {
 
 export function TimeGame({ starKey, onRetry, onExit }: GameProps) {
   const [questions] = useState(() =>
-    shuffle(Array.from({ length: ROUND_SIZE }, (_, i) => (i % 5 < 3 ? informal(i) : formal(i)))),
+    shuffle(Array.from({ length: ROUND_SIZE }, (_, i) => (i % 5 < 3 ? informalTimeQuestion(i) : formalTimeQuestion(i)))),
   );
-  return <ChoiceGame questions={questions} skill={null} starKey={starKey} layout="list" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} layout="list" onRetry={onRetry} onExit={onExit} />;
 }

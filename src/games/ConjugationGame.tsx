@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { SpeakButton } from '../components/NounPrompt';
-import type { VerbForm } from '../data/types';
+import type { Level, VerbForm } from '../data/types';
 import { meaning } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
@@ -20,42 +20,45 @@ function regularized(infinitive: string, person: number): string | null {
   return null;
 }
 
+export function conjugationQuestion(level: Level, { id, verb, person }: VerbForm): ChoiceQuestion {
+  // One concrete pronoun per prompt (not "er/sie/es") so it reads like real German.
+  const pronoun = shuffle(level.verbs!.prompts[person])[0];
+  const form = verb.present[person];
+  const wrong = new Set(verb.present.filter((f) => f !== form));
+  const reg = regularized(verb.infinitive, person);
+  // A plausible-but-wrong regular form is the most useful distractor for stem-changing verbs.
+  const options = reg && reg !== form && !wrong.has(reg) ? [reg, ...shuffle([...wrong]).slice(0, 2)] : shuffle([...wrong]).slice(0, 3);
+  const phrase = `${spoken(pronoun)} ${form}`;
+  const note = pronoun.match(/\((.*)\)/)?.[1];
+  return {
+    key: `conjugation:${id}`,
+    statId: id,
+    skill: 'conjugation',
+    prompt: (answered) => (
+      <>
+        <div class="noun-word">
+          {spoken(pronoun)} <span class={answered ? 'art-das' : 'art-blank'}>{answered ? form : '___'}</span>
+        </div>
+        {note && <div class="pronoun-note">({note})</div>}
+        <div class="noun-hint">
+          <b>{verb.infinitive}</b> · {meaning(verb)}
+        </div>
+        <SpeakButton text={answered ? phrase : verb.infinitive} />
+      </>
+    ),
+    options: shuffle([form, ...options]),
+    answer: form,
+    sayAfter: phrase,
+    solution: <b>{phrase}</b>,
+    review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${meaning(verb)}`, say: phrase },
+  };
+}
+
 export function ConjugationGame({ level, pool, starKey, onRetry, onExit }: GameProps<VerbForm>) {
   const [questions] = useState(() =>
-    pickWords(pool, progress.peek().words, 'conjugation', Math.min(ROUND_SIZE, pool.length)).map(
-      ({ id, verb, person }): ChoiceQuestion => {
-        // One concrete pronoun per prompt (not "er/sie/es") so it reads like real German.
-        const pronoun = shuffle(level.verbs!.prompts[person])[0];
-        const form = verb.present[person];
-        const wrong = new Set(verb.present.filter((f) => f !== form));
-        const reg = regularized(verb.infinitive, person);
-        // A plausible-but-wrong regular form is the most useful distractor for stem-changing verbs.
-        const options = reg && reg !== form && !wrong.has(reg) ? [reg, ...shuffle([...wrong]).slice(0, 2)] : shuffle([...wrong]).slice(0, 3);
-        const phrase = `${spoken(pronoun)} ${form}`;
-        const note = pronoun.match(/\((.*)\)/)?.[1];
-        return {
-          key: id,
-          statId: id,
-          prompt: (answered) => (
-            <>
-              <div class="noun-word">
-                {spoken(pronoun)} <span class={answered ? 'art-das' : 'art-blank'}>{answered ? form : '___'}</span>
-              </div>
-              {note && <div class="pronoun-note">({note})</div>}
-              <div class="noun-hint">
-                <b>{verb.infinitive}</b> · {meaning(verb)}
-              </div>
-              <SpeakButton text={answered ? phrase : verb.infinitive} />
-            </>
-          ),
-          options: shuffle([form, ...options]),
-          answer: form,
-          sayAfter: phrase,
-          solution: <b>{phrase}</b>,
-          review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${meaning(verb)}`, say: phrase },
-        };
-      },
+    pickWords(pool, progress.peek().words, 'conjugation', Math.min(ROUND_SIZE, pool.length)).map((f) =>
+      conjugationQuestion(level, f),
     ),
   );
-  return <ChoiceGame questions={questions} skill="conjugation" starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
 }

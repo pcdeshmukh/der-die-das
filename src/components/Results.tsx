@@ -18,7 +18,7 @@ interface Props {
   stars: number;
   xp: number;
   mistakes: ReviewRow[];
-  onRetry: () => void;
+  onRetry?: () => void;
   onExit: () => void;
   children?: ComponentChildren;
 }
@@ -32,11 +32,13 @@ export function Results({ correct, total, stars, xp, mistakes, onRetry, onExit, 
       <p class="results-score">{t('score', { c: correct, n: total })}</p>
       {children}
       <p class="results-xp">+{xp} XP</p>
-      <div class="results-actions">
-        <button class="btn primary" onClick={onRetry}>
-          {t('playAgain')}
-        </button>
-        <button class="btn" onClick={onExit}>
+      <div class={onRetry ? 'results-actions' : 'results-actions single'}>
+        {onRetry && (
+          <button class="btn primary" onClick={onRetry}>
+            {t('playAgain')}
+          </button>
+        )}
+        <button class={onRetry ? 'btn' : 'btn primary'} onClick={onExit}>
           {t('done')}
         </button>
       </div>

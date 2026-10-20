@@ -31,31 +31,34 @@ function GapSentence({ item, answered }: { item: GrammarRef; answered: boolean }
   );
 }
 
+export function grammarQuestion(item: GrammarRef): ChoiceQuestion {
+  const hasGap = item.q.includes(GAP);
+  // The filled-in sentence; for "pick the sentence" items the answer is the sentence.
+  const full = hasGap ? item.q.replace(GAP, item.a) : item.a;
+  const spokenPart = full.split(' – ')[0];
+  return {
+    key: `grammar:${item.id}`,
+    statId: item.id,
+    skill: 'grammar',
+    prompt: (answered) => (
+      <>
+        {hasGap ? <GapSentence item={item} answered={answered} /> : <div class="noun-word">{item.q}</div>}
+        <div class="noun-hint">{meaning(item)}</div>
+        {answered && <div class="grammar-rule">💡 {item.lesson.rule[uiLang()]}</div>}
+        <SpeakButton text={answered ? spokenPart : hasGap ? item.q.replace(GAP, '…') : item.q} />
+      </>
+    ),
+    options: optionsFor(item),
+    answer: item.a,
+    sayAfter: spokenPart,
+    solution: <b>{item.a}</b>,
+    review: { label: full, sub: meaning(item), emoji: item.lesson.emoji, say: spokenPart },
+  };
+}
+
 export function GrammarGame({ pool, starKey, onRetry, onExit }: GameProps<GrammarRef>) {
   const [questions] = useState(() =>
-    pickWords(pool, progress.peek().words, 'grammar', Math.min(ROUND_SIZE, pool.length)).map((item): ChoiceQuestion => {
-      const hasGap = item.q.includes(GAP);
-      // The filled-in sentence; for "pick the sentence" items the answer is the sentence.
-      const full = hasGap ? item.q.replace(GAP, item.a) : item.a;
-      const spokenPart = full.split(' – ')[0];
-      return {
-        key: item.id,
-        statId: item.id,
-        prompt: (answered) => (
-          <>
-            {hasGap ? <GapSentence item={item} answered={answered} /> : <div class="noun-word">{item.q}</div>}
-            <div class="noun-hint">{meaning(item)}</div>
-            {answered && <div class="grammar-rule">💡 {item.lesson.rule[uiLang()]}</div>}
-            <SpeakButton text={answered ? spokenPart : hasGap ? item.q.replace(GAP, '…') : item.q} />
-          </>
-        ),
-        options: optionsFor(item),
-        answer: item.a,
-        sayAfter: spokenPart,
-        solution: <b>{item.a}</b>,
-        review: { label: full, sub: meaning(item), emoji: item.lesson.emoji, say: spokenPart },
-      };
-    }),
+    pickWords(pool, progress.peek().words, 'grammar', Math.min(ROUND_SIZE, pool.length)).map(grammarQuestion),
   );
-  return <ChoiceGame questions={questions} skill="grammar" starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
 }

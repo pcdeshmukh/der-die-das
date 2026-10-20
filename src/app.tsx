@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { getLevel } from './data';
 import { route } from './lib/router';
+import { DailyScreen } from './screens/DailyScreen';
 import { GameScreen } from './screens/GameScreen';
 import { Home } from './screens/Home';
 import { LevelScreen } from './screens/LevelScreen';
@@ -11,6 +12,7 @@ import { TopicScreen } from './screens/TopicScreen';
 function Screen({ parts }: { parts: string[] }) {
   if (parts.length === 0) return <Home />;
   if (parts.length === 1 && parts[0] === 'settings') return <Settings />;
+  if (parts.length === 1 && parts[0] === 'daily') return <DailyScreen />;
   const level = getLevel(parts[0]);
   if (!level || level.topics.length === 0 || parts.length > 3) return <NotFound />;
   if (parts.length === 1) return <LevelScreen level={level} />;
@@ -20,7 +22,7 @@ function Screen({ parts }: { parts: string[] }) {
 
 export function App() {
   const parts = route.value;
-  const inGame = parts.length === 3;
+  const inGame = parts.length === 3 || parts[0] === 'daily';
   return (
     <div class={inGame ? 'app in-game' : 'app'}>
       {!inGame && <Header parts={parts} />}

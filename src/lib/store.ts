@@ -15,9 +15,21 @@ export interface Settings {
   showHint: boolean;
 }
 
+export interface Streak {
+  count: number;
+  lastDay: string | null;
+}
+
+export interface DailyResult {
+  correct: number;
+  total: number;
+}
+
 export interface Progress {
   xp: number;
-  streak: { count: number; lastDay: string | null };
+  /** days in a row with at least one finished round */
+  streak: Streak;
+  daily: { results: Record<string, DailyResult>; streak: Streak };
   /** keyed by statKey(skill, wordId) */
   words: Record<string, WordStat>;
   /** best stars per `${level}/${topic}/${mode}` */
@@ -33,6 +45,7 @@ function defaults(): Progress {
   return {
     xp: 0,
     streak: { count: 0, lastDay: null },
+    daily: { results: {}, streak: { count: 0, lastDay: null } },
     words: {},
     stars: {},
     settings: {
@@ -94,22 +107,37 @@ function yesterday() {
   return dayString(d);
 }
 
-/** Streak still counts if the last round was played today or yesterday. */
-export function currentStreak(p: Progress): number {
-  const { count, lastDay } = p.streak;
-  return lastDay === dayString(new Date()) || lastDay === yesterday() ? count : 0;
+export const today = () => dayString(new Date());
+
+/** A streak still counts if it was extended today or yesterday. */
+function streakCount({ count, lastDay }: Streak): number {
+  return lastDay === today() || lastDay === yesterday() ? count : 0;
 }
+
+function extend(s: Streak): Streak {
+  const day = today();
+  return s.lastDay === day ? s : { count: s.lastDay === yesterday() ? s.count + 1 : 1, lastDay: day };
+}
+
+export const currentStreak = (p: Progress) => streakCount(p.streak);
+export const dailyStreak = (p: Progress) => streakCount(p.daily.streak);
 
 export function finishRound(starKey: string | null, stars: number, xp: number) {
   const p = progress.value;
-  const today = dayString(new Date());
-  const streak =
-    p.streak.lastDay === today
-      ? p.streak
-      : { count: p.streak.lastDay === yesterday() ? p.streak.count + 1 : 1, lastDay: today };
   const best = { ...p.stars };
   if (starKey) best[starKey] = Math.max(best[starKey] ?? 0, stars);
-  progress.value = { ...p, xp: p.xp + xp, streak, stars: best };
+  progress.value = { ...p, xp: p.xp + xp, streak: extend(p.streak), stars: best };
+}
+
+/** Saves today's challenge (first attempt only) and pays the completion bonus. */
+export function finishDaily(day: string, result: DailyResult, bonusXp: number) {
+  const p = progress.value;
+  if (p.daily.results[day]) return;
+  progress.value = {
+    ...p,
+    xp: p.xp + bonusXp,
+    daily: { results: { ...p.daily.results, [day]: result }, streak: extend(p.daily.streak) },
+  };
 }
 
 export function resetProgress() {

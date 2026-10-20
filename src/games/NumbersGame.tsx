@@ -2,19 +2,17 @@ import { useState } from 'preact/hooks';
 import { SpeakButton } from '../components/NounPrompt';
 import { numberToGerman } from '../lib/german';
 import { t } from '../lib/i18n';
-import { shuffle } from '../lib/random';
+import { randInt, random, shuffle } from '../lib/random';
 import { speak, speechSupported } from '../lib/speech';
 import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
 import type { GameProps } from './types';
 
 const ROUND_SIZE = 10;
 
-const rand = (min: number, max: number) => min + Math.floor(Math.random() * (max - min + 1));
-
 /** Mostly 0–99, with some hundreds (prices, house numbers). */
 function randomNumber(): number {
-  const r = Math.random();
-  return r < 0.3 ? rand(0, 20) : r < 0.85 ? rand(21, 99) : rand(100, 999);
+  const r = random();
+  return r < 0.3 ? randInt(0, 20) : r < 0.85 ? randInt(21, 99) : randInt(100, 999);
 }
 
 /** Close calls: swapped digits (47 ↔ 74) are the classic German trap. */
@@ -25,9 +23,9 @@ function nearby(n: number): number[] {
   return [...new Set(pool.filter((x) => x >= 0 && x <= 999 && x !== n))];
 }
 
-type Kind = 'toWord' | 'toDigits' | 'listen';
+export type NumberKind = 'toWord' | 'toDigits' | 'listen';
 
-function question(i: number, kind: Kind): ChoiceQuestion {
+export function numberQuestion(i: number, kind: NumberKind): ChoiceQuestion {
   const n = randomNumber();
   const word = numberToGerman(n);
   const [closest, ...rest] = nearby(n);
@@ -62,8 +60,8 @@ function question(i: number, kind: Kind): ChoiceQuestion {
 
 export function NumbersGame({ starKey, onRetry, onExit }: GameProps) {
   const [questions] = useState(() => {
-    const kinds: Kind[] = speechSupported ? ['toWord', 'toDigits', 'listen'] : ['toWord', 'toDigits'];
-    return shuffle(Array.from({ length: ROUND_SIZE }, (_, i) => question(i, kinds[i % kinds.length])));
+    const kinds: NumberKind[] = speechSupported ? ['toWord', 'toDigits', 'listen'] : ['toWord', 'toDigits'];
+    return shuffle(Array.from({ length: ROUND_SIZE }, (_, i) => numberQuestion(i, kinds[i % kinds.length])));
   });
-  return <ChoiceGame questions={questions} skill={null} starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
 }

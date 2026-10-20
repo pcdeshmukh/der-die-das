@@ -261,6 +261,40 @@ h2 {
   color: var(--muted);
 }
 
+/* Daily challenge */
+.daily-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-text);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.daily-card .mode-desc {
+  color: inherit;
+  opacity: 0.85;
+}
+.daily-card .badge {
+  margin: 0;
+  align-self: center;
+}
+.daily-card.done {
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--ok);
+}
+.daily-card.done .mode-desc {
+  color: var(--muted);
+  opacity: 1;
+}
+.daily-icon {
+  font-size: 2rem;
+}
+
 /* Cards */
 .level-grid,
 .topic-grid {
@@ -1018,4 +1052,7 @@ a.mode-card:active {
     animation: none !important;
     transition: none !important;
   }
+}
+.results-actions.single {
+  grid-template-columns: 1fr;
 }

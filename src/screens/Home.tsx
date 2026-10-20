@@ -1,11 +1,13 @@
 import { LEVELS } from '../data';
+import { DAILY_BONUS_XP } from '../games/DailyGame';
 import { t } from '../lib/i18n';
 import { href } from '../lib/router';
-import { currentStreak, progress } from '../lib/store';
+import { currentStreak, dailyStreak, progress, today } from '../lib/store';
 
 export function Home() {
   const p = progress.value;
   const practised = new Set(Object.keys(p.words).map((k) => k.split('|')[1])).size;
+  const daily = p.daily.results[today()];
   return (
     <div class="screen">
       <section class="hero">
@@ -29,6 +31,19 @@ export function Home() {
           <div class="stat-label">{t('practised')}</div>
         </div>
       </section>
+
+      <a class={daily ? 'daily-card done' : 'daily-card'} href="#/daily">
+        <span class="daily-icon">{daily ? '✅' : '⚡'}</span>
+        <span class="mode-text">
+          <span class="mode-name">{t('daily')}</span>
+          <span class="mode-desc">
+            {daily ? t('dailyDone', { c: daily.correct, n: daily.total }) : t('dailySub', { n: DAILY_BONUS_XP })}
+          </span>
+        </span>
+        <span class="badge" title={t('dailyStreak', { n: dailyStreak(p) })}>
+          🔥 {dailyStreak(p)}
+        </span>
+      </a>
 
       <h2 class="section-title">{t('chooseLevel')}</h2>
       <div class="level-grid">

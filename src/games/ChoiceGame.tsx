@@ -8,10 +8,16 @@ import { speak } from '../lib/speech';
 import { starsFor, type Skill } from '../lib/srs';
 import { finishRound, recordAnswer } from '../lib/store';
 
+export type ChoiceLayout = 'articles' | 'grid' | 'list';
+
 export interface ChoiceQuestion {
   key: string;
-  /** progress id when the question is tracked by spaced repetition */
+  /** progress id and skill when the question is tracked by spaced repetition */
   statId?: string;
+  skill?: Skill;
+  /** per question, so one round can mix kinds (the daily challenge does) */
+  layout?: ChoiceLayout;
+  optionClass?: (option: string) => string;
   /** rendered in the card; `answered` lets it reveal the solution */
   prompt: (answered: boolean) => ComponentChildren;
   options: string[];
@@ -25,20 +31,22 @@ export interface ChoiceQuestion {
   review: Omit<ReviewRow, 'key'>;
 }
 
-export type ChoiceLayout = 'articles' | 'grid' | 'list';
-
 interface Props {
   questions: ChoiceQuestion[];
-  skill: Skill | null;
   starKey: string | null;
-  layout: ChoiceLayout;
-  optionClass?: (option: string) => string;
-  onRetry: () => void;
+  /** default for questions that don't set their own */
+  layout?: ChoiceLayout;
+  /** omit to hide "Play again" (one-shot rounds like the daily challenge) */
+  onRetry?: () => void;
   onExit: () => void;
+  /** called once when the round ends, after the usual progress is saved */
+  onFinish?: (correct: number, total: number) => void;
+  /** extra lines on the results screen, rendered after onFinish */
+  resultsExtra?: () => ComponentChildren;
 }
 
 /** One question at a time, pick one option; correct answers advance on their own. */
-export function ChoiceGame({ questions, skill, starKey, layout, optionClass, onRetry, onExit }: Props) {
+export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExit, onFinish, resultsExtra }: Props) {
   const [index, setIndex] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
   const [results, setResults] = useState<boolean[]>([]);
@@ -54,7 +62,7 @@ export function ChoiceGame({ questions, skill, starKey, layout, optionClass, onR
     const ok = option === q.answer;
     setChosen(option);
     setResults([...results, ok]);
-    if (skill && q.statId) recordAnswer(skill, q.statId, ok);
+    if (q.skill && q.statId) recordAnswer(q.skill, q.statId, ok);
     if (q.sayAfter) speak(q.sayAfter);
     if (ok) {
       const c = combo + 1;
@@ -75,6 +83,7 @@ export function ChoiceGame({ questions, skill, starKey, layout, optionClass, onR
     }
     const correct = results.filter(Boolean).length;
     finishRound(starKey, starsFor(correct, questions.length), xp);
+    onFinish?.(correct, questions.length);
     playFinish();
     setDone(true);
   }
@@ -115,13 +124,16 @@ export function ChoiceGame({ questions, skill, starKey, layout, optionClass, onR
         mistakes={questions.filter((_, i) => !results[i]).map((x) => ({ key: x.key, ...x.review }))}
         onRetry={onRetry}
         onExit={onExit}
-      />
+      >
+        {resultsExtra?.()}
+      </Results>
     );
   }
 
   const state = chosen === null ? '' : answeredRight ? 'is-correct' : 'is-wrong';
   // Long options (e.g. "fünf nach halb zwölf") don't fit two per row on a phone.
-  const shownLayout = layout === 'grid' && q.options.some((o) => o.length > 16) ? 'list' : layout;
+  const base = q.layout ?? layout;
+  const shownLayout = base === 'grid' && q.options.some((o) => o.length > 16) ? 'list' : base;
   return (
     <div class="game">
       <GameBar value={(index + (chosen !== null ? 1 : 0)) / questions.length} onQuit={onExit}>
@@ -151,7 +163,7 @@ export function ChoiceGame({ questions, skill, starKey, layout, optionClass, onR
         {q.options.map((o, i) => {
           const cls = chosen === null ? '' : o === q.answer ? 'reveal' : chosen === o ? 'picked-wrong' : 'dim';
           return (
-            <button class={`choice ${optionClass?.(o) ?? ''} ${cls}`} disabled={chosen !== null} onClick={() => answer(o)}>
+            <button class={`choice ${q.optionClass?.(o) ?? ''} ${cls}`} disabled={chosen !== null} onClick={() => answer(o)}>
               {o}
               <kbd>{i + 1}</kbd>
             </button>

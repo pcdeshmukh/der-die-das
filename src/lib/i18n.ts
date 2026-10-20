@@ -90,6 +90,13 @@ const en = {
   tooFew: 'Not enough words for this game yet.',
   offline: 'Works offline · add it to your home screen',
   source: 'Source on GitHub',
+  daily: 'Daily challenge',
+  dailySub: '12 mixed questions, same for everyone today · +{n} XP bonus',
+  dailyDone: 'Done today: {c} of {n} correct',
+  dailyNext: 'next one in {t}',
+  dailyStreak: '{n}-day challenge streak',
+  dailyBonus: '+{n} bonus XP',
+  whatMeans: 'What does it mean?',
 };
 
 type Strings = typeof en;
@@ -184,6 +191,13 @@ const de: Strings = {
   tooFew: 'Für dieses Spiel gibt es noch nicht genug Wörter.',
   offline: 'Funktioniert offline · zum Startbildschirm hinzufügen',
   source: 'Quellcode auf GitHub',
+  daily: 'Tägliche Herausforderung',
+  dailySub: '12 gemischte Fragen, heute für alle gleich · +{n} Bonus-XP',
+  dailyDone: 'Heute geschafft: {c} von {n} richtig',
+  dailyNext: 'die nächste in {t}',
+  dailyStreak: '{n} Tage in Folge',
+  dailyBonus: '+{n} Bonus-XP',
+  whatMeans: 'Was bedeutet das?',
 };
 
 const es: Strings = {
@@ -275,6 +289,13 @@ const es: Strings = {
   tooFew: 'Todavía no hay suficientes palabras para este juego.',
   offline: 'Funciona sin conexión · añádelo a tu pantalla de inicio',
   source: 'Código en GitHub',
+  daily: 'Reto diario',
+  dailySub: '12 preguntas variadas, hoy iguales para todos · +{n} XP extra',
+  dailyDone: 'Hecho hoy: {c} de {n} correctas',
+  dailyNext: 'el próximo en {t}',
+  dailyStreak: 'Racha de {n} días',
+  dailyBonus: '+{n} XP extra',
+  whatMeans: '¿Qué significa?',
 };
 
 const STRINGS = { en, de, es };

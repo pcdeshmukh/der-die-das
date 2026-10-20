@@ -24,6 +24,9 @@ Plus, under *Grammar & skills*:
   (*den/einen*), *nicht/kein*, possessives (*mein/dein/sein/ihr*), *er/sie/es*, question words,
   *am/um/im*, and separable verbs.
 
+**Daily challenge**: 12 mixed questions (articles, meanings, plurals, verbs, grammar, numbers or
+time), the same for everyone on a given day, one attempt per day, with its own streak and a bonus.
+
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
 
