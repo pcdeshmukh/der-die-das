@@ -1,0 +1,456 @@
+{
+  "pronouns": [
+    "ich",
+    "du",
+    "er/sie/es",
+    "wir",
+    "ihr",
+    "sie/Sie"
+  ],
+  "verbs": [
+    {
+      "infinitive": "sein",
+      "en": "to be",
+      "present": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid",
+        "sind"
+      ]
+    },
+    {
+      "infinitive": "haben",
+      "en": "to have",
+      "present": [
+        "habe",
+        "hast",
+        "hat",
+        "haben",
+        "habt",
+        "haben"
+      ]
+    },
+    {
+      "infinitive": "heißen",
+      "en": "to be called",
+      "present": [
+        "heiße",
+        "heißt",
+        "heißt",
+        "heißen",
+        "heißt",
+        "heißen"
+      ]
+    },
+    {
+      "infinitive": "wohnen",
+      "en": "to live (reside)",
+      "present": [
+        "wohne",
+        "wohnst",
+        "wohnt",
+        "wohnen",
+        "wohnt",
+        "wohnen"
+      ]
+    },
+    {
+      "infinitive": "kommen",
+      "en": "to come",
+      "present": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen",
+        "kommt",
+        "kommen"
+      ]
+    },
+    {
+      "infinitive": "machen",
+      "en": "to do, to make",
+      "present": [
+        "mache",
+        "machst",
+        "macht",
+        "machen",
+        "macht",
+        "machen"
+      ]
+    },
+    {
+      "infinitive": "spielen",
+      "en": "to play",
+      "present": [
+        "spiele",
+        "spielst",
+        "spielt",
+        "spielen",
+        "spielt",
+        "spielen"
+      ]
+    },
+    {
+      "infinitive": "lernen",
+      "en": "to learn",
+      "present": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen",
+        "lernt",
+        "lernen"
+      ]
+    },
+    {
+      "infinitive": "kaufen",
+      "en": "to buy",
+      "present": [
+        "kaufe",
+        "kaufst",
+        "kauft",
+        "kaufen",
+        "kauft",
+        "kaufen"
+      ]
+    },
+    {
+      "infinitive": "trinken",
+      "en": "to drink",
+      "present": [
+        "trinke",
+        "trinkst",
+        "trinkt",
+        "trinken",
+        "trinkt",
+        "trinken"
+      ]
+    },
+    {
+      "infinitive": "gehen",
+      "en": "to go, to walk",
+      "present": [
+        "gehe",
+        "gehst",
+        "geht",
+        "gehen",
+        "geht",
+        "gehen"
+      ]
+    },
+    {
+      "infinitive": "kochen",
+      "en": "to cook",
+      "present": [
+        "koche",
+        "kochst",
+        "kocht",
+        "kochen",
+        "kocht",
+        "kochen"
+      ]
+    },
+    {
+      "infinitive": "hören",
+      "en": "to hear, to listen",
+      "present": [
+        "höre",
+        "hörst",
+        "hört",
+        "hören",
+        "hört",
+        "hören"
+      ]
+    },
+    {
+      "infinitive": "brauchen",
+      "en": "to need",
+      "present": [
+        "brauche",
+        "brauchst",
+        "braucht",
+        "brauchen",
+        "braucht",
+        "brauchen"
+      ]
+    },
+    {
+      "infinitive": "fragen",
+      "en": "to ask",
+      "present": [
+        "frage",
+        "fragst",
+        "fragt",
+        "fragen",
+        "fragt",
+        "fragen"
+      ]
+    },
+    {
+      "infinitive": "tanzen",
+      "en": "to dance",
+      "present": [
+        "tanze",
+        "tanzt",
+        "tanzt",
+        "tanzen",
+        "tanzt",
+        "tanzen"
+      ]
+    },
+    {
+      "infinitive": "arbeiten",
+      "en": "to work",
+      "present": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten",
+        "arbeitet",
+        "arbeiten"
+      ]
+    },
+    {
+      "infinitive": "warten",
+      "en": "to wait",
+      "present": [
+        "warte",
+        "wartest",
+        "wartet",
+        "warten",
+        "wartet",
+        "warten"
+      ]
+    },
+    {
+      "infinitive": "finden",
+      "en": "to find",
+      "present": [
+        "finde",
+        "findest",
+        "findet",
+        "finden",
+        "findet",
+        "finden"
+      ]
+    },
+    {
+      "infinitive": "essen",
+      "en": "to eat",
+      "present": [
+        "esse",
+        "isst",
+        "isst",
+        "essen",
+        "esst",
+        "essen"
+      ]
+    },
+    {
+      "infinitive": "fahren",
+      "en": "to drive, to go (by vehicle)",
+      "present": [
+        "fahre",
+        "fährst",
+        "fährt",
+        "fahren",
+        "fahrt",
+        "fahren"
+      ]
+    },
+    {
+      "infinitive": "schlafen",
+      "en": "to sleep",
+      "present": [
+        "schlafe",
+        "schläfst",
+        "schläft",
+        "schlafen",
+        "schlaft",
+        "schlafen"
+      ]
+    },
+    {
+      "infinitive": "laufen",
+      "en": "to run, to walk",
+      "present": [
+        "laufe",
+        "läufst",
+        "läuft",
+        "laufen",
+        "lauft",
+        "laufen"
+      ]
+    },
+    {
+      "infinitive": "tragen",
+      "en": "to carry, to wear",
+      "present": [
+        "trage",
+        "trägst",
+        "trägt",
+        "tragen",
+        "tragt",
+        "tragen"
+      ]
+    },
+    {
+      "infinitive": "lesen",
+      "en": "to read",
+      "present": [
+        "lese",
+        "liest",
+        "liest",
+        "lesen",
+        "lest",
+        "lesen"
+      ]
+    },
+    {
+      "infinitive": "sehen",
+      "en": "to see",
+      "present": [
+        "sehe",
+        "siehst",
+        "sieht",
+        "sehen",
+        "seht",
+        "sehen"
+      ]
+    },
+    {
+      "infinitive": "sprechen",
+      "en": "to speak",
+      "present": [
+        "spreche",
+        "sprichst",
+        "spricht",
+        "sprechen",
+        "sprecht",
+        "sprechen"
+      ]
+    },
+    {
+      "infinitive": "nehmen",
+      "en": "to take",
+      "present": [
+        "nehme",
+        "nimmst",
+        "nimmt",
+        "nehmen",
+        "nehmt",
+        "nehmen"
+      ]
+    },
+    {
+      "infinitive": "geben",
+      "en": "to give",
+      "present": [
+        "gebe",
+        "gibst",
+        "gibt",
+        "geben",
+        "gebt",
+        "geben"
+      ]
+    },
+    {
+      "infinitive": "helfen",
+      "en": "to help",
+      "present": [
+        "helfe",
+        "hilfst",
+        "hilft",
+        "helfen",
+        "helft",
+        "helfen"
+      ]
+    },
+    {
+      "infinitive": "treffen",
+      "en": "to meet",
+      "present": [
+        "treffe",
+        "triffst",
+        "trifft",
+        "treffen",
+        "trefft",
+        "treffen"
+      ]
+    },
+    {
+      "infinitive": "wissen",
+      "en": "to know (a fact)",
+      "present": [
+        "weiß",
+        "weißt",
+        "weiß",
+        "wissen",
+        "wisst",
+        "wissen"
+      ]
+    },
+    {
+      "infinitive": "können",
+      "en": "can, to be able to",
+      "present": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ]
+    },
+    {
+      "infinitive": "müssen",
+      "en": "must, to have to",
+      "present": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ]
+    },
+    {
+      "infinitive": "wollen",
+      "en": "to want",
+      "present": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ]
+    },
+    {
+      "infinitive": "mögen",
+      "en": "to like",
+      "present": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ]
+    },
+    {
+      "infinitive": "möchten",
+      "en": "would like",
+      "present": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ]
+    }
+  ]
+}

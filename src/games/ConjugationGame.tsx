@@ -1,0 +1,62 @@
+import { useState } from 'preact/hooks';
+import { SpeakButton } from '../components/NounPrompt';
+import type { VerbForm } from '../data/types';
+import { shuffle } from '../lib/random';
+import { pickWords } from '../lib/srs';
+import { progress } from '../lib/store';
+import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
+import type { GameProps } from './types';
+
+const ROUND_SIZE = 12;
+
+// Shown instead of "er/sie/es" and "sie/Sie" so each prompt reads like real German.
+// Lowercase "sie" is both "she" (sie lernt) and "they" (sie lernen), so it is always labelled.
+const PRONOUNS = [['ich'], ['du'], ['er', 'es', 'sie (she)'], ['wir'], ['ihr'], ['sie (they)', 'Sie (formal)']];
+const spoken = (pronoun: string) => pronoun.replace(/ \(.*\)$/, '');
+
+/** The form a learner gets by applying the regular rule, e.g. "fahrst" for fahren. */
+function regularized(infinitive: string, person: number): string | null {
+  const stem = infinitive.replace(/e?n$/, '');
+  if (person === 1) return stem + (/[sßzx]$/.test(stem) ? 't' : 'st');
+  if (person === 2) return stem + 't';
+  return null;
+}
+
+export function ConjugationGame({ pool, starKey, onRetry, onExit }: GameProps<VerbForm>) {
+  const [questions] = useState(() =>
+    pickWords(pool, progress.peek().words, 'conjugation', Math.min(ROUND_SIZE, pool.length)).map(
+      ({ id, verb, person }): ChoiceQuestion => {
+        const pronoun = shuffle(PRONOUNS[person])[0];
+        const form = verb.present[person];
+        const wrong = new Set(verb.present.filter((f) => f !== form));
+        const reg = regularized(verb.infinitive, person);
+        // A plausible-but-wrong regular form is the most useful distractor for stem-changing verbs.
+        const options = reg && reg !== form && !wrong.has(reg) ? [reg, ...shuffle([...wrong]).slice(0, 2)] : shuffle([...wrong]).slice(0, 3);
+        const phrase = `${spoken(pronoun)} ${form}`;
+        const note = pronoun.match(/\((.*)\)/)?.[1];
+        return {
+          key: id,
+          statId: id,
+          prompt: (answered) => (
+            <>
+              <div class="noun-word">
+                {spoken(pronoun)} <span class={answered ? 'art-das' : 'art-blank'}>{answered ? form : '___'}</span>
+              </div>
+              {note && <div class="pronoun-note">({note})</div>}
+              <div class="noun-hint">
+                <b>{verb.infinitive}</b> · {verb.en}
+              </div>
+              <SpeakButton text={answered ? phrase : verb.infinitive} />
+            </>
+          ),
+          options: shuffle([form, ...options]),
+          answer: form,
+          sayAfter: phrase,
+          solution: <b>{phrase}</b>,
+          review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${verb.en}`, say: phrase },
+        };
+      },
+    ),
+  );
+  return <ChoiceGame questions={questions} skill="conjugation" starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+}

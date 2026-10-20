@@ -177,5 +177,31 @@
       "plural": null,
       "en": "health"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Mein Kopf tut weh.",
+      "en": "My head hurts."
+    },
+    {
+      "de": "Ich habe Fieber.",
+      "en": "I have a fever."
+    },
+    {
+      "de": "Ich muss zum Arzt.",
+      "en": "I have to go to the doctor."
+    },
+    {
+      "de": "Nimm eine Tablette.",
+      "en": "Take a tablet."
+    },
+    {
+      "de": "Haben Sie Schmerzen?",
+      "en": "Are you in pain? (formal)"
+    },
+    {
+      "de": "Meine Hand ist kalt.",
+      "en": "My hand is cold."
+    }
   ]
 }

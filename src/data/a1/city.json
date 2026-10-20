@@ -183,5 +183,31 @@
       "plural": "Kreuzungen",
       "en": "crossroads"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Wo ist der Bahnhof?",
+      "en": "Where is the train station?"
+    },
+    {
+      "de": "Ich gehe in den Supermarkt.",
+      "en": "I am going to the supermarket."
+    },
+    {
+      "de": "Das Museum ist heute geschlossen.",
+      "en": "The museum is closed today."
+    },
+    {
+      "de": "Gibt es hier eine Bank?",
+      "en": "Is there a bank here?"
+    },
+    {
+      "de": "Gehen Sie geradeaus.",
+      "en": "Go straight ahead. (formal)"
+    },
+    {
+      "de": "Die Apotheke ist neben der Post.",
+      "en": "The pharmacy is next to the post office."
+    }
   ]
 }

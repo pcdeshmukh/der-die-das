@@ -7,11 +7,22 @@ Works offline and can be added to your home screen. Progress is saved in your br
 
 ## Games (A1)
 
+Every vocabulary topic has:
+
 - **Der · Die · Das**: pick the right article for a noun.
 - **Word Match**: match German nouns to their English meaning.
+- **Plural Rush**: pick the right plural among plausible wrong ones.
+- **Listen & Pick**: hear a word and pick what you heard (needs browser speech).
+- **Sentence Builder**: put shuffled words into a correct German sentence.
 
-Each topic has both games, plus **Mixed** (all topics) and **Review** (words you last got wrong).
-Words you miss come back sooner (Leitner-style spaced repetition).
+Plus, under *Grammar & skills*:
+
+- **Conjugation**: present tense of 37 A1 verbs, including stem changes and modals.
+- **Numbers**: read, write and hear numbers up to 999 (watch out for 47 vs 74).
+- **Telling the time**: everyday ("halb drei") and official ("vierzehn Uhr dreißig") time.
+
+**Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
+Items you miss come back sooner (Leitner-style spaced repetition).
 
 Menus can be switched between English and German.
 
@@ -28,14 +39,18 @@ Pushing to `main` builds and deploys to GitHub Pages via `.github/workflows/depl
 
 ## Adding content
 
-Vocabulary lives in `src/data/<level>/<topic>.json`:
+Content lives in `src/data/<level>/`. Each topic file has `nouns` and `sentences`:
 
 ```json
 { "de": "Tisch", "article": "der", "plural": "Tische", "en": "table", "emoji": "🪑" }
+{ "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "alt": [] }
 ```
 
+Verbs are in `verbs.json` with their six present-tense forms. Numbers and times are generated.
+
 Register a new topic file in `src/data/index.ts`. A level with topics becomes playable automatically.
-`npm test` checks articles, duplicates, and that English meanings are unique within a topic.
+`npm test` checks articles, duplicates, unique English meanings per topic, sentence punctuation,
+verb tables, and the number/time generators.
 
 ## Stack
 

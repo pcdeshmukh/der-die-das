@@ -170,5 +170,31 @@
       "en": "petrol station",
       "emoji": "⛽"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich fahre mit dem Bus.",
+      "en": "I go by bus."
+    },
+    {
+      "de": "Der Zug kommt um acht Uhr.",
+      "en": "The train arrives at eight o'clock."
+    },
+    {
+      "de": "Wo ist die Haltestelle?",
+      "en": "Where is the stop?"
+    },
+    {
+      "de": "Ich brauche eine Fahrkarte.",
+      "en": "I need a ticket."
+    },
+    {
+      "de": "Wir fliegen nach Berlin.",
+      "en": "We are flying to Berlin."
+    },
+    {
+      "de": "Mein Fahrrad ist kaputt.",
+      "en": "My bicycle is broken."
+    }
   ]
 }

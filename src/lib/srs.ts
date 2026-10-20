@@ -1,9 +1,10 @@
 // Leitner-style spaced repetition: a correct answer moves a word up one box
 // (longer wait before it is due again), a wrong answer sends it back to box 0.
-import type { WordRef } from '../data/types';
 import { shuffle } from './random';
 
-export type Skill = 'article' | 'meaning';
+export type Skill = 'article' | 'meaning' | 'plural' | 'listening' | 'sentence' | 'conjugation';
+
+type Item = { id: string };
 
 export interface WordStat {
   box: number;
@@ -24,13 +25,13 @@ export function review(stat: WordStat | undefined, correct: boolean, now = Date.
 }
 
 /** Picks `count` words: due words first (weakest first), then unseen, then the rest by due date. */
-export function pickWords(
-  words: readonly WordRef[],
+export function pickWords<T extends Item>(
+  words: readonly T[],
   stats: Record<string, WordStat>,
   skill: Skill,
   count: number,
   now = Date.now(),
-): WordRef[] {
+): T[] {
   const ranked = shuffle(words).map((w) => {
     const s = stats[statKey(skill, w.id)];
     return { w, s, rank: !s ? 1 : s.due <= now ? 0 : 2 };
@@ -44,8 +45,8 @@ export function pickWords(
   return shuffle(ranked.slice(0, count).map((r) => r.w));
 }
 
-/** Words whose most recent answer was wrong. */
-export function weakWords(words: readonly WordRef[], stats: Record<string, WordStat>, skill: Skill): WordRef[] {
+/** Items whose most recent answer was wrong. */
+export function weakWords<T extends Item>(words: readonly T[], stats: Record<string, WordStat>, skill: Skill): T[] {
   return words.filter((w) => {
     const s = stats[statKey(skill, w.id)];
     return s !== undefined && s.box === 0 && s.seen > 0;

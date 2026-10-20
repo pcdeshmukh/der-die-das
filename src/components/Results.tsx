@@ -1,16 +1,23 @@
 import type { ComponentChildren } from 'preact';
-import type { WordRef } from '../data/types';
 import { t } from '../lib/i18n';
 import { speak } from '../lib/speech';
-import { NounLabel } from './NounLabel';
 import { Stars } from './Stars';
+
+/** One line in the "practise these" list. */
+export interface ReviewRow {
+  key: string;
+  label: ComponentChildren;
+  sub?: string;
+  emoji?: string;
+  say?: string;
+}
 
 interface Props {
   correct: number;
   total: number;
   stars: number;
   xp: number;
-  mistakes: WordRef[];
+  mistakes: ReviewRow[];
   onRetry: () => void;
   onExit: () => void;
   children?: ComponentChildren;
@@ -37,12 +44,12 @@ export function Results({ correct, total, stars, xp, mistakes, onRetry, onExit, 
         <section class="mistakes">
           <h2>{t('practiseThese')}</h2>
           <ul class="word-list">
-            {mistakes.map((w) => (
-              <li>
-                <button class="word-row" onClick={() => speak(`${w.article} ${w.de}`, true)}>
-                  <span class="word-emoji">{w.emoji ?? ''}</span>
-                  <NounLabel noun={w} />
-                  <span class="word-en">{w.en}</span>
+            {mistakes.map((m) => (
+              <li key={m.key}>
+                <button class="word-row" onClick={() => m.say && speak(m.say, true)}>
+                  <span class="word-emoji">{m.emoji ?? ''}</span>
+                  <span class="word-main">{m.label}</span>
+                  {m.sub && <span class="word-en">{m.sub}</span>}
                 </button>
               </li>
             ))}

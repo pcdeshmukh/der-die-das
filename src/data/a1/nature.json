@@ -183,5 +183,31 @@
       "en": "star",
       "emoji": "⭐"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Heute scheint die Sonne.",
+      "en": "Today the sun is shining."
+    },
+    {
+      "de": "Es regnet viel.",
+      "en": "It rains a lot."
+    },
+    {
+      "de": "Im Winter schneit es.",
+      "en": "In winter it snows."
+    },
+    {
+      "de": "Der Himmel ist blau.",
+      "en": "The sky is blue."
+    },
+    {
+      "de": "Das Wetter ist schön.",
+      "en": "The weather is nice."
+    },
+    {
+      "de": "Wir wandern in den Bergen.",
+      "en": "We hike in the mountains."
+    }
   ]
 }

@@ -175,5 +175,31 @@
       "plural": "Kassen",
       "en": "till, checkout"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Die Jacke ist zu teuer.",
+      "en": "The jacket is too expensive."
+    },
+    {
+      "de": "Was kostet die Hose?",
+      "en": "How much are the trousers?"
+    },
+    {
+      "de": "Ich suche ein Kleid.",
+      "en": "I am looking for a dress."
+    },
+    {
+      "de": "Der Pullover ist blau.",
+      "en": "The jumper is blue."
+    },
+    {
+      "de": "Ich bezahle mit Karte.",
+      "en": "I am paying by card."
+    },
+    {
+      "de": "Die Schuhe sind zu klein.",
+      "en": "The shoes are too small."
+    }
   ]
 }

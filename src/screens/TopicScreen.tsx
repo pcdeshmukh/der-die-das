@@ -2,19 +2,28 @@ import { NounLabel } from '../components/NounLabel';
 import { Stars } from '../components/Stars';
 import type { Level } from '../data/types';
 import { t, uiLang } from '../lib/i18n';
-import { MIXED, MODES, REVIEW, poolFor, starKey } from '../lib/modes';
+import { MIXED, NUMBERS, REVIEW, VERBS, isPlayable, modesFor, poolFor, starKey } from '../lib/modes';
 import { href } from '../lib/router';
-import { speak } from '../lib/speech';
+import { speak, speechSupported } from '../lib/speech';
 import { progress } from '../lib/store';
 import { NotFound } from './NotFound';
+
+const PSEUDO = {
+  [MIXED]: { title: 'mixed', emoji: '🎲' },
+  [REVIEW]: { title: 'review', emoji: '🔁' },
+  [VERBS]: { title: 'verbs', emoji: '🔤' },
+  [NUMBERS]: { title: 'numbersTopic', emoji: '🔢' },
+} as const;
 
 export function TopicScreen({ level, topicId }: { level: Level; topicId: string }) {
   const p = progress.value;
   const topic = level.topics.find((x) => x.id === topicId);
-  if (!topic && topicId !== MIXED && topicId !== REVIEW) return <NotFound />;
+  const pseudo = PSEUDO[topicId as keyof typeof PSEUDO];
+  const modes = modesFor(level, topicId);
+  if ((!topic && !pseudo) || modes.length === 0) return <NotFound />;
 
-  const title = topic ? topic.title[uiLang()] : t(topicId === MIXED ? 'mixed' : 'review');
-  const emoji = topic ? topic.emoji : topicId === MIXED ? '🎲' : '🔁';
+  const title = topic ? topic.title[uiLang()] : t(pseudo.title);
+  const emoji = topic ? topic.emoji : pseudo.emoji;
 
   return (
     <div class="screen">
@@ -24,16 +33,19 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
       {topic && uiLang() === 'en' && <p class="muted subtitle">{topic.title.de}</p>}
 
       <div class="mode-list">
-        {MODES.map((mode) => {
-          const pool = poolFor(level, topicId, mode.skill, p.words) ?? [];
+        {modes.map((mode) => {
+          const pool = poolFor(level, topicId, mode, p.words) ?? [];
+          // Review only lists games that have something to review.
+          if (topicId === REVIEW && pool.length === 0) return null;
           const key = starKey(level, topicId, mode.id);
-          const playable = pool.length >= mode.min;
+          const playable = isPlayable(mode, pool);
+          const reason = mode.needsSpeech && !speechSupported ? t('needsSpeech') : t('tooFew');
           const body = (
             <>
               <span class="mode-icon">{mode.icon}</span>
               <span class="mode-text">
                 <span class="mode-name">{t(`mode_${mode.id}`)}</span>
-                <span class="mode-desc">{playable ? t(`mode_${mode.id}_desc`) : t('tooFew')}</span>
+                <span class="mode-desc">{playable ? t(`mode_${mode.id}_desc`) : reason}</span>
               </span>
               {key ? <Stars value={p.stars[key] ?? 0} /> : <span class="badge">{pool.length}</span>}
             </>
@@ -47,7 +59,6 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
           );
         })}
       </div>
-      <p class="muted small">{t('moreSoon')}</p>
 
       {topic && (
         <details class="word-list-box">
@@ -69,6 +80,34 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
               </li>
             ))}
           </ul>
+        </details>
+      )}
+
+      {topicId === VERBS && level.verbs && (
+        <details class="word-list-box">
+          <summary>
+            {t('verbTable')} ({level.verbs.verbs.length})
+          </summary>
+          <div class="verb-tables">
+            {level.verbs.verbs.map((v) => (
+              <table class="verb-table">
+                <caption>
+                  <button class="link-btn" onClick={() => speak(v.infinitive, true)}>
+                    {v.infinitive}
+                  </button>{' '}
+                  <span class="muted small">{v.en}</span>
+                </caption>
+                <tbody>
+                  {v.present.map((form, i) => (
+                    <tr>
+                      <td class="muted">{level.verbs!.pronouns[i]}</td>
+                      <td>{form}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ))}
+          </div>
         </details>
       )}
     </div>

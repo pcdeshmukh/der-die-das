@@ -258,5 +258,31 @@
       "en": "bill",
       "emoji": "🧾"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich trinke gern Kaffee.",
+      "en": "I like drinking coffee."
+    },
+    {
+      "de": "Was möchtest du essen?",
+      "en": "What would you like to eat?"
+    },
+    {
+      "de": "Ich möchte ein Wasser.",
+      "en": "I would like a water."
+    },
+    {
+      "de": "Die Suppe ist sehr gut.",
+      "en": "The soup is very good."
+    },
+    {
+      "de": "Wir essen um zwölf Uhr.",
+      "en": "We eat at twelve o'clock."
+    },
+    {
+      "de": "Kaufst du Brot und Milch?",
+      "en": "Are you buying bread and milk?"
+    }
   ]
 }

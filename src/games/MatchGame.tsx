@@ -27,7 +27,7 @@ const formatTime = (ms: number) => {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 };
 
-export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps) {
+export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>) {
   const [words] = useState(() => pickWords(pool, progress.peek().words, 'meaning', Math.min(ROUND_SIZE, pool.length)));
   const boards = useMemo(() => toBoards(words), [words]);
   const [board, setBoard] = useState(0);
@@ -106,7 +106,9 @@ export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps) {
         total={words.length}
         stars={done.stars}
         xp={done.xp}
-        mistakes={words.filter((w) => missed.has(w.id))}
+        mistakes={words
+          .filter((w) => missed.has(w.id))
+          .map((w) => ({ key: w.id, label: <NounLabel noun={w} />, sub: w.en, emoji: w.emoji, say: `${w.article} ${w.de}` }))}
         onRetry={onRetry}
         onExit={onExit}
       >

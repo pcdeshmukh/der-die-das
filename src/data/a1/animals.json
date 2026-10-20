@@ -186,5 +186,31 @@
       "plural": "Zoos",
       "en": "zoo"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe einen Hund.",
+      "en": "I have a dog."
+    },
+    {
+      "de": "Die Katze schläft.",
+      "en": "The cat is sleeping."
+    },
+    {
+      "de": "Der Elefant ist sehr groß.",
+      "en": "The elephant is very big."
+    },
+    {
+      "de": "Magst du Tiere?",
+      "en": "Do you like animals?"
+    },
+    {
+      "de": "Im Zoo gibt es Löwen.",
+      "en": "There are lions at the zoo."
+    },
+    {
+      "de": "Das Pferd frisst Gras.",
+      "en": "The horse is eating grass."
+    }
   ]
 }

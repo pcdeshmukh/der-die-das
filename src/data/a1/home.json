@@ -198,5 +198,31 @@
       "en": "lift, elevator",
       "emoji": "🛗"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Meine Wohnung ist klein.",
+      "en": "My flat is small."
+    },
+    {
+      "de": "Das Bad ist links.",
+      "en": "The bathroom is on the left."
+    },
+    {
+      "de": "Die Küche hat ein Fenster.",
+      "en": "The kitchen has a window."
+    },
+    {
+      "de": "Wir haben einen Garten.",
+      "en": "We have a garden."
+    },
+    {
+      "de": "Wo ist der Schlüssel?",
+      "en": "Where is the key?"
+    },
+    {
+      "de": "Das Sofa ist neu.",
+      "en": "The sofa is new."
+    }
   ]
 }

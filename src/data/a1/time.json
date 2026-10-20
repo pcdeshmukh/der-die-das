@@ -171,5 +171,31 @@
       "plural": "Daten",
       "en": "date"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Wie spät ist es?",
+      "en": "What time is it?"
+    },
+    {
+      "de": "Es ist halb drei.",
+      "en": "It is half past two."
+    },
+    {
+      "de": "Am Montag habe ich Zeit.",
+      "en": "On Monday I have time."
+    },
+    {
+      "de": "Der Kurs beginnt um neun Uhr.",
+      "en": "The course starts at nine o'clock."
+    },
+    {
+      "de": "Ich habe morgen einen Termin.",
+      "en": "I have an appointment tomorrow."
+    },
+    {
+      "de": "Was machst du am Wochenende?",
+      "en": "What are you doing at the weekend?"
+    }
   ]
 }

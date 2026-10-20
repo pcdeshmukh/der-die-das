@@ -188,5 +188,31 @@
       "plural": "Hausaufgaben",
       "en": "homework"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich lerne Deutsch.",
+      "en": "I am learning German."
+    },
+    {
+      "de": "Ich arbeite in einem Büro.",
+      "en": "I work in an office."
+    },
+    {
+      "de": "Was sind Sie von Beruf?",
+      "en": "What is your job? (formal)"
+    },
+    {
+      "de": "Ich verstehe die Frage nicht.",
+      "en": "I don't understand the question."
+    },
+    {
+      "de": "Der Lehrer erklärt die Grammatik.",
+      "en": "The teacher explains the grammar."
+    },
+    {
+      "de": "Mein Kurs ist am Abend.",
+      "en": "My course is in the evening."
+    }
   ]
 }

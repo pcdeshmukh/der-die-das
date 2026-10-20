@@ -180,5 +180,31 @@
       "en": "photo",
       "emoji": "📷"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe zwei Brüder.",
+      "en": "I have two brothers."
+    },
+    {
+      "de": "Meine Mutter heißt Maria.",
+      "en": "My mother is called Maria."
+    },
+    {
+      "de": "Hast du Geschwister?",
+      "en": "Do you have siblings?"
+    },
+    {
+      "de": "Mein Vater ist Lehrer.",
+      "en": "My father is a teacher."
+    },
+    {
+      "de": "Meine Oma wohnt in Berlin.",
+      "en": "My grandma lives in Berlin."
+    },
+    {
+      "de": "Wir feiern heute Geburtstag.",
+      "en": "We are celebrating a birthday today."
+    }
   ]
 }

@@ -614,13 +614,65 @@ a.mode-card:active {
   color: var(--text);
 }
 
-.article-buttons {
+.choices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.art-btn {
+.choices-articles {
+  grid-template-columns: repeat(3, 1fr);
+}
+.choices-grid {
+  grid-template-columns: 1fr 1fr;
+}
+.choice {
   position: relative;
+  min-height: 60px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  transition:
+    transform 0.08s,
+    opacity 0.15s;
+}
+.choice:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.choice:disabled {
+  cursor: default;
+}
+.choice.reveal {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+.choice.dim,
+.choice.picked-wrong {
+  opacity: 0.4;
+}
+.choice.picked-wrong {
+  border-color: var(--bad);
+  text-decoration: line-through;
+}
+.choice kbd {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+@media (hover: none) {
+  .choice kbd {
+    display: none;
+  }
+}
+.choice.art-btn {
   min-height: 72px;
   border-radius: 18px;
   border: 0;
@@ -647,36 +699,171 @@ a.mode-card:active {
   background: var(--das);
 }
 @media (prefers-color-scheme: dark) {
-  .art-btn {
+  .choice.art-btn {
     color: #0f172a;
   }
 }
 .art-btn:disabled {
   cursor: default;
 }
-.art-btn.dim,
-.art-btn.picked-wrong {
-  opacity: 0.35;
+.art-btn-der.reveal {
+  background: var(--der);
 }
-.art-btn.picked-wrong {
-  text-decoration: line-through;
+.art-btn-die.reveal {
+  background: var(--die);
+}
+.art-btn-das.reveal {
+  background: var(--das);
 }
 .art-btn.reveal {
   outline: 4px solid var(--text);
   outline-offset: 2px;
 }
-.art-btn kbd {
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  font-family: inherit;
-  font-size: 0.7rem;
-  opacity: 0.7;
+
+/* Prompts for the newer games */
+.plural-line {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 6px;
 }
-@media (hover: none) {
-  .art-btn kbd {
-    display: none;
-  }
+.listen-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--surface-2);
+  font-size: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.listen-btn:active {
+  transform: scale(0.96);
+}
+.big-number {
+  font-size: clamp(3rem, 16vw, 4.5rem);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.digital {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+}
+.clock {
+  width: 150px;
+  height: 150px;
+}
+.clock-face {
+  fill: var(--surface-2);
+  stroke: var(--text);
+  stroke-width: 2.5;
+}
+.clock-tick {
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.clock-hour,
+.clock-minute {
+  stroke: var(--text);
+  stroke-linecap: round;
+}
+.clock-hour {
+  stroke-width: 5;
+}
+.clock-minute {
+  stroke-width: 3;
+  stroke: var(--accent);
+}
+.clock-pin {
+  fill: var(--text);
+}
+
+.pronoun-note {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Sentence builder */
+.sentence-card {
+  padding: 24px 16px;
+}
+.sentence-en {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.sentence-answer {
+  min-height: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 2px dashed var(--border);
+  border-radius: 16px;
+}
+.sentence-end {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.word-bank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  min-height: 52px;
+}
+.word-tile {
+  min-height: 44px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.word-tile.placed {
+  border-color: var(--accent);
+}
+.word-bank .word-tile:disabled {
+  visibility: hidden;
+}
+.check-btn {
+  width: 100%;
+}
+.check-btn:disabled {
+  opacity: 0.5;
+}
+
+/* Verb tables */
+.verb-tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  padding-bottom: 12px;
+}
+.verb-table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.verb-table caption {
+  text-align: left;
+  padding-bottom: 4px;
+}
+.verb-table td {
+  padding: 2px 8px 2px 0;
+}
+.link-btn {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
 }
 
 /* Word match */

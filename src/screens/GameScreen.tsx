@@ -1,26 +1,44 @@
+import type { FunctionComponent } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
 import type { Level } from '../data/types';
 import { ArticleGame } from '../games/ArticleGame';
+import { ConjugationGame } from '../games/ConjugationGame';
+import { ListenGame } from '../games/ListenGame';
 import { MatchGame } from '../games/MatchGame';
+import { NumbersGame } from '../games/NumbersGame';
+import { PluralGame } from '../games/PluralGame';
+import { SentenceGame } from '../games/SentenceGame';
+import { TimeGame } from '../games/TimeGame';
+import type { GameProps } from '../games/types';
 import { t } from '../lib/i18n';
-import { MODES, poolFor, starKey, type ModeId } from '../lib/modes';
+import { MODES, isPlayable, poolFor, starKey, type ModeId } from '../lib/modes';
 import { href, navigate } from '../lib/router';
 import { progress } from '../lib/store';
 import { NotFound } from './NotFound';
 
-const GAMES = { articles: ArticleGame, match: MatchGame };
+// Each game narrows the pool's item type; the registry guarantees the pairing.
+const GAMES = {
+  articles: ArticleGame,
+  match: MatchGame,
+  plural: PluralGame,
+  listen: ListenGame,
+  sentences: SentenceGame,
+  conjugate: ConjugationGame,
+  numbers: NumbersGame,
+  time: TimeGame,
+} as unknown as Record<ModeId, FunctionComponent<GameProps>>;
 
 export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: string; modeId: string }) {
-  // Bumping the round remounts the game, which picks a fresh set of words.
+  // Bumping the round remounts the game, which picks a fresh set of questions.
   const [round, setRound] = useState(0);
   const mode = MODES.find((m) => m.id === modeId);
   // Computed once per round: answers recorded mid-game must not change the pool (e.g. in Review).
   const pool = useMemo(
-    () => (mode ? poolFor(level, topicId, mode.skill, progress.peek().words) : null),
+    () => (mode ? poolFor(level, topicId, mode, progress.peek().words) : null),
     [round, level, topicId, mode],
   );
   if (!mode || !pool) return <NotFound />;
-  if (pool.length < mode.min) {
+  if (!isPlayable(mode, pool)) {
     return (
       <div class="screen center">
         <p>{t('tooFew')}</p>
@@ -30,10 +48,11 @@ export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: 
       </div>
     );
   }
-  const Game = GAMES[mode.id as ModeId];
+  const Game = GAMES[mode.id];
   return (
     <Game
       key={round}
+      level={level}
       pool={pool}
       starKey={starKey(level, topicId, mode.id)}
       onRetry={() => setRound((r) => r + 1)}

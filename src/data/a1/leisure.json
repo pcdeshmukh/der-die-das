@@ -161,5 +161,31 @@
       "plural": "Karten",
       "en": "card, map"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich spiele gern Fußball.",
+      "en": "I like playing football."
+    },
+    {
+      "de": "Hörst du gern Musik?",
+      "en": "Do you like listening to music?"
+    },
+    {
+      "de": "Wir gehen heute ins Kino.",
+      "en": "We are going to the cinema today."
+    },
+    {
+      "de": "Mein Hobby ist Lesen.",
+      "en": "My hobby is reading."
+    },
+    {
+      "de": "Am Wochenende schwimme ich.",
+      "en": "At the weekend I go swimming."
+    },
+    {
+      "de": "Spielst du Gitarre?",
+      "en": "Do you play the guitar?"
+    }
   ]
 }

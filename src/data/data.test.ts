@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { LEVELS, allWords } from '.';
+import { LEVELS, allSentences, allWords, verbForms } from '.';
+import { splitSentence } from '../games/SentenceGame';
 import { ARTICLES } from './types';
 
 describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
@@ -25,6 +26,29 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
     for (const topic of level.topics) {
       const en = topic.nouns.map((n) => n.en);
       expect(en.filter((e, i) => en.indexOf(e) !== i), topic.id).toEqual([]);
+    }
+  });
+
+  it('has sentences that split into words cleanly', () => {
+    for (const s of allSentences(level)) {
+      const { words, end } = splitSentence(s.de);
+      expect(end, s.de).toMatch(/^[.?!]$/);
+      expect(words.every((w) => w.length > 0 && !/[.?!]/.test(w)), s.de).toBe(true);
+      expect(words.length, s.de).toBeGreaterThanOrEqual(2);
+    }
+  });
+
+  it('has six present-tense forms for every verb', () => {
+    expect(level.verbs?.pronouns).toHaveLength(6);
+    for (const v of level.verbs?.verbs ?? []) expect(v.present, v.infinitive).toHaveLength(6);
+    expect(verbForms(level).length).toBe((level.verbs?.verbs.length ?? 0) * 6);
+  });
+
+  it('conjugates regular verbs by the rule', () => {
+    const regular = ['wohnen', 'kommen', 'machen', 'spielen', 'lernen', 'kaufen', 'trinken', 'gehen', 'kochen', 'hören', 'brauchen', 'fragen'];
+    for (const v of level.verbs?.verbs.filter((x) => regular.includes(x.infinitive)) ?? []) {
+      const stem = v.infinitive.slice(0, -2);
+      expect(v.present, v.infinitive).toEqual([stem + 'e', stem + 'st', stem + 't', v.infinitive, stem + 't', v.infinitive]);
     }
   });
 });

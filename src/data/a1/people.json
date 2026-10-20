@@ -188,5 +188,31 @@
       "en": "passport",
       "emoji": "🛂"
     }
+  ],
+  "sentences": [
+    {
+      "de": "Ich heiße Anna.",
+      "en": "My name is Anna."
+    },
+    {
+      "de": "Wie heißen Sie?",
+      "en": "What is your name? (formal)"
+    },
+    {
+      "de": "Woher kommst du?",
+      "en": "Where are you from?"
+    },
+    {
+      "de": "Ich komme aus Spanien.",
+      "en": "I come from Spain."
+    },
+    {
+      "de": "Das ist mein Freund Tom.",
+      "en": "This is my friend Tom."
+    },
+    {
+      "de": "Ich spreche ein bisschen Deutsch.",
+      "en": "I speak a little German."
+    }
   ]
 }
