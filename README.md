@@ -40,3 +40,7 @@ Register a new topic file in `src/data/index.ts`. A level with topics becomes pl
 ## Stack
 
 Preact + TypeScript + Vite, `@preact/signals` for state, `vite-plugin-pwa` for offline support.
+
+## License
+
+[Apache License 2.0](LICENSE)
