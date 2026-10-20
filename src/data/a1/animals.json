@@ -1,0 +1,190 @@
+{
+  "id": "animals",
+  "title": {
+    "de": "Tiere",
+    "en": "Animals"
+  },
+  "emoji": "🐾",
+  "nouns": [
+    {
+      "de": "Tier",
+      "article": "das",
+      "plural": "Tiere",
+      "en": "animal"
+    },
+    {
+      "de": "Hund",
+      "article": "der",
+      "plural": "Hunde",
+      "en": "dog",
+      "emoji": "🐕"
+    },
+    {
+      "de": "Katze",
+      "article": "die",
+      "plural": "Katzen",
+      "en": "cat",
+      "emoji": "🐈"
+    },
+    {
+      "de": "Pferd",
+      "article": "das",
+      "plural": "Pferde",
+      "en": "horse",
+      "emoji": "🐎"
+    },
+    {
+      "de": "Kuh",
+      "article": "die",
+      "plural": "Kühe",
+      "en": "cow",
+      "emoji": "🐄"
+    },
+    {
+      "de": "Schwein",
+      "article": "das",
+      "plural": "Schweine",
+      "en": "pig",
+      "emoji": "🐖"
+    },
+    {
+      "de": "Schaf",
+      "article": "das",
+      "plural": "Schafe",
+      "en": "sheep",
+      "emoji": "🐑"
+    },
+    {
+      "de": "Maus",
+      "article": "die",
+      "plural": "Mäuse",
+      "en": "mouse",
+      "emoji": "🐭"
+    },
+    {
+      "de": "Vogel",
+      "article": "der",
+      "plural": "Vögel",
+      "en": "bird",
+      "emoji": "🐦"
+    },
+    {
+      "de": "Huhn",
+      "article": "das",
+      "plural": "Hühner",
+      "en": "hen, chicken",
+      "emoji": "🐔"
+    },
+    {
+      "de": "Ente",
+      "article": "die",
+      "plural": "Enten",
+      "en": "duck",
+      "emoji": "🦆"
+    },
+    {
+      "de": "Hase",
+      "article": "der",
+      "plural": "Hasen",
+      "en": "hare, rabbit",
+      "emoji": "🐇"
+    },
+    {
+      "de": "Bär",
+      "article": "der",
+      "plural": "Bären",
+      "en": "bear",
+      "emoji": "🐻"
+    },
+    {
+      "de": "Löwe",
+      "article": "der",
+      "plural": "Löwen",
+      "en": "lion",
+      "emoji": "🦁"
+    },
+    {
+      "de": "Elefant",
+      "article": "der",
+      "plural": "Elefanten",
+      "en": "elephant",
+      "emoji": "🐘"
+    },
+    {
+      "de": "Affe",
+      "article": "der",
+      "plural": "Affen",
+      "en": "monkey",
+      "emoji": "🐒"
+    },
+    {
+      "de": "Schlange",
+      "article": "die",
+      "plural": "Schlangen",
+      "en": "snake",
+      "emoji": "🐍"
+    },
+    {
+      "de": "Frosch",
+      "article": "der",
+      "plural": "Frösche",
+      "en": "frog",
+      "emoji": "🐸"
+    },
+    {
+      "de": "Biene",
+      "article": "die",
+      "plural": "Bienen",
+      "en": "bee",
+      "emoji": "🐝"
+    },
+    {
+      "de": "Schmetterling",
+      "article": "der",
+      "plural": "Schmetterlinge",
+      "en": "butterfly",
+      "emoji": "🦋"
+    },
+    {
+      "de": "Spinne",
+      "article": "die",
+      "plural": "Spinnen",
+      "en": "spider",
+      "emoji": "🕷️"
+    },
+    {
+      "de": "Tiger",
+      "article": "der",
+      "plural": "Tiger",
+      "en": "tiger",
+      "emoji": "🐯"
+    },
+    {
+      "de": "Giraffe",
+      "article": "die",
+      "plural": "Giraffen",
+      "en": "giraffe",
+      "emoji": "🦒"
+    },
+    {
+      "de": "Fuchs",
+      "article": "der",
+      "plural": "Füchse",
+      "en": "fox",
+      "emoji": "🦊"
+    },
+    {
+      "de": "Wolf",
+      "article": "der",
+      "plural": "Wölfe",
+      "en": "wolf",
+      "emoji": "🐺"
+    },
+    {
+      "de": "Zoo",
+      "article": "der",
+      "plural": "Zoos",
+      "en": "zoo"
+    }
+  ]
+}

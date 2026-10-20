@@ -1,0 +1,165 @@
+{
+  "id": "leisure",
+  "title": {
+    "de": "Freizeit",
+    "en": "Free time"
+  },
+  "emoji": "⚽",
+  "nouns": [
+    {
+      "de": "Freizeit",
+      "article": "die",
+      "plural": null,
+      "en": "free time"
+    },
+    {
+      "de": "Hobby",
+      "article": "das",
+      "plural": "Hobbys",
+      "en": "hobby"
+    },
+    {
+      "de": "Sport",
+      "article": "der",
+      "plural": null,
+      "en": "sport",
+      "emoji": "🏅"
+    },
+    {
+      "de": "Fußball",
+      "article": "der",
+      "plural": "Fußbälle",
+      "en": "football",
+      "emoji": "⚽"
+    },
+    {
+      "de": "Spiel",
+      "article": "das",
+      "plural": "Spiele",
+      "en": "game",
+      "emoji": "🎲"
+    },
+    {
+      "de": "Musik",
+      "article": "die",
+      "plural": null,
+      "en": "music",
+      "emoji": "🎵"
+    },
+    {
+      "de": "Lied",
+      "article": "das",
+      "plural": "Lieder",
+      "en": "song",
+      "emoji": "🎶"
+    },
+    {
+      "de": "Gitarre",
+      "article": "die",
+      "plural": "Gitarren",
+      "en": "guitar",
+      "emoji": "🎸"
+    },
+    {
+      "de": "Klavier",
+      "article": "das",
+      "plural": "Klaviere",
+      "en": "piano",
+      "emoji": "🎹"
+    },
+    {
+      "de": "Film",
+      "article": "der",
+      "plural": "Filme",
+      "en": "film, movie",
+      "emoji": "🎬"
+    },
+    {
+      "de": "Konzert",
+      "article": "das",
+      "plural": "Konzerte",
+      "en": "concert",
+      "emoji": "🎤"
+    },
+    {
+      "de": "Theater",
+      "article": "das",
+      "plural": "Theater",
+      "en": "theatre",
+      "emoji": "🎭"
+    },
+    {
+      "de": "Zeitung",
+      "article": "die",
+      "plural": "Zeitungen",
+      "en": "newspaper",
+      "emoji": "📰"
+    },
+    {
+      "de": "Fernsehen",
+      "article": "das",
+      "plural": null,
+      "en": "television (TV)"
+    },
+    {
+      "de": "Schwimmbad",
+      "article": "das",
+      "plural": "Schwimmbäder",
+      "en": "swimming pool",
+      "emoji": "🏊"
+    },
+    {
+      "de": "Ball",
+      "article": "der",
+      "plural": "Bälle",
+      "en": "ball",
+      "emoji": "🏐"
+    },
+    {
+      "de": "Fest",
+      "article": "das",
+      "plural": "Feste",
+      "en": "festival, celebration"
+    },
+    {
+      "de": "Ausflug",
+      "article": "der",
+      "plural": "Ausflüge",
+      "en": "excursion, day trip"
+    },
+    {
+      "de": "Spaziergang",
+      "article": "der",
+      "plural": "Spaziergänge",
+      "en": "walk",
+      "emoji": "🚶"
+    },
+    {
+      "de": "Kamera",
+      "article": "die",
+      "plural": "Kameras",
+      "en": "camera",
+      "emoji": "📸"
+    },
+    {
+      "de": "Bild",
+      "article": "das",
+      "plural": "Bilder",
+      "en": "picture",
+      "emoji": "🖼️"
+    },
+    {
+      "de": "Internet",
+      "article": "das",
+      "plural": null,
+      "en": "internet",
+      "emoji": "🌐"
+    },
+    {
+      "de": "Karte",
+      "article": "die",
+      "plural": "Karten",
+      "en": "card, map"
+    }
+  ]
+}

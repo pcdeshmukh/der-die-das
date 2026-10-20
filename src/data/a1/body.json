@@ -1,0 +1,181 @@
+{
+  "id": "body",
+  "title": {
+    "de": "Körper & Gesundheit",
+    "en": "Body & health"
+  },
+  "emoji": "🩺",
+  "nouns": [
+    {
+      "de": "Körper",
+      "article": "der",
+      "plural": "Körper",
+      "en": "body"
+    },
+    {
+      "de": "Kopf",
+      "article": "der",
+      "plural": "Köpfe",
+      "en": "head"
+    },
+    {
+      "de": "Auge",
+      "article": "das",
+      "plural": "Augen",
+      "en": "eye",
+      "emoji": "👁️"
+    },
+    {
+      "de": "Ohr",
+      "article": "das",
+      "plural": "Ohren",
+      "en": "ear",
+      "emoji": "👂"
+    },
+    {
+      "de": "Nase",
+      "article": "die",
+      "plural": "Nasen",
+      "en": "nose",
+      "emoji": "👃"
+    },
+    {
+      "de": "Mund",
+      "article": "der",
+      "plural": "Münder",
+      "en": "mouth",
+      "emoji": "👄"
+    },
+    {
+      "de": "Zahn",
+      "article": "der",
+      "plural": "Zähne",
+      "en": "tooth",
+      "emoji": "🦷"
+    },
+    {
+      "de": "Haar",
+      "article": "das",
+      "plural": "Haare",
+      "en": "hair"
+    },
+    {
+      "de": "Hals",
+      "article": "der",
+      "plural": "Hälse",
+      "en": "neck, throat"
+    },
+    {
+      "de": "Arm",
+      "article": "der",
+      "plural": "Arme",
+      "en": "arm",
+      "emoji": "💪"
+    },
+    {
+      "de": "Hand",
+      "article": "die",
+      "plural": "Hände",
+      "en": "hand",
+      "emoji": "✋"
+    },
+    {
+      "de": "Finger",
+      "article": "der",
+      "plural": "Finger",
+      "en": "finger",
+      "emoji": "☝️"
+    },
+    {
+      "de": "Bauch",
+      "article": "der",
+      "plural": "Bäuche",
+      "en": "belly, stomach"
+    },
+    {
+      "de": "Rücken",
+      "article": "der",
+      "plural": "Rücken",
+      "en": "back"
+    },
+    {
+      "de": "Bein",
+      "article": "das",
+      "plural": "Beine",
+      "en": "leg",
+      "emoji": "🦵"
+    },
+    {
+      "de": "Fuß",
+      "article": "der",
+      "plural": "Füße",
+      "en": "foot",
+      "emoji": "🦶"
+    },
+    {
+      "de": "Knie",
+      "article": "das",
+      "plural": "Knie",
+      "en": "knee"
+    },
+    {
+      "de": "Arzt",
+      "article": "der",
+      "plural": "Ärzte",
+      "en": "doctor (male)",
+      "emoji": "🧑‍⚕️"
+    },
+    {
+      "de": "Ärztin",
+      "article": "die",
+      "plural": "Ärztinnen",
+      "en": "doctor (female)",
+      "emoji": "👩‍⚕️"
+    },
+    {
+      "de": "Praxis",
+      "article": "die",
+      "plural": "Praxen",
+      "en": "doctor's practice"
+    },
+    {
+      "de": "Medikament",
+      "article": "das",
+      "plural": "Medikamente",
+      "en": "medicine",
+      "emoji": "💊"
+    },
+    {
+      "de": "Tablette",
+      "article": "die",
+      "plural": "Tabletten",
+      "en": "pill, tablet"
+    },
+    {
+      "de": "Fieber",
+      "article": "das",
+      "plural": null,
+      "en": "fever",
+      "emoji": "🤒"
+    },
+    {
+      "de": "Schmerz",
+      "article": "der",
+      "plural": "Schmerzen",
+      "en": "pain"
+    },
+    {
+      "de": "Husten",
+      "article": "der",
+      "plural": null,
+      "en": "cough",
+      "emoji": "😷"
+    },
+    {
+      "de": "Gesundheit",
+      "article": "die",
+      "plural": null,
+      "en": "health"
+    }
+  ]
+}

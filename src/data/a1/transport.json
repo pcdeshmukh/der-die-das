@@ -1,0 +1,174 @@
+{
+  "id": "transport",
+  "title": {
+    "de": "Verkehr & Reisen",
+    "en": "Transport & travel"
+  },
+  "emoji": "🚆",
+  "nouns": [
+    {
+      "de": "Auto",
+      "article": "das",
+      "plural": "Autos",
+      "en": "car",
+      "emoji": "🚗"
+    },
+    {
+      "de": "Bus",
+      "article": "der",
+      "plural": "Busse",
+      "en": "bus",
+      "emoji": "🚌"
+    },
+    {
+      "de": "Zug",
+      "article": "der",
+      "plural": "Züge",
+      "en": "train",
+      "emoji": "🚆"
+    },
+    {
+      "de": "Bahn",
+      "article": "die",
+      "plural": "Bahnen",
+      "en": "railway",
+      "emoji": "🛤️"
+    },
+    {
+      "de": "U-Bahn",
+      "article": "die",
+      "plural": "U-Bahnen",
+      "en": "underground, subway",
+      "emoji": "🚇"
+    },
+    {
+      "de": "S-Bahn",
+      "article": "die",
+      "plural": "S-Bahnen",
+      "en": "suburban train"
+    },
+    {
+      "de": "Straßenbahn",
+      "article": "die",
+      "plural": "Straßenbahnen",
+      "en": "tram",
+      "emoji": "🚊"
+    },
+    {
+      "de": "Taxi",
+      "article": "das",
+      "plural": "Taxis",
+      "en": "taxi",
+      "emoji": "🚕"
+    },
+    {
+      "de": "Fahrrad",
+      "article": "das",
+      "plural": "Fahrräder",
+      "en": "bicycle",
+      "emoji": "🚲"
+    },
+    {
+      "de": "Flugzeug",
+      "article": "das",
+      "plural": "Flugzeuge",
+      "en": "plane",
+      "emoji": "✈️"
+    },
+    {
+      "de": "Schiff",
+      "article": "das",
+      "plural": "Schiffe",
+      "en": "ship",
+      "emoji": "🚢"
+    },
+    {
+      "de": "Motorrad",
+      "article": "das",
+      "plural": "Motorräder",
+      "en": "motorbike",
+      "emoji": "🏍️"
+    },
+    {
+      "de": "Fahrkarte",
+      "article": "die",
+      "plural": "Fahrkarten",
+      "en": "ticket",
+      "emoji": "🎫"
+    },
+    {
+      "de": "Haltestelle",
+      "article": "die",
+      "plural": "Haltestellen",
+      "en": "stop (bus, tram)",
+      "emoji": "🚏"
+    },
+    {
+      "de": "Fahrplan",
+      "article": "der",
+      "plural": "Fahrpläne",
+      "en": "timetable"
+    },
+    {
+      "de": "Gleis",
+      "article": "das",
+      "plural": "Gleise",
+      "en": "platform, track"
+    },
+    {
+      "de": "Reise",
+      "article": "die",
+      "plural": "Reisen",
+      "en": "trip, journey",
+      "emoji": "🗺️"
+    },
+    {
+      "de": "Urlaub",
+      "article": "der",
+      "plural": "Urlaube",
+      "en": "holiday, vacation",
+      "emoji": "🏖️"
+    },
+    {
+      "de": "Koffer",
+      "article": "der",
+      "plural": "Koffer",
+      "en": "suitcase",
+      "emoji": "🧳"
+    },
+    {
+      "de": "Abfahrt",
+      "article": "die",
+      "plural": "Abfahrten",
+      "en": "departure",
+      "emoji": "🛫"
+    },
+    {
+      "de": "Ankunft",
+      "article": "die",
+      "plural": "Ankünfte",
+      "en": "arrival",
+      "emoji": "🛬"
+    },
+    {
+      "de": "Fahrer",
+      "article": "der",
+      "plural": "Fahrer",
+      "en": "driver (male)"
+    },
+    {
+      "de": "Parkplatz",
+      "article": "der",
+      "plural": "Parkplätze",
+      "en": "car park, parking space",
+      "emoji": "🅿️"
+    },
+    {
+      "de": "Tankstelle",
+      "article": "die",
+      "plural": "Tankstellen",
+      "en": "petrol station",
+      "emoji": "⛽"
+    }
+  ]
+}

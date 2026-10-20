@@ -1,0 +1,184 @@
+{
+  "id": "family",
+  "title": {
+    "de": "Familie",
+    "en": "Family"
+  },
+  "emoji": "👨‍👩‍👧",
+  "nouns": [
+    {
+      "de": "Familie",
+      "article": "die",
+      "plural": "Familien",
+      "en": "family",
+      "emoji": "👨‍👩‍👧"
+    },
+    {
+      "de": "Mutter",
+      "article": "die",
+      "plural": "Mütter",
+      "en": "mother",
+      "emoji": "👩"
+    },
+    {
+      "de": "Vater",
+      "article": "der",
+      "plural": "Väter",
+      "en": "father",
+      "emoji": "👨"
+    },
+    {
+      "de": "Sohn",
+      "article": "der",
+      "plural": "Söhne",
+      "en": "son",
+      "emoji": "👦"
+    },
+    {
+      "de": "Tochter",
+      "article": "die",
+      "plural": "Töchter",
+      "en": "daughter",
+      "emoji": "👧"
+    },
+    {
+      "de": "Bruder",
+      "article": "der",
+      "plural": "Brüder",
+      "en": "brother",
+      "emoji": "🧑"
+    },
+    {
+      "de": "Schwester",
+      "article": "die",
+      "plural": "Schwestern",
+      "en": "sister",
+      "emoji": "👩"
+    },
+    {
+      "de": "Oma",
+      "article": "die",
+      "plural": "Omas",
+      "en": "grandma",
+      "emoji": "👵"
+    },
+    {
+      "de": "Opa",
+      "article": "der",
+      "plural": "Opas",
+      "en": "grandpa",
+      "emoji": "👴"
+    },
+    {
+      "de": "Großmutter",
+      "article": "die",
+      "plural": "Großmütter",
+      "en": "grandmother",
+      "emoji": "👵"
+    },
+    {
+      "de": "Großvater",
+      "article": "der",
+      "plural": "Großväter",
+      "en": "grandfather",
+      "emoji": "👴"
+    },
+    {
+      "de": "Onkel",
+      "article": "der",
+      "plural": "Onkel",
+      "en": "uncle"
+    },
+    {
+      "de": "Tante",
+      "article": "die",
+      "plural": "Tanten",
+      "en": "aunt"
+    },
+    {
+      "de": "Cousin",
+      "article": "der",
+      "plural": "Cousins",
+      "en": "cousin (male)"
+    },
+    {
+      "de": "Cousine",
+      "article": "die",
+      "plural": "Cousinen",
+      "en": "cousin (female)"
+    },
+    {
+      "de": "Ehemann",
+      "article": "der",
+      "plural": "Ehemänner",
+      "en": "husband",
+      "emoji": "🤵"
+    },
+    {
+      "de": "Ehefrau",
+      "article": "die",
+      "plural": "Ehefrauen",
+      "en": "wife",
+      "emoji": "👰"
+    },
+    {
+      "de": "Partner",
+      "article": "der",
+      "plural": "Partner",
+      "en": "partner (male)"
+    },
+    {
+      "de": "Partnerin",
+      "article": "die",
+      "plural": "Partnerinnen",
+      "en": "partner (female)"
+    },
+    {
+      "de": "Enkel",
+      "article": "der",
+      "plural": "Enkel",
+      "en": "grandson"
+    },
+    {
+      "de": "Enkelin",
+      "article": "die",
+      "plural": "Enkelinnen",
+      "en": "granddaughter"
+    },
+    {
+      "de": "Geburtstag",
+      "article": "der",
+      "plural": "Geburtstage",
+      "en": "birthday",
+      "emoji": "🎂"
+    },
+    {
+      "de": "Hochzeit",
+      "article": "die",
+      "plural": "Hochzeiten",
+      "en": "wedding",
+      "emoji": "💒"
+    },
+    {
+      "de": "Geschenk",
+      "article": "das",
+      "plural": "Geschenke",
+      "en": "present, gift",
+      "emoji": "🎁"
+    },
+    {
+      "de": "Party",
+      "article": "die",
+      "plural": "Partys",
+      "en": "party",
+      "emoji": "🎉"
+    },
+    {
+      "de": "Foto",
+      "article": "das",
+      "plural": "Fotos",
+      "en": "photo",
+      "emoji": "📷"
+    }
+  ]
+}

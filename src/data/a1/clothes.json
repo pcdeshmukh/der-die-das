@@ -1,0 +1,179 @@
+{
+  "id": "clothes",
+  "title": {
+    "de": "Kleidung & Einkaufen",
+    "en": "Clothes & shopping"
+  },
+  "emoji": "👕",
+  "nouns": [
+    {
+      "de": "Kleidung",
+      "article": "die",
+      "plural": null,
+      "en": "clothing"
+    },
+    {
+      "de": "Hose",
+      "article": "die",
+      "plural": "Hosen",
+      "en": "trousers",
+      "emoji": "👖"
+    },
+    {
+      "de": "Hemd",
+      "article": "das",
+      "plural": "Hemden",
+      "en": "shirt",
+      "emoji": "👔"
+    },
+    {
+      "de": "T-Shirt",
+      "article": "das",
+      "plural": "T-Shirts",
+      "en": "T-shirt",
+      "emoji": "👕"
+    },
+    {
+      "de": "Pullover",
+      "article": "der",
+      "plural": "Pullover",
+      "en": "jumper, sweater"
+    },
+    {
+      "de": "Jacke",
+      "article": "die",
+      "plural": "Jacken",
+      "en": "jacket",
+      "emoji": "🧥"
+    },
+    {
+      "de": "Mantel",
+      "article": "der",
+      "plural": "Mäntel",
+      "en": "coat"
+    },
+    {
+      "de": "Kleid",
+      "article": "das",
+      "plural": "Kleider",
+      "en": "dress",
+      "emoji": "👗"
+    },
+    {
+      "de": "Rock",
+      "article": "der",
+      "plural": "Röcke",
+      "en": "skirt"
+    },
+    {
+      "de": "Schuh",
+      "article": "der",
+      "plural": "Schuhe",
+      "en": "shoe",
+      "emoji": "👞"
+    },
+    {
+      "de": "Stiefel",
+      "article": "der",
+      "plural": "Stiefel",
+      "en": "boot",
+      "emoji": "👢"
+    },
+    {
+      "de": "Socke",
+      "article": "die",
+      "plural": "Socken",
+      "en": "sock",
+      "emoji": "🧦"
+    },
+    {
+      "de": "Hut",
+      "article": "der",
+      "plural": "Hüte",
+      "en": "hat",
+      "emoji": "👒"
+    },
+    {
+      "de": "Mütze",
+      "article": "die",
+      "plural": "Mützen",
+      "en": "woolly hat, cap",
+      "emoji": "🧢"
+    },
+    {
+      "de": "Schal",
+      "article": "der",
+      "plural": "Schals",
+      "en": "scarf",
+      "emoji": "🧣"
+    },
+    {
+      "de": "Brille",
+      "article": "die",
+      "plural": "Brillen",
+      "en": "glasses",
+      "emoji": "👓"
+    },
+    {
+      "de": "Tasche",
+      "article": "die",
+      "plural": "Taschen",
+      "en": "bag",
+      "emoji": "👜"
+    },
+    {
+      "de": "Rucksack",
+      "article": "der",
+      "plural": "Rucksäcke",
+      "en": "backpack",
+      "emoji": "🎒"
+    },
+    {
+      "de": "Regenschirm",
+      "article": "der",
+      "plural": "Regenschirme",
+      "en": "umbrella",
+      "emoji": "☂️"
+    },
+    {
+      "de": "Größe",
+      "article": "die",
+      "plural": "Größen",
+      "en": "size"
+    },
+    {
+      "de": "Farbe",
+      "article": "die",
+      "plural": "Farben",
+      "en": "colour",
+      "emoji": "🎨"
+    },
+    {
+      "de": "Preis",
+      "article": "der",
+      "plural": "Preise",
+      "en": "price",
+      "emoji": "🏷️"
+    },
+    {
+      "de": "Geld",
+      "article": "das",
+      "plural": null,
+      "en": "money",
+      "emoji": "💶"
+    },
+    {
+      "de": "Euro",
+      "article": "der",
+      "plural": "Euros",
+      "en": "euro",
+      "emoji": "💶"
+    },
+    {
+      "de": "Kasse",
+      "article": "die",
+      "plural": "Kassen",
+      "en": "till, checkout"
+    }
+  ]
+}

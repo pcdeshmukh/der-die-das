@@ -1,0 +1,262 @@
+{
+  "id": "food",
+  "title": {
+    "de": "Essen & Trinken",
+    "en": "Food & drink"
+  },
+  "emoji": "🍽️",
+  "nouns": [
+    {
+      "de": "Brot",
+      "article": "das",
+      "plural": "Brote",
+      "en": "bread",
+      "emoji": "🍞"
+    },
+    {
+      "de": "Brötchen",
+      "article": "das",
+      "plural": "Brötchen",
+      "en": "bread roll",
+      "emoji": "🥖"
+    },
+    {
+      "de": "Butter",
+      "article": "die",
+      "plural": null,
+      "en": "butter",
+      "emoji": "🧈"
+    },
+    {
+      "de": "Käse",
+      "article": "der",
+      "plural": null,
+      "en": "cheese",
+      "emoji": "🧀"
+    },
+    {
+      "de": "Wurst",
+      "article": "die",
+      "plural": "Würste",
+      "en": "sausage",
+      "emoji": "🌭"
+    },
+    {
+      "de": "Ei",
+      "article": "das",
+      "plural": "Eier",
+      "en": "egg",
+      "emoji": "🥚"
+    },
+    {
+      "de": "Milch",
+      "article": "die",
+      "plural": null,
+      "en": "milk",
+      "emoji": "🥛"
+    },
+    {
+      "de": "Kaffee",
+      "article": "der",
+      "plural": null,
+      "en": "coffee",
+      "emoji": "☕"
+    },
+    {
+      "de": "Tee",
+      "article": "der",
+      "plural": "Tees",
+      "en": "tea",
+      "emoji": "🍵"
+    },
+    {
+      "de": "Wasser",
+      "article": "das",
+      "plural": null,
+      "en": "water",
+      "emoji": "💧"
+    },
+    {
+      "de": "Saft",
+      "article": "der",
+      "plural": "Säfte",
+      "en": "juice",
+      "emoji": "🧃"
+    },
+    {
+      "de": "Bier",
+      "article": "das",
+      "plural": "Biere",
+      "en": "beer",
+      "emoji": "🍺"
+    },
+    {
+      "de": "Wein",
+      "article": "der",
+      "plural": "Weine",
+      "en": "wine",
+      "emoji": "🍷"
+    },
+    {
+      "de": "Apfel",
+      "article": "der",
+      "plural": "Äpfel",
+      "en": "apple",
+      "emoji": "🍎"
+    },
+    {
+      "de": "Banane",
+      "article": "die",
+      "plural": "Bananen",
+      "en": "banana",
+      "emoji": "🍌"
+    },
+    {
+      "de": "Orange",
+      "article": "die",
+      "plural": "Orangen",
+      "en": "orange",
+      "emoji": "🍊"
+    },
+    {
+      "de": "Kartoffel",
+      "article": "die",
+      "plural": "Kartoffeln",
+      "en": "potato",
+      "emoji": "🥔"
+    },
+    {
+      "de": "Tomate",
+      "article": "die",
+      "plural": "Tomaten",
+      "en": "tomato",
+      "emoji": "🍅"
+    },
+    {
+      "de": "Salat",
+      "article": "der",
+      "plural": "Salate",
+      "en": "salad",
+      "emoji": "🥗"
+    },
+    {
+      "de": "Fleisch",
+      "article": "das",
+      "plural": null,
+      "en": "meat",
+      "emoji": "🥩"
+    },
+    {
+      "de": "Fisch",
+      "article": "der",
+      "plural": "Fische",
+      "en": "fish",
+      "emoji": "🐟"
+    },
+    {
+      "de": "Hähnchen",
+      "article": "das",
+      "plural": "Hähnchen",
+      "en": "chicken (food)",
+      "emoji": "🍗"
+    },
+    {
+      "de": "Reis",
+      "article": "der",
+      "plural": null,
+      "en": "rice",
+      "emoji": "🍚"
+    },
+    {
+      "de": "Nudel",
+      "article": "die",
+      "plural": "Nudeln",
+      "en": "noodle, pasta",
+      "emoji": "🍝"
+    },
+    {
+      "de": "Suppe",
+      "article": "die",
+      "plural": "Suppen",
+      "en": "soup",
+      "emoji": "🍲"
+    },
+    {
+      "de": "Kuchen",
+      "article": "der",
+      "plural": "Kuchen",
+      "en": "cake",
+      "emoji": "🍰"
+    },
+    {
+      "de": "Schokolade",
+      "article": "die",
+      "plural": "Schokoladen",
+      "en": "chocolate",
+      "emoji": "🍫"
+    },
+    {
+      "de": "Zucker",
+      "article": "der",
+      "plural": null,
+      "en": "sugar",
+      "emoji": "🍬"
+    },
+    {
+      "de": "Salz",
+      "article": "das",
+      "plural": null,
+      "en": "salt",
+      "emoji": "🧂"
+    },
+    {
+      "de": "Obst",
+      "article": "das",
+      "plural": null,
+      "en": "fruit",
+      "emoji": "🍇"
+    },
+    {
+      "de": "Gemüse",
+      "article": "das",
+      "plural": null,
+      "en": "vegetables",
+      "emoji": "🥦"
+    },
+    {
+      "de": "Frühstück",
+      "article": "das",
+      "plural": "Frühstücke",
+      "en": "breakfast",
+      "emoji": "🍳"
+    },
+    {
+      "de": "Mittagessen",
+      "article": "das",
+      "plural": "Mittagessen",
+      "en": "lunch",
+      "emoji": "🥪"
+    },
+    {
+      "de": "Abendessen",
+      "article": "das",
+      "plural": "Abendessen",
+      "en": "dinner",
+      "emoji": "🍽️"
+    },
+    {
+      "de": "Restaurant",
+      "article": "das",
+      "plural": "Restaurants",
+      "en": "restaurant",
+      "emoji": "🧑‍🍳"
+    },
+    {
+      "de": "Rechnung",
+      "article": "die",
+      "plural": "Rechnungen",
+      "en": "bill",
+      "emoji": "🧾"
+    }
+  ]
+}

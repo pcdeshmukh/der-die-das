@@ -1,0 +1,202 @@
+{
+  "id": "home",
+  "title": {
+    "de": "Wohnen",
+    "en": "Home"
+  },
+  "emoji": "🏠",
+  "nouns": [
+    {
+      "de": "Wohnung",
+      "article": "die",
+      "plural": "Wohnungen",
+      "en": "flat, apartment",
+      "emoji": "🏢"
+    },
+    {
+      "de": "Haus",
+      "article": "das",
+      "plural": "Häuser",
+      "en": "house",
+      "emoji": "🏠"
+    },
+    {
+      "de": "Zimmer",
+      "article": "das",
+      "plural": "Zimmer",
+      "en": "room",
+      "emoji": "🚪"
+    },
+    {
+      "de": "Küche",
+      "article": "die",
+      "plural": "Küchen",
+      "en": "kitchen",
+      "emoji": "🍳"
+    },
+    {
+      "de": "Bad",
+      "article": "das",
+      "plural": "Bäder",
+      "en": "bathroom",
+      "emoji": "🛁"
+    },
+    {
+      "de": "Schlafzimmer",
+      "article": "das",
+      "plural": "Schlafzimmer",
+      "en": "bedroom",
+      "emoji": "🛏️"
+    },
+    {
+      "de": "Wohnzimmer",
+      "article": "das",
+      "plural": "Wohnzimmer",
+      "en": "living room",
+      "emoji": "🛋️"
+    },
+    {
+      "de": "Balkon",
+      "article": "der",
+      "plural": "Balkone",
+      "en": "balcony"
+    },
+    {
+      "de": "Garten",
+      "article": "der",
+      "plural": "Gärten",
+      "en": "garden",
+      "emoji": "🌻"
+    },
+    {
+      "de": "Tür",
+      "article": "die",
+      "plural": "Türen",
+      "en": "door",
+      "emoji": "🚪"
+    },
+    {
+      "de": "Fenster",
+      "article": "das",
+      "plural": "Fenster",
+      "en": "window",
+      "emoji": "🪟"
+    },
+    {
+      "de": "Tisch",
+      "article": "der",
+      "plural": "Tische",
+      "en": "table"
+    },
+    {
+      "de": "Stuhl",
+      "article": "der",
+      "plural": "Stühle",
+      "en": "chair",
+      "emoji": "🪑"
+    },
+    {
+      "de": "Bett",
+      "article": "das",
+      "plural": "Betten",
+      "en": "bed",
+      "emoji": "🛏️"
+    },
+    {
+      "de": "Schrank",
+      "article": "der",
+      "plural": "Schränke",
+      "en": "cupboard, wardrobe"
+    },
+    {
+      "de": "Sofa",
+      "article": "das",
+      "plural": "Sofas",
+      "en": "sofa",
+      "emoji": "🛋️"
+    },
+    {
+      "de": "Lampe",
+      "article": "die",
+      "plural": "Lampen",
+      "en": "lamp",
+      "emoji": "💡"
+    },
+    {
+      "de": "Kühlschrank",
+      "article": "der",
+      "plural": "Kühlschränke",
+      "en": "fridge",
+      "emoji": "🧊"
+    },
+    {
+      "de": "Herd",
+      "article": "der",
+      "plural": "Herde",
+      "en": "cooker, stove",
+      "emoji": "🔥"
+    },
+    {
+      "de": "Dusche",
+      "article": "die",
+      "plural": "Duschen",
+      "en": "shower",
+      "emoji": "🚿"
+    },
+    {
+      "de": "Toilette",
+      "article": "die",
+      "plural": "Toiletten",
+      "en": "toilet",
+      "emoji": "🚽"
+    },
+    {
+      "de": "Schlüssel",
+      "article": "der",
+      "plural": "Schlüssel",
+      "en": "key",
+      "emoji": "🔑"
+    },
+    {
+      "de": "Miete",
+      "article": "die",
+      "plural": "Mieten",
+      "en": "rent",
+      "emoji": "💶"
+    },
+    {
+      "de": "Fernseher",
+      "article": "der",
+      "plural": "Fernseher",
+      "en": "television set",
+      "emoji": "📺"
+    },
+    {
+      "de": "Computer",
+      "article": "der",
+      "plural": "Computer",
+      "en": "computer",
+      "emoji": "💻"
+    },
+    {
+      "de": "Regal",
+      "article": "das",
+      "plural": "Regale",
+      "en": "shelf",
+      "emoji": "📚"
+    },
+    {
+      "de": "Treppe",
+      "article": "die",
+      "plural": "Treppen",
+      "en": "stairs"
+    },
+    {
+      "de": "Aufzug",
+      "article": "der",
+      "plural": "Aufzüge",
+      "en": "lift, elevator",
+      "emoji": "🛗"
+    }
+  ]
+}

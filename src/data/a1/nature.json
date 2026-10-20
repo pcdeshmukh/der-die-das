@@ -1,0 +1,187 @@
+{
+  "id": "nature",
+  "title": {
+    "de": "Natur & Wetter",
+    "en": "Nature & weather"
+  },
+  "emoji": "🌦️",
+  "nouns": [
+    {
+      "de": "Wetter",
+      "article": "das",
+      "plural": null,
+      "en": "weather",
+      "emoji": "🌦️"
+    },
+    {
+      "de": "Sonne",
+      "article": "die",
+      "plural": "Sonnen",
+      "en": "sun",
+      "emoji": "☀️"
+    },
+    {
+      "de": "Regen",
+      "article": "der",
+      "plural": null,
+      "en": "rain",
+      "emoji": "🌧️"
+    },
+    {
+      "de": "Schnee",
+      "article": "der",
+      "plural": null,
+      "en": "snow",
+      "emoji": "❄️"
+    },
+    {
+      "de": "Wind",
+      "article": "der",
+      "plural": "Winde",
+      "en": "wind",
+      "emoji": "💨"
+    },
+    {
+      "de": "Wolke",
+      "article": "die",
+      "plural": "Wolken",
+      "en": "cloud",
+      "emoji": "☁️"
+    },
+    {
+      "de": "Himmel",
+      "article": "der",
+      "plural": "Himmel",
+      "en": "sky"
+    },
+    {
+      "de": "Gewitter",
+      "article": "das",
+      "plural": "Gewitter",
+      "en": "thunderstorm",
+      "emoji": "⛈️"
+    },
+    {
+      "de": "Temperatur",
+      "article": "die",
+      "plural": "Temperaturen",
+      "en": "temperature",
+      "emoji": "🌡️"
+    },
+    {
+      "de": "Grad",
+      "article": "der",
+      "plural": "Grade",
+      "en": "degree"
+    },
+    {
+      "de": "Frühling",
+      "article": "der",
+      "plural": "Frühlinge",
+      "en": "spring",
+      "emoji": "🌷"
+    },
+    {
+      "de": "Sommer",
+      "article": "der",
+      "plural": "Sommer",
+      "en": "summer",
+      "emoji": "🌞"
+    },
+    {
+      "de": "Herbst",
+      "article": "der",
+      "plural": "Herbste",
+      "en": "autumn",
+      "emoji": "🍂"
+    },
+    {
+      "de": "Winter",
+      "article": "der",
+      "plural": "Winter",
+      "en": "winter",
+      "emoji": "⛄"
+    },
+    {
+      "de": "Jahreszeit",
+      "article": "die",
+      "plural": "Jahreszeiten",
+      "en": "season"
+    },
+    {
+      "de": "Baum",
+      "article": "der",
+      "plural": "Bäume",
+      "en": "tree",
+      "emoji": "🌳"
+    },
+    {
+      "de": "Blume",
+      "article": "die",
+      "plural": "Blumen",
+      "en": "flower",
+      "emoji": "🌸"
+    },
+    {
+      "de": "Wald",
+      "article": "der",
+      "plural": "Wälder",
+      "en": "forest",
+      "emoji": "🌲"
+    },
+    {
+      "de": "Berg",
+      "article": "der",
+      "plural": "Berge",
+      "en": "mountain",
+      "emoji": "⛰️"
+    },
+    {
+      "de": "See",
+      "article": "der",
+      "plural": "Seen",
+      "en": "lake"
+    },
+    {
+      "de": "Meer",
+      "article": "das",
+      "plural": "Meere",
+      "en": "sea",
+      "emoji": "🌊"
+    },
+    {
+      "de": "Fluss",
+      "article": "der",
+      "plural": "Flüsse",
+      "en": "river"
+    },
+    {
+      "de": "Strand",
+      "article": "der",
+      "plural": "Strände",
+      "en": "beach",
+      "emoji": "🏖️"
+    },
+    {
+      "de": "Insel",
+      "article": "die",
+      "plural": "Inseln",
+      "en": "island",
+      "emoji": "🏝️"
+    },
+    {
+      "de": "Mond",
+      "article": "der",
+      "plural": "Monde",
+      "en": "moon",
+      "emoji": "🌙"
+    },
+    {
+      "de": "Stern",
+      "article": "der",
+      "plural": "Sterne",
+      "en": "star",
+      "emoji": "⭐"
+    }
+  ]
+}

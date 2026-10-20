@@ -1,0 +1,192 @@
+{
+  "id": "school",
+  "title": {
+    "de": "Arbeit & Schule",
+    "en": "Work & school"
+  },
+  "emoji": "💼",
+  "nouns": [
+    {
+      "de": "Arbeit",
+      "article": "die",
+      "plural": "Arbeiten",
+      "en": "work"
+    },
+    {
+      "de": "Beruf",
+      "article": "der",
+      "plural": "Berufe",
+      "en": "job, profession",
+      "emoji": "💼"
+    },
+    {
+      "de": "Firma",
+      "article": "die",
+      "plural": "Firmen",
+      "en": "company",
+      "emoji": "🏢"
+    },
+    {
+      "de": "Büro",
+      "article": "das",
+      "plural": "Büros",
+      "en": "office"
+    },
+    {
+      "de": "Chef",
+      "article": "der",
+      "plural": "Chefs",
+      "en": "boss (male)"
+    },
+    {
+      "de": "Chefin",
+      "article": "die",
+      "plural": "Chefinnen",
+      "en": "boss (female)"
+    },
+    {
+      "de": "Kollege",
+      "article": "der",
+      "plural": "Kollegen",
+      "en": "colleague (male)"
+    },
+    {
+      "de": "Kollegin",
+      "article": "die",
+      "plural": "Kolleginnen",
+      "en": "colleague (female)"
+    },
+    {
+      "de": "Lehrer",
+      "article": "der",
+      "plural": "Lehrer",
+      "en": "teacher (male)",
+      "emoji": "🧑‍🏫"
+    },
+    {
+      "de": "Lehrerin",
+      "article": "die",
+      "plural": "Lehrerinnen",
+      "en": "teacher (female)",
+      "emoji": "👩‍🏫"
+    },
+    {
+      "de": "Schüler",
+      "article": "der",
+      "plural": "Schüler",
+      "en": "pupil (male)"
+    },
+    {
+      "de": "Schülerin",
+      "article": "die",
+      "plural": "Schülerinnen",
+      "en": "pupil (female)"
+    },
+    {
+      "de": "Student",
+      "article": "der",
+      "plural": "Studenten",
+      "en": "student (male)",
+      "emoji": "🧑‍🎓"
+    },
+    {
+      "de": "Studentin",
+      "article": "die",
+      "plural": "Studentinnen",
+      "en": "student (female)",
+      "emoji": "👩‍🎓"
+    },
+    {
+      "de": "Schule",
+      "article": "die",
+      "plural": "Schulen",
+      "en": "school",
+      "emoji": "🏫"
+    },
+    {
+      "de": "Kurs",
+      "article": "der",
+      "plural": "Kurse",
+      "en": "course"
+    },
+    {
+      "de": "Klasse",
+      "article": "die",
+      "plural": "Klassen",
+      "en": "class"
+    },
+    {
+      "de": "Prüfung",
+      "article": "die",
+      "plural": "Prüfungen",
+      "en": "exam",
+      "emoji": "📝"
+    },
+    {
+      "de": "Frage",
+      "article": "die",
+      "plural": "Fragen",
+      "en": "question",
+      "emoji": "❓"
+    },
+    {
+      "de": "Antwort",
+      "article": "die",
+      "plural": "Antworten",
+      "en": "answer"
+    },
+    {
+      "de": "Buch",
+      "article": "das",
+      "plural": "Bücher",
+      "en": "book",
+      "emoji": "📕"
+    },
+    {
+      "de": "Heft",
+      "article": "das",
+      "plural": "Hefte",
+      "en": "exercise book",
+      "emoji": "📓"
+    },
+    {
+      "de": "Kuli",
+      "article": "der",
+      "plural": "Kulis",
+      "en": "pen",
+      "emoji": "🖊️"
+    },
+    {
+      "de": "Bleistift",
+      "article": "der",
+      "plural": "Bleistifte",
+      "en": "pencil",
+      "emoji": "✏️"
+    },
+    {
+      "de": "Papier",
+      "article": "das",
+      "plural": "Papiere",
+      "en": "paper",
+      "emoji": "📄"
+    },
+    {
+      "de": "Wort",
+      "article": "das",
+      "plural": "Wörter",
+      "en": "word"
+    },
+    {
+      "de": "Satz",
+      "article": "der",
+      "plural": "Sätze",
+      "en": "sentence"
+    },
+    {
+      "de": "Hausaufgabe",
+      "article": "die",
+      "plural": "Hausaufgaben",
+      "en": "homework"
+    }
+  ]
+}

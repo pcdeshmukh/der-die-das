@@ -1,0 +1,187 @@
+{
+  "id": "city",
+  "title": {
+    "de": "In der Stadt",
+    "en": "In the city"
+  },
+  "emoji": "🏙️",
+  "nouns": [
+    {
+      "de": "Stadt",
+      "article": "die",
+      "plural": "Städte",
+      "en": "city, town",
+      "emoji": "🏙️"
+    },
+    {
+      "de": "Dorf",
+      "article": "das",
+      "plural": "Dörfer",
+      "en": "village",
+      "emoji": "🏘️"
+    },
+    {
+      "de": "Straße",
+      "article": "die",
+      "plural": "Straßen",
+      "en": "street",
+      "emoji": "🛣️"
+    },
+    {
+      "de": "Platz",
+      "article": "der",
+      "plural": "Plätze",
+      "en": "square, place"
+    },
+    {
+      "de": "Bahnhof",
+      "article": "der",
+      "plural": "Bahnhöfe",
+      "en": "train station",
+      "emoji": "🚉"
+    },
+    {
+      "de": "Flughafen",
+      "article": "der",
+      "plural": "Flughäfen",
+      "en": "airport",
+      "emoji": "🛫"
+    },
+    {
+      "de": "Bank",
+      "article": "die",
+      "plural": "Banken",
+      "en": "bank",
+      "emoji": "🏦"
+    },
+    {
+      "de": "Post",
+      "article": "die",
+      "plural": null,
+      "en": "post office",
+      "emoji": "🏤"
+    },
+    {
+      "de": "Apotheke",
+      "article": "die",
+      "plural": "Apotheken",
+      "en": "pharmacy",
+      "emoji": "💊"
+    },
+    {
+      "de": "Krankenhaus",
+      "article": "das",
+      "plural": "Krankenhäuser",
+      "en": "hospital",
+      "emoji": "🏥"
+    },
+    {
+      "de": "Supermarkt",
+      "article": "der",
+      "plural": "Supermärkte",
+      "en": "supermarket",
+      "emoji": "🛒"
+    },
+    {
+      "de": "Geschäft",
+      "article": "das",
+      "plural": "Geschäfte",
+      "en": "shop",
+      "emoji": "🏬"
+    },
+    {
+      "de": "Markt",
+      "article": "der",
+      "plural": "Märkte",
+      "en": "market",
+      "emoji": "🧺"
+    },
+    {
+      "de": "Café",
+      "article": "das",
+      "plural": "Cafés",
+      "en": "café",
+      "emoji": "☕"
+    },
+    {
+      "de": "Hotel",
+      "article": "das",
+      "plural": "Hotels",
+      "en": "hotel",
+      "emoji": "🏨"
+    },
+    {
+      "de": "Kino",
+      "article": "das",
+      "plural": "Kinos",
+      "en": "cinema",
+      "emoji": "🍿"
+    },
+    {
+      "de": "Museum",
+      "article": "das",
+      "plural": "Museen",
+      "en": "museum",
+      "emoji": "🏛️"
+    },
+    {
+      "de": "Park",
+      "article": "der",
+      "plural": "Parks",
+      "en": "park",
+      "emoji": "🌳"
+    },
+    {
+      "de": "Kirche",
+      "article": "die",
+      "plural": "Kirchen",
+      "en": "church",
+      "emoji": "⛪"
+    },
+    {
+      "de": "Rathaus",
+      "article": "das",
+      "plural": "Rathäuser",
+      "en": "town hall"
+    },
+    {
+      "de": "Polizei",
+      "article": "die",
+      "plural": null,
+      "en": "police",
+      "emoji": "👮"
+    },
+    {
+      "de": "Brücke",
+      "article": "die",
+      "plural": "Brücken",
+      "en": "bridge",
+      "emoji": "🌉"
+    },
+    {
+      "de": "Ampel",
+      "article": "die",
+      "plural": "Ampeln",
+      "en": "traffic light",
+      "emoji": "🚦"
+    },
+    {
+      "de": "Ecke",
+      "article": "die",
+      "plural": "Ecken",
+      "en": "corner"
+    },
+    {
+      "de": "Weg",
+      "article": "der",
+      "plural": "Wege",
+      "en": "way, path"
+    },
+    {
+      "de": "Kreuzung",
+      "article": "die",
+      "plural": "Kreuzungen",
+      "en": "crossroads"
+    }
+  ]
+}

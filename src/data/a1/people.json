@@ -1,0 +1,192 @@
+{
+  "id": "people",
+  "title": {
+    "de": "Menschen",
+    "en": "People"
+  },
+  "emoji": "🧑",
+  "nouns": [
+    {
+      "de": "Mann",
+      "article": "der",
+      "plural": "Männer",
+      "en": "man",
+      "emoji": "👨"
+    },
+    {
+      "de": "Frau",
+      "article": "die",
+      "plural": "Frauen",
+      "en": "woman",
+      "emoji": "👩"
+    },
+    {
+      "de": "Kind",
+      "article": "das",
+      "plural": "Kinder",
+      "en": "child",
+      "emoji": "🧒"
+    },
+    {
+      "de": "Junge",
+      "article": "der",
+      "plural": "Jungen",
+      "en": "boy",
+      "emoji": "👦"
+    },
+    {
+      "de": "Mädchen",
+      "article": "das",
+      "plural": "Mädchen",
+      "en": "girl",
+      "emoji": "👧"
+    },
+    {
+      "de": "Baby",
+      "article": "das",
+      "plural": "Babys",
+      "en": "baby",
+      "emoji": "👶"
+    },
+    {
+      "de": "Mensch",
+      "article": "der",
+      "plural": "Menschen",
+      "en": "human being",
+      "emoji": "🧑"
+    },
+    {
+      "de": "Person",
+      "article": "die",
+      "plural": "Personen",
+      "en": "person",
+      "emoji": "🧍"
+    },
+    {
+      "de": "Freund",
+      "article": "der",
+      "plural": "Freunde",
+      "en": "friend (male)",
+      "emoji": "🙋‍♂️"
+    },
+    {
+      "de": "Freundin",
+      "article": "die",
+      "plural": "Freundinnen",
+      "en": "friend (female)",
+      "emoji": "🙋‍♀️"
+    },
+    {
+      "de": "Herr",
+      "article": "der",
+      "plural": "Herren",
+      "en": "gentleman, Mr",
+      "emoji": "🎩"
+    },
+    {
+      "de": "Dame",
+      "article": "die",
+      "plural": "Damen",
+      "en": "lady",
+      "emoji": "👒"
+    },
+    {
+      "de": "Nachbar",
+      "article": "der",
+      "plural": "Nachbarn",
+      "en": "neighbour (male)",
+      "emoji": "🏘️"
+    },
+    {
+      "de": "Nachbarin",
+      "article": "die",
+      "plural": "Nachbarinnen",
+      "en": "neighbour (female)",
+      "emoji": "🏡"
+    },
+    {
+      "de": "Gast",
+      "article": "der",
+      "plural": "Gäste",
+      "en": "guest",
+      "emoji": "🛎️"
+    },
+    {
+      "de": "Name",
+      "article": "der",
+      "plural": "Namen",
+      "en": "name",
+      "emoji": "🏷️"
+    },
+    {
+      "de": "Land",
+      "article": "das",
+      "plural": "Länder",
+      "en": "country",
+      "emoji": "🗺️"
+    },
+    {
+      "de": "Sprache",
+      "article": "die",
+      "plural": "Sprachen",
+      "en": "language",
+      "emoji": "🗣️"
+    },
+    {
+      "de": "Adresse",
+      "article": "die",
+      "plural": "Adressen",
+      "en": "address",
+      "emoji": "📫"
+    },
+    {
+      "de": "Telefonnummer",
+      "article": "die",
+      "plural": "Telefonnummern",
+      "en": "phone number",
+      "emoji": "☎️"
+    },
+    {
+      "de": "Alter",
+      "article": "das",
+      "plural": null,
+      "en": "age",
+      "emoji": "🎂"
+    },
+    {
+      "de": "Handy",
+      "article": "das",
+      "plural": "Handys",
+      "en": "mobile phone",
+      "emoji": "📱"
+    },
+    {
+      "de": "E-Mail",
+      "article": "die",
+      "plural": "E-Mails",
+      "en": "email",
+      "emoji": "📧"
+    },
+    {
+      "de": "Brief",
+      "article": "der",
+      "plural": "Briefe",
+      "en": "letter",
+      "emoji": "✉️"
+    },
+    {
+      "de": "Ausweis",
+      "article": "der",
+      "plural": "Ausweise",
+      "en": "ID card",
+      "emoji": "🪪"
+    },
+    {
+      "de": "Pass",
+      "article": "der",
+      "plural": "Pässe",
+      "en": "passport",
+      "emoji": "🛂"
+    }
+  ]
+}

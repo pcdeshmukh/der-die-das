@@ -1,0 +1,175 @@
+{
+  "id": "time",
+  "title": {
+    "de": "Zeit",
+    "en": "Time"
+  },
+  "emoji": "⏰",
+  "nouns": [
+    {
+      "de": "Zeit",
+      "article": "die",
+      "plural": "Zeiten",
+      "en": "time",
+      "emoji": "⏳"
+    },
+    {
+      "de": "Uhr",
+      "article": "die",
+      "plural": "Uhren",
+      "en": "clock, watch",
+      "emoji": "⏰"
+    },
+    {
+      "de": "Stunde",
+      "article": "die",
+      "plural": "Stunden",
+      "en": "hour"
+    },
+    {
+      "de": "Minute",
+      "article": "die",
+      "plural": "Minuten",
+      "en": "minute"
+    },
+    {
+      "de": "Sekunde",
+      "article": "die",
+      "plural": "Sekunden",
+      "en": "second",
+      "emoji": "⏱️"
+    },
+    {
+      "de": "Tag",
+      "article": "der",
+      "plural": "Tage",
+      "en": "day"
+    },
+    {
+      "de": "Woche",
+      "article": "die",
+      "plural": "Wochen",
+      "en": "week"
+    },
+    {
+      "de": "Monat",
+      "article": "der",
+      "plural": "Monate",
+      "en": "month"
+    },
+    {
+      "de": "Jahr",
+      "article": "das",
+      "plural": "Jahre",
+      "en": "year"
+    },
+    {
+      "de": "Morgen",
+      "article": "der",
+      "plural": "Morgen",
+      "en": "morning",
+      "emoji": "🌅"
+    },
+    {
+      "de": "Vormittag",
+      "article": "der",
+      "plural": "Vormittage",
+      "en": "late morning"
+    },
+    {
+      "de": "Mittag",
+      "article": "der",
+      "plural": "Mittage",
+      "en": "noon, midday",
+      "emoji": "🕛"
+    },
+    {
+      "de": "Nachmittag",
+      "article": "der",
+      "plural": "Nachmittage",
+      "en": "afternoon"
+    },
+    {
+      "de": "Abend",
+      "article": "der",
+      "plural": "Abende",
+      "en": "evening",
+      "emoji": "🌆"
+    },
+    {
+      "de": "Nacht",
+      "article": "die",
+      "plural": "Nächte",
+      "en": "night",
+      "emoji": "🌃"
+    },
+    {
+      "de": "Wochenende",
+      "article": "das",
+      "plural": "Wochenenden",
+      "en": "weekend"
+    },
+    {
+      "de": "Montag",
+      "article": "der",
+      "plural": "Montage",
+      "en": "Monday"
+    },
+    {
+      "de": "Dienstag",
+      "article": "der",
+      "plural": "Dienstage",
+      "en": "Tuesday"
+    },
+    {
+      "de": "Mittwoch",
+      "article": "der",
+      "plural": "Mittwoche",
+      "en": "Wednesday"
+    },
+    {
+      "de": "Donnerstag",
+      "article": "der",
+      "plural": "Donnerstage",
+      "en": "Thursday"
+    },
+    {
+      "de": "Freitag",
+      "article": "der",
+      "plural": "Freitage",
+      "en": "Friday"
+    },
+    {
+      "de": "Samstag",
+      "article": "der",
+      "plural": "Samstage",
+      "en": "Saturday"
+    },
+    {
+      "de": "Sonntag",
+      "article": "der",
+      "plural": "Sonntage",
+      "en": "Sunday"
+    },
+    {
+      "de": "Termin",
+      "article": "der",
+      "plural": "Termine",
+      "en": "appointment",
+      "emoji": "🗓️"
+    },
+    {
+      "de": "Kalender",
+      "article": "der",
+      "plural": "Kalender",
+      "en": "calendar",
+      "emoji": "📅"
+    },
+    {
+      "de": "Datum",
+      "article": "das",
+      "plural": "Daten",
+      "en": "date"
+    }
+  ]
+}
