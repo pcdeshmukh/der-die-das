@@ -20,6 +20,9 @@ Plus, under *Grammar & skills*:
 - **Conjugation**: present tense of 37 A1 verbs, including stem changes and modals.
 - **Numbers**: read, write and hear numbers up to 999 (watch out for 47 vs 74).
 - **Telling the time**: everyday ("halb drei") and official ("vierzehn Uhr dreißig") time.
+- **Grammar lessons**, each with a short rule and a practice round: *ein/eine*, accusative
+  (*den/einen*), *nicht/kein*, possessives (*mein/dein/sein/ihr*), *er/sie/es*, question words,
+  *am/um/im*, and separable verbs.
 
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
@@ -46,7 +49,8 @@ Content lives in `src/data/<level>/`. Each topic file has `nouns` and `sentences
 { "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "alt": [] }
 ```
 
-Verbs are in `verbs.json` with their six present-tense forms. Numbers and times are generated.
+Verbs are in `verbs.json` with their six present-tense forms, and grammar lessons in `grammar.json`
+(a rule plus gap sentences like `"Ich habe ___ Hund."`). Numbers and times are generated.
 
 Register a new topic file in `src/data/index.ts`. A level with topics becomes playable automatically.
 `npm test` checks articles, duplicates, unique English meanings per topic, sentence punctuation,

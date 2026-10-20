@@ -3,6 +3,7 @@ import { useMemo, useState } from 'preact/hooks';
 import type { Level } from '../data/types';
 import { ArticleGame } from '../games/ArticleGame';
 import { ConjugationGame } from '../games/ConjugationGame';
+import { GrammarGame } from '../games/GrammarGame';
 import { ListenGame } from '../games/ListenGame';
 import { MatchGame } from '../games/MatchGame';
 import { NumbersGame } from '../games/NumbersGame';
@@ -26,6 +27,7 @@ const GAMES = {
   conjugate: ConjugationGame,
   numbers: NumbersGame,
   time: TimeGame,
+  grammar: GrammarGame,
 } as unknown as Record<ModeId, FunctionComponent<GameProps>>;
 
 export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: string; modeId: string }) {

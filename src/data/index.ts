@@ -1,4 +1,4 @@
-import type { Level, LevelId, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
+import type { GrammarLesson, GrammarRef, Level, LevelId, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
 import people from './a1/people.json';
 import family from './a1/family.json';
 import food from './a1/food.json';
@@ -13,6 +13,7 @@ import leisure from './a1/leisure.json';
 import nature from './a1/nature.json';
 import animals from './a1/animals.json';
 import a1Verbs from './a1/verbs.json';
+import a1Grammar from './a1/grammar.json';
 
 const A1 = [people, family, food, home, city, transport, time, body, clothes, school, leisure, nature, animals];
 
@@ -27,12 +28,14 @@ const TOPICS: Record<LevelId, Topic[]> = {
 };
 
 const VERBS: Partial<Record<LevelId, Level['verbs']>> = { A1: a1Verbs };
+const GRAMMAR: Partial<Record<LevelId, GrammarLesson[]>> = { A1: a1Grammar };
 
 export const LEVELS: Level[] = (Object.keys(TOPICS) as LevelId[]).map((id) => ({
   id,
   slug: id.toLowerCase(),
   topics: TOPICS[id],
   verbs: VERBS[id] ?? null,
+  grammar: GRAMMAR[id] ?? [],
 }));
 
 export function getLevel(slug: string): Level | undefined {
@@ -67,4 +70,8 @@ export function verbForms(level: Level): VerbForm[] {
   return (level.verbs?.verbs ?? []).flatMap((verb: Verb) =>
     verb.present.map((_, person) => ({ id: `${level.id}:verb:${verb.infinitive}:${person}`, verb, person })),
   );
+}
+
+export function grammarItems(level: Level, lesson: GrammarLesson): GrammarRef[] {
+  return lesson.items.map((item, i) => ({ ...item, id: `${level.id}:grammar:${lesson.id}:${i}`, lesson }));
 }

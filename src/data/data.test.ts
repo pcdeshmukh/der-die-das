@@ -55,4 +55,23 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
       expect(v.present, v.infinitive).toEqual([stem + 'e', stem + 'st', stem + 't', v.infinitive, stem + 't', v.infinitive]);
     }
   });
+
+  it('has well-formed grammar exercises', () => {
+    const ids = level.grammar.map((l) => l.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const lesson of level.grammar) {
+      expect(lesson.rule.en && lesson.rule.de, lesson.id).toBeTruthy();
+      for (const item of lesson.items) {
+        const options = item.options ?? lesson.options;
+        const label = `${lesson.id}: ${item.q}`;
+        expect(options, label).toContain(item.a);
+        expect(new Set(options).size, label).toBe(options.length);
+        const gaps = item.q.split('___').length - 1;
+        // Either a fill-in-the-gap sentence, or a prompt whose options are whole sentences.
+        expect(gaps === 1 || (gaps === 0 && lesson.shuffle), label).toBe(true);
+        // A gap at the start of the sentence needs capitalised options.
+        if (item.q.startsWith('___')) expect(item.a[0], label).toBe(item.a[0].toUpperCase());
+      }
+    }
+  });
 });

@@ -785,6 +785,29 @@ a.mode-card:active {
   font-weight: 600;
 }
 
+/* Grammar */
+.gap-sentence {
+  font-size: clamp(1.3rem, 6vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 8px 36px 0;
+}
+.gap-filled {
+  color: var(--ok);
+}
+.grammar-rule {
+  margin: 12px auto 0;
+  max-width: 34em;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.rule-box {
+  background: var(--surface-2);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 12px 0 0;
+}
+
 /* Sentence builder */
 .sentence-card {
   padding: 24px 16px;

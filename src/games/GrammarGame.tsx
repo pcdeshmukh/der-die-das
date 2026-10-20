@@ -1,0 +1,61 @@
+import { useState } from 'preact/hooks';
+import { SpeakButton } from '../components/NounPrompt';
+import type { GrammarRef } from '../data/types';
+import { uiLang } from '../lib/i18n';
+import { shuffle } from '../lib/random';
+import { pickWords } from '../lib/srs';
+import { progress } from '../lib/store';
+import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
+import type { GameProps } from './types';
+
+const ROUND_SIZE = 10;
+const GAP = '___';
+
+/** At most four options; long lists (question words) keep the answer plus three others, in list order. */
+function optionsFor(item: GrammarRef): string[] {
+  const all = item.options ?? item.lesson.options;
+  if (item.lesson.shuffle) return shuffle(all);
+  if (all.length <= 4) return all;
+  const keep = new Set([item.a, ...shuffle(all.filter((o) => o !== item.a)).slice(0, 3)]);
+  return all.filter((o) => keep.has(o));
+}
+
+function GapSentence({ item, answered }: { item: GrammarRef; answered: boolean }) {
+  const [before, after] = item.q.split(GAP);
+  return (
+    <div class="gap-sentence">
+      {before}
+      <span class={answered ? 'gap-filled' : 'art-blank'}>{answered ? item.a : GAP}</span>
+      {after}
+    </div>
+  );
+}
+
+export function GrammarGame({ pool, starKey, onRetry, onExit }: GameProps<GrammarRef>) {
+  const [questions] = useState(() =>
+    pickWords(pool, progress.peek().words, 'grammar', Math.min(ROUND_SIZE, pool.length)).map((item): ChoiceQuestion => {
+      const hasGap = item.q.includes(GAP);
+      // The filled-in sentence; for "pick the sentence" items the answer is the sentence.
+      const full = hasGap ? item.q.replace(GAP, item.a) : item.a;
+      const spokenPart = full.split(' – ')[0];
+      return {
+        key: item.id,
+        statId: item.id,
+        prompt: (answered) => (
+          <>
+            {hasGap ? <GapSentence item={item} answered={answered} /> : <div class="noun-word">{item.q}</div>}
+            <div class="noun-hint">{item.en}</div>
+            {answered && <div class="grammar-rule">💡 {item.lesson.rule[uiLang()]}</div>}
+            <SpeakButton text={answered ? spokenPart : hasGap ? item.q.replace(GAP, '…') : item.q} />
+          </>
+        ),
+        options: optionsFor(item),
+        answer: item.a,
+        sayAfter: spokenPart,
+        solution: <b>{item.a}</b>,
+        review: { label: full, sub: item.en, emoji: item.lesson.emoji, say: spokenPart },
+      };
+    }),
+  );
+  return <ChoiceGame questions={questions} skill="grammar" starKey={starKey} layout="grid" onRetry={onRetry} onExit={onExit} />;
+}

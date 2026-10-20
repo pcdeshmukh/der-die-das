@@ -1,7 +1,7 @@
 import { wordsOf } from '../data';
 import type { Level } from '../data/types';
 import { t, uiLang } from '../lib/i18n';
-import { MODES, NUMBERS, REVIEW, MIXED, VERBS, modesFor, poolFor } from '../lib/modes';
+import { GRAMMAR_PREFIX, MODES, NUMBERS, REVIEW, MIXED, VERBS, modesFor, poolFor } from '../lib/modes';
 import { href } from '../lib/router';
 import { progress } from '../lib/store';
 
@@ -68,6 +68,15 @@ export function LevelScreen({ level }: { level: Level }) {
             {t('numbersSub')} · <StarCount level={level} topicId={NUMBERS} />
           </span>
         </a>
+        {level.grammar.map((lesson) => (
+          <a class="topic-card" href={href(level.slug, GRAMMAR_PREFIX + lesson.id)}>
+            <span class="topic-emoji">{lesson.emoji}</span>
+            <span class="topic-name">{lesson.title[uiLang()]}</span>
+            <span class="topic-meta">
+              {t('exercises', { n: lesson.items.length })} · <StarCount level={level} topicId={GRAMMAR_PREFIX + lesson.id} />
+            </span>
+          </a>
+        ))}
       </div>
 
       <h2 class="section-title">{t('topics')}</h2>

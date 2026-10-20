@@ -50,6 +50,31 @@ export interface VerbForm {
   person: number;
 }
 
+export interface GrammarItem {
+  /** sentence with one "___" gap, or (when the lesson has no gap) the prompt itself */
+  q: string;
+  a: string;
+  en: string;
+  /** overrides the lesson's options */
+  options?: string[];
+}
+
+export interface GrammarLesson {
+  id: string;
+  title: { de: string; en: string };
+  emoji: string;
+  rule: { de: string; en: string };
+  options: string[];
+  /** shuffle options (e.g. whole sentences); otherwise they keep a fixed, learnable order */
+  shuffle?: boolean;
+  items: GrammarItem[];
+}
+
+export interface GrammarRef extends GrammarItem {
+  id: string;
+  lesson: GrammarLesson;
+}
+
 export type LevelId = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
 export interface Level {
@@ -63,4 +88,5 @@ export interface Level {
     prompts: string[][];
     verbs: Verb[];
   } | null;
+  grammar: GrammarLesson[];
 }
