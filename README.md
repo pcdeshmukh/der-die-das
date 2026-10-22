@@ -24,6 +24,17 @@ with its own streak and a bonus.
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
 
+## A2 course
+
+A2 builds on A1 with its own 24-chapter syllabus (*Familie und Verwandte* → *Träume und Wünsche*):
+303 nouns in 12 topics, 72 sentences, 50 verbs, 32 grammar lessons (383 exercises) and 24 phrase
+sets (192 situations). The verb page adds **Präteritum** and **Perfekt** (*hat gemacht* or
+*ist gegangen*?) next to present-tense conjugation. The daily challenge follows the level you last opened.
+
+All course content is machine-written; corrections from native speakers are welcome.
+
+## Languages
+
 Menus are available in English, German and Spanish. Meanings and translations are shown in English
 or Spanish; with German menus you choose which one in Settings.
 
@@ -47,7 +58,7 @@ Content lives in `src/data/<level>/`. Each topic file has `nouns` and `sentences
 { "de": "Wo ist der Bahnhof?", "en": "Where is the train station?", "es": "¿Dónde está la estación de tren?" }
 ```
 
-Verbs are in `verbs.json` with their six present-tense forms. Grammar lessons are in `grammar*.json`
+Verbs are in `verbs.json` with their six present-tense forms (from A2 also `preterite` and `perfect`, e.g. `"ist gegangen"`). Grammar lessons are in `grammar*.json`
 (a rule plus gap sentences like `"Ich habe ___ Hund."`), phrase sets in `phrases*.json`
 (a situation, the right German phrase and wrong ones), and `chapters.json` maps the syllabus
 chapters to all of these. Numbers, times and the alphabet are generated.

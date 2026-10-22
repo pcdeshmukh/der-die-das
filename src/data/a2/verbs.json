@@ -1,0 +1,1135 @@
+{
+  "pronouns": [
+    "ich",
+    "du",
+    "er/sie/es",
+    "wir",
+    "ihr",
+    "sie/Sie"
+  ],
+  "prompts": [
+    [
+      "ich"
+    ],
+    [
+      "du"
+    ],
+    [
+      "er",
+      "es",
+      "sie (she)"
+    ],
+    [
+      "wir"
+    ],
+    [
+      "ihr"
+    ],
+    [
+      "sie (they)",
+      "Sie (formal)"
+    ]
+  ],
+  "verbs": [
+    {
+      "infinitive": "sein",
+      "en": "to be",
+      "es": "ser, estar",
+      "present": [
+        "bin",
+        "bist",
+        "ist",
+        "sind",
+        "seid",
+        "sind"
+      ],
+      "preterite": [
+        "war",
+        "warst",
+        "war",
+        "waren",
+        "wart",
+        "waren"
+      ],
+      "perfect": "ist gewesen"
+    },
+    {
+      "infinitive": "haben",
+      "en": "to have",
+      "es": "tener",
+      "present": [
+        "habe",
+        "hast",
+        "hat",
+        "haben",
+        "habt",
+        "haben"
+      ],
+      "preterite": [
+        "hatte",
+        "hattest",
+        "hatte",
+        "hatten",
+        "hattet",
+        "hatten"
+      ],
+      "perfect": "hat gehabt"
+    },
+    {
+      "infinitive": "werden",
+      "en": "to become",
+      "es": "llegar a ser, volverse",
+      "present": [
+        "werde",
+        "wirst",
+        "wird",
+        "werden",
+        "werdet",
+        "werden"
+      ],
+      "preterite": [
+        "wurde",
+        "wurdest",
+        "wurde",
+        "wurden",
+        "wurdet",
+        "wurden"
+      ],
+      "perfect": "ist geworden"
+    },
+    {
+      "infinitive": "können",
+      "en": "can, to be able to",
+      "es": "poder",
+      "present": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "preterite": [
+        "konnte",
+        "konntest",
+        "konnte",
+        "konnten",
+        "konntet",
+        "konnten"
+      ],
+      "perfect": "hat gekonnt"
+    },
+    {
+      "infinitive": "müssen",
+      "en": "must, to have to",
+      "es": "tener que",
+      "present": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "preterite": [
+        "musste",
+        "musstest",
+        "musste",
+        "mussten",
+        "musstet",
+        "mussten"
+      ],
+      "perfect": "hat gemusst"
+    },
+    {
+      "infinitive": "wollen",
+      "en": "to want",
+      "es": "querer",
+      "present": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "preterite": [
+        "wollte",
+        "wolltest",
+        "wollte",
+        "wollten",
+        "wolltet",
+        "wollten"
+      ],
+      "perfect": "hat gewollt"
+    },
+    {
+      "infinitive": "dürfen",
+      "en": "may, to be allowed to",
+      "es": "poder (tener permiso)",
+      "present": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "preterite": [
+        "durfte",
+        "durftest",
+        "durfte",
+        "durften",
+        "durftet",
+        "durften"
+      ],
+      "perfect": "hat gedurft"
+    },
+    {
+      "infinitive": "sollen",
+      "en": "should, to be supposed to",
+      "es": "deber",
+      "present": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "preterite": [
+        "sollte",
+        "solltest",
+        "sollte",
+        "sollten",
+        "solltet",
+        "sollten"
+      ],
+      "perfect": "hat gesollt"
+    },
+    {
+      "infinitive": "mögen",
+      "en": "to like",
+      "es": "gustar",
+      "present": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "preterite": [
+        "mochte",
+        "mochtest",
+        "mochte",
+        "mochten",
+        "mochtet",
+        "mochten"
+      ],
+      "perfect": "hat gemocht"
+    },
+    {
+      "infinitive": "gehen",
+      "en": "to go (on foot)",
+      "es": "ir (a pie)",
+      "present": [
+        "gehe",
+        "gehst",
+        "geht",
+        "gehen",
+        "geht",
+        "gehen"
+      ],
+      "preterite": [
+        "ging",
+        "gingst",
+        "ging",
+        "gingen",
+        "gingt",
+        "gingen"
+      ],
+      "perfect": "ist gegangen"
+    },
+    {
+      "infinitive": "kommen",
+      "en": "to come",
+      "es": "venir",
+      "present": [
+        "komme",
+        "kommst",
+        "kommt",
+        "kommen",
+        "kommt",
+        "kommen"
+      ],
+      "preterite": [
+        "kam",
+        "kamst",
+        "kam",
+        "kamen",
+        "kamt",
+        "kamen"
+      ],
+      "perfect": "ist gekommen"
+    },
+    {
+      "infinitive": "fahren",
+      "en": "to drive, to go (by vehicle)",
+      "es": "conducir, ir (en vehículo)",
+      "present": [
+        "fahre",
+        "fährst",
+        "fährt",
+        "fahren",
+        "fahrt",
+        "fahren"
+      ],
+      "preterite": [
+        "fuhr",
+        "fuhrst",
+        "fuhr",
+        "fuhren",
+        "fuhrt",
+        "fuhren"
+      ],
+      "perfect": "ist gefahren"
+    },
+    {
+      "infinitive": "sehen",
+      "en": "to see",
+      "es": "ver",
+      "present": [
+        "sehe",
+        "siehst",
+        "sieht",
+        "sehen",
+        "seht",
+        "sehen"
+      ],
+      "preterite": [
+        "sah",
+        "sahst",
+        "sah",
+        "sahen",
+        "saht",
+        "sahen"
+      ],
+      "perfect": "hat gesehen"
+    },
+    {
+      "infinitive": "essen",
+      "en": "to eat",
+      "es": "comer",
+      "present": [
+        "esse",
+        "isst",
+        "isst",
+        "essen",
+        "esst",
+        "essen"
+      ],
+      "preterite": [
+        "aß",
+        "aßest",
+        "aß",
+        "aßen",
+        "aßt",
+        "aßen"
+      ],
+      "perfect": "hat gegessen"
+    },
+    {
+      "infinitive": "trinken",
+      "en": "to drink",
+      "es": "beber",
+      "present": [
+        "trinke",
+        "trinkst",
+        "trinkt",
+        "trinken",
+        "trinkt",
+        "trinken"
+      ],
+      "preterite": [
+        "trank",
+        "trankst",
+        "trank",
+        "tranken",
+        "trankt",
+        "tranken"
+      ],
+      "perfect": "hat getrunken"
+    },
+    {
+      "infinitive": "schlafen",
+      "en": "to sleep",
+      "es": "dormir",
+      "present": [
+        "schlafe",
+        "schläfst",
+        "schläft",
+        "schlafen",
+        "schlaft",
+        "schlafen"
+      ],
+      "preterite": [
+        "schlief",
+        "schliefst",
+        "schlief",
+        "schliefen",
+        "schlieft",
+        "schliefen"
+      ],
+      "perfect": "hat geschlafen"
+    },
+    {
+      "infinitive": "lesen",
+      "en": "to read",
+      "es": "leer",
+      "present": [
+        "lese",
+        "liest",
+        "liest",
+        "lesen",
+        "lest",
+        "lesen"
+      ],
+      "preterite": [
+        "las",
+        "last",
+        "las",
+        "lasen",
+        "last",
+        "lasen"
+      ],
+      "perfect": "hat gelesen"
+    },
+    {
+      "infinitive": "sprechen",
+      "en": "to speak",
+      "es": "hablar",
+      "present": [
+        "spreche",
+        "sprichst",
+        "spricht",
+        "sprechen",
+        "sprecht",
+        "sprechen"
+      ],
+      "preterite": [
+        "sprach",
+        "sprachst",
+        "sprach",
+        "sprachen",
+        "spracht",
+        "sprachen"
+      ],
+      "perfect": "hat gesprochen"
+    },
+    {
+      "infinitive": "nehmen",
+      "en": "to take",
+      "es": "tomar, coger",
+      "present": [
+        "nehme",
+        "nimmst",
+        "nimmt",
+        "nehmen",
+        "nehmt",
+        "nehmen"
+      ],
+      "preterite": [
+        "nahm",
+        "nahmst",
+        "nahm",
+        "nahmen",
+        "nahmt",
+        "nahmen"
+      ],
+      "perfect": "hat genommen"
+    },
+    {
+      "infinitive": "geben",
+      "en": "to give",
+      "es": "dar",
+      "present": [
+        "gebe",
+        "gibst",
+        "gibt",
+        "geben",
+        "gebt",
+        "geben"
+      ],
+      "preterite": [
+        "gab",
+        "gabst",
+        "gab",
+        "gaben",
+        "gabt",
+        "gaben"
+      ],
+      "perfect": "hat gegeben"
+    },
+    {
+      "infinitive": "wissen",
+      "en": "to know (a fact)",
+      "es": "saber",
+      "present": [
+        "weiß",
+        "weißt",
+        "weiß",
+        "wissen",
+        "wisst",
+        "wissen"
+      ],
+      "preterite": [
+        "wusste",
+        "wusstest",
+        "wusste",
+        "wussten",
+        "wusstet",
+        "wussten"
+      ],
+      "perfect": "hat gewusst"
+    },
+    {
+      "infinitive": "finden",
+      "en": "to find",
+      "es": "encontrar",
+      "present": [
+        "finde",
+        "findest",
+        "findet",
+        "finden",
+        "findet",
+        "finden"
+      ],
+      "preterite": [
+        "fand",
+        "fandest",
+        "fand",
+        "fanden",
+        "fandet",
+        "fanden"
+      ],
+      "perfect": "hat gefunden"
+    },
+    {
+      "infinitive": "bleiben",
+      "en": "to stay",
+      "es": "quedarse",
+      "present": [
+        "bleibe",
+        "bleibst",
+        "bleibt",
+        "bleiben",
+        "bleibt",
+        "bleiben"
+      ],
+      "preterite": [
+        "blieb",
+        "bliebst",
+        "blieb",
+        "blieben",
+        "bliebt",
+        "blieben"
+      ],
+      "perfect": "ist geblieben"
+    },
+    {
+      "infinitive": "machen",
+      "en": "to do, to make",
+      "es": "hacer",
+      "present": [
+        "mache",
+        "machst",
+        "macht",
+        "machen",
+        "macht",
+        "machen"
+      ],
+      "preterite": [
+        "machte",
+        "machtest",
+        "machte",
+        "machten",
+        "machtet",
+        "machten"
+      ],
+      "perfect": "hat gemacht"
+    },
+    {
+      "infinitive": "arbeiten",
+      "en": "to work",
+      "es": "trabajar",
+      "present": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten",
+        "arbeitet",
+        "arbeiten"
+      ],
+      "preterite": [
+        "arbeitete",
+        "arbeitetest",
+        "arbeitete",
+        "arbeiteten",
+        "arbeitetet",
+        "arbeiteten"
+      ],
+      "perfect": "hat gearbeitet"
+    },
+    {
+      "infinitive": "empfehlen",
+      "en": "to recommend",
+      "es": "recomendar",
+      "present": [
+        "empfehle",
+        "empfiehlst",
+        "empfiehlt",
+        "empfehlen",
+        "empfehlt",
+        "empfehlen"
+      ],
+      "preterite": [
+        "empfahl",
+        "empfahlst",
+        "empfahl",
+        "empfahlen",
+        "empfahlt",
+        "empfahlen"
+      ],
+      "perfect": "hat empfohlen"
+    },
+    {
+      "infinitive": "vergessen",
+      "en": "to forget",
+      "es": "olvidar",
+      "present": [
+        "vergesse",
+        "vergisst",
+        "vergisst",
+        "vergessen",
+        "vergesst",
+        "vergessen"
+      ],
+      "preterite": [
+        "vergaß",
+        "vergaßest",
+        "vergaß",
+        "vergaßen",
+        "vergaßt",
+        "vergaßen"
+      ],
+      "perfect": "hat vergessen"
+    },
+    {
+      "infinitive": "verlieren",
+      "en": "to lose",
+      "es": "perder",
+      "present": [
+        "verliere",
+        "verlierst",
+        "verliert",
+        "verlieren",
+        "verliert",
+        "verlieren"
+      ],
+      "preterite": [
+        "verlor",
+        "verlorst",
+        "verlor",
+        "verloren",
+        "verlort",
+        "verloren"
+      ],
+      "perfect": "hat verloren"
+    },
+    {
+      "infinitive": "beginnen",
+      "en": "to begin",
+      "es": "comenzar",
+      "present": [
+        "beginne",
+        "beginnst",
+        "beginnt",
+        "beginnen",
+        "beginnt",
+        "beginnen"
+      ],
+      "preterite": [
+        "begann",
+        "begannst",
+        "begann",
+        "begannen",
+        "begannt",
+        "begannen"
+      ],
+      "perfect": "hat begonnen"
+    },
+    {
+      "infinitive": "bringen",
+      "en": "to bring",
+      "es": "traer",
+      "present": [
+        "bringe",
+        "bringst",
+        "bringt",
+        "bringen",
+        "bringt",
+        "bringen"
+      ],
+      "preterite": [
+        "brachte",
+        "brachtest",
+        "brachte",
+        "brachten",
+        "brachtet",
+        "brachten"
+      ],
+      "perfect": "hat gebracht"
+    },
+    {
+      "infinitive": "denken",
+      "en": "to think",
+      "es": "pensar",
+      "present": [
+        "denke",
+        "denkst",
+        "denkt",
+        "denken",
+        "denkt",
+        "denken"
+      ],
+      "preterite": [
+        "dachte",
+        "dachtest",
+        "dachte",
+        "dachten",
+        "dachtet",
+        "dachten"
+      ],
+      "perfect": "hat gedacht"
+    },
+    {
+      "infinitive": "kennen",
+      "en": "to know (be familiar with)",
+      "es": "conocer",
+      "present": [
+        "kenne",
+        "kennst",
+        "kennt",
+        "kennen",
+        "kennt",
+        "kennen"
+      ],
+      "preterite": [
+        "kannte",
+        "kanntest",
+        "kannte",
+        "kannten",
+        "kanntet",
+        "kannten"
+      ],
+      "perfect": "hat gekannt"
+    },
+    {
+      "infinitive": "laufen",
+      "en": "to run, to walk",
+      "es": "correr, andar",
+      "present": [
+        "laufe",
+        "läufst",
+        "läuft",
+        "laufen",
+        "lauft",
+        "laufen"
+      ],
+      "preterite": [
+        "lief",
+        "liefst",
+        "lief",
+        "liefen",
+        "lieft",
+        "liefen"
+      ],
+      "perfect": "ist gelaufen"
+    },
+    {
+      "infinitive": "schreiben",
+      "en": "to write",
+      "es": "escribir",
+      "present": [
+        "schreibe",
+        "schreibst",
+        "schreibt",
+        "schreiben",
+        "schreibt",
+        "schreiben"
+      ],
+      "preterite": [
+        "schrieb",
+        "schriebst",
+        "schrieb",
+        "schrieben",
+        "schriebt",
+        "schrieben"
+      ],
+      "perfect": "hat geschrieben"
+    },
+    {
+      "infinitive": "schwimmen",
+      "en": "to swim",
+      "es": "nadar",
+      "present": [
+        "schwimme",
+        "schwimmst",
+        "schwimmt",
+        "schwimmen",
+        "schwimmt",
+        "schwimmen"
+      ],
+      "preterite": [
+        "schwamm",
+        "schwammst",
+        "schwamm",
+        "schwammen",
+        "schwammt",
+        "schwammen"
+      ],
+      "perfect": "ist geschwommen"
+    },
+    {
+      "infinitive": "stehen",
+      "en": "to stand",
+      "es": "estar de pie",
+      "present": [
+        "stehe",
+        "stehst",
+        "steht",
+        "stehen",
+        "steht",
+        "stehen"
+      ],
+      "preterite": [
+        "stand",
+        "standest",
+        "stand",
+        "standen",
+        "standet",
+        "standen"
+      ],
+      "perfect": "hat gestanden"
+    },
+    {
+      "infinitive": "tragen",
+      "en": "to carry, to wear",
+      "es": "llevar",
+      "present": [
+        "trage",
+        "trägst",
+        "trägt",
+        "tragen",
+        "tragt",
+        "tragen"
+      ],
+      "preterite": [
+        "trug",
+        "trugst",
+        "trug",
+        "trugen",
+        "trugt",
+        "trugen"
+      ],
+      "perfect": "hat getragen"
+    },
+    {
+      "infinitive": "treffen",
+      "en": "to meet",
+      "es": "quedar con, encontrarse con",
+      "present": [
+        "treffe",
+        "triffst",
+        "trifft",
+        "treffen",
+        "trefft",
+        "treffen"
+      ],
+      "preterite": [
+        "traf",
+        "trafst",
+        "traf",
+        "trafen",
+        "traft",
+        "trafen"
+      ],
+      "perfect": "hat getroffen"
+    },
+    {
+      "infinitive": "verstehen",
+      "en": "to understand",
+      "es": "entender",
+      "present": [
+        "verstehe",
+        "verstehst",
+        "versteht",
+        "verstehen",
+        "versteht",
+        "verstehen"
+      ],
+      "preterite": [
+        "verstand",
+        "verstandest",
+        "verstand",
+        "verstanden",
+        "verstandet",
+        "verstanden"
+      ],
+      "perfect": "hat verstanden"
+    },
+    {
+      "infinitive": "umziehen",
+      "en": "to move (house)",
+      "es": "mudarse",
+      "present": [
+        "ziehe um",
+        "ziehst um",
+        "zieht um",
+        "ziehen um",
+        "zieht um",
+        "ziehen um"
+      ],
+      "preterite": [
+        "zog um",
+        "zogst um",
+        "zog um",
+        "zogen um",
+        "zogt um",
+        "zogen um"
+      ],
+      "perfect": "ist umgezogen"
+    },
+    {
+      "infinitive": "einladen",
+      "en": "to invite",
+      "es": "invitar",
+      "present": [
+        "lade ein",
+        "lädst ein",
+        "lädt ein",
+        "laden ein",
+        "ladet ein",
+        "laden ein"
+      ],
+      "preterite": [
+        "lud ein",
+        "ludst ein",
+        "lud ein",
+        "luden ein",
+        "ludet ein",
+        "luden ein"
+      ],
+      "perfect": "hat eingeladen"
+    },
+    {
+      "infinitive": "anfangen",
+      "en": "to start",
+      "es": "empezar",
+      "present": [
+        "fange an",
+        "fängst an",
+        "fängt an",
+        "fangen an",
+        "fangt an",
+        "fangen an"
+      ],
+      "preterite": [
+        "fing an",
+        "fingst an",
+        "fing an",
+        "fingen an",
+        "fingt an",
+        "fingen an"
+      ],
+      "perfect": "hat angefangen"
+    },
+    {
+      "infinitive": "aufstehen",
+      "en": "to get up",
+      "es": "levantarse",
+      "present": [
+        "stehe auf",
+        "stehst auf",
+        "steht auf",
+        "stehen auf",
+        "steht auf",
+        "stehen auf"
+      ],
+      "preterite": [
+        "stand auf",
+        "standest auf",
+        "stand auf",
+        "standen auf",
+        "standet auf",
+        "standen auf"
+      ],
+      "perfect": "ist aufgestanden"
+    },
+    {
+      "infinitive": "ankommen",
+      "en": "to arrive",
+      "es": "llegar",
+      "present": [
+        "komme an",
+        "kommst an",
+        "kommt an",
+        "kommen an",
+        "kommt an",
+        "kommen an"
+      ],
+      "preterite": [
+        "kam an",
+        "kamst an",
+        "kam an",
+        "kamen an",
+        "kamt an",
+        "kamen an"
+      ],
+      "perfect": "ist angekommen"
+    },
+    {
+      "infinitive": "mitbringen",
+      "en": "to bring along",
+      "es": "traer (consigo)",
+      "present": [
+        "bringe mit",
+        "bringst mit",
+        "bringt mit",
+        "bringen mit",
+        "bringt mit",
+        "bringen mit"
+      ],
+      "preterite": [
+        "brachte mit",
+        "brachtest mit",
+        "brachte mit",
+        "brachten mit",
+        "brachtet mit",
+        "brachten mit"
+      ],
+      "perfect": "hat mitgebracht"
+    },
+    {
+      "infinitive": "erzählen",
+      "en": "to tell (a story)",
+      "es": "contar",
+      "present": [
+        "erzähle",
+        "erzählst",
+        "erzählt",
+        "erzählen",
+        "erzählt",
+        "erzählen"
+      ],
+      "preterite": [
+        "erzählte",
+        "erzähltest",
+        "erzählte",
+        "erzählten",
+        "erzähltet",
+        "erzählten"
+      ],
+      "perfect": "hat erzählt"
+    },
+    {
+      "infinitive": "besuchen",
+      "en": "to visit",
+      "es": "visitar",
+      "present": [
+        "besuche",
+        "besuchst",
+        "besucht",
+        "besuchen",
+        "besucht",
+        "besuchen"
+      ],
+      "preterite": [
+        "besuchte",
+        "besuchtest",
+        "besuchte",
+        "besuchten",
+        "besuchtet",
+        "besuchten"
+      ],
+      "perfect": "hat besucht"
+    },
+    {
+      "infinitive": "bezahlen",
+      "en": "to pay",
+      "es": "pagar",
+      "present": [
+        "bezahle",
+        "bezahlst",
+        "bezahlt",
+        "bezahlen",
+        "bezahlt",
+        "bezahlen"
+      ],
+      "preterite": [
+        "bezahlte",
+        "bezahltest",
+        "bezahlte",
+        "bezahlten",
+        "bezahltet",
+        "bezahlten"
+      ],
+      "perfect": "hat bezahlt"
+    },
+    {
+      "infinitive": "reparieren",
+      "en": "to repair",
+      "es": "reparar, arreglar",
+      "present": [
+        "repariere",
+        "reparierst",
+        "repariert",
+        "reparieren",
+        "repariert",
+        "reparieren"
+      ],
+      "preterite": [
+        "reparierte",
+        "repariertest",
+        "reparierte",
+        "reparierten",
+        "repariertet",
+        "reparierten"
+      ],
+      "perfect": "hat repariert"
+    },
+    {
+      "infinitive": "bestellen",
+      "en": "to order",
+      "es": "pedir (encargar)",
+      "present": [
+        "bestelle",
+        "bestellst",
+        "bestellt",
+        "bestellen",
+        "bestellt",
+        "bestellen"
+      ],
+      "preterite": [
+        "bestellte",
+        "bestelltest",
+        "bestellte",
+        "bestellten",
+        "bestelltet",
+        "bestellten"
+      ],
+      "perfect": "hat bestellt"
+    }
+  ]
+}

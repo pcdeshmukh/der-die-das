@@ -1,0 +1,238 @@
+{
+  "id": "culture",
+  "title": {
+    "de": "Kultur & Vereine",
+    "en": "Culture & clubs",
+    "es": "Cultura y asociaciones"
+  },
+  "emoji": "🎭",
+  "nouns": [
+    {
+      "de": "Kunst",
+      "article": "die",
+      "plural": null,
+      "en": "art",
+      "es": "arte",
+      "emoji": "🎨"
+    },
+    {
+      "de": "Künstler",
+      "article": "der",
+      "plural": "Künstler",
+      "en": "artist (male)",
+      "es": "artista (hombre)",
+      "emoji": "🧑‍🎨"
+    },
+    {
+      "de": "Künstlerin",
+      "article": "die",
+      "plural": "Künstlerinnen",
+      "en": "artist (female)",
+      "es": "artista (mujer)",
+      "emoji": "🧑‍🎨"
+    },
+    {
+      "de": "Ausstellung",
+      "article": "die",
+      "plural": "Ausstellungen",
+      "en": "exhibition",
+      "es": "exposición"
+    },
+    {
+      "de": "Galerie",
+      "article": "die",
+      "plural": "Galerien",
+      "en": "gallery",
+      "es": "galería"
+    },
+    {
+      "de": "Gemälde",
+      "article": "das",
+      "plural": "Gemälde",
+      "en": "painting",
+      "es": "cuadro",
+      "emoji": "🖼️"
+    },
+    {
+      "de": "Eintrittskarte",
+      "article": "die",
+      "plural": "Eintrittskarten",
+      "en": "entrance ticket",
+      "es": "entrada",
+      "emoji": "🎟️"
+    },
+    {
+      "de": "Vorstellung",
+      "article": "die",
+      "plural": "Vorstellungen",
+      "en": "performance",
+      "es": "función"
+    },
+    {
+      "de": "Bühne",
+      "article": "die",
+      "plural": "Bühnen",
+      "en": "stage",
+      "es": "escenario"
+    },
+    {
+      "de": "Publikum",
+      "article": "das",
+      "plural": null,
+      "en": "audience",
+      "es": "público"
+    },
+    {
+      "de": "Schauspieler",
+      "article": "der",
+      "plural": "Schauspieler",
+      "en": "actor",
+      "es": "actor",
+      "emoji": "🎭"
+    },
+    {
+      "de": "Schauspielerin",
+      "article": "die",
+      "plural": "Schauspielerinnen",
+      "en": "actress",
+      "es": "actriz",
+      "emoji": "🎭"
+    },
+    {
+      "de": "Sänger",
+      "article": "der",
+      "plural": "Sänger",
+      "en": "singer (male)",
+      "es": "cantante (hombre)",
+      "emoji": "🎤"
+    },
+    {
+      "de": "Sängerin",
+      "article": "die",
+      "plural": "Sängerinnen",
+      "en": "singer (female)",
+      "es": "cantante (mujer)",
+      "emoji": "🎤"
+    },
+    {
+      "de": "Oper",
+      "article": "die",
+      "plural": "Opern",
+      "en": "opera",
+      "es": "ópera"
+    },
+    {
+      "de": "Orchester",
+      "article": "das",
+      "plural": "Orchester",
+      "en": "orchestra",
+      "es": "orquesta",
+      "emoji": "🎻"
+    },
+    {
+      "de": "Chor",
+      "article": "der",
+      "plural": "Chöre",
+      "en": "choir",
+      "es": "coro"
+    },
+    {
+      "de": "Festival",
+      "article": "das",
+      "plural": "Festivals",
+      "en": "festival",
+      "es": "festival"
+    },
+    {
+      "de": "Komödie",
+      "article": "die",
+      "plural": "Komödien",
+      "en": "comedy",
+      "es": "comedia"
+    },
+    {
+      "de": "Roman",
+      "article": "der",
+      "plural": "Romane",
+      "en": "novel",
+      "es": "novela",
+      "emoji": "📖"
+    },
+    {
+      "de": "Krimi",
+      "article": "der",
+      "plural": "Krimis",
+      "en": "crime novel",
+      "es": "novela policíaca",
+      "emoji": "🕵️"
+    },
+    {
+      "de": "Verein",
+      "article": "der",
+      "plural": "Vereine",
+      "en": "club",
+      "es": "asociación"
+    },
+    {
+      "de": "Mitglied",
+      "article": "das",
+      "plural": "Mitglieder",
+      "en": "member",
+      "es": "miembro"
+    },
+    {
+      "de": "Mannschaft",
+      "article": "die",
+      "plural": "Mannschaften",
+      "en": "team",
+      "es": "equipo"
+    },
+    {
+      "de": "Training",
+      "article": "das",
+      "plural": "Trainings",
+      "en": "training",
+      "es": "entrenamiento"
+    },
+    {
+      "de": "Turnier",
+      "article": "das",
+      "plural": "Turniere",
+      "en": "tournament",
+      "es": "torneo",
+      "emoji": "🏆"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Die Ausstellung war sehr interessant.",
+      "en": "The exhibition was very interesting.",
+      "es": "La exposición fue muy interesante."
+    },
+    {
+      "de": "Hast du schon eine Eintrittskarte?",
+      "en": "Do you already have a ticket?",
+      "es": "¿Ya tienes entrada?"
+    },
+    {
+      "de": "Die Sängerin hat wunderbar gesungen.",
+      "en": "The singer sang wonderfully.",
+      "es": "La cantante ha cantado de maravilla."
+    },
+    {
+      "de": "Ich bin Mitglied in einem Verein.",
+      "en": "I am a member of a club.",
+      "es": "Soy miembro de una asociación."
+    },
+    {
+      "de": "Unsere Mannschaft hat das Turnier gewonnen.",
+      "en": "Our team won the tournament.",
+      "es": "Nuestro equipo ha ganado el torneo."
+    },
+    {
+      "de": "Liest du gern Krimis?",
+      "en": "Do you like reading crime novels?",
+      "es": "¿Te gusta leer novelas policíacas?"
+    }
+  ]
+}

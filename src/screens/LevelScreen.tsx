@@ -1,9 +1,10 @@
+import { useEffect } from 'preact/hooks';
 import { wordsOf } from '../data';
 import type { Level } from '../data/types';
 import { t, uiLang } from '../lib/i18n';
 import { ALPHABET, MODES, NUMBERS, REVIEW, MIXED, VERBS, describeTopic, modesFor, poolFor } from '../lib/modes';
 import { href } from '../lib/router';
-import { progress } from '../lib/store';
+import { progress, setCurrentLevel } from '../lib/store';
 import { StarCount, TopicCard } from './TopicCard';
 
 /** Stars earned in all of a chapter's linked topics, as a share for the progress bar. */
@@ -21,6 +22,7 @@ function chapterProgress(level: Level, links: string[]): number {
 }
 
 export function LevelScreen({ level }: { level: Level }) {
+  useEffect(() => setCurrentLevel(level.id), [level.id]);
   const p = progress.value;
   const reviewCount = MODES.filter((m) => m.skill).reduce(
     (n, m) => n + (poolFor(level, REVIEW, m, p.words)?.length ?? 0),

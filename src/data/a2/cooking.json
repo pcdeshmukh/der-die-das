@@ -1,0 +1,234 @@
+{
+  "id": "cooking",
+  "title": {
+    "de": "Kochen & Ernährung",
+    "en": "Cooking & nutrition",
+    "es": "Cocina y alimentación"
+  },
+  "emoji": "🍳",
+  "nouns": [
+    {
+      "de": "Rezept",
+      "article": "das",
+      "plural": "Rezepte",
+      "en": "recipe",
+      "es": "receta",
+      "emoji": "📖"
+    },
+    {
+      "de": "Zutat",
+      "article": "die",
+      "plural": "Zutaten",
+      "en": "ingredient",
+      "es": "ingrediente"
+    },
+    {
+      "de": "Mehl",
+      "article": "das",
+      "plural": null,
+      "en": "flour",
+      "es": "harina"
+    },
+    {
+      "de": "Gewürz",
+      "article": "das",
+      "plural": "Gewürze",
+      "en": "spice",
+      "es": "especia"
+    },
+    {
+      "de": "Pfeffer",
+      "article": "der",
+      "plural": null,
+      "en": "pepper",
+      "es": "pimienta"
+    },
+    {
+      "de": "Knoblauch",
+      "article": "der",
+      "plural": null,
+      "en": "garlic",
+      "es": "ajo",
+      "emoji": "🧄"
+    },
+    {
+      "de": "Zwiebel",
+      "article": "die",
+      "plural": "Zwiebeln",
+      "en": "onion",
+      "es": "cebolla",
+      "emoji": "🧅"
+    },
+    {
+      "de": "Sahne",
+      "article": "die",
+      "plural": null,
+      "en": "cream",
+      "es": "nata"
+    },
+    {
+      "de": "Quark",
+      "article": "der",
+      "plural": null,
+      "en": "quark",
+      "es": "requesón"
+    },
+    {
+      "de": "Öl",
+      "article": "das",
+      "plural": "Öle",
+      "en": "oil",
+      "es": "aceite",
+      "emoji": "🫒"
+    },
+    {
+      "de": "Topf",
+      "article": "der",
+      "plural": "Töpfe",
+      "en": "pot, saucepan",
+      "es": "olla"
+    },
+    {
+      "de": "Pfanne",
+      "article": "die",
+      "plural": "Pfannen",
+      "en": "frying pan",
+      "es": "sartén",
+      "emoji": "🍳"
+    },
+    {
+      "de": "Schüssel",
+      "article": "die",
+      "plural": "Schüsseln",
+      "en": "bowl",
+      "es": "bol",
+      "emoji": "🥣"
+    },
+    {
+      "de": "Besteck",
+      "article": "das",
+      "plural": "Bestecke",
+      "en": "cutlery",
+      "es": "cubiertos",
+      "emoji": "🍴"
+    },
+    {
+      "de": "Portion",
+      "article": "die",
+      "plural": "Portionen",
+      "en": "portion",
+      "es": "ración"
+    },
+    {
+      "de": "Geschmack",
+      "article": "der",
+      "plural": "Geschmäcker",
+      "en": "taste",
+      "es": "sabor"
+    },
+    {
+      "de": "Ernährung",
+      "article": "die",
+      "plural": null,
+      "en": "diet, nutrition",
+      "es": "alimentación"
+    },
+    {
+      "de": "Vitamin",
+      "article": "das",
+      "plural": "Vitamine",
+      "en": "vitamin",
+      "es": "vitamina"
+    },
+    {
+      "de": "Kalorie",
+      "article": "die",
+      "plural": "Kalorien",
+      "en": "calorie",
+      "es": "caloría"
+    },
+    {
+      "de": "Vegetarier",
+      "article": "der",
+      "plural": "Vegetarier",
+      "en": "vegetarian (male)",
+      "es": "vegetariano"
+    },
+    {
+      "de": "Vegetarierin",
+      "article": "die",
+      "plural": "Vegetarierinnen",
+      "en": "vegetarian (female)",
+      "es": "vegetariana"
+    },
+    {
+      "de": "Getränk",
+      "article": "das",
+      "plural": "Getränke",
+      "en": "drink",
+      "es": "bebida",
+      "emoji": "🥤"
+    },
+    {
+      "de": "Vorspeise",
+      "article": "die",
+      "plural": "Vorspeisen",
+      "en": "starter",
+      "es": "entrante"
+    },
+    {
+      "de": "Hauptgericht",
+      "article": "das",
+      "plural": "Hauptgerichte",
+      "en": "main course",
+      "es": "plato principal"
+    },
+    {
+      "de": "Nachtisch",
+      "article": "der",
+      "plural": "Nachtische",
+      "en": "dessert",
+      "es": "postre",
+      "emoji": "🍮"
+    },
+    {
+      "de": "Speisekarte",
+      "article": "die",
+      "plural": "Speisekarten",
+      "en": "menu",
+      "es": "carta"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Kannst du mir das Rezept geben?",
+      "en": "Can you give me the recipe?",
+      "es": "¿Me puedes dar la receta?"
+    },
+    {
+      "de": "Wir brauchen noch zwei Zwiebeln.",
+      "en": "We still need two onions.",
+      "es": "Todavía necesitamos dos cebollas."
+    },
+    {
+      "de": "Die Suppe braucht noch etwas Pfeffer.",
+      "en": "The soup still needs some pepper.",
+      "es": "A la sopa le falta un poco de pimienta."
+    },
+    {
+      "de": "Gesunde Ernährung ist sehr wichtig.",
+      "en": "A healthy diet is very important.",
+      "es": "Una alimentación sana es muy importante."
+    },
+    {
+      "de": "Möchten Sie einen Nachtisch bestellen?",
+      "en": "Would you like to order a dessert?",
+      "es": "¿Quiere pedir un postre?"
+    },
+    {
+      "de": "Wo ist die große Pfanne?",
+      "en": "Where is the big frying pan?",
+      "es": "¿Dónde está la sartén grande?"
+    }
+  ]
+}

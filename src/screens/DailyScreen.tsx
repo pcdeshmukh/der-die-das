@@ -7,8 +7,11 @@ import { navigate } from '../lib/router';
 import { starsFor } from '../lib/srs';
 import { dailyStreak, progress, today } from '../lib/store';
 
-/** The challenge draws on the highest level that has content. */
-export const dailyLevel = () => LEVELS.filter((l) => l.topics.length).at(-1)!;
+/** The challenge draws on the level the player is working on (the last one they opened). */
+export function dailyLevel() {
+  const playable = LEVELS.filter((l) => l.topics.length);
+  return playable.find((l) => l.id === progress.peek().level) ?? playable[0];
+}
 
 function untilMidnight(): string {
   const now = new Date();

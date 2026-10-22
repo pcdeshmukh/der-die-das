@@ -3,11 +3,12 @@ import { useMemo, useState } from 'preact/hooks';
 import type { Level } from '../data/types';
 import { AlphabetGame } from '../games/AlphabetGame';
 import { ArticleGame } from '../games/ArticleGame';
-import { ConjugationGame } from '../games/ConjugationGame';
+import { ConjugationGame, PreteriteGame } from '../games/ConjugationGame';
 import { GrammarGame } from '../games/GrammarGame';
 import { ListenGame } from '../games/ListenGame';
 import { MatchGame } from '../games/MatchGame';
 import { NumbersGame } from '../games/NumbersGame';
+import { PerfectGame } from '../games/PerfectGame';
 import { PhraseGame } from '../games/PhraseGame';
 import { PluralGame } from '../games/PluralGame';
 import { SentenceGame } from '../games/SentenceGame';
@@ -27,6 +28,8 @@ const GAMES = {
   listen: ListenGame,
   sentences: SentenceGame,
   conjugate: ConjugationGame,
+  preterite: PreteriteGame,
+  perfect: PerfectGame,
   numbers: NumbersGame,
   time: TimeGame,
   grammar: GrammarGame,

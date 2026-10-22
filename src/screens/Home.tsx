@@ -1,5 +1,6 @@
 import { LEVELS } from '../data';
 import { DAILY_BONUS_XP } from '../games/DailyGame';
+import { dailyLevel } from './DailyScreen';
 import { t } from '../lib/i18n';
 import { href } from '../lib/router';
 import { currentStreak, dailyStreak, progress, today } from '../lib/store';
@@ -37,7 +38,7 @@ export function Home() {
         <span class="mode-text">
           <span class="mode-name">{t('daily')}</span>
           <span class="mode-desc">
-            {daily ? t('dailyDone', { c: daily.correct, n: daily.total }) : t('dailySub', { n: DAILY_BONUS_XP })}
+            {daily ? t('dailyDone', { c: daily.correct, n: daily.total }) : t('dailySub', { n: DAILY_BONUS_XP, level: dailyLevel().id })}
           </span>
         </span>
         <span class="badge" title={t('dailyStreak', { n: dailyStreak(p) })}>

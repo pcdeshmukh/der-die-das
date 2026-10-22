@@ -1,0 +1,236 @@
+{
+  "id": "work",
+  "title": {
+    "de": "Arbeitswelt",
+    "en": "The working world",
+    "es": "El mundo laboral"
+  },
+  "emoji": "💼",
+  "nouns": [
+    {
+      "de": "Lebenslauf",
+      "article": "der",
+      "plural": "Lebensläufe",
+      "en": "CV",
+      "es": "currículum",
+      "emoji": "📄"
+    },
+    {
+      "de": "Gehalt",
+      "article": "das",
+      "plural": "Gehälter",
+      "en": "salary",
+      "es": "sueldo",
+      "emoji": "💰"
+    },
+    {
+      "de": "Lohn",
+      "article": "der",
+      "plural": "Löhne",
+      "en": "wage",
+      "es": "salario",
+      "emoji": "💵"
+    },
+    {
+      "de": "Vertrag",
+      "article": "der",
+      "plural": "Verträge",
+      "en": "contract",
+      "es": "contrato",
+      "emoji": "📝"
+    },
+    {
+      "de": "Kündigung",
+      "article": "die",
+      "plural": "Kündigungen",
+      "en": "notice of termination",
+      "es": "despido"
+    },
+    {
+      "de": "Stelle",
+      "article": "die",
+      "plural": "Stellen",
+      "en": "job position",
+      "es": "puesto"
+    },
+    {
+      "de": "Arbeitsplatz",
+      "article": "der",
+      "plural": "Arbeitsplätze",
+      "en": "workplace",
+      "es": "lugar de trabajo"
+    },
+    {
+      "de": "Abteilung",
+      "article": "die",
+      "plural": "Abteilungen",
+      "en": "department",
+      "es": "departamento"
+    },
+    {
+      "de": "Erfahrung",
+      "article": "die",
+      "plural": "Erfahrungen",
+      "en": "experience",
+      "es": "experiencia"
+    },
+    {
+      "de": "Arbeitszeit",
+      "article": "die",
+      "plural": "Arbeitszeiten",
+      "en": "working hours",
+      "es": "horario laboral",
+      "emoji": "⏰"
+    },
+    {
+      "de": "Überstunde",
+      "article": "die",
+      "plural": "Überstunden",
+      "en": "overtime hour",
+      "es": "hora extra"
+    },
+    {
+      "de": "Schicht",
+      "article": "die",
+      "plural": "Schichten",
+      "en": "shift",
+      "es": "turno"
+    },
+    {
+      "de": "Ausbildung",
+      "article": "die",
+      "plural": "Ausbildungen",
+      "en": "vocational training",
+      "es": "formación profesional",
+      "emoji": "🎓"
+    },
+    {
+      "de": "Praktikum",
+      "article": "das",
+      "plural": "Praktika",
+      "en": "internship",
+      "es": "prácticas"
+    },
+    {
+      "de": "Vorstellungsgespräch",
+      "article": "das",
+      "plural": "Vorstellungsgespräche",
+      "en": "job interview",
+      "es": "entrevista de trabajo",
+      "emoji": "🤝"
+    },
+    {
+      "de": "Zeugnis",
+      "article": "das",
+      "plural": "Zeugnisse",
+      "en": "reference letter",
+      "es": "certificado"
+    },
+    {
+      "de": "Arbeitgeber",
+      "article": "der",
+      "plural": "Arbeitgeber",
+      "en": "employer",
+      "es": "empleador"
+    },
+    {
+      "de": "Arbeitnehmer",
+      "article": "der",
+      "plural": "Arbeitnehmer",
+      "en": "employee (male)",
+      "es": "trabajador"
+    },
+    {
+      "de": "Arbeitnehmerin",
+      "article": "die",
+      "plural": "Arbeitnehmerinnen",
+      "en": "employee (female)",
+      "es": "trabajadora"
+    },
+    {
+      "de": "Leiter",
+      "article": "der",
+      "plural": "Leiter",
+      "en": "manager (male)",
+      "es": "director"
+    },
+    {
+      "de": "Leiterin",
+      "article": "die",
+      "plural": "Leiterinnen",
+      "en": "manager (female)",
+      "es": "directora"
+    },
+    {
+      "de": "Team",
+      "article": "das",
+      "plural": "Teams",
+      "en": "team",
+      "es": "equipo",
+      "emoji": "👥"
+    },
+    {
+      "de": "Sitzung",
+      "article": "die",
+      "plural": "Sitzungen",
+      "en": "meeting",
+      "es": "reunión"
+    },
+    {
+      "de": "Aufgabe",
+      "article": "die",
+      "plural": "Aufgaben",
+      "en": "task",
+      "es": "tarea",
+      "emoji": "✅"
+    },
+    {
+      "de": "Erfolg",
+      "article": "der",
+      "plural": "Erfolge",
+      "en": "success",
+      "es": "éxito",
+      "emoji": "🏆"
+    },
+    {
+      "de": "Kantine",
+      "article": "die",
+      "plural": "Kantinen",
+      "en": "canteen",
+      "es": "comedor",
+      "emoji": "🍽️"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe meinen Lebenslauf geschickt.",
+      "en": "I have sent my CV.",
+      "es": "He enviado mi currículum."
+    },
+    {
+      "de": "Wie hoch ist dein Gehalt?",
+      "en": "How high is your salary?",
+      "es": "¿De cuánto es tu sueldo?"
+    },
+    {
+      "de": "Sie macht ein Praktikum in einer Bank.",
+      "en": "She is doing an internship at a bank.",
+      "es": "Ella hace prácticas en un banco."
+    },
+    {
+      "de": "Die Chefin hat mir eine neue Aufgabe gegeben.",
+      "en": "The boss gave me a new task.",
+      "es": "La jefa me ha dado una tarea nueva."
+    },
+    {
+      "de": "Hast du den Vertrag schon unterschrieben?",
+      "en": "Have you signed the contract yet?",
+      "es": "¿Ya has firmado el contrato?"
+    },
+    {
+      "de": "Das Vorstellungsgespräch war sehr gut.",
+      "en": "The job interview was very good.",
+      "es": "La entrevista de trabajo fue muy buena."
+    }
+  ]
+}

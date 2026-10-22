@@ -1,4 +1,5 @@
 import { effect, signal } from '@preact/signals';
+import type { LevelId } from '../data/types';
 import { review, statKey, type Skill, type WordStat } from './srs';
 
 export type UiLang = 'en' | 'de' | 'es';
@@ -27,6 +28,8 @@ export interface DailyResult {
 
 export interface Progress {
   xp: number;
+  /** the level the player last opened; the daily challenge uses it */
+  level: LevelId;
   /** days in a row with at least one finished round */
   streak: Streak;
   daily: { results: Record<string, DailyResult>; streak: Streak };
@@ -44,6 +47,7 @@ function defaults(): Progress {
   const es = browser.startsWith('es');
   return {
     xp: 0,
+    level: 'A1',
     streak: { count: 0, lastDay: null },
     daily: { results: {}, streak: { count: 0, lastDay: null } },
     words: {},
@@ -89,6 +93,10 @@ export function updateSettings(patch: Partial<Settings>) {
 /** English and Spanish menus also switch translations; German menus keep the chosen translation language. */
 export function setUiLang(uiLang: UiLang) {
   updateSettings(uiLang === 'de' ? { uiLang } : { uiLang, hintLang: uiLang });
+}
+
+export function setCurrentLevel(level: LevelId) {
+  if (progress.peek().level !== level) progress.value = { ...progress.peek(), level };
 }
 
 export function recordAnswer(skill: Skill, wordId: string, correct: boolean) {

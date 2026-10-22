@@ -1,0 +1,230 @@
+{
+  "id": "tech",
+  "title": {
+    "de": "Technik & Reparaturen",
+    "en": "Technology & repairs",
+    "es": "Tecnología y reparaciones"
+  },
+  "emoji": "🔧",
+  "nouns": [
+    {
+      "de": "Reparatur",
+      "article": "die",
+      "plural": "Reparaturen",
+      "en": "repair",
+      "es": "reparación",
+      "emoji": "🔧"
+    },
+    {
+      "de": "Werkstatt",
+      "article": "die",
+      "plural": "Werkstätten",
+      "en": "workshop",
+      "es": "taller"
+    },
+    {
+      "de": "Techniker",
+      "article": "der",
+      "plural": "Techniker",
+      "en": "technician (male)",
+      "es": "técnico",
+      "emoji": "🧑‍🔧"
+    },
+    {
+      "de": "Technikerin",
+      "article": "die",
+      "plural": "Technikerinnen",
+      "en": "technician (female)",
+      "es": "técnica",
+      "emoji": "🧑‍🔧"
+    },
+    {
+      "de": "Werkzeug",
+      "article": "das",
+      "plural": "Werkzeuge",
+      "en": "tool",
+      "es": "herramienta",
+      "emoji": "🧰"
+    },
+    {
+      "de": "Hammer",
+      "article": "der",
+      "plural": "Hämmer",
+      "en": "hammer",
+      "es": "martillo",
+      "emoji": "🔨"
+    },
+    {
+      "de": "Nagel",
+      "article": "der",
+      "plural": "Nägel",
+      "en": "nail",
+      "es": "clavo"
+    },
+    {
+      "de": "Schraube",
+      "article": "die",
+      "plural": "Schrauben",
+      "en": "screw",
+      "es": "tornillo",
+      "emoji": "🔩"
+    },
+    {
+      "de": "Schraubenzieher",
+      "article": "der",
+      "plural": "Schraubenzieher",
+      "en": "screwdriver",
+      "es": "destornillador",
+      "emoji": "🪛"
+    },
+    {
+      "de": "Bohrmaschine",
+      "article": "die",
+      "plural": "Bohrmaschinen",
+      "en": "drill",
+      "es": "taladro"
+    },
+    {
+      "de": "Ersatzteil",
+      "article": "das",
+      "plural": "Ersatzteile",
+      "en": "spare part",
+      "es": "pieza de recambio"
+    },
+    {
+      "de": "Anleitung",
+      "article": "die",
+      "plural": "Anleitungen",
+      "en": "instructions",
+      "es": "instrucciones"
+    },
+    {
+      "de": "Glühbirne",
+      "article": "die",
+      "plural": "Glühbirnen",
+      "en": "light bulb",
+      "es": "bombilla",
+      "emoji": "💡"
+    },
+    {
+      "de": "Schalter",
+      "article": "der",
+      "plural": "Schalter",
+      "en": "switch",
+      "es": "interruptor"
+    },
+    {
+      "de": "Fehler",
+      "article": "der",
+      "plural": "Fehler",
+      "en": "error",
+      "es": "error"
+    },
+    {
+      "de": "Störung",
+      "article": "die",
+      "plural": "Störungen",
+      "en": "fault",
+      "es": "avería"
+    },
+    {
+      "de": "Akku",
+      "article": "der",
+      "plural": "Akkus",
+      "en": "rechargeable battery",
+      "es": "batería",
+      "emoji": "🔋"
+    },
+    {
+      "de": "Display",
+      "article": "das",
+      "plural": "Displays",
+      "en": "display",
+      "es": "pantalla"
+    },
+    {
+      "de": "Taste",
+      "article": "die",
+      "plural": "Tasten",
+      "en": "key (on a keyboard)",
+      "es": "tecla"
+    },
+    {
+      "de": "Speicher",
+      "article": "der",
+      "plural": "Speicher",
+      "en": "memory",
+      "es": "memoria",
+      "emoji": "💾"
+    },
+    {
+      "de": "Software",
+      "article": "die",
+      "plural": null,
+      "en": "software",
+      "es": "software"
+    },
+    {
+      "de": "Update",
+      "article": "das",
+      "plural": "Updates",
+      "en": "update",
+      "es": "actualización"
+    },
+    {
+      "de": "Netzwerk",
+      "article": "das",
+      "plural": "Netzwerke",
+      "en": "network",
+      "es": "red",
+      "emoji": "🌐"
+    },
+    {
+      "de": "WLAN",
+      "article": "das",
+      "plural": null,
+      "en": "Wi-Fi",
+      "es": "wifi",
+      "emoji": "📶"
+    },
+    {
+      "de": "Router",
+      "article": "der",
+      "plural": "Router",
+      "en": "router",
+      "es": "router"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Mein Akku ist fast leer.",
+      "en": "My battery is almost empty.",
+      "es": "Mi batería está casi vacía."
+    },
+    {
+      "de": "Kannst du mir den Hammer geben?",
+      "en": "Can you give me the hammer?",
+      "es": "¿Me puedes dar el martillo?"
+    },
+    {
+      "de": "Das WLAN funktioniert nicht.",
+      "en": "The Wi-Fi isn't working.",
+      "es": "El wifi no funciona."
+    },
+    {
+      "de": "Wie lange dauert die Reparatur?",
+      "en": "How long will the repair take?",
+      "es": "¿Cuánto tarda la reparación?"
+    },
+    {
+      "de": "Hast du die Anleitung gelesen?",
+      "en": "Have you read the instructions?",
+      "es": "¿Has leído las instrucciones?"
+    },
+    {
+      "de": "Ich muss das Update installieren.",
+      "en": "I have to install the update.",
+      "es": "Tengo que instalar la actualización."
+    }
+  ]
+}

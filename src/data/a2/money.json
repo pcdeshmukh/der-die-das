@@ -1,0 +1,223 @@
+{
+  "id": "money",
+  "title": {
+    "de": "Geld & Einkaufen",
+    "en": "Money & shopping",
+    "es": "Dinero y compras"
+  },
+  "emoji": "💳",
+  "nouns": [
+    {
+      "de": "Konto",
+      "article": "das",
+      "plural": "Konten",
+      "en": "bank account",
+      "es": "cuenta bancaria"
+    },
+    {
+      "de": "Überweisung",
+      "article": "die",
+      "plural": "Überweisungen",
+      "en": "bank transfer",
+      "es": "transferencia"
+    },
+    {
+      "de": "Geldautomat",
+      "article": "der",
+      "plural": "Geldautomaten",
+      "en": "cash machine",
+      "es": "cajero automático",
+      "emoji": "🏧"
+    },
+    {
+      "de": "Kreditkarte",
+      "article": "die",
+      "plural": "Kreditkarten",
+      "en": "credit card",
+      "es": "tarjeta de crédito",
+      "emoji": "💳"
+    },
+    {
+      "de": "Bankkarte",
+      "article": "die",
+      "plural": "Bankkarten",
+      "en": "debit card",
+      "es": "tarjeta de débito"
+    },
+    {
+      "de": "Bargeld",
+      "article": "das",
+      "plural": null,
+      "en": "cash",
+      "es": "dinero en efectivo",
+      "emoji": "💵"
+    },
+    {
+      "de": "Münze",
+      "article": "die",
+      "plural": "Münzen",
+      "en": "coin",
+      "es": "moneda",
+      "emoji": "🪙"
+    },
+    {
+      "de": "Schein",
+      "article": "der",
+      "plural": "Scheine",
+      "en": "banknote",
+      "es": "billete",
+      "emoji": "💶"
+    },
+    {
+      "de": "Wechselgeld",
+      "article": "das",
+      "plural": null,
+      "en": "change (money)",
+      "es": "vuelta"
+    },
+    {
+      "de": "Zahlung",
+      "article": "die",
+      "plural": "Zahlungen",
+      "en": "payment",
+      "es": "pago"
+    },
+    {
+      "de": "Quittung",
+      "article": "die",
+      "plural": "Quittungen",
+      "en": "receipt",
+      "es": "recibo",
+      "emoji": "🧾"
+    },
+    {
+      "de": "Rabatt",
+      "article": "der",
+      "plural": "Rabatte",
+      "en": "discount",
+      "es": "descuento"
+    },
+    {
+      "de": "Angebot",
+      "article": "das",
+      "plural": "Angebote",
+      "en": "offer",
+      "es": "oferta"
+    },
+    {
+      "de": "Sonderangebot",
+      "article": "das",
+      "plural": "Sonderangebote",
+      "en": "special offer",
+      "es": "oferta especial",
+      "emoji": "🏷️"
+    },
+    {
+      "de": "Schnäppchen",
+      "article": "das",
+      "plural": "Schnäppchen",
+      "en": "bargain",
+      "es": "ganga"
+    },
+    {
+      "de": "Ausverkauf",
+      "article": "der",
+      "plural": "Ausverkäufe",
+      "en": "clearance sale",
+      "es": "liquidación"
+    },
+    {
+      "de": "Umtausch",
+      "article": "der",
+      "plural": null,
+      "en": "exchange (of goods)",
+      "es": "cambio"
+    },
+    {
+      "de": "Garantie",
+      "article": "die",
+      "plural": "Garantien",
+      "en": "guarantee",
+      "es": "garantía"
+    },
+    {
+      "de": "Bestellung",
+      "article": "die",
+      "plural": "Bestellungen",
+      "en": "order",
+      "es": "pedido"
+    },
+    {
+      "de": "Lieferung",
+      "article": "die",
+      "plural": "Lieferungen",
+      "en": "delivery",
+      "es": "entrega",
+      "emoji": "🚚"
+    },
+    {
+      "de": "Paket",
+      "article": "das",
+      "plural": "Pakete",
+      "en": "parcel",
+      "es": "paquete",
+      "emoji": "📦"
+    },
+    {
+      "de": "Kaufhaus",
+      "article": "das",
+      "plural": "Kaufhäuser",
+      "en": "department store",
+      "es": "grandes almacenes",
+      "emoji": "🏬"
+    },
+    {
+      "de": "Einkaufswagen",
+      "article": "der",
+      "plural": "Einkaufswagen",
+      "en": "shopping trolley",
+      "es": "carro de la compra",
+      "emoji": "🛒"
+    },
+    {
+      "de": "Einkaufszettel",
+      "article": "der",
+      "plural": "Einkaufszettel",
+      "en": "shopping list",
+      "es": "lista de la compra",
+      "emoji": "📝"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Kann ich mit Kreditkarte bezahlen?",
+      "en": "Can I pay by credit card?",
+      "es": "¿Puedo pagar con tarjeta de crédito?"
+    },
+    {
+      "de": "Wo ist der nächste Geldautomat?",
+      "en": "Where is the nearest cash machine?",
+      "es": "¿Dónde está el cajero automático más cercano?"
+    },
+    {
+      "de": "Ich möchte ein Konto eröffnen.",
+      "en": "I would like to open an account.",
+      "es": "Quiero abrir una cuenta."
+    },
+    {
+      "de": "Haben Sie die Quittung noch?",
+      "en": "Do you still have the receipt?",
+      "es": "¿Todavía tiene el recibo?"
+    },
+    {
+      "de": "Mein Paket ist noch nicht angekommen.",
+      "en": "My parcel has not arrived yet.",
+      "es": "Mi paquete todavía no ha llegado."
+    },
+    {
+      "de": "Bekomme ich einen Rabatt auf den Mantel?",
+      "en": "Do I get a discount on the coat?",
+      "es": "¿Me hacen un descuento en el abrigo?"
+    }
+  ]
+}

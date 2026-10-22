@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-German learning games (A1 now, A2–C2 later) as a static Preact + TypeScript + Vite PWA, hosted on GitHub Pages at https://pcdeshmukh.github.io/der-die-das/. Single player only: there is no backend, and all progress lives in `localStorage`.
+German learning games (A1 and A2 now, B1–C2 later) as a static Preact + TypeScript + Vite PWA, hosted on GitHub Pages at https://pcdeshmukh.github.io/der-die-das/. Single player only: there is no backend, and all progress lives in `localStorage`.
 
 ## Commands
 
@@ -21,9 +21,9 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 
 ## Architecture
 
-**Content is data, not code.** Everything a learner sees lives in `src/data/a1/*.json`, and `src/data/index.ts` registers it per level (`TOPICS`, `VERBS`, `GRAMMAR`, `PHRASES`, `CHAPTERS`). A level with topics becomes playable automatically; A2+ are empty "coming soon" slots. New JSON files must be imported and added to these maps.
+**Content is data, not code.** Everything a learner sees lives in `src/data/<level>/*.json` (`a1`, `a2`), and `src/data/index.ts` registers it per level (`TOPICS`, `VERBS`, `GRAMMAR`, `PHRASES`, `CHAPTERS`). A level with topics becomes playable automatically; B1+ are empty "coming soon" slots. New JSON files must be imported and added to these maps.
 - Topic files: `nouns` (`de`, `article`, `plural|null`, `en`, `es`, optional `emoji`) plus `sentences`.
-- `verbs.json`: six present forms per verb, plus `prompts`, the pronouns a conjugation prompt may show. A1 uses bare "sie" only for "she".
+- `verbs.json`: six present forms per verb, plus `prompts`, the pronouns a conjugation prompt may show. A1 uses bare "sie" only for "she". From A2, verbs also carry `preterite` (six forms) and `perfect` (`"hat gemacht"`/`"ist gegangen"`); the verbs page offers the Präteritum and Perfekt modes only when a level's verbs have them.
 - `grammar*.json`: lessons with a rule and gap items (`q` contains `___`). With `shuffle: true`, the options are whole sentences instead.
 - `phrases*.json`: a situation, the right German phrase `a`, and `wrong` options.
 - `chapters.json`: maps the 24 syllabus chapters to content ids.

@@ -1,0 +1,320 @@
+[
+  {
+    "n": 1,
+    "title": {
+      "de": "Familie und Verwandte",
+      "en": "Family and relatives",
+      "es": "Familia y parientes"
+    },
+    "links": [
+      "relatives",
+      "g-possdative",
+      "g-perfectreview",
+      "p-familyevents"
+    ]
+  },
+  {
+    "n": 2,
+    "title": {
+      "de": "Umzug",
+      "en": "Moving house",
+      "es": "La mudanza"
+    },
+    "links": [
+      "moving",
+      "g-wohinwo",
+      "g-positionverbs",
+      "p-moving"
+    ]
+  },
+  {
+    "n": 3,
+    "title": {
+      "de": "Nachbarn",
+      "en": "Neighbours",
+      "es": "Vecinos"
+    },
+    "links": [
+      "moving",
+      "g-weil",
+      "p-neighbours"
+    ]
+  },
+  {
+    "n": 4,
+    "title": {
+      "de": "Essen und Kochen",
+      "en": "Food and cooking",
+      "es": "Comer y cocinar"
+    },
+    "links": [
+      "cooking",
+      "g-adjdefinite",
+      "p-cooking"
+    ]
+  },
+  {
+    "n": 5,
+    "title": {
+      "de": "Gesundheit",
+      "en": "Health",
+      "es": "Salud"
+    },
+    "links": [
+      "health",
+      "g-konjunktiv2advice",
+      "g-reflexive",
+      "p-advice"
+    ]
+  },
+  {
+    "n": 6,
+    "title": {
+      "de": "Arbeitswelt",
+      "en": "The working world",
+      "es": "El mundo laboral"
+    },
+    "links": [
+      "work",
+      "g-dass",
+      "g-deshalb",
+      "p-work"
+    ]
+  },
+  {
+    "n": 7,
+    "title": {
+      "de": "Bewerbung",
+      "en": "Applying for a job",
+      "es": "Buscar trabajo"
+    },
+    "links": [
+      "work",
+      "g-modalpreterite",
+      "verbs",
+      "p-jobinterview"
+    ]
+  },
+  {
+    "n": 8,
+    "title": {
+      "de": "Freizeit und Vereine",
+      "en": "Free time and clubs",
+      "es": "Tiempo libre y asociaciones"
+    },
+    "links": [
+      "culture",
+      "g-verbprep",
+      "g-wodar",
+      "p-clubs"
+    ]
+  },
+  {
+    "n": 9,
+    "title": {
+      "de": "Medien",
+      "en": "Media",
+      "es": "Medios de comunicación"
+    },
+    "links": [
+      "media",
+      "g-indirectq",
+      "p-media"
+    ]
+  },
+  {
+    "n": 10,
+    "title": {
+      "de": "Reisen",
+      "en": "Travelling",
+      "es": "Viajar"
+    },
+    "links": [
+      "travel",
+      "g-placeprep2",
+      "g-adjindefinite",
+      "p-hotel"
+    ]
+  },
+  {
+    "n": 11,
+    "title": {
+      "de": "Unterwegs",
+      "en": "On the road",
+      "es": "En camino"
+    },
+    "links": [
+      "travel",
+      "g-wenn",
+      "p-delays"
+    ]
+  },
+  {
+    "n": 12,
+    "title": {
+      "de": "Einkaufen",
+      "en": "Shopping",
+      "es": "De compras"
+    },
+    "links": [
+      "money",
+      "g-superlative",
+      "p-returns"
+    ]
+  },
+  {
+    "n": 13,
+    "title": {
+      "de": "Feste und Geschenke",
+      "en": "Celebrations and presents",
+      "es": "Fiestas y regalos"
+    },
+    "links": [
+      "relatives",
+      "g-dativeacc",
+      "p-invitations"
+    ]
+  },
+  {
+    "n": 14,
+    "title": {
+      "de": "Schule",
+      "en": "School",
+      "es": "La escuela"
+    },
+    "links": [
+      "g-preterite",
+      "verbs",
+      "p-schooldays"
+    ]
+  },
+  {
+    "n": 15,
+    "title": {
+      "de": "Sprachen lernen",
+      "en": "Learning languages",
+      "es": "Aprender idiomas"
+    },
+    "links": [
+      "g-zuinfinitive",
+      "g-umzu",
+      "p-learning"
+    ]
+  },
+  {
+    "n": 16,
+    "title": {
+      "de": "Bank und Behörden",
+      "en": "Banks and authorities",
+      "es": "Bancos y organismos oficiales"
+    },
+    "links": [
+      "money",
+      "authorities",
+      "g-passive",
+      "p-bank"
+    ]
+  },
+  {
+    "n": 17,
+    "title": {
+      "de": "Kultur",
+      "en": "Culture",
+      "es": "Cultura"
+    },
+    "links": [
+      "culture",
+      "g-relative",
+      "p-culture"
+    ]
+  },
+  {
+    "n": 18,
+    "title": {
+      "de": "Gefühle",
+      "en": "Feelings",
+      "es": "Sentimientos"
+    },
+    "links": [
+      "feelings",
+      "g-reflexivedative",
+      "p-feelings"
+    ]
+  },
+  {
+    "n": 19,
+    "title": {
+      "de": "Technik",
+      "en": "Technology",
+      "es": "Tecnología"
+    },
+    "links": [
+      "tech",
+      "g-lassen",
+      "p-repairs"
+    ]
+  },
+  {
+    "n": 20,
+    "title": {
+      "de": "Umwelt",
+      "en": "The environment",
+      "es": "El medio ambiente"
+    },
+    "links": [
+      "g-sondern",
+      "p-environment"
+    ]
+  },
+  {
+    "n": 21,
+    "title": {
+      "de": "Stadt und Land",
+      "en": "Town and country",
+      "es": "Ciudad y campo"
+    },
+    "links": [
+      "g-ndecl",
+      "g-genitive",
+      "p-citycountry"
+    ]
+  },
+  {
+    "n": 22,
+    "title": {
+      "de": "Sport",
+      "en": "Sport",
+      "es": "Deporte"
+    },
+    "links": [
+      "g-futur",
+      "p-sport"
+    ]
+  },
+  {
+    "n": 23,
+    "title": {
+      "de": "Geschichten",
+      "en": "Stories",
+      "es": "Historias"
+    },
+    "links": [
+      "g-alswenn",
+      "verbs",
+      "p-stories"
+    ]
+  },
+  {
+    "n": 24,
+    "title": {
+      "de": "Träume und Wünsche",
+      "en": "Dreams and wishes",
+      "es": "Sueños y deseos"
+    },
+    "links": [
+      "feelings",
+      "g-konjunktiv2wish",
+      "p-dreams"
+    ]
+  }
+]

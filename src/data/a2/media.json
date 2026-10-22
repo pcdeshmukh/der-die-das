@@ -1,0 +1,217 @@
+{
+  "id": "media",
+  "title": {
+    "de": "Medien",
+    "en": "Media",
+    "es": "Medios de comunicación"
+  },
+  "emoji": "📺",
+  "nouns": [
+    {
+      "de": "Zeitschrift",
+      "article": "die",
+      "plural": "Zeitschriften",
+      "en": "magazine",
+      "es": "revista"
+    },
+    {
+      "de": "Presse",
+      "article": "die",
+      "plural": null,
+      "en": "press",
+      "es": "prensa"
+    },
+    {
+      "de": "Artikel",
+      "article": "der",
+      "plural": "Artikel",
+      "en": "article",
+      "es": "artículo"
+    },
+    {
+      "de": "Schlagzeile",
+      "article": "die",
+      "plural": "Schlagzeilen",
+      "en": "headline",
+      "es": "titular"
+    },
+    {
+      "de": "Bericht",
+      "article": "der",
+      "plural": "Berichte",
+      "en": "report",
+      "es": "informe"
+    },
+    {
+      "de": "Wetterbericht",
+      "article": "der",
+      "plural": "Wetterberichte",
+      "en": "weather report",
+      "es": "parte meteorológico",
+      "emoji": "🌦️"
+    },
+    {
+      "de": "Sendung",
+      "article": "die",
+      "plural": "Sendungen",
+      "en": "TV or radio show",
+      "es": "programa"
+    },
+    {
+      "de": "Sender",
+      "article": "der",
+      "plural": "Sender",
+      "en": "broadcaster",
+      "es": "cadena"
+    },
+    {
+      "de": "Kanal",
+      "article": "der",
+      "plural": "Kanäle",
+      "en": "channel",
+      "es": "canal"
+    },
+    {
+      "de": "Serie",
+      "article": "die",
+      "plural": "Serien",
+      "en": "series",
+      "es": "serie"
+    },
+    {
+      "de": "Folge",
+      "article": "die",
+      "plural": "Folgen",
+      "en": "episode",
+      "es": "episodio"
+    },
+    {
+      "de": "Leser",
+      "article": "der",
+      "plural": "Leser",
+      "en": "reader (male)",
+      "es": "lector"
+    },
+    {
+      "de": "Leserin",
+      "article": "die",
+      "plural": "Leserinnen",
+      "en": "reader (female)",
+      "es": "lectora"
+    },
+    {
+      "de": "Werbung",
+      "article": "die",
+      "plural": null,
+      "en": "advertising",
+      "es": "publicidad",
+      "emoji": "📢"
+    },
+    {
+      "de": "Interview",
+      "article": "das",
+      "plural": "Interviews",
+      "en": "interview",
+      "es": "entrevista"
+    },
+    {
+      "de": "Podcast",
+      "article": "der",
+      "plural": "Podcasts",
+      "en": "podcast",
+      "es": "pódcast",
+      "emoji": "🎙️"
+    },
+    {
+      "de": "Video",
+      "article": "das",
+      "plural": "Videos",
+      "en": "video",
+      "es": "vídeo",
+      "emoji": "📹"
+    },
+    {
+      "de": "Kommentar",
+      "article": "der",
+      "plural": "Kommentare",
+      "en": "comment",
+      "es": "comentario",
+      "emoji": "💬"
+    },
+    {
+      "de": "Moderator",
+      "article": "der",
+      "plural": "Moderatoren",
+      "en": "presenter (male)",
+      "es": "presentador",
+      "emoji": "🎤"
+    },
+    {
+      "de": "Moderatorin",
+      "article": "die",
+      "plural": "Moderatorinnen",
+      "en": "presenter (female)",
+      "es": "presentadora"
+    },
+    {
+      "de": "Zuschauer",
+      "article": "der",
+      "plural": "Zuschauer",
+      "en": "viewer (male)",
+      "es": "espectador"
+    },
+    {
+      "de": "Zuschauerin",
+      "article": "die",
+      "plural": "Zuschauerinnen",
+      "en": "viewer (female)",
+      "es": "espectadora"
+    },
+    {
+      "de": "Hörer",
+      "article": "der",
+      "plural": "Hörer",
+      "en": "listener (male)",
+      "es": "oyente (hombre)"
+    },
+    {
+      "de": "Hörerin",
+      "article": "die",
+      "plural": "Hörerinnen",
+      "en": "listener (female)",
+      "es": "oyente (mujer)"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Welche Serie schaust du gerade?",
+      "en": "Which series are you watching at the moment?",
+      "es": "¿Qué serie estás viendo ahora?"
+    },
+    {
+      "de": "Die Werbung im Fernsehen nervt mich.",
+      "en": "The advertising on TV annoys me.",
+      "es": "La publicidad en la tele me molesta."
+    },
+    {
+      "de": "Hast du den Artikel schon gelesen?",
+      "en": "Have you read the article yet?",
+      "es": "¿Ya has leído el artículo?"
+    },
+    {
+      "de": "Der Moderator stellt dem Gast eine Frage.",
+      "en": "The presenter asks the guest a question.",
+      "es": "El presentador le hace una pregunta al invitado."
+    },
+    {
+      "de": "Die Zuschauer finden die Sendung langweilig.",
+      "en": "The viewers find the show boring.",
+      "es": "A los espectadores el programa les parece aburrido."
+    },
+    {
+      "de": "Hast du das Interview mit ihr gesehen?",
+      "en": "Have you seen the interview with her?",
+      "es": "¿Has visto la entrevista con ella?"
+    }
+  ]
+}

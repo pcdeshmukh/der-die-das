@@ -1,4 +1,4 @@
-import { allSentences, allWords, grammarItems, phraseItems, sentencesOf, verbForms, wordsOf } from '../data';
+import { allSentences, allWords, grammarItems, perfectItems, phraseItems, sentencesOf, verbForms, wordsOf } from '../data';
 import type { Level } from '../data/types';
 import { t, uiLang } from './i18n';
 import { speechSupported } from './speech';
@@ -11,6 +11,8 @@ export type ModeId =
   | 'listen'
   | 'sentences'
   | 'conjugate'
+  | 'preterite'
+  | 'perfect'
   | 'numbers'
   | 'time'
   | 'grammar'
@@ -38,6 +40,8 @@ export const MODES: Mode[] = [
   { id: 'listen', section: 'vocab', skill: 'listening', icon: '👂', min: 1, needsSpeech: true },
   { id: 'sentences', section: 'vocab', skill: 'sentence', icon: '🧱', min: 1 },
   { id: 'conjugate', section: 'verbs', skill: 'conjugation', icon: '🔤', min: 1 },
+  { id: 'preterite', section: 'verbs', skill: 'preterite', icon: '⏪', min: 1 },
+  { id: 'perfect', section: 'verbs', skill: 'perfect', icon: '✅', min: 1 },
   { id: 'numbers', section: 'numbers', skill: null, icon: '🔢', min: 0 },
   { id: 'time', section: 'numbers', skill: null, icon: '🕒', min: 0 },
   { id: 'grammar', section: 'grammar', skill: 'grammar', icon: '✏️', min: 1 },
@@ -76,6 +80,10 @@ function itemsOf(level: Level, mode: Mode, topicId: string | null): Item[] {
       return topic ? sentencesOf(level, topic) : allSentences(level);
     case 'conjugate':
       return verbForms(level);
+    case 'preterite':
+      return verbForms(level, 'preterite');
+    case 'perfect':
+      return perfectItems(level);
     case 'numbers':
     case 'time':
     case 'alphabet':
@@ -99,9 +107,17 @@ const inSection = (section: Section) => MODES.filter((m) => m.section === sectio
 
 /** Modes offered on a topic or pseudo-topic screen. */
 export function modesFor(level: Level, topicId: string): Mode[] {
-  if (topicId === VERBS) return level.verbs ? inSection('verbs') : [];
+  if (topicId === VERBS) {
+    // Past tenses appear once a level's verb data has them (A2 on).
+    const verbs = level.verbs?.verbs ?? [];
+    return inSection('verbs').filter(
+      (m) =>
+        verbs.length > 0 &&
+        (m.id === 'conjugate' || (m.id === 'preterite' ? verbs.some((v) => v.preterite) : verbs.some((v) => v.perfect))),
+    );
+  }
   if (topicId === NUMBERS) return inSection('numbers');
-  if (topicId === ALPHABET) return inSection('alphabet');
+  if (topicId === ALPHABET) return level.id === 'A1' ? inSection('alphabet') : [];
   if (grammarLesson(level, topicId)) return inSection('grammar');
   if (phraseLesson(level, topicId)) return inSection('phrases');
   if (topicId === REVIEW) return MODES.filter((m) => m.skill);

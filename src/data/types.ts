@@ -44,15 +44,28 @@ export interface SentenceRef extends Sentence {
 
 export interface Verb extends Translated {
   infinitive: string;
+  /** ich, du, er/sie/es, wir, ihr, sie/Sie (from A2) */
+  preterite?: string[];
+  /** third person Perfekt, e.g. "hat gemacht" or "ist gegangen" (from A2) */
+  perfect?: string;
   /** ich, du, er/sie/es, wir, ihr, sie/Sie */
   present: string[];
 }
 
-/** One verb in one person, e.g. "du fährst". */
+export type Tense = 'present' | 'preterite';
+
+/** One verb in one person and tense, e.g. "du fährst" or "du fuhrst". */
 export interface VerbForm {
   id: string;
   verb: Verb;
   person: number;
+  tense: Tense;
+}
+
+/** A verb whose Perfekt is practised ("ich bin gefahren"). */
+export interface PerfectRef {
+  id: string;
+  verb: Verb;
 }
 
 export interface GrammarItem extends Translated {

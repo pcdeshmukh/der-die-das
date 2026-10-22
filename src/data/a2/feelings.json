@@ -1,0 +1,237 @@
+{
+  "id": "feelings",
+  "title": {
+    "de": "Gefühle & Charakter",
+    "en": "Feelings & character",
+    "es": "Sentimientos y carácter"
+  },
+  "emoji": "💞",
+  "nouns": [
+    {
+      "de": "Gefühl",
+      "article": "das",
+      "plural": "Gefühle",
+      "en": "feeling",
+      "es": "sentimiento"
+    },
+    {
+      "de": "Charakter",
+      "article": "der",
+      "plural": "Charaktere",
+      "en": "character",
+      "es": "carácter"
+    },
+    {
+      "de": "Eigenschaft",
+      "article": "die",
+      "plural": "Eigenschaften",
+      "en": "trait",
+      "es": "cualidad"
+    },
+    {
+      "de": "Freude",
+      "article": "die",
+      "plural": null,
+      "en": "joy",
+      "es": "alegría",
+      "emoji": "😊"
+    },
+    {
+      "de": "Liebe",
+      "article": "die",
+      "plural": null,
+      "en": "love",
+      "es": "amor",
+      "emoji": "❤️"
+    },
+    {
+      "de": "Glück",
+      "article": "das",
+      "plural": null,
+      "en": "luck",
+      "es": "suerte",
+      "emoji": "🍀"
+    },
+    {
+      "de": "Pech",
+      "article": "das",
+      "plural": null,
+      "en": "bad luck",
+      "es": "mala suerte"
+    },
+    {
+      "de": "Angst",
+      "article": "die",
+      "plural": "Ängste",
+      "en": "fear",
+      "es": "miedo",
+      "emoji": "😨"
+    },
+    {
+      "de": "Sorge",
+      "article": "die",
+      "plural": "Sorgen",
+      "en": "worry",
+      "es": "preocupación",
+      "emoji": "😟"
+    },
+    {
+      "de": "Hoffnung",
+      "article": "die",
+      "plural": "Hoffnungen",
+      "en": "hope",
+      "es": "esperanza"
+    },
+    {
+      "de": "Ärger",
+      "article": "der",
+      "plural": null,
+      "en": "annoyance",
+      "es": "enfado",
+      "emoji": "😠"
+    },
+    {
+      "de": "Wut",
+      "article": "die",
+      "plural": null,
+      "en": "rage",
+      "es": "rabia",
+      "emoji": "😡"
+    },
+    {
+      "de": "Streit",
+      "article": "der",
+      "plural": null,
+      "en": "argument",
+      "es": "discusión"
+    },
+    {
+      "de": "Trauer",
+      "article": "die",
+      "plural": null,
+      "en": "grief",
+      "es": "tristeza",
+      "emoji": "😢"
+    },
+    {
+      "de": "Laune",
+      "article": "die",
+      "plural": "Launen",
+      "en": "mood",
+      "es": "estado de ánimo"
+    },
+    {
+      "de": "Humor",
+      "article": "der",
+      "plural": null,
+      "en": "sense of humour",
+      "es": "sentido del humor"
+    },
+    {
+      "de": "Spaß",
+      "article": "der",
+      "plural": null,
+      "en": "fun",
+      "es": "diversión",
+      "emoji": "😄"
+    },
+    {
+      "de": "Langeweile",
+      "article": "die",
+      "plural": null,
+      "en": "boredom",
+      "es": "aburrimiento",
+      "emoji": "🥱"
+    },
+    {
+      "de": "Geduld",
+      "article": "die",
+      "plural": null,
+      "en": "patience",
+      "es": "paciencia"
+    },
+    {
+      "de": "Mut",
+      "article": "der",
+      "plural": null,
+      "en": "courage",
+      "es": "valor"
+    },
+    {
+      "de": "Eifersucht",
+      "article": "die",
+      "plural": null,
+      "en": "jealousy",
+      "es": "celos"
+    },
+    {
+      "de": "Neugier",
+      "article": "die",
+      "plural": null,
+      "en": "curiosity",
+      "es": "curiosidad"
+    },
+    {
+      "de": "Stolz",
+      "article": "der",
+      "plural": null,
+      "en": "pride",
+      "es": "orgullo"
+    },
+    {
+      "de": "Vertrauen",
+      "article": "das",
+      "plural": null,
+      "en": "trust",
+      "es": "confianza",
+      "emoji": "🤝"
+    },
+    {
+      "de": "Traum",
+      "article": "der",
+      "plural": "Träume",
+      "en": "dream",
+      "es": "sueño",
+      "emoji": "💭"
+    },
+    {
+      "de": "Wunsch",
+      "article": "der",
+      "plural": "Wünsche",
+      "en": "wish",
+      "es": "deseo"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe Angst vor Hunden.",
+      "en": "I am afraid of dogs.",
+      "es": "Tengo miedo de los perros."
+    },
+    {
+      "de": "Mach dir keine Sorgen!",
+      "en": "Don't worry!",
+      "es": "¡No te preocupes!"
+    },
+    {
+      "de": "Er hat schlechte Laune.",
+      "en": "He is in a bad mood.",
+      "es": "Está de mal humor."
+    },
+    {
+      "de": "Das Konzert hat viel Spaß gemacht.",
+      "en": "The concert was a lot of fun.",
+      "es": "El concierto ha sido muy divertido."
+    },
+    {
+      "de": "Viel Glück bei der Prüfung!",
+      "en": "Good luck in the exam!",
+      "es": "¡Mucha suerte en el examen!"
+    },
+    {
+      "de": "Ich habe keine Geduld mehr.",
+      "en": "I have no patience left.",
+      "es": "Ya no tengo paciencia."
+    }
+  ]
+}

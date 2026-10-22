@@ -392,7 +392,7 @@ a.mode-card:active {
   font-size: 1.8rem;
   font-weight: 800;
 }
-.level-a1 .level-id {
+a.level-card .level-id {
   color: var(--accent);
 }
 .level-name {
@@ -877,6 +877,17 @@ a.mode-card:active {
 .pronoun-note {
   color: var(--muted);
   font-weight: 600;
+}
+
+.tense-badge {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 /* Grammar */

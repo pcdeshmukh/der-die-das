@@ -1,0 +1,1359 @@
+[
+  {
+    "id": "modalpreterite",
+    "title": {
+      "en": "Modal verbs in the past",
+      "de": "Modalverben im Präteritum",
+      "es": "Verbos modales en pasado"
+    },
+    "emoji": "⏪",
+    "rule": {
+      "en": "In the past, modal verbs use the Präteritum: wollte, konnte, musste, durfte, sollte, mochte. The ich and er/sie/es forms are the same.",
+      "de": "Modalverben benutzt man in der Vergangenheit im Präteritum: wollte, konnte, musste, durfte, sollte, mochte. Die Formen für ich und er/sie/es sind gleich.",
+      "es": "En pasado, los verbos modales van en Präteritum: wollte, konnte, musste, durfte, sollte, mochte. Las formas de ich y er/sie/es son iguales."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Gestern ___ ich lange arbeiten.",
+        "a": "musste",
+        "en": "Yesterday I had to work late.",
+        "es": "Ayer tuve que trabajar hasta tarde.",
+        "options": [
+          "musste",
+          "musstest",
+          "mussten"
+        ]
+      },
+      {
+        "q": "Als Kind ___ er nicht schwimmen.",
+        "a": "konnte",
+        "en": "As a child he couldn't swim.",
+        "es": "De niño no sabía nadar.",
+        "options": [
+          "konnte",
+          "konntest",
+          "durfte"
+        ]
+      },
+      {
+        "q": "Wir ___ ins Kino gehen, aber es war zu spät.",
+        "a": "wollten",
+        "en": "We wanted to go to the cinema, but it was too late.",
+        "es": "Queríamos ir al cine, pero era demasiado tarde.",
+        "options": [
+          "wollten",
+          "wolltet",
+          "wollte"
+        ]
+      },
+      {
+        "q": "Warum ___ du gestern nicht kommen?",
+        "a": "konntest",
+        "en": "Why couldn't you come yesterday?",
+        "es": "¿Por qué no pudiste venir ayer?",
+        "options": [
+          "konntest",
+          "konnte",
+          "konntet"
+        ]
+      },
+      {
+        "q": "Als Kinder ___ wir abends nicht fernsehen.",
+        "a": "durften",
+        "en": "As children we weren't allowed to watch TV in the evening.",
+        "es": "De niños no nos dejaban ver la tele por la noche.",
+        "options": [
+          "durften",
+          "durfte",
+          "durftet"
+        ]
+      },
+      {
+        "q": "Ihr ___ doch um acht Uhr hier sein!",
+        "a": "solltet",
+        "en": "You were supposed to be here at eight!",
+        "es": "¡Teníais que estar aquí a las ocho!",
+        "options": [
+          "solltet",
+          "sollten",
+          "solltest"
+        ]
+      },
+      {
+        "q": "Früher ___ ich keinen Kaffee.",
+        "a": "mochte",
+        "en": "I didn't use to like coffee.",
+        "es": "Antes no me gustaba el café.",
+        "options": [
+          "mochte",
+          "mochtest",
+          "mochten"
+        ]
+      },
+      {
+        "q": "Meine Eltern ___ ein neues Auto kaufen.",
+        "a": "wollten",
+        "en": "My parents wanted to buy a new car.",
+        "es": "Mis padres querían comprar un coche nuevo.",
+        "options": [
+          "wollten",
+          "wollte",
+          "wolltest"
+        ]
+      },
+      {
+        "q": "___ du als Kind auch früh ins Bett gehen?",
+        "a": "Musstest",
+        "en": "Did you also have to go to bed early as a child?",
+        "es": "¿Tú también tenías que acostarte pronto de niño?",
+        "options": [
+          "Musstest",
+          "Musste",
+          "Mussten"
+        ]
+      },
+      {
+        "q": "Der Arzt sagte, ich ___ mehr Wasser trinken.",
+        "a": "sollte",
+        "en": "The doctor said I should drink more water.",
+        "es": "El médico dijo que debía beber más agua.",
+        "options": [
+          "sollte",
+          "solltest",
+          "sollten"
+        ]
+      },
+      {
+        "q": "Lisa ___ am Wochenende nicht ausgehen.",
+        "a": "durfte",
+        "en": "Lisa wasn't allowed to go out at the weekend.",
+        "es": "A Lisa no la dejaban salir el fin de semana.",
+        "options": [
+          "durfte",
+          "durftest",
+          "konnte"
+        ]
+      },
+      {
+        "q": "___ ihr das Essen im Hotel?",
+        "a": "Mochtet",
+        "en": "Did you all like the food at the hotel?",
+        "es": "¿Os gustó la comida del hotel?",
+        "options": [
+          "Mochtet",
+          "Mochten",
+          "Mochtest"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "verbprep",
+    "title": {
+      "en": "Verbs with prepositions",
+      "de": "Verben mit Präpositionen",
+      "es": "Verbos con preposición"
+    },
+    "emoji": "🔗",
+    "rule": {
+      "en": "Many verbs go with a fixed preposition: warten auf, denken an, sich interessieren für. Learn them together. sich freuen auf = something coming; sich freuen über = something now or past.",
+      "de": "Viele Verben haben eine feste Präposition: warten auf, denken an, sich interessieren für. Lerne sie zusammen. sich freuen auf = etwas kommt noch; sich freuen über = etwas ist jetzt oder war schon.",
+      "es": "Muchos verbos llevan una preposición fija: warten auf, denken an, sich interessieren für. Apréndelos juntos. sich freuen auf = algo futuro; sich freuen über = algo presente o pasado."
+    },
+    "options": [
+      "auf",
+      "über",
+      "für",
+      "an",
+      "mit",
+      "vor",
+      "um"
+    ],
+    "items": [
+      {
+        "q": "Ich warte ___ den Bus.",
+        "a": "auf",
+        "en": "I'm waiting for the bus.",
+        "es": "Estoy esperando el autobús."
+      },
+      {
+        "q": "Wir freuen uns ___ den Urlaub im August.",
+        "a": "auf",
+        "en": "We're looking forward to the holiday in August.",
+        "es": "Tenemos muchas ganas de las vacaciones de agosto."
+      },
+      {
+        "q": "Sie freut sich ___ das Geschenk.",
+        "a": "über",
+        "en": "She's happy about the present.",
+        "es": "Se alegra del regalo."
+      },
+      {
+        "q": "Interessierst du dich ___ Musik?",
+        "a": "für",
+        "en": "Are you interested in music?",
+        "es": "¿Te interesa la música?"
+      },
+      {
+        "q": "Ich denke oft ___ meine Großeltern.",
+        "a": "an",
+        "en": "I often think of my grandparents.",
+        "es": "Pienso a menudo en mis abuelos."
+      },
+      {
+        "q": "Morgen spreche ich ___ meiner Chefin.",
+        "a": "mit",
+        "en": "Tomorrow I'm talking to my boss.",
+        "es": "Mañana hablo con mi jefa."
+      },
+      {
+        "q": "Wir sprechen ___ das Wetter.",
+        "a": "über",
+        "en": "We're talking about the weather.",
+        "es": "Hablamos del tiempo."
+      },
+      {
+        "q": "Mein Sohn hat Angst ___ Hunden.",
+        "a": "vor",
+        "en": "My son is afraid of dogs.",
+        "es": "Mi hijo tiene miedo a los perros."
+      },
+      {
+        "q": "Wer kümmert sich ___ die Katze?",
+        "a": "um",
+        "en": "Who looks after the cat?",
+        "es": "¿Quién cuida del gato?"
+      },
+      {
+        "q": "Nimmst du ___ dem Kurs teil?",
+        "a": "an",
+        "en": "Are you taking part in the course?",
+        "es": "¿Participas en el curso?"
+      },
+      {
+        "q": "Er wartet schon lange ___ eine Antwort.",
+        "a": "auf",
+        "en": "He has been waiting for an answer for a long time.",
+        "es": "Lleva mucho tiempo esperando una respuesta."
+      },
+      {
+        "q": "Ich habe mich sehr ___ deinen Brief gefreut.",
+        "a": "über",
+        "en": "I was very happy about your letter.",
+        "es": "Me alegré mucho de tu carta."
+      }
+    ]
+  },
+  {
+    "id": "wodar",
+    "title": {
+      "en": "wo(r)- and da(r)-",
+      "de": "wo(r)- und da(r)-",
+      "es": "wo(r)- y da(r)-"
+    },
+    "emoji": "❓",
+    "rule": {
+      "en": "Ask about things with wo + preposition (worauf, wofür, woran) and answer with da + preposition (darauf, dafür, daran). Add r before a vowel.",
+      "de": "Nach Sachen fragt man mit wo + Präposition (worauf, wofür, woran), antworten kann man mit da + Präposition (darauf, dafür, daran). Vor einem Vokal steht ein r.",
+      "es": "Para preguntar por cosas se usa wo + preposición (worauf, wofür, woran) y para responder da + preposición (darauf, dafür, daran). Delante de vocal se añade r."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "___ wartest du? – Auf den Bus.",
+        "a": "Worauf",
+        "en": "What are you waiting for? – The bus.",
+        "es": "¿Qué esperas? – El autobús.",
+        "options": [
+          "Worauf",
+          "Wofür",
+          "Woran"
+        ]
+      },
+      {
+        "q": "Freust du dich auf die Party? – Ja, ich freue mich ___.",
+        "a": "darauf",
+        "en": "Are you looking forward to the party? – Yes, I'm looking forward to it.",
+        "es": "¿Tienes ganas de que llegue la fiesta? – Sí, tengo muchas ganas.",
+        "options": [
+          "darauf",
+          "dafür",
+          "daran"
+        ]
+      },
+      {
+        "q": "___ interessierst du dich? – Für Fußball.",
+        "a": "Wofür",
+        "en": "What are you interested in? – Football.",
+        "es": "¿Qué te interesa? – El fútbol.",
+        "options": [
+          "Wofür",
+          "Worauf",
+          "Worüber"
+        ]
+      },
+      {
+        "q": "___ denkst du? – An meinen Urlaub.",
+        "a": "Woran",
+        "en": "What are you thinking about? – My holiday.",
+        "es": "¿En qué piensas? – En mis vacaciones.",
+        "options": [
+          "Woran",
+          "Worauf",
+          "Wovor"
+        ]
+      },
+      {
+        "q": "___ sprecht ihr? – Über den neuen Film.",
+        "a": "Worüber",
+        "en": "What are you talking about? – The new film.",
+        "es": "¿De qué habláis? – De la nueva película.",
+        "options": [
+          "Worüber",
+          "Wofür",
+          "Woran"
+        ]
+      },
+      {
+        "q": "___ hast du Angst? – Vor der Prüfung.",
+        "a": "Wovor",
+        "en": "What are you afraid of? – The exam.",
+        "es": "¿De qué tienes miedo? – Del examen.",
+        "options": [
+          "Wovor",
+          "Worauf",
+          "Wofür"
+        ]
+      },
+      {
+        "q": "Interessiert sich Tom für Politik? – Nein, er interessiert sich nicht ___.",
+        "a": "dafür",
+        "en": "Is Tom interested in politics? – No, he isn't interested in it.",
+        "es": "¿A Tom le interesa la política? – No, no le interesa.",
+        "options": [
+          "dafür",
+          "darauf",
+          "daran"
+        ]
+      },
+      {
+        "q": "Denkst du an den Termin? – Ja, ich denke ___.",
+        "a": "daran",
+        "en": "Will you remember the appointment? – Yes, I'll remember it.",
+        "es": "¿Te acordarás de la cita? – Sí, me acordaré.",
+        "options": [
+          "daran",
+          "darauf",
+          "darüber"
+        ]
+      },
+      {
+        "q": "Habt ihr über das Angebot gesprochen? – Ja, wir haben gestern ___ gesprochen.",
+        "a": "darüber",
+        "en": "Did you talk about the offer? – Yes, we talked about it yesterday.",
+        "es": "¿Habéis hablado de la oferta? – Sí, ayer hablamos de ella.",
+        "options": [
+          "darüber",
+          "daran",
+          "dafür"
+        ]
+      },
+      {
+        "q": "___ kümmerst du dich heute? – Um den Garten.",
+        "a": "Worum",
+        "en": "What are you taking care of today? – The garden.",
+        "es": "¿De qué te ocupas hoy? – Del jardín.",
+        "options": [
+          "Worum",
+          "Worauf",
+          "Wofür"
+        ]
+      },
+      {
+        "q": "Wartest du auf das Paket? – Ja, ich warte schon lange ___.",
+        "a": "darauf",
+        "en": "Are you waiting for the parcel? – Yes, I've been waiting for it for a long time.",
+        "es": "¿Esperas el paquete? – Sí, lo espero desde hace mucho.",
+        "options": [
+          "darauf",
+          "daran",
+          "darum"
+        ]
+      },
+      {
+        "q": "Hast du Angst vor dem Gewitter? – Nein, ich habe keine Angst ___.",
+        "a": "davor",
+        "en": "Are you afraid of the storm? – No, I'm not afraid of it.",
+        "es": "¿Te da miedo la tormenta? – No, no me da miedo.",
+        "options": [
+          "davor",
+          "dafür",
+          "darauf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "indirectq",
+    "title": {
+      "en": "Indirect questions",
+      "de": "Indirekte Fragen",
+      "es": "Preguntas indirectas"
+    },
+    "emoji": "🤔",
+    "rule": {
+      "en": "Indirect questions start with a question word (wann, wo, wie…) or with ob for yes/no questions. The verb goes to the end.",
+      "de": "Indirekte Fragen beginnen mit einem Fragewort (wann, wo, wie …) oder mit ob bei Ja/Nein-Fragen. Das Verb steht am Ende.",
+      "es": "Las preguntas indirectas empiezan con una palabra interrogativa (wann, wo, wie…) o con ob («si») en preguntas de sí o no. El verbo va al final."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Können Sie mir sagen, ___ der Zug abfährt?",
+        "a": "wann",
+        "en": "Can you tell me when the train leaves?",
+        "es": "¿Puede decirme cuándo sale el tren?",
+        "options": [
+          "wann",
+          "ob",
+          "was"
+        ]
+      },
+      {
+        "q": "Ich weiß nicht, ___ er heute kommt.",
+        "a": "ob",
+        "en": "I don't know whether he's coming today.",
+        "es": "No sé si viene hoy.",
+        "options": [
+          "ob",
+          "wann",
+          "wer"
+        ]
+      },
+      {
+        "q": "Weißt du, ___ die Apotheke ist?",
+        "a": "wo",
+        "en": "Do you know where the pharmacy is?",
+        "es": "¿Sabes dónde está la farmacia?",
+        "options": [
+          "wo",
+          "wann",
+          "ob",
+          "was"
+        ]
+      },
+      {
+        "q": "Kannst du mir sagen, ___ das Ticket kostet?",
+        "a": "was",
+        "en": "Can you tell me what the ticket costs?",
+        "es": "¿Me puedes decir cuánto cuesta la entrada?",
+        "options": [
+          "was",
+          "wo",
+          "ob"
+        ]
+      },
+      {
+        "q": "Ich frage mich, ___ sie so traurig ist.",
+        "a": "warum",
+        "en": "I wonder why she is so sad.",
+        "es": "Me pregunto por qué está tan triste.",
+        "options": [
+          "warum",
+          "wer",
+          "was"
+        ]
+      },
+      {
+        "q": "Wissen Sie, ___ hier wohnt?",
+        "a": "wer",
+        "en": "Do you know who lives here?",
+        "es": "¿Sabe quién vive aquí?",
+        "options": [
+          "wer",
+          "wo",
+          "ob"
+        ]
+      },
+      {
+        "q": "Er fragt, ___ wir morgen Zeit haben.",
+        "a": "ob",
+        "en": "He's asking whether we have time tomorrow.",
+        "es": "Pregunta si tenemos tiempo mañana.",
+        "options": [
+          "ob",
+          "was",
+          "wer"
+        ]
+      },
+      {
+        "q": "Ich weiß nicht, ___ man dieses Wort schreibt.",
+        "a": "wie",
+        "en": "I don't know how you spell this word.",
+        "es": "No sé cómo se escribe esta palabra.",
+        "options": [
+          "wie",
+          "wer",
+          "ob",
+          "wann"
+        ]
+      },
+      {
+        "q": "Weißt du, ___ der Kurs beginnt?",
+        "a": "wann",
+        "en": "Do you know when the course starts?",
+        "es": "¿Sabes cuándo empieza el curso?",
+        "options": [
+          "wann",
+          "was",
+          "wer"
+        ]
+      },
+      {
+        "q": "Sag mir bitte, ___ du dir zum Geburtstag wünschst.",
+        "a": "was",
+        "en": "Please tell me what you'd like for your birthday.",
+        "es": "Dime, por favor, qué quieres para tu cumpleaños.",
+        "options": [
+          "was",
+          "wo",
+          "wer"
+        ]
+      },
+      {
+        "q": "Ich möchte wissen, ___ das Museum am Montag geöffnet ist.",
+        "a": "ob",
+        "en": "I'd like to know whether the museum is open on Monday.",
+        "es": "Me gustaría saber si el museo abre el lunes.",
+        "options": [
+          "ob",
+          "wer",
+          "was"
+        ]
+      },
+      {
+        "q": "Wissen Sie, ___ der Bus heute nicht fährt?",
+        "a": "warum",
+        "en": "Do you know why the bus isn't running today?",
+        "es": "¿Sabe por qué no pasa el autobús hoy?",
+        "options": [
+          "warum",
+          "wer",
+          "was"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "placeprep2",
+    "title": {
+      "en": "Where to and where from",
+      "de": "Wohin und woher?",
+      "es": "¿Adónde y de dónde?"
+    },
+    "emoji": "🧭",
+    "rule": {
+      "en": "Where to: nach + city/country, in die/ins, an + water (ans Meer), auf + island, zu + people and places (zum Arzt). Where from: aus (a place) or von (a person or zu-place).",
+      "de": "Wohin: nach + Stadt/Land, in die/ins, an + Wasser (ans Meer), auf + Insel, zu + Personen und Orte (zum Arzt). Woher: aus (Ort) oder von (Person oder zu-Ort).",
+      "es": "Adónde: nach + ciudad/país, in die/ins, an + agua (ans Meer), auf + isla, zu + personas y lugares (zum Arzt). De dónde: aus (un lugar) o von (una persona o un lugar con zu)."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Im Sommer fahren wir ___ Meer.",
+        "a": "ans",
+        "en": "In summer we go to the seaside.",
+        "es": "En verano vamos a la playa.",
+        "options": [
+          "ans",
+          "ins",
+          "nach",
+          "auf"
+        ]
+      },
+      {
+        "q": "Nächste Woche fliegt Anna ___ Spanien.",
+        "a": "nach",
+        "en": "Next week Anna is flying to Spain.",
+        "es": "La semana que viene Anna vuela a España.",
+        "options": [
+          "nach",
+          "in die",
+          "zu"
+        ]
+      },
+      {
+        "q": "Im Winter fahren wir ___ Schweiz.",
+        "a": "in die",
+        "en": "In winter we're going to Switzerland.",
+        "es": "En invierno vamos a Suiza.",
+        "options": [
+          "in die",
+          "nach",
+          "an die"
+        ]
+      },
+      {
+        "q": "Gehst du heute Abend ___ Kino?",
+        "a": "ins",
+        "en": "Are you going to the cinema tonight?",
+        "es": "¿Vas al cine esta noche?",
+        "options": [
+          "ins",
+          "ans",
+          "nach",
+          "auf"
+        ]
+      },
+      {
+        "q": "Ich muss morgen ___ Arzt.",
+        "a": "zum",
+        "en": "I have to go to the doctor tomorrow.",
+        "es": "Mañana tengo que ir al médico.",
+        "options": [
+          "zum",
+          "ins",
+          "nach",
+          "beim"
+        ]
+      },
+      {
+        "q": "Am Wochenende fahren wir ___ den See.",
+        "a": "an",
+        "en": "At the weekend we're going to the lake.",
+        "es": "El fin de semana vamos al lago.",
+        "options": [
+          "an",
+          "auf",
+          "zu"
+        ]
+      },
+      {
+        "q": "Wir fliegen ___ eine Insel in der Karibik.",
+        "a": "auf",
+        "en": "We're flying to an island in the Caribbean.",
+        "es": "Volamos a una isla del Caribe.",
+        "options": [
+          "auf",
+          "in",
+          "an",
+          "nach"
+        ]
+      },
+      {
+        "q": "Heute Abend gehe ich ___ Freunden.",
+        "a": "zu",
+        "en": "Tonight I'm going to some friends' place.",
+        "es": "Esta noche voy a casa de unos amigos.",
+        "options": [
+          "zu",
+          "nach",
+          "in",
+          "bei"
+        ]
+      },
+      {
+        "q": "Ich komme ___ Italien.",
+        "a": "aus",
+        "en": "I come from Italy.",
+        "es": "Soy de Italia.",
+        "options": [
+          "aus",
+          "von",
+          "nach"
+        ]
+      },
+      {
+        "q": "Sie kommt gerade ___ Arzt.",
+        "a": "vom",
+        "en": "She's just coming from the doctor's.",
+        "es": "Viene ahora mismo del médico.",
+        "options": [
+          "vom",
+          "aus",
+          "zum"
+        ]
+      },
+      {
+        "q": "Im Urlaub fahren wir ___ Berge.",
+        "a": "in die",
+        "en": "On holiday we're going to the mountains.",
+        "es": "En vacaciones vamos a la montaña.",
+        "options": [
+          "in die",
+          "nach",
+          "an die",
+          "zu"
+        ]
+      },
+      {
+        "q": "Mein Kollege kommt ___ der Türkei.",
+        "a": "aus",
+        "en": "My colleague comes from Turkey.",
+        "es": "Mi compañero es de Turquía.",
+        "options": [
+          "aus",
+          "von",
+          "nach"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "adjindefinite",
+    "title": {
+      "en": "Adjectives after ein, kein, mein",
+      "de": "Adjektive nach ein, kein, mein",
+      "es": "Adjetivos tras ein, kein, mein"
+    },
+    "emoji": "🎨",
+    "rule": {
+      "en": "After ein/kein/mein the adjective shows the gender when the article doesn't: ein schöner Tag, ein schönes Hotel. In the accusative masculine, the dative and the plural after kein/mein it ends in -en.",
+      "de": "Nach ein/kein/mein zeigt das Adjektiv das Genus, wenn der Artikel es nicht zeigt: ein schöner Tag, ein schönes Hotel. Im Akkusativ maskulin, im Dativ und im Plural nach kein/mein endet es auf -en.",
+      "es": "Tras ein/kein/mein, el adjetivo marca el género cuando el artículo no lo hace: ein schöner Tag, ein schönes Hotel. En acusativo masculino, en dativo y en plural tras kein/mein termina en -en."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Das ist ein ___ Hotel. (schön)",
+        "a": "schönes",
+        "en": "That is a nice hotel.",
+        "es": "Es un hotel bonito.",
+        "options": [
+          "schönes",
+          "schöne",
+          "schönen"
+        ]
+      },
+      {
+        "q": "Wir suchen einen ___ Strand. (ruhig)",
+        "a": "ruhigen",
+        "en": "We're looking for a quiet beach.",
+        "es": "Buscamos una playa tranquila.",
+        "options": [
+          "ruhigen",
+          "ruhiger",
+          "ruhiges"
+        ]
+      },
+      {
+        "q": "Ich fahre mit einer ___ Freundin in den Urlaub. (alt)",
+        "a": "alten",
+        "en": "I'm going on holiday with an old friend.",
+        "es": "Me voy de vacaciones con una vieja amiga.",
+        "options": [
+          "alten",
+          "alte",
+          "alter"
+        ]
+      },
+      {
+        "q": "Das ist kein ___ Problem. (groß)",
+        "a": "großes",
+        "en": "That's not a big problem.",
+        "es": "No es un gran problema.",
+        "options": [
+          "großes",
+          "großer",
+          "großen"
+        ]
+      },
+      {
+        "q": "Mein ___ Bruder wohnt in Hamburg. (klein)",
+        "a": "kleiner",
+        "en": "My little brother lives in Hamburg.",
+        "es": "Mi hermano pequeño vive en Hamburgo.",
+        "options": [
+          "kleiner",
+          "kleine",
+          "kleinen"
+        ]
+      },
+      {
+        "q": "Sie hat eine ___ Wohnung gefunden. (hell)",
+        "a": "helle",
+        "en": "She has found a bright flat.",
+        "es": "Ha encontrado un piso luminoso.",
+        "options": [
+          "helle",
+          "hellen",
+          "heller"
+        ]
+      },
+      {
+        "q": "Er wohnt in einem ___ Haus. (alt)",
+        "a": "alten",
+        "en": "He lives in an old house.",
+        "es": "Vive en una casa antigua.",
+        "options": [
+          "alten",
+          "altes",
+          "alter"
+        ]
+      },
+      {
+        "q": "Ich habe keine ___ Schuhe. (bequem)",
+        "a": "bequemen",
+        "en": "I don't have any comfortable shoes.",
+        "es": "No tengo zapatos cómodos.",
+        "options": [
+          "bequemen",
+          "bequeme",
+          "bequemer"
+        ]
+      },
+      {
+        "q": "Das ist eine ___ Idee! (gut)",
+        "a": "gute",
+        "en": "That's a good idea!",
+        "es": "¡Es una buena idea!",
+        "options": [
+          "gute",
+          "guter",
+          "guten"
+        ]
+      },
+      {
+        "q": "Wir schlafen in einem ___ Zimmer. (klein)",
+        "a": "kleinen",
+        "en": "We're sleeping in a small room.",
+        "es": "Dormimos en una habitación pequeña.",
+        "options": [
+          "kleinen",
+          "kleines",
+          "kleiner"
+        ]
+      },
+      {
+        "q": "Hast du einen ___ Koffer? (leicht)",
+        "a": "leichten",
+        "en": "Do you have a light suitcase?",
+        "es": "¿Tienes una maleta ligera?",
+        "options": [
+          "leichten",
+          "leichter",
+          "leichtes"
+        ]
+      },
+      {
+        "q": "Meine ___ Kollegin heißt Maria. (neu)",
+        "a": "neue",
+        "en": "My new colleague is called Maria.",
+        "es": "Mi nueva compañera se llama María.",
+        "options": [
+          "neue",
+          "neuen",
+          "neuer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wenn",
+    "title": {
+      "en": "wenn-clauses",
+      "de": "Nebensätze mit wenn",
+      "es": "Oraciones con wenn"
+    },
+    "emoji": "🌦️",
+    "rule": {
+      "en": "wenn means 'if' or 'when (every time)'. Like weil, dass and ob, it sends the verb to the end. If the wenn-clause comes first, the main clause starts with the verb.",
+      "de": "wenn nennt eine Bedingung oder eine Zeit. Wie bei weil, dass und ob steht das Verb am Ende. Steht der wenn-Satz vorne, beginnt der Hauptsatz mit dem Verb.",
+      "es": "wenn significa «si» o «cuando (siempre que)». Como weil, dass y ob, manda el verbo al final. Si la oración con wenn va primero, la principal empieza con el verbo."
+    },
+    "options": [
+      "wenn",
+      "weil",
+      "dass",
+      "ob"
+    ],
+    "items": [
+      {
+        "q": "___ es regnet, fahre ich mit dem Bus.",
+        "a": "Wenn",
+        "en": "When it rains, I take the bus.",
+        "es": "Cuando llueve, voy en autobús.",
+        "options": [
+          "Wenn",
+          "Weil",
+          "Dass",
+          "Ob"
+        ]
+      },
+      {
+        "q": "Ich bleibe zu Hause, ___ ich krank bin.",
+        "a": "weil",
+        "en": "I'm staying at home because I'm ill.",
+        "es": "Me quedo en casa porque estoy enfermo."
+      },
+      {
+        "q": "Ruf mich an, ___ du Zeit hast.",
+        "a": "wenn",
+        "en": "Call me if you have time.",
+        "es": "Llámame si tienes tiempo."
+      },
+      {
+        "q": "Ich glaube, ___ der Film gut ist.",
+        "a": "dass",
+        "en": "I think that the film is good.",
+        "es": "Creo que la película es buena."
+      },
+      {
+        "q": "Weißt du, ___ der Supermarkt heute offen ist?",
+        "a": "ob",
+        "en": "Do you know whether the supermarket is open today?",
+        "es": "¿Sabes si el supermercado está abierto hoy?"
+      },
+      {
+        "q": "___ ich Zeit habe, lese ich gern.",
+        "a": "Wenn",
+        "en": "When I have time, I like to read.",
+        "es": "Cuando tengo tiempo, me gusta leer.",
+        "options": [
+          "Wenn",
+          "Weil",
+          "Dass",
+          "Ob"
+        ]
+      },
+      {
+        "q": "Wir gehen spazieren, ___ die Sonne scheint.",
+        "a": "wenn",
+        "en": "We go for a walk when the sun is shining.",
+        "es": "Salimos a pasear cuando hace sol."
+      },
+      {
+        "q": "Es ist schön, ___ du da bist.",
+        "a": "dass",
+        "en": "It's nice that you're here.",
+        "es": "Me alegra que estés aquí."
+      },
+      {
+        "q": "Er kommt nicht mit, ___ er arbeiten muss.",
+        "a": "weil",
+        "en": "He isn't coming along because he has to work.",
+        "es": "No viene porque tiene que trabajar."
+      },
+      {
+        "q": "___ du müde bist, geh doch ins Bett.",
+        "a": "Wenn",
+        "en": "If you're tired, go to bed.",
+        "es": "Si estás cansado, vete a la cama.",
+        "options": [
+          "Wenn",
+          "Weil",
+          "Dass",
+          "Ob"
+        ]
+      },
+      {
+        "q": "Ich frage den Lehrer, ___ wir morgen einen Test schreiben.",
+        "a": "ob",
+        "en": "I'm asking the teacher whether we're having a test tomorrow.",
+        "es": "Le pregunto al profesor si mañana tenemos un examen."
+      },
+      {
+        "q": "Kannst du mir helfen, ___ ich umziehe?",
+        "a": "wenn",
+        "en": "Can you help me when I move house?",
+        "es": "¿Me puedes ayudar cuando me mude?"
+      }
+    ]
+  },
+  {
+    "id": "superlative",
+    "title": {
+      "en": "Comparative and superlative",
+      "de": "Komparativ und Superlativ",
+      "es": "Comparativo y superlativo"
+    },
+    "emoji": "🏆",
+    "rule": {
+      "en": "Comparative: adjective + -er (+ als). Superlative: am + -sten after the verb, or der/die/das + -ste before a noun. Irregular: gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten.",
+      "de": "Komparativ: Adjektiv + -er (+ als). Superlativ: am + -sten nach dem Verb oder der/die/das + -ste vor einem Nomen. Unregelmäßig: gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten.",
+      "es": "Comparativo: adjetivo + -er (+ als). Superlativo: am + -sten tras el verbo, o der/die/das + -ste delante de un sustantivo. Irregulares: gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Dieser Laptop ist am ___. (günstig)",
+        "a": "günstigsten",
+        "en": "This laptop is the cheapest.",
+        "es": "Este portátil es el más barato.",
+        "options": [
+          "günstigsten",
+          "günstigste",
+          "günstiger"
+        ]
+      },
+      {
+        "q": "Das ist der ___ Laptop. (günstig)",
+        "a": "günstigste",
+        "en": "That is the cheapest laptop.",
+        "es": "Es el portátil más barato.",
+        "options": [
+          "günstigste",
+          "günstigsten",
+          "günstiger"
+        ]
+      },
+      {
+        "q": "Mein Bruder ist ___ als ich. (alt)",
+        "a": "älter",
+        "en": "My brother is older than me.",
+        "es": "Mi hermano es mayor que yo.",
+        "options": [
+          "älter",
+          "ältere",
+          "am ältesten"
+        ]
+      },
+      {
+        "q": "Ich trinke gern Kaffee, aber Tee trinke ich ___. (gern)",
+        "a": "lieber",
+        "en": "I like coffee, but I prefer tea.",
+        "es": "Me gusta el café, pero prefiero el té.",
+        "options": [
+          "lieber",
+          "gerner",
+          "am liebsten"
+        ]
+      },
+      {
+        "q": "Pizza esse ich am ___. (gern)",
+        "a": "liebsten",
+        "en": "I like pizza best.",
+        "es": "Lo que más me gusta comer es la pizza.",
+        "options": [
+          "liebsten",
+          "gernsten",
+          "lieber"
+        ]
+      },
+      {
+        "q": "Dein Deutsch ist schon viel ___! (gut)",
+        "a": "besser",
+        "en": "Your German is already much better!",
+        "es": "¡Tu alemán ya es mucho mejor!",
+        "options": [
+          "besser",
+          "guter",
+          "am besten"
+        ]
+      },
+      {
+        "q": "Wer kann am ___ kochen? (gut)",
+        "a": "besten",
+        "en": "Who can cook best?",
+        "es": "¿Quién cocina mejor que nadie?",
+        "options": [
+          "besten",
+          "besser",
+          "gutesten"
+        ]
+      },
+      {
+        "q": "Im Dezember arbeite ich am ___. (viel)",
+        "a": "meisten",
+        "en": "I work the most in December.",
+        "es": "En diciembre es cuando más trabajo.",
+        "options": [
+          "meisten",
+          "mehr",
+          "vielsten"
+        ]
+      },
+      {
+        "q": "Heute habe ich ___ Zeit als gestern. (viel)",
+        "a": "mehr",
+        "en": "Today I have more time than yesterday.",
+        "es": "Hoy tengo más tiempo que ayer.",
+        "options": [
+          "mehr",
+          "meisten",
+          "vieler"
+        ]
+      },
+      {
+        "q": "Berlin ist die ___ Stadt in Deutschland. (groß)",
+        "a": "größte",
+        "en": "Berlin is the biggest city in Germany.",
+        "es": "Berlín es la ciudad más grande de Alemania.",
+        "options": [
+          "größte",
+          "größten",
+          "größere"
+        ]
+      },
+      {
+        "q": "Der Zug ist ___ als der Bus. (schnell)",
+        "a": "schneller",
+        "en": "The train is faster than the bus.",
+        "es": "El tren es más rápido que el autobús.",
+        "options": [
+          "schneller",
+          "schnellste",
+          "am schnellsten"
+        ]
+      },
+      {
+        "q": "Wir nehmen das ___ Zimmer. (billig)",
+        "a": "billigste",
+        "en": "We'll take the cheapest room.",
+        "es": "Nos quedamos con la habitación más barata.",
+        "options": [
+          "billigste",
+          "billigsten",
+          "billiger"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dativeacc",
+    "title": {
+      "en": "Dative and accusative",
+      "de": "Dativ und Akkusativ",
+      "es": "Dativo y acusativo"
+    },
+    "emoji": "🎁",
+    "rule": {
+      "en": "With schenken, geben, zeigen, bringen and schicken, the person is in the dative and the thing in the accusative. A noun thing comes after the person (ihm ein Buch); a pronoun thing comes first (es ihm).",
+      "de": "Bei schenken, geben, zeigen, bringen und schicken steht die Person im Dativ und die Sache im Akkusativ. Ein Nomen kommt nach der Person (ihm ein Buch), ein Pronomen kommt davor (es ihm).",
+      "es": "Con schenken, geben, zeigen, bringen y schicken, la persona va en dativo y la cosa en acusativo. Un sustantivo va detrás de la persona (ihm ein Buch); un pronombre va delante (es ihm)."
+    },
+    "options": [
+      "mir",
+      "dir",
+      "ihm",
+      "ihr",
+      "uns",
+      "euch",
+      "ihnen"
+    ],
+    "items": [
+      {
+        "q": "Ich schenke ___ ein Buch.",
+        "a": "ihm",
+        "en": "I'm giving him a book.",
+        "es": "Le regalo un libro a él."
+      },
+      {
+        "q": "Ich schenke es ___.",
+        "a": "ihr",
+        "en": "I'm giving it to my sister.",
+        "es": "Se lo regalo a mi hermana."
+      },
+      {
+        "q": "Kannst du ___ das Foto zeigen?",
+        "a": "mir",
+        "en": "Can you show me the photo?",
+        "es": "¿Me puedes enseñar la foto?"
+      },
+      {
+        "q": "Ich bringe ___ morgen den Schlüssel, Anna.",
+        "a": "dir",
+        "en": "I'll bring you the key tomorrow, Anna.",
+        "es": "Mañana te traigo la llave, Anna."
+      },
+      {
+        "q": "Kinder, ich gebe ___ jetzt das Eis.",
+        "a": "euch",
+        "en": "Kids, I'm giving you the ice cream now.",
+        "es": "Niños, ahora os doy el helado."
+      },
+      {
+        "q": "Unsere Eltern schicken ___ jedes Jahr eine Karte.",
+        "a": "uns",
+        "en": "Our parents send us a card every year.",
+        "es": "Nuestros padres nos mandan una postal cada año."
+      },
+      {
+        "q": "Die Gäste sind da. Bringst du ___ bitte die Getränke?",
+        "a": "ihnen",
+        "en": "The guests are here. Can you bring them the drinks, please?",
+        "es": "Han llegado los invitados. ¿Les traes las bebidas, por favor?"
+      },
+      {
+        "q": "Mein Vater möchte das Video sehen. Ich zeige es ___ später.",
+        "a": "ihm",
+        "en": "My father wants to see the video. I'll show it to him later.",
+        "es": "Mi padre quiere ver el vídeo. Se lo enseño luego."
+      },
+      {
+        "q": "Gib es ___ bitte zurück!",
+        "a": "mir",
+        "en": "Please give it back to me!",
+        "es": "¡Devuélvemelo, por favor!"
+      },
+      {
+        "q": "Lena hat Geburtstag. Wir schenken ___ eine Tasche.",
+        "a": "ihr",
+        "en": "It's Lena's birthday. We're giving her a bag.",
+        "es": "Es el cumpleaños de Lena. Le regalamos un bolso."
+      },
+      {
+        "q": "Max und Tim, ich schicke ___ die Fotos per E-Mail.",
+        "a": "euch",
+        "en": "Max and Tim, I'll send you the photos by email.",
+        "es": "Max y Tim, os mando las fotos por correo."
+      },
+      {
+        "q": "Kannst du ___ die Stadt zeigen? Wir sind zum ersten Mal hier.",
+        "a": "uns",
+        "en": "Can you show us the city? We're here for the first time.",
+        "es": "¿Nos puedes enseñar la ciudad? Es la primera vez que estamos aquí."
+      }
+    ]
+  },
+  {
+    "id": "preterite",
+    "title": {
+      "en": "Simple past in stories",
+      "de": "Präteritum in Geschichten",
+      "es": "Pasado en relatos"
+    },
+    "emoji": "📖",
+    "rule": {
+      "en": "Stories often use the Präteritum. Regular verbs add -te (wohnte, spielte); irregular verbs change the vowel (ging, kam, fuhr). The ich and er/sie/es forms are the same.",
+      "de": "In Geschichten benutzt man oft das Präteritum. Regelmäßige Verben bekommen -te (wohnte, spielte), unregelmäßige Verben ändern den Vokal (ging, kam, fuhr). Die Formen für ich und er/sie/es sind gleich.",
+      "es": "En los relatos se usa a menudo el Präteritum. Los verbos regulares añaden -te (wohnte, spielte); los irregulares cambian la vocal (ging, kam, fuhr). Las formas de ich y er/sie/es son iguales."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Früher ___ ich in Köln.",
+        "a": "wohnte",
+        "en": "I used to live in Cologne.",
+        "es": "Antes vivía en Colonia.",
+        "options": [
+          "wohnte",
+          "wohnten",
+          "wohntest"
+        ]
+      },
+      {
+        "q": "Gestern ___ er ins Kino.",
+        "a": "ging",
+        "en": "Yesterday he went to the cinema.",
+        "es": "Ayer fue al cine.",
+        "options": [
+          "ging",
+          "gehte",
+          "gang"
+        ]
+      },
+      {
+        "q": "Als Kind ___ ich jeden Tag Fußball.",
+        "a": "spielte",
+        "en": "As a child I played football every day.",
+        "es": "De niño jugaba al fútbol todos los días.",
+        "options": [
+          "spielte",
+          "spielten",
+          "spieltest"
+        ]
+      },
+      {
+        "q": "Plötzlich ___ ein Mann in den Laden.",
+        "a": "kam",
+        "en": "Suddenly a man came into the shop.",
+        "es": "De repente entró un hombre en la tienda.",
+        "options": [
+          "kam",
+          "kommte",
+          "kamen"
+        ]
+      },
+      {
+        "q": "Wir ___ mit dem Zug nach Wien.",
+        "a": "fuhren",
+        "en": "We went to Vienna by train.",
+        "es": "Fuimos a Viena en tren.",
+        "options": [
+          "fuhren",
+          "fuhr",
+          "fahrten"
+        ]
+      },
+      {
+        "q": "Im Park ___ Lisa einen kleinen Hund.",
+        "a": "sah",
+        "en": "In the park Lisa saw a little dog.",
+        "es": "En el parque Lisa vio un perrito.",
+        "options": [
+          "sah",
+          "sehte",
+          "sahen"
+        ]
+      },
+      {
+        "q": "Du ___ mir einen langen Brief.",
+        "a": "schriebst",
+        "en": "You wrote me a long letter.",
+        "es": "Me escribiste una carta larga.",
+        "options": [
+          "schriebst",
+          "schrieb",
+          "schreibtest"
+        ]
+      },
+      {
+        "q": "Die Kinder ___ im Wald einen Schatz.",
+        "a": "fanden",
+        "en": "The children found a treasure in the forest.",
+        "es": "Los niños encontraron un tesoro en el bosque.",
+        "options": [
+          "fanden",
+          "fand",
+          "findeten"
+        ]
+      },
+      {
+        "q": "Ich ___ ein Taxi zum Bahnhof.",
+        "a": "nahm",
+        "en": "I took a taxi to the station.",
+        "es": "Cogí un taxi a la estación.",
+        "options": [
+          "nahm",
+          "nehmte",
+          "nahmen"
+        ]
+      },
+      {
+        "q": "Zum Abendessen ___ wir Pizza.",
+        "a": "aßen",
+        "en": "We had pizza for dinner.",
+        "es": "Cenamos pizza.",
+        "options": [
+          "aßen",
+          "aß",
+          "esste"
+        ]
+      },
+      {
+        "q": "Um zehn Uhr ___ meine Mutter an.",
+        "a": "rief",
+        "en": "At ten o'clock my mother called.",
+        "es": "A las diez llamó mi madre.",
+        "options": [
+          "rief",
+          "rufte",
+          "riefen"
+        ]
+      },
+      {
+        "q": "Mein Vater ___ 30 Jahre bei der Post.",
+        "a": "arbeitete",
+        "en": "My father worked at the post office for 30 years.",
+        "es": "Mi padre trabajó 30 años en Correos.",
+        "options": [
+          "arbeitete",
+          "arbeitet",
+          "arbeitte"
+        ]
+      }
+    ]
+  }
+]

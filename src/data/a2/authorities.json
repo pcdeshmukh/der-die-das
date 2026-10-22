@@ -1,0 +1,218 @@
+{
+  "id": "authorities",
+  "title": {
+    "de": "Ämter & Formulare",
+    "en": "Offices & forms",
+    "es": "Trámites y formularios"
+  },
+  "emoji": "📝",
+  "nouns": [
+    {
+      "de": "Amt",
+      "article": "das",
+      "plural": "Ämter",
+      "en": "public office",
+      "es": "oficina pública",
+      "emoji": "🏛️"
+    },
+    {
+      "de": "Behörde",
+      "article": "die",
+      "plural": "Behörden",
+      "en": "authority",
+      "es": "autoridad"
+    },
+    {
+      "de": "Bürgeramt",
+      "article": "das",
+      "plural": "Bürgerämter",
+      "en": "citizens' office",
+      "es": "oficina de atención al ciudadano"
+    },
+    {
+      "de": "Ausländerbehörde",
+      "article": "die",
+      "plural": "Ausländerbehörden",
+      "en": "immigration office",
+      "es": "oficina de extranjería"
+    },
+    {
+      "de": "Formular",
+      "article": "das",
+      "plural": "Formulare",
+      "en": "form",
+      "es": "formulario",
+      "emoji": "📄"
+    },
+    {
+      "de": "Antrag",
+      "article": "der",
+      "plural": "Anträge",
+      "en": "application",
+      "es": "solicitud"
+    },
+    {
+      "de": "Dokument",
+      "article": "das",
+      "plural": "Dokumente",
+      "en": "document",
+      "es": "documento",
+      "emoji": "📑"
+    },
+    {
+      "de": "Unterschrift",
+      "article": "die",
+      "plural": "Unterschriften",
+      "en": "signature",
+      "es": "firma",
+      "emoji": "✍️"
+    },
+    {
+      "de": "Stempel",
+      "article": "der",
+      "plural": "Stempel",
+      "en": "rubber stamp",
+      "es": "sello"
+    },
+    {
+      "de": "Gebühr",
+      "article": "die",
+      "plural": "Gebühren",
+      "en": "fee",
+      "es": "tasa"
+    },
+    {
+      "de": "Frist",
+      "article": "die",
+      "plural": "Fristen",
+      "en": "deadline",
+      "es": "plazo",
+      "emoji": "⏳"
+    },
+    {
+      "de": "Wartenummer",
+      "article": "die",
+      "plural": "Wartenummern",
+      "en": "queue number",
+      "es": "número de espera",
+      "emoji": "🎫"
+    },
+    {
+      "de": "Sachbearbeiter",
+      "article": "der",
+      "plural": "Sachbearbeiter",
+      "en": "clerk (male)",
+      "es": "administrativo"
+    },
+    {
+      "de": "Sachbearbeiterin",
+      "article": "die",
+      "plural": "Sachbearbeiterinnen",
+      "en": "clerk (female)",
+      "es": "administrativa"
+    },
+    {
+      "de": "Anmeldung",
+      "article": "die",
+      "plural": "Anmeldungen",
+      "en": "registration of address",
+      "es": "empadronamiento"
+    },
+    {
+      "de": "Aufenthaltserlaubnis",
+      "article": "die",
+      "plural": "Aufenthaltserlaubnisse",
+      "en": "residence permit",
+      "es": "permiso de residencia"
+    },
+    {
+      "de": "Visum",
+      "article": "das",
+      "plural": "Visa",
+      "en": "visa",
+      "es": "visado"
+    },
+    {
+      "de": "Staatsangehörigkeit",
+      "article": "die",
+      "plural": "Staatsangehörigkeiten",
+      "en": "nationality",
+      "es": "nacionalidad"
+    },
+    {
+      "de": "Geburtsurkunde",
+      "article": "die",
+      "plural": "Geburtsurkunden",
+      "en": "birth certificate",
+      "es": "partida de nacimiento"
+    },
+    {
+      "de": "Bescheinigung",
+      "article": "die",
+      "plural": "Bescheinigungen",
+      "en": "certificate",
+      "es": "certificado"
+    },
+    {
+      "de": "Führerschein",
+      "article": "der",
+      "plural": "Führerscheine",
+      "en": "driving licence",
+      "es": "carné de conducir",
+      "emoji": "🪪"
+    },
+    {
+      "de": "Vorname",
+      "article": "der",
+      "plural": "Vornamen",
+      "en": "first name",
+      "es": "nombre de pila"
+    },
+    {
+      "de": "Familienname",
+      "article": "der",
+      "plural": "Familiennamen",
+      "en": "surname",
+      "es": "apellido"
+    },
+    {
+      "de": "Familienstand",
+      "article": "der",
+      "plural": null,
+      "en": "marital status",
+      "es": "estado civil"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich muss dieses Formular ausfüllen.",
+      "en": "I have to fill in this form.",
+      "es": "Tengo que rellenar este formulario."
+    },
+    {
+      "de": "Wo bekomme ich eine Wartenummer?",
+      "en": "Where do I get a queue number?",
+      "es": "¿Dónde consigo un número de espera?"
+    },
+    {
+      "de": "Die Gebühr beträgt zwanzig Euro.",
+      "en": "The fee is twenty euros.",
+      "es": "La tasa es de veinte euros."
+    },
+    {
+      "de": "Ich habe einen Antrag gestellt.",
+      "en": "I have submitted an application.",
+      "es": "He presentado una solicitud."
+    },
+    {
+      "de": "Mein Visum ist abgelaufen.",
+      "en": "My visa has expired.",
+      "es": "Mi visado ha caducado."
+    },
+    {
+      "de": "Brauchen Sie eine Kopie der Geburtsurkunde?",
+      "en": "Do you need a copy of the birth certificate?",
+      "es": "¿Necesita una copia de la partida de nacimiento?"
+    }
+  ]
+}

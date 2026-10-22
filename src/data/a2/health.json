@@ -1,0 +1,225 @@
+{
+  "id": "health",
+  "title": {
+    "de": "Gesundheit & Krankheit",
+    "en": "Health & illness",
+    "es": "Salud y enfermedad"
+  },
+  "emoji": "🤧",
+  "nouns": [
+    {
+      "de": "Erkältung",
+      "article": "die",
+      "plural": "Erkältungen",
+      "en": "cold",
+      "es": "resfriado",
+      "emoji": "🤧"
+    },
+    {
+      "de": "Grippe",
+      "article": "die",
+      "plural": "Grippen",
+      "en": "flu",
+      "es": "gripe"
+    },
+    {
+      "de": "Allergie",
+      "article": "die",
+      "plural": "Allergien",
+      "en": "allergy",
+      "es": "alergia"
+    },
+    {
+      "de": "Verletzung",
+      "article": "die",
+      "plural": "Verletzungen",
+      "en": "injury",
+      "es": "lesión"
+    },
+    {
+      "de": "Blut",
+      "article": "das",
+      "plural": null,
+      "en": "blood",
+      "es": "sangre",
+      "emoji": "🩸"
+    },
+    {
+      "de": "Herz",
+      "article": "das",
+      "plural": "Herzen",
+      "en": "heart",
+      "es": "corazón",
+      "emoji": "❤️"
+    },
+    {
+      "de": "Magen",
+      "article": "der",
+      "plural": "Mägen",
+      "en": "stomach",
+      "es": "estómago"
+    },
+    {
+      "de": "Lunge",
+      "article": "die",
+      "plural": "Lungen",
+      "en": "lung",
+      "es": "pulmón",
+      "emoji": "🫁"
+    },
+    {
+      "de": "Haut",
+      "article": "die",
+      "plural": "Häute",
+      "en": "skin",
+      "es": "piel"
+    },
+    {
+      "de": "Patient",
+      "article": "der",
+      "plural": "Patienten",
+      "en": "patient (male)",
+      "es": "paciente (hombre)"
+    },
+    {
+      "de": "Patientin",
+      "article": "die",
+      "plural": "Patientinnen",
+      "en": "patient (female)",
+      "es": "paciente (mujer)"
+    },
+    {
+      "de": "Zahnarzt",
+      "article": "der",
+      "plural": "Zahnärzte",
+      "en": "dentist (male)",
+      "es": "dentista (hombre)"
+    },
+    {
+      "de": "Zahnärztin",
+      "article": "die",
+      "plural": "Zahnärztinnen",
+      "en": "dentist (female)",
+      "es": "dentista (mujer)"
+    },
+    {
+      "de": "Wartezimmer",
+      "article": "das",
+      "plural": "Wartezimmer",
+      "en": "waiting room",
+      "es": "sala de espera"
+    },
+    {
+      "de": "Untersuchung",
+      "article": "die",
+      "plural": "Untersuchungen",
+      "en": "examination",
+      "es": "reconocimiento médico"
+    },
+    {
+      "de": "Operation",
+      "article": "die",
+      "plural": "Operationen",
+      "en": "operation",
+      "es": "operación"
+    },
+    {
+      "de": "Spritze",
+      "article": "die",
+      "plural": "Spritzen",
+      "en": "injection",
+      "es": "inyección",
+      "emoji": "💉"
+    },
+    {
+      "de": "Pflaster",
+      "article": "das",
+      "plural": "Pflaster",
+      "en": "plaster",
+      "es": "tirita",
+      "emoji": "🩹"
+    },
+    {
+      "de": "Verband",
+      "article": "der",
+      "plural": "Verbände",
+      "en": "bandage",
+      "es": "venda"
+    },
+    {
+      "de": "Salbe",
+      "article": "die",
+      "plural": "Salben",
+      "en": "ointment",
+      "es": "pomada"
+    },
+    {
+      "de": "Krankenwagen",
+      "article": "der",
+      "plural": "Krankenwagen",
+      "en": "ambulance",
+      "es": "ambulancia",
+      "emoji": "🚑"
+    },
+    {
+      "de": "Notaufnahme",
+      "article": "die",
+      "plural": "Notaufnahmen",
+      "en": "A&E, emergency department",
+      "es": "urgencias"
+    },
+    {
+      "de": "Krankmeldung",
+      "article": "die",
+      "plural": "Krankmeldungen",
+      "en": "sick note",
+      "es": "baja médica"
+    },
+    {
+      "de": "Krankenkasse",
+      "article": "die",
+      "plural": "Krankenkassen",
+      "en": "health insurance fund",
+      "es": "seguro médico"
+    },
+    {
+      "de": "Versicherung",
+      "article": "die",
+      "plural": "Versicherungen",
+      "en": "insurance",
+      "es": "seguro"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe eine schlimme Erkältung.",
+      "en": "I have a bad cold.",
+      "es": "Tengo un resfriado fuerte."
+    },
+    {
+      "de": "Haben Sie eine Allergie gegen Medikamente?",
+      "en": "Do you have an allergy to medicines?",
+      "es": "¿Tiene alergia a algún medicamento?"
+    },
+    {
+      "de": "Der Zahnarzt hat mir eine Spritze gegeben.",
+      "en": "The dentist gave me an injection.",
+      "es": "El dentista me ha puesto una inyección."
+    },
+    {
+      "de": "Wir müssen sofort einen Krankenwagen rufen!",
+      "en": "We must call an ambulance immediately!",
+      "es": "¡Tenemos que llamar a una ambulancia ahora mismo!"
+    },
+    {
+      "de": "Ich brauche eine Krankmeldung für meinen Chef.",
+      "en": "I need a sick note for my boss.",
+      "es": "Necesito una baja médica para mi jefe."
+    },
+    {
+      "de": "Hast du ein Pflaster für mich?",
+      "en": "Do you have a plaster for me?",
+      "es": "¿Tienes una tirita para mí?"
+    }
+  ]
+}

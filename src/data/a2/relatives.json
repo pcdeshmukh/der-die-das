@@ -1,0 +1,232 @@
+{
+  "id": "relatives",
+  "title": {
+    "de": "Verwandte & Beziehungen",
+    "en": "Relatives & relationships",
+    "es": "Parientes y relaciones"
+  },
+  "emoji": "👪",
+  "nouns": [
+    {
+      "de": "Schwiegermutter",
+      "article": "die",
+      "plural": "Schwiegermütter",
+      "en": "mother-in-law",
+      "es": "suegra"
+    },
+    {
+      "de": "Schwiegervater",
+      "article": "der",
+      "plural": "Schwiegerväter",
+      "en": "father-in-law",
+      "es": "suegro"
+    },
+    {
+      "de": "Schwiegersohn",
+      "article": "der",
+      "plural": "Schwiegersöhne",
+      "en": "son-in-law",
+      "es": "yerno"
+    },
+    {
+      "de": "Schwiegertochter",
+      "article": "die",
+      "plural": "Schwiegertöchter",
+      "en": "daughter-in-law",
+      "es": "nuera"
+    },
+    {
+      "de": "Schwager",
+      "article": "der",
+      "plural": "Schwäger",
+      "en": "brother-in-law",
+      "es": "cuñado"
+    },
+    {
+      "de": "Schwägerin",
+      "article": "die",
+      "plural": "Schwägerinnen",
+      "en": "sister-in-law",
+      "es": "cuñada"
+    },
+    {
+      "de": "Neffe",
+      "article": "der",
+      "plural": "Neffen",
+      "en": "nephew",
+      "es": "sobrino"
+    },
+    {
+      "de": "Nichte",
+      "article": "die",
+      "plural": "Nichten",
+      "en": "niece",
+      "es": "sobrina"
+    },
+    {
+      "de": "Urgroßmutter",
+      "article": "die",
+      "plural": "Urgroßmütter",
+      "en": "great-grandmother",
+      "es": "bisabuela"
+    },
+    {
+      "de": "Urgroßvater",
+      "article": "der",
+      "plural": "Urgroßväter",
+      "en": "great-grandfather",
+      "es": "bisabuelo"
+    },
+    {
+      "de": "Stiefmutter",
+      "article": "die",
+      "plural": "Stiefmütter",
+      "en": "stepmother",
+      "es": "madrastra"
+    },
+    {
+      "de": "Stiefvater",
+      "article": "der",
+      "plural": "Stiefväter",
+      "en": "stepfather",
+      "es": "padrastro"
+    },
+    {
+      "de": "Zwilling",
+      "article": "der",
+      "plural": "Zwillinge",
+      "en": "twin",
+      "es": "gemelo",
+      "emoji": "👯"
+    },
+    {
+      "de": "Ehe",
+      "article": "die",
+      "plural": "Ehen",
+      "en": "marriage",
+      "es": "matrimonio"
+    },
+    {
+      "de": "Ehepaar",
+      "article": "das",
+      "plural": "Ehepaare",
+      "en": "married couple",
+      "es": "pareja casada",
+      "emoji": "💑"
+    },
+    {
+      "de": "Paar",
+      "article": "das",
+      "plural": "Paare",
+      "en": "couple",
+      "es": "pareja"
+    },
+    {
+      "de": "Braut",
+      "article": "die",
+      "plural": "Bräute",
+      "en": "bride",
+      "es": "novia",
+      "emoji": "👰"
+    },
+    {
+      "de": "Bräutigam",
+      "article": "der",
+      "plural": "Bräutigame",
+      "en": "bridegroom",
+      "es": "novio",
+      "emoji": "🤵"
+    },
+    {
+      "de": "Hochzeitstag",
+      "article": "der",
+      "plural": "Hochzeitstage",
+      "en": "wedding anniversary",
+      "es": "aniversario de boda"
+    },
+    {
+      "de": "Verlobung",
+      "article": "die",
+      "plural": "Verlobungen",
+      "en": "engagement",
+      "es": "compromiso",
+      "emoji": "💍"
+    },
+    {
+      "de": "Beziehung",
+      "article": "die",
+      "plural": "Beziehungen",
+      "en": "relationship",
+      "es": "relación"
+    },
+    {
+      "de": "Freundschaft",
+      "article": "die",
+      "plural": "Freundschaften",
+      "en": "friendship",
+      "es": "amistad",
+      "emoji": "🤝"
+    },
+    {
+      "de": "Trennung",
+      "article": "die",
+      "plural": "Trennungen",
+      "en": "separation",
+      "es": "separación"
+    },
+    {
+      "de": "Scheidung",
+      "article": "die",
+      "plural": "Scheidungen",
+      "en": "divorce",
+      "es": "divorcio",
+      "emoji": "💔"
+    },
+    {
+      "de": "Witwe",
+      "article": "die",
+      "plural": "Witwen",
+      "en": "widow",
+      "es": "viuda"
+    },
+    {
+      "de": "Witwer",
+      "article": "der",
+      "plural": "Witwer",
+      "en": "widower",
+      "es": "viudo"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Meine Schwiegermutter wohnt in Hamburg.",
+      "en": "My mother-in-law lives in Hamburg.",
+      "es": "Mi suegra vive en Hamburgo."
+    },
+    {
+      "de": "Mein Bruder hat Zwillinge bekommen.",
+      "en": "My brother has had twins.",
+      "es": "Mi hermano ha tenido gemelos."
+    },
+    {
+      "de": "Wir feiern unseren zehnten Hochzeitstag.",
+      "en": "We are celebrating our tenth wedding anniversary.",
+      "es": "Celebramos nuestro décimo aniversario de boda."
+    },
+    {
+      "de": "Hast du deinen Schwager schon kennengelernt?",
+      "en": "Have you met your brother-in-law yet?",
+      "es": "¿Ya has conocido a tu cuñado?"
+    },
+    {
+      "de": "Meine Schwester hat ihre Verlobung gefeiert.",
+      "en": "My sister celebrated her engagement.",
+      "es": "Mi hermana ha celebrado su compromiso."
+    },
+    {
+      "de": "Mein Neffe spielt gern mit seiner Cousine.",
+      "en": "My nephew likes playing with his cousin.",
+      "es": "A mi sobrino le gusta jugar con su prima."
+    }
+  ]
+}

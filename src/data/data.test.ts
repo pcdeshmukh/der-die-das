@@ -51,6 +51,13 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
     }
   });
 
+  it('has well-formed Präteritum and Perfekt where given', () => {
+    for (const v of level.verbs?.verbs ?? []) {
+      if (v.preterite) expect(v.preterite, v.infinitive).toHaveLength(6);
+      if (v.perfect) expect(v.perfect, v.infinitive).toMatch(/^(hat|ist) \S+$/);
+    }
+  });
+
   it('has six present-tense forms for every verb', () => {
     expect(level.verbs?.pronouns).toHaveLength(6);
     expect(level.verbs?.prompts).toHaveLength(6);
@@ -113,5 +120,18 @@ describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
   it('has unique grammar and phrase ids', () => {
     const ids = [...level.grammar.map((l) => l.id), ...level.phrases.map((l) => `p:${l.id}`)];
     expect(ids.filter((id, i) => ids.indexOf(id) !== i)).toEqual([]);
+  });
+});
+
+describe('all levels', () => {
+  it('teach each noun only once', () => {
+    const seen = new Map<string, string>();
+    const repeats: string[] = [];
+    for (const level of LEVELS)
+      for (const w of allWords(level)) {
+        if (seen.has(w.de)) repeats.push(`${w.de} (${seen.get(w.de)} and ${w.id})`);
+        seen.set(w.de, w.id);
+      }
+    expect(repeats).toEqual([]);
   });
 });

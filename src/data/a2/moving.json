@@ -1,0 +1,232 @@
+{
+  "id": "moving",
+  "title": {
+    "de": "Umzug & Wohnen",
+    "en": "Moving house",
+    "es": "Mudanza y vivienda"
+  },
+  "emoji": "📦",
+  "nouns": [
+    {
+      "de": "Umzug",
+      "article": "der",
+      "plural": "Umzüge",
+      "en": "move (house)",
+      "es": "mudanza",
+      "emoji": "📦"
+    },
+    {
+      "de": "Mietvertrag",
+      "article": "der",
+      "plural": "Mietverträge",
+      "en": "tenancy agreement",
+      "es": "contrato de alquiler",
+      "emoji": "📄"
+    },
+    {
+      "de": "Kaution",
+      "article": "die",
+      "plural": "Kautionen",
+      "en": "deposit",
+      "es": "fianza"
+    },
+    {
+      "de": "Vermieter",
+      "article": "der",
+      "plural": "Vermieter",
+      "en": "landlord",
+      "es": "casero"
+    },
+    {
+      "de": "Vermieterin",
+      "article": "die",
+      "plural": "Vermieterinnen",
+      "en": "landlady",
+      "es": "casera"
+    },
+    {
+      "de": "Mieter",
+      "article": "der",
+      "plural": "Mieter",
+      "en": "tenant (male)",
+      "es": "inquilino"
+    },
+    {
+      "de": "Mieterin",
+      "article": "die",
+      "plural": "Mieterinnen",
+      "en": "tenant (female)",
+      "es": "inquilina"
+    },
+    {
+      "de": "Hausmeister",
+      "article": "der",
+      "plural": "Hausmeister",
+      "en": "caretaker",
+      "es": "conserje"
+    },
+    {
+      "de": "Keller",
+      "article": "der",
+      "plural": "Keller",
+      "en": "cellar",
+      "es": "sótano"
+    },
+    {
+      "de": "Dachboden",
+      "article": "der",
+      "plural": "Dachböden",
+      "en": "attic",
+      "es": "desván"
+    },
+    {
+      "de": "Erdgeschoss",
+      "article": "das",
+      "plural": "Erdgeschosse",
+      "en": "ground floor",
+      "es": "planta baja"
+    },
+    {
+      "de": "Stockwerk",
+      "article": "das",
+      "plural": "Stockwerke",
+      "en": "storey",
+      "es": "planta"
+    },
+    {
+      "de": "Flur",
+      "article": "der",
+      "plural": "Flure",
+      "en": "hallway",
+      "es": "pasillo"
+    },
+    {
+      "de": "Wand",
+      "article": "die",
+      "plural": "Wände",
+      "en": "wall",
+      "es": "pared",
+      "emoji": "🧱"
+    },
+    {
+      "de": "Karton",
+      "article": "der",
+      "plural": "Kartons",
+      "en": "cardboard box",
+      "es": "caja de cartón",
+      "emoji": "📦"
+    },
+    {
+      "de": "Möbelwagen",
+      "article": "der",
+      "plural": "Möbelwagen",
+      "en": "removal van",
+      "es": "camión de mudanzas",
+      "emoji": "🚚"
+    },
+    {
+      "de": "Teppich",
+      "article": "der",
+      "plural": "Teppiche",
+      "en": "rug, carpet",
+      "es": "alfombra"
+    },
+    {
+      "de": "Vorhang",
+      "article": "der",
+      "plural": "Vorhänge",
+      "en": "curtain",
+      "es": "cortina"
+    },
+    {
+      "de": "Kissen",
+      "article": "das",
+      "plural": "Kissen",
+      "en": "cushion",
+      "es": "cojín"
+    },
+    {
+      "de": "Decke",
+      "article": "die",
+      "plural": "Decken",
+      "en": "blanket; ceiling",
+      "es": "manta; techo"
+    },
+    {
+      "de": "Wohngemeinschaft",
+      "article": "die",
+      "plural": "Wohngemeinschaften",
+      "en": "shared flat",
+      "es": "piso compartido"
+    },
+    {
+      "de": "Anzeige",
+      "article": "die",
+      "plural": "Anzeigen",
+      "en": "advert",
+      "es": "anuncio"
+    },
+    {
+      "de": "Besichtigung",
+      "article": "die",
+      "plural": "Besichtigungen",
+      "en": "viewing",
+      "es": "visita"
+    },
+    {
+      "de": "Hausordnung",
+      "article": "die",
+      "plural": "Hausordnungen",
+      "en": "house rules",
+      "es": "normas de la comunidad"
+    },
+    {
+      "de": "Briefkasten",
+      "article": "der",
+      "plural": "Briefkästen",
+      "en": "letterbox",
+      "es": "buzón",
+      "emoji": "📫"
+    },
+    {
+      "de": "Klingel",
+      "article": "die",
+      "plural": "Klingeln",
+      "en": "doorbell",
+      "es": "timbre",
+      "emoji": "🔔"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Der Umzug war sehr anstrengend.",
+      "en": "The move was very tiring.",
+      "es": "La mudanza fue muy agotadora."
+    },
+    {
+      "de": "Kannst du mir beim Umzug helfen?",
+      "en": "Can you help me with the move?",
+      "es": "¿Puedes ayudarme con la mudanza?"
+    },
+    {
+      "de": "Hast du den Mietvertrag schon unterschrieben?",
+      "en": "Have you signed the tenancy agreement yet?",
+      "es": "¿Ya has firmado el contrato de alquiler?"
+    },
+    {
+      "de": "Wir müssen eine Kaution bezahlen.",
+      "en": "We have to pay a deposit.",
+      "es": "Tenemos que pagar una fianza."
+    },
+    {
+      "de": "Ich suche ein Zimmer in einer Wohngemeinschaft.",
+      "en": "I am looking for a room in a shared flat.",
+      "es": "Busco una habitación en un piso compartido."
+    },
+    {
+      "de": "Wo ist der Schlüssel für den Briefkasten?",
+      "en": "Where is the key for the letterbox?",
+      "es": "¿Dónde está la llave del buzón?"
+    }
+  ]
+}

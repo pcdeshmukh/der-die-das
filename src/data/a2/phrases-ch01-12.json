@@ -1,0 +1,1478 @@
+[
+  {
+    "id": "familyevents",
+    "title": {
+      "en": "Family events",
+      "de": "Familienfeste",
+      "es": "Celebraciones familiares"
+    },
+    "emoji": "🎉",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks what you did at the weekend. You were at your cousin's (female) wedding. How do you answer?",
+          "es": "Un amigo te pregunta qué hiciste el fin de semana. Estuviste en la boda de tu prima. ¿Qué respondes?"
+        },
+        "a": "Ich war auf der Hochzeit von meiner Cousine.",
+        "en": "I was at my cousin's wedding.",
+        "es": "Estuve en la boda de mi prima.",
+        "wrong": [
+          "Ich habe nächste Woche Geburtstag.",
+          "Meine Cousine wohnt in Hamburg.",
+          "Wir feiern morgen eine Party."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend's grandmother turned 90 last week. You want to know how they celebrated. What do you ask?",
+          "es": "La abuela de tu amiga cumplió 90 años la semana pasada. Quieres saber cómo lo celebraron. ¿Qué preguntas?"
+        },
+        "a": "Wie habt ihr den Geburtstag gefeiert?",
+        "en": "How did you celebrate the birthday?",
+        "es": "¿Cómo celebrasteis el cumpleaños?",
+        "wrong": [
+          "Wann hast du Geburtstag?",
+          "Gute Besserung für deine Oma!",
+          "Wie alt bist du?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your colleague got married on Saturday. What do you say?",
+          "es": "Tu compañero de trabajo se casó el sábado. ¿Qué dices?"
+        },
+        "a": "Herzlichen Glückwunsch zur Hochzeit!",
+        "en": "Congratulations on your wedding!",
+        "es": "¡Enhorabuena por la boda!",
+        "wrong": [
+          "Herzliches Beileid.",
+          "Alles Gute zum Geburtstag!",
+          "Viel Glück bei der Prüfung!"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend points at a man in your photo. He is your mother's brother. How do you answer?",
+          "es": "Un amigo señala a un hombre en tu foto. Es el hermano de tu madre. ¿Qué respondes?"
+        },
+        "a": "Das ist mein Onkel, der Bruder von meiner Mutter.",
+        "en": "That's my uncle, my mother's brother.",
+        "es": "Es mi tío, el hermano de mi madre.",
+        "wrong": [
+          "Das ist mein Opa, der Vater von meiner Mutter.",
+          "Das ist mein Cousin, der Sohn von meinem Onkel.",
+          "Das ist mein Schwager, der Mann von meiner Schwester."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks about your childhood holidays. You always went to the seaside with your grandparents. How do you answer?",
+          "es": "Un amigo te pregunta por las vacaciones de tu infancia. Siempre ibas a la playa con tus abuelos. ¿Qué respondes?"
+        },
+        "a": "Als Kind bin ich immer mit meinen Großeltern ans Meer gefahren.",
+        "en": "As a child I always went to the seaside with my grandparents.",
+        "es": "De pequeño siempre iba a la playa con mis abuelos.",
+        "wrong": [
+          "Nächsten Sommer fahre ich mit meinen Großeltern ans Meer.",
+          "Meine Großeltern wohnen in den Bergen.",
+          "Ich war noch nie am Meer."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks how your family party was. It was great and everyone came. How do you answer?",
+          "es": "Un amigo te pregunta qué tal fue la fiesta familiar. Fue genial y vinieron todos. ¿Qué respondes?"
+        },
+        "a": "Es war toll, die ganze Familie ist gekommen.",
+        "en": "It was great, the whole family came.",
+        "es": "Fue genial, vino toda la familia.",
+        "wrong": [
+          "Es war langweilig, niemand ist gekommen.",
+          "Die Party ist nächsten Samstag.",
+          "Ich habe keine Geschwister."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend tells you that his grandfather has died. What do you say?",
+          "es": "Tu amigo te cuenta que su abuelo ha muerto. ¿Qué dices?"
+        },
+        "a": "Das tut mir sehr leid.",
+        "en": "I'm very sorry.",
+        "es": "Lo siento mucho.",
+        "wrong": [
+          "Herzlichen Glückwunsch!",
+          "Das freut mich für dich!",
+          "Viel Spaß!"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A new friend asks if you have siblings. You have an older brother and a younger sister. How do you answer?",
+          "es": "Una nueva amiga te pregunta si tienes hermanos. Tienes un hermano mayor y una hermana menor. ¿Qué respondes?"
+        },
+        "a": "Ja, ich habe einen älteren Bruder und eine jüngere Schwester.",
+        "en": "Yes, I have an older brother and a younger sister.",
+        "es": "Sí, tengo un hermano mayor y una hermana menor.",
+        "wrong": [
+          "Nein, ich bin Einzelkind.",
+          "Ja, ich habe zwei Kinder, einen Sohn und eine Tochter.",
+          "Mein Bruder ist verheiratet und hat zwei Kinder."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "moving",
+    "title": {
+      "en": "Moving house",
+      "de": "Der Umzug",
+      "es": "La mudanza"
+    },
+    "emoji": "📦",
+    "items": [
+      {
+        "situation": {
+          "en": "You are moving on Saturday and need help. You ask a friend. What do you ask?",
+          "es": "Te mudas el sábado y necesitas ayuda. Se lo pides a un amigo. ¿Qué preguntas?"
+        },
+        "a": "Kannst du mir am Samstag beim Umzug helfen?",
+        "en": "Can you help me move on Saturday?",
+        "es": "¿Me puedes ayudar con la mudanza el sábado?",
+        "wrong": [
+          "Ich bin am Samstag umgezogen.",
+          "Wann ziehst du um?",
+          "Ich kann dir leider nicht helfen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend is carrying the wardrobe. It should go in the bedroom. What do you say?",
+          "es": "Tu amigo lleva el armario. Tiene que ir al dormitorio. ¿Qué dices?"
+        },
+        "a": "Stell den Schrank bitte ins Schlafzimmer.",
+        "en": "Please put the wardrobe in the bedroom.",
+        "es": "Pon el armario en el dormitorio, por favor.",
+        "wrong": [
+          "Der Schrank steht im Schlafzimmer.",
+          "Stell den Schrank bitte in den Keller.",
+          "Wir brauchen keinen Schrank."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend asks where the lamp should go. You want it next to the sofa. How do you answer?",
+          "es": "Tu amiga pregunta dónde va la lámpara. La quieres al lado del sofá. ¿Qué respondes?"
+        },
+        "a": "Stell die Lampe bitte neben das Sofa.",
+        "en": "Please put the lamp next to the sofa.",
+        "es": "Pon la lámpara al lado del sofá, por favor.",
+        "wrong": [
+          "Die Lampe ist leider kaputt.",
+          "Häng die Lampe bitte über den Tisch.",
+          "Leg die Lampe bitte auf das Bett."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The pictures should hang on the wall above the bed. You tell your friend. What do you say?",
+          "es": "Los cuadros tienen que ir en la pared encima de la cama. Se lo dices a tu amigo. ¿Qué dices?"
+        },
+        "a": "Häng die Bilder bitte über das Bett.",
+        "en": "Please hang the pictures above the bed.",
+        "es": "Cuelga los cuadros encima de la cama, por favor.",
+        "wrong": [
+          "Leg die Bilder bitte in den Karton.",
+          "Die Bilder hängen schon an der Wand.",
+          "Stell die Bilder bitte hinter die Tür."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend asks where the books go. They belong on the shelf. How do you answer?",
+          "es": "Tu amiga pregunta dónde van los libros. Van en la estantería. ¿Qué respondes?"
+        },
+        "a": "Stell die Bücher bitte ins Regal.",
+        "en": "Please put the books on the shelf.",
+        "es": "Pon los libros en la estantería, por favor.",
+        "wrong": [
+          "Die Bücher liegen auf dem Boden.",
+          "Leg die Bücher bitte unter das Bett.",
+          "Wo sind die Bücher?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend wants to carry the heavy washing machine alone. You want to carry it together. What do you say?",
+          "es": "Tu amigo quiere llevar solo la lavadora, que pesa mucho. Quieres llevarla juntos. ¿Qué dices?"
+        },
+        "a": "Warte, wir tragen die Waschmaschine zusammen.",
+        "en": "Wait, let's carry the washing machine together.",
+        "es": "Espera, llevamos la lavadora entre los dos.",
+        "wrong": [
+          "Trag die Waschmaschine bitte allein.",
+          "Wir haben keine Waschmaschine.",
+          "Die Waschmaschine ist neu."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks you to help with her move, but you have to work that day. How do you answer?",
+          "es": "Una amiga te pide ayuda con su mudanza, pero ese día tienes que trabajar. ¿Qué respondes?"
+        },
+        "a": "Tut mir leid, ich kann nicht, weil ich arbeiten muss.",
+        "en": "Sorry, I can't because I have to work.",
+        "es": "Lo siento, no puedo porque tengo que trabajar.",
+        "wrong": [
+          "Klar, ich helfe dir gern.",
+          "Wann ist dein Umzug?",
+          "Ich muss am Samstag nicht arbeiten."
+        ]
+      },
+      {
+        "situation": {
+          "en": "After the move you want to thank your friends. What do you say?",
+          "es": "Después de la mudanza quieres dar las gracias a tus amigos. ¿Qué dices?"
+        },
+        "a": "Vielen Dank für eure Hilfe beim Umzug!",
+        "en": "Thanks a lot for your help with the move!",
+        "es": "¡Muchas gracias por vuestra ayuda con la mudanza!",
+        "wrong": [
+          "Könnt ihr mir beim Umzug helfen?",
+          "Der Umzug war sehr anstrengend.",
+          "Ich ziehe nächsten Monat um."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "neighbours",
+    "title": {
+      "en": "Neighbours",
+      "de": "Nachbarn",
+      "es": "Los vecinos"
+    },
+    "emoji": "🏘️",
+    "items": [
+      {
+        "situation": {
+          "en": "You have just moved in on the second floor. You meet a neighbour on the stairs. Your surname is Berger. What do you say?",
+          "es": "Acabas de mudarte al segundo piso. Te encuentras con una vecina en la escalera. Te apellidas Berger. ¿Qué dices?"
+        },
+        "a": "Guten Tag, ich wohne jetzt im zweiten Stock. Mein Name ist Berger.",
+        "en": "Hello, I live on the second floor now. My name is Berger.",
+        "es": "Buenos días, ahora vivo en el segundo piso. Me apellido Berger.",
+        "wrong": [
+          "Ich ziehe nächste Woche aus.",
+          "Wohnen Sie schon lange hier?",
+          "Entschuldigung, die Musik ist zu laut."
+        ]
+      },
+      {
+        "situation": {
+          "en": "It's 11 pm and your neighbour's music is very loud. You complain politely. What do you say?",
+          "es": "Son las once de la noche y la música de tu vecino está muy alta. Te quejas con educación. ¿Qué dices?"
+        },
+        "a": "Entschuldigung, könnten Sie die Musik bitte etwas leiser machen?",
+        "en": "Excuse me, could you turn the music down a bit, please?",
+        "es": "Perdone, ¿podría bajar un poco la música, por favor?",
+        "wrong": [
+          "Könnten Sie die Musik bitte lauter machen?",
+          "Die Musik gefällt mir sehr gut.",
+          "Entschuldigung, das kommt nicht wieder vor."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your neighbour says your party last night was too loud. You apologise. What do you say?",
+          "es": "Tu vecina dice que tu fiesta de anoche hizo demasiado ruido. Te disculpas. ¿Qué dices?"
+        },
+        "a": "Das tut mir leid, das kommt nicht wieder vor.",
+        "en": "I'm sorry, it won't happen again.",
+        "es": "Lo siento, no volverá a pasar.",
+        "wrong": [
+          "Das ist mir egal.",
+          "Könnten Sie bitte leiser sein?",
+          "Die Party war super, oder?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You are having a party on Saturday and want to tell your neighbour first. What do you say?",
+          "es": "Vas a dar una fiesta el sábado y quieres avisar antes a tu vecino. ¿Qué dices?"
+        },
+        "a": "Wir feiern am Samstag eine Party. Ich hoffe, das stört Sie nicht.",
+        "en": "We're having a party on Saturday. I hope that doesn't bother you.",
+        "es": "El sábado hacemos una fiesta. Espero que no le moleste.",
+        "wrong": [
+          "Ihre Party war gestern sehr laut.",
+          "Am Samstag ist es bei uns sehr ruhig.",
+          "Darf ich mir mal Ihre Leiter ausleihen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You are going on holiday next week. You ask your neighbour to water your plants. What do you ask?",
+          "es": "La semana que viene te vas de vacaciones. Le pides a tu vecina que riegue tus plantas. ¿Qué preguntas?"
+        },
+        "a": "Könnten Sie nächste Woche meine Blumen gießen? Ich bin im Urlaub.",
+        "en": "Could you water my plants next week? I'm on holiday.",
+        "es": "¿Podría regarme las plantas la semana que viene? Estoy de vacaciones.",
+        "wrong": [
+          "Ich gieße gern Ihre Blumen.",
+          "Ich komme gerade aus dem Urlaub.",
+          "Ihre Blumen sind sehr schön."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your neighbour asks you to accept a parcel for him. You agree. How do you answer?",
+          "es": "Tu vecino te pide que le recojas un paquete. Aceptas. ¿Qué respondes?"
+        },
+        "a": "Ja, gern. Ich nehme das Paket für Sie an.",
+        "en": "Yes, of course. I'll take the parcel for you.",
+        "es": "Sí, claro. Le recojo el paquete.",
+        "wrong": [
+          "Haben Sie ein Paket für mich angenommen?",
+          "Nein, das Paket ist nicht für mich.",
+          "Könnten Sie bitte mein Paket annehmen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your neighbour always leaves her bike in the entrance. You ask her politely to stop. What do you say?",
+          "es": "Tu vecina siempre deja la bici en la entrada. Le pides con educación que no lo haga. ¿Qué dices?"
+        },
+        "a": "Könnten Sie Ihr Fahrrad bitte nicht in den Eingang stellen?",
+        "en": "Could you please not leave your bike in the entrance?",
+        "es": "¿Podría no dejar la bici en la entrada, por favor?",
+        "wrong": [
+          "Darf ich mein Fahrrad in den Keller stellen?",
+          "Ihr Fahrrad ist sehr schön.",
+          "Entschuldigung, ich stelle mein Fahrrad sofort weg."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your neighbour apologises for the noise yesterday. You react kindly. How do you answer?",
+          "es": "Tu vecino se disculpa por el ruido de ayer. Reaccionas con amabilidad. ¿Qué respondes?"
+        },
+        "a": "Kein Problem, das kann doch mal passieren.",
+        "en": "No problem, these things happen.",
+        "es": "No pasa nada, le puede pasar a cualquiera.",
+        "wrong": [
+          "Das ist wirklich unmöglich!",
+          "Entschuldigung, das war meine Schuld.",
+          "Könnten Sie bitte leiser sein?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": {
+      "en": "Cooking & eating out",
+      "de": "Kochen & essen gehen",
+      "es": "Cocinar y comer fuera"
+    },
+    "emoji": "🍲",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks how to make your tomato soup. You explain the first step: chopping the onions. What do you say?",
+          "es": "Un amigo te pregunta cómo haces tu sopa de tomate. Explicas el primer paso: picar la cebolla. ¿Qué dices?"
+        },
+        "a": "Zuerst schneidet man die Zwiebeln klein.",
+        "en": "First you chop the onions.",
+        "es": "Primero se pica la cebolla.",
+        "wrong": [
+          "Die Suppe ist leider kalt.",
+          "Ich esse keine Zwiebeln.",
+          "Zum Schluss gibt man Salz und Pfeffer dazu."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to bake your friend's cake and need to know the ingredients. What do you ask?",
+          "es": "Quieres hacer el pastel de tu amiga y necesitas saber los ingredientes. ¿Qué preguntas?"
+        },
+        "a": "Was braucht man für den Kuchen?",
+        "en": "What do you need for the cake?",
+        "es": "¿Qué hace falta para el pastel?",
+        "wrong": [
+          "Wie lange muss der Kuchen backen?",
+          "Der Kuchen schmeckt sehr gut.",
+          "Möchtest du noch ein Stück Kuchen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks how long your cake needs in the oven: 40 minutes at 180 degrees. How do you answer?",
+          "es": "Una amiga pregunta cuánto tiempo necesita tu pastel en el horno: 40 minutos a 180 grados. ¿Qué respondes?"
+        },
+        "a": "Er muss 40 Minuten bei 180 Grad backen.",
+        "en": "It needs to bake for 40 minutes at 180 degrees.",
+        "es": "Tiene que hornearse 40 minutos a 180 grados.",
+        "wrong": [
+          "Man braucht 200 Gramm Zucker.",
+          "Der Kuchen ist schon fertig.",
+          "Ich backe nicht gern."
+        ]
+      },
+      {
+        "situation": {
+          "en": "In a restaurant your soup arrives cold. You tell the waiter. What do you say?",
+          "es": "En un restaurante te traen la sopa fría. Se lo dices al camarero. ¿Qué dices?"
+        },
+        "a": "Entschuldigung, die Suppe ist leider kalt.",
+        "en": "Excuse me, I'm afraid the soup is cold.",
+        "es": "Perdone, la sopa está fría.",
+        "wrong": [
+          "Die Suppe schmeckt sehr gut, danke.",
+          "Ich hätte gern eine Suppe.",
+          "Könnten Sie mir das Salz bringen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You ordered fish, but the waiter brings you meat. What do you say?",
+          "es": "Has pedido pescado, pero el camarero te trae carne. ¿Qué dices?"
+        },
+        "a": "Entschuldigung, ich habe Fisch bestellt, nicht Fleisch.",
+        "en": "Excuse me, I ordered fish, not meat.",
+        "es": "Perdone, he pedido pescado, no carne.",
+        "wrong": [
+          "Ich hätte gern das Fleisch.",
+          "Der Fisch ist sehr lecker.",
+          "Haben Sie auch vegetarische Gerichte?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "The waiter asks: \"Hat es Ihnen geschmeckt?\" The food was delicious. How do you answer?",
+          "es": "El camarero pregunta: «Hat es Ihnen geschmeckt?». La comida estaba buenísima. ¿Qué respondes?"
+        },
+        "a": "Ja, danke, es war sehr lecker.",
+        "en": "Yes, thanks, it was delicious.",
+        "es": "Sí, gracias, estaba muy rico.",
+        "wrong": [
+          "Nein, das Fleisch war zu salzig.",
+          "Die Rechnung, bitte.",
+          "Ich hätte gern die Speisekarte."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to order a glass of red wine politely. What do you say?",
+          "es": "Quieres pedir una copa de vino tinto con educación. ¿Qué dices?"
+        },
+        "a": "Ich hätte gern ein Glas Rotwein, bitte.",
+        "en": "I'd like a glass of red wine, please.",
+        "es": "Querría una copa de vino tinto, por favor.",
+        "wrong": [
+          "Der Wein ist leider warm.",
+          "Ich trinke keinen Alkohol.",
+          "Wir möchten bitte zahlen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The waiter asks: \"Zusammen oder getrennt?\" You and your friend want to pay separately. How do you answer?",
+          "es": "El camarero pregunta: «Zusammen oder getrennt?». Tu amigo y tú queréis pagar por separado. ¿Qué respondes?"
+        },
+        "a": "Wir zahlen getrennt, bitte.",
+        "en": "We'll pay separately, please.",
+        "es": "Pagamos por separado, por favor.",
+        "wrong": [
+          "Zusammen, bitte.",
+          "Stimmt so.",
+          "Das Essen war leider kalt."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advice",
+    "title": {
+      "en": "Health & advice",
+      "de": "Gesundheit & Ratschläge",
+      "es": "Salud y consejos"
+    },
+    "emoji": "🩺",
+    "items": [
+      {
+        "situation": {
+          "en": "The doctor asks what's wrong. You've had a headache and a fever since yesterday. How do you answer?",
+          "es": "La médica te pregunta qué te pasa. Tienes dolor de cabeza y fiebre desde ayer. ¿Qué respondes?"
+        },
+        "a": "Ich habe seit gestern Kopfschmerzen und Fieber.",
+        "en": "I've had a headache and a fever since yesterday.",
+        "es": "Tengo dolor de cabeza y fiebre desde ayer.",
+        "wrong": [
+          "Mir geht es wieder gut, danke.",
+          "Ich habe morgen einen Termin beim Arzt.",
+          "Mein Bauch tut seit gestern weh."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend has had a bad cough for two weeks. You give advice. What do you say?",
+          "es": "Tu amigo lleva dos semanas con mucha tos. Le das un consejo. ¿Qué dices?"
+        },
+        "a": "Du solltest zum Arzt gehen.",
+        "en": "You should go to the doctor.",
+        "es": "Deberías ir al médico.",
+        "wrong": [
+          "Ich gehe morgen zum Arzt.",
+          "Sie sollten zum Arzt gehen.",
+          "Ich war gestern beim Arzt."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your friend is always tired. You think she should sleep more. What do you say?",
+          "es": "Tu amiga siempre está cansada. Crees que debería dormir más. ¿Qué dices?"
+        },
+        "a": "Du solltest früher ins Bett gehen.",
+        "en": "You should go to bed earlier.",
+        "es": "Deberías acostarte más temprano.",
+        "wrong": [
+          "Ich bin auch immer müde.",
+          "Du solltest mehr Kaffee trinken.",
+          "Ich gehe heute früh ins Bett."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your back hurts. You ask a friend for advice. What do you ask?",
+          "es": "Te duele la espalda. Le pides consejo a un amigo. ¿Qué preguntas?"
+        },
+        "a": "Was soll ich gegen meine Rückenschmerzen machen?",
+        "en": "What should I do about my back pain?",
+        "es": "¿Qué hago para el dolor de espalda?",
+        "wrong": [
+          "Du solltest mehr Sport machen.",
+          "Mein Rücken tut nicht mehr weh.",
+          "Hast du Rückenschmerzen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "At the pharmacy you want something for a sore throat. What do you ask?",
+          "es": "En la farmacia quieres algo para el dolor de garganta. ¿Qué preguntas?"
+        },
+        "a": "Haben Sie etwas gegen Halsschmerzen?",
+        "en": "Do you have anything for a sore throat?",
+        "es": "¿Tiene algo para el dolor de garganta?",
+        "wrong": [
+          "Haben Sie etwas gegen Kopfschmerzen?",
+          "Wie oft muss ich die Tabletten nehmen?",
+          "Wo ist die nächste Apotheke?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know from the pharmacist how often to take the tablets. What do you ask?",
+          "es": "Quieres saber del farmacéutico cada cuánto tomar las pastillas. ¿Qué preguntas?"
+        },
+        "a": "Wie oft muss ich die Tabletten nehmen?",
+        "en": "How often do I have to take the tablets?",
+        "es": "¿Cada cuánto tengo que tomar las pastillas?",
+        "wrong": [
+          "Ich nehme keine Tabletten.",
+          "Haben Sie etwas gegen Halsschmerzen?",
+          "Die Tabletten helfen mir sehr."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You are ill. You call your boss (Sie) to say you can't come to work today. What do you say?",
+          "es": "Estás enfermo. Llamas a tu jefa (Sie) para decir que hoy no puedes ir a trabajar. ¿Qué dices?"
+        },
+        "a": "Ich bin leider krank und kann heute nicht zur Arbeit kommen.",
+        "en": "I'm afraid I'm ill and can't come to work today.",
+        "es": "Lo siento, estoy enfermo y hoy no puedo ir a trabajar.",
+        "wrong": [
+          "Ich bin wieder gesund und komme morgen.",
+          "Mein Kollege ist heute krank.",
+          "Kann ich heute früher nach Hause gehen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A good friend tells you she is ill. You wish her well. What do you say?",
+          "es": "Una buena amiga te cuenta que está enferma. Le deseas que se mejore. ¿Qué dices?"
+        },
+        "a": "Gute Besserung! Ich hoffe, es geht dir bald besser.",
+        "en": "Get well soon! I hope you feel better soon.",
+        "es": "¡Que te mejores! Espero que pronto estés mejor.",
+        "wrong": [
+          "Gute Besserung! Ich hoffe, es geht Ihnen bald besser.",
+          "Schön, dass du wieder gesund bist!",
+          "Du solltest mehr Sport machen."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "work",
+    "title": {
+      "en": "At work",
+      "de": "Bei der Arbeit",
+      "es": "En el trabajo"
+    },
+    "emoji": "💼",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks about your job. You are a nurse in a hospital. How do you answer?",
+          "es": "Un amigo te pregunta por tu trabajo. Eres enfermero en un hospital. ¿Qué respondes?"
+        },
+        "a": "Ich arbeite als Krankenpfleger im Krankenhaus.",
+        "en": "I work as a nurse in a hospital.",
+        "es": "Trabajo de enfermero en un hospital.",
+        "wrong": [
+          "Ich suche gerade eine neue Stelle.",
+          "Ich arbeite als Koch in einem Restaurant.",
+          "Ich möchte Krankenpfleger werden."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks what you do at work. You answer emails and organise appointments. How do you answer?",
+          "es": "Una amiga te pregunta qué haces en el trabajo. Contestas correos y organizas citas. ¿Qué respondes?"
+        },
+        "a": "Ich beantworte E-Mails und organisiere Termine.",
+        "en": "I answer emails and organise appointments.",
+        "es": "Contesto correos y organizo citas.",
+        "wrong": [
+          "Ich habe heute frei.",
+          "Ich arbeite nicht gern im Büro.",
+          "Mein Chef ist sehr nett."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks why you like your job. It's because your colleagues are very nice. How do you answer?",
+          "es": "Un amigo te pregunta por qué te gusta tu trabajo. Es porque tus compañeros son muy majos. ¿Qué respondes?"
+        },
+        "a": "Mir gefällt meine Arbeit, weil meine Kollegen sehr nett sind.",
+        "en": "I like my job because my colleagues are very nice.",
+        "es": "Me gusta mi trabajo porque mis compañeros son muy majos.",
+        "wrong": [
+          "Mir gefällt meine Arbeit nicht, weil ich viele Überstunden mache.",
+          "Meine Kollegen sind leider nicht sehr nett.",
+          "Ich arbeite seit drei Jahren hier."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You don't really like your job because you have to work at weekends. A friend asks why. How do you answer?",
+          "es": "No te gusta mucho tu trabajo porque tienes que trabajar los fines de semana. Un amigo te pregunta por qué. ¿Qué respondes?"
+        },
+        "a": "Ich mag meinen Job nicht so, weil ich am Wochenende arbeiten muss.",
+        "en": "I don't really like my job because I have to work at weekends.",
+        "es": "No me gusta mucho mi trabajo porque tengo que trabajar los fines de semana.",
+        "wrong": [
+          "Ich mag meinen Job, weil ich am Wochenende frei habe.",
+          "Am Wochenende gehe ich gern wandern.",
+          "Ich arbeite von Montag bis Freitag."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks about your working hours. You work from 8:00 to 16:30. How do you answer?",
+          "es": "Una amiga te pregunta por tu horario. Trabajas de 8:00 a 16:30. ¿Qué respondes?"
+        },
+        "a": "Ich arbeite von acht bis halb fünf.",
+        "en": "I work from eight until half past four.",
+        "es": "Trabajo de ocho a cuatro y media.",
+        "wrong": [
+          "Ich arbeite nur am Wochenende.",
+          "Ich fange um neun an und arbeite bis sechs.",
+          "Ich habe heute leider keine Mittagspause."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A colleague you know well asks for help, but you are busy right now. How do you answer?",
+          "es": "Un compañero al que conoces bien te pide ayuda, pero ahora estás ocupado. ¿Qué respondes?"
+        },
+        "a": "Tut mir leid, ich habe gerade keine Zeit. Geht es später?",
+        "en": "Sorry, I don't have time right now. Can we do it later?",
+        "es": "Lo siento, ahora no tengo tiempo. ¿Puede ser más tarde?",
+        "wrong": [
+          "Klar, ich helfe dir sofort.",
+          "Kannst du mir bitte helfen?",
+          "Ich habe heute viel Zeit."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You need Friday off. You ask a colleague you know well to cover your shift. What do you ask?",
+          "es": "Necesitas el viernes libre. Le pides a una compañera a la que conoces bien que te cubra el turno. ¿Qué preguntas?"
+        },
+        "a": "Könntest du am Freitag meine Schicht übernehmen?",
+        "en": "Could you cover my shift on Friday?",
+        "es": "¿Podrías cubrirme el turno del viernes?",
+        "wrong": [
+          "Ich übernehme gern deine Schicht.",
+          "Könnten Sie am Freitag meine Schicht übernehmen?",
+          "Ich habe am Freitag frei."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A colleague asks how long you have worked at the company. It's five years. How do you answer?",
+          "es": "Un compañero te pregunta cuánto tiempo llevas en la empresa. Son cinco años. ¿Qué respondes?"
+        },
+        "a": "Ich arbeite seit fünf Jahren bei dieser Firma.",
+        "en": "I've worked for this company for five years.",
+        "es": "Llevo cinco años trabajando en esta empresa.",
+        "wrong": [
+          "Ich habe vor fünf Jahren mein Studium beendet.",
+          "Ich möchte die Firma wechseln.",
+          "Die Firma hat fünfzig Mitarbeiter."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jobinterview",
+    "title": {
+      "en": "Job interview",
+      "de": "Das Vorstellungsgespräch",
+      "es": "La entrevista de trabajo"
+    },
+    "emoji": "🤝",
+    "items": [
+      {
+        "situation": {
+          "en": "You call a company because of their job advert. What do you say?",
+          "es": "Llamas a una empresa por su oferta de empleo. ¿Qué dices?"
+        },
+        "a": "Guten Tag, ich rufe wegen Ihrer Stellenanzeige an.",
+        "en": "Hello, I'm calling about your job advert.",
+        "es": "Buenos días, llamo por su oferta de empleo.",
+        "wrong": [
+          "Guten Tag, ich möchte einen Tisch reservieren.",
+          "Ich habe die Stelle leider nicht bekommen.",
+          "Hallo, ich rufe wegen deiner Anzeige an."
+        ]
+      },
+      {
+        "situation": {
+          "en": "On the phone you want to know if the job is still available. What do you ask?",
+          "es": "Por teléfono quieres saber si el puesto sigue libre. ¿Qué preguntas?"
+        },
+        "a": "Ist die Stelle noch frei?",
+        "en": "Is the position still available?",
+        "es": "¿Sigue libre el puesto?",
+        "wrong": [
+          "Die Stelle ist leider schon besetzt.",
+          "Ich habe eine neue Stelle.",
+          "Wann ist die Mittagspause?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "The interviewer says: \"Erzählen Sie etwas über sich.\" You are Elena Ruiz from Madrid, an office clerk. How do you answer?",
+          "es": "La entrevistadora dice: «Erzählen Sie etwas über sich.». Eres Elena Ruiz, de Madrid, administrativa. ¿Qué respondes?"
+        },
+        "a": "Ich heiße Elena Ruiz, komme aus Madrid und bin Bürokauffrau.",
+        "en": "My name is Elena Ruiz, I'm from Madrid and I'm an office clerk.",
+        "es": "Me llamo Elena Ruiz, soy de Madrid y soy administrativa.",
+        "wrong": [
+          "Erzählen Sie mir bitte etwas über die Firma.",
+          "Ich möchte gern mehr verdienen.",
+          "Das weiß ich leider nicht."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The interviewer asks about your strengths. You are reliable and like working in a team. How do you answer?",
+          "es": "El entrevistador pregunta por tus puntos fuertes. Eres responsable y te gusta trabajar en equipo. ¿Qué respondes?"
+        },
+        "a": "Ich bin zuverlässig und arbeite gern im Team.",
+        "en": "I'm reliable and I like working in a team.",
+        "es": "Soy responsable y me gusta trabajar en equipo.",
+        "wrong": [
+          "Ich arbeite nicht gern mit anderen Menschen.",
+          "Ich bin oft unpünktlich.",
+          "Meine Kollegen sind sehr zuverlässig."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The interviewer asks about your experience. You worked as a waiter in a hotel for three years. How do you answer?",
+          "es": "La entrevistadora pregunta por tu experiencia. Trabajaste tres años de camarero en un hotel. ¿Qué respondes?"
+        },
+        "a": "Ich habe drei Jahre als Kellner in einem Hotel gearbeitet.",
+        "en": "I worked as a waiter in a hotel for three years.",
+        "es": "Trabajé tres años de camarero en un hotel.",
+        "wrong": [
+          "Ich möchte gern als Kellner arbeiten.",
+          "Ich habe noch keine Berufserfahrung.",
+          "Ich habe drei Jahre in Berlin gewohnt."
+        ]
+      },
+      {
+        "situation": {
+          "en": "At the end of the interview you ask politely about the working hours. What do you ask?",
+          "es": "Al final de la entrevista preguntas con educación por el horario. ¿Qué preguntas?"
+        },
+        "a": "Könnten Sie mir sagen, wie die Arbeitszeiten sind?",
+        "en": "Could you tell me what the working hours are?",
+        "es": "¿Podría decirme cuál es el horario de trabajo?",
+        "wrong": [
+          "Ich arbeite gern am Wochenende.",
+          "Wie hoch ist das Gehalt?",
+          "Ich habe am Montag Zeit."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to ask politely about the salary. What do you ask?",
+          "es": "Quieres preguntar con educación por el sueldo. ¿Qué preguntas?"
+        },
+        "a": "Darf ich fragen, wie hoch das Gehalt ist?",
+        "en": "May I ask what the salary is?",
+        "es": "¿Puedo preguntar cuál es el sueldo?",
+        "wrong": [
+          "Wie sind die Arbeitszeiten?",
+          "Mein Gehalt ist zu niedrig.",
+          "Wie viele Urlaubstage habe ich?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "The interviewer asks why you want this job. Working with customers interests you. How do you answer?",
+          "es": "El entrevistador pregunta por qué quieres este trabajo. Te interesa trabajar con clientes. ¿Qué respondes?"
+        },
+        "a": "Ich möchte hier arbeiten, weil mich die Arbeit mit Kunden interessiert.",
+        "en": "I want to work here because working with customers interests me.",
+        "es": "Quiero trabajar aquí porque me interesa trabajar con clientes.",
+        "wrong": [
+          "Ich möchte hier nicht arbeiten.",
+          "Ich interessiere mich nicht für Kunden.",
+          "Ich habe schon eine neue Stelle gefunden."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clubs",
+    "title": {
+      "en": "Hobbies & clubs",
+      "de": "Hobbys & Vereine",
+      "es": "Aficiones y clubes"
+    },
+    "emoji": "⚽",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks what you do in your free time. You like swimming and you read a lot. How do you answer?",
+          "es": "Un amigo te pregunta qué haces en tu tiempo libre. Te gusta nadar y lees mucho. ¿Qué respondes?"
+        },
+        "a": "In meiner Freizeit schwimme ich gern und lese viel.",
+        "en": "In my free time I like swimming and I read a lot.",
+        "es": "En mi tiempo libre me gusta nadar y leo mucho.",
+        "wrong": [
+          "Ich habe leider keine Freizeit.",
+          "Ich schwimme nicht gern.",
+          "Am Wochenende muss ich arbeiten."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks what you're interested in. You love photography. How do you answer?",
+          "es": "Una amiga te pregunta qué te interesa. Te encanta la fotografía. ¿Qué respondes?"
+        },
+        "a": "Ich interessiere mich sehr für Fotografie.",
+        "en": "I'm very interested in photography.",
+        "es": "Me interesa mucho la fotografía.",
+        "wrong": [
+          "Fotografieren finde ich langweilig.",
+          "Ich habe mich für einen Kurs angemeldet.",
+          "Ich interessiere mich für Fußball."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You call a sports club because you want to join. What do you say?",
+          "es": "Llamas a un club deportivo porque quieres hacerte socio. ¿Qué dices?"
+        },
+        "a": "Ich würde gern Mitglied in Ihrem Verein werden.",
+        "en": "I'd like to become a member of your club.",
+        "es": "Me gustaría hacerme socio de su club.",
+        "wrong": [
+          "Ich möchte meine Mitgliedschaft kündigen.",
+          "Ich bin schon lange Mitglied.",
+          "Ich spiele nicht gern Fußball."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know how much the club membership costs per month. What do you ask?",
+          "es": "Quieres saber cuánto cuesta la cuota del club al mes. ¿Qué preguntas?"
+        },
+        "a": "Wie viel kostet die Mitgliedschaft im Monat?",
+        "en": "How much is the membership per month?",
+        "es": "¿Cuánto cuesta la cuota al mes?",
+        "wrong": [
+          "Wann ist das Training?",
+          "Die Mitgliedschaft ist zu teuer.",
+          "Ich habe schon bezahlt."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know when the training sessions are. What do you ask?",
+          "es": "Quieres saber cuándo son los entrenamientos. ¿Qué preguntas?"
+        },
+        "a": "Wann findet das Training statt?",
+        "en": "When does the training take place?",
+        "es": "¿Cuándo es el entrenamiento?",
+        "wrong": [
+          "Wie viel kostet die Mitgliedschaft im Monat?",
+          "Das Training war sehr anstrengend.",
+          "Ich kann heute nicht zum Training kommen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Before you join, you want to try a session first. What do you ask?",
+          "es": "Antes de apuntarte, quieres probar una sesión. ¿Qué preguntas?"
+        },
+        "a": "Kann ich zuerst ein Probetraining machen?",
+        "en": "Can I do a trial session first?",
+        "es": "¿Puedo hacer primero una clase de prueba?",
+        "wrong": [
+          "Ich möchte sofort Mitglied werden.",
+          "Ich trainiere schon seit Jahren.",
+          "Das Probetraining hat mir gut gefallen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You sing in a choir and want to invite a friend to come along. What do you say?",
+          "es": "Cantas en un coro y quieres invitar a una amiga a venir. ¿Qué dices?"
+        },
+        "a": "Hast du Lust, mal mit in meinen Chor zu kommen?",
+        "en": "Would you like to come along to my choir sometime?",
+        "es": "¿Te apetece venir algún día a mi coro?",
+        "wrong": [
+          "Ich singe nicht gern.",
+          "Seit wann singst du im Chor?",
+          "Hast du Lust, mit ins Kino zu gehen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks how long you have been playing the guitar. It's five years. How do you answer?",
+          "es": "Un amigo te pregunta cuánto tiempo llevas tocando la guitarra. Son cinco años. ¿Qué respondes?"
+        },
+        "a": "Ich spiele seit fünf Jahren Gitarre.",
+        "en": "I've been playing the guitar for five years.",
+        "es": "Llevo cinco años tocando la guitarra.",
+        "wrong": [
+          "Ich möchte Gitarre lernen.",
+          "Ich spiele leider kein Instrument.",
+          "Meine Schwester spielt Gitarre."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "title": {
+      "en": "Media",
+      "de": "Medien",
+      "es": "Los medios"
+    },
+    "emoji": "📺",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks how often you watch TV. Rarely: you prefer watching series online. How do you answer?",
+          "es": "Un amigo te pregunta cada cuánto ves la tele. Casi nunca: prefieres ver series por internet. ¿Qué respondes?"
+        },
+        "a": "Ich sehe selten fern, ich schaue lieber Serien im Internet.",
+        "en": "I rarely watch TV, I prefer watching series online.",
+        "es": "Veo poco la tele, prefiero ver series por internet.",
+        "wrong": [
+          "Ich sehe jeden Abend drei Stunden fern.",
+          "Ich habe zu Hause kein Internet.",
+          "Ich lese jeden Morgen die Zeitung."
+        ]
+      },
+      {
+        "situation": {
+          "en": "At the cinema you ask the staff politely when the film starts. What do you ask?",
+          "es": "En el cine preguntas con educación al personal cuándo empieza la película. ¿Qué preguntas?"
+        },
+        "a": "Können Sie mir sagen, wann der Film anfängt?",
+        "en": "Can you tell me when the film starts?",
+        "es": "¿Me puede decir cuándo empieza la película?",
+        "wrong": [
+          "Können Sie mir sagen, wo das Kino ist?",
+          "Der Film fängt um acht Uhr an.",
+          "Wie hat Ihnen der Film gefallen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "In a shop you ask politely whether this phone has a good camera. What do you ask?",
+          "es": "En una tienda preguntas con educación si este móvil tiene buena cámara. ¿Qué preguntas?"
+        },
+        "a": "Wissen Sie, ob dieses Handy eine gute Kamera hat?",
+        "en": "Do you know if this phone has a good camera?",
+        "es": "¿Sabe si este móvil tiene buena cámara?",
+        "wrong": [
+          "Mein Handy hat eine gute Kamera.",
+          "Wissen Sie, wie viel dieser Laptop kostet?",
+          "Ich brauche kein neues Handy."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks what you think of a quiz show. You find it boring. How do you answer?",
+          "es": "Una amiga te pregunta qué te parece un concurso. Te parece aburrido. ¿Qué respondes?"
+        },
+        "a": "Ich finde die Sendung ziemlich langweilig.",
+        "en": "I find the programme pretty boring.",
+        "es": "El programa me parece bastante aburrido.",
+        "wrong": [
+          "Ich finde die Sendung total spannend.",
+          "Die Sendung kommt jeden Freitag.",
+          "Ich habe die Sendung noch nie gesehen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks why you watch the news. You want to know what's happening in the world. How do you answer?",
+          "es": "Un amigo te pregunta por qué ves las noticias. Quieres saber qué pasa en el mundo. ¿Qué respondes?"
+        },
+        "a": "Ich sehe gern Nachrichten, weil ich wissen möchte, was in der Welt passiert.",
+        "en": "I like watching the news because I want to know what's happening in the world.",
+        "es": "Me gusta ver las noticias porque quiero saber qué pasa en el mundo.",
+        "wrong": [
+          "Ich sehe keine Nachrichten, weil sie mich traurig machen.",
+          "Die Nachrichten kommen um acht Uhr.",
+          "Ich sehe lieber Krimis."
+        ]
+      },
+      {
+        "situation": {
+          "en": "In the library you ask politely whether you can borrow DVDs there. What do you ask?",
+          "es": "En la biblioteca preguntas con educación si allí se pueden sacar DVD. ¿Qué preguntas?"
+        },
+        "a": "Könnten Sie mir sagen, ob man hier auch DVDs ausleihen kann?",
+        "en": "Could you tell me if you can borrow DVDs here too?",
+        "es": "¿Podría decirme si aquí también se pueden sacar DVD?",
+        "wrong": [
+          "Ich möchte die DVDs zurückgeben.",
+          "Ich habe keine DVDs zu Hause.",
+          "Können Sie mir sagen, wo die Toiletten sind?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend asks: \"Wie viel Zeit verbringst du am Handy?\" Too much: about three hours a day. How do you answer?",
+          "es": "Un amigo pregunta: «Wie viel Zeit verbringst du am Handy?». Demasiado: unas tres horas al día. ¿Qué respondes?"
+        },
+        "a": "Zu viel, ungefähr drei Stunden am Tag.",
+        "en": "Too much, about three hours a day.",
+        "es": "Demasiado, unas tres horas al día.",
+        "wrong": [
+          "Ich habe kein Handy.",
+          "Mein Handy ist kaputt.",
+          "Ich rufe dich morgen an."
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend wants to watch a horror film tonight. You would rather watch a comedy. What do you say?",
+          "es": "Un amigo quiere ver una peli de miedo esta noche. Tú prefieres ver una comedia. ¿Qué dices?"
+        },
+        "a": "Ich würde lieber eine Komödie sehen.",
+        "en": "I'd rather watch a comedy.",
+        "es": "Preferiría ver una comedia.",
+        "wrong": [
+          "Super, ich liebe Horrorfilme!",
+          "Der Film war sehr lustig.",
+          "Wann kommt der Film im Fernsehen?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hotel",
+    "title": {
+      "en": "At the hotel",
+      "de": "Im Hotel",
+      "es": "En el hotel"
+    },
+    "emoji": "🏨",
+    "items": [
+      {
+        "situation": {
+          "en": "You call a hotel to book a double room for two nights. What do you say?",
+          "es": "Llamas a un hotel para reservar una habitación doble para dos noches. ¿Qué dices?"
+        },
+        "a": "Ich hätte gern ein Doppelzimmer für zwei Nächte.",
+        "en": "I'd like a double room for two nights.",
+        "es": "Querría una habitación doble para dos noches.",
+        "wrong": [
+          "Ich möchte meine Reservierung stornieren.",
+          "Ich hätte gern ein Einzelzimmer für eine Woche.",
+          "Das Zimmer ist zu klein."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know if breakfast is included in the price. What do you ask?",
+          "es": "Quieres saber si el desayuno está incluido en el precio. ¿Qué preguntas?"
+        },
+        "a": "Ist das Frühstück im Preis inbegriffen?",
+        "en": "Is breakfast included in the price?",
+        "es": "¿El desayuno está incluido en el precio?",
+        "wrong": [
+          "Wann gibt es Frühstück?",
+          "Das Frühstück war sehr gut.",
+          "Ich frühstücke nicht."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know at what times breakfast is served. What do you ask?",
+          "es": "Quieres saber a qué hora se sirve el desayuno. ¿Qué preguntas?"
+        },
+        "a": "Von wann bis wann gibt es Frühstück?",
+        "en": "From when until when is breakfast served?",
+        "es": "¿De qué hora a qué hora es el desayuno?",
+        "wrong": [
+          "Ist das Frühstück im Preis inbegriffen?",
+          "Was kostet das Frühstück?",
+          "Bis wann muss ich das Zimmer verlassen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know the price of the room per night. What do you ask?",
+          "es": "Quieres saber el precio de la habitación por noche. ¿Qué preguntas?"
+        },
+        "a": "Was kostet das Zimmer pro Nacht?",
+        "en": "How much is the room per night?",
+        "es": "¿Cuánto cuesta la habitación por noche?",
+        "wrong": [
+          "Das Zimmer ist leider zu teuer.",
+          "Wie lange bleiben Sie?",
+          "Ich bezahle mit Karte."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The shower in your room doesn't work. You go to reception. What do you say?",
+          "es": "La ducha de tu habitación no funciona. Vas a recepción. ¿Qué dices?"
+        },
+        "a": "Entschuldigung, in meinem Zimmer funktioniert die Dusche nicht.",
+        "en": "Excuse me, the shower in my room doesn't work.",
+        "es": "Perdone, en mi habitación no funciona la ducha.",
+        "wrong": [
+          "Die Dusche ist sehr modern.",
+          "Gibt es im Zimmer eine Dusche?",
+          "Ich hätte gern ein Zimmer mit Dusche."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your room is very noisy because of the street. You ask for another room. What do you say?",
+          "es": "Tu habitación es muy ruidosa por la calle. Pides otra habitación. ¿Qué dices?"
+        },
+        "a": "Mein Zimmer ist sehr laut. Könnte ich ein anderes Zimmer bekommen?",
+        "en": "My room is very noisy. Could I have another room?",
+        "es": "Mi habitación es muy ruidosa. ¿Podría tener otra habitación?",
+        "wrong": [
+          "Mein Zimmer ist schön ruhig.",
+          "Könnten Sie mich um sieben Uhr wecken?",
+          "Ich möchte noch eine Nacht bleiben."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You arrive at the hotel in the evening. You booked a room under the name Weber. What do you say?",
+          "es": "Llegas al hotel por la noche. Reservaste una habitación a nombre de Weber. ¿Qué dices?"
+        },
+        "a": "Guten Abend, ich habe ein Zimmer auf den Namen Weber reserviert.",
+        "en": "Good evening, I've booked a room under the name Weber.",
+        "es": "Buenas noches, tengo una habitación reservada a nombre de Weber.",
+        "wrong": [
+          "Haben Sie noch ein Zimmer frei?",
+          "Ich möchte bitte auschecken.",
+          "Wo ist der Aufzug?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You need the WiFi password. You ask at reception. What do you ask?",
+          "es": "Necesitas la contraseña del wifi. Preguntas en recepción. ¿Qué preguntas?"
+        },
+        "a": "Könnten Sie mir das WLAN-Passwort geben?",
+        "en": "Could you give me the WiFi password?",
+        "es": "¿Me podría dar la contraseña del wifi?",
+        "wrong": [
+          "Das WLAN funktioniert sehr gut.",
+          "Könnten Sie mir ein Taxi rufen?",
+          "Ich habe mein Handy im Zimmer vergessen."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "delays",
+    "title": {
+      "en": "Travel problems",
+      "de": "Probleme unterwegs",
+      "es": "Problemas en el viaje"
+    },
+    "emoji": "🚆",
+    "items": [
+      {
+        "situation": {
+          "en": "Your train is late. You ask a member of staff politely why. What do you ask?",
+          "es": "Tu tren llega tarde. Le preguntas con educación a un empleado por qué. ¿Qué preguntas?"
+        },
+        "a": "Entschuldigung, können Sie mir sagen, warum der Zug Verspätung hat?",
+        "en": "Excuse me, can you tell me why the train is delayed?",
+        "es": "Perdone, ¿me puede decir por qué lleva retraso el tren?",
+        "wrong": [
+          "Der Zug ist pünktlich angekommen.",
+          "Wann fährt der nächste Bus?",
+          "Ich habe meine Fahrkarte verloren."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You missed your connection. You need the next train to Munich. What do you ask?",
+          "es": "Has perdido el enlace. Necesitas el próximo tren a Múnich. ¿Qué preguntas?"
+        },
+        "a": "Ich habe meinen Anschluss verpasst. Wann fährt der nächste Zug nach München?",
+        "en": "I missed my connection. When is the next train to Munich?",
+        "es": "He perdido el enlace. ¿Cuándo sale el próximo tren a Múnich?",
+        "wrong": [
+          "Ich habe meinen Anschluss noch bekommen.",
+          "Wann kommt der Zug aus München an?",
+          "Ich möchte eine Fahrkarte nach Hamburg kaufen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your train is delayed. You call your friend to say you'll be about 20 minutes late. What do you say?",
+          "es": "Tu tren lleva retraso. Llamas a tu amiga para decirle que llegarás unos 20 minutos tarde. ¿Qué dices?"
+        },
+        "a": "Mein Zug hat Verspätung, ich komme etwa zwanzig Minuten später.",
+        "en": "My train is delayed, I'll be about twenty minutes late.",
+        "es": "Mi tren lleva retraso, llegaré unos veinte minutos tarde.",
+        "wrong": [
+          "Ich bin schon da. Wo bist du?",
+          "Mein Zug ist pünktlich, ich komme gleich.",
+          "Ich komme heute nicht, ich bin krank."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You are stuck in a traffic jam. You call your boss (Sie) to say you'll be late. What do you say?",
+          "es": "Estás en un atasco. Llamas a tu jefe (Sie) para decir que llegarás tarde. ¿Qué dices?"
+        },
+        "a": "Es tut mir leid, ich stehe im Stau und komme später.",
+        "en": "I'm sorry, I'm stuck in a traffic jam and will be late.",
+        "es": "Lo siento, estoy en un atasco y llegaré tarde.",
+        "wrong": [
+          "Ich bin heute krank und komme nicht.",
+          "Kein Problem, ich warte auf Sie.",
+          "Ich bin heute schon früher da."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your car has broken down. You ask a passer-by for help. What do you say?",
+          "es": "Se te ha averiado el coche. Pides ayuda a una persona que pasa. ¿Qué dices?"
+        },
+        "a": "Entschuldigung, mein Auto ist kaputt. Könnten Sie mir bitte helfen?",
+        "en": "Excuse me, my car has broken down. Could you help me, please?",
+        "es": "Perdone, se me ha averiado el coche. ¿Me podría ayudar, por favor?",
+        "wrong": [
+          "Kann ich Ihnen helfen?",
+          "Mein Auto ist ganz neu.",
+          "Wo kann ich ein Auto mieten?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "At the information desk you ask politely which platform the train to Cologne leaves from. What do you ask?",
+          "es": "En información preguntas con educación de qué vía sale el tren a Colonia. ¿Qué preguntas?"
+        },
+        "a": "Können Sie mir sagen, von welchem Gleis der Zug nach Köln fährt?",
+        "en": "Can you tell me which platform the train to Cologne leaves from?",
+        "es": "¿Me puede decir de qué vía sale el tren a Colonia?",
+        "wrong": [
+          "Der Zug nach Köln fährt von Gleis fünf.",
+          "Wann kommt der Zug in Köln an?",
+          "Ich möchte einen Sitzplatz reservieren."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your train has been cancelled. You want to know if your ticket is valid on another train. What do you ask?",
+          "es": "Han cancelado tu tren. Quieres saber si tu billete vale para otro tren. ¿Qué preguntas?"
+        },
+        "a": "Kann ich mit meiner Fahrkarte auch einen anderen Zug nehmen?",
+        "en": "Can I take another train with my ticket?",
+        "es": "¿Puedo coger otro tren con mi billete?",
+        "wrong": [
+          "Ich brauche keine Fahrkarte.",
+          "Der Zug fällt heute aus.",
+          "Wo kann ich eine Fahrkarte kaufen?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "A friend calls and asks where you are. Your train has been standing still for half an hour. How do you answer?",
+          "es": "Un amigo te llama y pregunta dónde estás. Tu tren lleva media hora parado. ¿Qué respondes?"
+        },
+        "a": "Der Zug steht seit einer halben Stunde, ich weiß nicht, warum.",
+        "en": "The train has been stopped for half an hour, I don't know why.",
+        "es": "El tren lleva media hora parado, no sé por qué.",
+        "wrong": [
+          "Ich bin gleich da, nur noch fünf Minuten.",
+          "Ich bin schon zu Hause.",
+          "Ich nehme morgen den Zug."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "returns",
+    "title": {
+      "en": "Returns & complaints",
+      "de": "Umtausch & Reklamation",
+      "es": "Cambios y reclamaciones"
+    },
+    "emoji": "🛍️",
+    "items": [
+      {
+        "situation": {
+          "en": "A friend asks which of two laptops to buy. The second is cheaper and better. How do you answer?",
+          "es": "Una amiga te pregunta cuál de dos portátiles comprar. El segundo es más barato y mejor. ¿Qué respondes?"
+        },
+        "a": "Der zweite ist billiger und besser als der erste.",
+        "en": "The second one is cheaper and better than the first.",
+        "es": "El segundo es más barato y mejor que el primero.",
+        "wrong": [
+          "Beide sind gleich teuer.",
+          "Der erste ist billiger als der zweite.",
+          "Ich brauche keinen neuen Laptop."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The shirt you bought is too small. You want to exchange it. What do you say?",
+          "es": "La camisa que compraste te queda pequeña. Quieres cambiarla. ¿Qué dices?"
+        },
+        "a": "Ich möchte dieses Hemd umtauschen, es ist mir zu klein.",
+        "en": "I'd like to exchange this shirt, it's too small for me.",
+        "es": "Quiero cambiar esta camisa, me queda pequeña.",
+        "wrong": [
+          "Das Hemd passt mir sehr gut.",
+          "Haben Sie dieses Hemd auch in Blau?",
+          "Ich möchte dieses Hemd kaufen."
+        ]
+      },
+      {
+        "situation": {
+          "en": "You bought a kettle two days ago and it doesn't work. You complain in the shop. What do you say?",
+          "es": "Compraste un hervidor hace dos días y no funciona. Te quejas en la tienda. ¿Qué dices?"
+        },
+        "a": "Ich habe den Wasserkocher vor zwei Tagen gekauft, aber er funktioniert nicht.",
+        "en": "I bought this kettle two days ago, but it doesn't work.",
+        "es": "Compré el hervidor hace dos días, pero no funciona.",
+        "wrong": [
+          "Der Wasserkocher funktioniert sehr gut.",
+          "Ich möchte einen Wasserkocher kaufen.",
+          "Wo finde ich die Wasserkocher?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You are returning a jacket. You don't want another one, you want your money back. What do you ask?",
+          "es": "Devuelves una chaqueta. No quieres otra: quieres que te devuelvan el dinero. ¿Qué preguntas?"
+        },
+        "a": "Könnte ich bitte mein Geld zurückbekommen?",
+        "en": "Could I have my money back, please?",
+        "es": "¿Me podrían devolver el dinero, por favor?",
+        "wrong": [
+          "Ich möchte gern mit Karte bezahlen.",
+          "Kann ich die Jacke gegen eine andere umtauschen?",
+          "Das ist aber ein guter Preis."
+        ]
+      },
+      {
+        "situation": {
+          "en": "The shop assistant asks for your receipt. You have it with you. How do you answer?",
+          "es": "El dependiente te pide el tique. Lo llevas encima. ¿Qué respondes?"
+        },
+        "a": "Ja, hier ist der Kassenbon.",
+        "en": "Yes, here's the receipt.",
+        "es": "Sí, aquí tiene el tique.",
+        "wrong": [
+          "Nein, ich möchte nichts umtauschen.",
+          "Ich brauche keine Tüte, danke.",
+          "Wo ist die Kasse?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "You want to know until when you can return the shoes. What do you ask?",
+          "es": "Quieres saber hasta cuándo puedes devolver los zapatos. ¿Qué preguntas?"
+        },
+        "a": "Bis wann kann ich die Schuhe zurückgeben?",
+        "en": "Until when can I return the shoes?",
+        "es": "¿Hasta cuándo puedo devolver los zapatos?",
+        "wrong": [
+          "Ich möchte die Schuhe zurückgeben.",
+          "Die Schuhe sind mir zu groß.",
+          "Haben Sie die Schuhe auch in Größe 40?"
+        ]
+      },
+      {
+        "situation": {
+          "en": "There are two offers for the same TV. You ask the shop assistant which one is cheaper. What do you ask?",
+          "es": "Hay dos ofertas para el mismo televisor. Preguntas al dependiente cuál es más barata. ¿Qué preguntas?"
+        },
+        "a": "Welches Angebot ist günstiger, das erste oder das zweite?",
+        "en": "Which offer is cheaper, the first or the second?",
+        "es": "¿Qué oferta es más barata, la primera o la segunda?",
+        "wrong": [
+          "Dieses Angebot gefällt mir nicht.",
+          "Ich nehme das erste Angebot.",
+          "Der Fernseher ist leider kaputt."
+        ]
+      },
+      {
+        "situation": {
+          "en": "Your new headphones are faulty. You don't want a refund, you want new ones. What do you say?",
+          "es": "Tus auriculares nuevos están defectuosos. No quieres el dinero: quieres unos nuevos. ¿Qué dices?"
+        },
+        "a": "Können Sie mir bitte neue Kopfhörer geben? Diese sind defekt.",
+        "en": "Can you give me new headphones, please? These are faulty.",
+        "es": "¿Me puede dar unos auriculares nuevos, por favor? Estos están defectuosos.",
+        "wrong": [
+          "Ich möchte bitte mein Geld zurück.",
+          "Die Kopfhörer funktionieren super.",
+          "Ich suche Kopfhörer für mein Handy."
+        ]
+      }
+    ]
+  }
+]

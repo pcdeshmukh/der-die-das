@@ -91,7 +91,7 @@ const en = {
   offline: 'Works offline · add it to your home screen',
   source: 'Source on GitHub',
   daily: 'Daily challenge',
-  dailySub: '12 mixed questions, same for everyone today · +{n} XP bonus',
+  dailySub: '12 mixed {level} questions, same for everyone today · +{n} XP bonus',
   dailyDone: 'Done today: {c} of {n} correct',
   dailyNext: 'next one in {t}',
   dailyStreak: '{n}-day challenge streak',
@@ -117,6 +117,10 @@ const en = {
   kind_skill: 'Practice',
   kind_practice: 'Practice',
   vocabulary: 'Vocabulary',
+  mode_preterite: 'Präteritum',
+  mode_preterite_desc: 'Past forms: ging, konnte, war',
+  mode_perfect: 'Perfekt',
+  mode_perfect_desc: 'hat gemacht or ist gegangen?',
 };
 
 type Strings = typeof en;
@@ -212,7 +216,7 @@ const de: Strings = {
   offline: 'Funktioniert offline · zum Startbildschirm hinzufügen',
   source: 'Quellcode auf GitHub',
   daily: 'Tägliche Herausforderung',
-  dailySub: '12 gemischte Fragen, heute für alle gleich · +{n} Bonus-XP',
+  dailySub: '12 gemischte {level}-Fragen, heute für alle gleich · +{n} Bonus-XP',
   dailyDone: 'Heute geschafft: {c} von {n} richtig',
   dailyNext: 'die nächste in {t}',
   dailyStreak: '{n} Tage in Folge',
@@ -238,6 +242,10 @@ const de: Strings = {
   kind_skill: 'Üben',
   kind_practice: 'Üben',
   vocabulary: 'Wortschatz',
+  mode_preterite: 'Präteritum',
+  mode_preterite_desc: 'Vergangenheitsformen: ging, konnte, war',
+  mode_perfect: 'Perfekt',
+  mode_perfect_desc: 'hat gemacht oder ist gegangen?',
 };
 
 const es: Strings = {
@@ -330,7 +338,7 @@ const es: Strings = {
   offline: 'Funciona sin conexión · añádelo a tu pantalla de inicio',
   source: 'Código en GitHub',
   daily: 'Reto diario',
-  dailySub: '12 preguntas variadas, hoy iguales para todos · +{n} XP extra',
+  dailySub: '12 preguntas variadas de {level}, hoy iguales para todos · +{n} XP extra',
   dailyDone: 'Hecho hoy: {c} de {n} correctas',
   dailyNext: 'el próximo en {t}',
   dailyStreak: 'Racha de {n} días',
@@ -356,6 +364,10 @@ const es: Strings = {
   kind_skill: 'Práctica',
   kind_practice: 'Práctica',
   vocabulary: 'Vocabulario',
+  mode_preterite: 'Präteritum',
+  mode_preterite_desc: 'Formas del pasado: ging, konnte, war',
+  mode_perfect: 'Perfekt',
+  mode_perfect_desc: '¿hat gemacht o ist gegangen?',
 };
 
 const STRINGS = { en, de, es };

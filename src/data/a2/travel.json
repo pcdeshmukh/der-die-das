@@ -1,0 +1,230 @@
+{
+  "id": "travel",
+  "title": {
+    "de": "Reisen & Unterkunft",
+    "en": "Travel & accommodation",
+    "es": "Viajes y alojamiento"
+  },
+  "emoji": "🏨",
+  "nouns": [
+    {
+      "de": "Unterkunft",
+      "article": "die",
+      "plural": "Unterkünfte",
+      "en": "accommodation",
+      "es": "alojamiento",
+      "emoji": "🏨"
+    },
+    {
+      "de": "Pension",
+      "article": "die",
+      "plural": "Pensionen",
+      "en": "guesthouse",
+      "es": "pensión"
+    },
+    {
+      "de": "Jugendherberge",
+      "article": "die",
+      "plural": "Jugendherbergen",
+      "en": "youth hostel",
+      "es": "albergue juvenil"
+    },
+    {
+      "de": "Campingplatz",
+      "article": "der",
+      "plural": "Campingplätze",
+      "en": "campsite",
+      "es": "camping",
+      "emoji": "🏕️"
+    },
+    {
+      "de": "Zelt",
+      "article": "das",
+      "plural": "Zelte",
+      "en": "tent",
+      "es": "tienda de campaña",
+      "emoji": "⛺"
+    },
+    {
+      "de": "Schlafsack",
+      "article": "der",
+      "plural": "Schlafsäcke",
+      "en": "sleeping bag",
+      "es": "saco de dormir"
+    },
+    {
+      "de": "Rezeption",
+      "article": "die",
+      "plural": "Rezeptionen",
+      "en": "reception",
+      "es": "recepción",
+      "emoji": "🛎️"
+    },
+    {
+      "de": "Einzelzimmer",
+      "article": "das",
+      "plural": "Einzelzimmer",
+      "en": "single room",
+      "es": "habitación individual",
+      "emoji": "🛏️"
+    },
+    {
+      "de": "Doppelzimmer",
+      "article": "das",
+      "plural": "Doppelzimmer",
+      "en": "double room",
+      "es": "habitación doble"
+    },
+    {
+      "de": "Halbpension",
+      "article": "die",
+      "plural": null,
+      "en": "half board",
+      "es": "media pensión"
+    },
+    {
+      "de": "Buchung",
+      "article": "die",
+      "plural": "Buchungen",
+      "en": "booking",
+      "es": "reserva"
+    },
+    {
+      "de": "Reisebüro",
+      "article": "das",
+      "plural": "Reisebüros",
+      "en": "travel agency",
+      "es": "agencia de viajes"
+    },
+    {
+      "de": "Aufenthalt",
+      "article": "der",
+      "plural": "Aufenthalte",
+      "en": "stay",
+      "es": "estancia"
+    },
+    {
+      "de": "Gepäck",
+      "article": "das",
+      "plural": null,
+      "en": "luggage",
+      "es": "equipaje",
+      "emoji": "🧳"
+    },
+    {
+      "de": "Grenze",
+      "article": "die",
+      "plural": "Grenzen",
+      "en": "border",
+      "es": "frontera"
+    },
+    {
+      "de": "Zoll",
+      "article": "der",
+      "plural": null,
+      "en": "customs",
+      "es": "aduana",
+      "emoji": "🛃"
+    },
+    {
+      "de": "Ferienwohnung",
+      "article": "die",
+      "plural": "Ferienwohnungen",
+      "en": "holiday flat",
+      "es": "apartamento de vacaciones"
+    },
+    {
+      "de": "Sehenswürdigkeit",
+      "article": "die",
+      "plural": "Sehenswürdigkeiten",
+      "en": "sight",
+      "es": "lugar de interés",
+      "emoji": "🏰"
+    },
+    {
+      "de": "Reiseführer",
+      "article": "der",
+      "plural": "Reiseführer",
+      "en": "guidebook",
+      "es": "guía de viaje",
+      "emoji": "📖"
+    },
+    {
+      "de": "Stadtplan",
+      "article": "der",
+      "plural": "Stadtpläne",
+      "en": "city map",
+      "es": "plano de la ciudad",
+      "emoji": "🗺️"
+    },
+    {
+      "de": "Stadtführung",
+      "article": "die",
+      "plural": "Stadtführungen",
+      "en": "guided city tour",
+      "es": "visita guiada"
+    },
+    {
+      "de": "Rundfahrt",
+      "article": "die",
+      "plural": "Rundfahrten",
+      "en": "sightseeing tour",
+      "es": "recorrido turístico",
+      "emoji": "🚌"
+    },
+    {
+      "de": "Aussicht",
+      "article": "die",
+      "plural": "Aussichten",
+      "en": "view",
+      "es": "vista",
+      "emoji": "🌄"
+    },
+    {
+      "de": "Tourist",
+      "article": "der",
+      "plural": "Touristen",
+      "en": "tourist (male)",
+      "es": "turista (hombre)"
+    },
+    {
+      "de": "Touristin",
+      "article": "die",
+      "plural": "Touristinnen",
+      "en": "tourist (female)",
+      "es": "turista (mujer)"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Wir haben ein Doppelzimmer gebucht.",
+      "en": "We have booked a double room.",
+      "es": "Hemos reservado una habitación doble."
+    },
+    {
+      "de": "Der Schlüssel liegt an der Rezeption.",
+      "en": "The key is at reception.",
+      "es": "La llave está en la recepción."
+    },
+    {
+      "de": "Das Zimmer hat eine schöne Aussicht.",
+      "en": "The room has a nice view.",
+      "es": "La habitación tiene una vista bonita."
+    },
+    {
+      "de": "Kann ich mein Gepäck hier lassen?",
+      "en": "Can I leave my luggage here?",
+      "es": "¿Puedo dejar aquí mi equipaje?"
+    },
+    {
+      "de": "Wir haben im Zelt geschlafen.",
+      "en": "We slept in the tent.",
+      "es": "Hemos dormido en la tienda de campaña."
+    },
+    {
+      "de": "Welche Sehenswürdigkeiten möchtest du besuchen?",
+      "en": "Which sights would you like to visit?",
+      "es": "¿Qué lugares de interés quieres visitar?"
+    }
+  ]
+}
