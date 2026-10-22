@@ -26,8 +26,8 @@ export interface ChoiceQuestion {
   sayFirst?: string;
   /** spoken once the player has answered */
   sayAfter?: string;
-  /** the solution as a short phrase for the feedback line */
-  solution: ComponentChildren;
+  /** the solution as a short phrase for the feedback line; omit it when the card already shows the answer */
+  solution?: ComponentChildren;
   review: Omit<ReviewRow, 'key'>;
 }
 
@@ -56,7 +56,6 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
 
   const q = questions[index];
   const answeredRight = chosen !== null && chosen === q.answer;
-  const wrongPick = chosen !== null && !answeredRight;
 
   function answer(option: string) {
     if (chosen !== null) return;
@@ -149,9 +148,11 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
           {answeredRight && <p class="feedback-ok">{t('correct')}</p>}
           {chosen !== null && !answeredRight && (
             <>
-              <p class="feedback-bad">
-                {t('itIs')} {q.solution}
-              </p>
+              {q.solution && (
+                <p class="feedback-bad">
+                  {t('itIs')} {q.solution}
+                </p>
+              )}
               <button class="btn primary" onClick={advance}>
                 {t('continue')}
               </button>
@@ -160,8 +161,7 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
         </div>
       </div>
 
-      {/* After a mistake only the pick and the right answer stay, so Continue above them fits on screen. */}
-      <div class={`choices choices-${shownLayout}${wrongPick ? ' answered-wrong' : ''}`}>
+      <div class={`choices choices-${shownLayout}`}>
         {q.options.map((o, i) => {
           const cls = chosen === null ? '' : o === q.answer ? 'reveal' : chosen === o ? 'picked-wrong' : 'dim';
           return (

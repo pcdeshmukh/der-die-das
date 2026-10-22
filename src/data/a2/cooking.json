@@ -1,9 +1,9 @@
 {
   "id": "cooking",
   "title": {
-    "de": "Kochen & Ernährung",
-    "en": "Cooking & nutrition",
-    "es": "Cocina y alimentación"
+    "de": "Speisen & Getränke",
+    "en": "Dishes & drinks",
+    "es": "Platos y bebidas"
   },
   "emoji": "🍳",
   "nouns": [
@@ -28,13 +28,6 @@
       "plural": null,
       "en": "flour",
       "es": "harina"
-    },
-    {
-      "de": "Gewürz",
-      "article": "das",
-      "plural": "Gewürze",
-      "en": "spice",
-      "es": "especia"
     },
     {
       "de": "Pfeffer",
@@ -105,26 +98,11 @@
       "emoji": "🥣"
     },
     {
-      "de": "Besteck",
-      "article": "das",
-      "plural": "Bestecke",
-      "en": "cutlery",
-      "es": "cubiertos",
-      "emoji": "🍴"
-    },
-    {
       "de": "Portion",
       "article": "die",
       "plural": "Portionen",
       "en": "portion",
       "es": "ración"
-    },
-    {
-      "de": "Geschmack",
-      "article": "der",
-      "plural": "Geschmäcker",
-      "en": "taste",
-      "es": "sabor"
     },
     {
       "de": "Ernährung",

@@ -23,6 +23,7 @@ export function phraseQuestion(item: PhraseRef): ChoiceQuestion {
           {item.lesson.emoji}
         </div>
         <div class="situation">{meaning(item.situation)}</div>
+        {/* The card shows the answer, so the feedback line doesn't repeat it. */}
         {answered && (
           <div class="noun-hint">
             <b>{item.a}</b> = {meaning(item)}
@@ -34,7 +35,6 @@ export function phraseQuestion(item: PhraseRef): ChoiceQuestion {
     options: shuffle([item.a, ...item.wrong]),
     answer: item.a,
     sayAfter: item.a,
-    solution: <b>{item.a}</b>,
     review: { label: item.a, sub: meaning(item), emoji: item.lesson.emoji, say: item.a },
   };
 }

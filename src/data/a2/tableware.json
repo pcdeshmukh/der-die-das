@@ -209,6 +209,28 @@
       "plural": "Säuren",
       "en": "sourness",
       "es": "acidez"
+    },
+    {
+      "de": "Gewürz",
+      "article": "das",
+      "plural": "Gewürze",
+      "en": "spice",
+      "es": "especia"
+    },
+    {
+      "de": "Besteck",
+      "article": "das",
+      "plural": "Bestecke",
+      "en": "cutlery",
+      "es": "cubiertos",
+      "emoji": "🍴"
+    },
+    {
+      "de": "Geschmack",
+      "article": "der",
+      "plural": "Geschmäcker",
+      "en": "taste",
+      "es": "gusto"
     }
   ],
   "sentences": [
