@@ -1,0 +1,239 @@
+{
+  "id": "luggage",
+  "title": {
+    "de": "Reisegepäck",
+    "en": "Luggage",
+    "es": "Equipaje"
+  },
+  "emoji": "🧳",
+  "nouns": [
+    {
+      "de": "Kulturbeutel",
+      "article": "der",
+      "plural": "Kulturbeutel",
+      "en": "toiletry bag",
+      "es": "neceser"
+    },
+    {
+      "de": "Sonnencreme",
+      "article": "die",
+      "plural": "Sonnencremes",
+      "en": "sun cream",
+      "es": "crema solar",
+      "emoji": "🧴"
+    },
+    {
+      "de": "Badehose",
+      "article": "die",
+      "plural": "Badehosen",
+      "en": "swimming trunks",
+      "es": "bañador",
+      "emoji": "🩳"
+    },
+    {
+      "de": "Badeanzug",
+      "article": "der",
+      "plural": "Badeanzüge",
+      "en": "swimsuit",
+      "es": "traje de baño",
+      "emoji": "🩱"
+    },
+    {
+      "de": "Ladekabel",
+      "article": "das",
+      "plural": "Ladekabel",
+      "en": "charging cable",
+      "es": "cable de carga",
+      "emoji": "🔌"
+    },
+    {
+      "de": "Handgepäck",
+      "article": "das",
+      "plural": null,
+      "en": "hand luggage",
+      "es": "equipaje de mano"
+    },
+    {
+      "de": "Sonnenbrille",
+      "article": "die",
+      "plural": "Sonnenbrillen",
+      "en": "sunglasses",
+      "es": "gafas de sol",
+      "emoji": "🕶️"
+    },
+    {
+      "de": "Zahnbürste",
+      "article": "die",
+      "plural": "Zahnbürsten",
+      "en": "toothbrush",
+      "es": "cepillo de dientes",
+      "emoji": "🪥"
+    },
+    {
+      "de": "Zahnpasta",
+      "article": "die",
+      "plural": "Zahnpasten",
+      "en": "toothpaste",
+      "es": "pasta de dientes"
+    },
+    {
+      "de": "Handtuch",
+      "article": "das",
+      "plural": "Handtücher",
+      "en": "towel",
+      "es": "toalla"
+    },
+    {
+      "de": "Shampoo",
+      "article": "das",
+      "plural": "Shampoos",
+      "en": "shampoo",
+      "es": "champú"
+    },
+    {
+      "de": "Duschgel",
+      "article": "das",
+      "plural": "Duschgels",
+      "en": "shower gel",
+      "es": "gel de ducha"
+    },
+    {
+      "de": "Reiseapotheke",
+      "article": "die",
+      "plural": "Reiseapotheken",
+      "en": "travel first-aid kit",
+      "es": "botiquín de viaje"
+    },
+    {
+      "de": "Adapter",
+      "article": "der",
+      "plural": "Adapter",
+      "en": "adapter",
+      "es": "adaptador"
+    },
+    {
+      "de": "Powerbank",
+      "article": "die",
+      "plural": "Powerbanks",
+      "en": "power bank",
+      "es": "batería externa",
+      "emoji": "🔋"
+    },
+    {
+      "de": "Sandale",
+      "article": "die",
+      "plural": "Sandalen",
+      "en": "sandal",
+      "es": "sandalia",
+      "emoji": "🩴"
+    },
+    {
+      "de": "Wanderschuh",
+      "article": "der",
+      "plural": "Wanderschuhe",
+      "en": "hiking boot",
+      "es": "bota de montaña",
+      "emoji": "🥾"
+    },
+    {
+      "de": "Regenjacke",
+      "article": "die",
+      "plural": "Regenjacken",
+      "en": "raincoat",
+      "es": "chubasquero"
+    },
+    {
+      "de": "Sonnenhut",
+      "article": "der",
+      "plural": "Sonnenhüte",
+      "en": "sun hat",
+      "es": "sombrero para el sol",
+      "emoji": "👒"
+    },
+    {
+      "de": "Schlafanzug",
+      "article": "der",
+      "plural": "Schlafanzüge",
+      "en": "pyjamas",
+      "es": "pijama"
+    },
+    {
+      "de": "Unterwäsche",
+      "article": "die",
+      "plural": null,
+      "en": "underwear",
+      "es": "ropa interior"
+    },
+    {
+      "de": "Gepäckanhänger",
+      "article": "der",
+      "plural": "Gepäckanhänger",
+      "en": "luggage tag",
+      "es": "etiqueta de equipaje",
+      "emoji": "🏷️"
+    },
+    {
+      "de": "Reisetasche",
+      "article": "die",
+      "plural": "Reisetaschen",
+      "en": "travel bag",
+      "es": "bolsa de viaje"
+    },
+    {
+      "de": "Packliste",
+      "article": "die",
+      "plural": "Packlisten",
+      "en": "packing list",
+      "es": "lista de equipaje",
+      "emoji": "📝"
+    },
+    {
+      "de": "Mückenspray",
+      "article": "das",
+      "plural": "Mückensprays",
+      "en": "insect repellent",
+      "es": "repelente de mosquitos",
+      "emoji": "🦟"
+    },
+    {
+      "de": "Taschenlampe",
+      "article": "die",
+      "plural": "Taschenlampen",
+      "en": "torch",
+      "es": "linterna",
+      "emoji": "🔦"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Hast du die Sonnencreme eingepackt?",
+      "en": "Have you packed the sun cream?",
+      "es": "¿Has metido la crema solar en la maleta?"
+    },
+    {
+      "de": "Die Zahnbürste ist im Kulturbeutel.",
+      "en": "The toothbrush is in the toiletry bag.",
+      "es": "El cepillo de dientes está en el neceser."
+    },
+    {
+      "de": "Im Handgepäck sind keine großen Flaschen erlaubt.",
+      "en": "Large bottles are not allowed in hand luggage.",
+      "es": "En el equipaje de mano no se permiten botellas grandes."
+    },
+    {
+      "de": "Ich habe mein Ladekabel im Hotel vergessen.",
+      "en": "I left my charging cable at the hotel.",
+      "es": "Me he dejado el cable de carga en el hotel."
+    },
+    {
+      "de": "Für die Wanderung brauchen wir Wanderschuhe und eine Regenjacke.",
+      "en": "For the hike we need hiking boots and a raincoat.",
+      "es": "Para la excursión necesitamos botas de montaña y un chubasquero."
+    },
+    {
+      "de": "Vor der Reise schreibe ich immer eine Packliste.",
+      "en": "Before a trip I always write a packing list.",
+      "es": "Antes de un viaje siempre hago una lista de equipaje."
+    }
+  ]
+}

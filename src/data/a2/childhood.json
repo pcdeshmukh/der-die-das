@@ -1,0 +1,240 @@
+{
+  "id": "childhood",
+  "title": {
+    "de": "Kindheit",
+    "en": "Childhood",
+    "es": "Infancia"
+  },
+  "emoji": "🧸",
+  "nouns": [
+    {
+      "de": "Kindheit",
+      "article": "die",
+      "plural": null,
+      "en": "childhood",
+      "es": "infancia"
+    },
+    {
+      "de": "Erinnerung",
+      "article": "die",
+      "plural": "Erinnerungen",
+      "en": "memory",
+      "es": "recuerdo"
+    },
+    {
+      "de": "Puppe",
+      "article": "die",
+      "plural": "Puppen",
+      "en": "doll",
+      "es": "muñeca"
+    },
+    {
+      "de": "Teddybär",
+      "article": "der",
+      "plural": "Teddybären",
+      "en": "teddy bear",
+      "es": "osito de peluche",
+      "emoji": "🧸"
+    },
+    {
+      "de": "Kuscheltier",
+      "article": "das",
+      "plural": "Kuscheltiere",
+      "en": "cuddly toy",
+      "es": "peluche"
+    },
+    {
+      "de": "Spielplatz",
+      "article": "der",
+      "plural": "Spielplätze",
+      "en": "playground",
+      "es": "parque infantil",
+      "emoji": "🛝"
+    },
+    {
+      "de": "Schaukel",
+      "article": "die",
+      "plural": "Schaukeln",
+      "en": "swing",
+      "es": "columpio"
+    },
+    {
+      "de": "Rutsche",
+      "article": "die",
+      "plural": "Rutschen",
+      "en": "slide",
+      "es": "tobogán"
+    },
+    {
+      "de": "Wippe",
+      "article": "die",
+      "plural": "Wippen",
+      "en": "seesaw",
+      "es": "balancín"
+    },
+    {
+      "de": "Sandkasten",
+      "article": "der",
+      "plural": "Sandkästen",
+      "en": "sandpit",
+      "es": "arenero"
+    },
+    {
+      "de": "Klettergerüst",
+      "article": "das",
+      "plural": "Klettergerüste",
+      "en": "climbing frame",
+      "es": "estructura para trepar"
+    },
+    {
+      "de": "Murmel",
+      "article": "die",
+      "plural": "Murmeln",
+      "en": "marble",
+      "es": "canica"
+    },
+    {
+      "de": "Versteckspiel",
+      "article": "das",
+      "plural": "Versteckspiele",
+      "en": "hide-and-seek",
+      "es": "escondite"
+    },
+    {
+      "de": "Bauklotz",
+      "article": "der",
+      "plural": "Bauklötze",
+      "en": "building block",
+      "es": "bloque de construcción",
+      "emoji": "🧱"
+    },
+    {
+      "de": "Märchen",
+      "article": "das",
+      "plural": "Märchen",
+      "en": "fairy tale",
+      "es": "cuento de hadas"
+    },
+    {
+      "de": "Bilderbuch",
+      "article": "das",
+      "plural": "Bilderbücher",
+      "en": "picture book",
+      "es": "libro ilustrado"
+    },
+    {
+      "de": "Drachen",
+      "article": "der",
+      "plural": "Drachen",
+      "en": "kite",
+      "es": "cometa",
+      "emoji": "🪁"
+    },
+    {
+      "de": "Springseil",
+      "article": "das",
+      "plural": "Springseile",
+      "en": "skipping rope",
+      "es": "comba"
+    },
+    {
+      "de": "Würfel",
+      "article": "der",
+      "plural": "Würfel",
+      "en": "dice",
+      "es": "dado",
+      "emoji": "🎲"
+    },
+    {
+      "de": "Brettspiel",
+      "article": "das",
+      "plural": "Brettspiele",
+      "en": "board game",
+      "es": "juego de mesa"
+    },
+    {
+      "de": "Puzzle",
+      "article": "das",
+      "plural": "Puzzles",
+      "en": "jigsaw puzzle",
+      "es": "puzle",
+      "emoji": "🧩"
+    },
+    {
+      "de": "Kreisel",
+      "article": "der",
+      "plural": "Kreisel",
+      "en": "spinning top",
+      "es": "peonza"
+    },
+    {
+      "de": "Seifenblase",
+      "article": "die",
+      "plural": "Seifenblasen",
+      "en": "soap bubble",
+      "es": "pompa de jabón",
+      "emoji": "🫧"
+    },
+    {
+      "de": "Schneemann",
+      "article": "der",
+      "plural": "Schneemänner",
+      "en": "snowman",
+      "es": "muñeco de nieve",
+      "emoji": "⛄"
+    },
+    {
+      "de": "Taschengeld",
+      "article": "das",
+      "plural": null,
+      "en": "pocket money",
+      "es": "paga"
+    },
+    {
+      "de": "Zeichentrickfilm",
+      "article": "der",
+      "plural": "Zeichentrickfilme",
+      "en": "cartoon",
+      "es": "dibujos animados"
+    },
+    {
+      "de": "Spielkamerad",
+      "article": "der",
+      "plural": "Spielkameraden",
+      "en": "playmate",
+      "es": "compañero de juegos"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Als Kind hatte ich einen großen Teddybären.",
+      "en": "As a child I had a big teddy bear.",
+      "es": "De niño tenía un osito de peluche grande."
+    },
+    {
+      "de": "Wir haben jeden Nachmittag auf dem Spielplatz gespielt.",
+      "en": "We played at the playground every afternoon.",
+      "es": "Jugábamos en el parque infantil todas las tardes."
+    },
+    {
+      "de": "Meine Oma hat mir oft Märchen erzählt.",
+      "en": "My grandma often told me fairy tales.",
+      "es": "Mi abuela me contaba cuentos de hadas a menudo."
+    },
+    {
+      "de": "Im Herbst haben wir Drachen steigen lassen.",
+      "en": "In autumn we flew kites.",
+      "es": "En otoño volábamos cometas."
+    },
+    {
+      "de": "Ich habe schöne Erinnerungen an meine Kindheit.",
+      "en": "I have nice memories of my childhood.",
+      "es": "Tengo bonitos recuerdos de mi infancia."
+    },
+    {
+      "de": "Wie viel Taschengeld hast du bekommen?",
+      "en": "How much pocket money did you get?",
+      "es": "¿Cuánta paga recibías?"
+    }
+  ]
+}

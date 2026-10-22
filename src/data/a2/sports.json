@@ -1,0 +1,248 @@
+{
+  "id": "sports",
+  "title": {
+    "de": "Sportarten",
+    "en": "Sports",
+    "es": "Deportes"
+  },
+  "emoji": "🏅",
+  "nouns": [
+    {
+      "de": "Sportart",
+      "article": "die",
+      "plural": "Sportarten",
+      "en": "type of sport",
+      "es": "modalidad deportiva"
+    },
+    {
+      "de": "Leichtathletik",
+      "article": "die",
+      "plural": null,
+      "en": "athletics",
+      "es": "atletismo",
+      "emoji": "🏃"
+    },
+    {
+      "de": "Turnen",
+      "article": "das",
+      "plural": null,
+      "en": "gymnastics",
+      "es": "gimnasia",
+      "emoji": "🤸"
+    },
+    {
+      "de": "Schwimmen",
+      "article": "das",
+      "plural": null,
+      "en": "swimming",
+      "es": "natación",
+      "emoji": "🏊"
+    },
+    {
+      "de": "Rudern",
+      "article": "das",
+      "plural": null,
+      "en": "rowing",
+      "es": "remo",
+      "emoji": "🚣"
+    },
+    {
+      "de": "Segeln",
+      "article": "das",
+      "plural": null,
+      "en": "sailing",
+      "es": "vela",
+      "emoji": "⛵"
+    },
+    {
+      "de": "Reiten",
+      "article": "das",
+      "plural": null,
+      "en": "horse riding",
+      "es": "equitación",
+      "emoji": "🏇"
+    },
+    {
+      "de": "Boxen",
+      "article": "das",
+      "plural": null,
+      "en": "boxing",
+      "es": "boxeo",
+      "emoji": "🥊"
+    },
+    {
+      "de": "Skifahren",
+      "article": "das",
+      "plural": null,
+      "en": "skiing",
+      "es": "esquí",
+      "emoji": "⛷️"
+    },
+    {
+      "de": "Radsport",
+      "article": "der",
+      "plural": null,
+      "en": "cycling",
+      "es": "ciclismo",
+      "emoji": "🚴"
+    },
+    {
+      "de": "Handball",
+      "article": "der",
+      "plural": null,
+      "en": "handball",
+      "es": "balonmano",
+      "emoji": "🤾"
+    },
+    {
+      "de": "Tischtennis",
+      "article": "das",
+      "plural": null,
+      "en": "table tennis",
+      "es": "tenis de mesa",
+      "emoji": "🏓"
+    },
+    {
+      "de": "Wettkampf",
+      "article": "der",
+      "plural": "Wettkämpfe",
+      "en": "competition",
+      "es": "competición"
+    },
+    {
+      "de": "Meisterschaft",
+      "article": "die",
+      "plural": "Meisterschaften",
+      "en": "championship",
+      "es": "campeonato"
+    },
+    {
+      "de": "Schiedsrichter",
+      "article": "der",
+      "plural": "Schiedsrichter",
+      "en": "referee",
+      "es": "árbitro"
+    },
+    {
+      "de": "Trainer",
+      "article": "der",
+      "plural": "Trainer",
+      "en": "coach (male)",
+      "es": "entrenador"
+    },
+    {
+      "de": "Trainerin",
+      "article": "die",
+      "plural": "Trainerinnen",
+      "en": "coach (female)",
+      "es": "entrenadora"
+    },
+    {
+      "de": "Spieler",
+      "article": "der",
+      "plural": "Spieler",
+      "en": "player",
+      "es": "jugador"
+    },
+    {
+      "de": "Fan",
+      "article": "der",
+      "plural": "Fans",
+      "en": "fan",
+      "es": "aficionado"
+    },
+    {
+      "de": "Tor",
+      "article": "das",
+      "plural": "Tore",
+      "en": "goal",
+      "es": "gol",
+      "emoji": "🥅"
+    },
+    {
+      "de": "Sieg",
+      "article": "der",
+      "plural": "Siege",
+      "en": "victory",
+      "es": "victoria",
+      "emoji": "🏆"
+    },
+    {
+      "de": "Niederlage",
+      "article": "die",
+      "plural": "Niederlagen",
+      "en": "defeat",
+      "es": "derrota"
+    },
+    {
+      "de": "Unentschieden",
+      "article": "das",
+      "plural": "Unentschieden",
+      "en": "draw",
+      "es": "empate"
+    },
+    {
+      "de": "Medaille",
+      "article": "die",
+      "plural": "Medaillen",
+      "en": "medal",
+      "es": "medalla",
+      "emoji": "🏅"
+    },
+    {
+      "de": "Stadion",
+      "article": "das",
+      "plural": "Stadien",
+      "en": "stadium",
+      "es": "estadio",
+      "emoji": "🏟️"
+    },
+    {
+      "de": "Fitnessstudio",
+      "article": "das",
+      "plural": "Fitnessstudios",
+      "en": "gym",
+      "es": "gimnasio"
+    },
+    {
+      "de": "Schläger",
+      "article": "der",
+      "plural": "Schläger",
+      "en": "racket",
+      "es": "raqueta",
+      "emoji": "🎾"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Welche Sportart machst du am liebsten?",
+      "en": "Which sport do you like doing best?",
+      "es": "¿Qué deporte te gusta más practicar?"
+    },
+    {
+      "de": "Meine Schwester spielt seit drei Jahren Handball.",
+      "en": "My sister has been playing handball for three years.",
+      "es": "Mi hermana juega al balonmano desde hace tres años."
+    },
+    {
+      "de": "Der Schiedsrichter hat das Tor nicht gesehen.",
+      "en": "The referee did not see the goal.",
+      "es": "El árbitro no ha visto el gol."
+    },
+    {
+      "de": "Unsere Mannschaft hat das Spiel gewonnen.",
+      "en": "Our team won the match.",
+      "es": "Nuestro equipo ha ganado el partido."
+    },
+    {
+      "de": "Am Wochenende gehe ich ins Fitnessstudio.",
+      "en": "At the weekend I go to the gym.",
+      "es": "El fin de semana voy al gimnasio."
+    },
+    {
+      "de": "Sie hat bei der Meisterschaft eine Medaille bekommen.",
+      "en": "She got a medal at the championship.",
+      "es": "Ella ha conseguido una medalla en el campeonato."
+    }
+  ]
+}

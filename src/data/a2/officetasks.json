@@ -1,0 +1,72 @@
+{
+  "id": "officetasks",
+  "title": {
+    "de": "Tätigkeiten im Büro",
+    "en": "Office tasks",
+    "es": "Tareas de oficina"
+  },
+  "emoji": "🗂️",
+  "nouns": [
+    { "de": "Auftrag", "article": "der", "plural": "Aufträge", "en": "order (job)", "es": "encargo" },
+    { "de": "Arbeitsauftrag", "article": "der", "plural": "Arbeitsaufträge", "en": "work task", "es": "orden de trabajo" },
+    { "de": "Ablage", "article": "die", "plural": "Ablagen", "en": "filing", "es": "archivo" },
+    { "de": "Akte", "article": "die", "plural": "Akten", "en": "case file", "es": "expediente", "emoji": "📁" },
+    { "de": "Präsentation", "article": "die", "plural": "Präsentationen", "en": "presentation", "es": "presentación", "emoji": "📊" },
+    { "de": "Meeting", "article": "das", "plural": "Meetings", "en": "meeting", "es": "reunión" },
+    { "de": "Telefonkonferenz", "article": "die", "plural": "Telefonkonferenzen", "en": "conference call", "es": "conferencia telefónica" },
+    { "de": "Kundengespräch", "article": "das", "plural": "Kundengespräche", "en": "client meeting", "es": "reunión con un cliente" },
+    { "de": "Posteingang", "article": "der", "plural": "Posteingänge", "en": "inbox", "es": "bandeja de entrada", "emoji": "📥" },
+    { "de": "Briefumschlag", "article": "der", "plural": "Briefumschläge", "en": "envelope", "es": "sobre", "emoji": "✉️" },
+    { "de": "Briefmarke", "article": "die", "plural": "Briefmarken", "en": "postage stamp", "es": "sello" },
+    { "de": "Locher", "article": "der", "plural": "Locher", "en": "hole punch", "es": "perforadora" },
+    { "de": "Hefter", "article": "der", "plural": "Hefter", "en": "stapler", "es": "grapadora" },
+    { "de": "Büroklammer", "article": "die", "plural": "Büroklammern", "en": "paper clip", "es": "clip", "emoji": "📎" },
+    { "de": "Kopierer", "article": "der", "plural": "Kopierer", "en": "photocopier", "es": "fotocopiadora" },
+    { "de": "Tabelle", "article": "die", "plural": "Tabellen", "en": "table (chart)", "es": "tabla", "emoji": "📈" },
+    { "de": "Rückruf", "article": "der", "plural": "Rückrufe", "en": "callback", "es": "devolución de llamada" },
+    { "de": "Anfrage", "article": "die", "plural": "Anfragen", "en": "enquiry", "es": "consulta" },
+    { "de": "Mahnung", "article": "die", "plural": "Mahnungen", "en": "payment reminder", "es": "recordatorio de pago" },
+    { "de": "Entwurf", "article": "der", "plural": "Entwürfe", "en": "draft", "es": "borrador" },
+    { "de": "Korrektur", "article": "die", "plural": "Korrekturen", "en": "correction", "es": "corrección" },
+    { "de": "Übersetzung", "article": "die", "plural": "Übersetzungen", "en": "translation", "es": "traducción" },
+    { "de": "Zusammenfassung", "article": "die", "plural": "Zusammenfassungen", "en": "summary", "es": "resumen" },
+    { "de": "Abgabetermin", "article": "der", "plural": "Abgabetermine", "en": "due date", "es": "fecha de entrega" }
+  ],
+  "sentences": [
+    {
+      "de": "Der Kopierer ist kaputt, deshalb mache ich die Kopien im Sekretariat.",
+      "en": "The photocopier is broken, so I'm making the copies in the office.",
+      "es": "La fotocopiadora está estropeada, por eso hago las copias en secretaría."
+    },
+    {
+      "de": "Der Abgabetermin ist am Freitag, deshalb schreibe ich heute den Entwurf.",
+      "en": "The due date is on Friday, so I'm writing the draft today.",
+      "es": "La fecha de entrega es el viernes, por eso escribo hoy el borrador."
+    },
+    {
+      "de": "Ein Kunde hat eine Anfrage geschickt, deshalb rufe ich ihn zurück.",
+      "en": "A client has sent an enquiry, so I'm calling him back.",
+      "es": "Un cliente ha enviado una consulta, por eso le devuelvo la llamada."
+    },
+    {
+      "de": "Ich habe morgen eine Präsentation, deshalb bereite ich heute die Folien vor.",
+      "en": "I have a presentation tomorrow, so I'm preparing the slides today.",
+      "es": "Mañana tengo una presentación, por eso hoy preparo las diapositivas."
+    },
+    {
+      "de": "Die Rechnung ist noch nicht bezahlt, deshalb schicken wir eine Mahnung.",
+      "en": "The invoice hasn't been paid yet, so we're sending a payment reminder.",
+      "es": "La factura todavía no está pagada, por eso enviamos un recordatorio de pago."
+    },
+    {
+      "de": "Mein Posteingang ist voll, deshalb lösche ich alte E-Mails.",
+      "en": "My inbox is full, so I'm deleting old emails.",
+      "es": "Mi bandeja de entrada está llena, por eso borro los correos antiguos."
+    },
+    {
+      "de": "Bitte legen Sie die Akte in die Ablage.",
+      "en": "Please put the file in the filing tray.",
+      "es": "Por favor, ponga el expediente en la bandeja de archivo."
+    }
+  ]
+}

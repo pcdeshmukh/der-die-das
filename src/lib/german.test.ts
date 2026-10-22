@@ -87,6 +87,10 @@ describe('plurals', () => {
     expect(pluralDistractors('Wohnung', 'Wohnungen').some((d) => /[äöü]/.test(d))).toBe(false);
   });
 
+  it('never doubles a final e', () => {
+    expect(pluralDistractors('Höhle', 'Höhlen').some((d) => d.includes('ee'))).toBe(false);
+  });
+
   it('has at least three distractors for every noun', async () => {
     const { loadAllLevels, allWords } = await import('../data');
     const LEVELS = await loadAllLevels();

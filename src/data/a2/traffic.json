@@ -1,0 +1,246 @@
+{
+  "id": "traffic",
+  "title": {
+    "de": "Verkehr & Verkehrsmittel",
+    "en": "Traffic & transport",
+    "es": "Tráfico y transporte"
+  },
+  "emoji": "🚦",
+  "nouns": [
+    {
+      "de": "Umleitung",
+      "article": "die",
+      "plural": "Umleitungen",
+      "en": "detour",
+      "es": "desvío"
+    },
+    {
+      "de": "Baustelle",
+      "article": "die",
+      "plural": "Baustellen",
+      "en": "roadworks",
+      "es": "obras",
+      "emoji": "🚧"
+    },
+    {
+      "de": "Fähre",
+      "article": "die",
+      "plural": "Fähren",
+      "en": "ferry",
+      "es": "ferri",
+      "emoji": "⛴️"
+    },
+    {
+      "de": "Verspätung",
+      "article": "die",
+      "plural": "Verspätungen",
+      "en": "delay",
+      "es": "retraso"
+    },
+    {
+      "de": "Autobahn",
+      "article": "die",
+      "plural": "Autobahnen",
+      "en": "motorway",
+      "es": "autopista",
+      "emoji": "🛣️"
+    },
+    {
+      "de": "Ausfahrt",
+      "article": "die",
+      "plural": "Ausfahrten",
+      "en": "exit",
+      "es": "salida"
+    },
+    {
+      "de": "Einbahnstraße",
+      "article": "die",
+      "plural": "Einbahnstraßen",
+      "en": "one-way street",
+      "es": "calle de sentido único"
+    },
+    {
+      "de": "Kreisverkehr",
+      "article": "der",
+      "plural": "Kreisverkehre",
+      "en": "roundabout",
+      "es": "rotonda"
+    },
+    {
+      "de": "Verkehrsschild",
+      "article": "das",
+      "plural": "Verkehrsschilder",
+      "en": "road sign",
+      "es": "señal de tráfico"
+    },
+    {
+      "de": "Geschwindigkeit",
+      "article": "die",
+      "plural": "Geschwindigkeiten",
+      "en": "speed",
+      "es": "velocidad"
+    },
+    {
+      "de": "Strafzettel",
+      "article": "der",
+      "plural": "Strafzettel",
+      "en": "parking ticket",
+      "es": "multa"
+    },
+    {
+      "de": "Radfahrer",
+      "article": "der",
+      "plural": "Radfahrer",
+      "en": "cyclist",
+      "es": "ciclista",
+      "emoji": "🚴"
+    },
+    {
+      "de": "Autofahrer",
+      "article": "der",
+      "plural": "Autofahrer",
+      "en": "car driver",
+      "es": "conductor"
+    },
+    {
+      "de": "Mietwagen",
+      "article": "der",
+      "plural": "Mietwagen",
+      "en": "hire car",
+      "es": "coche de alquiler"
+    },
+    {
+      "de": "Fahrgast",
+      "article": "der",
+      "plural": "Fahrgäste",
+      "en": "passenger",
+      "es": "pasajero"
+    },
+    {
+      "de": "Bahnsteig",
+      "article": "der",
+      "plural": "Bahnsteige",
+      "en": "platform",
+      "es": "andén"
+    },
+    {
+      "de": "Berufsverkehr",
+      "article": "der",
+      "plural": null,
+      "en": "rush hour",
+      "es": "hora punta"
+    },
+    {
+      "de": "Parkhaus",
+      "article": "das",
+      "plural": "Parkhäuser",
+      "en": "multi-storey car park",
+      "es": "aparcamiento de varias plantas"
+    },
+    {
+      "de": "Benzin",
+      "article": "das",
+      "plural": null,
+      "en": "petrol",
+      "es": "gasolina",
+      "emoji": "⛽"
+    },
+    {
+      "de": "Reifen",
+      "article": "der",
+      "plural": "Reifen",
+      "en": "tyre",
+      "es": "neumático",
+      "emoji": "🛞"
+    },
+    {
+      "de": "Panne",
+      "article": "die",
+      "plural": "Pannen",
+      "en": "breakdown",
+      "es": "avería"
+    },
+    {
+      "de": "Fahrspur",
+      "article": "die",
+      "plural": "Fahrspuren",
+      "en": "lane",
+      "es": "carril"
+    },
+    {
+      "de": "Lkw",
+      "article": "der",
+      "plural": "Lkws",
+      "en": "lorry",
+      "es": "camión",
+      "emoji": "🚚"
+    },
+    {
+      "de": "Wohnmobil",
+      "article": "das",
+      "plural": "Wohnmobile",
+      "en": "campervan",
+      "es": "autocaravana",
+      "emoji": "🚐"
+    },
+    {
+      "de": "Fahrschule",
+      "article": "die",
+      "plural": "Fahrschulen",
+      "en": "driving school",
+      "es": "autoescuela"
+    },
+    {
+      "de": "Monatskarte",
+      "article": "die",
+      "plural": "Monatskarten",
+      "en": "monthly ticket",
+      "es": "abono mensual",
+      "emoji": "🎫"
+    },
+    {
+      "de": "Anschluss",
+      "article": "der",
+      "plural": "Anschlüsse",
+      "en": "connection",
+      "es": "conexión"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Auf der Autobahn gibt es einen langen Stau.",
+      "en": "There is a long traffic jam on the motorway.",
+      "es": "Hay un atasco largo en la autopista."
+    },
+    {
+      "de": "Wegen einer Baustelle müssen wir eine Umleitung fahren.",
+      "en": "Because of roadworks we have to take a detour.",
+      "es": "Por unas obras tenemos que tomar un desvío."
+    },
+    {
+      "de": "Der Zug hat zwanzig Minuten Verspätung.",
+      "en": "The train is twenty minutes late.",
+      "es": "El tren lleva veinte minutos de retraso."
+    },
+    {
+      "de": "Mit der Fähre fahren wir auf die Insel.",
+      "en": "We take the ferry to the island.",
+      "es": "Vamos a la isla en ferri."
+    },
+    {
+      "de": "Ich mache gerade meinen Führerschein bei einer Fahrschule.",
+      "en": "I am doing my driving licence at a driving school.",
+      "es": "Me estoy sacando el carné de conducir en una autoescuela."
+    },
+    {
+      "de": "Im Kreisverkehr nehmen Sie die zweite Ausfahrt.",
+      "en": "At the roundabout, take the second exit.",
+      "es": "En la rotonda, tome la segunda salida."
+    },
+    {
+      "de": "Wir hatten eine Panne und haben den Zug verpasst.",
+      "en": "We broke down and missed the train.",
+      "es": "Tuvimos una avería y perdimos el tren."
+    }
+  ]
+}

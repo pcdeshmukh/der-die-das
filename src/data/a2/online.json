@@ -1,0 +1,246 @@
+{
+  "id": "online",
+  "title": {
+    "de": "Online-Aktivitäten",
+    "en": "Online activities",
+    "es": "Actividades en línea"
+  },
+  "emoji": "🌐",
+  "nouns": [
+    {
+      "de": "Benutzername",
+      "article": "der",
+      "plural": "Benutzernamen",
+      "en": "username",
+      "es": "nombre de usuario"
+    },
+    {
+      "de": "Suchmaschine",
+      "article": "die",
+      "plural": "Suchmaschinen",
+      "en": "search engine",
+      "es": "buscador",
+      "emoji": "🔍"
+    },
+    {
+      "de": "Beitrag",
+      "article": "der",
+      "plural": "Beiträge",
+      "en": "post",
+      "es": "publicación"
+    },
+    {
+      "de": "Datenschutz",
+      "article": "der",
+      "plural": null,
+      "en": "data protection",
+      "es": "protección de datos",
+      "emoji": "🔒"
+    },
+    {
+      "de": "Download",
+      "article": "der",
+      "plural": "Downloads",
+      "en": "download",
+      "es": "descarga",
+      "emoji": "⬇️"
+    },
+    {
+      "de": "Videoanruf",
+      "article": "der",
+      "plural": "Videoanrufe",
+      "en": "video call",
+      "es": "videollamada",
+      "emoji": "📹"
+    },
+    {
+      "de": "Bildschirmzeit",
+      "article": "die",
+      "plural": null,
+      "en": "screen time",
+      "es": "tiempo de pantalla"
+    },
+    {
+      "de": "Profil",
+      "article": "das",
+      "plural": "Profile",
+      "en": "profile",
+      "es": "perfil",
+      "emoji": "👤"
+    },
+    {
+      "de": "Link",
+      "article": "der",
+      "plural": "Links",
+      "en": "link",
+      "es": "enlace",
+      "emoji": "🔗"
+    },
+    {
+      "de": "Anhang",
+      "article": "der",
+      "plural": "Anhänge",
+      "en": "attachment",
+      "es": "archivo adjunto",
+      "emoji": "📎"
+    },
+    {
+      "de": "Chat",
+      "article": "der",
+      "plural": "Chats",
+      "en": "chat",
+      "es": "chat",
+      "emoji": "💬"
+    },
+    {
+      "de": "Forum",
+      "article": "das",
+      "plural": "Foren",
+      "en": "forum",
+      "es": "foro"
+    },
+    {
+      "de": "App",
+      "article": "die",
+      "plural": "Apps",
+      "en": "app",
+      "es": "aplicación",
+      "emoji": "📱"
+    },
+    {
+      "de": "Follower",
+      "article": "der",
+      "plural": "Follower",
+      "en": "follower",
+      "es": "seguidor"
+    },
+    {
+      "de": "Onlineshop",
+      "article": "der",
+      "plural": "Onlineshops",
+      "en": "online shop",
+      "es": "tienda online",
+      "emoji": "🛒"
+    },
+    {
+      "de": "Bewertung",
+      "article": "die",
+      "plural": "Bewertungen",
+      "en": "review",
+      "es": "valoración",
+      "emoji": "⭐"
+    },
+    {
+      "de": "Suchergebnis",
+      "article": "das",
+      "plural": "Suchergebnisse",
+      "en": "search result",
+      "es": "resultado de búsqueda"
+    },
+    {
+      "de": "Suchbegriff",
+      "article": "der",
+      "plural": "Suchbegriffe",
+      "en": "search term",
+      "es": "término de búsqueda"
+    },
+    {
+      "de": "Lesezeichen",
+      "article": "das",
+      "plural": "Lesezeichen",
+      "en": "bookmark",
+      "es": "marcador",
+      "emoji": "🔖"
+    },
+    {
+      "de": "Browser",
+      "article": "der",
+      "plural": "Browser",
+      "en": "browser",
+      "es": "navegador"
+    },
+    {
+      "de": "Selfie",
+      "article": "das",
+      "plural": "Selfies",
+      "en": "selfie",
+      "es": "selfi",
+      "emoji": "🤳"
+    },
+    {
+      "de": "Newsletter",
+      "article": "der",
+      "plural": "Newsletter",
+      "en": "newsletter",
+      "es": "boletín informativo"
+    },
+    {
+      "de": "Online-Banking",
+      "article": "das",
+      "plural": null,
+      "en": "online banking",
+      "es": "banca online"
+    },
+    {
+      "de": "Influencer",
+      "article": "der",
+      "plural": "Influencer",
+      "en": "influencer",
+      "es": "influencer"
+    },
+    {
+      "de": "Webcam",
+      "article": "die",
+      "plural": "Webcams",
+      "en": "webcam",
+      "es": "cámara web"
+    },
+    {
+      "de": "Benachrichtigung",
+      "article": "die",
+      "plural": "Benachrichtigungen",
+      "en": "notification",
+      "es": "notificación",
+      "emoji": "🔔"
+    },
+    {
+      "de": "Bildschirmfoto",
+      "article": "das",
+      "plural": "Bildschirmfotos",
+      "en": "screenshot",
+      "es": "captura de pantalla"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich habe meinen Benutzernamen vergessen.",
+      "en": "I have forgotten my username.",
+      "es": "He olvidado mi nombre de usuario."
+    },
+    {
+      "de": "Hast du den Link schon geöffnet?",
+      "en": "Have you already opened the link?",
+      "es": "¿Ya has abierto el enlace?"
+    },
+    {
+      "de": "Sie schreibt jeden Tag einen Beitrag für ihren Blog.",
+      "en": "She writes a post for her blog every day.",
+      "es": "Ella escribe una publicación para su blog todos los días."
+    },
+    {
+      "de": "Am Sonntag mache ich einen Videoanruf mit meinen Eltern.",
+      "en": "On Sunday I make a video call with my parents.",
+      "es": "El domingo hago una videollamada con mis padres."
+    },
+    {
+      "de": "Vor dem Kauf lese ich immer die Bewertungen.",
+      "en": "Before buying I always read the reviews.",
+      "es": "Antes de comprar siempre leo las valoraciones."
+    },
+    {
+      "de": "Meine Bildschirmzeit ist viel zu hoch!",
+      "en": "My screen time is far too high!",
+      "es": "¡Mi tiempo de pantalla es demasiado alto!"
+    }
+  ]
+}

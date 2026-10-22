@@ -26,9 +26,9 @@ Items you miss come back sooner (Leitner-style spaced repetition).
 
 ## A2 course
 
-A2 builds on A1 with its own 24-chapter syllabus (*Familie und Verwandte* → *Träume und Wünsche*):
-303 nouns in 12 topics, 72 sentences, 50 verbs, 32 grammar lessons (383 exercises) and 24 phrase
-sets (192 situations). The verb page adds **Präteritum** and **Perfekt** (*hat gemacht* or
+A2 follows a 24-chapter textbook syllabus (*Aktivitäten in der Kindheit* → *Geschäfte*): 647 nouns in
+25 topics, 154 sentences, 50 verbs, 44 grammar lessons (544 exercises) and 48 phrase sets
+(384 situations). The verb page adds **Präteritum** and **Perfekt** (*hat gemacht* or
 *ist gegangen*?) next to present-tense conjugation. The daily challenge follows the level you last opened.
 
 All course content is machine-written; corrections from native speakers are welcome.

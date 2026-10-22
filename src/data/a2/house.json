@@ -1,0 +1,233 @@
+{
+  "id": "house",
+  "title": {
+    "de": "Rund ums Haus",
+    "en": "Around the house",
+    "es": "Alrededor de la casa"
+  },
+  "emoji": "🏡",
+  "nouns": [
+    {
+      "de": "Zaun",
+      "article": "der",
+      "plural": "Zäune",
+      "en": "fence",
+      "es": "valla"
+    },
+    {
+      "de": "Rasen",
+      "article": "der",
+      "plural": "Rasen",
+      "en": "lawn",
+      "es": "césped"
+    },
+    {
+      "de": "Rasenmäher",
+      "article": "der",
+      "plural": "Rasenmäher",
+      "en": "lawnmower",
+      "es": "cortacésped"
+    },
+    {
+      "de": "Hecke",
+      "article": "die",
+      "plural": "Hecken",
+      "en": "hedge",
+      "es": "seto"
+    },
+    {
+      "de": "Treppenhaus",
+      "article": "das",
+      "plural": "Treppenhäuser",
+      "en": "stairwell",
+      "es": "caja de escalera"
+    },
+    {
+      "de": "Gartenhaus",
+      "article": "das",
+      "plural": "Gartenhäuser",
+      "en": "garden shed",
+      "es": "caseta de jardín"
+    },
+    {
+      "de": "Dach",
+      "article": "das",
+      "plural": "Dächer",
+      "en": "roof",
+      "es": "tejado"
+    },
+    {
+      "de": "Garage",
+      "article": "die",
+      "plural": "Garagen",
+      "en": "garage",
+      "es": "garaje"
+    },
+    {
+      "de": "Terrasse",
+      "article": "die",
+      "plural": "Terrassen",
+      "en": "terrace",
+      "es": "terraza"
+    },
+    {
+      "de": "Hof",
+      "article": "der",
+      "plural": "Höfe",
+      "en": "courtyard",
+      "es": "patio"
+    },
+    {
+      "de": "Eingang",
+      "article": "der",
+      "plural": "Eingänge",
+      "en": "entrance",
+      "es": "entrada"
+    },
+    {
+      "de": "Haustür",
+      "article": "die",
+      "plural": "Haustüren",
+      "en": "front door",
+      "es": "puerta principal",
+      "emoji": "🚪"
+    },
+    {
+      "de": "Beet",
+      "article": "das",
+      "plural": "Beete",
+      "en": "flower bed",
+      "es": "arriate",
+      "emoji": "🌷"
+    },
+    {
+      "de": "Schaufel",
+      "article": "die",
+      "plural": "Schaufeln",
+      "en": "shovel",
+      "es": "pala"
+    },
+    {
+      "de": "Gießkanne",
+      "article": "die",
+      "plural": "Gießkannen",
+      "en": "watering can",
+      "es": "regadera"
+    },
+    {
+      "de": "Schubkarre",
+      "article": "die",
+      "plural": "Schubkarren",
+      "en": "wheelbarrow",
+      "es": "carretilla"
+    },
+    {
+      "de": "Mülltonne",
+      "article": "die",
+      "plural": "Mülltonnen",
+      "en": "wheelie bin",
+      "es": "contenedor de basura",
+      "emoji": "🗑️"
+    },
+    {
+      "de": "Schornstein",
+      "article": "der",
+      "plural": "Schornsteine",
+      "en": "chimney",
+      "es": "chimenea"
+    },
+    {
+      "de": "Gartentor",
+      "article": "das",
+      "plural": "Gartentore",
+      "en": "garden gate",
+      "es": "puerta del jardín"
+    },
+    {
+      "de": "Gartenschlauch",
+      "article": "der",
+      "plural": "Gartenschläuche",
+      "en": "garden hose",
+      "es": "manguera"
+    },
+    {
+      "de": "Hausarbeit",
+      "article": "die",
+      "plural": "Hausarbeiten",
+      "en": "housework",
+      "es": "tareas domésticas",
+      "emoji": "🧹"
+    },
+    {
+      "de": "Gartenarbeit",
+      "article": "die",
+      "plural": "Gartenarbeiten",
+      "en": "gardening",
+      "es": "jardinería",
+      "emoji": "🧑‍🌾"
+    },
+    {
+      "de": "Reihenhaus",
+      "article": "das",
+      "plural": "Reihenhäuser",
+      "en": "terraced house",
+      "es": "casa adosada",
+      "emoji": "🏘️"
+    },
+    {
+      "de": "Einfamilienhaus",
+      "article": "das",
+      "plural": "Einfamilienhäuser",
+      "en": "detached house",
+      "es": "casa unifamiliar",
+      "emoji": "🏠"
+    },
+    {
+      "de": "Waschküche",
+      "article": "die",
+      "plural": "Waschküchen",
+      "en": "laundry room",
+      "es": "lavadero"
+    },
+    {
+      "de": "Unkraut",
+      "article": "das",
+      "plural": null,
+      "en": "weeds",
+      "es": "malas hierbas",
+      "emoji": "🌿"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Kann ich dir beim Rasenmähen helfen?",
+      "en": "Can I help you mow the lawn?",
+      "es": "¿Te puedo ayudar a cortar el césped?"
+    },
+    {
+      "de": "Der Rasenmäher steht im Gartenhaus.",
+      "en": "The lawnmower is in the garden shed.",
+      "es": "El cortacésped está en la caseta de jardín."
+    },
+    {
+      "de": "Die Gießkanne liegt hinter der Garage.",
+      "en": "The watering can is behind the garage.",
+      "es": "La regadera está detrás del garaje."
+    },
+    {
+      "de": "Der Hausmeister putzt jeden Montag das Treppenhaus.",
+      "en": "The caretaker cleans the stairwell every Monday.",
+      "es": "El conserje limpia la escalera todos los lunes."
+    },
+    {
+      "de": "Wir müssen die Hecke am Zaun schneiden.",
+      "en": "We have to cut the hedge by the fence.",
+      "es": "Tenemos que podar el seto junto a la valla."
+    },
+    {
+      "de": "Danke, das ist sehr nett, aber ich schaffe das allein.",
+      "en": "Thanks, that's very kind, but I can manage on my own.",
+      "es": "Gracias, es muy amable, pero puedo hacerlo solo."
+    }
+  ]
+}

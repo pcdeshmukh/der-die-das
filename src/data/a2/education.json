@@ -1,0 +1,231 @@
+{
+  "id": "education",
+  "title": {
+    "de": "Schule & Ausbildung",
+    "en": "School & training",
+    "es": "Escuela y formación"
+  },
+  "emoji": "🎓",
+  "nouns": [
+    {
+      "de": "Abitur",
+      "article": "das",
+      "plural": null,
+      "en": "A levels",
+      "es": "bachillerato",
+      "emoji": "🎓"
+    },
+    {
+      "de": "Studium",
+      "article": "das",
+      "plural": "Studien",
+      "en": "university studies",
+      "es": "estudios universitarios"
+    },
+    {
+      "de": "Fach",
+      "article": "das",
+      "plural": "Fächer",
+      "en": "subject",
+      "es": "asignatura",
+      "emoji": "📚"
+    },
+    {
+      "de": "Berufsschule",
+      "article": "die",
+      "plural": "Berufsschulen",
+      "en": "vocational school",
+      "es": "escuela de formación profesional"
+    },
+    {
+      "de": "Azubi",
+      "article": "der",
+      "plural": "Azubis",
+      "en": "apprentice",
+      "es": "aprendiz"
+    },
+    {
+      "de": "Abschluss",
+      "article": "der",
+      "plural": "Abschlüsse",
+      "en": "qualification",
+      "es": "título",
+      "emoji": "📜"
+    },
+    {
+      "de": "Grundschule",
+      "article": "die",
+      "plural": "Grundschulen",
+      "en": "primary school",
+      "es": "colegio de primaria"
+    },
+    {
+      "de": "Gymnasium",
+      "article": "das",
+      "plural": "Gymnasien",
+      "en": "grammar school",
+      "es": "instituto de bachillerato"
+    },
+    {
+      "de": "Realschule",
+      "article": "die",
+      "plural": "Realschulen",
+      "en": "secondary school",
+      "es": "escuela secundaria"
+    },
+    {
+      "de": "Hauptschule",
+      "article": "die",
+      "plural": "Hauptschulen",
+      "en": "lower secondary school",
+      "es": "escuela secundaria básica"
+    },
+    {
+      "de": "Universität",
+      "article": "die",
+      "plural": "Universitäten",
+      "en": "university",
+      "es": "universidad",
+      "emoji": "🏛️"
+    },
+    {
+      "de": "Note",
+      "article": "die",
+      "plural": "Noten",
+      "en": "mark",
+      "es": "nota"
+    },
+    {
+      "de": "Stundenplan",
+      "article": "der",
+      "plural": "Stundenpläne",
+      "en": "timetable",
+      "es": "horario",
+      "emoji": "🗓️"
+    },
+    {
+      "de": "Ausbilder",
+      "article": "der",
+      "plural": "Ausbilder",
+      "en": "instructor",
+      "es": "formador"
+    },
+    {
+      "de": "Lehre",
+      "article": "die",
+      "plural": "Lehren",
+      "en": "apprenticeship",
+      "es": "aprendizaje de un oficio"
+    },
+    {
+      "de": "Studiengang",
+      "article": "der",
+      "plural": "Studiengänge",
+      "en": "degree programme",
+      "es": "carrera"
+    },
+    {
+      "de": "Semester",
+      "article": "das",
+      "plural": "Semester",
+      "en": "semester",
+      "es": "semestre"
+    },
+    {
+      "de": "Vorlesung",
+      "article": "die",
+      "plural": "Vorlesungen",
+      "en": "lecture",
+      "es": "clase magistral"
+    },
+    {
+      "de": "Weiterbildung",
+      "article": "die",
+      "plural": "Weiterbildungen",
+      "en": "further training",
+      "es": "formación continua"
+    },
+    {
+      "de": "Stipendium",
+      "article": "das",
+      "plural": "Stipendien",
+      "en": "scholarship",
+      "es": "beca"
+    },
+    {
+      "de": "Unterricht",
+      "article": "der",
+      "plural": null,
+      "en": "lessons",
+      "es": "clases"
+    },
+    {
+      "de": "Schuljahr",
+      "article": "das",
+      "plural": "Schuljahre",
+      "en": "school year",
+      "es": "curso escolar"
+    },
+    {
+      "de": "Klassenarbeit",
+      "article": "die",
+      "plural": "Klassenarbeiten",
+      "en": "class test",
+      "es": "examen de clase",
+      "emoji": "📝"
+    },
+    {
+      "de": "Mensa",
+      "article": "die",
+      "plural": "Mensen",
+      "en": "university canteen",
+      "es": "comedor universitario"
+    },
+    {
+      "de": "Hörsaal",
+      "article": "der",
+      "plural": "Hörsäle",
+      "en": "lecture hall",
+      "es": "aula magna"
+    },
+    {
+      "de": "Nachhilfe",
+      "article": "die",
+      "plural": null,
+      "en": "private tutoring",
+      "es": "clases particulares"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Nach der Grundschule bin ich auf das Gymnasium gegangen.",
+      "en": "After primary school I went to grammar school.",
+      "es": "Después de primaria fui al instituto."
+    },
+    {
+      "de": "Ich habe 2015 mein Abitur gemacht.",
+      "en": "I did my A levels in 2015.",
+      "es": "Terminé el bachillerato en 2015."
+    },
+    {
+      "de": "Mein Lieblingsfach war Geschichte.",
+      "en": "My favourite subject was history.",
+      "es": "Mi asignatura favorita era historia."
+    },
+    {
+      "de": "Er macht eine Ausbildung als Koch und geht zweimal pro Woche zur Berufsschule.",
+      "en": "He is training as a cook and goes to vocational school twice a week.",
+      "es": "Hace una formación de cocinero y va a la escuela de formación profesional dos veces por semana."
+    },
+    {
+      "de": "Nach dem Studium habe ich ein Praktikum in Berlin gemacht.",
+      "en": "After my studies I did an internship in Berlin.",
+      "es": "Después de la carrera hice unas prácticas en Berlín."
+    },
+    {
+      "de": "Meine Schwester hat in Mathe eine schlechte Note bekommen.",
+      "en": "My sister got a bad mark in maths.",
+      "es": "Mi hermana sacó una mala nota en matemáticas."
+    }
+  ]
+}

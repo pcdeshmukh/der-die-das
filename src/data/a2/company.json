@@ -1,0 +1,231 @@
+{
+  "id": "company",
+  "title": {
+    "de": "In der Firma",
+    "en": "At the company",
+    "es": "En la empresa"
+  },
+  "emoji": "🏢",
+  "nouns": [
+    {
+      "de": "Geschäftsführer",
+      "article": "der",
+      "plural": "Geschäftsführer",
+      "en": "managing director (male)",
+      "es": "director general"
+    },
+    {
+      "de": "Geschäftsführerin",
+      "article": "die",
+      "plural": "Geschäftsführerinnen",
+      "en": "managing director (female)",
+      "es": "directora general"
+    },
+    {
+      "de": "Mitarbeiter",
+      "article": "der",
+      "plural": "Mitarbeiter",
+      "en": "employee (male)",
+      "es": "empleado"
+    },
+    {
+      "de": "Mitarbeiterin",
+      "article": "die",
+      "plural": "Mitarbeiterinnen",
+      "en": "employee (female)",
+      "es": "empleada"
+    },
+    {
+      "de": "Praktikant",
+      "article": "der",
+      "plural": "Praktikanten",
+      "en": "intern (male)",
+      "es": "becario"
+    },
+    {
+      "de": "Praktikantin",
+      "article": "die",
+      "plural": "Praktikantinnen",
+      "en": "intern (female)",
+      "es": "becaria"
+    },
+    {
+      "de": "Pförtner",
+      "article": "der",
+      "plural": "Pförtner",
+      "en": "doorman",
+      "es": "portero"
+    },
+    {
+      "de": "Empfang",
+      "article": "der",
+      "plural": "Empfänge",
+      "en": "front desk",
+      "es": "recepción",
+      "emoji": "🛎️"
+    },
+    {
+      "de": "Lager",
+      "article": "das",
+      "plural": "Lager",
+      "en": "warehouse",
+      "es": "almacén",
+      "emoji": "📦"
+    },
+    {
+      "de": "Personalabteilung",
+      "article": "die",
+      "plural": "Personalabteilungen",
+      "en": "HR department",
+      "es": "departamento de personal"
+    },
+    {
+      "de": "Buchhaltung",
+      "article": "die",
+      "plural": "Buchhaltungen",
+      "en": "accounting",
+      "es": "contabilidad"
+    },
+    {
+      "de": "Marketing",
+      "article": "das",
+      "plural": null,
+      "en": "marketing",
+      "es": "marketing"
+    },
+    {
+      "de": "Vertrieb",
+      "article": "der",
+      "plural": null,
+      "en": "sales",
+      "es": "ventas"
+    },
+    {
+      "de": "Konferenzraum",
+      "article": "der",
+      "plural": "Konferenzräume",
+      "en": "conference room",
+      "es": "sala de reuniones"
+    },
+    {
+      "de": "Großraumbüro",
+      "article": "das",
+      "plural": "Großraumbüros",
+      "en": "open-plan office",
+      "es": "oficina diáfana"
+    },
+    {
+      "de": "Sekretariat",
+      "article": "das",
+      "plural": "Sekretariate",
+      "en": "secretary's office",
+      "es": "secretaría"
+    },
+    {
+      "de": "Hauptsitz",
+      "article": "der",
+      "plural": "Hauptsitze",
+      "en": "headquarters",
+      "es": "sede central"
+    },
+    {
+      "de": "Filiale",
+      "article": "die",
+      "plural": "Filialen",
+      "en": "branch",
+      "es": "sucursal"
+    },
+    {
+      "de": "Fabrik",
+      "article": "die",
+      "plural": "Fabriken",
+      "en": "factory",
+      "es": "fábrica",
+      "emoji": "🏭"
+    },
+    {
+      "de": "Produktion",
+      "article": "die",
+      "plural": "Produktionen",
+      "en": "production",
+      "es": "producción"
+    },
+    {
+      "de": "Umsatz",
+      "article": "der",
+      "plural": "Umsätze",
+      "en": "turnover",
+      "es": "facturación",
+      "emoji": "📈"
+    },
+    {
+      "de": "Gewinn",
+      "article": "der",
+      "plural": "Gewinne",
+      "en": "profit",
+      "es": "beneficio"
+    },
+    {
+      "de": "Tagesordnung",
+      "article": "die",
+      "plural": "Tagesordnungen",
+      "en": "agenda",
+      "es": "orden del día"
+    },
+    {
+      "de": "Protokoll",
+      "article": "das",
+      "plural": "Protokolle",
+      "en": "minutes (of a meeting)",
+      "es": "acta",
+      "emoji": "📝"
+    },
+    {
+      "de": "Visitenkarte",
+      "article": "die",
+      "plural": "Visitenkarten",
+      "en": "business card",
+      "es": "tarjeta de visita",
+      "emoji": "📇"
+    },
+    {
+      "de": "Dienstreise",
+      "article": "die",
+      "plural": "Dienstreisen",
+      "en": "business trip",
+      "es": "viaje de negocios"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Bitte melden Sie sich am Empfang an.",
+      "en": "Please sign in at the front desk.",
+      "es": "Por favor regístrese en la recepción."
+    },
+    {
+      "de": "Die Buchhaltung ist im zweiten Stock.",
+      "en": "Accounting is on the second floor.",
+      "es": "La contabilidad está en el segundo piso."
+    },
+    {
+      "de": "Wer schreibt heute das Protokoll?",
+      "en": "Who is taking the minutes today?",
+      "es": "¿Quién redacta hoy el acta?"
+    },
+    {
+      "de": "Unsere Firma hat zwei Filialen in Österreich.",
+      "en": "Our company has two branches in Austria.",
+      "es": "Nuestra empresa tiene dos sucursales en Austria."
+    },
+    {
+      "de": "Die Geschäftsführerin ist nächste Woche auf Dienstreise.",
+      "en": "The managing director is on a business trip next week.",
+      "es": "La directora general está de viaje de negocios la semana que viene."
+    },
+    {
+      "de": "Die neuen Mitarbeiter arbeiten im Großraumbüro.",
+      "en": "The new employees work in the open-plan office.",
+      "es": "Los nuevos empleados trabajan en la oficina diáfana."
+    }
+  ]
+}

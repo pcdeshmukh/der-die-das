@@ -1,0 +1,235 @@
+{
+  "id": "sustainability",
+  "title": {
+    "de": "Nachhaltig leben",
+    "en": "Sustainable living",
+    "es": "Vida sostenible"
+  },
+  "emoji": "♻️",
+  "nouns": [
+    {
+      "de": "Nachhaltigkeit",
+      "article": "die",
+      "plural": null,
+      "en": "sustainability",
+      "es": "sostenibilidad",
+      "emoji": "🌱"
+    },
+    {
+      "de": "Pfand",
+      "article": "das",
+      "plural": null,
+      "en": "deposit",
+      "es": "depósito del envase"
+    },
+    {
+      "de": "Mehrwegflasche",
+      "article": "die",
+      "plural": "Mehrwegflaschen",
+      "en": "reusable bottle",
+      "es": "botella retornable",
+      "emoji": "🍾"
+    },
+    {
+      "de": "Einwegflasche",
+      "article": "die",
+      "plural": "Einwegflaschen",
+      "en": "single-use bottle",
+      "es": "botella de un solo uso"
+    },
+    {
+      "de": "Klimaschutz",
+      "article": "der",
+      "plural": null,
+      "en": "climate protection",
+      "es": "protección del clima"
+    },
+    {
+      "de": "Klimawandel",
+      "article": "der",
+      "plural": null,
+      "en": "climate change",
+      "es": "cambio climático",
+      "emoji": "🌡️"
+    },
+    {
+      "de": "Umweltschutz",
+      "article": "der",
+      "plural": null,
+      "en": "environmental protection",
+      "es": "protección del medio ambiente",
+      "emoji": "🌍"
+    },
+    {
+      "de": "Secondhandladen",
+      "article": "der",
+      "plural": "Secondhandläden",
+      "en": "second-hand shop",
+      "es": "tienda de segunda mano"
+    },
+    {
+      "de": "Stoffbeutel",
+      "article": "der",
+      "plural": "Stoffbeutel",
+      "en": "cloth bag",
+      "es": "bolsa de tela",
+      "emoji": "👜"
+    },
+    {
+      "de": "Solaranlage",
+      "article": "die",
+      "plural": "Solaranlagen",
+      "en": "solar panels",
+      "es": "instalación solar",
+      "emoji": "☀️"
+    },
+    {
+      "de": "Mülltrennung",
+      "article": "die",
+      "plural": null,
+      "en": "waste separation",
+      "es": "separación de residuos"
+    },
+    {
+      "de": "Verpackung",
+      "article": "die",
+      "plural": "Verpackungen",
+      "en": "packaging",
+      "es": "envase",
+      "emoji": "📦"
+    },
+    {
+      "de": "Abfall",
+      "article": "der",
+      "plural": "Abfälle",
+      "en": "rubbish",
+      "es": "residuos"
+    },
+    {
+      "de": "Restmüll",
+      "article": "der",
+      "plural": null,
+      "en": "general waste",
+      "es": "basura no reciclable"
+    },
+    {
+      "de": "Altglas",
+      "article": "das",
+      "plural": null,
+      "en": "waste glass",
+      "es": "vidrio usado"
+    },
+    {
+      "de": "Glascontainer",
+      "article": "der",
+      "plural": "Glascontainer",
+      "en": "bottle bank",
+      "es": "contenedor de vidrio"
+    },
+    {
+      "de": "Bioladen",
+      "article": "der",
+      "plural": "Bioläden",
+      "en": "organic shop",
+      "es": "tienda ecológica"
+    },
+    {
+      "de": "Kompost",
+      "article": "der",
+      "plural": "Komposte",
+      "en": "compost",
+      "es": "compost"
+    },
+    {
+      "de": "Stromverbrauch",
+      "article": "der",
+      "plural": null,
+      "en": "electricity consumption",
+      "es": "consumo de electricidad",
+      "emoji": "⚡"
+    },
+    {
+      "de": "Ökostrom",
+      "article": "der",
+      "plural": null,
+      "en": "green electricity",
+      "es": "electricidad verde"
+    },
+    {
+      "de": "Ressource",
+      "article": "die",
+      "plural": "Ressourcen",
+      "en": "resource",
+      "es": "recurso"
+    },
+    {
+      "de": "Reparaturcafé",
+      "article": "das",
+      "plural": "Reparaturcafés",
+      "en": "repair café",
+      "es": "café de reparaciones",
+      "emoji": "🔧"
+    },
+    {
+      "de": "Verschwendung",
+      "article": "die",
+      "plural": null,
+      "en": "waste",
+      "es": "derroche"
+    },
+    {
+      "de": "Mehrwegbecher",
+      "article": "der",
+      "plural": "Mehrwegbecher",
+      "en": "reusable cup",
+      "es": "vaso reutilizable",
+      "emoji": "🥤"
+    },
+    {
+      "de": "Pfandautomat",
+      "article": "der",
+      "plural": "Pfandautomaten",
+      "en": "bottle return machine",
+      "es": "máquina de devolución de envases"
+    },
+    {
+      "de": "Windrad",
+      "article": "das",
+      "plural": "Windräder",
+      "en": "wind turbine",
+      "es": "aerogenerador"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Auf jede Mehrwegflasche gibt es Pfand.",
+      "en": "There is a deposit on every reusable bottle.",
+      "es": "Cada botella retornable tiene depósito."
+    },
+    {
+      "de": "Zum Einkaufen nehme ich immer einen Stoffbeutel mit.",
+      "en": "I always take a cloth bag with me when I go shopping.",
+      "es": "Siempre llevo una bolsa de tela para hacer la compra."
+    },
+    {
+      "de": "Meine Jacke habe ich im Secondhandladen gekauft.",
+      "en": "I bought my jacket in the second-hand shop.",
+      "es": "Compré mi chaqueta en la tienda de segunda mano."
+    },
+    {
+      "de": "Altglas kommt in den Glascontainer.",
+      "en": "Waste glass goes in the bottle bank.",
+      "es": "El vidrio usado va al contenedor de vidrio."
+    },
+    {
+      "de": "Wir haben seit letztem Jahr eine Solaranlage auf dem Dach.",
+      "en": "We have had solar panels on the roof since last year.",
+      "es": "Desde el año pasado tenemos una instalación solar en el tejado."
+    },
+    {
+      "de": "Was kann ich gegen den Klimawandel tun?",
+      "en": "What can I do about climate change?",
+      "es": "¿Qué puedo hacer contra el cambio climático?"
+    }
+  ]
+}

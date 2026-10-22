@@ -1,0 +1,251 @@
+{
+  "id": "tableware",
+  "title": {
+    "de": "Gewürze & Geschirr",
+    "en": "Spices & tableware",
+    "es": "Especias y vajilla"
+  },
+  "emoji": "🍽️",
+  "nouns": [
+    {
+      "de": "Geschirr",
+      "article": "das",
+      "plural": null,
+      "en": "crockery",
+      "es": "vajilla",
+      "emoji": "🍽️"
+    },
+    {
+      "de": "Untertasse",
+      "article": "die",
+      "plural": "Untertassen",
+      "en": "saucer",
+      "es": "platillo"
+    },
+    {
+      "de": "Serviette",
+      "article": "die",
+      "plural": "Servietten",
+      "en": "napkin",
+      "es": "servilleta"
+    },
+    {
+      "de": "Teelöffel",
+      "article": "der",
+      "plural": "Teelöffel",
+      "en": "teaspoon",
+      "es": "cucharilla",
+      "emoji": "🥄"
+    },
+    {
+      "de": "Esslöffel",
+      "article": "der",
+      "plural": "Esslöffel",
+      "en": "tablespoon",
+      "es": "cuchara sopera"
+    },
+    {
+      "de": "Suppenteller",
+      "article": "der",
+      "plural": "Suppenteller",
+      "en": "soup plate",
+      "es": "plato hondo"
+    },
+    {
+      "de": "Teekanne",
+      "article": "die",
+      "plural": "Teekannen",
+      "en": "teapot",
+      "es": "tetera",
+      "emoji": "🫖"
+    },
+    {
+      "de": "Krug",
+      "article": "der",
+      "plural": "Krüge",
+      "en": "jug",
+      "es": "jarra"
+    },
+    {
+      "de": "Becher",
+      "article": "der",
+      "plural": "Becher",
+      "en": "mug",
+      "es": "taza"
+    },
+    {
+      "de": "Tischdecke",
+      "article": "die",
+      "plural": "Tischdecken",
+      "en": "tablecloth",
+      "es": "mantel"
+    },
+    {
+      "de": "Tablett",
+      "article": "das",
+      "plural": "Tabletts",
+      "en": "tray",
+      "es": "bandeja"
+    },
+    {
+      "de": "Salzstreuer",
+      "article": "der",
+      "plural": "Salzstreuer",
+      "en": "salt shaker",
+      "es": "salero",
+      "emoji": "🧂"
+    },
+    {
+      "de": "Pfeffermühle",
+      "article": "die",
+      "plural": "Pfeffermühlen",
+      "en": "pepper mill",
+      "es": "molinillo de pimienta"
+    },
+    {
+      "de": "Kochlöffel",
+      "article": "der",
+      "plural": "Kochlöffel",
+      "en": "wooden spoon",
+      "es": "cuchara de madera"
+    },
+    {
+      "de": "Strohhalm",
+      "article": "der",
+      "plural": "Strohhalme",
+      "en": "straw",
+      "es": "pajita"
+    },
+    {
+      "de": "Zimt",
+      "article": "der",
+      "plural": null,
+      "en": "cinnamon",
+      "es": "canela"
+    },
+    {
+      "de": "Muskatnuss",
+      "article": "die",
+      "plural": "Muskatnüsse",
+      "en": "nutmeg",
+      "es": "nuez moscada"
+    },
+    {
+      "de": "Petersilie",
+      "article": "die",
+      "plural": null,
+      "en": "parsley",
+      "es": "perejil",
+      "emoji": "🌿"
+    },
+    {
+      "de": "Basilikum",
+      "article": "das",
+      "plural": null,
+      "en": "basil",
+      "es": "albahaca"
+    },
+    {
+      "de": "Ingwer",
+      "article": "der",
+      "plural": null,
+      "en": "ginger",
+      "es": "jengibre",
+      "emoji": "🫚"
+    },
+    {
+      "de": "Chili",
+      "article": "der",
+      "plural": "Chilis",
+      "en": "chilli",
+      "es": "guindilla",
+      "emoji": "🌶️"
+    },
+    {
+      "de": "Senf",
+      "article": "der",
+      "plural": null,
+      "en": "mustard",
+      "es": "mostaza"
+    },
+    {
+      "de": "Essig",
+      "article": "der",
+      "plural": null,
+      "en": "vinegar",
+      "es": "vinagre"
+    },
+    {
+      "de": "Geschmacksrichtung",
+      "article": "die",
+      "plural": "Geschmacksrichtungen",
+      "en": "flavour",
+      "es": "sabor"
+    },
+    {
+      "de": "Schärfe",
+      "article": "die",
+      "plural": null,
+      "en": "spiciness",
+      "es": "picante"
+    },
+    {
+      "de": "Süße",
+      "article": "die",
+      "plural": null,
+      "en": "sweetness",
+      "es": "dulzor"
+    },
+    {
+      "de": "Bitterkeit",
+      "article": "die",
+      "plural": null,
+      "en": "bitterness",
+      "es": "amargor"
+    },
+    {
+      "de": "Säure",
+      "article": "die",
+      "plural": "Säuren",
+      "en": "sourness",
+      "es": "acidez"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Kannst du bitte das Besteck auf den Tisch legen?",
+      "en": "Can you put the cutlery on the table, please?",
+      "es": "¿Puedes poner los cubiertos en la mesa, por favor?"
+    },
+    {
+      "de": "Die Suppe ist mir zu scharf.",
+      "en": "The soup is too spicy for me.",
+      "es": "La sopa está demasiado picante para mí."
+    },
+    {
+      "de": "Nach dem Essen spülen wir das Geschirr.",
+      "en": "After the meal we wash the dishes.",
+      "es": "Después de comer fregamos los platos."
+    },
+    {
+      "de": "Der Kuchen schmeckt nach Zimt.",
+      "en": "The cake tastes of cinnamon.",
+      "es": "El pastel sabe a canela."
+    },
+    {
+      "de": "Stell die Tasse bitte auf die Untertasse!",
+      "en": "Please put the cup on the saucer!",
+      "es": "¡Pon la taza en el platillo, por favor!"
+    },
+    {
+      "de": "Zitronen schmecken sauer und Schokolade schmeckt süß.",
+      "en": "Lemons taste sour and chocolate tastes sweet.",
+      "es": "Los limones saben ácidos y el chocolate sabe dulce."
+    },
+    {
+      "de": "Neben jedem Teller liegt eine Serviette.",
+      "en": "There is a napkin next to every plate.",
+      "es": "Al lado de cada plato hay una servilleta."
+    }
+  ]
+}

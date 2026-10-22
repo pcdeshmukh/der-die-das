@@ -1,0 +1,239 @@
+{
+  "id": "objects",
+  "title": {
+    "de": "Gegenstände",
+    "en": "Objects",
+    "es": "Objetos"
+  },
+  "emoji": "🖼️",
+  "nouns": [
+    {
+      "de": "Vase",
+      "article": "die",
+      "plural": "Vasen",
+      "en": "vase",
+      "es": "jarrón",
+      "emoji": "🏺"
+    },
+    {
+      "de": "Bilderrahmen",
+      "article": "der",
+      "plural": "Bilderrahmen",
+      "en": "picture frame",
+      "es": "marco de fotos",
+      "emoji": "🖼️"
+    },
+    {
+      "de": "Kleiderbügel",
+      "article": "der",
+      "plural": "Kleiderbügel",
+      "en": "coat hanger",
+      "es": "percha"
+    },
+    {
+      "de": "Haken",
+      "article": "der",
+      "plural": "Haken",
+      "en": "hook",
+      "es": "gancho",
+      "emoji": "🪝"
+    },
+    {
+      "de": "Regalbrett",
+      "article": "das",
+      "plural": "Regalbretter",
+      "en": "shelf",
+      "es": "balda"
+    },
+    {
+      "de": "Kerzenständer",
+      "article": "der",
+      "plural": "Kerzenständer",
+      "en": "candlestick",
+      "es": "portavelas",
+      "emoji": "🕯️"
+    },
+    {
+      "de": "Blumentopf",
+      "article": "der",
+      "plural": "Blumentöpfe",
+      "en": "flowerpot",
+      "es": "maceta",
+      "emoji": "🪴"
+    },
+    {
+      "de": "Zimmerpflanze",
+      "article": "die",
+      "plural": "Zimmerpflanzen",
+      "en": "houseplant",
+      "es": "planta de interior"
+    },
+    {
+      "de": "Wecker",
+      "article": "der",
+      "plural": "Wecker",
+      "en": "alarm clock",
+      "es": "despertador",
+      "emoji": "⏰"
+    },
+    {
+      "de": "Wanduhr",
+      "article": "die",
+      "plural": "Wanduhren",
+      "en": "wall clock",
+      "es": "reloj de pared",
+      "emoji": "🕰️"
+    },
+    {
+      "de": "Kommode",
+      "article": "die",
+      "plural": "Kommoden",
+      "en": "chest of drawers",
+      "es": "cómoda"
+    },
+    {
+      "de": "Schublade",
+      "article": "die",
+      "plural": "Schubladen",
+      "en": "drawer",
+      "es": "cajón"
+    },
+    {
+      "de": "Nachttisch",
+      "article": "der",
+      "plural": "Nachttische",
+      "en": "bedside table",
+      "es": "mesita de noche"
+    },
+    {
+      "de": "Sessel",
+      "article": "der",
+      "plural": "Sessel",
+      "en": "armchair",
+      "es": "sillón"
+    },
+    {
+      "de": "Hocker",
+      "article": "der",
+      "plural": "Hocker",
+      "en": "stool",
+      "es": "taburete"
+    },
+    {
+      "de": "Garderobe",
+      "article": "die",
+      "plural": "Garderoben",
+      "en": "coat rack",
+      "es": "perchero"
+    },
+    {
+      "de": "Kopfkissen",
+      "article": "das",
+      "plural": "Kopfkissen",
+      "en": "pillow",
+      "es": "almohada"
+    },
+    {
+      "de": "Bettdecke",
+      "article": "die",
+      "plural": "Bettdecken",
+      "en": "duvet",
+      "es": "edredón"
+    },
+    {
+      "de": "Fußmatte",
+      "article": "die",
+      "plural": "Fußmatten",
+      "en": "doormat",
+      "es": "felpudo"
+    },
+    {
+      "de": "Korb",
+      "article": "der",
+      "plural": "Körbe",
+      "en": "basket",
+      "es": "cesta",
+      "emoji": "🧺"
+    },
+    {
+      "de": "Kiste",
+      "article": "die",
+      "plural": "Kisten",
+      "en": "crate",
+      "es": "caja"
+    },
+    {
+      "de": "Poster",
+      "article": "das",
+      "plural": "Poster",
+      "en": "poster",
+      "es": "póster"
+    },
+    {
+      "de": "Fensterbank",
+      "article": "die",
+      "plural": "Fensterbänke",
+      "en": "windowsill",
+      "es": "alféizar"
+    },
+    {
+      "de": "Stehlampe",
+      "article": "die",
+      "plural": "Stehlampen",
+      "en": "floor lamp",
+      "es": "lámpara de pie"
+    },
+    {
+      "de": "Pinnwand",
+      "article": "die",
+      "plural": "Pinnwände",
+      "en": "pinboard",
+      "es": "tablón de corcho"
+    },
+    {
+      "de": "Schlüsselbrett",
+      "article": "das",
+      "plural": "Schlüsselbretter",
+      "en": "key rack",
+      "es": "colgador de llaves",
+      "emoji": "🔑"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Ich stelle die Vase auf den Tisch.",
+      "en": "I put the vase on the table.",
+      "es": "Pongo el jarrón en la mesa."
+    },
+    {
+      "de": "Der Blumentopf steht auf der Fensterbank.",
+      "en": "The flowerpot is on the windowsill.",
+      "es": "La maceta está en el alféizar."
+    },
+    {
+      "de": "Wir hängen den Bilderrahmen an die Wand.",
+      "en": "We hang the picture frame on the wall.",
+      "es": "Colgamos el marco de fotos en la pared."
+    },
+    {
+      "de": "Das Kopfkissen liegt auf dem Bett.",
+      "en": "The pillow is lying on the bed.",
+      "es": "La almohada está en la cama."
+    },
+    {
+      "de": "Leg die Fußmatte vor die Tür!",
+      "en": "Put the doormat in front of the door!",
+      "es": "¡Pon el felpudo delante de la puerta!"
+    },
+    {
+      "de": "Die Jacke hängt am Haken.",
+      "en": "The jacket is hanging on the hook.",
+      "es": "La chaqueta está colgada en el gancho."
+    },
+    {
+      "de": "Der Wecker liegt in der Schublade.",
+      "en": "The alarm clock is in the drawer.",
+      "es": "El despertador está en el cajón."
+    }
+  ]
+}

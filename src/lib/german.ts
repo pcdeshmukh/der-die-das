@@ -91,7 +91,8 @@ export function pluralDistractors(singular: string, plural: string): string[] {
   ];
   const result = [...new Set(candidates.filter((c): c is string => !!c && c !== plural))];
   // Short words like "Tee" get few rule-based candidates; top up with other endings.
-  for (const extra of [singular + 'en', singular + 'er', singular + 'e']) {
+  // Never add a second e: "Höhleen" is no plausible guess.
+  for (const extra of endsE ? [singular + 'r', singular + 'rn'] : [singular + 'en', singular + 'er', singular + 'e']) {
     if (result.length >= 3) break;
     if (extra !== plural && !result.includes(extra)) result.push(extra);
   }

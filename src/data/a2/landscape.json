@@ -1,0 +1,252 @@
+{
+  "id": "landscape",
+  "title": {
+    "de": "Natur & Landschaften",
+    "en": "Nature & landscapes",
+    "es": "Naturaleza y paisajes"
+  },
+  "emoji": "🏞️",
+  "nouns": [
+    {
+      "de": "Landschaft",
+      "article": "die",
+      "plural": "Landschaften",
+      "en": "landscape",
+      "es": "paisaje",
+      "emoji": "🏞️"
+    },
+    {
+      "de": "Gebirge",
+      "article": "das",
+      "plural": "Gebirge",
+      "en": "mountain range",
+      "es": "cordillera",
+      "emoji": "⛰️"
+    },
+    {
+      "de": "Gipfel",
+      "article": "der",
+      "plural": "Gipfel",
+      "en": "summit",
+      "es": "cumbre",
+      "emoji": "🏔️"
+    },
+    {
+      "de": "Tal",
+      "article": "das",
+      "plural": "Täler",
+      "en": "valley",
+      "es": "valle"
+    },
+    {
+      "de": "Hügel",
+      "article": "der",
+      "plural": "Hügel",
+      "en": "hill",
+      "es": "colina"
+    },
+    {
+      "de": "Küste",
+      "article": "die",
+      "plural": "Küsten",
+      "en": "coast",
+      "es": "costa"
+    },
+    {
+      "de": "Wüste",
+      "article": "die",
+      "plural": "Wüsten",
+      "en": "desert",
+      "es": "desierto",
+      "emoji": "🏜️"
+    },
+    {
+      "de": "Wasserfall",
+      "article": "der",
+      "plural": "Wasserfälle",
+      "en": "waterfall",
+      "es": "cascada"
+    },
+    {
+      "de": "Ufer",
+      "article": "das",
+      "plural": "Ufer",
+      "en": "bank (of a river or lake)",
+      "es": "orilla"
+    },
+    {
+      "de": "Bach",
+      "article": "der",
+      "plural": "Bäche",
+      "en": "stream",
+      "es": "arroyo"
+    },
+    {
+      "de": "Höhle",
+      "article": "die",
+      "plural": "Höhlen",
+      "en": "cave",
+      "es": "cueva"
+    },
+    {
+      "de": "Vulkan",
+      "article": "der",
+      "plural": "Vulkane",
+      "en": "volcano",
+      "es": "volcán",
+      "emoji": "🌋"
+    },
+    {
+      "de": "Wiese",
+      "article": "die",
+      "plural": "Wiesen",
+      "en": "meadow",
+      "es": "prado"
+    },
+    {
+      "de": "Feld",
+      "article": "das",
+      "plural": "Felder",
+      "en": "field",
+      "es": "campo",
+      "emoji": "🌾"
+    },
+    {
+      "de": "Halbinsel",
+      "article": "die",
+      "plural": "Halbinseln",
+      "en": "peninsula",
+      "es": "península"
+    },
+    {
+      "de": "Schlucht",
+      "article": "die",
+      "plural": "Schluchten",
+      "en": "gorge",
+      "es": "desfiladero"
+    },
+    {
+      "de": "Himmelsrichtung",
+      "article": "die",
+      "plural": "Himmelsrichtungen",
+      "en": "compass direction",
+      "es": "punto cardinal",
+      "emoji": "🧭"
+    },
+    {
+      "de": "Norden",
+      "article": "der",
+      "plural": null,
+      "en": "north",
+      "es": "norte"
+    },
+    {
+      "de": "Süden",
+      "article": "der",
+      "plural": null,
+      "en": "south",
+      "es": "sur"
+    },
+    {
+      "de": "Osten",
+      "article": "der",
+      "plural": null,
+      "en": "east",
+      "es": "este"
+    },
+    {
+      "de": "Westen",
+      "article": "der",
+      "plural": null,
+      "en": "west",
+      "es": "oeste"
+    },
+    {
+      "de": "Adler",
+      "article": "der",
+      "plural": "Adler",
+      "en": "eagle",
+      "es": "águila",
+      "emoji": "🦅"
+    },
+    {
+      "de": "Hirsch",
+      "article": "der",
+      "plural": "Hirsche",
+      "en": "deer",
+      "es": "ciervo",
+      "emoji": "🦌"
+    },
+    {
+      "de": "Reh",
+      "article": "das",
+      "plural": "Rehe",
+      "en": "roe deer",
+      "es": "corzo"
+    },
+    {
+      "de": "Wildschwein",
+      "article": "das",
+      "plural": "Wildschweine",
+      "en": "wild boar",
+      "es": "jabalí",
+      "emoji": "🐗"
+    },
+    {
+      "de": "Eichhörnchen",
+      "article": "das",
+      "plural": "Eichhörnchen",
+      "en": "squirrel",
+      "es": "ardilla",
+      "emoji": "🐿️"
+    },
+    {
+      "de": "Igel",
+      "article": "der",
+      "plural": "Igel",
+      "en": "hedgehog",
+      "es": "erizo",
+      "emoji": "🦔"
+    },
+    {
+      "de": "Eule",
+      "article": "die",
+      "plural": "Eulen",
+      "en": "owl",
+      "es": "búho",
+      "emoji": "🦉"
+    }
+  ],
+  "sentences": [
+    {
+      "de": "Hamburg liegt im Norden von Deutschland.",
+      "en": "Hamburg is in the north of Germany.",
+      "es": "Hamburgo está en el norte de Alemania."
+    },
+    {
+      "de": "Die Alpen sind ein hohes Gebirge.",
+      "en": "The Alps are a high mountain range.",
+      "es": "Los Alpes son una cordillera alta."
+    },
+    {
+      "de": "Wir sind bis zum Gipfel gewandert.",
+      "en": "We hiked up to the summit.",
+      "es": "Hemos caminado hasta la cumbre."
+    },
+    {
+      "de": "Im Tal fließt ein kleiner Bach.",
+      "en": "A small stream flows through the valley.",
+      "es": "Por el valle corre un pequeño arroyo."
+    },
+    {
+      "de": "Am Abend haben wir einen Hirsch gesehen.",
+      "en": "In the evening we saw a deer.",
+      "es": "Por la tarde vimos un ciervo."
+    },
+    {
+      "de": "Die Sonne geht im Osten auf.",
+      "en": "The sun rises in the east.",
+      "es": "El sol sale por el este."
+    }
+  ]
+}
