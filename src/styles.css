@@ -55,6 +55,8 @@
 html,
 body {
   margin: 0;
+  /* No pull-to-refresh bounce when the page already fits (Settings → Update app reloads). */
+  overscroll-behavior-y: none;
   background: var(--bg);
   color: var(--text);
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -604,9 +606,6 @@ a.level-card .level-id {
 }
 
 /* Game layout */
-.app.in-game .main {
-  min-height: 100dvh;
-}
 .game {
   flex: 1;
   display: flex;
@@ -1120,6 +1119,33 @@ a.level-card .level-id {
 }
 /* Phones: keep a whole question (prompt and every answer) on one screen. */
 @media (max-height: 900px) {
+  .hero {
+    padding: 8px 0 0;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+  .stat-row,
+  .daily-card {
+    margin-top: 12px;
+  }
+  .section-title {
+    margin: 16px 0 8px;
+  }
+  .level-card {
+    position: relative;
+    min-height: 76px;
+    padding: 12px 14px;
+  }
+  .level-card .badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    margin: 0;
+  }
+  .footnote {
+    margin: 16px 0 0;
+  }
   .game {
     gap: 8px;
   }
