@@ -52,6 +52,16 @@
   box-sizing: border-box;
 }
 
+/*
+ * Size the app to the visible page, not 100dvh: on Android, viewport units can
+ * include the area behind the navigation buttons, which made fitting pages scroll.
+ */
+html,
+body,
+#app {
+  height: 100%;
+}
+
 html,
 body {
   margin: 0;
@@ -84,7 +94,7 @@ h2 {
 .app {
   max-width: 640px;
   margin: 0 auto;
-  min-height: 100dvh;
+  min-height: 100%;
   padding: env(safe-area-inset-top) max(16px, env(safe-area-inset-right)) env(safe-area-inset-bottom)
     max(16px, env(safe-area-inset-left));
   display: flex;
