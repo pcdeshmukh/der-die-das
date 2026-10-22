@@ -650,7 +650,7 @@ a.level-card .level-id {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
 }
 .noun-card {
   position: relative;
@@ -689,7 +689,6 @@ a.level-card .level-id {
   right: 10px;
 }
 .feedback {
-  min-height: 108px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -700,6 +699,16 @@ a.level-card .level-id {
   margin: 0;
   font-size: 1.15rem;
   font-weight: 700;
+}
+/* Floats above the answers so it's always reachable without scrolling. */
+.feedback .btn {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  width: min(608px, calc(100% - 32px));
+  box-shadow: var(--shadow);
 }
 .feedback-ok {
   color: var(--ok);
@@ -1109,6 +1118,40 @@ a.level-card .level-id {
     transform: translateX(6px);
   }
 }
+/* Phones: keep a whole question (prompt and every answer) on one screen. */
+@media (max-height: 900px) {
+  .game {
+    gap: 8px;
+  }
+  .noun-card {
+    padding: 20px 14px;
+  }
+  .noun-emoji {
+    font-size: 2.8rem;
+  }
+  .noun-word {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+  .situation {
+    font-size: clamp(1.02rem, 4.4vw, 1.2rem);
+    padding: 0 24px;
+  }
+  .choices {
+    gap: 8px;
+  }
+  .choice {
+    min-height: 52px;
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+  .choice.art-btn {
+    min-height: 60px;
+  }
+  .feedback p {
+    font-size: 1.05rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
