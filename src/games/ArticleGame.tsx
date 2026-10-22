@@ -3,7 +3,6 @@ import { NounLabel } from '../components/NounLabel';
 import { NounPrompt } from '../components/NounPrompt';
 import { ARTICLES, type WordRef } from '../data/types';
 import { meaning } from '../lib/i18n';
-import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
 import { ChoiceGame, type ChoiceQuestion } from './ChoiceGame';
@@ -19,7 +18,7 @@ export function articleQuestion(w: WordRef): ChoiceQuestion {
     layout: 'articles',
     optionClass: (o) => `art-btn art-btn-${o}`,
     prompt: (answered) => <NounPrompt word={w} hideArticle={!answered} />,
-    options: shuffle(ARTICLES),
+    options: ARTICLES,
     answer: w.article,
     sayAfter: `${w.article} ${w.de}`,
     solution: <NounLabel noun={w} />,
