@@ -82,9 +82,15 @@ describe('plurals', () => {
     expect(d).toContain('Tischen');
   });
 
-  it('has at least three distractors for every A1 noun', async () => {
-    const { LEVELS, allWords } = await import('../data');
-    for (const w of allWords(LEVELS[0]).filter((x) => x.plural)) {
+  it('does not umlaut words whose ending never takes one', () => {
+    expect(pluralDistractors('Allergie', 'Allergien')).not.toContain('Ällergie');
+    expect(pluralDistractors('Wohnung', 'Wohnungen').some((d) => /[äöü]/.test(d))).toBe(false);
+  });
+
+  it('has at least three distractors for every noun', async () => {
+    const { loadAllLevels, allWords } = await import('../data');
+    const LEVELS = await loadAllLevels();
+    for (const w of LEVELS.flatMap((l) => allWords(l)).filter((x) => x.plural)) {
       expect(pluralDistractors(w.de, w.plural!).length, w.de).toBeGreaterThanOrEqual(3);
     }
   });

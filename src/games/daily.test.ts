@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { LEVELS } from '../data';
+import { loadAllLevels } from '../data';
 import { dailyQuestions } from './DailyGame';
+
+const LEVELS = await loadAllLevels();
 
 const A1 = LEVELS[0];
 const keys = (day: string) => dailyQuestions(A1, day).map((q) => q.key);

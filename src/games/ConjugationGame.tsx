@@ -41,7 +41,9 @@ export function conjugationQuestion(level: Level, { id, verb, person, tense }: V
   const wrong = new Set(forms.filter((f) => f !== form));
   // In the past tense, the present form of the same person is a natural slip.
   if (tense === 'preterite' && verb.present[person] !== form) wrong.add(verb.present[person]);
-  const reg = form.includes(' ') ? null : regularized(verb.infinitive, person, tense);
+  // An umlaut stem would turn the regular past into Konjunktiv II (könnte), a real form, so skip it.
+  const umlautPast = tense === 'preterite' && /[äöü]/.test(verb.infinitive);
+  const reg = form.includes(' ') || umlautPast ? null : regularized(verb.infinitive, person, tense);
   // A plausible-but-wrong regular form is the most useful distractor for irregular verbs.
   const options =
     reg && reg !== form && !wrong.has(reg) ? [reg, ...shuffle([...wrong]).slice(0, 2)] : shuffle([...wrong]).slice(0, 3);

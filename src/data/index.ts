@@ -1,123 +1,62 @@
-import type { Chapter, GrammarLesson, GrammarRef, Level, LevelId, PerfectRef, PhraseLesson, PhraseRef, Tense, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
-import people from './a1/people.json';
-import family from './a1/family.json';
-import food from './a1/food.json';
-import home from './a1/home.json';
-import city from './a1/city.json';
-import transport from './a1/transport.json';
-import time from './a1/time.json';
-import body from './a1/body.json';
-import clothes from './a1/clothes.json';
-import school from './a1/school.json';
-import leisure from './a1/leisure.json';
-import nature from './a1/nature.json';
-import animals from './a1/animals.json';
-import jobs from './a1/jobs.json';
-import things from './a1/things.json';
-import office from './a1/office.json';
-import appliances from './a1/appliances.json';
-import festivals from './a1/festivals.json';
-import environment from './a1/environment.json';
-import a1Verbs from './a1/verbs.json';
-import a1Grammar from './a1/grammar.json';
-import a1GrammarCh01 from './a1/grammar-ch01-06.json';
-import a1GrammarCh07 from './a1/grammar-ch07-12.json';
-import a1GrammarCh13 from './a1/grammar-ch13-19.json';
-import a1GrammarCh20 from './a1/grammar-ch20-24.json';
-import a1PhrasesCh01 from './a1/phrases-ch01-12.json';
-import a1PhrasesCh13 from './a1/phrases-ch13-24.json';
-import a1Chapters from './a1/chapters.json';
-import a2Relatives from './a2/relatives.json';
-import a2Moving from './a2/moving.json';
-import a2Cooking from './a2/cooking.json';
-import a2Health from './a2/health.json';
-import a2Work from './a2/work.json';
-import a2Media from './a2/media.json';
-import a2Travel from './a2/travel.json';
-import a2Money from './a2/money.json';
-import a2Authorities from './a2/authorities.json';
-import a2Culture from './a2/culture.json';
-import a2Feelings from './a2/feelings.json';
-import a2Tech from './a2/tech.json';
-import a2Verbs from './a2/verbs.json';
-import a2GrammarCh01 from './a2/grammar-ch01-06.json';
-import a2GrammarCh07 from './a2/grammar-ch07-14.json';
-import a2GrammarCh15 from './a2/grammar-ch15-24.json';
-import a2PhrasesCh01 from './a2/phrases-ch01-12.json';
-import a2PhrasesCh13 from './a2/phrases-ch13-24.json';
-import a2Chapters from './a2/chapters.json';
+import { signal } from '@preact/signals';
+import type { GrammarLesson, GrammarRef, Level, LevelContent, LevelId, PerfectRef, PhraseLesson, PhraseRef, Tense, SentenceRef, Topic, Verb, VerbForm, WordRef } from './types';
 
-const A1 = [
-  people,
-  family,
-  jobs,
-  food,
-  home,
-  appliances,
-  things,
-  office,
-  city,
-  transport,
-  environment,
-  time,
-  body,
-  clothes,
-  school,
-  leisure,
-  festivals,
-  nature,
-  animals,
-];
-
-const A2 = [
-  a2Relatives,
-  a2Moving,
-  a2Cooking,
-  a2Health,
-  a2Work,
-  a2Media,
-  a2Travel,
-  a2Money,
-  a2Authorities,
-  a2Culture,
-  a2Feelings,
-  a2Tech,
-];
-
-// Levels without topics are shown as "coming soon".
-const TOPICS: Record<LevelId, Topic[]> = {
-  A1: A1 as unknown as Topic[],
-  A2: A2 as unknown as Topic[],
-  B1: [],
-  B2: [],
-  C1: [],
-  C2: [],
+/**
+ * Each level's content is its own chunk, fetched the first time the level is opened.
+ * Levels without a loader are shown as "coming soon".
+ */
+const LOADERS: Partial<Record<LevelId, () => Promise<{ default: LevelContent }>>> = {
+  A1: () => import('./a1'),
+  A2: () => import('./a2'),
 };
 
-const VERBS: Partial<Record<LevelId, Level['verbs']>> = { A1: a1Verbs, A2: a2Verbs as Level['verbs'] };
-const GRAMMAR: Partial<Record<LevelId, GrammarLesson[]>> = {
-  A1: [...a1Grammar, ...a1GrammarCh01, ...a1GrammarCh07, ...a1GrammarCh13, ...a1GrammarCh20] as GrammarLesson[],
-  A2: [...a2GrammarCh01, ...a2GrammarCh07, ...a2GrammarCh15] as GrammarLesson[],
-};
-const CHAPTERS: Partial<Record<LevelId, Chapter[]>> = { A1: a1Chapters, A2: a2Chapters };
-const PHRASES: Partial<Record<LevelId, PhraseLesson[]>> = {
-  A1: [...a1PhrasesCh01, ...a1PhrasesCh13] as unknown as PhraseLesson[],
-  A2: [...a2PhrasesCh01, ...a2PhrasesCh13] as unknown as PhraseLesson[],
-};
+export interface LevelInfo {
+  id: LevelId;
+  slug: string;
+  available: boolean;
+}
 
-export const LEVELS: Level[] = (Object.keys(TOPICS) as LevelId[]).map((id) => ({
+export const LEVELS: LevelInfo[] = (['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const).map((id) => ({
   id,
   slug: id.toLowerCase(),
-  topics: TOPICS[id],
-  verbs: VERBS[id] ?? null,
-  grammar: GRAMMAR[id] ?? [],
-  phrases: PHRASES[id] ?? [],
-  chapters: CHAPTERS[id] ?? [],
+  available: id in LOADERS,
 }));
 
-export function getLevel(slug: string): Level | undefined {
+export function levelInfo(slug: string): LevelInfo | undefined {
   return LEVELS.find((l) => l.slug === slug.toLowerCase());
 }
+
+/** Levels loaded so far; a signal so screens waiting on one re-render when it arrives. */
+const loaded = signal<Partial<Record<LevelId, Level>>>({});
+const pending = new Map<LevelId, Promise<Level>>();
+
+/** The level's content if it has been loaded, else undefined (call loadLevel). */
+export const getLevel = (id: LevelId): Level | undefined => loaded.value[id];
+
+export function loadLevel(id: LevelId): Promise<Level> {
+  let promise = pending.get(id);
+  if (!promise) {
+    const loader = LOADERS[id];
+    if (!loader) return Promise.reject(new Error(`No content for level ${id}`));
+    promise = loader().then(
+      ({ default: content }) => {
+        const level: Level = { id, slug: id.toLowerCase(), ...content };
+        loaded.value = { ...loaded.value, [id]: level };
+        return level;
+      },
+      (error) => {
+        // Let a later visit try again, e.g. once back online.
+        pending.delete(id);
+        throw error;
+      },
+    );
+    pending.set(id, promise);
+  }
+  return promise;
+}
+
+/** Every level with content, loaded (for tests). */
+export const loadAllLevels = () => Promise.all(LEVELS.filter((l) => l.available).map((l) => loadLevel(l.id)));
 
 const cache = new Map<string, WordRef[]>();
 

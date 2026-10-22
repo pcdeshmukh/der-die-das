@@ -49,7 +49,7 @@ export function Home() {
       <h2 class="section-title">{t('chooseLevel')}</h2>
       <div class="level-grid">
         {LEVELS.map((level) => {
-          const open = level.topics.length > 0;
+          const open = level.available;
           const body = (
             <>
               <span class="level-id">{level.id}</span>

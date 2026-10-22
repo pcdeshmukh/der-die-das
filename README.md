@@ -63,7 +63,8 @@ Verbs are in `verbs.json` with their six present-tense forms (from A2 also `pret
 (a situation, the right German phrase and wrong ones), and `chapters.json` maps the syllabus
 chapters to all of these. Numbers, times and the alphabet are generated.
 
-Register a new topic file in `src/data/index.ts`. A level with topics becomes playable automatically.
+Register a new topic file in its level's `src/data/<level>/index.ts`. A new level also needs a loader in
+`src/data/index.ts`; each level is downloaded only when it's first opened.
 `npm test` checks articles, duplicates, that everything has English and Spanish translations
 (unique per topic), sentence punctuation,
 verb tables, and the number/time generators.

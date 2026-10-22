@@ -1,5 +1,7 @@
 import { Header } from './components/Header';
-import { getLevel } from './data';
+import { LevelGate } from './components/LevelGate';
+import { levelInfo } from './data';
+import type { Level } from './data/types';
 import { route } from './lib/router';
 import { ChapterScreen } from './screens/ChapterScreen';
 import { DailyScreen } from './screens/DailyScreen';
@@ -15,8 +17,16 @@ function Screen({ parts }: { parts: string[] }) {
   if (parts.length === 0) return <Home />;
   if (parts.length === 1 && parts[0] === 'settings') return <Settings />;
   if (parts.length === 1 && parts[0] === 'daily') return <DailyScreen />;
-  const level = getLevel(parts[0]);
-  if (!level || level.topics.length === 0 || parts.length > 3) return <NotFound />;
+  const info = levelInfo(parts[0]);
+  if (!info?.available || parts.length > 3) return <NotFound />;
+  return (
+    <LevelGate key={info.id} id={info.id}>
+      {(level) => <LevelPage level={level} parts={parts} />}
+    </LevelGate>
+  );
+}
+
+function LevelPage({ level, parts }: { level: Level; parts: string[] }) {
   if (parts.length === 1) return <LevelScreen level={level} />;
   if (parts.length === 2) {
     const [, page] = parts;

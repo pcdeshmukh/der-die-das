@@ -21,7 +21,9 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 
 ## Architecture
 
-**Content is data, not code.** Everything a learner sees lives in `src/data/<level>/*.json` (`a1`, `a2`), and `src/data/index.ts` registers it per level (`TOPICS`, `VERBS`, `GRAMMAR`, `PHRASES`, `CHAPTERS`). A level with topics becomes playable automatically; B1+ are empty "coming soon" slots. New JSON files must be imported and added to these maps.
+**Content is data, not code.** Everything a learner sees lives in `src/data/<level>/*.json` (`a1`, `a2`), and each level's `src/data/<level>/index.ts` imports its JSON files and exports them as one `LevelContent` (topics, verbs, grammar, phrases, chapters). New JSON files must be imported there.
+- Each level is its own lazily loaded chunk: `LOADERS` in `src/data/index.ts` maps level ids to `import('./a1')` etc. Levels without a loader are "coming soon" (B1+). `LEVELS` holds only `id`/`slug`/`available`; screens get content through `<LevelGate>` (`src/components/LevelGate.tsx`), which calls `loadLevel` and renders once it arrives. Tests call `await loadAllLevels()`.
+- The service worker doesn't precache level chunks; they're cached on first use (`runtimeCaching` in `vite.config.ts`, matching `assets/[abc][12]-*.js`). Keep a new level's directory named like `b1` so its chunk matches.
 - Topic files: `nouns` (`de`, `article`, `plural|null`, `en`, `es`, optional `emoji`) plus `sentences`.
 - `verbs.json`: six present forms per verb, plus `prompts`, the pronouns a conjugation prompt may show. A1 uses bare "sie" only for "she". From A2, verbs also carry `preterite` (six forms) and `perfect` (`"hat gemacht"`/`"ist gegangen"`); the verbs page offers the Präteritum and Perfekt modes only when a level's verbs have them.
 - `grammar*.json`: lessons with a rule and gap items (`q` contains `___`). With `shuffle: true`, the options are whole sentences instead.

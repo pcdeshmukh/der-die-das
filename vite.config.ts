@@ -31,6 +31,15 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}'],
+        // Level content (a1-*.js, a2-*.js, ...) is cached when a level is first opened, not on install.
+        globIgnores: ['**/assets/[abc][12]-*.js'],
+        runtimeCaching: [
+          {
+            urlPattern: /\/assets\/[abc][12]-[\w-]+\.js$/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'levels', expiration: { maxEntries: 12 } },
+          },
+        ],
       },
     }),
   ],

@@ -15,11 +15,17 @@ const AUX = {
   ist: ['bin', 'bist', 'ist', 'sind', 'seid', 'sind'],
 };
 
-/** The participle a learner builds with the regular rule: gegeht, gesteht, gebesucht. */
+const SEPARABLE = ['zurück', 'nach', 'fern', 'auf', 'aus', 'ein', 'mit', 'weg', 'vor', 'los', 'her', 'hin', 'an', 'ab', 'um', 'zu'];
+
+/**
+ * The participle a learner builds with the regular rule: gegeht, gearbeiten, umgezieht.
+ * A separable prefix stays in front of "ge", as in the real participle.
+ */
 function regularParticiple(infinitive: string, participle: string): string {
-  const stem = infinitive.replace(/e?n$/, '');
-  const regular = `ge${stem}t`;
-  return regular !== participle ? regular : `ge${stem}en`;
+  const prefix = SEPARABLE.find((p) => infinitive.startsWith(p) && participle.startsWith(`${p}ge`)) ?? '';
+  const stem = infinitive.slice(prefix.length).replace(/e?n$/, '');
+  const regular = `${prefix}ge${stem}${/[dt]$/.test(stem) ? 'et' : 't'}`;
+  return regular !== participle ? regular : `${prefix}ge${stem}en`;
 }
 
 /** "ich ___ (gehen)" → "bin gegangen": the right helper verb and the right participle. */

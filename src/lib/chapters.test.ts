@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { LEVELS } from '../data';
+import { loadAllLevels } from '../data';
 import { GRAMMAR_PREFIX, PHRASE_PREFIX, describeTopic } from './modes';
+
+const LEVELS = await loadAllLevels();
 
 describe.each(LEVELS.filter((l) => l.chapters.length))('$id chapters', (level) => {
   it('has 24 chapters numbered in order', () => {

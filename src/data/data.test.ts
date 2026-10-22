@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { LEVELS, allSentences, allWords, verbForms } from '.';
+import { loadAllLevels, allSentences, allWords, verbForms } from '.';
 import { splitSentence } from '../games/SentenceGame';
 import { ARTICLES } from './types';
+
+const LEVELS = await loadAllLevels();
 
 describe.each(LEVELS.filter((l) => l.topics.length))('$id content', (level) => {
   const words = allWords(level);

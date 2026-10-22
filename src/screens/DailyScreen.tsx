@@ -1,4 +1,5 @@
 import { useState } from 'preact/hooks';
+import { LevelGate } from '../components/LevelGate';
 import { Stars } from '../components/Stars';
 import { LEVELS } from '../data';
 import { DailyGame } from '../games/DailyGame';
@@ -9,7 +10,7 @@ import { dailyStreak, progress, today } from '../lib/store';
 
 /** The challenge draws on the level the player is working on (the last one they opened). */
 export function dailyLevel() {
-  const playable = LEVELS.filter((l) => l.topics.length);
+  const playable = LEVELS.filter((l) => l.available);
   return playable.find((l) => l.id === progress.peek().level) ?? playable[0];
 }
 
@@ -23,7 +24,8 @@ function untilMidnight(): string {
 export function DailyScreen() {
   // Decided once: finishing today's round must not swap its results screen for this summary.
   const [doneEarlier] = useState(() => progress.peek().daily.results[today()]);
-  if (!doneEarlier) return <DailyGame level={dailyLevel()} onExit={() => navigate()} />;
+  if (!doneEarlier)
+    return <LevelGate id={dailyLevel().id}>{(level) => <DailyGame level={level} onExit={() => navigate()} />}</LevelGate>;
 
   return (
     <div class="screen center">

@@ -74,7 +74,10 @@ export function umlaut(word: string): string {
 export function pluralDistractors(singular: string, plural: string): string[] {
   const endsE = singular.endsWith('e');
   const endsElEr = /(el|er|en)$/.test(singular);
-  const u = umlaut(singular);
+  // Words with these endings never umlaut in the plural ("Allergien", not "Ällergie").
+  const u = /(ie|ei|ung|heit|keit|schaft|ion|tät|ik|ur|enz|anz|ment|um|in|chen|lein)$/.test(singular)
+    ? singular
+    : umlaut(singular);
   const candidates = [
     singular,
     !endsE && singular + 'e',

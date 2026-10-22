@@ -122,6 +122,9 @@ export interface Chapter {
 
 export type LevelId = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
+/** What a level's content module exports. */
+export type LevelContent = Omit<Level, 'id' | 'slug'>;
+
 export interface Level {
   id: LevelId;
   slug: string;
