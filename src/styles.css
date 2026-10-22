@@ -755,9 +755,6 @@ a.level-card .level-id {
 .choices.answered-wrong .choice.dim {
   display: none;
 }
-.continue-btn {
-  width: 100%;
-}
 .choice.dim,
 .choice.picked-wrong {
   opacity: 0.4;
