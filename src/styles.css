@@ -709,16 +709,6 @@ a.level-card .level-id {
   font-size: 1.15rem;
   font-weight: 700;
 }
-/* Floats above the answers so it's always reachable without scrolling. */
-.feedback .btn {
-  position: fixed;
-  z-index: 10;
-  left: 50%;
-  bottom: calc(16px + env(safe-area-inset-bottom));
-  transform: translateX(-50%);
-  width: min(608px, calc(100% - 32px));
-  box-shadow: var(--shadow);
-}
 .feedback-ok {
   color: var(--ok);
 }
@@ -761,6 +751,12 @@ a.level-card .level-id {
 .choice.reveal {
   border-color: var(--ok);
   background: var(--ok-soft);
+}
+.choices.answered-wrong .choice.dim {
+  display: none;
+}
+.continue-btn {
+  width: 100%;
 }
 .choice.dim,
 .choice.picked-wrong {

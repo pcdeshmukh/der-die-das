@@ -158,9 +158,6 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
               <p class="feedback-bad">
                 {t('itIs')} <b>{p.s.de}</b>
               </p>
-              <button class="btn primary" onClick={advance}>
-                {t('continue')}
-              </button>
             </>
           )}
         </div>
@@ -173,9 +170,16 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
           </button>
         ))}
       </div>
-      <button class="btn primary check-btn" disabled={!full || result !== null} onClick={check}>
-        {t('check')}
-      </button>
+      {/* After a mistake, Continue takes the Check button's place. */}
+      {result === false ? (
+        <button class="btn primary check-btn" onClick={advance}>
+          {t('continue')}
+        </button>
+      ) : (
+        <button class="btn primary check-btn" disabled={!full || result !== null} onClick={check}>
+          {t('check')}
+        </button>
+      )}
     </div>
   );
 }

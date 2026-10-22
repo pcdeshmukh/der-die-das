@@ -56,6 +56,7 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
 
   const q = questions[index];
   const answeredRight = chosen !== null && chosen === q.answer;
+  const wrongPick = chosen !== null && !answeredRight;
 
   function answer(option: string) {
     if (chosen !== null) return;
@@ -151,15 +152,13 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
               <p class="feedback-bad">
                 {t('itIs')} {q.solution}
               </p>
-              <button class="btn primary" onClick={advance}>
-                {t('continue')}
-              </button>
             </>
           )}
         </div>
       </div>
 
-      <div class={`choices choices-${shownLayout}`}>
+      {/* After a mistake only the pick and the right answer stay, which frees room for Continue. */}
+      <div class={`choices choices-${shownLayout}${wrongPick ? ' answered-wrong' : ''}`}>
         {q.options.map((o, i) => {
           const cls = chosen === null ? '' : o === q.answer ? 'reveal' : chosen === o ? 'picked-wrong' : 'dim';
           return (
@@ -170,6 +169,11 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
           );
         })}
       </div>
+      {wrongPick && (
+        <button class="btn primary continue-btn" onClick={advance}>
+          {t('continue')}
+        </button>
+      )}
     </div>
   );
 }
