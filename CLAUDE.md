@@ -28,6 +28,8 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 - `verbs.json`: six present forms per verb, plus `prompts`, the pronouns a conjugation prompt may show. A1 uses bare "sie" only for "she". From A2, verbs also carry `preterite` (six forms) and `perfect` (`"hat gemacht"`/`"ist gegangen"`); the verbs page offers the Präteritum and Perfekt modes only when a level's verbs have them.
 - `grammar*.json`: lessons with a rule and gap items (`q` contains `___`). With `shuffle: true`, the options are whole sentences instead.
 - `phrases*.json`: a situation, the right German phrase `a`, and `wrong` options.
+
+**No made-up words, anywhere.** Every option a learner sees must be made of real German word forms. A wrong option may be wrong in context (wrong case, tense, person, word order, function), but never an invented form like *gehte*, *Kochin* or *gebackt*. Generated options follow the same rule: Plural Rush asks for the ending in dictionary notation (`pluralEndingOptions` in `src/lib/german.ts`), and verb games offer only the verb's own real forms (checked in `src/games/verbs.test.ts`).
 - `chapters.json`: maps the 24 syllabus chapters to content ids.
 
 `src/data/data.test.ts` and `src/lib/chapters.test.ts` are the content contract. They check:
@@ -54,7 +56,7 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 - Most games are thin builders over `src/games/ChoiceGame.tsx` (one question, pick an option, auto-advance on correct, results screen). Each builder exports an `xxxQuestion()` function returning `ChoiceQuestion`s. A question carries its own `skill`, `statId`, `layout` and `optionClass`, so one round can mix kinds.
 - `DailyGame.tsx` composes those builders into 12 questions inside `withSeed('daily:<level>:<date>')`, so everyone gets the same set each day. Any randomness that question builders use must go through `src/lib/random.ts` (`random`, `randInt`, `shuffle`), never `Math.random`, or the daily set stops being deterministic.
 - `MatchGame` and `SentenceGame` have their own interaction and don't use ChoiceGame.
-- Generated content (numbers, clock times, plural distractors) comes from `src/lib/german.ts`.
+- Generated content (numbers, clock times, plural endings) comes from `src/lib/german.ts`.
 
 **State.** `src/lib/store.ts` keeps one `@preact/signals` signal, `progress`, persisted to `localStorage` (`der-die-das:v1`). It holds XP, the day streak, daily-challenge results and streak, per-item SRS stats (keyed `skill|itemId`, Leitner boxes in `src/lib/srs.ts`), best stars and settings.
 - Components that read `progress.value` re-render automatically.

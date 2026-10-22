@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { SpeakButton } from '../components/NounPrompt';
-import type { Level, PerfectRef } from '../data/types';
+import type { Level, PerfectRef, Verb } from '../data/types';
 import { meaning, t } from '../lib/i18n';
 import { randInt, shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
@@ -15,17 +15,12 @@ const AUX = {
   ist: ['bin', 'bist', 'ist', 'sind', 'seid', 'sind'],
 };
 
-const SEPARABLE = ['zurück', 'nach', 'fern', 'auf', 'aus', 'ein', 'mit', 'weg', 'vor', 'los', 'her', 'hin', 'an', 'ab', 'um', 'zu'];
-
 /**
- * The participle a learner builds with the regular rule: gegeht, gearbeiten, umgezieht.
- * A separable prefix stays in front of "ge", as in the real participle.
+ * A real verb form that is wrong after haben/sein: the infinitive (hat gehen), or the
+ * Präteritum when the participle looks like the infinitive (hat vergaß).
  */
-function regularParticiple(infinitive: string, participle: string): string {
-  const prefix = SEPARABLE.find((p) => infinitive.startsWith(p) && participle.startsWith(`${p}ge`)) ?? '';
-  const stem = infinitive.slice(prefix.length).replace(/e?n$/, '');
-  const regular = `${prefix}ge${stem}${/[dt]$/.test(stem) ? 'et' : 't'}`;
-  return regular !== participle ? regular : `${prefix}ge${stem}en`;
+function wrongVerbForm(verb: Verb, participle: string): string {
+  return verb.infinitive !== participle ? verb.infinitive : verb.preterite![2];
 }
 
 /** "ich ___ (gehen)" → "bin gegangen": the right helper verb and the right participle. */
@@ -34,7 +29,7 @@ export function perfectQuestion(level: Level, { id, verb }: PerfectRef): ChoiceQ
   const other = aux === 'hat' ? 'ist' : 'hat';
   const person = randInt(0, 5);
   const { pronoun, note } = promptPronoun(level, person);
-  const fake = regularParticiple(verb.infinitive, participle);
+  const fake = wrongVerbForm(verb, participle);
   const answer = `${AUX[aux][person]} ${participle}`;
   const options = [answer, `${AUX[other][person]} ${participle}`, `${AUX[aux][person]} ${fake}`, `${AUX[other][person]} ${fake}`];
   const phrase = `${pronoun} ${answer}`;

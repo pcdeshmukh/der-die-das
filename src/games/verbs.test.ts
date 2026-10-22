@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { Verb } from '../data/types';
 import { loadAllLevels, perfectItems, verbForms } from '../data';
 import { conjugationQuestion } from './ConjugationGame';
 import { perfectQuestion } from './PerfectGame';
@@ -27,23 +28,23 @@ describe.each(LEVELS.filter((l) => l.verbs?.verbs.length))('$id verb questions',
   });
 });
 
-describe('wrong forms', () => {
-  const a2 = LEVELS.find((l) => l.id === 'A2')!;
-  const perfectOptions = (infinitive: string) => {
-    const item = perfectItems(a2).find((i) => i.verb.infinitive === infinitive)!;
-    return perfectQuestion(a2, item).options.join(' ');
-  };
+describe.each(LEVELS.filter((l) => l.verbs?.verbs.length))('$id wrong forms', (level) => {
+  const AUX = ['habe', 'hast', 'hat', 'haben', 'habt', 'bin', 'bist', 'ist', 'sind', 'seid'];
+  // Every word in an option must be a real form of the verb (or haben/sein), never a made-up one.
+  const real = (v: Verb) =>
+    new Set([v.infinitive, ...v.present, ...(v.preterite ?? []), ...(v.perfect?.split(' ') ?? []), ...AUX].flatMap((f) => f.split(' ')));
 
-  it('keeps a separable prefix in front of "ge"', () => {
-    expect(perfectOptions('umziehen')).toMatch(/\bumgezieht\b/);
-    expect(perfectOptions('einladen')).toMatch(/\beingeladet\b/);
+  it.each(['present', 'preterite'] as const)('%s options are real forms of the verb', (tense) => {
+    for (const form of verbForms(level, tense)) {
+      const words = real(form.verb);
+      for (const o of conjugationQuestion(level, form).options) for (const w of o.split(' ')) expect(words, `${form.id}: ${o}`).toContain(w);
+    }
   });
 
-  it('adds -et after a d/t stem', () => expect(perfectOptions('arbeiten')).toMatch(/\bgearbeiten\b/));
-
-  it('never offers Konjunktiv II as a Präteritum form', () => {
-    for (const form of verbForms(a2, 'preterite').filter((f) => f.verb.infinitive === 'können')) {
-      expect(conjugationQuestion(a2, form).options.some((o) => o.startsWith('könnte'))).toBe(false);
+  it('perfect options are real forms of the verb', () => {
+    for (const item of perfectItems(level)) {
+      const words = real(item.verb);
+      for (const o of perfectQuestion(level, item).options) for (const w of o.split(' ')) expect(words, `${item.id}: ${o}`).toContain(w);
     }
   });
 });

@@ -2,8 +2,8 @@ import { useState } from 'preact/hooks';
 import { NounLabel } from '../components/NounLabel';
 import { NounPrompt } from '../components/NounPrompt';
 import type { WordRef } from '../data/types';
-import { pluralDistractors } from '../lib/german';
-import { meaning } from '../lib/i18n';
+import { pluralEndingOptions } from '../lib/german';
+import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { pickWords } from '../lib/srs';
 import { progress } from '../lib/store';
@@ -12,8 +12,14 @@ import type { GameProps } from './types';
 
 const ROUND_SIZE = 12;
 
+/** Bare "–" and "¨" are easy to miss on a button, so they are spelled out. */
+const showEnding = (ending: string) =>
+  ending === '–' ? `– (${t('pluralSame')})` : ending.startsWith('¨') ? ending.replace(/^¨-?/, (m) => (m === '¨' ? 'Umlaut' : 'Umlaut + -')) : ending;
+
 export function pluralQuestion(w: WordRef): ChoiceQuestion {
   const plural = w.plural!;
+  // Options are endings in dictionary notation (-e, ¨-er, -n), so no wrong plural is ever made up.
+  const [answer, ...wrong] = pluralEndingOptions(w.de, plural).map(showEnding);
   return {
     key: `plural:${w.id}`,
     statId: w.id,
@@ -23,10 +29,11 @@ export function pluralQuestion(w: WordRef): ChoiceQuestion {
         <div class="plural-line">
           → <span class="art-die">die</span> {answered ? plural : '___'}
         </div>
+        {!answered && <div class="noun-hint">{t('pluralPick')}</div>}
       </NounPrompt>
     ),
-    options: shuffle([plural, ...shuffle(pluralDistractors(w.de, plural)).slice(0, 3)]),
-    answer: plural,
+    options: shuffle([answer, ...wrong]),
+    answer,
     sayAfter: `die ${plural}`,
     solution: <b>die {plural}</b>,
     review: {

@@ -208,7 +208,7 @@
         "es": "Peter es cocinero. Anna es cocinera.",
         "options": [
           "Köchin",
-          "Kochin",
+          "Köche",
           "Koch"
         ]
       },
@@ -219,7 +219,7 @@
         "es": "El señor Braun es profesor. La señora Braun es profesora.",
         "options": [
           "Lehrerin",
-          "Lehrerinn",
+          "Lehrerinnen",
           "Lehrer"
         ]
       },
@@ -230,7 +230,7 @@
         "es": "Tom es médico. Lisa es médica.",
         "options": [
           "Ärztin",
-          "Arztin",
+          "Ärzte",
           "Arzt"
         ]
       },
@@ -241,7 +241,7 @@
         "es": "Max es dependiente. Sara es dependienta.",
         "options": [
           "Verkäuferin",
-          "Verkaufin",
+          "Verkäuferinnen",
           "Verkäufer"
         ]
       },
@@ -252,7 +252,7 @@
         "es": "Mi hermano es estudiante. Mi hermana también es estudiante.",
         "options": [
           "Studentin",
-          "Studentine",
+          "Studentinnen",
           "Student"
         ]
       },
@@ -263,7 +263,7 @@
         "es": "Él es peluquero. Ella es peluquera.",
         "options": [
           "Friseurin",
-          "Friseurine",
+          "Friseurinnen",
           "Friseur"
         ]
       },
@@ -285,7 +285,7 @@
         "es": "El señor Weber es camarero. La señora Weber es camarera.",
         "options": [
           "Kellnerin",
-          "Kellnerinn",
+          "Kellnerinnen",
           "Kellner"
         ]
       },
@@ -296,7 +296,7 @@
         "es": "Paul es agricultor. María es agricultora.",
         "options": [
           "Bäuerin",
-          "Bauerin",
+          "Bäuerinnen",
           "Bauer"
         ]
       },
@@ -307,7 +307,7 @@
         "es": "Mi padre es abogado. Mi madre es abogada.",
         "options": [
           "Anwältin",
-          "Anwaltin",
+          "Anwälte",
           "Anwalt"
         ]
       },
@@ -318,7 +318,7 @@
         "es": "El señor Klein es policía. La señora Klein también es policía.",
         "options": [
           "Polizistin",
-          "Polizistine",
+          "Polizistinnen",
           "Polizist"
         ]
       },
@@ -329,7 +329,7 @@
         "es": "Ali es taxista. Ayşe también es taxista.",
         "options": [
           "Taxifahrerin",
-          "Taxifährerin",
+          "Taxifahrerinnen",
           "Taxifahrer"
         ]
       }
@@ -357,8 +357,8 @@
         "es": "Este es el hermano de Anna.",
         "options": [
           "Annas",
-          "Anna's",
-          "Anna"
+          "Anna",
+          "von Anna"
         ]
       },
       {
@@ -368,8 +368,8 @@
         "es": "Este es el coche de Max.",
         "options": [
           "Max'",
-          "Maxs",
-          "Max's"
+          "Max",
+          "von Max"
         ]
       },
       {
@@ -379,8 +379,8 @@
         "es": "¿Dónde está el bolso de María?",
         "options": [
           "Marias",
-          "Maria's",
-          "Maria"
+          "Maria",
+          "von Maria"
         ]
       },
       {
@@ -390,8 +390,8 @@
         "es": "La mujer de Hans se llama Eva.",
         "options": [
           "Hans'",
-          "Hanss",
-          "Hans's"
+          "Hans",
+          "Von Hans"
         ]
       },
       {
@@ -401,8 +401,8 @@
         "es": "Esta es la casa de Peter.",
         "options": [
           "Peters",
-          "Peter's",
-          "Peter"
+          "Peter",
+          "von Peter"
         ]
       },
       {
@@ -412,8 +412,8 @@
         "es": "La hermana de Tim vive en Colonia.",
         "options": [
           "Tims",
-          "Tim's",
-          "Tim"
+          "Tim",
+          "Von Tim"
         ]
       },
       {
@@ -423,8 +423,8 @@
         "es": "¿Conoces a la madre de Lukas?",
         "options": [
           "Lukas'",
-          "Lukass",
-          "Lukas's"
+          "Lukas",
+          "von Lukas"
         ]
       },
       {
@@ -434,8 +434,8 @@
         "es": "Esta es la habitación de Fritz.",
         "options": [
           "Fritz'",
-          "Fritzs",
-          "Fritz's"
+          "Fritz",
+          "von Fritz"
         ]
       },
       {
@@ -445,8 +445,8 @@
         "es": "El perro de Sara es muy pequeño.",
         "options": [
           "Saras",
-          "Sara's",
-          "Sara"
+          "Sara",
+          "Von Sara"
         ]
       },
       {
@@ -456,8 +456,8 @@
         "es": "Esta es la bici de Jonas.",
         "options": [
           "Jonas'",
-          "Jonass",
-          "Jonas's"
+          "Jonas",
+          "von Jonas"
         ]
       },
       {
@@ -467,8 +467,8 @@
         "es": "¿Cuál es el número de teléfono de Paul?",
         "options": [
           "Pauls",
-          "Paul's",
-          "Paul"
+          "Paul",
+          "von Paul"
         ]
       },
       {
@@ -478,8 +478,8 @@
         "es": "Estos son los hijos de Lena.",
         "options": [
           "Lenas",
-          "Lena's",
-          "Lena"
+          "Lena",
+          "von Lena"
         ]
       }
     ]

@@ -21,7 +21,7 @@
         "es": "He visitado a mi abuela.",
         "options": [
           "besucht",
-          "gebesucht",
+          "besuchte",
           "besuchen"
         ]
       },
@@ -31,7 +31,7 @@
         "en": "We paid the bill.",
         "es": "Hemos pagado la cuenta.",
         "options": [
-          "gebezahlt",
+          "bezahlte",
           "bezahlt",
           "bezahlen"
         ]
@@ -42,7 +42,7 @@
         "en": "She got a letter.",
         "es": "Ha recibido una carta.",
         "options": [
-          "gebekommen",
+          "bekam",
           "bekommt",
           "bekommen"
         ]
@@ -54,7 +54,7 @@
         "es": "¿Has entendido la pregunta?",
         "options": [
           "verstanden",
-          "geverstanden",
+          "verstand",
           "verstehen"
         ]
       },
@@ -64,7 +64,7 @@
         "en": "I forgot my key.",
         "es": "He olvidado mi llave.",
         "options": [
-          "gevergessen",
+          "vergaß",
           "vergessen",
           "vergisst"
         ]
@@ -76,7 +76,7 @@
         "es": "Ha vendido su coche.",
         "options": [
           "verkaufen",
-          "geverkauft",
+          "verkaufte",
           "verkauft"
         ]
       },
@@ -87,7 +87,7 @@
         "es": "El abuelo ha contado una historia.",
         "options": [
           "erzählt",
-          "geerzählt",
+          "erzählte",
           "erzählen"
         ]
       },
@@ -97,7 +97,7 @@
         "en": "I liked the film a lot.",
         "es": "La película me ha gustado mucho.",
         "options": [
-          "gegefallen",
+          "gefiel",
           "gefallen",
           "gefällt"
         ]
@@ -108,7 +108,7 @@
         "en": "I talked to my mother on the phone.",
         "es": "He hablado por teléfono con mi madre.",
         "options": [
-          "getelefoniert",
+          "telefonierte",
           "telefonieren",
           "telefoniert"
         ]
@@ -120,7 +120,7 @@
         "es": "Ha estudiado Medicina en Berlín.",
         "options": [
           "studiert",
-          "gestudiert",
+          "studierte",
           "studieren"
         ]
       },
@@ -130,7 +130,7 @@
         "en": "I took a photo of the dog.",
         "es": "Le he hecho una foto al perro.",
         "options": [
-          "gefotografiert",
+          "fotografierte",
           "fotografiert",
           "fotografieren"
         ]
@@ -142,7 +142,7 @@
         "es": "La profesora ha explicado la gramática.",
         "options": [
           "erklären",
-          "geerklärt",
+          "erklärte",
           "erklärt"
         ]
       }
@@ -171,7 +171,7 @@
         "options": [
           "unfreundlich",
           "freundlich",
-          "nichtfreundlich"
+          "Freundlichkeit"
         ]
       },
       {
@@ -182,7 +182,7 @@
         "options": [
           "unbequem",
           "bequem",
-          "nichtbequem"
+          "Bequemlichkeit"
         ]
       },
       {
@@ -192,7 +192,7 @@
         "es": "Los zapatos son demasiado pequeños e incómodos.",
         "options": [
           "bequem",
-          "nichtbequem",
+          "Bequemlichkeit",
           "unbequem"
         ]
       },
@@ -204,7 +204,7 @@
         "options": [
           "glücklich",
           "unglücklich",
-          "nichtglücklich"
+          "Glück"
         ]
       },
       {
@@ -215,7 +215,7 @@
         "options": [
           "glücklich",
           "unglücklich",
-          "nichtglücklich"
+          "Unglück"
         ]
       },
       {
@@ -225,7 +225,7 @@
         "es": "La pregunta no tiene importancia. No la necesitamos.",
         "options": [
           "wichtig",
-          "nichtwichtig",
+          "Wichtigkeit",
           "unwichtig"
         ]
       },
@@ -237,7 +237,7 @@
         "options": [
           "unpünktlich",
           "pünktlich",
-          "nichtpünktlich"
+          "Pünktlichkeit"
         ]
       },
       {
@@ -248,7 +248,7 @@
         "options": [
           "unpünktlich",
           "pünktlich",
-          "nichtpünktlich"
+          "Pünktlichkeit"
         ]
       },
       {
@@ -259,7 +259,7 @@
         "options": [
           "ordentlich",
           "unordentlich",
-          "nichtordentlich"
+          "Unordnung"
         ]
       },
       {
@@ -270,7 +270,7 @@
         "options": [
           "sympathisch",
           "unsympathisch",
-          "nichtsympathisch"
+          "Sympathie"
         ]
       },
       {
@@ -280,7 +280,7 @@
         "es": "El hombre es antipático. No me cae bien.",
         "options": [
           "sympathisch",
-          "nichtsympathisch",
+          "Sympathie",
           "unsympathisch"
         ]
       },
@@ -292,7 +292,7 @@
         "options": [
           "freundlich",
           "unfreundlich",
-          "nichtfreundlich"
+          "Freundlichkeit"
         ]
       }
     ]
@@ -913,7 +913,12 @@
         "q": "Es ist kalt, ___ die Sonne scheint.",
         "a": "aber",
         "en": "It's cold, but the sun is shining.",
-        "es": "Hace frío, pero hace sol."
+        "es": "Hace frío, pero hace sol.",
+        "options": [
+          "aber",
+          "denn",
+          "oder"
+        ]
       },
       {
         "q": "Nimm einen Regenschirm mit, ___ es regnet bald.",
@@ -1088,8 +1093,8 @@
         "es": "No tiene trabajo. Está en paro.",
         "options": [
           "arbeitslos",
-          "arbeitlos",
-          "unarbeit"
+          "arbeitsam",
+          "Arbeit"
         ]
       },
       {
@@ -1098,9 +1103,9 @@
         "en": "Admission costs nothing. It is free.",
         "es": "La entrada no cuesta nada. Es gratis.",
         "options": [
-          "kostlos",
+          "Kosten",
           "kostenlos",
-          "unkostig"
+          "kostenpflichtig"
         ]
       },
       {
@@ -1109,8 +1114,8 @@
         "en": "There are no clouds today. The sky is cloudless.",
         "es": "Hoy no hay nubes. El cielo está despejado.",
         "options": [
-          "wolkelos",
-          "unwolkig",
+          "Wolken",
+          "bewölkt",
           "wolkenlos"
         ]
       },
@@ -1121,8 +1126,8 @@
         "es": "Estoy tan sorprendido. Me he quedado sin palabras.",
         "options": [
           "sprachlos",
-          "sprechlos",
-          "unsprach"
+          "Sprache",
+          "gesprächig"
         ]
       },
       {
@@ -1131,9 +1136,9 @@
         "en": "There's no hope any more. The situation is hopeless.",
         "es": "Ya no hay esperanza. La situación es desesperada.",
         "options": [
-          "hoffnunglos",
+          "hoffnungsvoll",
           "hoffnungslos",
-          "unhoffnung"
+          "Hoffnung"
         ]
       },
       {
@@ -1142,8 +1147,8 @@
         "en": "Your test has no mistakes. It is flawless.",
         "es": "Tu examen no tiene errores. Es perfecto.",
         "options": [
-          "fehllos",
-          "unfehler",
+          "Fehler",
+          "fehlerhaft",
           "fehlerlos"
         ]
       },
@@ -1154,8 +1159,8 @@
         "es": "Ha sido una noche en vela. No he dormido.",
         "options": [
           "schlaflos",
-          "schlafenlos",
-          "unschlaf"
+          "schläfrig",
+          "Schlaf"
         ]
       },
       {
@@ -1164,9 +1169,9 @@
         "en": "They have no children. They are childless.",
         "es": "No tienen hijos. Son una pareja sin hijos.",
         "options": [
-          "kindlos",
+          "kinderreich",
           "kinderlos",
-          "unkinder"
+          "Kinder"
         ]
       },
       {
@@ -1175,8 +1180,8 @@
         "en": "The water has no colour. It is colourless.",
         "es": "El agua no tiene color. Es incolora.",
         "options": [
-          "unfarbig",
-          "farbelos",
+          "farbig",
+          "Farbe",
           "farblos"
         ]
       },
@@ -1187,8 +1192,8 @@
         "es": "La película no termina. ¡Es interminable!",
         "options": [
           "endlos",
-          "endelos",
-          "unend"
+          "Ende",
+          "endlich"
         ]
       },
       {
@@ -1198,8 +1203,8 @@
         "es": "Los auriculares no tienen cable. Son inalámbricos.",
         "options": [
           "kabellos",
-          "kabelos",
-          "unkabel"
+          "Kabel",
+          "kabelgebunden"
         ]
       }
     ]
@@ -1227,7 +1232,7 @@
         "options": [
           "erste",
           "ersten",
-          "einste"
+          "eins"
         ]
       },
       {
@@ -1238,7 +1243,7 @@
         "options": [
           "dritte",
           "dritten",
-          "dreiten"
+          "drei"
         ]
       },
       {
@@ -1248,7 +1253,7 @@
         "es": "Hoy es el 2 de marzo.",
         "options": [
           "zweiten",
-          "zweitte",
+          "zwei",
           "zweite"
         ]
       },
@@ -1260,7 +1265,7 @@
         "options": [
           "siebten",
           "siebte",
-          "siebzten"
+          "sieben"
         ]
       },
       {
@@ -1271,7 +1276,7 @@
         "options": [
           "vierten",
           "vierte",
-          "viertte"
+          "vier"
         ]
       },
       {
@@ -1281,7 +1286,7 @@
         "es": "El curso empieza el 8 de septiembre.",
         "options": [
           "achte",
-          "achtten",
+          "acht",
           "achten"
         ]
       },
@@ -1293,7 +1298,7 @@
         "options": [
           "zwanzigste",
           "zwanzigsten",
-          "zwanzigte"
+          "zwanzig"
         ]
       },
       {
@@ -1304,7 +1309,7 @@
         "options": [
           "zwölfte",
           "zwölften",
-          "zwölfsten"
+          "zwölf"
         ]
       },
       {
@@ -1314,7 +1319,7 @@
         "es": "La Navidad es el 25 de diciembre.",
         "options": [
           "fünfundzwanzigste",
-          "fünfundzwanzigten",
+          "fünfundzwanzig",
           "fünfundzwanzigsten"
         ]
       },
@@ -1326,7 +1331,7 @@
         "options": [
           "sechste",
           "sechsten",
-          "sechte"
+          "sechs"
         ]
       },
       {
@@ -1337,7 +1342,7 @@
         "options": [
           "elfte",
           "elften",
-          "elfsten"
+          "elf"
         ]
       },
       {
@@ -1347,7 +1352,7 @@
         "es": "Hoy es el 13 de febrero.",
         "options": [
           "dreizehnten",
-          "dreizehnste",
+          "dreizehn",
           "dreizehnte"
         ]
       }
@@ -1377,7 +1382,7 @@
           "würde",
           "würdest",
           "wird",
-          "werde"
+          "würden"
         ]
       },
       {
@@ -1388,7 +1393,7 @@
         "options": [
           "Würde",
           "Würdest",
-          "Wirst",
+          "Würdet",
           "Würden"
         ]
       },
@@ -1399,7 +1404,7 @@
         "es": "Nos gustaría vivir junto al mar.",
         "options": [
           "würdet",
-          "werden",
+          "würdest",
           "würden",
           "würde"
         ]
@@ -1410,7 +1415,7 @@
         "en": "He would like to become a pilot.",
         "es": "Le gustaría ser piloto.",
         "options": [
-          "wird",
+          "würdet",
           "würde",
           "würden",
           "würdest"
@@ -1423,7 +1428,7 @@
         "es": "¿Os gustaría venir?",
         "options": [
           "Würden",
-          "Werdet",
+          "Würde",
           "Würdest",
           "Würdet"
         ]
@@ -1436,7 +1441,7 @@
         "options": [
           "würde",
           "würden",
-          "werden",
+          "würdest",
           "würdet"
         ]
       },
@@ -1448,7 +1453,7 @@
         "options": [
           "Würden",
           "Würde",
-          "Werden",
+          "Würdest",
           "Würdet"
         ]
       },
@@ -1458,7 +1463,7 @@
         "en": "I would like to have more time.",
         "es": "Me gustaría tener más tiempo.",
         "options": [
-          "werde",
+          "würdet",
           "würden",
           "würdest",
           "würde"
@@ -1472,7 +1477,7 @@
         "options": [
           "würdet",
           "würde",
-          "wird",
+          "würdest",
           "würden"
         ]
       },
@@ -1484,7 +1489,7 @@
         "options": [
           "würdest",
           "würde",
-          "wirst",
+          "würden",
           "würdet"
         ]
       },
@@ -1495,7 +1500,7 @@
         "es": "Os gustaría tener un perro, ¿verdad?",
         "options": [
           "würdest",
-          "werdet",
+          "würde",
           "würdet",
           "würden"
         ]
@@ -1509,7 +1514,7 @@
           "würden",
           "würde",
           "wird",
-          "werde"
+          "würdest"
         ]
       }
     ]

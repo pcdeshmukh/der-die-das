@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatNumber, numberToGerman, pluralDistractors, timeFormal, timeInformal, umlaut } from './german';
+import { formatNumber, numberToGerman, pluralEnding, pluralEndingOptions, timeFormal, timeInformal, umlaut } from './german';
 
 describe('numberToGerman', () => {
   it.each([
@@ -75,27 +75,31 @@ describe('plurals', () => {
     ['Tisch', 'Tisch'],
   ])('umlaut(%s) → %s', (word, result) => expect(umlaut(word)).toBe(result));
 
-  it('offers wrong but plausible plurals, never the right one', () => {
-    const d = pluralDistractors('Tisch', 'Tische');
-    expect(d).not.toContain('Tische');
-    expect(d.length).toBeGreaterThanOrEqual(3);
-    expect(d).toContain('Tischen');
+  it.each([
+    ['Tisch', 'Tische', '-e'],
+    ['Haus', 'Häuser', '¨-er'],
+    ['Lehrer', 'Lehrer', '–'],
+    ['Vater', 'Väter', '¨'],
+    ['Lampe', 'Lampen', '-n'],
+    ['Lehrerin', 'Lehrerinnen', '-nen'],
+    ['Auto', 'Autos', '-s'],
+    ['Bus', 'Busse', '-se'],
+    ['Hörsaal', 'Hörsäle', '¨-e'],
+    ['Museum', 'Museen', '-um → -en'],
+    ['Firma', 'Firmen', '-a → -en'],
+  ])('pluralEnding(%s, %s) → %s', (singular, plural, ending) => expect(pluralEnding(singular, plural)).toBe(ending));
+
+  it('never offers an umlaut for endings that never take one', () => {
+    expect(pluralEndingOptions('Allergie', 'Allergien').some((e) => e.includes('¨'))).toBe(false);
   });
 
-  it('does not umlaut words whose ending never takes one', () => {
-    expect(pluralDistractors('Allergie', 'Allergien')).not.toContain('Ällergie');
-    expect(pluralDistractors('Wohnung', 'Wohnungen').some((d) => /[äöü]/.test(d))).toBe(false);
-  });
-
-  it('never doubles a final e', () => {
-    expect(pluralDistractors('Höhle', 'Höhlen').some((d) => d.includes('ee'))).toBe(false);
-  });
-
-  it('has at least three distractors for every noun', async () => {
+  it('offers the right ending and three unique wrong ones for every noun', async () => {
     const { loadAllLevels, allWords } = await import('../data');
     const LEVELS = await loadAllLevels();
     for (const w of LEVELS.flatMap((l) => allWords(l)).filter((x) => x.plural)) {
-      expect(pluralDistractors(w.de, w.plural!).length, w.de).toBeGreaterThanOrEqual(3);
+      const options = pluralEndingOptions(w.de, w.plural!);
+      expect(options[0], w.de).toBe(pluralEnding(w.de, w.plural!));
+      expect(new Set(options).size, w.de).toBe(4);
     }
   });
 });

@@ -1275,7 +1275,7 @@
         "en": "At 18, he moved to Berlin.",
         "es": "A los 18 años se mudó a Berlín.",
         "wrong": [
-          "Mit 18 Jahren ziehte er nach Berlin.",
+          "Mit 18 Jahren hat er nach Berlin gezogen.",
           "Mit 18 Jahren zieht er nach Berlin.",
           "Seit 18 Jahren zog er nach Berlin."
         ]
@@ -1331,7 +1331,7 @@
         "en": "In 1985, she had her first child.",
         "es": "En 1985 tuvo su primer hijo.",
         "wrong": [
-          "1985 bekommte sie ihr erstes Kind.",
+          "1985 wird sie ihr erstes Kind bekommen.",
           "1985 sie bekam ihr erstes Kind.",
           "1985 bekam sie ihre erste Rolle."
         ]
@@ -1440,7 +1440,7 @@
         "en": "The bread there is baked fresh every morning.",
         "es": "Allí el pan se hace cada mañana.",
         "wrong": [
-          "Dort wird das Brot jeden Morgen frisch gebackt.",
+          "Dort werden das Brot jeden Morgen frisch gebacken.",
           "Dort wird das Brot jeden Morgen frisch backen.",
           "Dort hat das Brot jeden Morgen frisch gebacken."
         ]

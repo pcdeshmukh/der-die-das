@@ -1016,7 +1016,7 @@
         "es": "Me gusta el café, pero prefiero el té.",
         "options": [
           "lieber",
-          "gerner",
+          "liebsten",
           "am liebsten"
         ]
       },
@@ -1027,8 +1027,8 @@
         "es": "Lo que más me gusta comer es la pizza.",
         "options": [
           "liebsten",
-          "gernsten",
-          "lieber"
+          "lieber",
+          "gern"
         ]
       },
       {
@@ -1050,7 +1050,7 @@
         "options": [
           "besten",
           "besser",
-          "gutesten"
+          "gut"
         ]
       },
       {
@@ -1061,7 +1061,7 @@
         "options": [
           "meisten",
           "mehr",
-          "vielsten"
+          "viel"
         ]
       },
       {
@@ -1240,8 +1240,8 @@
         "es": "Ayer fue al cine.",
         "options": [
           "ging",
-          "gehte",
-          "gang"
+          "gingen",
+          "gingst"
         ]
       },
       {
@@ -1262,8 +1262,8 @@
         "es": "De repente entró un hombre en la tienda.",
         "options": [
           "kam",
-          "kommte",
-          "kamen"
+          "kamen",
+          "kamst"
         ]
       },
       {
@@ -1274,7 +1274,7 @@
         "options": [
           "fuhren",
           "fuhr",
-          "fahrten"
+          "fuhrst"
         ]
       },
       {
@@ -1284,8 +1284,8 @@
         "es": "En el parque Lisa vio un perrito.",
         "options": [
           "sah",
-          "sehte",
-          "sahen"
+          "sahen",
+          "sahst"
         ]
       },
       {
@@ -1296,7 +1296,7 @@
         "options": [
           "schriebst",
           "schrieb",
-          "schreibtest"
+          "schrieben"
         ]
       },
       {
@@ -1307,7 +1307,7 @@
         "options": [
           "fanden",
           "fand",
-          "findeten"
+          "fandet"
         ]
       },
       {
@@ -1317,8 +1317,8 @@
         "es": "Cogí un taxi a la estación.",
         "options": [
           "nahm",
-          "nehmte",
-          "nahmen"
+          "nahmen",
+          "nahmst"
         ]
       },
       {
@@ -1329,7 +1329,7 @@
         "options": [
           "aßen",
           "aß",
-          "esste"
+          "aßt"
         ]
       },
       {
@@ -1339,8 +1339,8 @@
         "es": "A las diez llamó mi madre.",
         "options": [
           "rief",
-          "rufte",
-          "riefen"
+          "riefen",
+          "riefst"
         ]
       },
       {
@@ -1351,7 +1351,7 @@
         "options": [
           "arbeitete",
           "arbeitet",
-          "arbeitte"
+          "arbeiteten"
         ]
       }
     ]

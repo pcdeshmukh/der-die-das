@@ -509,8 +509,8 @@
         "es": "Ayer comí pizza.",
         "options": [
           "gegessen",
-          "geesst",
-          "gegesst"
+          "essen",
+          "aß"
         ]
       },
       {
@@ -520,7 +520,7 @@
         "es": "La semana pasada compramos un coche.",
         "options": [
           "gekauft",
-          "gekaufen",
+          "kaufen",
           "kaufte"
         ]
       },
@@ -531,8 +531,8 @@
         "es": "Ella trabajó hasta las ocho de la tarde.",
         "options": [
           "gearbeitet",
-          "gearbeiten",
-          "geabeitet"
+          "arbeiten",
+          "arbeitete"
         ]
       },
       {
@@ -542,8 +542,8 @@
         "es": "¿Ya has tomado café?",
         "options": [
           "getrunken",
-          "getrinkt",
-          "gedrunken"
+          "trinken",
+          "trank"
         ]
       },
       {
@@ -553,8 +553,8 @@
         "es": "El mes pasado leí un libro.",
         "options": [
           "gelesen",
-          "gelest",
-          "geliest"
+          "lesen",
+          "las"
         ]
       },
       {
@@ -564,8 +564,8 @@
         "es": "El bebé durmió bien.",
         "options": [
           "geschlafen",
-          "geschlaft",
-          "geschlief"
+          "schlafen",
+          "schlief"
         ]
       },
       {
@@ -575,8 +575,8 @@
         "es": "¿Habéis visto la película?",
         "options": [
           "gesehen",
-          "gesieht",
-          "gesaht"
+          "sehen",
+          "sah"
         ]
       },
       {
@@ -586,7 +586,7 @@
         "es": "El año pasado vivimos en Múnich.",
         "options": [
           "gewohnt",
-          "gewohnen",
+          "wohnen",
           "wohnte"
         ]
       },
@@ -597,7 +597,7 @@
         "es": "Él jugó al tenis el fin de semana.",
         "options": [
           "gespielt",
-          "gespielen",
+          "spielen",
           "spielte"
         ]
       },
@@ -608,8 +608,8 @@
         "es": "Ayer escuché música.",
         "options": [
           "gehört",
-          "gehören",
-          "gehörte"
+          "hören",
+          "hörte"
         ]
       },
       {
@@ -619,7 +619,7 @@
         "es": "¿Qué hiciste el sábado?",
         "options": [
           "gemacht",
-          "gemachen",
+          "machen",
           "machte"
         ]
       },
@@ -630,7 +630,7 @@
         "es": "Mi padre preparó la cena.",
         "options": [
           "gekocht",
-          "gekochen",
+          "kochen",
           "kochte"
         ]
       }

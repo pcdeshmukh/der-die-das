@@ -11,21 +11,8 @@ import type { GameProps } from './types';
 const ROUND_SIZE = 12;
 
 const SKILL: Record<Tense, Skill> = { present: 'conjugation', preterite: 'preterite' };
-const PRETERITE_ENDINGS = ['te', 'test', 'te', 'ten', 'tet', 'ten'];
 
 export const spokenPronoun = (pronoun: string) => pronoun.replace(/ \(.*\)$/, '');
-
-/**
- * The form a learner gets by applying the regular rule: "fahrst" for fahren, "gehte" for ging.
- * Separable verbs ("fange an") are skipped; the rule can't place the prefix.
- */
-function regularized(infinitive: string, person: number, tense: Tense): string | null {
-  const stem = infinitive.replace(/e?n$/, '');
-  if (tense === 'preterite') return stem + PRETERITE_ENDINGS[person];
-  if (person === 1) return stem + (/[sßzx]$/.test(stem) ? 't' : 'st');
-  if (person === 2) return stem + 't';
-  return null;
-}
 
 /** The person's pronoun as shown in a prompt, plus an optional hint such as "(formal)". */
 export function promptPronoun(level: Level, person: number) {
@@ -38,15 +25,10 @@ export function conjugationQuestion(level: Level, { id, verb, person, tense }: V
   const { pronoun, note } = promptPronoun(level, person);
   const forms = verb[tense]!;
   const form = forms[person];
+  // Every option is a real form of the verb: the other persons, and in the past the present.
   const wrong = new Set(forms.filter((f) => f !== form));
-  // In the past tense, the present form of the same person is a natural slip.
   if (tense === 'preterite' && verb.present[person] !== form) wrong.add(verb.present[person]);
-  // An umlaut stem would turn the regular past into Konjunktiv II (könnte), a real form, so skip it.
-  const umlautPast = tense === 'preterite' && /[äöü]/.test(verb.infinitive);
-  const reg = form.includes(' ') || umlautPast ? null : regularized(verb.infinitive, person, tense);
-  // A plausible-but-wrong regular form is the most useful distractor for irregular verbs.
-  const options =
-    reg && reg !== form && !wrong.has(reg) ? [reg, ...shuffle([...wrong]).slice(0, 2)] : shuffle([...wrong]).slice(0, 3);
+  const options = shuffle([...wrong]).slice(0, 3);
   const phrase = `${pronoun} ${form}`;
   return {
     key: `${tense}:${id}`,

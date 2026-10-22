@@ -275,7 +275,7 @@
         "options": [
           "eröffnet",
           "eröffnen",
-          "geöffnet"
+          "eröffnete"
         ]
       },
       {
@@ -308,7 +308,7 @@
         "options": [
           "gesprochen",
           "sprechen",
-          "gesprecht"
+          "spricht"
         ]
       },
       {
@@ -352,7 +352,7 @@
         "options": [
           "repariert",
           "reparieren",
-          "gerepariert"
+          "repariere"
         ]
       },
       {
@@ -363,7 +363,7 @@
         "options": [
           "gekauft",
           "kaufen",
-          "gekaufen"
+          "kauft"
         ]
       },
       {
@@ -935,7 +935,7 @@
         "options": [
           "Kollegen",
           "Kollege",
-          "Kolleges"
+          "Kollegin"
         ]
       },
       {
@@ -946,7 +946,7 @@
         "options": [
           "Nachbarn",
           "Nachbar",
-          "Nachbars"
+          "Nachbarin"
         ]
       },
       {
@@ -957,7 +957,7 @@
         "options": [
           "Studenten",
           "Student",
-          "Students"
+          "Studentin"
         ]
       },
       {
@@ -968,7 +968,7 @@
         "options": [
           "Jungen",
           "Junge",
-          "Junges"
+          "Jungs"
         ]
       },
       {
@@ -999,7 +999,7 @@
         "options": [
           "Namen",
           "Name",
-          "Names"
+          "Namens"
         ]
       },
       {
@@ -1030,7 +1030,7 @@
         "options": [
           "Polizisten",
           "Polizist",
-          "Polizists"
+          "Polizistin"
         ]
       },
       {
@@ -1041,7 +1041,7 @@
         "options": [
           "Kunden",
           "Kunde",
-          "Kundes"
+          "Kundin"
         ]
       },
       {

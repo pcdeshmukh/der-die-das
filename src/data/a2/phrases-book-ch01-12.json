@@ -42,7 +42,7 @@
         "a": "Nach der Schule habe ich eine Ausbildung gemacht.",
         "en": "After school I did vocational training.",
         "es": "Después del colegio hice una formación profesional.",
-        "wrong": ["Vor der Schule habe ich eine Ausbildung gemacht.", "Nach der Schule mache ich meine Hausaufgaben.", "Nach der Schule habe ich eine Ausbildung gemachen."]
+        "wrong": ["Vor der Schule habe ich eine Ausbildung gemacht.", "Nach der Schule mache ich meine Hausaufgaben.", "Nach der Schule bin ich eine Ausbildung gemacht."]
       },
       {
         "situation": {
@@ -139,7 +139,7 @@
         "a": "Flexible Arbeitszeiten sind mir am wichtigsten.",
         "en": "Flexible working hours are the most important thing to me.",
         "es": "Para mí lo más importante es el horario flexible.",
-        "wrong": ["Flexible Arbeitszeiten sind mich am wichtigsten.", "Flexible Arbeitszeiten sind mir egal.", "Flexible Arbeitszeiten sind mir am wichtigste."]
+        "wrong": ["Flexible Arbeitszeiten sind mich am wichtigsten.", "Flexible Arbeitszeiten sind mir egal.", "Flexible Arbeitszeiten sind mir nicht so wichtig."]
       },
       {
         "situation": {
@@ -246,7 +246,7 @@
         "a": "Am schönsten finde ich die Nordseeküste.",
         "en": "I think the North Sea coast is the most beautiful.",
         "es": "Lo que más bonito me parece es la costa del mar del Norte.",
-        "wrong": ["Am schönste finde ich die Nordseeküste.", "Die Nordseeküste finde ich am langweiligsten.", "Die Nordseeküste ist schöner wie die Alpen."]
+        "wrong": ["Am schönsten finde ich die Alpen.", "Die Nordseeküste finde ich am langweiligsten.", "Die Nordseeküste ist schöner wie die Alpen."]
       },
       {
         "situation": {
@@ -534,7 +534,7 @@
         "a": "Das neue Büro ist größer als das alte.",
         "en": "The new office is bigger than the old one.",
         "es": "La nueva oficina es más grande que la antigua.",
-        "wrong": ["Das neue Büro ist größer wie das alte.", "Das neue Büro ist kleiner als das alte.", "Das neue Büro ist großer als das alte."]
+        "wrong": ["Das neue Büro ist größer wie das alte.", "Das neue Büro ist kleiner als das alte.", "Das neue Büro ist groß als das alte."]
       },
       {
         "situation": {
@@ -564,7 +564,7 @@
         "a": "In der Kantine gibt es den besten Kaffee im ganzen Haus.",
         "en": "The canteen has the best coffee in the whole building.",
         "es": "En el comedor está el mejor café de todo el edificio.",
-        "wrong": ["In der Kantine gibt es den gutesten Kaffee im ganzen Haus.", "In der Kantine gibt es den schlechtesten Kaffee im ganzen Haus.", "In der Kantine gibt es den bessten Kaffee im ganzen Haus."]
+        "wrong": ["In der Kantine gibt es den guten Kaffee im ganzen Haus.", "In der Kantine gibt es den schlechtesten Kaffee im ganzen Haus.", "In der Kantine gibt es den besseren Kaffee im ganzen Haus."]
       },
       {
         "situation": {
@@ -815,7 +815,7 @@
         "a": "Ich fahre lieber in die Berge als ans Meer.",
         "en": "I'd rather go to the mountains than to the sea.",
         "es": "Prefiero ir a la montaña que al mar.",
-        "wrong": ["Ich fahre lieber ans Meer als in die Berge.", "Ich fahre gerner in die Berge als ans Meer.", "Ich fahre lieber in die Berge wie ans Meer."]
+        "wrong": ["Ich fahre lieber ans Meer als in die Berge.", "Ich fahre am liebsten in die Berge als ans Meer.", "Ich fahre lieber in die Berge wie ans Meer."]
       },
       {
         "situation": {
@@ -825,7 +825,7 @@
         "a": "Am liebsten mache ich Campingurlaub.",
         "en": "Most of all I like camping holidays.",
         "es": "Lo que más me gusta son las vacaciones de camping.",
-        "wrong": ["Am liebste mache ich Campingurlaub.", "Am meisten gern mache ich Campingurlaub.", "Campingurlaub mag ich gar nicht."]
+        "wrong": ["Am liebsten mache ich Strandurlaub.", "Am meisten gern mache ich Campingurlaub.", "Campingurlaub mag ich gar nicht."]
       },
       {
         "situation": {
@@ -835,7 +835,7 @@
         "a": "Die meisten Deutschen machen Urlaub in Deutschland.",
         "en": "Most Germans go on holiday in Germany.",
         "es": "La mayoría de los alemanes pasa las vacaciones en Alemania.",
-        "wrong": ["Die meiste Deutschen machen Urlaub in Deutschland.", "Nur wenige Deutsche machen Urlaub in Deutschland.", "Alle Deutschen machen Urlaub in Deutschland."]
+        "wrong": ["Die meisten Deutschen machen Urlaub im Ausland.", "Nur wenige Deutsche machen Urlaub in Deutschland.", "Alle Deutschen machen Urlaub in Deutschland."]
       },
       {
         "situation": {

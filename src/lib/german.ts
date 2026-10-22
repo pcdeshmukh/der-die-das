@@ -1,4 +1,5 @@
-// Generators for German numbers, clock times, and plausible wrong plurals.
+// Generators for German numbers, clock times, and plural endings.
+import { shuffle } from './random';
 
 const ONES = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf',
   'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn'];
@@ -60,41 +61,69 @@ export function timeFormal(hour: number, minute: number): string {
 
 const UMLAUTS: Record<string, string> = { a: 'ä', o: 'ö', u: 'ü', A: 'Ä', O: 'Ö', U: 'Ü' };
 
-/** Umlauts the stem vowel: Vater → Väter, Haus → Häus, Apfel → Äpfel. */
+/** Umlauts the stem vowel: Vater → Väter, Haus → Häus, Apfel → Äpfel, Saal → Säl. */
 export function umlaut(word: string): string {
   const suffix = word.match(/(er|el|en|e)$/)?.[0] ?? '';
   const stem = word.slice(0, word.length - suffix.length);
-  const m = stem.match(/^(.*?)(au|Au|[aouAOU])([^aouAOUäöü]*)$/);
+  const m = stem.match(/^(.*?)(aa|au|Au|[aouAOU])([^aouAOUäöü]*)$/);
   if (!m) return word;
-  const vowel = m[2].length === 2 ? `${UMLAUTS[m[2][0]]}u` : UMLAUTS[m[2]];
+  const vowel = m[2] === 'aa' ? 'ä' : m[2].length === 2 ? `${UMLAUTS[m[2][0]]}u` : UMLAUTS[m[2]];
   return m[1] + vowel + m[3] + suffix;
 }
 
 /** Plural forms a learner might wrongly guess, excluding the real one. */
-export function pluralDistractors(singular: string, plural: string): string[] {
+/** Dictionary-style plural endings: "-e" (Tisch → Tische), "¨-er" (Haus → Häuser), "–" (no change). */
+const ENDINGS: [label: string, apply: (singular: string) => string][] = [
+  ['–', (s) => s],
+  ['¨', umlaut],
+  ['-e', (s) => s + 'e'],
+  ['¨-e', (s) => umlaut(s) + 'e'],
+  ['-er', (s) => s + 'er'],
+  ['¨-er', (s) => umlaut(s) + 'er'],
+  ['-n', (s) => s + 'n'],
+  ['-en', (s) => s + 'en'],
+  ['¨-en', (s) => umlaut(s) + 'en'],
+  ['-nen', (s) => s + 'nen'],
+  ['-se', (s) => s + 'se'],
+  ['-s', (s) => s + 's'],
+];
+
+/**
+ * How a noun forms its plural, as a dictionary marks it: "-e", "¨-er", "–".
+ * Irregular plurals show the swapped ending instead: Museum → Museen is "-um → -en".
+ */
+export function pluralEnding(singular: string, plural: string): string {
+  const canUmlaut = umlaut(singular) !== singular;
+  const hit = ENDINGS.find(([label, apply]) => (canUmlaut || !label.startsWith('¨')) && apply(singular) === plural);
+  if (hit) return hit[0];
+  let i = 0;
+  while (singular[i] === plural[i]) i++;
+  return `-${singular.slice(i)} → -${plural.slice(i)}`;
+}
+
+/** The right ending plus three wrong endings that suit the noun's shape. Never invents a word. */
+export function pluralEndingOptions(singular: string, plural: string): string[] {
+  const answer = pluralEnding(singular, plural);
+  // Words with these endings never umlaut in the plural (Allergie → Allergien).
+  const canUmlaut =
+    umlaut(singular) !== singular && !/(ie|ei|ung|heit|keit|schaft|ion|tät|ik|ur|enz|anz|ment|um|in|chen|lein)$/.test(singular);
   const endsE = singular.endsWith('e');
   const endsElEr = /(el|er|en)$/.test(singular);
-  // Words with these endings never umlaut in the plural ("Allergien", not "Ällergie").
-  const u = /(ie|ei|ung|heit|keit|schaft|ion|tät|ik|ur|enz|anz|ment|um|in|chen|lein)$/.test(singular)
-    ? singular
-    : umlaut(singular);
-  const candidates = [
-    singular,
-    !endsE && singular + 'e',
-    !endsE && !endsElEr && singular + 'en',
-    (endsE || endsElEr) && singular + 'n',
-    !endsE && !endsElEr && singular + 'er',
-    singular + 's',
-    u !== singular && u,
-    u !== singular && !endsE && u + 'e',
-    u !== singular && !endsE && !endsElEr && u + 'er',
-  ];
-  const result = [...new Set(candidates.filter((c): c is string => !!c && c !== plural))];
-  // Short words like "Tee" get few rule-based candidates; top up with other endings.
-  // Never add a second e: "Höhleen" is no plausible guess.
-  for (const extra of endsE ? [singular + 'r', singular + 'rn'] : [singular + 'en', singular + 'er', singular + 'e']) {
-    if (result.length >= 3) break;
-    if (extra !== plural && !result.includes(extra)) result.push(extra);
-  }
-  return result;
+  const fits: Record<string, boolean> = {
+    '–': true,
+    '¨': canUmlaut,
+    '-e': !endsE,
+    '¨-e': canUmlaut && !endsE,
+    '-er': !endsE && !endsElEr,
+    '¨-er': canUmlaut && !endsE && !endsElEr,
+    '-n': endsE || endsElEr,
+    '-en': !endsE && !endsElEr,
+    '-nen': singular.endsWith('in'),
+    '-se': singular.endsWith('s'),
+    '-s': true,
+  };
+  const wrong = shuffle(Object.keys(fits).filter((l) => fits[l] && l !== answer));
+  // Short lists (Lampe: only "–" and "-s" fit) are topped up with other common endings.
+  for (const extra of ['-e', '-en', '-er', '-n']) if (wrong.length < 3 && extra !== answer && !wrong.includes(extra)) wrong.push(extra);
+  return [answer, ...wrong.slice(0, 3)];
 }

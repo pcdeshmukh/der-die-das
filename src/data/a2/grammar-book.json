@@ -672,7 +672,7 @@
         "es": "¿Has recibido mi invitación?",
         "options": [
           "Einladung",
-          "Einlade",
+          "einladen",
           "Bestellung"
         ]
       },
@@ -683,7 +683,7 @@
         "es": "Buscamos un piso nuevo.",
         "options": [
           "Wohnung",
-          "Wohne",
+          "wohnen",
           "Zeitung"
         ]
       },
@@ -694,7 +694,7 @@
         "es": "Su pedido ha llegado hoy.",
         "options": [
           "Bestellung",
-          "Bestelle",
+          "bestellen",
           "Wohnung"
         ]
       },
@@ -705,7 +705,7 @@
         "es": "El examen dura dos horas.",
         "options": [
           "Prüfung",
-          "Prüfe",
+          "prüfen",
           "Übung"
         ]
       },
@@ -716,7 +716,7 @@
         "es": "Haz este ejercicio en casa, por favor.",
         "options": [
           "Übung",
-          "Übe",
+          "üben",
           "Prüfung"
         ]
       },
@@ -727,7 +727,7 @@
         "es": "Tengo una reserva para dos noches.",
         "options": [
           "Buchung",
-          "Buche",
+          "buchen",
           "Rechnung"
         ]
       },
@@ -738,7 +738,7 @@
         "es": "¿Me puede explicar la factura?",
         "options": [
           "Rechnung",
-          "Rechne",
+          "rechnen",
           "Lösung"
         ]
       },
@@ -749,7 +749,7 @@
         "es": "¿Conoces la solución al problema?",
         "options": [
           "Lösung",
-          "Löse",
+          "lösen",
           "Meinung"
         ]
       },
@@ -760,7 +760,7 @@
         "es": "¿Cuál es tu opinión?",
         "options": [
           "Meinung",
-          "Meine",
+          "meinen",
           "Lösung"
         ]
       },
@@ -771,7 +771,7 @@
         "es": "Los muebles del piso son muy modernos.",
         "options": [
           "Einrichtung",
-          "Einrichte",
+          "einrichten",
           "Wohnung"
         ]
       },
@@ -782,7 +782,7 @@
         "es": "Necesitas moverte más.",
         "options": [
           "Bewegung",
-          "Bewege",
+          "bewegen",
           "Erholung"
         ]
       },
@@ -793,7 +793,7 @@
         "es": "En vacaciones lo que más necesito es descansar.",
         "options": [
           "Erholung",
-          "Erhole",
+          "erholen",
           "Bewegung"
         ]
       },
@@ -804,7 +804,7 @@
         "es": "La inscripción para el curso es por internet.",
         "options": [
           "Anmeldung",
-          "Anmelde",
+          "anmelden",
           "Einladung"
         ]
       }
@@ -1058,8 +1058,8 @@
         "es": "¿Quieres agua o zumo? – Prefiero un zumo.",
         "options": [
           "lieber",
-          "am liebsten",
-          "gerner"
+          "liebsten",
+          "mehr"
         ]
       },
       {
@@ -1114,7 +1114,7 @@
         "options": [
           "Am liebsten",
           "Lieber",
-          "Gerner"
+          "Liebsten"
         ]
       },
       {
@@ -1163,8 +1163,8 @@
         "es": "Hoy hace sol. Vamos a la playa.",
         "options": [
           "sonnig",
-          "sonnlich",
-          "windig"
+          "Sonne",
+          "sonnen"
         ]
       },
       {
@@ -1174,7 +1174,7 @@
         "es": "¡Sujeta el sombrero, hace mucho viento!",
         "options": [
           "windig",
-          "windlich",
+          "Wind",
           "sonnig"
         ]
       },
@@ -1185,7 +1185,7 @@
         "es": "Los niños están durmiendo, por favor, no hagas ruido.",
         "options": [
           "ruhig",
-          "ruhlich",
+          "Ruhe",
           "lustig"
         ]
       },
@@ -1196,8 +1196,8 @@
         "es": "La película fue muy divertida. Nos reímos mucho.",
         "options": [
           "lustig",
-          "lustlich",
-          "ruhig"
+          "Lust",
+          "lustlos"
         ]
       },
       {
@@ -1207,7 +1207,7 @@
         "es": "Tus zapatos están muy sucios.",
         "options": [
           "schmutzig",
-          "schmutzlich",
+          "Schmutz",
           "wolkig"
         ]
       },
@@ -1218,8 +1218,8 @@
         "es": "No llueve, pero está nublado.",
         "options": [
           "wolkig",
-          "wolklich",
-          "eisig"
+          "Wolke",
+          "Wolken"
         ]
       },
       {
@@ -1229,8 +1229,8 @@
         "es": "En otoño a menudo hay niebla.",
         "options": [
           "neblig",
-          "nebelich",
-          "sonnig"
+          "Nebel",
+          "nebeln"
         ]
       },
       {
@@ -1240,7 +1240,7 @@
         "es": "Hoy el viento es helado.",
         "options": [
           "eisig",
-          "eislich",
+          "Eis",
           "windig"
         ]
       },
@@ -1251,7 +1251,7 @@
         "es": "No tengo hambre, pero tengo sed.",
         "options": [
           "durstig",
-          "durstlich",
+          "Durst",
           "hungrig"
         ]
       },
@@ -1262,8 +1262,8 @@
         "es": "Después del deporte siempre tengo mucha hambre.",
         "options": [
           "hungrig",
-          "hungerlich",
-          "durstig"
+          "Hunger",
+          "hungern"
         ]
       },
       {
@@ -1273,7 +1273,7 @@
         "es": "¡Ten cuidado, el cuchillo está afilado!",
         "options": [
           "vorsichtig",
-          "vorsichtlich",
+          "Vorsicht",
           "ruhig"
         ]
       },
@@ -1284,7 +1284,7 @@
         "es": "Ten paciencia, por favor, el médico viene enseguida.",
         "options": [
           "geduldig",
-          "geduldlich",
+          "Geduld",
           "lustig"
         ]
       },
@@ -1295,7 +1295,7 @@
         "es": "Mi compañero es muy gracioso. Siempre me hace reír.",
         "options": [
           "witzig",
-          "witzlich",
+          "Witz",
           "ruhig"
         ]
       },
@@ -1306,8 +1306,8 @@
         "es": "La calle está seca y polvorienta.",
         "options": [
           "staubig",
-          "staublich",
-          "schmutzig"
+          "Staub",
+          "stauben"
         ]
       }
     ]
@@ -1826,8 +1826,8 @@
         "es": "Mi tío conduce un taxi. Es taxista.",
         "options": [
           "Taxifahrer",
-          "Taxifahrung",
-          "Taxifahrt"
+          "Taxifahrt",
+          "Taxi"
         ]
       },
       {
@@ -1837,8 +1837,8 @@
         "es": "El señor Müller hace pan todas las mañanas. Es panadero.",
         "options": [
           "Bäcker",
-          "Backer",
-          "Backung"
+          "Bäckerei",
+          "backen"
         ]
       },
       {
@@ -1849,7 +1849,7 @@
         "options": [
           "Lehrerin",
           "Lehrer",
-          "Lehrung"
+          "Lehre"
         ]
       },
       {
@@ -1860,7 +1860,7 @@
         "options": [
           "Fußballspieler",
           "Fußballspiel",
-          "Fußballspielung"
+          "Fußball"
         ]
       },
       {
@@ -1882,7 +1882,7 @@
         "options": [
           "Malerin",
           "Maler",
-          "Malung"
+          "Malerei"
         ]
       },
       {
@@ -1892,8 +1892,8 @@
         "es": "Vende coches. Es vendedor de coches.",
         "options": [
           "Autoverkäufer",
-          "Autoverkaufer",
-          "Autoverkauf"
+          "Autoverkauf",
+          "Autoverkäuferin"
         ]
       },
       {
@@ -1903,8 +1903,8 @@
         "es": "Canta en un grupo. Es cantante.",
         "options": [
           "Sänger",
-          "Singer",
-          "Gesang"
+          "Gesang",
+          "Sängerin"
         ]
       },
       {
@@ -1914,8 +1914,8 @@
         "es": "Escucho esta emisora todos los días. Soy un oyente fiel.",
         "options": [
           "Hörer",
-          "Hörung",
-          "Hör"
+          "Hörerin",
+          "Gehör"
         ]
       },
       {
@@ -1925,7 +1925,7 @@
         "es": "El museo tuvo ayer 500 visitantes.",
         "options": [
           "Besucher",
-          "Besuchung",
+          "Besuch",
           "Besuchern"
         ]
       },
@@ -1937,7 +1937,7 @@
         "options": [
           "Radfahrer",
           "Radfahrt",
-          "Radfahrung"
+          "Radfahren"
         ]
       },
       {
@@ -1947,7 +1947,7 @@
         "es": "En la fábrica hay 200 trabajadores.",
         "options": [
           "Arbeiter",
-          "Arbeitung",
+          "Arbeit",
           "Arbeiten"
         ]
       },
@@ -1969,7 +1969,7 @@
         "es": "Kim baila en el teatro. Es bailarina.",
         "options": [
           "Tänzerin",
-          "Tanzerin",
+          "Tanz",
           "Tänzer"
         ]
       }

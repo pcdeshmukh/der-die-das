@@ -170,8 +170,8 @@
         "es": "He hecho la compra en el supermercado.",
         "options": [
           "eingekauft",
-          "geeinkauft",
-          "eingekaufen"
+          "einkaufen",
+          "kauft ein"
         ]
       },
       {
@@ -181,8 +181,8 @@
         "es": "Se ha levantado a las seis.",
         "options": [
           "aufgestanden",
-          "aufgesteht",
-          "geaufstanden"
+          "aufstehen",
+          "steht auf"
         ]
       },
       {
@@ -192,8 +192,8 @@
         "es": "Hemos visitado a nuestra tía.",
         "options": [
           "besucht",
-          "gebesucht",
-          "besuchen"
+          "besuchen",
+          "besuchte"
         ]
       },
       {
@@ -203,8 +203,8 @@
         "es": "¿Has entendido la tarea?",
         "options": [
           "verstanden",
-          "geverstanden",
-          "versteht"
+          "versteht",
+          "verstehen"
         ]
       },
       {
@@ -214,8 +214,8 @@
         "es": "Ha hablado mucho rato por teléfono con su madre.",
         "options": [
           "telefoniert",
-          "getelefoniert",
-          "telefonieren"
+          "telefonieren",
+          "telefonierte"
         ]
       },
       {
@@ -225,8 +225,8 @@
         "es": "Te he escrito un correo.",
         "options": [
           "geschrieben",
-          "geschreibt",
-          "schrieben"
+          "schreiben",
+          "schrieb"
         ]
       },
       {
@@ -236,8 +236,8 @@
         "es": "El tren ha llegado puntual.",
         "options": [
           "angekommen",
-          "geankommt",
-          "ankommen"
+          "ankommen",
+          "kommt an"
         ]
       },
       {
@@ -247,8 +247,8 @@
         "es": "Hemos ordenado el salón.",
         "options": [
           "aufgeräumt",
-          "geaufräumt",
-          "aufgeräumen"
+          "aufräumen",
+          "räumen auf"
         ]
       },
       {
@@ -258,8 +258,8 @@
         "es": "¿Cuándo has arreglado la bici?",
         "options": [
           "repariert",
-          "gerepariert",
-          "reparierst"
+          "reparierst",
+          "reparieren"
         ]
       },
       {
@@ -269,8 +269,8 @@
         "es": "La película ha empezado a las ocho.",
         "options": [
           "angefangen",
-          "angefängt",
-          "geanfangen"
+          "anfangen",
+          "fängt an"
         ]
       },
       {
@@ -280,8 +280,8 @@
         "es": "Me he olvidado la llave.",
         "options": [
           "vergessen",
-          "gevergessen",
-          "vergesst"
+          "vergesst",
+          "vergaß"
         ]
       },
       {
@@ -291,8 +291,8 @@
         "es": "Me ha traído un regalo.",
         "options": [
           "mitgebracht",
-          "mitgebringt",
-          "gemitbracht"
+          "mitbringen",
+          "bringt mit"
         ]
       }
     ]
