@@ -68,6 +68,6 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 
 **Platform constraints.**
 - `vite.config.ts` sets `base: '/der-die-das/'`; hash routing avoids server rewrites.
-- The service worker (vite-plugin-pwa, autoUpdate) caches aggressively. When checking a new build in a browser, unregister it or clear caches first.
+- The service worker (vite-plugin-pwa, autoUpdate) caches aggressively. When checking a new build in a browser, unregister it or clear caches first. Players can do the same with Settings → Update app (`src/lib/update.ts`), which keeps their progress.
 - Speech uses the browser's `speechSynthesis` (`src/lib/speech.ts`). Modes with `needsSpeech` are disabled where it's unsupported. Sound effects are synthesized in `src/lib/sfx.ts`.
 - Styling is a single `src/styles.css` with CSS variables and dark mode via `prefers-color-scheme`, laid out mobile-first (max-width 640px).

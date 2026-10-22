@@ -1,5 +1,6 @@
 import { t } from '../lib/i18n';
 import { hasGermanVoice, speak, speechSupported } from '../lib/speech';
+import { refreshApp } from '../lib/update';
 import { progress, resetProgress, setUiLang, updateSettings, type HintLang, type Settings as S, type UiLang } from '../lib/store';
 
 const LANG_NAMES: Record<UiLang, string> = { en: 'English', de: 'Deutsch', es: 'Español' };
@@ -56,6 +57,12 @@ export function Settings() {
           <p class="muted small">{t('noSpeech')}</p>
         )}
         <Toggle label={t('showHint')} field="showHint" />
+        <div class="setting-row">
+          <span class="muted small">{t('refreshHint')}</span>
+          <button class="btn small" onClick={() => refreshApp()}>
+            🔄 {t('refreshApp')}
+          </button>
+        </div>
         <div class="setting-row">
           <span />
           <button class="btn danger" onClick={() => confirm(t('resetConfirm')) && resetProgress()}>
