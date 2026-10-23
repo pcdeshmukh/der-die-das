@@ -24,6 +24,11 @@ with its own streak and a bonus.
 **Challenge a friend**: after a round, start a timed challenge and send the link. Your friend gets
 exactly the same questions and sees who won, and can challenge you back. No accounts needed.
 
+**Type the answers**: a switch on each topic page turns Der · Die · Das, Plural Rush, the verb games
+and grammar gaps into typing games. Der · Die · Das then asks for the German word with its article
+from its meaning. There are ä ö ü ß keys on screen; lower case and *ae/oe/ue/ss* still count, with a note
+on the right spelling.
+
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
 

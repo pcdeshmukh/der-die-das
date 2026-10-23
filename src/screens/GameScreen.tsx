@@ -53,6 +53,8 @@ export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: 
     () => (mode && canChallenge(topicId, mode.id) ? challengeHref(level, topicId, mode.id, newSeed()) : null),
     [round, level, topicId, mode],
   );
+  // Read once per round, like the pool.
+  const typing = useMemo(() => !!mode?.typeable && progress.peek().settings.typing, [round, mode]);
   if (!mode || !pool) return <NotFound />;
   if (!isPlayable(mode, pool)) {
     return (
@@ -72,6 +74,7 @@ export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: 
         level={level}
         pool={pool}
         starKey={starKey(level, topicId, mode.id)}
+        typing={typing}
         onRetry={() => setRound((r) => r + 1)}
         onExit={() => navigate(level.slug, topicId)}
       />

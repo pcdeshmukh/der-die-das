@@ -5,7 +5,7 @@ import { meaning, t, uiLang } from '../lib/i18n';
 import { REVIEW, VERBS, describeTopic, grammarLesson, isPlayable, modesFor, phraseLesson, poolFor, starKey } from '../lib/modes';
 import { href } from '../lib/router';
 import { speak, speechSupported } from '../lib/speech';
-import { progress } from '../lib/store';
+import { progress, updateSettings } from '../lib/store';
 import { NotFound } from './NotFound';
 
 export function TopicScreen({ level, topicId }: { level: Level; topicId: string }) {
@@ -16,6 +16,7 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
   const info = describeTopic(level, topicId);
   const modes = modesFor(level, topicId);
   if (!info || modes.length === 0) return <NotFound />;
+  const typing = p.settings.typing;
 
   return (
     <div class="screen">
@@ -25,6 +26,16 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
       {info.titleDe && uiLang() !== 'de' && <p class="muted subtitle">{info.titleDe}</p>}
       {lesson && <p class="rule-box">💡 {lesson.rule[uiLang()]}</p>}
 
+      {modes.some((m) => m.typeable) && (
+        <label class="setting-row type-switch">
+          <span>
+            ⌨️ {t('typeMode')}
+            <span class="muted small">{t('typeModeDesc')}</span>
+          </span>
+          <input type="checkbox" class="switch" checked={typing} onChange={(e) => updateSettings({ typing: e.currentTarget.checked })} />
+        </label>
+      )}
+
       <div class="mode-list">
         {modes.map((mode) => {
           const pool = poolFor(level, topicId, mode, p.words) ?? [];
@@ -33,12 +44,18 @@ export function TopicScreen({ level, topicId }: { level: Level; topicId: string 
           const key = starKey(level, topicId, mode.id);
           const playable = isPlayable(mode, pool);
           const reason = mode.needsSpeech && !speechSupported ? t('needsSpeech') : t('tooFew');
+          // Typing changes what these two games ask for; the others keep their description.
+          const desc =
+            typing && (mode.id === 'articles' || mode.id === 'plural') ? t(`mode_${mode.id}_typed`) : t(`mode_${mode.id}_desc`);
           const body = (
             <>
-              <span class="mode-icon">{mode.icon}</span>
+              <span class="mode-icon">
+                {mode.icon}
+                {typing && mode.typeable && <span class="mode-typing">⌨️</span>}
+              </span>
               <span class="mode-text">
                 <span class="mode-name">{lesson ? t('practice') : t(`mode_${mode.id}`)}</span>
-                <span class="mode-desc">{playable ? t(`mode_${mode.id}_desc`) : reason}</span>
+                <span class="mode-desc">{playable ? desc : reason}</span>
               </span>
               {key ? <Stars value={p.stars[key] ?? 0} /> : <span class="badge">{pool.length}</span>}
             </>

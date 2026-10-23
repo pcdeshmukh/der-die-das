@@ -1,5 +1,5 @@
 import type { ComponentChildren } from 'preact';
-import { useContext, useEffect, useState } from 'preact/hooks';
+import { useContext, useEffect, useRef, useState } from 'preact/hooks';
 import { GameBar } from '../components/GameBar';
 import { Results, type ReviewRow } from '../components/Results';
 import { formatDuration } from '../lib/duration';
@@ -8,6 +8,7 @@ import { playCorrect, playFinish, playWrong } from '../lib/sfx';
 import { speak } from '../lib/speech';
 import { starsFor, type Skill } from '../lib/srs';
 import { finishRound, recordAnswer } from '../lib/store';
+import { SPECIAL_LETTERS, grade, type Grade } from '../lib/typing';
 import { ChallengeLink } from './challengeContext';
 
 export type ChoiceLayout = 'articles' | 'grid' | 'list';
@@ -31,6 +32,20 @@ export interface ChoiceQuestion {
   /** the solution as a short phrase for the feedback line; omit it when the card already shows the answer */
   solution?: ComponentChildren;
   review: Omit<ReviewRow, 'key'>;
+  /** how to ask this question when the player types answers instead of tapping them */
+  typed?: TypedAnswer;
+}
+
+export interface TypedAnswer {
+  /** every answer that counts; the first is the one shown as the fix */
+  accepted: string[];
+  /** replaces the question's prompt, e.g. to show a meaning instead of the word */
+  prompt?: (answered: boolean) => ComponentChildren;
+  placeholder?: string;
+  /** shown under the input, e.g. the choices a grammar gap allows */
+  hint?: ComponentChildren;
+  /** replaces the question's solution */
+  solution?: ComponentChildren;
 }
 
 interface Props {
@@ -47,12 +62,31 @@ interface Props {
   timed?: boolean;
   /** extra lines on the results screen, rendered after onFinish */
   resultsExtra?: () => ComponentChildren;
+  /** type answers instead of picking them, for questions that support it */
+  typing?: boolean;
+}
+
+interface Picked {
+  text: string;
+  ok: boolean;
+  /** how a typed answer matched; 'close' means right apart from capitals or umlauts */
+  grade?: Grade;
 }
 
 /** One question at a time, pick one option; correct answers advance on their own. */
-export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExit, onFinish, resultsExtra, timed }: Props) {
+export function ChoiceGame({
+  questions,
+  starKey,
+  layout = 'grid',
+  onRetry,
+  onExit,
+  onFinish,
+  resultsExtra,
+  timed,
+  typing,
+}: Props) {
   const [index, setIndex] = useState(0);
-  const [chosen, setChosen] = useState<string | null>(null);
+  const [picked, setPicked] = useState<Picked | null>(null);
   const [results, setResults] = useState<boolean[]>([]);
   const [combo, setCombo] = useState(0);
   const [xp, setXp] = useState(0);
@@ -62,19 +96,33 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
   const challengeLink = useContext(ChallengeLink);
 
   const q = questions[index];
-  const answeredRight = chosen !== null && chosen === q.answer;
+  const typed = typing ? q.typed : undefined;
+  const answered = picked !== null;
+  const answeredRight = picked?.ok ?? false;
 
   function answer(option: string) {
-    if (chosen !== null) return;
+    if (picked) return;
     const ok = option === q.answer;
-    setChosen(option);
+    record({ text: option, ok });
+  }
+
+  function answerTyped(text: string) {
+    if (picked || !typed || !text.trim()) return;
+    const g = grade(text, typed.accepted);
+    record({ text, ok: g !== 'wrong', grade: g });
+  }
+
+  function record(p: Picked) {
+    const { ok } = p;
+    setPicked(p);
     setResults([...results, ok]);
     if (q.skill && q.statId) recordAnswer(q.skill, q.statId, ok);
     if (q.sayAfter) speak(q.sayAfter);
     if (ok) {
       const c = combo + 1;
       setCombo(c);
-      setXp(xp + 10 + Math.min(c - 1, 5) * 2);
+      // Typing is harder than tapping, so it earns more.
+      setXp(xp + (p.grade ? 15 : 10) + Math.min(c - 1, 5) * 2);
       playCorrect();
     } else {
       setCombo(0);
@@ -85,7 +133,7 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
   function advance() {
     if (index + 1 < questions.length) {
       setIndex(index + 1);
-      setChosen(null);
+      setPicked(null);
       return;
     }
     const correct = results.filter(Boolean).length;
@@ -105,19 +153,20 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
     return () => clearInterval(tick);
   }, [timed, done]);
 
-  // Correct answers move on by themselves; wrong ones wait so the player can read the fix.
+  // Correct answers move on by themselves; wrong ones (and typos) wait so the player can read the fix.
+  const waits = answered && (!answeredRight || picked.grade === 'close');
   useEffect(() => {
-    if (!answeredRight) return;
+    if (!answeredRight || waits) return;
     const timer = setTimeout(advance, 900);
     return () => clearTimeout(timer);
-  }, [answeredRight, index]);
+  }, [answeredRight, waits, index]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (done) return;
       const n = Number(e.key);
-      if (n >= 1 && n <= q.options.length) answer(q.options[n - 1]);
-      else if ((e.key === 'Enter' || e.key === ' ') && chosen !== null && !answeredRight) {
+      if (!typed && n >= 1 && n <= q.options.length) answer(q.options[n - 1]);
+      else if ((e.key === 'Enter' || (!typed && e.key === ' ')) && waits) {
         e.preventDefault();
         advance();
       }
@@ -148,13 +197,14 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
     );
   }
 
-  const state = chosen === null ? '' : answeredRight ? 'is-correct' : 'is-wrong';
+  const state = !answered ? '' : answeredRight ? 'is-correct' : 'is-wrong';
+  const solution = typed?.solution ?? q.solution;
   // Long options (e.g. "fünf nach halb zwölf") don't fit two per row on a phone.
   const base = q.layout ?? layout;
   const shownLayout = base === 'grid' && q.options.some((o) => o.length > 16) ? 'list' : base;
   return (
-    <div class="game">
-      <GameBar value={(index + (chosen !== null ? 1 : 0)) / questions.length} onQuit={onExit}>
+    <div class={typed ? 'game typing' : 'game'}>
+      <GameBar value={(index + (answered ? 1 : 0)) / questions.length} onQuit={onExit}>
         {timed ? (
           <span class="timer">⏱ {formatDuration(now - startedAt)}</span>
         ) : (
@@ -164,36 +214,118 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
 
       <div class="stage">
         <div class={`noun-card ${state}`} key={q.key}>
-          {q.prompt(chosen !== null)}
+          {(typed?.prompt ?? q.prompt)(answered)}
         </div>
+        {/* Right under the card, so the phone keyboard doesn't cover it. */}
+        {typed && <TypeAnswer key={index} typed={typed} answered={answered} onSubmit={answerTyped} />}
         <div class="feedback" aria-live="polite">
           {answeredRight && <p class="feedback-ok">{t('correct')}</p>}
-          {chosen !== null && !answeredRight && (
+          {picked?.grade === 'close' && (
+            <p class="feedback-spelling">
+              {t('spelling')} <b>{typed!.accepted[0]}</b>
+            </p>
+          )}
+          {answered && !answeredRight && (
             <>
-              {q.solution && (
+              {picked.grade && <p class="typed-wrong">{picked.text}</p>}
+              {/* A typed answer has no buttons to show the right one, so always spell it out. */}
+              {(solution || typed) && (
                 <p class="feedback-bad">
-                  {t('itIs')} {q.solution}
+                  {t('itIs')} {solution ?? <b>{typed!.accepted[0]}</b>}
                 </p>
               )}
-              <button class="btn primary" onClick={advance}>
-                {t('continue')}
-              </button>
             </>
+          )}
+          {waits && (
+            <button class="btn primary" onClick={advance}>
+              {t('continue')}
+            </button>
           )}
         </div>
       </div>
 
-      <div class={`choices choices-${shownLayout}`}>
-        {q.options.map((o, i) => {
-          const cls = chosen === null ? '' : o === q.answer ? 'reveal' : chosen === o ? 'picked-wrong' : 'dim';
-          return (
-            <button class={`choice ${q.optionClass?.(o) ?? ''} ${cls}`} disabled={chosen !== null} onClick={() => answer(o)}>
-              {o}
-              <kbd>{i + 1}</kbd>
-            </button>
-          );
-        })}
-      </div>
+      {!typed && (
+        <div class={`choices choices-${shownLayout}`}>
+          {q.options.map((o, i) => {
+            const cls = !answered ? '' : o === q.answer ? 'reveal' : picked.text === o ? 'picked-wrong' : 'dim';
+            return (
+              <button class={`choice ${q.optionClass?.(o) ?? ''} ${cls}`} disabled={answered} onClick={() => answer(o)}>
+                {o}
+                <kbd>{i + 1}</kbd>
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
+  );
+}
+
+/** A text field with ä ö ü ß keys, since many phone keyboards lack them. */
+function TypeAnswer({
+  typed,
+  answered,
+  onSubmit,
+}: {
+  typed: TypedAnswer;
+  answered: boolean;
+  onSubmit: (text: string) => void;
+}) {
+  const [text, setText] = useState('');
+  const input = useRef<HTMLInputElement>(null);
+  useEffect(() => input.current?.focus(), []);
+
+  function insert(letter: string) {
+    const el = input.current;
+    if (!el || answered) return;
+    const start = el.selectionStart ?? text.length;
+    const end = el.selectionEnd ?? text.length;
+    setText(text.slice(0, start) + letter + text.slice(end));
+    requestAnimationFrame(() => el.setSelectionRange(start + 1, start + 1));
+  }
+
+  return (
+    <form
+      class="type-answer"
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit(text);
+      }}
+    >
+      {typed.hint && <p class="type-hint muted small">{typed.hint}</p>}
+      <div class="type-row">
+        <input
+          ref={input}
+          class="type-input"
+          value={text}
+          readOnly={answered}
+          placeholder={typed.placeholder ?? t('typeHere')}
+          lang="de"
+          autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck={false}
+          enterkeyhint="done"
+          onInput={(e) => setText(e.currentTarget.value)}
+        />
+        <button class="btn primary" type="submit" disabled={answered || !text.trim()}>
+          {t('check')}
+        </button>
+      </div>
+      <div class="letter-keys">
+        {SPECIAL_LETTERS.map((l) => (
+          // mousedown would move focus off the input and close the phone keyboard
+          <button
+            type="button"
+            class="letter-key"
+            disabled={answered}
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={() => insert(l)}
+          >
+            {l}
+          </button>
+        ))}
+      </div>
+    </form>
   );
 }

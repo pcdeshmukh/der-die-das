@@ -52,16 +52,17 @@ export function conjugationQuestion(level: Level, { id, verb, person, tense }: V
     sayAfter: phrase,
     solution: <b>{phrase}</b>,
     review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${meaning(verb)}`, say: phrase },
+    typed: { accepted: [form, phrase] },
   };
 }
 
-function TenseGame({ tense, level, pool, starKey, onRetry, onExit }: GameProps<VerbForm> & { tense: Tense }) {
+function TenseGame({ tense, level, pool, starKey, onRetry, onExit, typing }: GameProps<VerbForm> & { tense: Tense }) {
   const [questions] = useState(() =>
     pickWords(pool, progress.peek().words, SKILL[tense], Math.min(ROUND_SIZE, pool.length)).map((f) =>
       conjugationQuestion(level, f),
     ),
   );
-  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} typing={typing} onRetry={onRetry} onExit={onExit} />;
 }
 
 export const ConjugationGame = (props: GameProps<VerbForm>) => <TenseGame tense="present" {...props} />;

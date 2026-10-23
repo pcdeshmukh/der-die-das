@@ -475,6 +475,32 @@ a.level-card .level-id {
   margin: 0;
   align-self: center;
 }
+.mode-icon {
+  position: relative;
+}
+.mode-typing {
+  position: absolute;
+  right: -8px;
+  bottom: -4px;
+  font-size: 1rem;
+}
+.type-switch {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.type-switch > span:first-child {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.type-switch .muted {
+  font-weight: 400;
+}
 
 .stars {
   white-space: nowrap;
@@ -714,6 +740,76 @@ a.level-card .level-id {
 }
 .feedback-bad {
   color: var(--text);
+}
+.feedback .feedback-spelling {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.feedback .typed-wrong {
+  color: var(--bad);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+/* Typing mode: everything at the top, above the phone keyboard. */
+.game.typing .stage {
+  flex: 0;
+  justify-content: flex-start;
+}
+.type-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.type-hint {
+  margin: 0;
+  text-align: center;
+}
+.type-row {
+  display: flex;
+  gap: 8px;
+}
+.type-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  /* 16px or more stops iOS from zooming in on focus */
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.type-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.letter-keys {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.letter-key {
+  min-width: 48px;
+  min-height: 40px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.type-row .btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.letter-key:disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .choices {

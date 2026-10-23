@@ -60,7 +60,7 @@ export function dailyQuestions(level: Level, day: string): ChoiceQuestion[] {
           ? informalTimeQuestion(0)
           : formalTimeQuestion(0);
     return shuffle([
-      ...pick(words, 2).map(articleQuestion),
+      ...pick(words, 2).map((w) => articleQuestion(w)),
       ...pick(words, 2).map((w) => meaningQuestion(w, words)),
       ...pick(plurals, 2).map(pluralQuestion),
       ...pick(verbForms(level), 2).map((f) => conjugationQuestion(level, f)),

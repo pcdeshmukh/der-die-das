@@ -55,14 +55,15 @@ export function perfectQuestion(level: Level, { id, verb }: PerfectRef): ChoiceQ
     sayAfter: phrase,
     solution: <b>{phrase}</b>,
     review: { label: <b>{phrase}</b>, sub: `${verb.infinitive} · ${meaning(verb)}`, say: phrase },
+    typed: { accepted: [answer, phrase], placeholder: t('typePerfect') },
   };
 }
 
-export function PerfectGame({ level, pool, starKey, onRetry, onExit }: GameProps<PerfectRef>) {
+export function PerfectGame({ level, pool, starKey, onRetry, onExit, typing }: GameProps<PerfectRef>) {
   const [questions] = useState(() =>
     pickWords(pool, progress.peek().words, 'perfect', Math.min(ROUND_SIZE, pool.length)).map((item) =>
       perfectQuestion(level, item),
     ),
   );
-  return <ChoiceGame questions={questions} starKey={starKey} layout="list" onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} layout="list" typing={typing} onRetry={onRetry} onExit={onExit} />;
 }

@@ -21,7 +21,7 @@ export const CHALLENGE_SIZE = 10;
 
 /** Games whose questions come only from content and the seed (no speech, no own interaction). */
 const BUILDERS: Partial<Record<ModeId, (level: Level, items: unknown[]) => ChoiceQuestion[]>> = {
-  articles: (_, items) => (items as WordRef[]).map(articleQuestion),
+  articles: (_, items) => (items as WordRef[]).map((w) => articleQuestion(w)),
   plural: (_, items) => (items as WordRef[]).map(pluralQuestion),
   conjugate: (level, items) => (items as VerbForm[]).map((f) => conjugationQuestion(level, f)),
   preterite: (level, items) => (items as VerbForm[]).map((f) => conjugationQuestion(level, f)),

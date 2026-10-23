@@ -8,4 +8,6 @@ export interface GameProps<T extends Item = Item> {
   starKey: string | null;
   onRetry: () => void;
   onExit: () => void;
+  /** type answers instead of picking them (games whose mode is `typeable`) */
+  typing?: boolean;
 }

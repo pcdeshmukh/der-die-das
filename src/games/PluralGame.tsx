@@ -46,12 +46,23 @@ export function pluralQuestion(w: WordRef): ChoiceQuestion {
       emoji: w.emoji,
       say: `${w.article} ${w.de}, die ${plural}`,
     },
+    typed: {
+      accepted: [plural, `die ${plural}`],
+      placeholder: t('typePlural'),
+      prompt: (answered) => (
+        <NounPrompt word={w}>
+          <div class="plural-line">
+            → <span class="art-die">die</span> {answered ? plural : '___'}
+          </div>
+        </NounPrompt>
+      ),
+    },
   };
 }
 
-export function PluralGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>) {
+export function PluralGame({ pool, starKey, onRetry, onExit, typing }: GameProps<WordRef>) {
   const [questions] = useState(() =>
     pickWords(pool, progress.peek().words, 'plural', Math.min(ROUND_SIZE, pool.length)).map(pluralQuestion),
   );
-  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} typing={typing} onRetry={onRetry} onExit={onExit} />;
 }

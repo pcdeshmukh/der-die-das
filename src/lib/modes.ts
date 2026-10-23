@@ -31,20 +31,22 @@ export interface Mode {
   /** minimum items needed to play */
   min: number;
   needsSpeech?: boolean;
+  /** answers can be typed instead of picked (the "Type the answers" switch) */
+  typeable?: boolean;
 }
 
 export const MODES: Mode[] = [
-  { id: 'articles', section: 'vocab', skill: 'article', icon: '🎯', min: 1 },
+  { id: 'articles', section: 'vocab', skill: 'article', icon: '🎯', min: 1, typeable: true },
   { id: 'match', section: 'vocab', skill: 'meaning', icon: '🧩', min: 3 },
-  { id: 'plural', section: 'vocab', skill: 'plural', icon: '👯', min: 1 },
+  { id: 'plural', section: 'vocab', skill: 'plural', icon: '👯', min: 1, typeable: true },
   { id: 'listen', section: 'vocab', skill: 'listening', icon: '👂', min: 1, needsSpeech: true },
   { id: 'sentences', section: 'vocab', skill: 'sentence', icon: '🧱', min: 1 },
-  { id: 'conjugate', section: 'verbs', skill: 'conjugation', icon: '🔤', min: 1 },
-  { id: 'preterite', section: 'verbs', skill: 'preterite', icon: '⏪', min: 1 },
-  { id: 'perfect', section: 'verbs', skill: 'perfect', icon: '✅', min: 1 },
+  { id: 'conjugate', section: 'verbs', skill: 'conjugation', icon: '🔤', min: 1, typeable: true },
+  { id: 'preterite', section: 'verbs', skill: 'preterite', icon: '⏪', min: 1, typeable: true },
+  { id: 'perfect', section: 'verbs', skill: 'perfect', icon: '✅', min: 1, typeable: true },
   { id: 'numbers', section: 'numbers', skill: null, icon: '🔢', min: 0 },
   { id: 'time', section: 'numbers', skill: null, icon: '🕒', min: 0 },
-  { id: 'grammar', section: 'grammar', skill: 'grammar', icon: '✏️', min: 1 },
+  { id: 'grammar', section: 'grammar', skill: 'grammar', icon: '✏️', min: 1, typeable: true },
   { id: 'phrases', section: 'phrases', skill: 'phrases', icon: '💬', min: 1 },
   { id: 'alphabet', section: 'alphabet', skill: null, icon: '🔡', min: 0, needsSpeech: true },
 ];

@@ -16,6 +16,8 @@ export interface Settings {
   showHint: boolean;
   /** shown to friends in challenge links */
   name: string;
+  /** type answers instead of tapping them, in games that allow it */
+  typing: boolean;
 }
 
 export interface Streak {
@@ -61,6 +63,7 @@ function defaults(): Progress {
       speech: true,
       showHint: true,
       name: '',
+      typing: false,
     },
   };
 }

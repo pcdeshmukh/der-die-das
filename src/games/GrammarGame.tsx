@@ -40,6 +40,7 @@ export function grammarQuestion(item: GrammarRef): ChoiceQuestion {
   // The filled-in sentence; for "pick the sentence" items the answer is the sentence.
   const full = hasGap ? item.q.replace(GAP, item.a) : item.a;
   const spokenPart = full.split(' – ')[0];
+  const options = optionsFor(item);
   return {
     key: `grammar:${item.id}`,
     statId: item.id,
@@ -52,17 +53,19 @@ export function grammarQuestion(item: GrammarRef): ChoiceQuestion {
         <SpeakButton text={answered ? spokenPart : hasGap ? item.q.replace(GAP, '…') : item.q} />
       </>
     ),
-    options: optionsFor(item),
+    options,
     answer: item.a,
     sayAfter: spokenPart,
     solution: <b>{item.a}</b>,
     review: { label: full, sub: meaning(item), emoji: item.lesson.emoji, say: spokenPart },
+    // Only gaps can be typed; a gap can have more than one fitting word, so the choices stay visible as a hint.
+    typed: hasGap ? { accepted: [item.a], hint: options.join(' · ') } : undefined,
   };
 }
 
-export function GrammarGame({ pool, starKey, onRetry, onExit }: GameProps<GrammarRef>) {
+export function GrammarGame({ pool, starKey, onRetry, onExit, typing }: GameProps<GrammarRef>) {
   const [questions] = useState(() =>
     pickWords(pool, progress.peek().words, 'grammar', Math.min(ROUND_SIZE, pool.length)).map(grammarQuestion),
   );
-  return <ChoiceGame questions={questions} starKey={starKey} onRetry={onRetry} onExit={onExit} />;
+  return <ChoiceGame questions={questions} starKey={starKey} typing={typing} onRetry={onRetry} onExit={onExit} />;
 }
