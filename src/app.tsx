@@ -3,6 +3,7 @@ import { LevelGate } from './components/LevelGate';
 import { levelInfo } from './data';
 import type { Level } from './data/types';
 import { route } from './lib/router';
+import { ChallengeScreen } from './screens/ChallengeScreen';
 import { ChapterScreen } from './screens/ChapterScreen';
 import { DailyScreen } from './screens/DailyScreen';
 import { GameScreen } from './screens/GameScreen';
@@ -17,6 +18,16 @@ function Screen({ parts }: { parts: string[] }) {
   if (parts.length === 0) return <Home />;
   if (parts.length === 1 && parts[0] === 'settings') return <Settings />;
   if (parts.length === 1 && parts[0] === 'daily') return <DailyScreen />;
+  // A challenge link: #/challenge/<level>/<topic>/<mode>/<seed>[/<name>/<correct>/<total>/<seconds>]
+  if (parts[0] === 'challenge') {
+    const info = levelInfo(parts[1] ?? '');
+    if (!info?.available || parts.length < 5) return <NotFound />;
+    return (
+      <LevelGate key={info.id} id={info.id}>
+        {(level) => <ChallengeScreen level={level} parts={parts.slice(1)} />}
+      </LevelGate>
+    );
+  }
   const info = levelInfo(parts[0]);
   if (!info?.available || parts.length > 3) return <NotFound />;
   return (
@@ -40,7 +51,7 @@ function LevelPage({ level, parts }: { level: Level; parts: string[] }) {
 
 export function App() {
   const parts = route.value;
-  const inGame = parts.length === 3 || parts[0] === 'daily';
+  const inGame = parts.length === 3 || parts[0] === 'daily' || parts[0] === 'challenge';
   return (
     <div class={inGame ? 'app in-game' : 'app'}>
       {!inGame && <Header parts={parts} />}

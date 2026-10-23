@@ -14,6 +14,8 @@ export interface Settings {
   sound: boolean;
   speech: boolean;
   showHint: boolean;
+  /** shown to friends in challenge links */
+  name: string;
 }
 
 export interface Streak {
@@ -58,6 +60,7 @@ function defaults(): Progress {
       sound: true,
       speech: true,
       showHint: true,
+      name: '',
     },
   };
 }

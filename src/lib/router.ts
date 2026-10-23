@@ -2,7 +2,7 @@ import { signal } from '@preact/signals';
 
 // Hash routing keeps GitHub Pages happy (no server-side rewrites needed).
 const parse = () =>
-  location.hash
+  (typeof location === 'undefined' ? '' : location.hash)
     .replace(/^#\/?/, '')
     .split('/')
     .filter(Boolean)
@@ -10,10 +10,13 @@ const parse = () =>
 
 export const route = signal<string[]>(parse());
 
-addEventListener('hashchange', () => {
-  route.value = parse();
-  scrollTo(0, 0);
-});
+// Tests import this module outside a browser.
+if (typeof window !== 'undefined') {
+  addEventListener('hashchange', () => {
+    route.value = parse();
+    scrollTo(0, 0);
+  });
+}
 
 export const href = (...parts: string[]) => '#/' + parts.map(encodeURIComponent).join('/');
 

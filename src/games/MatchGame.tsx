@@ -3,6 +3,7 @@ import { GameBar } from '../components/GameBar';
 import { NounLabel } from '../components/NounLabel';
 import { Results } from '../components/Results';
 import type { WordRef } from '../data/types';
+import { formatDuration } from '../lib/duration';
 import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
@@ -21,11 +22,6 @@ function toBoards(words: WordRef[]): WordRef[][] {
   if (boards.length > 1 && boards[boards.length - 1].length < 3) boards[boards.length - 2].push(...boards.pop()!);
   return boards;
 }
-
-const formatTime = (ms: number) => {
-  const s = Math.floor(ms / 1000);
-  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
-};
 
 export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>) {
   const [words] = useState(() => pickWords(pool, progress.peek().words, 'meaning', Math.min(ROUND_SIZE, pool.length)));
@@ -113,7 +109,7 @@ export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>
         onExit={onExit}
       >
         <p class="muted">
-          ⏱ {formatTime(done.time)} · {t('mistakes', { n: mistakes })}
+          ⏱ {formatDuration(done.time)} · {t('mistakes', { n: mistakes })}
         </p>
       </Results>
     );
@@ -133,7 +129,7 @@ export function MatchGame({ pool, starKey, onRetry, onExit }: GameProps<WordRef>
   return (
     <div class="game">
       <GameBar value={(doneBefore + matched.size) / words.length} onQuit={onExit}>
-        <span class="timer">⏱ {formatTime(now - startedAt)}</span>
+        <span class="timer">⏱ {formatDuration(now - startedAt)}</span>
       </GameBar>
       <p class="muted small center">{t('matchHint')}</p>
       <div class="match-board" key={board}>

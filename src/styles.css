@@ -1186,6 +1186,56 @@ a.level-card .level-id {
     transition: none !important;
   }
 }
+.challenge-btn {
+  margin-top: 8px;
+}
+.challenge-intro {
+  gap: 12px;
+}
+.challenge-intro .btn {
+  width: min(320px, 100%);
+}
+.challenge-score {
+  font-weight: 700;
+  margin: 0;
+}
+.challenge-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.challenge-table {
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.challenge-table td {
+  padding: 4px 12px;
+  text-align: left;
+}
+.challenge-table .me {
+  font-weight: 800;
+}
+.challenge-outcome {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+}
+.challenge-name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: min(320px, 100%);
+}
+.challenge-name input {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
 .results-actions.single {
   grid-template-columns: 1fr;
 }

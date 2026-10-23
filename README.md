@@ -21,6 +21,9 @@ digit grouping), Telling the time, Alphabet & spelling.
 **Daily challenge**: 12 mixed questions, the same for everyone on a given day, one attempt per day,
 with its own streak and a bonus.
 
+**Challenge a friend**: after a round, start a timed challenge and send the link. Your friend gets
+exactly the same questions and sees who won, and can challenge you back. No accounts needed.
+
 **Mixed** draws from every topic, and **Review** collects whatever you last got wrong in any game.
 Items you miss come back sooner (Leitner-style spaced repetition).
 

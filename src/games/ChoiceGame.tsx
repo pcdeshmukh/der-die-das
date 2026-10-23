@@ -1,12 +1,14 @@
 import type { ComponentChildren } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useContext, useEffect, useState } from 'preact/hooks';
 import { GameBar } from '../components/GameBar';
 import { Results, type ReviewRow } from '../components/Results';
+import { formatDuration } from '../lib/duration';
 import { t } from '../lib/i18n';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
 import { speak } from '../lib/speech';
 import { starsFor, type Skill } from '../lib/srs';
 import { finishRound, recordAnswer } from '../lib/store';
+import { ChallengeLink } from './challengeContext';
 
 export type ChoiceLayout = 'articles' | 'grid' | 'list';
 
@@ -39,20 +41,25 @@ interface Props {
   /** omit to hide "Play again" (one-shot rounds like the daily challenge) */
   onRetry?: () => void;
   onExit: () => void;
-  /** called once when the round ends, after the usual progress is saved */
-  onFinish?: (correct: number, total: number) => void;
+  /** called once when the round ends, after the usual progress is saved; `ms` is the time taken */
+  onFinish?: (correct: number, total: number, ms: number) => void;
+  /** show a running clock in the game bar (challenges) */
+  timed?: boolean;
   /** extra lines on the results screen, rendered after onFinish */
   resultsExtra?: () => ComponentChildren;
 }
 
 /** One question at a time, pick one option; correct answers advance on their own. */
-export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExit, onFinish, resultsExtra }: Props) {
+export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExit, onFinish, resultsExtra, timed }: Props) {
   const [index, setIndex] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
   const [results, setResults] = useState<boolean[]>([]);
   const [combo, setCombo] = useState(0);
   const [xp, setXp] = useState(0);
   const [done, setDone] = useState(false);
+  const [startedAt] = useState(Date.now);
+  const [now, setNow] = useState(startedAt);
+  const challengeLink = useContext(ChallengeLink);
 
   const q = questions[index];
   const answeredRight = chosen !== null && chosen === q.answer;
@@ -83,7 +90,7 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
     }
     const correct = results.filter(Boolean).length;
     finishRound(starKey, starsFor(correct, questions.length), xp);
-    onFinish?.(correct, questions.length);
+    onFinish?.(correct, questions.length, Date.now() - startedAt);
     playFinish();
     setDone(true);
   }
@@ -91,6 +98,12 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
   useEffect(() => {
     if (q.sayFirst && !done) speak(q.sayFirst, true);
   }, [index]);
+
+  useEffect(() => {
+    if (!timed || done) return;
+    const tick = setInterval(() => setNow(Date.now()), 250);
+    return () => clearInterval(tick);
+  }, [timed, done]);
 
   // Correct answers move on by themselves; wrong ones wait so the player can read the fix.
   useEffect(() => {
@@ -126,6 +139,11 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
         onExit={onExit}
       >
         {resultsExtra?.()}
+        {challengeLink && (
+          <a class="btn challenge-btn" href={challengeLink}>
+            ⚔️ {t('challengeFriend')}
+          </a>
+        )}
       </Results>
     );
   }
@@ -137,7 +155,11 @@ export function ChoiceGame({ questions, starKey, layout = 'grid', onRetry, onExi
   return (
     <div class="game">
       <GameBar value={(index + (chosen !== null ? 1 : 0)) / questions.length} onQuit={onExit}>
-        {combo >= 3 && <span class="combo">🔥 {t('combo', { n: combo })}</span>}
+        {timed ? (
+          <span class="timer">⏱ {formatDuration(now - startedAt)}</span>
+        ) : (
+          combo >= 3 && <span class="combo">🔥 {t('combo', { n: combo })}</span>
+        )}
       </GameBar>
 
       <div class="stage">

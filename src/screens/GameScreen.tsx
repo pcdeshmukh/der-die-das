@@ -2,6 +2,8 @@ import type { FunctionComponent } from 'preact';
 import { useMemo, useState } from 'preact/hooks';
 import type { Level } from '../data/types';
 import { AlphabetGame } from '../games/AlphabetGame';
+import { canChallenge, challengeHref, newSeed } from '../games/challenge';
+import { ChallengeLink } from '../games/challengeContext';
 import { ArticleGame } from '../games/ArticleGame';
 import { ConjugationGame, PreteriteGame } from '../games/ConjugationGame';
 import { GrammarGame } from '../games/GrammarGame';
@@ -46,6 +48,11 @@ export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: 
     () => (mode ? poolFor(level, topicId, mode, progress.peek().words) : null),
     [round, level, topicId, mode],
   );
+  // Results screens offer "Challenge a friend": a fresh seeded round of the same game.
+  const challenge = useMemo(
+    () => (mode && canChallenge(topicId, mode.id) ? challengeHref(level, topicId, mode.id, newSeed()) : null),
+    [round, level, topicId, mode],
+  );
   if (!mode || !pool) return <NotFound />;
   if (!isPlayable(mode, pool)) {
     return (
@@ -59,13 +66,15 @@ export function GameScreen({ level, topicId, modeId }: { level: Level; topicId: 
   }
   const Game = GAMES[mode.id];
   return (
-    <Game
-      key={round}
-      level={level}
-      pool={pool}
-      starKey={starKey(level, topicId, mode.id)}
-      onRetry={() => setRound((r) => r + 1)}
-      onExit={() => navigate(level.slug, topicId)}
-    />
+    <ChallengeLink.Provider value={challenge}>
+      <Game
+        key={round}
+        level={level}
+        pool={pool}
+        starKey={starKey(level, topicId, mode.id)}
+        onRetry={() => setRound((r) => r + 1)}
+        onExit={() => navigate(level.slug, topicId)}
+      />
+    </ChallengeLink.Provider>
   );
 }
