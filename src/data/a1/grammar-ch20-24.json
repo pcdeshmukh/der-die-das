@@ -1516,6 +1516,167 @@
           "wird",
           "würdest"
         ]
+      },
+      {
+        "q": "Wir ___ gern ein Picknick mitten auf dem Romanplatz machen.",
+        "a": "würden",
+        "en": "We would like to have a picnic in the middle of Romanplatz.",
+        "es": "Nos gustaría hacer un pícnic en medio del Romanplatz.",
+        "options": [
+          "würden",
+          "würde",
+          "würdet",
+          "würdest"
+        ]
+      },
+      {
+        "q": "Ich ___ lieber den ganzen Tag zu Hause bleiben.",
+        "a": "würde",
+        "en": "I would rather stay at home all day.",
+        "es": "Preferiría quedarme en casa todo el día.",
+        "options": [
+          "würde",
+          "würdest",
+          "würden",
+          "würdet"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wuerdeende",
+    "title": {
+      "en": "würde … infinitive at the end",
+      "de": "würde … Infinitiv am Ende",
+      "es": "würde … infinitivo al final"
+    },
+    "emoji": "🔚",
+    "rule": {
+      "en": "würde is in position 2 and the infinitive goes to the end: Ich würde gern mit meinen Kindern auf der Straße spielen. gern = a wish, lieber = what you would prefer: Ich würde lieber zu Hause bleiben.",
+      "de": "würde steht auf Position 2, der Infinitiv steht am Ende: Ich würde gern mit meinen Kindern auf der Straße spielen. gern = ein Wunsch, lieber = das möchte man mehr: Ich würde lieber zu Hause bleiben.",
+      "es": "würde va en la posición 2 y el infinitivo al final: Ich würde gern mit meinen Kindern auf der Straße spielen. gern = un deseo, lieber = lo que preferirías: Ich würde lieber zu Hause bleiben."
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Ich würde gern mit meinen Kindern auf der Straße ___.",
+        "a": "spielen",
+        "en": "I would like to play in the street with my children.",
+        "es": "Me gustaría jugar en la calle con mis hijos.",
+        "options": [
+          "spielen",
+          "spiele",
+          "spielt",
+          "gespielt"
+        ]
+      },
+      {
+        "q": "Wir würden gern ein Picknick mitten auf dem Romanplatz ___.",
+        "a": "machen",
+        "en": "We would like to have a picnic in the middle of Romanplatz.",
+        "es": "Nos gustaría hacer un pícnic en medio del Romanplatz.",
+        "options": [
+          "machen",
+          "macht",
+          "mache",
+          "gemacht"
+        ]
+      },
+      {
+        "q": "Ich würde lieber den ganzen Tag zu Hause ___.",
+        "a": "bleiben",
+        "en": "I would rather stay at home all day.",
+        "es": "Preferiría quedarme en casa todo el día.",
+        "options": [
+          "bleiben",
+          "bleibe",
+          "bleibt",
+          "geblieben"
+        ]
+      },
+      {
+        "q": "Würdest du am Samstag gern ins Kino ___?",
+        "a": "gehen",
+        "en": "Would you like to go to the cinema on Saturday?",
+        "es": "¿Te gustaría ir al cine el sábado?",
+        "options": [
+          "gehen",
+          "gehst",
+          "geht",
+          "gegangen"
+        ]
+      },
+      {
+        "q": "Meine Schwester würde gern in Berlin ___.",
+        "a": "wohnen",
+        "en": "My sister would like to live in Berlin.",
+        "es": "A mi hermana le gustaría vivir en Berlín.",
+        "options": [
+          "wohnen",
+          "wohnt",
+          "wohnst",
+          "gewohnt"
+        ]
+      },
+      {
+        "q": "Wir würden lieber im Garten ___.",
+        "a": "feiern",
+        "en": "We would rather celebrate in the garden.",
+        "es": "Preferiríamos celebrarlo en el jardín.",
+        "options": [
+          "feiern",
+          "feiert",
+          "feiere",
+          "gefeiert"
+        ]
+      },
+      {
+        "q": "Er würde gern einen Kuchen für das Fest ___.",
+        "a": "backen",
+        "en": "He would like to bake a cake for the party.",
+        "es": "Le gustaría hacer un pastel para la fiesta.",
+        "options": [
+          "backen",
+          "backt",
+          "backst",
+          "gebacken"
+        ]
+      },
+      {
+        "q": "Würden Sie gern etwas ___?",
+        "a": "trinken",
+        "en": "Would you like something to drink?",
+        "es": "¿Le gustaría tomar algo?",
+        "options": [
+          "trinken",
+          "trinkt",
+          "trinke",
+          "getrunken"
+        ]
+      },
+      {
+        "q": "Am Sonntag würde ich gern lange ___.",
+        "a": "schlafen",
+        "en": "On Sunday I would like to sleep in.",
+        "es": "El domingo me gustaría dormir hasta tarde.",
+        "options": [
+          "schlafen",
+          "schlafe",
+          "schläft",
+          "geschlafen"
+        ]
+      },
+      {
+        "q": "Ihr würdet lieber ans Meer ___, oder?",
+        "a": "fahren",
+        "en": "You would rather go to the seaside, wouldn't you?",
+        "es": "Preferiríais ir al mar, ¿verdad?",
+        "options": [
+          "fahren",
+          "fahrt",
+          "fährt",
+          "gefahren"
+        ]
       }
     ]
   }

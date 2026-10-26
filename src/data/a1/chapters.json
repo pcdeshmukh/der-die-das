@@ -343,7 +343,7 @@
     "links": [
       "festivals",
       "g-ordinals",
-      "g-wuerde",
+      "g-wuerde", "g-wuerdeende",
       "p-congratulate"
     ]
   }
