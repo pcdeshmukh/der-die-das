@@ -1679,5 +1679,87 @@
         ]
       }
     ]
+  },
+  {
+    "id": "irgend",
+    "title": {
+      "en": "irgendwie, irgendwo, irgendwann",
+      "de": "irgendwie, irgendwo, irgendwann",
+      "es": "irgendwie, irgendwo, irgendwann"
+    },
+    "emoji": "🎵",
+    "rule": {
+      "en": "irgend- means \"some…\" when you don't know or it doesn't matter: irgendwo = somewhere, irgendwann = sometime, irgendwie = somehow, irgendwas = something. Like Nena's song \"Irgendwie, irgendwo, irgendwann\".",
+      "de": "irgend- heißt: Man weiß es nicht genau, oder es ist egal. irgendwo = an einem Ort, irgendwann = zu einer Zeit, irgendwie = auf eine Art, irgendwas = etwas. Wie im Lied von Nena: „Irgendwie, irgendwo, irgendwann“.",
+      "es": "irgend- significa \"algún…\" cuando no se sabe o da igual: irgendwo = en algún sitio, irgendwann = algún día, irgendwie = de alguna manera, irgendwas = algo. Como en la canción de Nena \"Irgendwie, irgendwo, irgendwann\"."
+    },
+    "options": [
+      "irgendwie",
+      "irgendwo",
+      "irgendwann",
+      "irgendwas"
+    ],
+    "items": [
+      {
+        "q": "Mein Schlüssel ist ___ in der Wohnung.",
+        "a": "irgendwo",
+        "en": "My key is somewhere in the flat.",
+        "es": "Mi llave está en algún sitio del piso."
+      },
+      {
+        "q": "Wo ist mein Handy? Es muss hier ___ sein.",
+        "a": "irgendwo",
+        "en": "Where's my phone? It must be around here somewhere.",
+        "es": "¿Dónde está mi móvil? Tiene que estar por aquí en algún sitio."
+      },
+      {
+        "q": "Wir sehen uns ___ nächste Woche.",
+        "a": "irgendwann",
+        "en": "We'll see each other sometime next week.",
+        "es": "Nos vemos algún día de la semana que viene."
+      },
+      {
+        "q": "Er kommt ___ am Nachmittag.",
+        "a": "irgendwann",
+        "en": "He's coming sometime in the afternoon.",
+        "es": "Viene en algún momento de la tarde."
+      },
+      {
+        "q": "Ich möchte ___ einmal nach Japan reisen.",
+        "a": "irgendwann",
+        "en": "Some day I'd like to travel to Japan.",
+        "es": "Algún día me gustaría viajar a Japón."
+      },
+      {
+        "q": "Das Fest war ___ komisch.",
+        "a": "irgendwie",
+        "en": "The party was somehow strange.",
+        "es": "La fiesta fue rara, de alguna manera."
+      },
+      {
+        "q": "Er sieht heute ___ müde aus.",
+        "a": "irgendwie",
+        "en": "He looks kind of tired today.",
+        "es": "Hoy parece como cansado."
+      },
+      {
+        "q": "Hast du Hunger? Ich koche schnell ___.",
+        "a": "irgendwas",
+        "en": "Are you hungry? I'll quickly cook something.",
+        "es": "¿Tienes hambre? Cocino algo rápido."
+      },
+      {
+        "q": "Möchtest du ___ trinken?",
+        "a": "irgendwas",
+        "en": "Would you like something to drink?",
+        "es": "¿Quieres tomar algo?"
+      },
+      {
+        "q": "Sag doch ___!",
+        "a": "irgendwas",
+        "en": "Say something!",
+        "es": "¡Di algo!"
+      }
+    ]
   }
 ]
