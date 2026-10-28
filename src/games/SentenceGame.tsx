@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { GameBar } from '../components/GameBar';
 import { SpeakButton } from '../components/NounPrompt';
 import { Results } from '../components/Results';
@@ -6,7 +6,7 @@ import type { SentenceRef } from '../data/types';
 import { meaning, t } from '../lib/i18n';
 import { shuffle } from '../lib/random';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
-import { speak } from '../lib/speech';
+import { afterReading, speak } from '../lib/speech';
 import { pickWords, starsFor } from '../lib/srs';
 import { finishRound, progress, recordAnswer } from '../lib/store';
 import type { GameProps } from './types';
@@ -52,6 +52,7 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
   const [results, setResults] = useState<boolean[]>([]);
   const [xp, setXp] = useState(0);
   const [done, setDone] = useState(false);
+  const reading = useRef(Promise.resolve());
 
   const p = puzzles[index];
   const full = placed.length === p.words.length;
@@ -70,7 +71,7 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
     setResult(ok);
     setResults([...results, ok]);
     recordAnswer('sentence', p.s.id, ok);
-    speak(p.s.de);
+    reading.current = speak(p.s.de);
     if (ok) {
       setXp(xp + 15);
       playCorrect();
@@ -94,8 +95,8 @@ export function SentenceGame({ pool, starKey, onRetry, onExit }: GameProps<Sente
 
   useEffect(() => {
     if (result !== true) return;
-    const timer = setTimeout(advance, 1400);
-    return () => clearTimeout(timer);
+    // Stay on the solved sentence until it has been read out.
+    return afterReading(reading.current, 1400, advance);
   }, [result, index]);
 
   useEffect(() => {

@@ -5,7 +5,7 @@ import { Results, type ReviewRow } from '../components/Results';
 import { formatDuration } from '../lib/duration';
 import { t } from '../lib/i18n';
 import { playCorrect, playFinish, playWrong } from '../lib/sfx';
-import { speak } from '../lib/speech';
+import { afterReading, speak } from '../lib/speech';
 import { starsFor, type Skill } from '../lib/srs';
 import { finishRound, recordAnswer } from '../lib/store';
 import { SPECIAL_LETTERS, grade, type Grade } from '../lib/typing';
@@ -94,6 +94,7 @@ export function ChoiceGame({
   const [startedAt] = useState(Date.now);
   const [now, setNow] = useState(startedAt);
   const challengeLink = useContext(ChallengeLink);
+  const reading = useRef(Promise.resolve());
 
   const q = questions[index];
   const typed = typing ? q.typed : undefined;
@@ -117,7 +118,7 @@ export function ChoiceGame({
     setPicked(p);
     setResults([...results, ok]);
     if (q.skill && q.statId) recordAnswer(q.skill, q.statId, ok);
-    if (q.sayAfter) speak(q.sayAfter);
+    reading.current = q.sayAfter ? speak(q.sayAfter) : Promise.resolve();
     if (ok) {
       const c = combo + 1;
       setCombo(c);
@@ -153,12 +154,12 @@ export function ChoiceGame({
     return () => clearInterval(tick);
   }, [timed, done]);
 
-  // Correct answers move on by themselves; wrong ones (and typos) wait so the player can read the fix.
+  // Correct answers move on by themselves, once the answer has been read out; wrong ones (and typos) wait so the
+  // player can read the fix. Timed rounds don't wait for the reading, so a challenge's time doesn't depend on speech.
   const waits = answered && (!answeredRight || picked.grade === 'close');
   useEffect(() => {
     if (!answeredRight || waits) return;
-    const timer = setTimeout(advance, 900);
-    return () => clearTimeout(timer);
+    return afterReading(timed ? Promise.resolve() : reading.current, 900, advance);
   }, [answeredRight, waits, index]);
 
   useEffect(() => {
