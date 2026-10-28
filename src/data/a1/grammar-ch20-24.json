@@ -1068,6 +1068,114 @@
         "a": "im",
         "en": "The jacket is hanging in the wardrobe.",
         "es": "La chaqueta está colgada en el armario."
+      },
+      {
+        "q": "Ich warte ___ der Haltestelle.",
+        "a": "an",
+        "en": "I'm waiting at the bus stop.",
+        "es": "Espero en la parada."
+      },
+      {
+        "q": "Ich kaufe Obst ___ dem Markt.",
+        "a": "auf",
+        "en": "I buy fruit at the market.",
+        "es": "Compro fruta en el mercado."
+      },
+      {
+        "q": "Wir schwimmen ___ See.",
+        "a": "im",
+        "en": "We're swimming in the lake.",
+        "es": "Nadamos en el lago."
+      },
+      {
+        "q": "Ich sitze ___ Computer.",
+        "a": "am",
+        "en": "I'm sitting at the computer.",
+        "es": "Estoy sentado delante del ordenador."
+      },
+      {
+        "q": "Das Auto ist ___ der Garage.",
+        "a": "in",
+        "en": "The car is in the garage.",
+        "es": "El coche está en el garaje."
+      },
+      {
+        "q": "Die Kinder spielen ___ dem Spielplatz.",
+        "a": "auf",
+        "en": "The children are playing in the playground.",
+        "es": "Los niños juegan en el parque infantil."
+      },
+      {
+        "q": "Du bezahlst ___ der Kasse.",
+        "a": "an",
+        "en": "You pay at the checkout.",
+        "es": "Pagas en la caja."
+      },
+      {
+        "q": "Wir machen ein Picknick ___ See.",
+        "a": "am",
+        "en": "We're having a picnic by the lake.",
+        "es": "Hacemos un pícnic junto al lago."
+      },
+      {
+        "q": "Ich bin ___ Supermarkt.",
+        "a": "im",
+        "en": "I'm at the supermarket.",
+        "es": "Estoy en el supermercado."
+      },
+      {
+        "q": "Die Blumen stehen ___ der Vase.",
+        "a": "in",
+        "en": "The flowers are in the vase.",
+        "es": "Las flores están en el jarrón."
+      },
+      {
+        "q": "Wir frühstücken ___ dem Balkon.",
+        "a": "auf",
+        "en": "We have breakfast on the balcony.",
+        "es": "Desayunamos en el balcón."
+      },
+      {
+        "q": "Der Kalender hängt ___ der Tür.",
+        "a": "an",
+        "en": "The calendar is hanging on the door.",
+        "es": "El calendario está colgado en la puerta."
+      },
+      {
+        "q": "Wir liegen ___ Strand.",
+        "a": "am",
+        "en": "We're lying on the beach.",
+        "es": "Estamos tumbados en la playa."
+      },
+      {
+        "q": "Mein Vater arbeitet ___ Garten.",
+        "a": "im",
+        "en": "My father is working in the garden.",
+        "es": "Mi padre trabaja en el jardín."
+      },
+      {
+        "q": "Meine Freundin wohnt ___ Spanien.",
+        "a": "in",
+        "en": "My friend lives in Spain.",
+        "es": "Mi amiga vive en España."
+      },
+      {
+        "q": "Die Fotos sind ___ meinem Handy.",
+        "a": "auf",
+        "en": "The photos are on my phone.",
+        "es": "Las fotos están en mi móvil."
+      },
+      {
+        "q": "Wir machen Urlaub ___ der Nordsee.",
+        "a": "an",
+        "en": "We're on holiday by the North Sea.",
+        "es": "Estamos de vacaciones en la costa del mar del Norte."
+      },
+      {
+        "q": "Der Zettel hängt ___ Kühlschrank.",
+        "a": "am",
+        "en": "The note is stuck on the fridge.",
+        "es": "La nota está pegada en la nevera."
       }
     ]
   },
