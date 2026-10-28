@@ -306,9 +306,9 @@
     },
     "emoji": "📍",
     "rule": {
-      "en": "Two-way prepositions (in, auf, an, neben …) take the accusative for movement (Wohin?) and the dative for location (Wo?).",
-      "de": "Wechselpräpositionen (in, auf, an, neben …) stehen mit Akkusativ bei Bewegung (Wohin?) und mit Dativ bei Position (Wo?).",
-      "es": "Las preposiciones mixtas (in, auf, an, neben…) van con acusativo para el movimiento (Wohin?) y con dativo para la posición (Wo?)."
+      "en": "The two-way prepositions in, an, auf, neben, hinter, über, unter, vor and zwischen take the accusative for movement (Wohin?) and the dative for location (Wo?).",
+      "de": "Die Wechselpräpositionen in, an, auf, neben, hinter, über, unter, vor und zwischen stehen mit Akkusativ bei Bewegung (Wohin?) und mit Dativ bei Position (Wo?).",
+      "es": "Las preposiciones mixtas in, an, auf, neben, hinter, über, unter, vor y zwischen van con acusativo para el movimiento (Wohin?) y con dativo para la posición (Wo?)."
     },
     "options": [],
     "items": [
@@ -429,6 +429,433 @@
         "es": "El móvil está al lado de la cama.",
         "options": [
           "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Er stellt das Fahrrad hinter ___ Haus.",
+        "a": "das",
+        "en": "He puts the bike behind the house.",
+        "es": "Pone la bici detrás de la casa.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Das Fahrrad steht hinter ___ Haus.",
+        "a": "dem",
+        "en": "The bike is behind the house.",
+        "es": "La bici está detrás de la casa.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Wir hängen die Lampe über ___ Tisch.",
+        "a": "den",
+        "en": "We hang the lamp above the table.",
+        "es": "Colgamos la lámpara encima de la mesa.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      },
+      {
+        "q": "Die Lampe hängt über ___ Tisch.",
+        "a": "dem",
+        "en": "The lamp is hanging above the table.",
+        "es": "La lámpara cuelga encima de la mesa.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      },
+      {
+        "q": "Der Ball rollt unter ___ Sofa.",
+        "a": "das",
+        "en": "The ball rolls under the sofa.",
+        "es": "La pelota rueda hasta debajo del sofá.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Der Ball liegt unter ___ Sofa.",
+        "a": "dem",
+        "en": "The ball is under the sofa.",
+        "es": "La pelota está debajo del sofá.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Ich stelle die Schuhe vor ___ Tür.",
+        "a": "die",
+        "en": "I put the shoes outside the door.",
+        "es": "Pongo los zapatos delante de la puerta.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Die Schuhe stehen vor ___ Tür.",
+        "a": "der",
+        "en": "The shoes are outside the door.",
+        "es": "Los zapatos están delante de la puerta.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Ich lege den Zettel zwischen ___ Fotos.",
+        "a": "die",
+        "en": "I put the note between the photos.",
+        "es": "Pongo la nota entre las fotos.",
+        "options": [
+          "die",
+          "den"
+        ]
+      },
+      {
+        "q": "Der Zettel liegt zwischen ___ Fotos.",
+        "a": "den",
+        "en": "The note is lying between the photos.",
+        "es": "La nota está entre las fotos.",
+        "options": [
+          "die",
+          "den"
+        ]
+      },
+      {
+        "q": "Ich lege das Geld in ___ Tasche.",
+        "a": "die",
+        "en": "I put the money in the bag.",
+        "es": "Meto el dinero en el bolso.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Das Geld ist in ___ Tasche.",
+        "a": "der",
+        "en": "The money is in the bag.",
+        "es": "El dinero está en el bolso.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Wir fahren an ___ See.",
+        "a": "den",
+        "en": "We're driving to the lake.",
+        "es": "Vamos al lago en coche.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prepcase",
+    "title": {
+      "en": "Prepositions: accusative or dative?",
+      "de": "Präpositionen: Akkusativ oder Dativ?",
+      "es": "Preposiciones: ¿acusativo o dativo?"
+    },
+    "emoji": "⚖️",
+    "rule": {
+      "en": "Always accusative: bis, durch, für, gegen, ohne, um (für meinen Vater). Always dative: ab, aus, außer, bei, gegenüber, mit, nach, seit, von, zu (mit meinem Vater). in, an, auf, neben, hinter, über, unter, vor and zwischen take both: accusative for Wohin?, dative for Wo?",
+      "de": "Immer Akkusativ: bis, durch, für, gegen, ohne, um (für meinen Vater). Immer Dativ: ab, aus, außer, bei, gegenüber, mit, nach, seit, von, zu (mit meinem Vater). in, an, auf, neben, hinter, über, unter, vor und zwischen haben beides: Akkusativ bei Wohin?, Dativ bei Wo?",
+      "es": "Siempre acusativo: bis, durch, für, gegen, ohne, um (für meinen Vater). Siempre dativo: ab, aus, außer, bei, gegenüber, mit, nach, seit, von, zu (mit meinem Vater). in, an, auf, neben, hinter, über, unter, vor y zwischen admiten los dos: acusativo con Wohin?, dativo con Wo?"
+    },
+    "options": [],
+    "items": [
+      {
+        "q": "Ich kaufe ein Buch für ___ Vater.",
+        "a": "meinen",
+        "en": "I'm buying a book for my father.",
+        "es": "Compro un libro para mi padre.",
+        "options": [
+          "meinen",
+          "meinem"
+        ]
+      },
+      {
+        "q": "Ich arbeite bei ___ Firma in Köln.",
+        "a": "einer",
+        "en": "I work for a company in Cologne.",
+        "es": "Trabajo en una empresa de Colonia.",
+        "options": [
+          "eine",
+          "einer"
+        ]
+      },
+      {
+        "q": "Wir gehen durch ___ Park.",
+        "a": "den",
+        "en": "We walk through the park.",
+        "es": "Cruzamos el parque.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      },
+      {
+        "q": "Ich fahre mit ___ Fahrrad zur Arbeit.",
+        "a": "dem",
+        "en": "I go to work by bike.",
+        "es": "Voy al trabajo en bici.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Er geht nie ohne ___ Handy aus dem Haus.",
+        "a": "sein",
+        "en": "He never leaves the house without his phone.",
+        "es": "Nunca sale de casa sin su móvil.",
+        "options": [
+          "sein",
+          "seinem"
+        ]
+      },
+      {
+        "q": "Er kommt gerade aus ___ Bad.",
+        "a": "dem",
+        "en": "He's just coming out of the bathroom.",
+        "es": "Acaba de salir del baño.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Das Auto fährt gegen ___ Baum.",
+        "a": "einen",
+        "en": "The car crashes into a tree.",
+        "es": "El coche choca contra un árbol.",
+        "options": [
+          "einen",
+          "einem"
+        ]
+      },
+      {
+        "q": "Ich lerne seit ___ Jahr Deutsch.",
+        "a": "einem",
+        "en": "I've been learning German for a year.",
+        "es": "Estudio alemán desde hace un año.",
+        "options": [
+          "ein",
+          "einem"
+        ]
+      },
+      {
+        "q": "Die Kinder laufen um ___ Haus.",
+        "a": "das",
+        "en": "The children run around the house.",
+        "es": "Los niños corren alrededor de la casa.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Alle kommen außer ___ Bruder.",
+        "a": "meinem",
+        "en": "Everyone is coming except my brother.",
+        "es": "Vienen todos menos mi hermano.",
+        "options": [
+          "meinen",
+          "meinem"
+        ]
+      },
+      {
+        "q": "Ich bin bis ___ Woche im Urlaub.",
+        "a": "nächste",
+        "en": "I'm on holiday until next week.",
+        "es": "Estoy de vacaciones hasta la semana que viene.",
+        "options": [
+          "nächste",
+          "nächster"
+        ]
+      },
+      {
+        "q": "Das Paket ist von ___ Schwester.",
+        "a": "meiner",
+        "en": "The parcel is from my sister.",
+        "es": "El paquete es de mi hermana.",
+        "options": [
+          "meine",
+          "meiner"
+        ]
+      },
+      {
+        "q": "Ich koche heute für ___ Familie.",
+        "a": "meine",
+        "en": "Today I'm cooking for my family.",
+        "es": "Hoy cocino para mi familia.",
+        "options": [
+          "meine",
+          "meiner"
+        ]
+      },
+      {
+        "q": "Nach ___ Unterricht gehen wir ins Café.",
+        "a": "dem",
+        "en": "After class we go to the café.",
+        "es": "Después de clase vamos a la cafetería.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      },
+      {
+        "q": "Wir fahren durch ___ Dorf.",
+        "a": "das",
+        "en": "We drive through the village.",
+        "es": "Atravesamos el pueblo en coche.",
+        "options": [
+          "das",
+          "dem"
+        ]
+      },
+      {
+        "q": "Ich gehe heute zu ___ Freundin.",
+        "a": "meiner",
+        "en": "I'm going to my friend's today.",
+        "es": "Hoy voy a casa de mi amiga.",
+        "options": [
+          "meine",
+          "meiner"
+        ]
+      },
+      {
+        "q": "Hast du etwas gegen ___ Kopfschmerzen?",
+        "a": "die",
+        "en": "Have you got something for the headache?",
+        "es": "¿Tienes algo para el dolor de cabeza?",
+        "options": [
+          "die",
+          "den"
+        ]
+      },
+      {
+        "q": "Die Apotheke ist gegenüber ___ Bahnhof.",
+        "a": "dem",
+        "en": "The chemist's is opposite the station.",
+        "es": "La farmacia está enfrente de la estación.",
+        "options": [
+          "den",
+          "dem"
+        ]
+      },
+      {
+        "q": "Wir fahren ohne ___ Hund in den Urlaub.",
+        "a": "unseren",
+        "en": "We're going on holiday without our dog.",
+        "es": "Nos vamos de vacaciones sin nuestro perro.",
+        "options": [
+          "unseren",
+          "unserem"
+        ]
+      },
+      {
+        "q": "Sie trinkt aus ___ Flasche.",
+        "a": "der",
+        "en": "She's drinking from the bottle.",
+        "es": "Bebe de la botella.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Das Restaurant ist gleich um ___ Ecke.",
+        "a": "die",
+        "en": "The restaurant is just around the corner.",
+        "es": "El restaurante está a la vuelta de la esquina.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Heute Abend esse ich bei ___ Oma.",
+        "a": "meiner",
+        "en": "Tonight I'm eating at my grandma's.",
+        "es": "Esta noche ceno en casa de mi abuela.",
+        "options": [
+          "meine",
+          "meiner"
+        ]
+      },
+      {
+        "q": "Der Kurs geht bis ___ Freitag.",
+        "a": "nächsten",
+        "en": "The course runs until next Friday.",
+        "es": "El curso dura hasta el viernes que viene.",
+        "options": [
+          "nächsten",
+          "nächstem"
+        ]
+      },
+      {
+        "q": "Sie spricht mit ___ Chef.",
+        "a": "ihrem",
+        "en": "She's talking to her boss.",
+        "es": "Habla con su jefe.",
+        "options": [
+          "ihren",
+          "ihrem"
+        ]
+      },
+      {
+        "q": "Seit ___ Woche ist er krank.",
+        "a": "einer",
+        "en": "He has been ill for a week.",
+        "es": "Está enfermo desde hace una semana.",
+        "options": [
+          "eine",
+          "einer"
+        ]
+      },
+      {
+        "q": "Wie komme ich zu ___ Hotel?",
+        "a": "Ihrem",
+        "en": "How do I get to your hotel?",
+        "es": "¿Cómo llego a su hotel?",
+        "options": [
+          "Ihr",
+          "Ihrem"
+        ]
+      },
+      {
+        "q": "Nach ___ Arbeit bin ich immer müde.",
+        "a": "der",
+        "en": "After work I'm always tired.",
+        "es": "Después del trabajo siempre estoy cansado.",
+        "options": [
+          "die",
+          "der"
+        ]
+      },
+      {
+        "q": "Ab ___ ersten Mai wohne ich in Wien.",
+        "a": "dem",
+        "en": "From the first of May I'll be living in Vienna.",
+        "es": "A partir del uno de mayo vivo en Viena.",
+        "options": [
+          "den",
           "dem"
         ]
       }
