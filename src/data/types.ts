@@ -120,6 +120,108 @@ export interface Chapter {
   links: string[];
 }
 
+/*
+ * Model tests in the format of the A1 exam "Start Deutsch 1": Hören, Lesen and Schreiben Teil 1 are
+ * marked by the app, Schreiben Teil 2 and Sprechen by the learner (or their teacher).
+ */
+
+/** One line of a recording; speaker 2 gets a second voice. */
+export interface ExamLine extends Titled {
+  who?: 1 | 2;
+}
+
+/** A question in German. With `options` it is a/b/c and `a` is the right index; without, a richtig/falsch statement. */
+export interface ExamQuestion extends Titled {
+  options?: string[];
+  a: number | boolean;
+}
+
+export interface ListeningItem extends ExamQuestion {
+  audio: ExamLine[];
+}
+
+/** A note or an email (Lesen Teil 1); `head` holds lines like "Von: …" or "Betreff: …". */
+export interface ExamText extends Titled {
+  head?: string[];
+}
+
+/** An ad or web page (Lesen Teil 2): a heading, the text, and a footer such as a web address. */
+export interface ExamAd extends Titled {
+  title: string;
+  foot?: string;
+}
+
+export interface ReadingText {
+  text: ExamText;
+  /** richtig/falsch statements */
+  items: ExamQuestion[];
+}
+
+/** A situation and two ads; `a` is the index of the ad that fits. */
+export interface AdChoice extends Titled {
+  ads: [ExamAd, ExamAd];
+  a: 0 | 1;
+}
+
+/** A sign or notice, where it hangs, and a richtig/falsch statement about it. */
+export interface SignItem extends ExamQuestion {
+  sign: Titled;
+  where: Titled;
+}
+
+/** A field of a form: filled in already (`value`), a gap to write (`accepted`), or boxes to tick (`options`). */
+export interface FormField extends Translated {
+  /** the label on the form, in German; en/es translate it */
+  label: string;
+  value?: string;
+  /** every answer that counts; the first is shown as the solution */
+  accepted?: string[];
+  options?: string[];
+}
+
+export interface WritingTask {
+  /** the situation, in German */
+  task: Titled;
+  /** the three points the message has to cover */
+  points: Titled[];
+  model: Titled;
+}
+
+/** A question and an example answer. */
+export interface QA {
+  q: Titled;
+  a: Titled;
+}
+
+/** Sprechen Teil 2: a word on a card, a question it could prompt, and an answer. */
+export interface QuestionCard extends QA {
+  word: string;
+}
+
+/** Sprechen Teil 3: a picture, a request it could prompt, and a reaction. */
+export interface RequestCard {
+  emoji: string;
+  request: Titled;
+  reply: Titled;
+}
+
+export interface ExamSet {
+  /** "1", "2", …; the route is `exam-<id>` */
+  id: string;
+  hoeren: { teil1: ListeningItem[]; teil2: ListeningItem[]; teil3: ListeningItem[] };
+  lesen: { teil1: ReadingText[]; teil2: AdChoice[]; teil3: SignItem[] };
+  schreiben: {
+    teil1: { text: Titled; title: string; fields: FormField[] };
+    teil2: WritingTask;
+  };
+  sprechen: {
+    /** a model introduction, then what the examiner asks you to spell and which number they ask for */
+    teil1: { model: Titled; spell: QA; number: QA };
+    teil2: { topic: Titled; cards: QuestionCard[] }[];
+    teil3: RequestCard[];
+  };
+}
+
 export type LevelId = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
 /** What a level's content module exports. */
@@ -139,4 +241,6 @@ export interface Level {
   grammar: GrammarLesson[];
   phrases: PhraseLesson[];
   chapters: Chapter[];
+  /** model tests in the level's exam format (A1: Start Deutsch 1) */
+  exams: ExamSet[];
 }

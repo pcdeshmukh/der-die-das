@@ -69,6 +69,7 @@ const content: LevelContent = {
   grammar: [...a2GrammarCh01, ...a2GrammarCh07, ...a2GrammarCh15, ...a2GrammarBook] as GrammarLesson[],
   phrases: [...a2PhrasesCh01, ...a2PhrasesCh13, ...a2PhrasesBookCh01, ...a2PhrasesBookCh13] as unknown as PhraseLesson[],
   chapters: a2Chapters,
+  exams: [],
 };
 
 export default content;

@@ -1,4 +1,4 @@
-import type { GrammarLesson, LevelContent, PhraseLesson, Topic } from '../types';
+import type { ExamSet, GrammarLesson, LevelContent, PhraseLesson, Topic } from '../types';
 import people from './people.json';
 import family from './family.json';
 import food from './food.json';
@@ -27,6 +27,9 @@ import a1GrammarCh20 from './grammar-ch20-24.json';
 import a1PhrasesCh01 from './phrases-ch01-12.json';
 import a1PhrasesCh13 from './phrases-ch13-24.json';
 import a1Chapters from './chapters.json';
+import a1Exam1 from './exam-1.json';
+import a1Exam2 from './exam-2.json';
+import a1Exam3 from './exam-3.json';
 
 const topics = [
   people,
@@ -56,6 +59,8 @@ const content: LevelContent = {
   grammar: [...a1Grammar, ...a1GrammarCh01, ...a1GrammarCh07, ...a1GrammarCh13, ...a1GrammarCh20] as GrammarLesson[],
   phrases: [...a1PhrasesCh01, ...a1PhrasesCh13] as unknown as PhraseLesson[],
   chapters: a1Chapters,
+  // Model tests in the format of Start Deutsch 1.
+  exams: [a1Exam1, a1Exam2, a1Exam3] as unknown as ExamSet[],
 };
 
 export default content;

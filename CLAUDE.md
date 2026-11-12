@@ -29,6 +29,7 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 - `grammar*.json`: lessons with a rule and gap items (`q` contains `___`). With `shuffle: true`, the options are whole sentences instead.
 - `phrases*.json`: a situation, the right German phrase `a`, and `wrong` options.
 - `chapters.json`: maps the 24 syllabus chapters to content ids.
+- `exam-<n>.json` (A1 only so far): a model test in the format of the Start Deutsch 1 exam (types `ExamSet` and friends in `src/data/types.ts`). Hören has 6 + 4 + 5 items whose `audio` lines carry `who` (speaker 1 or 2, two voices); Lesen has 2 texts with 5 richtig/falsch statements, 5 situations with two ads each, and 5 signs; Schreiben has a form with 5 gaps (`accepted` answers, or `options` to tick) and a message task with 3 points and a model; Sprechen has a model introduction, spelling and number prompts, two topics of question cards, and request cards. A question with `options` is a/b/c and `a` is the right index; without, `a` is true/false. Write times, prices and dates in recordings as words ("vierzehn Uhr zwanzig"), since speech engines misread "14.20". Content is our own, never copied from official sample papers.
 
 **No made-up words, anywhere.** Every option a learner sees must be made of real German word forms. A wrong option may be wrong in context (wrong case, tense, person, word order, function), but never an invented form like *gehte*, *Kochin* or *gebackt*. Generated options follow the same rule: Plural Rush asks for the ending in dictionary notation (`pluralEndingOptions` in `src/lib/german.ts`), and verb games offer only the verb's own real forms (checked in `src/games/verbs.test.ts`).
 
@@ -39,11 +40,12 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 - grammar items: one gap, answer in its options, capitalised options when the gap starts the sentence
 - phrase-set shape
 - every chapter link resolves, and every topic and lesson is in some chapter
+- model tests: the exam's item counts, a/b/c and richtig/falsch shape with answers spread out, recordings in whole sentences, form answers findable in the text, `en`/`es` next to every `de`
 
 **Topic ids double as routes.** Hash routing: `#/<level>/<topicId>/<modeId>`; see `src/lib/router.ts` and `src/app.tsx`.
 - Plain ids are vocabulary topics. `g-<id>` is a grammar lesson and `p-<id>` a phrase set.
 - Pseudo-topics: `mixed`, `review`, `verbs`, `numbers`, `alphabet`.
-- `grammar`, `phrases` and `chapter-N` are list and chapter pages.
+- `grammar`, `phrases` and `chapter-N` are list and chapter pages; `exam-N` is a model test (see below).
 
 `src/lib/modes.ts` is the hub tying them together:
 - `MODES` registry, each mode with a section and SRS skill
@@ -59,6 +61,7 @@ There is no linter. Pushing to `main` runs tests, builds, and deploys to Pages (
 - **Challenges** (`src/games/challenge.ts`, `src/screens/ChallengeScreen.tsx`): a timed round anyone can replay from a link, `#/challenge/<level>/<topic>/<mode>/<seed>[/<name>/<correct>/<total>/<seconds>]`. The seed fixes the questions (`withSeed`, with empty SRS stats so picking doesn't depend on the player), and the link carries the challenger's result; there is no server. Results screens of challengeable games show "Challenge a friend" through the `ChallengeLink` context that `GameScreen` provides. Games with speech or their own interaction (listen, match, sentences, alphabet) aren't challengeable.
 - **Typing** (`settings.typing`, the switch on topic pages): modes marked `typeable` get `typing` in their `GameProps`, and ChoiceGame then shows a text field for questions that carry `typed` (accepted answers, optional own prompt and hint). Grading is in `src/lib/typing.ts`: exact, close (case or ae/oe/ue/ss, counted right with a spelling note), or wrong. Grammar items without a gap stay multiple choice. `src/games/typing.test.ts` checks every typed answer against the content.
 - Generated content (numbers, clock times, plural endings) comes from `src/lib/german.ts`.
+- **Model tests** (`src/lib/exam.ts`, `src/screens/ExamScreen.tsx`, `src/games/Exam*Game.tsx`): `#/<level>/exam-<n>` is a test's score sheet; `#/<level>/exam-<n>/<part>` runs a part as in the exam (time limit for Lesen and Schreiben, Hören recordings capped at two plays or one in Teil 2, no feedback until the end, result saved to `progress.exams`), and `<part>-<teil>` practises one Teil with feedback straight away. Each part has 15 raw points; the total is the sum × 1.66, rounded, and 60 passes. Hören, Lesen and Schreiben Teil 1 are marked by the app (form gaps through `grade()`); Schreiben Teil 2 and Sprechen are self-marked with the exam's full/half/no marks, and a "Send to your teacher" button shares the tasks and answers as plain German text (`writingReport`, `speakingReport`). In Sprechen the app plays the partner. Exams don't use ChoiceGame and aren't challengeable.
 
 **State.** `src/lib/store.ts` keeps one `@preact/signals` signal, `progress`, persisted to `localStorage` (`der-die-das:v1`). It holds XP, the day streak, daily-challenge results and streak, per-item SRS stats (keyed `skill|itemId`, Leitner boxes in `src/lib/srs.ts`), best stars and settings.
 - Components that read `progress.value` re-render automatically.

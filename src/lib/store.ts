@@ -30,6 +30,13 @@ export interface DailyResult {
   total: number;
 }
 
+/** The latest exam-mode result of one part of a model test. */
+export interface ExamResult {
+  /** raw points out of 15 */
+  raw: number;
+  day: string;
+}
+
 export interface Progress {
   xp: number;
   /** the level the player last opened; the daily challenge uses it */
@@ -41,6 +48,8 @@ export interface Progress {
   words: Record<string, WordStat>;
   /** best stars per `${level}/${topic}/${mode}` */
   stars: Record<string, number>;
+  /** per `${level}/exam-${id}/${part}` */
+  exams: Record<string, ExamResult>;
   settings: Settings;
 }
 
@@ -56,6 +65,7 @@ function defaults(): Progress {
     daily: { results: {}, streak: { count: 0, lastDay: null } },
     words: {},
     stars: {},
+    exams: {},
     settings: {
       uiLang: browser.startsWith('de') ? 'de' : es ? 'es' : 'en',
       hintLang: es ? 'es' : 'en',
@@ -152,6 +162,12 @@ export function finishDaily(day: string, result: DailyResult, bonusXp: number) {
     xp: p.xp + bonusXp,
     daily: { results: { ...p.daily.results, [day]: result }, streak: extend(p.daily.streak) },
   };
+}
+
+/** Saves a model test part taken as in the exam (the latest attempt counts) and pays XP for it. */
+export function finishExamPart(key: string, raw: number, xp: number) {
+  const p = progress.value;
+  progress.value = { ...p, xp: p.xp + xp, streak: extend(p.streak), exams: { ...p.exams, [key]: { raw, day: today() } } };
 }
 
 export function resetProgress() {

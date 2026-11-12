@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { loadAllLevels, allSentences, allWords, verbForms } from '.';
 import { splitSentence } from '../games/SentenceGame';
-import { ARTICLES } from './types';
+import { ARTICLES, type ExamQuestion } from './types';
 
 const LEVELS = await loadAllLevels();
 
@@ -135,5 +135,92 @@ describe('all levels', () => {
         seen.set(w.de, w.id);
       }
     expect(repeats).toEqual([]);
+  });
+});
+
+describe.each(LEVELS.filter((l) => l.exams.length))('$id model tests', (level) => {
+  it('number the tests 1, 2, 3, …', () => {
+    expect(level.exams.map((e) => e.id)).toEqual(level.exams.map((_, i) => String(i + 1)));
+  });
+
+  describe.each(level.exams.map((e) => [e.id, e] as const))('Modelltest %s', (_, exam) => {
+    const abc = (qs: ExamQuestion[], label: string) => {
+      for (const q of qs) {
+        expect(q.options, `${label}: ${q.de}`).toHaveLength(3);
+        expect(new Set(q.options).size, `${label}: ${q.de}`).toBe(3);
+        expect([0, 1, 2], `${label}: ${q.de}`).toContain(q.a);
+      }
+      // The right answer shouldn't always sit in the same place.
+      expect(new Set(qs.map((q) => q.a)).size, label).toBeGreaterThan(1);
+    };
+    const richtigFalsch = (qs: ExamQuestion[], label: string) => {
+      for (const q of qs) {
+        expect(typeof q.a, `${label}: ${q.de}`).toBe('boolean');
+        expect(q.options, `${label}: ${q.de}`).toBeUndefined();
+      }
+      expect(new Set(qs.map((q) => q.a)).size, `${label} needs both richtig and falsch`).toBe(2);
+    };
+
+    it('has the parts of Start Deutsch 1', () => {
+      expect(exam.hoeren.teil1).toHaveLength(6);
+      expect(exam.hoeren.teil2).toHaveLength(4);
+      expect(exam.hoeren.teil3).toHaveLength(5);
+      expect(exam.lesen.teil1).toHaveLength(2);
+      expect(exam.lesen.teil1.flatMap((x) => x.items)).toHaveLength(5);
+      expect(exam.lesen.teil2).toHaveLength(5);
+      expect(exam.lesen.teil3).toHaveLength(5);
+      expect(exam.schreiben.teil1.fields.filter((f) => f.value === undefined)).toHaveLength(5);
+      expect(exam.schreiben.teil2.points).toHaveLength(3);
+      expect(exam.sprechen.teil2).toHaveLength(2);
+      for (const topic of exam.sprechen.teil2) expect(topic.cards.length, topic.topic.de).toBeGreaterThanOrEqual(2);
+      expect(exam.sprechen.teil3.length).toBeGreaterThanOrEqual(4);
+    });
+
+    it('has well-formed Hören and Lesen questions', () => {
+      abc(exam.hoeren.teil1, 'Hören 1');
+      richtigFalsch(exam.hoeren.teil2, 'Hören 2');
+      abc(exam.hoeren.teil3, 'Hören 3');
+      richtigFalsch(exam.lesen.teil1.flatMap((x) => x.items), 'Lesen 1');
+      for (const x of exam.lesen.teil2) expect([0, 1], x.de).toContain(x.a);
+      expect(new Set(exam.lesen.teil2.map((x) => x.a)).size, 'Lesen 2').toBe(2);
+      richtigFalsch(exam.lesen.teil3, 'Lesen 3');
+    });
+
+    it('has recordings made of whole sentences', () => {
+      const all = [exam.hoeren.teil1, exam.hoeren.teil2, exam.hoeren.teil3].flat();
+      for (const item of all) {
+        expect(item.audio.length, item.de).toBeGreaterThan(0);
+        for (const line of item.audio) {
+          expect(line.de, item.de).toMatch(/[.?!]$/);
+          expect([undefined, 1, 2], line.de).toContain(line.who);
+        }
+      }
+    });
+
+    it('has a form whose gaps can be filled from the text', () => {
+      const { text, fields } = exam.schreiben.teil1;
+      for (const f of fields) {
+        expect(f.label.trim() && f.en.trim() && f.es.trim(), f.label).toBeTruthy();
+        if (f.value !== undefined) continue;
+        expect(f.accepted?.length, f.label).toBeGreaterThan(0);
+        if (f.options) expect(f.options, f.label).toContain(f.accepted![0]);
+        // A written gap's answer is in the text (ticked boxes may need a small step of reasoning).
+        else expect(f.accepted!.some((a) => text.de.includes(a)), `${f.label}: ${f.accepted}`).toBe(true);
+      }
+    });
+
+    it('translates everything into English and Spanish', () => {
+      // Every German text in a model test sits in an object with `de`, `en` and `es`.
+      const walk = (x: unknown, path: string) => {
+        if (Array.isArray(x)) return x.forEach((y, i) => walk(y, `${path}[${i}]`));
+        if (!x || typeof x !== 'object') return;
+        const o = x as Record<string, unknown>;
+        if ('de' in o) {
+          for (const lang of ['de', 'en', 'es']) expect(String(o[lang] ?? '').trim(), `${path}.${lang}`).toBeTruthy();
+        }
+        for (const [k, v] of Object.entries(o)) walk(v, `${path}.${k}`);
+      };
+      walk(exam, `exam ${exam.id}`);
+    });
   });
 });

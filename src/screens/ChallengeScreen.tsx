@@ -13,6 +13,7 @@ import { formatDuration } from '../lib/duration';
 import { t } from '../lib/i18n';
 import { describeTopic, type ModeId } from '../lib/modes';
 import { navigate } from '../lib/router';
+import { shareText } from '../lib/share';
 import { progress, updateSettings } from '../lib/store';
 import { NotFound } from './NotFound';
 
@@ -59,17 +60,9 @@ export function ChallengeScreen({ level, parts }: { level: Level; parts: string[
     const link = location.origin + location.pathname + challengeHref(level, topicId, modeId, seed, result);
     const text = t('shareText', { c: result.correct, n: result.total, t: formatDuration(result.seconds * 1000), topic: topic!.title });
     // The share sheet is the natural way on a phone; elsewhere the link goes to the clipboard.
-    try {
-      if (navigator.share) return await navigator.share({ text, url: link });
-    } catch (e) {
-      if ((e as Error).name === 'AbortError') return;
-    }
-    try {
-      await navigator.clipboard.writeText(`${text} ${link}`);
-      setCopied(true);
-    } catch {
-      prompt(t('copyLink'), link);
-    }
+    const how = await shareText(text, link);
+    if (how === 'copied') setCopied(true);
+    else if (how === 'failed') prompt(t('copyLink'), link);
   }
 
   return (

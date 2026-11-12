@@ -2,10 +2,12 @@ import { Header } from './components/Header';
 import { LevelGate } from './components/LevelGate';
 import { levelInfo } from './data';
 import type { Level } from './data/types';
+import { examOf, parseRun } from './lib/exam';
 import { route } from './lib/router';
 import { ChallengeScreen } from './screens/ChallengeScreen';
 import { ChapterScreen } from './screens/ChapterScreen';
 import { DailyScreen } from './screens/DailyScreen';
+import { ExamRunScreen, ExamScreen } from './screens/ExamScreen';
 import { GameScreen } from './screens/GameScreen';
 import { Home } from './screens/Home';
 import { LevelScreen } from './screens/LevelScreen';
@@ -39,6 +41,13 @@ function Screen({ parts }: { parts: string[] }) {
 
 function LevelPage({ level, parts }: { level: Level; parts: string[] }) {
   if (parts.length === 1) return <LevelScreen level={level} />;
+  // Model tests: #/a1/exam-1 is the score sheet, #/a1/exam-1/lesen a part as in the exam, #/a1/exam-1/lesen-2 one Teil.
+  const exam = examOf(level, parts[1]);
+  if (exam) {
+    if (parts.length === 2) return <ExamScreen level={level} exam={exam} />;
+    const run = parseRun(parts[2]);
+    return run ? <ExamRunScreen key={parts.join('/')} level={level} exam={exam} run={run} /> : <NotFound />;
+  }
   if (parts.length === 2) {
     const [, page] = parts;
     if (page === 'grammar' || page === 'phrases') return <ListScreen level={level} kind={page} />;

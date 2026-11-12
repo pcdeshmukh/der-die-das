@@ -5,6 +5,8 @@ import { t, uiLang } from '../lib/i18n';
 import { ALPHABET, MODES, NUMBERS, REVIEW, MIXED, VERBS, describeTopic, modesFor, poolFor } from '../lib/modes';
 import { href } from '../lib/router';
 import { progress, setCurrentLevel } from '../lib/store';
+import { EXAM_PREFIX, PASS_MARK } from '../lib/exam';
+import { examResults } from './ExamScreen';
 import { StarCount, TopicCard } from './TopicCard';
 
 /** Stars earned in all of a chapter's linked topics, as a share for the progress bar. */
@@ -56,6 +58,26 @@ export function LevelScreen({ level }: { level: Level }) {
           </div>
         )}
       </div>
+
+      {level.exams.length > 0 && (
+        <>
+          <h2 class="section-title">{t('examSection')}</h2>
+          <div class="topic-grid">
+            {level.exams.map((exam) => {
+              const { done, total } = examResults(level, exam);
+              return (
+                <a class="topic-card" href={href(level.slug, EXAM_PREFIX + exam.id)}>
+                  <span class="topic-emoji">📝</span>
+                  <span class="topic-name">{t('modelTest', { n: exam.id })}</span>
+                  <span class="topic-meta">
+                    {total === null ? t('sectionsDone', { n: done }) : `${total}/100 · ${total >= PASS_MARK ? '✅' : '❌'}`}
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </>
+      )}
 
       {level.chapters.length > 0 && (
         <>
