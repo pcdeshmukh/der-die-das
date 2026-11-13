@@ -3,57 +3,70 @@ import type { ExamSet, Level } from '../data/types';
 import { ExamChoiceGame } from '../games/ExamChoiceGame';
 import { ExamSpeakingGame } from '../games/ExamSpeakingGame';
 import { ExamWritingGame } from '../games/ExamWritingGame';
-import { EXAM_PREFIX, GERMAN_NAMES, MODULES, PASS_MARK, predicate, resultKey, scaled, totalScore, type Run } from '../lib/exam';
+import { EXAM_PREFIX, GERMAN_NAMES, modulesOf, outcome, predicate, resultKey, scaled, type Run } from '../lib/exam';
 import { t, uiLang } from '../lib/i18n';
 import { href, navigate } from '../lib/router';
 import { speechSupported } from '../lib/speech';
 import { progress, type ExamResult } from '../lib/store';
 
-/** The four parts' latest exam results, and the total once all four have one. */
+/** The four parts' latest exam results, and the outcome once all four have one. */
 export function examResults(level: Level, exam: ExamSet) {
   const p = progress.value;
-  const results = MODULES.map((m) => p.exams[resultKey(level, exam, m.id)] as ExamResult | undefined);
+  const modules = modulesOf(exam);
+  const results = modules.map((m) => p.exams[resultKey(level, exam, m.id)] as ExamResult | undefined);
   const done = results.filter((r) => r !== undefined).length;
-  const total = done === MODULES.length ? totalScore(results.map((r) => r!.raw)) : null;
-  return { results, done, total };
+  const result = done === modules.length ? outcome(exam, results.map((r) => r!.raw)) : null;
+  return { results, done, result };
 }
 
 /** A model test: its score sheet, and each part to take as in the exam or to practise Teil by Teil. */
 export function ExamScreen({ level, exam }: { level: Level; exam: ExamSet }) {
-  const { results, total } = examResults(level, exam);
+  const { results, result } = examResults(level, exam);
+  const modules = modulesOf(exam);
   const page = EXAM_PREFIX + exam.id;
+  const a2 = exam.format === 'a2';
   return (
     <div class="screen">
       <h1 class="screen-title">
         <span class="title-emoji">📝</span> {t('modelTest', { n: exam.id })}
       </h1>
-      <p class="muted subtitle small">{t('examFormat')}</p>
+      <p class="muted subtitle small">{t(a2 ? 'examFormatA2' : 'examFormat')}</p>
 
       <div class="exam-scores">
-        {MODULES.map((m, i) => (
+        {modules.map((m, i) => (
           <div class="exam-score">
             <span aria-hidden="true">{m.icon}</span>
             <span class="exam-score-value">
-              {results[i] ? scaled(results[i].raw) : '–'}
+              {results[i] ? scaled(m, results[i].raw) : '–'}
               <span class="muted">/25</span>
             </span>
             <span class="exam-score-label">{t(`mod_${m.id}`)}</span>
           </div>
         ))}
-        <p class={total === null ? 'exam-total muted small' : total >= PASS_MARK ? 'exam-total pass' : 'exam-total fail'}>
-          {total === null ? (
+        <p class={result === null ? 'exam-total muted small' : result.passed ? 'exam-total pass' : 'exam-total fail'}>
+          {result === null ? (
             t('examTotalHint')
           ) : (
             <>
-              {t('examTotal')}: <b>{total}/100</b> · {predicate(total)} · {total >= PASS_MARK ? `✅ ${t('passed')}` : t('notPassed')}
+              {t('examTotal')}: <b>{result.total}/100</b> ·{' '}
+              {result.passed ? (
+                <>
+                  {predicate(result.total)} · ✅ {t('passed')}
+                </>
+              ) : (
+                <>
+                  {t('notPassed')}
+                  {result.short && <> ({t(result.short === 'written' ? 'shortWritten' : 'shortOral')})</>}
+                </>
+              )}
             </>
           )}
         </p>
       </div>
-      <p class="muted small">{t('passInfo')}</p>
+      <p class="muted small">{t(a2 ? 'passInfoA2' : 'passInfo')}</p>
 
       <div class="mode-list">
-        {MODULES.map((m, i) => {
+        {modules.map((m, i) => {
           const blocked = m.needsSpeech && !speechSupported;
           const last = results[i];
           return (
@@ -68,7 +81,7 @@ export function ExamScreen({ level, exam }: { level: Level; exam: ExamSet }) {
                   <span class="mode-desc">
                     {blocked
                       ? t('needsSpeech')
-                      : [t('examMinutes', { n: m.minutes }), t('teileCount', { n: m.teile }), last && t('lastScore', { p: scaled(last.raw) })]
+                      : [t('examMinutes', { n: m.minutes }), t('teileCount', { n: m.teile }), last && t('lastScore', { p: scaled(m, last.raw) })]
                           .filter(Boolean)
                           .join(' · ')}
                   </span>

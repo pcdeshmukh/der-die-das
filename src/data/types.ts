@@ -140,7 +140,7 @@ export interface ListeningItem extends ExamQuestion {
   audio: ExamLine[];
 }
 
-/** A note or an email (Lesen Teil 1); `head` holds lines like "Von: …" or "Betreff: …". */
+/** A note, an email, an article or a notice board; `head` holds lines like "Von: …" or "Betreff: …". */
 export interface ExamText extends Titled {
   head?: string[];
 }
@@ -153,7 +153,6 @@ export interface ExamAd extends Titled {
 
 export interface ReadingText {
   text: ExamText;
-  /** richtig/falsch statements */
   items: ExamQuestion[];
 }
 
@@ -205,7 +204,9 @@ export interface RequestCard {
   reply: Titled;
 }
 
-export interface ExamSet {
+/** Start Deutsch 1 (A1). */
+export interface Sd1Exam {
+  format: 'sd1';
   /** "1", "2", …; the route is `exam-<id>` */
   id: string;
   hoeren: { teil1: ListeningItem[]; teil2: ListeningItem[]; teil3: ListeningItem[] };
@@ -221,6 +222,57 @@ export interface ExamSet {
     teil3: RequestCard[];
   };
 }
+
+/** A picture to choose (Hören Teil 2 of A2): an emoji and a short German caption. */
+export interface PictureOption extends Titled {
+  emoji: string;
+}
+
+/** Something to match: a day, a person, a situation. `a` is the index of the picture or ad that fits, null for none. */
+export interface MatchItem extends Titled {
+  a: number | null;
+}
+
+/** An hour in a calendar (Sprechen Teil 3 of A2), with what is planned then. */
+export interface CalendarSlot {
+  time: string;
+  entry?: Titled;
+}
+
+/** Goethe-Zertifikat A2. */
+export interface A2Exam {
+  format: 'a2';
+  id: string;
+  lesen: {
+    /** a newspaper article, an information board, an email: five a/b/c questions each */
+    teil1: ReadingText;
+    teil2: ReadingText;
+    teil3: ReadingText;
+    /** six ads and five people; one person has no matching ad */
+    teil4: { ads: ExamAd[]; items: MatchItem[] };
+  };
+  hoeren: {
+    /** five short texts, heard twice */
+    teil1: ListeningItem[];
+    /** one conversation, heard once: which picture goes with each day (or person) */
+    teil2: { audio: ExamLine[]; q: Titled; options: PictureOption[]; items: MatchItem[] };
+    /** five short conversations, heard once */
+    teil3: ListeningItem[];
+    /** an interview, heard twice, with five Ja/Nein statements */
+    teil4: { audio: ExamLine[]; items: ExamQuestion[] };
+  };
+  schreiben: { teil1: WritingTask; teil2: WritingTask };
+  sprechen: {
+    /** four cards to ask questions with ("Geburtstag?"), and four questions the partner asks */
+    teil1: { cards: QuestionCard[]; partner: QA[] };
+    /** a card with a question and four prompts; a model answer; a follow-up question */
+    teil2: { q: Titled; prompts: string[]; model: Titled; followUp: QA };
+    /** plan something together: the task, the learner's calendar, and the partner's lines with model replies */
+    teil3: { task: Titled; day: string; calendar: CalendarSlot[]; turns: { partner: Titled; model: Titled }[] };
+  };
+}
+
+export type ExamSet = Sd1Exam | A2Exam;
 
 export type LevelId = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
@@ -241,6 +293,6 @@ export interface Level {
   grammar: GrammarLesson[];
   phrases: PhraseLesson[];
   chapters: Chapter[];
-  /** model tests in the level's exam format (A1: Start Deutsch 1) */
+  /** model tests in the level's exam format (A1: Start Deutsch 1, A2: Goethe-Zertifikat A2) */
   exams: ExamSet[];
 }

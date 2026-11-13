@@ -2,8 +2,9 @@ import type { ComponentChildren } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import type { ExamLine, Titled } from '../data/types';
 import { formatDuration } from '../lib/duration';
-import { GERMAN_NAMES, INSTRUCTIONS, RATINGS, points, scaled, type ModuleInfo, type Rating } from '../lib/exam';
-import { meaning, t } from '../lib/i18n';
+import { GERMAN_NAMES, points, scaled, type Criterion, type ExamFormat, type ModuleInfo } from '../lib/exam';
+import { INSTRUCTIONS } from '../lib/examTexts';
+import { meaning, t, uiLang } from '../lib/i18n';
 import { shareText, type Shared } from '../lib/share';
 import { speakLines, type Playback } from '../lib/speech';
 import { progress } from '../lib/store';
@@ -25,12 +26,14 @@ export function TeilLabel({ module, teil }: { module: ModuleInfo; teil: number }
 
 /** The instructions before a Teil, in German as on the exam paper. */
 export function TeilIntro({
+  format,
   module,
   teil,
   exam,
   first,
   onStart,
 }: {
+  format: ExamFormat;
   module: ModuleInfo;
   teil: number;
   exam: boolean;
@@ -38,9 +41,9 @@ export function TeilIntro({
   first: boolean;
   onStart: () => void;
 }) {
-  const text = INSTRUCTIONS[module.id][teil - 1];
-  // Speaking and the free message are marked by the learner, so they get the note about that instead.
-  const selfMarked = module.id === 'sprechen' || (module.id === 'schreiben' && teil === 2 && !exam);
+  const text = INSTRUCTIONS[format][module.id][teil - 1];
+  // Speaking and free writing are marked by the learner, so they get the note about that instead.
+  const selfMarked = module.id === 'sprechen' || (module.id === 'schreiben' && !exam && (format !== 'sd1' || teil === 2));
   const note = selfMarked
     ? t('teacherHint')
     : exam
@@ -153,31 +156,46 @@ export function Transcript({ lines }: { lines: ExamLine[] }) {
   );
 }
 
-const RATING_LABEL = { 1: 'rateFull', 0.5: 'ratePart', 0: 'rateNone' } as const;
+const DONE_LABELS = ['rateFull', 'ratePart', 'rateNone'] as const;
 
-/** Full, half or no marks for one task, as in the exam's marking scheme. */
-export function RatingButtons({
-  max,
-  value,
+/** Green for the best level, red for the worst, amber between. */
+const tone = (level: number, levels: number) => (level === 0 ? 'top' : level === levels - 1 ? 'low' : 'mid');
+
+/** German for German menus, else the chosen translation language. */
+const inUiLang = (x: Titled) => (uiLang() === 'de' ? x.de : meaning(x));
+
+/** One criterion marked as on the exam's sheets: done/partly/not done, or A to E. */
+export function CriterionButtons({
+  criterion,
+  level,
   onChange,
   label,
 }: {
-  max: number;
-  value: Rating | null;
-  onChange: (r: Rating) => void;
+  criterion: Criterion;
+  level: number | null;
+  onChange: (level: number) => void;
+  /** overrides the criterion's own label, e.g. a content point of the task */
   label?: ComponentChildren;
 }) {
+  const ae = criterion.scale === 'ae';
+  const hint = level !== null && criterion.hints?.[level];
   return (
     <div class="rating">
-      {label && <p class="rating-label">{label}</p>}
-      <div class="rating-buttons" role="group">
-        {RATINGS.map((r) => (
-          <button class={value === r ? `rating-btn active r-${r * 2}` : 'rating-btn'} aria-pressed={value === r} onClick={() => onChange(r)}>
-            {t(RATING_LABEL[r])}
-            <span class="rating-points">{points(max * r)}</span>
+      {label ?? (criterion.label && (
+        <p class="rating-label">
+          {criterion.label.de}
+          {uiLang() !== 'de' && <span class="muted"> · {meaning(criterion.label)}</span>}
+        </p>
+      ))}
+      <div class={ae ? 'rating-buttons ae' : 'rating-buttons'} role="group">
+        {criterion.points.map((p, i) => (
+          <button class={level === i ? `rating-btn active ${tone(i, criterion.points.length)}` : 'rating-btn'} aria-pressed={level === i} onClick={() => onChange(i)}>
+            {ae ? 'ABCDE'[i] : t(DONE_LABELS[i])}
+            <span class="rating-points">{points(p)}</span>
           </button>
         ))}
       </div>
+      {hint && <p class="rating-hint">{inUiLang(hint)}</p>}
     </div>
   );
 }
@@ -213,6 +231,7 @@ export function ExamResults({
   title,
   raw,
   max,
+  module,
   exam,
   ms,
   xp,
@@ -223,6 +242,7 @@ export function ExamResults({
   title: string;
   raw: number;
   max: number;
+  module: ModuleInfo;
   exam: boolean;
   ms?: number;
   xp: number;
@@ -236,7 +256,7 @@ export function ExamResults({
       <div class="results-emoji">{share >= 0.9 ? '🏆' : share >= 0.6 ? '🎉' : share >= 0.4 ? '👍' : '💪'}</div>
       <h1>{title}</h1>
       <p class="results-score">{t('rawScore', { c: points(raw), n: max })}</p>
-      {exam && <p class="exam-scaled">{t('scaledScore', { p: scaled(raw) })}</p>}
+      {exam && <p class="exam-scaled">{t('scaledScore', { p: scaled(module, raw) })}</p>}
       {ms !== undefined && <p class="muted">{t('time', { t: formatDuration(ms) })}</p>}
       <p class="results-xp">+{xp} XP</p>
       <div class="results-actions">

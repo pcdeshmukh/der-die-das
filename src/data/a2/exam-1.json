@@ -1,0 +1,406 @@
+{
+  "format": "a2",
+  "id": "1",
+  "lesen": {
+    "teil1": {
+      "text": {
+        "head": ["Lindentaler Zeitung", "Kaputt? Nicht wegwerfen – reparieren!"],
+        "de": "Jeden Samstag ist im Gemeindehaus von Lindental viel los. Zwischen zehn und vierzehn Uhr bringen die Leute alte Fahrräder, Lampen, Radios und Kaffeemaschinen. Hier gibt es das „Reparatur-Café“. Die Idee hatte Monika Seidel vor drei Jahren.\n„Früher habe ich alles weggeworfen, was kaputt war“, erzählt die 58-Jährige. „Dann ist mein Toaster kaputtgegangen, und mein Nachbar hat ihn in zehn Minuten repariert. Da habe ich gedacht: Das können viele Leute lernen.“\nHeute helfen zwölf Frauen und Männer im Reparatur-Café. Die meisten sind Rentner und haben früher als Elektriker oder Mechaniker gearbeitet. Geld bekommen sie nicht. Die Besucher bezahlen nur die neuen Teile – und viele bringen einen Kuchen mit.\nNicht alles kann man reparieren. „Bei Handys und Computern helfen wir leider nicht, das ist zu kompliziert“, sagt Frau Seidel. Aber bei Fahrrädern sind die Helfer sehr erfolgreich: Fast neun von zehn Rädern fahren danach wieder.\nIm Herbst möchte das Team auch einen Kurs für Kinder anbieten.",
+        "en": "Lindental newspaper – Broken? Don't throw it away – repair it!\nEvery Saturday the community centre in Lindental is busy. Between ten and two, people bring old bikes, lamps, radios and coffee machines. This is the home of the 'Repair Café'. Monika Seidel had the idea three years ago.\n'I used to throw away everything that was broken,' says the 58-year-old. 'Then my toaster broke, and my neighbour repaired it in ten minutes. That's when I thought: lots of people can learn this.'\nToday twelve women and men help at the Repair Café. Most are retired and used to work as electricians or mechanics. They don't get paid. Visitors only pay for the new parts – and many bring a cake.\nNot everything can be repaired. 'Unfortunately we can't help with mobiles and computers, that's too complicated,' says Ms Seidel. But the helpers are very successful with bikes: almost nine out of ten ride again afterwards.\nIn the autumn the team also wants to offer a course for children.",
+        "es": "Periódico de Lindental – ¿Roto? ¡No lo tires, arréglalo!\nTodos los sábados hay mucho movimiento en el centro cívico de Lindental. Entre las diez y las dos, la gente trae bicis viejas, lámparas, radios y cafeteras. Aquí está el «Café de reparaciones». La idea fue de Monika Seidel hace tres años.\n«Antes tiraba todo lo que se rompía», cuenta esta mujer de 58 años. «Luego se me rompió la tostadora y mi vecino la arregló en diez minutos. Entonces pensé: esto lo puede aprender mucha gente.»\nHoy ayudan en el Café de reparaciones doce mujeres y hombres. La mayoría están jubilados y antes trabajaban de electricistas o mecánicos. No cobran nada. Los visitantes solo pagan las piezas nuevas, y muchos traen una tarta.\nNo todo se puede arreglar. «Con los móviles y los ordenadores no podemos ayudar, es demasiado complicado», dice la señora Seidel. Pero con las bicis los voluntarios tienen mucho éxito: casi nueve de cada diez vuelven a funcionar.\nEn otoño el equipo también quiere ofrecer un curso para niños."
+      },
+      "items": [
+        { "de": "Das Reparatur-Café ist …", "en": "The Repair Café is …", "es": "El Café de reparaciones está …", "options": ["jeden Tag geöffnet.", "am Samstag geöffnet.", "nur im Herbst geöffnet."], "a": 1 },
+        { "de": "Monika Seidel hatte die Idee, weil …", "en": "Monika Seidel had the idea because …", "es": "Monika Seidel tuvo la idea porque …", "options": ["ihr Nachbar ihren Toaster repariert hat.", "sie früher Elektrikerin war.", "sie kein Geld für einen neuen Toaster hatte."], "a": 0 },
+        { "de": "Die Helfer im Reparatur-Café …", "en": "The helpers at the Repair Café …", "es": "Los voluntarios del Café de reparaciones …", "options": ["bekommen Geld für ihre Arbeit.", "sind meistens noch jung.", "arbeiten ohne Bezahlung."], "a": 2 },
+        { "de": "Die Besucher …", "en": "The visitors …", "es": "Los visitantes …", "options": ["müssen nichts bezahlen.", "bezahlen nur die neuen Teile.", "müssen einen Kuchen mitbringen."], "a": 1 },
+        { "de": "Im Reparatur-Café …", "en": "At the Repair Café …", "es": "En el Café de reparaciones …", "options": ["repariert man auch Computer.", "kann man die meisten Fahrräder reparieren.", "gibt es schon einen Kurs für Kinder."], "a": 1 }
+      ]
+    },
+    "teil2": {
+      "text": {
+        "head": ["Kaufhaus Becker – Wegweiser"],
+        "de": "4. Stock: Restaurant mit Dachterrasse · Toiletten · Kundenservice: Umtausch und Reklamation\n3. Stock: Möbel · Lampen · Teppiche · Betten · Küchen\n2. Stock: Damenmode · Herrenmode · Kindermode · Schuhe · Taschen\n1. Stock: Fernseher · Computer · Handys · Fotoservice · Spielwaren · Bücher\nErdgeschoss: Kosmetik · Schmuck · Uhren · Zeitschriften · Information\nUntergeschoss: Lebensmittel · Getränke · Bäckerei · Blumen · Haushaltswaren",
+        "en": "Becker department store – directory\n4th floor: restaurant with roof terrace · toilets · customer service: exchanges and complaints\n3rd floor: furniture · lamps · carpets · beds · kitchens\n2nd floor: women's fashion · men's fashion · children's fashion · shoes · bags\n1st floor: televisions · computers · mobiles · photo service · toys · books\nGround floor: cosmetics · jewellery · watches · magazines · information\nBasement: food · drinks · bakery · flowers · household goods",
+        "es": "Grandes almacenes Becker – directorio\n4.ª planta: restaurante con terraza · aseos · atención al cliente: cambios y reclamaciones\n3.ª planta: muebles · lámparas · alfombras · camas · cocinas\n2.ª planta: moda de mujer · moda de hombre · moda infantil · zapatos · bolsos\n1.ª planta: televisores · ordenadores · móviles · servicio de fotos · juguetes · libros\nPlanta baja: cosmética · joyería · relojes · revistas · información\nSótano: alimentación · bebidas · panadería · flores · artículos del hogar"
+      },
+      "items": [
+        { "de": "Sie möchten Ihrer Mutter Blumen kaufen.", "en": "You want to buy your mother some flowers.", "es": "Quieres comprarle flores a tu madre.", "options": ["Erdgeschoss", "4. Stock", "anderer Stock"], "a": 2 },
+        { "de": "Ihre neue Hose ist zu klein. Sie möchten sie umtauschen.", "en": "Your new trousers are too small. You want to exchange them.", "es": "Tus pantalones nuevos te quedan pequeños. Quieres cambiarlos.", "options": ["2. Stock", "4. Stock", "anderer Stock"], "a": 1 },
+        { "de": "Sie brauchen ein neues Kabel für Ihr Handy.", "en": "You need a new cable for your mobile.", "es": "Necesitas un cable nuevo para tu móvil.", "options": ["1. Stock", "Untergeschoss", "anderer Stock"], "a": 0 },
+        { "de": "Sie suchen ein Spiel als Geschenk für Ihren Sohn.", "en": "You're looking for a game as a present for your son.", "es": "Buscas un juego para regalárselo a tu hijo.", "options": ["2. Stock", "Erdgeschoss", "anderer Stock"], "a": 2 },
+        { "de": "Sie haben Hunger und möchten warm essen.", "en": "You're hungry and want a hot meal.", "es": "Tienes hambre y quieres comer algo caliente.", "options": ["Untergeschoss", "4. Stock", "anderer Stock"], "a": 1 }
+      ]
+    },
+    "teil3": {
+      "text": {
+        "head": ["Von: Tobias", "An: Jana", "Betreff: Neue Stadt, neuer Job!"],
+        "de": "Liebe Jana,\nendlich habe ich Zeit für eine lange E-Mail! Seit vier Wochen wohne und arbeite ich jetzt in Hamburg. Die Arbeit in der Firma macht mir viel Spaß, und meine Kollegen sind sehr nett. Nur die Wohnungssuche war schwierig: Die ersten zwei Wochen habe ich bei meinem Cousin auf dem Sofa geschlafen. Jetzt habe ich ein kleines Zimmer in einer Wohngemeinschaft gefunden. Wir sind zu dritt: Lena studiert Medizin und Paul ist Koch. Das ist super, denn er kocht am Wochenende oft für uns alle!\nMit dem Fahrrad brauche ich nur zehn Minuten zur Arbeit. Bei Regen nehme ich den Bus, aber das dauert länger.\nHast du Lust, mich im Juni zu besuchen? Du kannst in meinem Zimmer schlafen, ich schlafe dann im Wohnzimmer. Wir können zusammen an den Hafen gehen und eine Schifffahrt machen.\nSchreib mir bald!\nLiebe Grüße\nTobias",
+        "en": "Dear Jana,\nat last I have time for a long email! I've been living and working in Hamburg for four weeks now. I really enjoy the work at the company, and my colleagues are very nice. Only finding a flat was hard: for the first two weeks I slept on my cousin's sofa. Now I've found a small room in a shared flat. There are three of us: Lena is studying medicine and Paul is a cook. That's great, because he often cooks for all of us at the weekend!\nBy bike it only takes me ten minutes to get to work. When it rains I take the bus, but that takes longer.\nWould you like to visit me in June? You can sleep in my room and I'll sleep in the living room. We can go down to the harbour together and take a boat trip.\nWrite soon!\nLove\nTobias",
+        "es": "Querida Jana:\n¡por fin tengo tiempo para un correo largo! Desde hace cuatro semanas vivo y trabajo en Hamburgo. El trabajo en la empresa me gusta mucho y mis compañeros son muy simpáticos. Lo único difícil fue buscar piso: las dos primeras semanas dormí en el sofá de mi primo. Ahora he encontrado una habitación pequeña en un piso compartido. Somos tres: Lena estudia Medicina y Paul es cocinero. ¡Es genial, porque los fines de semana a menudo cocina para todos!\nEn bici solo tardo diez minutos en llegar al trabajo. Cuando llueve cojo el autobús, pero tardo más.\n¿Te apetece visitarme en junio? Puedes dormir en mi habitación y yo duermo en el salón. Podemos ir juntos al puerto y dar un paseo en barco.\n¡Escríbeme pronto!\nUn abrazo\nTobias"
+      },
+      "items": [
+        { "de": "Tobias …", "en": "Tobias …", "es": "Tobias …", "options": ["arbeitet seit vier Wochen in Hamburg.", "sucht in Hamburg noch eine Arbeit.", "wohnt jetzt bei seinem Cousin."], "a": 0 },
+        { "de": "Jetzt wohnt Tobias …", "en": "Now Tobias lives …", "es": "Ahora Tobias vive …", "options": ["allein in einer kleinen Wohnung.", "mit zwei anderen Personen zusammen.", "bei Lena und ihrer Familie."], "a": 1 },
+        { "de": "Paul …", "en": "Paul …", "es": "Paul …", "options": ["studiert Medizin.", "arbeitet in der Firma von Tobias.", "kocht oft für die anderen."], "a": 2 },
+        { "de": "Zur Arbeit fährt Tobias meistens …", "en": "Tobias usually gets to work …", "es": "Tobias va al trabajo casi siempre …", "options": ["mit dem Bus.", "mit dem Fahrrad.", "mit dem Auto."], "a": 1 },
+        { "de": "Wenn Jana kommt, …", "en": "If Jana comes, …", "es": "Si Jana va, …", "options": ["schläft sie im Wohnzimmer.", "schläft sie im Zimmer von Tobias.", "muss sie ein Hotel suchen."], "a": 1 }
+      ]
+    },
+    "teil4": {
+      "ads": [
+        {
+          "title": "Tanzschule Rhythmus",
+          "de": "Salsa und Tango für Anfänger. Kurse für Paare und Singles.\nJeden Freitag 19–21 Uhr. Die erste Stunde ist kostenlos!",
+          "foot": "www.tanzschule-rhythmus.de",
+          "en": "Rhythmus dance school\nSalsa and tango for beginners. Classes for couples and singles.\nEvery Friday 7–9 pm. The first lesson is free!",
+          "es": "Escuela de baile Rhythmus\nSalsa y tango para principiantes. Cursos para parejas y para quien venga solo.\nTodos los viernes de 19 a 21 h. ¡La primera clase es gratis!"
+        },
+        {
+          "title": "Stadtbibliothek",
+          "de": "Jetzt auch am Sonntag geöffnet: 11–17 Uhr!\nBücher, Zeitungen, Filme – Ausweis für Erwachsene 15 € im Jahr.",
+          "foot": "www.stadtbibliothek-lindental.de",
+          "en": "City library\nNow also open on Sundays: 11 am–5 pm!\nBooks, newspapers, films – adult card €15 a year.",
+          "es": "Biblioteca municipal\nAhora también abrimos los domingos: de 11 a 17 h.\nLibros, periódicos, películas: carné para adultos 15 € al año."
+        },
+        {
+          "title": "Lauftreff Stadtpark",
+          "de": "Zusammen joggen macht mehr Spaß! Wir treffen uns dienstags und donnerstags um 7 Uhr am Parkeingang. Für alle, kostenlos.",
+          "foot": "www.lauftreff-stadtpark.de",
+          "en": "City park running group\nJogging together is more fun! We meet on Tuesdays and Thursdays at 7 am at the park entrance. Open to everyone, free.",
+          "es": "Grupo de running del parque\n¡Correr juntos es más divertido! Quedamos los martes y jueves a las 7 en la entrada del parque. Para todos y gratis."
+        },
+        {
+          "title": "Kochstudio Gewürz",
+          "de": "Indisch, thailändisch, japanisch: Kochen Sie mit unseren Köchen!\nSamstags 15–19 Uhr, 45 € pro Abend mit Essen.",
+          "foot": "www.kochstudio-gewuerz.de",
+          "en": "Gewürz cookery studio\nIndian, Thai, Japanese: cook with our chefs!\nSaturdays 3–7 pm, €45 per session including the meal.",
+          "es": "Estudio de cocina Gewürz\nIndia, tailandesa, japonesa: ¡cocina con nuestros cocineros!\nLos sábados de 15 a 19 h, 45 € por sesión con la comida incluida."
+        },
+        {
+          "title": "Fotokurs: Bilder mit dem Handy",
+          "de": "Schöne Fotos brauchen keine teure Kamera. Drei Abende im Mai an der Volkshochschule, 30 €.",
+          "foot": "www.vhs-lindental.de",
+          "en": "Photo course: pictures with your mobile\nGood photos don't need an expensive camera. Three evenings in May at the adult education centre, €30.",
+          "es": "Curso de fotografía con el móvil\nPara hacer buenas fotos no hace falta una cámara cara. Tres tardes en mayo en la escuela de adultos, 30 €."
+        },
+        {
+          "title": "Gitarrenunterricht",
+          "de": "Für Kinder und Erwachsene, auch Einzelstunden. Ich komme zu Ihnen nach Hause.",
+          "foot": "Tel. 0172 / 556 43 21",
+          "en": "Guitar lessons\nFor children and adults, one-to-one lessons too. I come to your home.",
+          "es": "Clases de guitarra\nPara niños y adultos, también clases individuales. Voy a tu casa."
+        }
+      ],
+      "items": [
+        { "de": "Herr Novak möchte früh am Morgen mit anderen Leuten Sport machen.", "en": "Mr Novak wants to do sport with other people early in the morning.", "es": "El señor Novak quiere hacer deporte con otras personas temprano por la mañana.", "a": 2 },
+        { "de": "Frau Brandt und ihr Mann möchten zusammen tanzen lernen.", "en": "Ms Brandt and her husband want to learn to dance together.", "es": "La señora Brandt y su marido quieren aprender a bailar juntos.", "a": 0 },
+        { "de": "Mehmet möchte lernen, wie man asiatisches Essen kocht.", "en": "Mehmet wants to learn how to cook Asian food.", "es": "Mehmet quiere aprender a cocinar comida asiática.", "a": 3 },
+        { "de": "Lisa möchte am Wochenende Klavier spielen lernen.", "en": "Lisa wants to learn to play the piano at the weekend.", "es": "Lisa quiere aprender a tocar el piano el fin de semana.", "a": null },
+        { "de": "Herr Kunz möchte mit seinem Telefon bessere Bilder machen.", "en": "Mr Kunz wants to take better pictures with his phone.", "es": "El señor Kunz quiere hacer mejores fotos con su teléfono.", "a": 4 }
+      ]
+    }
+  },
+  "hoeren": {
+    "teil1": [
+      {
+        "audio": [
+          { "who": 1, "de": "Hallo Sabine, hier ist Karin. Wir wollten uns ja morgen um drei im Café Mozart treffen. Leider ist das Café morgen geschlossen. Wollen wir uns im Café am Markt treffen? Die Uhrzeit bleibt gleich. Bis morgen!", "en": "Hi Sabine, it's Karin. We were going to meet at Café Mozart tomorrow at three. Unfortunately the café is closed tomorrow. Shall we meet at the Café am Markt instead? The time stays the same. See you tomorrow!", "es": "Hola, Sabine, soy Karin. Habíamos quedado mañana a las tres en el Café Mozart. Por desgracia, mañana el café está cerrado. ¿Quedamos en el Café am Markt? La hora es la misma. ¡Hasta mañana!" }
+        ],
+        "de": "Wo treffen sich Sabine und Karin?",
+        "en": "Where are Sabine and Karin meeting?",
+        "es": "¿Dónde quedan Sabine y Karin?",
+        "options": ["im Café Mozart", "im Café am Markt", "bei Karin zu Hause"],
+        "a": 1
+      },
+      {
+        "audio": [
+          { "who": 2, "de": "Und nun das Wetter für morgen, Samstag: Am Vormittag ist es bewölkt, aber noch trocken. Ab Mittag regnet es im ganzen Land, und am Abend kann es auch Gewitter geben. Die Temperaturen liegen bei achtzehn Grad. Am Sonntag scheint dann wieder die Sonne.", "en": "And now the weather for tomorrow, Saturday: in the morning it will be cloudy but still dry. From midday it will rain all over the country, and in the evening there may also be thunderstorms. Temperatures around eighteen degrees. On Sunday the sun will shine again.", "es": "Y ahora, el tiempo para mañana, sábado: por la mañana estará nublado, pero todavía seco. A partir de mediodía lloverá en todo el país y por la noche también puede haber tormentas. Las temperaturas rondarán los dieciocho grados. El domingo volverá a salir el sol." }
+        ],
+        "de": "Wie ist das Wetter am Samstagnachmittag?",
+        "en": "What's the weather like on Saturday afternoon?",
+        "es": "¿Qué tiempo hace el sábado por la tarde?",
+        "options": ["Es regnet.", "Die Sonne scheint.", "Es ist trocken und bewölkt."],
+        "a": 0
+      },
+      {
+        "audio": [
+          { "who": 2, "de": "Liebe Fahrgäste, wegen Bauarbeiten fahren heute keine Züge zwischen Kassel und Göttingen. Bitte nehmen Sie die Busse vor dem Bahnhof. Die Busse fahren alle dreißig Minuten.", "en": "Dear passengers, because of engineering works there are no trains between Kassel and Göttingen today. Please take the buses in front of the station. The buses run every thirty minutes.", "es": "Estimados viajeros, por obras hoy no circulan trenes entre Kassel y Gotinga. Por favor, cojan los autobuses que salen delante de la estación. Los autobuses salen cada treinta minutos." }
+        ],
+        "de": "Wie kommen die Fahrgäste heute nach Göttingen?",
+        "en": "How do passengers get to Göttingen today?",
+        "es": "¿Cómo llegan hoy los viajeros a Gotinga?",
+        "options": ["mit dem Zug", "mit dem Taxi", "mit dem Bus"],
+        "a": 2
+      },
+      {
+        "audio": [
+          { "who": 1, "de": "Sie haben die Praxis von Doktor Albers angerufen. Unsere Praxis ist bis zum zwölften August geschlossen. Wenn es dringend ist, gehen Sie bitte zu Doktor Wenzel in der Goethestraße. Ab dem dreizehnten August sind wir wieder für Sie da.", "en": "You have called Dr Albers's practice. Our practice is closed until the twelfth of August. If it's urgent, please go to Dr Wenzel in Goethestraße. We'll be there for you again from the thirteenth of August.", "es": "Ha llamado a la consulta del doctor Albers. Nuestra consulta está cerrada hasta el doce de agosto. Si es urgente, vaya a la consulta del doctor Wenzel, en la Goethestraße. A partir del trece de agosto volvemos a atenderle." }
+        ],
+        "de": "Ab wann ist die Praxis wieder geöffnet?",
+        "en": "From when is the practice open again?",
+        "es": "¿A partir de cuándo vuelve a abrir la consulta?",
+        "options": ["ab dem 12. August", "ab dem 13. August", "ab dem 30. August"],
+        "a": 1
+      },
+      {
+        "audio": [
+          { "who": 1, "de": "Liebe Kundinnen und Kunden, nur heute: Alle Säfte kosten zwanzig Prozent weniger. Und für unsere kleinen Kunden gibt es an der Kasse ein Eis gratis.", "en": "Dear customers, today only: all juices are twenty per cent cheaper. And for our young customers there's a free ice cream at the checkout.", "es": "Queridos clientes, solo hoy: todos los zumos cuestan un veinte por ciento menos. Y para nuestros clientes más pequeños hay un helado gratis en la caja." }
+        ],
+        "de": "Was ist heute billiger?",
+        "en": "What is cheaper today?",
+        "es": "¿Qué está más barato hoy?",
+        "options": ["Eis", "Obst", "Säfte"],
+        "a": 2
+      }
+    ],
+    "teil2": {
+      "q": { "de": "Was macht Lena an welchem Tag?", "en": "What does Lena do on which day?", "es": "¿Qué hace Lena cada día?" },
+      "audio": [
+        { "who": 2, "de": "Hallo Lena! Hast du diese Woche mal Zeit? Ich möchte so gern den neuen Film sehen.", "en": "Hi Lena! Have you got time this week? I'd love to see the new film.", "es": "¡Hola, Lena! ¿Tienes tiempo esta semana? Tengo muchas ganas de ver la película nueva." },
+        { "who": 1, "de": "Gern, aber diese Woche ist sehr voll. Am Montag gehe ich nach der Arbeit schwimmen, wie jeden Montag.", "en": "I'd like to, but this week is very busy. On Monday I go swimming after work, like every Monday.", "es": "Me encantaría, pero esta semana estoy muy liada. El lunes voy a nadar después del trabajo, como todos los lunes." },
+        { "who": 2, "de": "Und am Dienstag? Da habe ich kein Fußballtraining.", "en": "And on Tuesday? I don't have football training then.", "es": "¿Y el martes? Ese día no tengo entrenamiento de fútbol." },
+        { "who": 1, "de": "Am Dienstag habe ich um fünf einen Termin beim Zahnarzt. Danach möchte ich nur nach Hause.", "en": "On Tuesday I have a dentist's appointment at five. After that I just want to go home.", "es": "El martes tengo cita con el dentista a las cinco. Después solo quiero irme a casa." },
+        { "who": 2, "de": "Das verstehe ich. Und am Mittwoch?", "en": "I understand. And on Wednesday?", "es": "Lo entiendo. ¿Y el miércoles?" },
+        { "who": 1, "de": "Am Mittwoch hat meine Schwester Geburtstag. Sie macht eine kleine Feier, da muss ich natürlich hin.", "en": "On Wednesday it's my sister's birthday. She's having a small party, so of course I have to go.", "es": "El miércoles es el cumpleaños de mi hermana. Hace una pequeña fiesta y, claro, tengo que ir." },
+        { "who": 2, "de": "Na gut. Donnerstag?", "en": "Oh well. Thursday?", "es": "Bueno. ¿El jueves?" },
+        { "who": 1, "de": "Am Donnerstag gehe ich in die Bibliothek. Ich muss Bücher zurückbringen und brauche neue für meinen Kurs.", "en": "On Thursday I'm going to the library. I have to take books back and I need new ones for my course.", "es": "El jueves voy a la biblioteca. Tengo que devolver libros y necesito otros para mi curso." },
+        { "who": 2, "de": "Hm. Und am Freitag?", "en": "Hmm. And on Friday?", "es": "Mmm. ¿Y el viernes?" },
+        { "who": 1, "de": "Am Freitag habe ich Zeit! Dann gehen wir ins Kino, ja? Einkaufen kann ich auch am Samstag.", "en": "On Friday I'm free! Then let's go to the cinema, OK? I can do the shopping on Saturday.", "es": "¡El viernes tengo tiempo! Entonces vamos al cine, ¿vale? La compra la puedo hacer el sábado." },
+        { "who": 2, "de": "Super. Der Film beginnt um acht.", "en": "Great. The film starts at eight.", "es": "Genial. La película empieza a las ocho." }
+      ],
+      "options": [
+        { "emoji": "🛒", "de": "Supermarkt", "en": "Supermarket", "es": "Supermercado" },
+        { "emoji": "🦷", "de": "Zahnarzt", "en": "Dentist", "es": "Dentista" },
+        { "emoji": "⚽", "de": "Fußballtraining", "en": "Football training", "es": "Entrenamiento de fútbol" },
+        { "emoji": "🏊", "de": "Schwimmbad", "en": "Swimming pool", "es": "Piscina" },
+        { "emoji": "📚", "de": "Bibliothek", "en": "Library", "es": "Biblioteca" },
+        { "emoji": "🎂", "de": "Geburtstagsfeier", "en": "Birthday party", "es": "Fiesta de cumpleaños" },
+        { "emoji": "🎬", "de": "Kino", "en": "Cinema", "es": "Cine" },
+        { "emoji": "🚆", "de": "Bahnhof", "en": "Station", "es": "Estación" }
+      ],
+      "items": [
+        { "de": "Montag", "en": "Monday", "es": "Lunes", "a": 3 },
+        { "de": "Dienstag", "en": "Tuesday", "es": "Martes", "a": 1 },
+        { "de": "Mittwoch", "en": "Wednesday", "es": "Miércoles", "a": 5 },
+        { "de": "Donnerstag", "en": "Thursday", "es": "Jueves", "a": 4 },
+        { "de": "Freitag", "en": "Friday", "es": "Viernes", "a": 6 }
+      ]
+    },
+    "teil3": [
+      {
+        "audio": [
+          { "who": 1, "de": "Guten Tag, ich brauche etwas gegen Kopfschmerzen.", "en": "Hello, I need something for a headache.", "es": "Buenos días, necesito algo para el dolor de cabeza." },
+          { "who": 2, "de": "Diese Tabletten hier sind gut. Nehmen Sie eine nach dem Essen. Brauchen Sie auch etwas gegen Husten?", "en": "These tablets are good. Take one after a meal. Do you need anything for a cough too?", "es": "Estas pastillas son buenas. Tómese una después de comer. ¿Necesita también algo para la tos?" },
+          { "who": 1, "de": "Nein, danke, nur die Tabletten.", "en": "No, thanks, just the tablets.", "es": "No, gracias, solo las pastillas." }
+        ],
+        "de": "Was kauft die Frau?",
+        "en": "What does the woman buy?",
+        "es": "¿Qué compra la mujer?",
+        "options": ["Hustensaft", "Tabletten gegen Kopfschmerzen", "Tropfen für die Augen"],
+        "a": 1
+      },
+      {
+        "audio": [
+          { "who": 2, "de": "Wie gefällt dir die Jacke?", "en": "How do you like the jacket?", "es": "¿Qué te parece la chaqueta?" },
+          { "who": 1, "de": "Die Farbe ist schön, aber sie ist mir zu teuer. Ich nehme lieber den Pullover hier, der ist im Angebot.", "en": "The colour is nice, but it's too expensive for me. I'd rather take this jumper, it's on offer.", "es": "El color es bonito, pero es demasiado cara para mí. Prefiero llevarme este jersey, que está de oferta." }
+        ],
+        "de": "Wofür entscheidet sich die Frau?",
+        "en": "What does the woman decide on?",
+        "es": "¿Qué elige la mujer?",
+        "options": ["für den Pullover", "für die Jacke", "für eine Hose"],
+        "a": 0
+      },
+      {
+        "audio": [
+          { "who": 1, "de": "Friseursalon Schick, guten Tag.", "en": "Schick hair salon, hello.", "es": "Peluquería Schick, buenos días." },
+          { "who": 2, "de": "Guten Tag, ich hätte gern einen Termin für Freitag.", "en": "Hello, I'd like an appointment for Friday.", "es": "Buenos días, querría una cita para el viernes." },
+          { "who": 1, "de": "Am Freitag geht es nur um neun Uhr oder um halb fünf.", "en": "On Friday we only have nine o'clock or half past four.", "es": "El viernes solo puede ser a las nueve o a las cuatro y media." },
+          { "who": 2, "de": "Um neun muss ich arbeiten. Dann nehme ich den Termin am Nachmittag.", "en": "At nine I have to work. Then I'll take the afternoon appointment.", "es": "A las nueve tengo que trabajar. Entonces me quedo con la cita de la tarde." }
+        ],
+        "de": "Wann hat der Mann seinen Termin?",
+        "en": "When is the man's appointment?",
+        "es": "¿Cuándo es la cita del hombre?",
+        "options": ["um 9.00 Uhr", "um 15.30 Uhr", "um 16.30 Uhr"],
+        "a": 2
+      },
+      {
+        "audio": [
+          { "who": 2, "de": "Hast du meine Brille gesehen? Sie liegt nicht auf dem Schreibtisch.", "en": "Have you seen my glasses? They're not on the desk.", "es": "¿Has visto mis gafas? No están en el escritorio." },
+          { "who": 1, "de": "Vielleicht im Bad? Nein, warte – hier liegt sie, im Wohnzimmer neben dem Fernseher.", "en": "Maybe in the bathroom? No, wait – here they are, in the living room next to the TV.", "es": "¿Quizás en el baño? No, espera, aquí están, en el salón al lado de la tele." }
+        ],
+        "de": "Wo ist die Brille?",
+        "en": "Where are the glasses?",
+        "es": "¿Dónde están las gafas?",
+        "options": ["im Wohnzimmer", "im Bad", "auf dem Schreibtisch"],
+        "a": 0
+      },
+      {
+        "audio": [
+          { "who": 1, "de": "Was hast du am Wochenende gemacht? Warst du wandern?", "en": "What did you do at the weekend? Did you go hiking?", "es": "¿Qué hiciste el fin de semana? ¿Fuiste de excursión?" },
+          { "who": 2, "de": "Nein, es hat ja die ganze Zeit geregnet. Ich war zu Hause und habe endlich meine Wohnung aufgeräumt.", "en": "No, it rained the whole time. I stayed at home and finally tidied my flat.", "es": "No, llovió todo el rato. Me quedé en casa y por fin ordené mi piso." }
+        ],
+        "de": "Was hat der Mann am Wochenende gemacht?",
+        "en": "What did the man do at the weekend?",
+        "es": "¿Qué hizo el hombre el fin de semana?",
+        "options": ["Er war wandern.", "Er hat aufgeräumt.", "Er war im Kino."],
+        "a": 1
+      }
+    ],
+    "teil4": {
+      "audio": [
+        { "who": 2, "de": "Herzlich willkommen bei „Menschen in unserer Stadt“. Heute ist Ana Costa bei uns. Frau Costa, Sie fahren seit fünf Jahren Bus in Lindental. Wie sind Sie zu diesem Beruf gekommen?", "en": "Welcome to 'People in our town'. Today Ana Costa is with us. Ms Costa, you've been driving a bus in Lindental for five years. How did you come to this job?", "es": "Bienvenidos a «Gente de nuestra ciudad». Hoy nos acompaña Ana Costa. Señora Costa, usted lleva cinco años conduciendo un autobús en Lindental. ¿Cómo llegó a esta profesión?" },
+        { "who": 1, "de": "Eigentlich bin ich Lehrerin. In Portugal habe ich an einer Grundschule gearbeitet. Aber als ich nach Deutschland gekommen bin, war mein Deutsch noch nicht so gut. Ich konnte nicht als Lehrerin arbeiten.", "en": "I'm actually a teacher. In Portugal I worked at a primary school. But when I came to Germany, my German wasn't very good yet. I couldn't work as a teacher.", "es": "En realidad soy profesora. En Portugal trabajaba en un colegio de primaria. Pero cuando llegué a Alemania, mi alemán todavía no era muy bueno. No podía trabajar de profesora." },
+        { "who": 2, "de": "Und dann?", "en": "And then?", "es": "¿Y entonces?" },
+        { "who": 1, "de": "Dann habe ich einen Deutschkurs gemacht und gleichzeitig den Führerschein für den Bus. Das war eine harte Zeit, aber heute bin ich sehr froh.", "en": "Then I did a German course and at the same time the licence for driving a bus. It was a hard time, but today I'm very happy.", "es": "Entonces hice un curso de alemán y, al mismo tiempo, el carné de autobús. Fue una época dura, pero hoy estoy muy contenta." },
+        { "who": 2, "de": "Was gefällt Ihnen an Ihrem Beruf?", "en": "What do you like about your job?", "es": "¿Qué le gusta de su profesión?" },
+        { "who": 1, "de": "Ich mag den Kontakt mit den Menschen. Viele Fahrgäste kennen mich schon und sagen jeden Morgen: „Guten Morgen, Ana!“ Und ich lerne jeden Tag neue Wörter.", "en": "I like the contact with people. Many passengers already know me and say 'Good morning, Ana!' every morning. And I learn new words every day.", "es": "Me gusta el contacto con la gente. Muchos viajeros ya me conocen y cada mañana me dicen: «¡Buenos días, Ana!». Y aprendo palabras nuevas cada día." },
+        { "who": 2, "de": "Gibt es auch Probleme?", "en": "Are there any problems too?", "es": "¿También hay problemas?" },
+        { "who": 1, "de": "Manchmal. Die Arbeitszeiten sind nicht leicht. Oft fange ich schon um halb fünf am Morgen an. Aber dafür habe ich am Nachmittag frei und kann meine Tochter von der Schule abholen.", "en": "Sometimes. The working hours aren't easy. I often start at half past four in the morning. But in return I have the afternoons free and can pick my daughter up from school.", "es": "A veces. El horario no es fácil. A menudo empiezo ya a las cuatro y media de la mañana. Pero a cambio tengo las tardes libres y puedo recoger a mi hija del colegio." },
+        { "who": 2, "de": "Möchten Sie später wieder als Lehrerin arbeiten?", "en": "Would you like to work as a teacher again later?", "es": "¿Le gustaría volver a trabajar de profesora más adelante?" },
+        { "who": 1, "de": "Vielleicht. Aber im Moment bleibe ich gern Busfahrerin.", "en": "Maybe. But for now I'm happy to stay a bus driver.", "es": "Quizás. Pero de momento sigo encantada siendo conductora de autobús." },
+        { "who": 2, "de": "Vielen Dank für das Gespräch, Frau Costa.", "en": "Thank you very much for talking to us, Ms Costa.", "es": "Muchas gracias por la entrevista, señora Costa." }
+      ],
+      "items": [
+        { "de": "Ana Costa hat in Portugal als Lehrerin gearbeitet.", "en": "Ana Costa worked as a teacher in Portugal.", "es": "Ana Costa trabajó de profesora en Portugal.", "a": true },
+        { "de": "In Deutschland konnte sie sofort als Lehrerin arbeiten.", "en": "In Germany she could work as a teacher straight away.", "es": "En Alemania pudo trabajar de profesora enseguida.", "a": false },
+        { "de": "Viele Fahrgäste kennen Ana.", "en": "Many passengers know Ana.", "es": "Muchos viajeros conocen a Ana.", "a": true },
+        { "de": "Ana fängt mit der Arbeit immer am Nachmittag an.", "en": "Ana always starts work in the afternoon.", "es": "Ana siempre empieza a trabajar por la tarde.", "a": false },
+        { "de": "Ana möchte bald wieder an einer Schule arbeiten.", "en": "Ana wants to work at a school again soon.", "es": "Ana quiere volver pronto a trabajar en un colegio.", "a": false }
+      ]
+    }
+  },
+  "schreiben": {
+    "teil1": {
+      "task": {
+        "de": "Sie sind mit Ihrer Freundin Marie im Kino verabredet. Sie kommen zu spät. Schreiben Sie Marie eine SMS.",
+        "en": "You've arranged to meet your friend Marie at the cinema. You'll be late. Write Marie a text message.",
+        "es": "Has quedado con tu amiga Marie en el cine. Vas a llegar tarde. Escríbele un SMS a Marie."
+      },
+      "points": [
+        { "de": "Entschuldigen Sie sich.", "en": "Apologise.", "es": "Discúlpate." },
+        { "de": "Schreiben Sie, warum Sie später kommen.", "en": "Say why you'll be late.", "es": "Explica por qué llegas tarde." },
+        { "de": "Machen Sie einen Vorschlag: Was soll Marie machen?", "en": "Make a suggestion: what should Marie do?", "es": "Propón algo: ¿qué debe hacer Marie?" }
+      ],
+      "model": {
+        "de": "Hallo Marie,\nes tut mir leid, aber ich komme etwa 20 Minuten später. Mein Bus hat Verspätung. Kannst du bitte schon die Karten kaufen? Ich gebe dir dann das Geld.\nBis gleich!\nTom",
+        "en": "Hi Marie,\nsorry, but I'll be about 20 minutes late. My bus is delayed. Could you buy the tickets already, please? I'll give you the money then.\nSee you soon!\nTom",
+        "es": "Hola, Marie:\nlo siento, pero llego unos 20 minutos tarde. Mi autobús va con retraso. ¿Puedes comprar ya las entradas, por favor? Luego te doy el dinero.\n¡Hasta ahora!\nTom"
+      }
+    },
+    "teil2": {
+      "task": {
+        "de": "Sie haben einen Deutschkurs an der Volkshochschule gebucht. Am ersten Kurstag können Sie leider nicht kommen. Schreiben Sie Ihrer Kursleiterin, Frau Wagner, eine E-Mail.",
+        "en": "You've booked a German course at the adult education centre. Unfortunately you can't come on the first day. Write an email to your course teacher, Ms Wagner.",
+        "es": "Te has apuntado a un curso de alemán en la escuela de adultos. Por desgracia, el primer día no puedes ir. Escríbele un correo a tu profesora, la señora Wagner."
+      },
+      "points": [
+        { "de": "Entschuldigen Sie sich und schreiben Sie, warum Sie nicht kommen können.", "en": "Apologise and say why you can't come.", "es": "Discúlpate y explica por qué no puedes ir." },
+        { "de": "Fragen Sie, was Sie für den nächsten Termin machen sollen.", "en": "Ask what you should do for the next lesson.", "es": "Pregunta qué debes hacer para la próxima clase." },
+        { "de": "Fragen Sie, ob Sie das Kursbuch schon kaufen sollen.", "en": "Ask whether you should already buy the course book.", "es": "Pregunta si ya debes comprar el libro del curso." }
+      ],
+      "model": {
+        "de": "Sehr geehrte Frau Wagner,\nleider kann ich am Montag nicht zum ersten Kurstag kommen, weil ich arbeiten muss. Das tut mir leid. Was soll ich für den nächsten Termin vorbereiten? Soll ich das Kursbuch schon kaufen?\nMit freundlichen Grüßen\nCarlos Pérez",
+        "en": "Dear Ms Wagner,\nunfortunately I can't come to the first day of the course on Monday because I have to work. I'm sorry. What should I prepare for the next lesson? Should I buy the course book already?\nKind regards\nCarlos Pérez",
+        "es": "Estimada señora Wagner:\npor desgracia, el lunes no puedo ir al primer día del curso porque tengo que trabajar. Lo siento. ¿Qué debo preparar para la próxima clase? ¿Compro ya el libro del curso?\nAtentamente,\nCarlos Pérez"
+      }
+    }
+  },
+  "sprechen": {
+    "teil1": {
+      "cards": [
+        {
+          "word": "Geburtstag?",
+          "q": { "de": "Wann haben Sie Geburtstag?", "en": "When is your birthday?", "es": "¿Cuándo es su cumpleaños?" },
+          "a": { "de": "Am vierzehnten Mai.", "en": "On the fourteenth of May.", "es": "El catorce de mayo." }
+        },
+        {
+          "word": "Wohnort?",
+          "q": { "de": "Wo wohnen Sie?", "en": "Where do you live?", "es": "¿Dónde vive usted?" },
+          "a": { "de": "Ich wohne in Köln, ganz in der Nähe vom Dom.", "en": "I live in Cologne, very close to the cathedral.", "es": "Vivo en Colonia, muy cerca de la catedral." }
+        },
+        {
+          "word": "Sport?",
+          "q": { "de": "Welchen Sport machen Sie gern?", "en": "Which sport do you like doing?", "es": "¿Qué deporte le gusta hacer?" },
+          "a": { "de": "Ich spiele gern Volleyball.", "en": "I like playing volleyball.", "es": "Me gusta jugar al voleibol." }
+        },
+        {
+          "word": "Kinder?",
+          "q": { "de": "Haben Sie Kinder?", "en": "Do you have children?", "es": "¿Tiene usted hijos?" },
+          "a": { "de": "Ja, ich habe eine Tochter. Sie ist sieben.", "en": "Yes, I have a daughter. She's seven.", "es": "Sí, tengo una hija. Tiene siete años." }
+        }
+      ],
+      "partner": [
+        {
+          "q": { "de": "Was sind Sie von Beruf?", "en": "What do you do for a living?", "es": "¿A qué se dedica usted?" },
+          "a": { "de": "Ich bin Krankenpfleger. Ich arbeite in einem Krankenhaus.", "en": "I'm a nurse. I work in a hospital.", "es": "Soy enfermero. Trabajo en un hospital." }
+        },
+        {
+          "q": { "de": "Welche Sprachen sprechen Sie?", "en": "Which languages do you speak?", "es": "¿Qué idiomas habla usted?" },
+          "a": { "de": "Ich spreche Spanisch, Englisch und ein bisschen Deutsch.", "en": "I speak Spanish, English and a little German.", "es": "Hablo español, inglés y un poco de alemán." }
+        },
+        {
+          "q": { "de": "Was essen Sie gern?", "en": "What do you like eating?", "es": "¿Qué le gusta comer?" },
+          "a": { "de": "Ich esse gern Nudeln mit Gemüse.", "en": "I like eating pasta with vegetables.", "es": "Me gusta comer pasta con verduras." }
+        },
+        {
+          "q": { "de": "Wohin möchten Sie gern einmal reisen?", "en": "Where would you like to travel one day?", "es": "¿Adónde le gustaría viajar algún día?" },
+          "a": { "de": "Ich möchte gern einmal nach Japan reisen.", "en": "I'd like to travel to Japan one day.", "es": "Me gustaría viajar a Japón algún día." }
+        }
+      ]
+    },
+    "teil2": {
+      "q": { "de": "Was machen Sie gern in Ihrer Freizeit?", "en": "What do you like doing in your free time?", "es": "¿Qué le gusta hacer en su tiempo libre?" },
+      "prompts": ["Sport?", "Freunde?", "Am Wochenende?", "Allein oder mit anderen?"],
+      "model": {
+        "de": "In meiner Freizeit mache ich gern Sport. Zweimal in der Woche gehe ich schwimmen, und am Sonntag fahre ich oft Fahrrad. Ich treffe auch gern Freunde. Wir gehen zusammen essen oder ins Kino. Am Wochenende schlafe ich lange und koche dann für meine Familie. Manchmal bin ich aber auch gern allein: Dann lese ich ein Buch oder höre Musik.",
+        "en": "In my free time I like doing sport. I go swimming twice a week, and on Sundays I often go cycling. I also like meeting friends. We go out to eat together or to the cinema. At the weekend I sleep late and then cook for my family. But sometimes I also like being alone: then I read a book or listen to music.",
+        "es": "En mi tiempo libre me gusta hacer deporte. Voy a nadar dos veces por semana y los domingos a menudo monto en bici. También me gusta quedar con amigos. Salimos a comer juntos o vamos al cine. El fin de semana duermo hasta tarde y luego cocino para mi familia. Pero a veces también me gusta estar solo: entonces leo un libro o escucho música."
+      },
+      "followUp": {
+        "q": { "de": "Und was machen Sie bei schlechtem Wetter?", "en": "And what do you do when the weather is bad?", "es": "¿Y qué hace usted cuando hace mal tiempo?" },
+        "a": { "de": "Bei schlechtem Wetter bleibe ich gern zu Hause und sehe einen Film.", "en": "When the weather is bad I like staying at home and watching a film.", "es": "Cuando hace mal tiempo me gusta quedarme en casa y ver una película." }
+      }
+    },
+    "teil3": {
+      "task": {
+        "de": "Ihre Freundin Emma liegt im Krankenhaus. Sie möchten Emma am Samstag zusammen besuchen. Finden Sie einen Termin.",
+        "en": "Your friend Emma is in hospital. You want to visit Emma together on Saturday. Find a time.",
+        "es": "Tu amiga Emma está en el hospital. Queréis visitarla juntos el sábado. Encontrad un momento."
+      },
+      "day": "Samstag, 14. Juni",
+      "calendar": [
+        { "time": "8.00" },
+        { "time": "9.00", "entry": { "de": "Frühstück mit Oma", "en": "Breakfast with Grandma", "es": "Desayuno con la abuela" } },
+        { "time": "10.00", "entry": { "de": "Frühstück mit Oma", "en": "Breakfast with Grandma", "es": "Desayuno con la abuela" } },
+        { "time": "11.00", "entry": { "de": "Deutschkurs", "en": "German course", "es": "Curso de alemán" } },
+        { "time": "12.00", "entry": { "de": "Deutschkurs", "en": "German course", "es": "Curso de alemán" } },
+        { "time": "13.00" },
+        { "time": "14.00", "entry": { "de": "Fahrrad abholen", "en": "Pick up bike", "es": "Recoger la bici" } },
+        { "time": "15.00" },
+        { "time": "16.00", "entry": { "de": "Fußball mit Ben", "en": "Football with Ben", "es": "Fútbol con Ben" } },
+        { "time": "17.00", "entry": { "de": "Fußball mit Ben", "en": "Football with Ben", "es": "Fútbol con Ben" } },
+        { "time": "18.00" },
+        { "time": "19.00", "entry": { "de": "Kino mit Paul", "en": "Cinema with Paul", "es": "Cine con Paul" } }
+      ],
+      "turns": [
+        {
+          "partner": { "de": "Wollen wir Emma am Samstag zusammen im Krankenhaus besuchen? Hast du um zehn Uhr Zeit?", "en": "Shall we visit Emma in hospital together on Saturday? Are you free at ten?", "es": "¿Vamos juntos a ver a Emma al hospital el sábado? ¿Tienes tiempo a las diez?" },
+          "model": { "de": "Um zehn geht es leider nicht, da frühstücke ich mit meiner Oma. Geht es bei dir um eins?", "en": "Ten won't work, I'm afraid – I'm having breakfast with my grandma then. Does one o'clock work for you?", "es": "A las diez no puedo, lo siento: desayuno con mi abuela. ¿Te va bien a la una?" }
+        },
+        {
+          "partner": { "de": "Um eins esse ich mit meinen Eltern zu Mittag. Und um vier?", "en": "At one I'm having lunch with my parents. And at four?", "es": "A la una como con mis padres. ¿Y a las cuatro?" },
+          "model": { "de": "Um vier spiele ich mit Ben Fußball. Wie ist es um drei?", "en": "At four I'm playing football with Ben. How about three?", "es": "A las cuatro juego al fútbol con Ben. ¿Qué tal a las tres?" }
+        },
+        {
+          "partner": { "de": "Um drei? Ja, das passt! Sollen wir Emma etwas mitbringen?", "en": "At three? Yes, that works! Shall we take Emma something?", "es": "¿A las tres? ¡Sí, me va bien! ¿Le llevamos algo a Emma?" },
+          "model": { "de": "Ja, gute Idee. Vielleicht Blumen oder Schokolade? Ich kann die Schokolade kaufen.", "en": "Yes, good idea. Maybe flowers or chocolate? I can buy the chocolate.", "es": "Sí, buena idea. ¿Quizás flores o chocolate? Yo puedo comprar el chocolate." }
+        },
+        {
+          "partner": { "de": "Prima, dann kaufe ich Blumen. Wo treffen wir uns?", "en": "Great, then I'll buy flowers. Where shall we meet?", "es": "Genial, entonces yo compro flores. ¿Dónde quedamos?" },
+          "model": { "de": "Treffen wir uns um Viertel vor drei vor dem Krankenhaus. Bis Samstag!", "en": "Let's meet at quarter to three in front of the hospital. See you on Saturday!", "es": "Quedamos a las tres menos cuarto delante del hospital. ¡Hasta el sábado!" }
+        }
+      ]
+    }
+  }
+}

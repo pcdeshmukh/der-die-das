@@ -1,18 +1,19 @@
 import { useRef, useState } from 'preact/hooks';
-import { Countdown, ExamResults, RatingButtons, TeacherShare, TeilIntro, TeilLabel, Translation } from '../components/Exam';
+import { CriterionButtons, Countdown, ExamResults, TeacherShare, TeilIntro, TeilLabel, Translation } from '../components/Exam';
 import { GameBar } from '../components/GameBar';
 import type { FormField, WritingTask } from '../data/types';
 import {
-  FORM_MAX,
   GERMAN_NAMES,
-  POINT_MAX,
   countWords,
+  groupPoints,
   hasClosing,
   hasGreeting,
+  maxPoints,
   points,
   resultKey,
   writingReport,
-  type Rating,
+  writingTeile,
+  type WritingTeil,
 } from '../lib/exam';
 import { meaning, t } from '../lib/i18n';
 import { playFinish } from '../lib/sfx';
@@ -20,7 +21,13 @@ import { finishExamPart, finishRound } from '../lib/store';
 import { SPECIAL_LETTERS, grade } from '../lib/typing';
 import type { ExamGameProps } from './types';
 
-type Screen = { kind: 'intro'; teil: number } | { kind: 'form' } | { kind: 'message' } | { kind: 'mark' };
+type FormTeil = Extract<WritingTeil, { kind: 'form' }>;
+type MessageTeil = Extract<WritingTeil, { kind: 'message' }>;
+type Screen =
+  | { kind: 'intro'; teil: number }
+  | { kind: 'form'; part: FormTeil }
+  | { kind: 'message'; part: MessageTeil }
+  | { kind: 'mark'; part: MessageTeil };
 
 /** Whether a gap of the form was filled in right; spelling slips (capitals, ae for ä) still count, as in the exam. */
 function gapOk(field: FormField, value: string): boolean {
@@ -28,20 +35,30 @@ function gapOk(field: FormField, value: string): boolean {
   return field.options ? value === accepted[0] : grade(value, accepted) !== 'wrong';
 }
 
-/** Schreiben: Teil 1 fills in a form and is marked by the app; Teil 2 is a short message the learner marks. */
+/**
+ * Schreiben. A form (Start Deutsch 1 Teil 1) is marked by the app. Messages are written first and marked by the
+ * learner afterwards, against a model answer and the exam's criteria, so marking doesn't eat into the time.
+ */
 export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameProps) {
-  const t1 = exam.schreiben.teil1;
-  const t2 = exam.schreiben.teil2;
-  const gaps = t1.fields.filter((f) => f.value === undefined);
-  const screens: Screen[] = [];
-  if (run.teile.includes(1)) screens.push({ kind: 'intro', teil: 1 }, { kind: 'form' });
-  if (run.teile.includes(2)) screens.push({ kind: 'intro', teil: 2 }, { kind: 'message' }, { kind: 'mark' });
+  const parts = writingTeile(exam).filter((p) => run.teile.includes(p.teil));
+  const form = parts.find((p): p is FormTeil => p.kind === 'form');
+  const messages = parts.filter((p): p is MessageTeil => p.kind === 'message');
+  const screens: Screen[] = [
+    ...parts.flatMap((part): Screen[] => [
+      { kind: 'intro', teil: part.teil },
+      part.kind === 'form' ? { kind: 'form', part } : { kind: 'message', part },
+    ]),
+    ...messages.map((part): Screen => ({ kind: 'mark', part })),
+  ];
+  const gaps = form ? form.fields.filter((f) => f.value === undefined) : [];
 
   const [index, setIndex] = useState(0);
   const [values, setValues] = useState<string[]>(() => gaps.map(() => ''));
   const [checked, setChecked] = useState(false);
-  const [text, setText] = useState('');
-  const [ratings, setRatings] = useState<(Rating | null)[]>([null, null, null, null]);
+  const [texts, setTexts] = useState<Record<number, string>>({});
+  const [levels, setLevels] = useState<Record<number, (number | null)[]>>(() =>
+    Object.fromEntries(messages.map((m) => [m.teil, m.criteria.map(() => null)])),
+  );
   const [start] = useState(Date.now);
   const [result, setResult] = useState<{ raw: number; max: number; ms: number; xp: number } | null>(null);
   const field = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
@@ -50,10 +67,7 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
 
   const formOk = gaps.map((f, i) => gapOk(f, values[i]));
   const formPoints = formOk.filter(Boolean).length;
-  const messageMax = POINT_MAX * 3 + FORM_MAX;
-  const messagePoints = ratings.reduce<number>((sum, r, i) => sum + (r ?? 0) * (i < 3 ? POINT_MAX : FORM_MAX), 0);
-  const playsForm = run.teile.includes(1);
-  const playsMessage = run.teile.includes(2);
+  const messagePoints = (m: MessageTeil) => groupPoints(m.criteria, levels[m.teil]);
 
   /** Inserts ä ö ü ß into the field that last had focus. */
   function insert(letter: string) {
@@ -62,7 +76,7 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
     const startPos = el.selectionStart ?? el.value.length;
     const end = el.selectionEnd ?? el.value.length;
     const value = el.value.slice(0, startPos) + letter + el.value.slice(end);
-    if (el instanceof HTMLTextAreaElement) setText(value);
+    if (el instanceof HTMLTextAreaElement) setText(Number(el.dataset.teil), value);
     else setValue(Number(el.dataset.gap), value);
     requestAnimationFrame(() => {
       el.focus();
@@ -74,13 +88,18 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
     setValues((vs) => vs.map((v, j) => (j === i ? value : v)));
   }
 
+  function setText(teil: number, value: string) {
+    setTexts((ts) => ({ ...ts, [teil]: value }));
+  }
+
   function next() {
     // Practice shows what was right before moving on.
     if (screen.kind === 'form' && practice && !checked) return setChecked(true);
     scrollTo(0, 0);
     if (index + 1 < screens.length) return setIndex(index + 1);
-    const raw = (playsForm ? formPoints : 0) + (playsMessage ? Math.round(messagePoints) : 0);
-    const max = (playsForm ? gaps.length : 0) + (playsMessage ? messageMax : 0);
+    // As in the exam, messages are marked to whole points; the form's gaps count one each.
+    const raw = formPoints + Math.round(messages.reduce((sum, m) => sum + messagePoints(m), 0));
+    const max = gaps.length + messages.reduce((sum, m) => sum + maxPoints(m.criteria), 0);
     const xp = raw * 10;
     if (run.exam) finishExamPart(resultKey(level, exam, 'schreiben'), raw, xp);
     else finishRound(null, 0, xp);
@@ -90,9 +109,8 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
 
   const report = () =>
     writingReport(exam, {
-      form: playsForm ? gaps.map((f, i) => ({ label: f.label, text: values[i], ok: formOk[i] })) : undefined,
-      text: playsMessage ? text : undefined,
-      selfMarked: playsMessage ? messagePoints : undefined,
+      form: form ? gaps.map((f, i) => ({ label: f.label, text: values[i], ok: formOk[i] })) : undefined,
+      messages: messages.map((m) => ({ teil: m.teil, text: texts[m.teil] ?? '', selfMarked: messagePoints(m), max: maxPoints(m.criteria) })),
     });
 
   if (result) {
@@ -101,6 +119,7 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
         title={`${GERMAN_NAMES.schreiben} · ${run.exam ? t('modelTest', { n: exam.id }) : `Teil ${run.teile[0]}`}`}
         raw={result.raw}
         max={result.max}
+        module={run.module}
         exam={run.exam}
         ms={run.exam ? result.ms : undefined}
         xp={result.xp}
@@ -109,49 +128,58 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
       >
         <TeacherShare text={report} />
         <section class="exam-review">
-          {playsForm && (
+          {form && (
             <details class="exam-review-page" open={formPoints < gaps.length}>
               <summary>
-                Teil 1 · {t('score', { c: formPoints, n: gaps.length })}
+                Teil {form.teil} · {t('score', { c: formPoints, n: gaps.length })}
               </summary>
-              <Form title={t1.title} fields={t1.fields} gaps={gaps} values={values} checked onInput={() => {}} onFocus={() => {}} />
+              <Form title={form.title} fields={form.fields} gaps={gaps} values={values} checked onInput={() => {}} onFocus={() => {}} />
             </details>
           )}
-          {playsMessage && (
+          {messages.map((m) => (
             <details class="exam-review-page" open>
-              <summary>Teil 2 · {t('rawScore', { c: points(messagePoints), n: messageMax })}</summary>
-              <p class="exam-mytext pre">{text.trim() || '—'}</p>
+              <summary>
+                Teil {m.teil} · {t('rawScore', { c: points(messagePoints(m)), n: maxPoints(m.criteria) })}
+              </summary>
+              <p class="exam-mytext pre">{texts[m.teil]?.trim() || '—'}</p>
               <p class="exam-model-label">{t('modelAnswer')}</p>
-              <p class="pre">{t2.model.de}</p>
-              <Translation x={t2.model} />
+              <p class="pre">{m.task.model.de}</p>
+              <Translation x={m.task.model} />
             </details>
-          )}
+          ))}
         </section>
       </ExamResults>
     );
   }
 
   const timer = run.exam && screen.kind !== 'mark' && <Countdown start={start} minutes={run.module.minutes} />;
-  const words = countWords(text);
+  const markDone = screen.kind !== 'mark' || levels[screen.part.teil].every((l) => l !== null);
   return (
     <div class="game exam-game">
       <GameBar value={index / screens.length} onQuit={onExit}>
         {timer}
       </GameBar>
       {screen.kind === 'intro' && (
-        <TeilIntro module={run.module} teil={screen.teil} exam={run.exam} first={index === 0} onStart={() => setIndex(index + 1)} />
+        <TeilIntro
+          format={exam.format}
+          module={run.module}
+          teil={screen.teil}
+          exam={run.exam}
+          first={index === 0}
+          onStart={() => setIndex(index + 1)}
+        />
       )}
 
       {screen.kind === 'form' && (
         <div class="exam-page">
-          <TeilLabel module={run.module} teil={1} />
+          <TeilLabel module={run.module} teil={screen.part.teil} />
           <div class="exam-text">
-            <p class="pre">{t1.text.de}</p>
+            <p class="pre">{screen.part.text.de}</p>
           </div>
-          {checked && <Translation x={t1.text} />}
+          {checked && <Translation x={screen.part.text} />}
           <Form
-            title={t1.title}
-            fields={t1.fields}
+            title={screen.part.title}
+            fields={screen.part.fields}
             gaps={gaps}
             values={values}
             checked={checked}
@@ -163,65 +191,118 @@ export function ExamWritingGame({ level, exam, run, onRetry, onExit }: ExamGameP
       )}
 
       {screen.kind === 'message' && (
-        <div class="exam-page">
-          <TeilLabel module={run.module} teil={2} />
-          <Task task={exam.schreiben.teil2} translate={practice} />
-          <textarea
-            class="exam-textarea"
-            rows={8}
-            lang="de"
-            spellcheck={false}
-            autocapitalize="sentences"
-            placeholder={t('writeHere')}
-            value={text}
-            onFocus={(e) => (field.current = e.currentTarget)}
-            onInput={(e) => setText(e.currentTarget.value)}
-          />
-          <LetterKeys onInsert={insert} />
-          <p class={words >= 20 ? 'muted small' : 'small text-bad'}>{t('wordCount', { n: words })}</p>
-        </div>
+        <MessagePage
+          key={screen.part.teil}
+          part={screen.part}
+          module={run.module}
+          translate={practice}
+          text={texts[screen.part.teil] ?? ''}
+          onText={(v) => setText(screen.part.teil, v)}
+          onFocus={(el) => (field.current = el)}
+          onInsert={insert}
+        />
       )}
 
       {screen.kind === 'mark' && (
-        <div class="exam-page">
-          <h2 class="exam-h2">{t('markYourself')}</h2>
-          <p class="muted small">{t('markHelp')}</p>
-          <Task task={exam.schreiben.teil2} translate={false} />
-          <p class="exam-mytext pre">{text.trim() || '—'}</p>
-          <p class="small">
-            {hasGreeting(text) ? '✓' : '✗'} {t('greetingCheck')} · {hasClosing(text) ? '✓' : '✗'} {t('closingCheck')} ·{' '}
-            {t('words', { n: words })}
-          </p>
-          <details class="exam-details" open>
-            <summary>{t('modelAnswer')}</summary>
-            <p class="pre">{t2.model.de}</p>
-            <Translation x={t2.model} />
-          </details>
-          {t2.points.map((p, i) => (
-            <RatingButtons
-              max={POINT_MAX}
-              value={ratings[i]}
-              label={p.de}
-              onChange={(r) => setRatings((rs) => rs.map((x, j) => (j === i ? r : x)))}
-            />
-          ))}
-          <RatingButtons
-            max={FORM_MAX}
-            value={ratings[3]}
-            label={t('formPoint')}
-            onChange={(r) => setRatings((rs) => rs.map((x, j) => (j === 3 ? r : x)))}
-          />
-          <p class="exam-mark-total">{t('rawScore', { c: points(messagePoints), n: messageMax })}</p>
-        </div>
+        <MarkPage
+          key={`mark-${screen.part.teil}`}
+          part={screen.part}
+          text={texts[screen.part.teil] ?? ''}
+          levels={levels[screen.part.teil]}
+          onLevel={(i, l) =>
+            setLevels((ls) => ({ ...ls, [screen.part.teil]: ls[screen.part.teil].map((x, j) => (j === i ? l : x)) }))
+          }
+          total={messagePoints(screen.part)}
+        />
       )}
 
       {screen.kind !== 'intro' && (
         <div class="exam-nav">
-          <button class="btn primary" disabled={screen.kind === 'mark' && ratings.some((r) => r === null)} onClick={next}>
+          <button class="btn primary" disabled={!markDone} onClick={next}>
             {screen.kind === 'form' && practice && !checked ? t('check') : index + 1 === screens.length ? t('finish') : t('continue')}
           </button>
         </div>
       )}
+    </div>
+  );
+}
+
+function MessagePage({
+  part,
+  module,
+  translate,
+  text,
+  onText,
+  onFocus,
+  onInsert,
+}: {
+  part: MessageTeil;
+  module: ExamGameProps['run']['module'];
+  translate: boolean;
+  text: string;
+  onText: (text: string) => void;
+  onFocus: (el: HTMLTextAreaElement) => void;
+  onInsert: (letter: string) => void;
+}) {
+  const words = countWords(text);
+  // Under half the asked-for words marks the task as not done (E), so warn well before that.
+  const few = words < Number(part.words.match(/\d+/)?.[0] ?? 0) * 0.7;
+  return (
+    <div class="exam-page">
+      <TeilLabel module={module} teil={part.teil} />
+      <Task task={part.task} translate={translate} />
+      <textarea
+        class="exam-textarea"
+        rows={8}
+        lang="de"
+        spellcheck={false}
+        autocapitalize="sentences"
+        placeholder={t('writeHere')}
+        data-teil={part.teil}
+        value={text}
+        onFocus={(e) => onFocus(e.currentTarget)}
+        onInput={(e) => onText(e.currentTarget.value)}
+      />
+      <LetterKeys onInsert={onInsert} />
+      <p class={few ? 'small text-bad' : 'muted small'}>{t('wordCount', { n: words, range: part.words })}</p>
+    </div>
+  );
+}
+
+/** The learner marks their own message, criterion by criterion, next to a model answer. */
+function MarkPage({
+  part,
+  text,
+  levels,
+  onLevel,
+  total,
+}: {
+  part: MessageTeil;
+  text: string;
+  levels: (number | null)[];
+  onLevel: (criterion: number, level: number) => void;
+  total: number;
+}) {
+  return (
+    <div class="exam-page">
+      <p class="exam-teil-label">✍️ Schreiben · Teil {part.teil}</p>
+      <h2 class="exam-h2">{t('markYourself')}</h2>
+      <p class="muted small">{t('markHelp')}</p>
+      <Task task={part.task} translate={false} />
+      <p class="exam-mytext pre">{text.trim() || '—'}</p>
+      <p class="small">
+        {hasGreeting(text) ? '✓' : '✗'} {t('greetingCheck')} · {hasClosing(text) ? '✓' : '✗'} {t('closingCheck')} ·{' '}
+        {t('wordCount', { n: countWords(text), range: part.words })}
+      </p>
+      <details class="exam-details" open>
+        <summary>{t('modelAnswer')}</summary>
+        <p class="pre">{part.task.model.de}</p>
+        <Translation x={part.task.model} />
+      </details>
+      {part.criteria.map((c, i) => (
+        <CriterionButtons criterion={c} level={levels[i]} onChange={(l) => onLevel(i, l)} />
+      ))}
+      <p class="exam-mark-total">{t('rawScore', { c: points(total), n: maxPoints(part.criteria) })}</p>
     </div>
   );
 }

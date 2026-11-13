@@ -1847,17 +1847,25 @@ a.level-card .level-id {
   color: var(--muted);
   font-size: 0.8rem;
 }
-.rating-btn.active.r-2 {
+.rating-buttons.ae {
+  grid-template-columns: repeat(5, 1fr);
+}
+.rating-btn.active.top {
   border-color: var(--ok);
   background: var(--ok-soft);
 }
-.rating-btn.active.r-1 {
+.rating-btn.active.mid {
   border-color: var(--star);
   background: var(--surface-2);
 }
-.rating-btn.active.r-0 {
+.rating-btn.active.low {
   border-color: var(--bad);
   background: var(--bad-soft);
+}
+.rating-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .exam-topic {
@@ -2032,4 +2040,117 @@ a.level-card .level-id {
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
+}
+
+/* Model tests: Goethe A2 */
+.exam-page-q {
+  margin: 4px 0 0;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+.exam-pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(140px, 45%), 1fr));
+  gap: 8px;
+}
+.exam-picture {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 8px;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.exam-picture-emoji {
+  font-size: 1.4rem;
+}
+/* Long German compounds ("Geburtstagsfeier") break at syllables rather than overflow. */
+.exam-picture-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+.exam-picture-text .translation {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.exam-adlist {
+  display: grid;
+  gap: 8px;
+}
+@media (min-width: 560px) {
+  .exam-adlist {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.exam-adlist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.exam-adlist-item.none {
+  align-items: center;
+  background: var(--surface-2);
+  box-shadow: none;
+}
+.exam-match {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.exam-options-match {
+  grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
+  gap: 6px;
+}
+.exam-options-match .exam-option {
+  justify-content: center;
+  min-height: 42px;
+  padding: 6px 0;
+  font-weight: 800;
+}
+.calendar {
+  width: 100%;
+  text-align: left;
+}
+.calendar-head {
+  margin: 0 0 6px;
+  font-weight: 800;
+}
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.calendar td {
+  padding: 4px 8px;
+  border-top: 1px solid var(--border);
+}
+.calendar-time {
+  width: 4.2em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.calendar tr.busy td:last-child {
+  font-weight: 700;
+}
+.calendar tr.busy .muted {
+  font-weight: 400;
+}
+.talk-card b {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.talk-card .keyword-sheet {
+  margin-top: 8px;
 }

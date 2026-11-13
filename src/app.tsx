@@ -45,7 +45,7 @@ function LevelPage({ level, parts }: { level: Level; parts: string[] }) {
   const exam = examOf(level, parts[1]);
   if (exam) {
     if (parts.length === 2) return <ExamScreen level={level} exam={exam} />;
-    const run = parseRun(parts[2]);
+    const run = parseRun(exam, parts[2]);
     return run ? <ExamRunScreen key={parts.join('/')} level={level} exam={exam} run={run} /> : <NotFound />;
   }
   if (parts.length === 2) {

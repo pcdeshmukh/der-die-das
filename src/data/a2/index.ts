@@ -1,4 +1,4 @@
-import type { GrammarLesson, LevelContent, PhraseLesson, Topic } from '../types';
+import type { ExamSet, GrammarLesson, LevelContent, PhraseLesson, Topic } from '../types';
 import a2Relatives from './relatives.json';
 import a2Moving from './moving.json';
 import a2Cooking from './cooking.json';
@@ -34,6 +34,9 @@ import a2PhrasesBookCh01 from './phrases-book-ch01-12.json';
 import a2PhrasesCh13 from './phrases-ch13-24.json';
 import a2PhrasesBookCh13 from './phrases-book-ch13-24.json';
 import a2Chapters from './chapters.json';
+import a2Exam1 from './exam-1.json';
+import a2Exam2 from './exam-2.json';
+import a2Exam3 from './exam-3.json';
 
 const topics = [
   a2Relatives,
@@ -69,7 +72,8 @@ const content: LevelContent = {
   grammar: [...a2GrammarCh01, ...a2GrammarCh07, ...a2GrammarCh15, ...a2GrammarBook] as GrammarLesson[],
   phrases: [...a2PhrasesCh01, ...a2PhrasesCh13, ...a2PhrasesBookCh01, ...a2PhrasesBookCh13] as unknown as PhraseLesson[],
   chapters: a2Chapters,
-  exams: [],
+  // Model tests in the format of the Goethe-Zertifikat A2.
+  exams: [a2Exam1, a2Exam2, a2Exam3] as unknown as ExamSet[],
 };
 
 export default content;
